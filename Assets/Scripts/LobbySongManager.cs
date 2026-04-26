@@ -1,0 +1,137 @@
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Networking;
+using System.Collections;
+using System.IO;
+using TMPro;
+using System.Collections.Generic;
+
+
+using Debug = UnityEngine.Debug;
+
+public class LobbySongManager : MonoBehaviour
+{
+    [Header("Data Path")]
+    public string songsFolderName = "Songs"; // Inside StreamingAssets
+    
+    [Header("Selected State")]
+    public int currentSelectedIndex = 0;
+    public List<string> songFolders = new List<string>();
+
+    [Header("UI References")]
+    public TextMeshProUGUI currentSongText;
+    public TextMeshProUGUI songIndexText;
+    public Image songCover;
+    public Sprite defaultCover;
+
+    private void Start()
+    {
+        RefreshSongList();
+        UpdateUI();
+    }
+
+    public void RefreshSongList()
+    {
+        songFolders.Clear();
+        string path = Path.Combine(Application.streamingAssetsPath, songsFolderName);
+
+        if (Directory.Exists(path))
+        {
+            // Get all subdirectories (each represents a song)
+            string[] directories = Directory.GetDirectories(path);
+            foreach (string dir in directories)
+            {
+                songFolders.Add(Path.GetFileName(dir));
+                Debug.Log($"[Lobby] Found song folder: {dir}");
+            }
+            Debug.Log($"[Lobby] Found {songFolders.Count} songs.");
+        }
+        else
+        {
+            Debug.LogError($"[Lobby] Path not found: {path}");
+        }
+    }
+
+    public void NextSong()
+    {
+        if (songFolders.Count == 0) return;
+        currentSelectedIndex = (currentSelectedIndex + 1) % songFolders.Count;
+        OnSelectionChanged();
+    }
+
+    public void PreviousSong()
+    {
+        if (songFolders.Count == 0) return;
+        currentSelectedIndex = (currentSelectedIndex - 1 + songFolders.Count) % songFolders.Count;
+        OnSelectionChanged();
+    }
+
+    public string GetSelectedSongPath()
+    {
+        if (songFolders.Count == 0) return null;
+        return songFolders[currentSelectedIndex];
+    }
+
+    private void OnSelectionChanged()
+    {
+        Debug.Log($"[Lobby] Currently Selected: {songFolders[currentSelectedIndex]}");
+        // Trigger UI updates here in the future
+    }
+
+    public void UpdateUI()
+    {
+        if (songFolders.Count == 0)
+        {
+            if (currentSongText != null) currentSongText.text = "No Songs Found";
+            return;
+        }
+
+        if (currentSongText != null)
+        {
+            currentSongText.text = songFolders[currentSelectedIndex];
+        }
+
+        if (songIndexText != null)
+        {
+            songIndexText.text = $"{currentSelectedIndex + 1:D2} / {songFolders.Count:D2}";
+        }
+
+        StopAllCoroutines(); 
+        StartCoroutine(LoadCoverAsync());
+
+        Debug.Log($"[Lobby UI] Selected: {songFolders[currentSelectedIndex]}");
+    }
+    IEnumerator LoadCoverAsync() {
+        string folderName = songFolders[currentSelectedIndex];
+        string fileName = "cover.png";
+        string fullPath = Path.Combine(Application.streamingAssetsPath, songsFolderName, folderName, fileName);
+
+        string uri = fullPath;
+        if (!uri.Contains("://")) uri = "file://" + uri;
+        Debug.Log($"[Lobby] Loading cover from: {uri}");
+
+        using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture(uri)) {
+        yield return uwr.SendWebRequest();
+
+        if (uwr.result == UnityWebRequest.Result.Success) {
+            Texture2D texture = DownloadHandlerTexture.GetContent(uwr);
+            
+            if (texture == null) {
+                Debug.LogError("[Lobby] 雖然請求成功，但 Texture2D 物件為空 (可能是格式錯誤)");
+                yield break;
+            }
+
+            texture.filterMode = FilterMode.Point; // 保持點陣感
+            
+            Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+            songCover.sprite = newSprite;
+            
+            Debug.Log($"[Lobby] 封面載入成功: {texture.width}x{texture.height}");
+        } else {
+            Debug.LogError($"[Lobby] 請求失敗！錯誤訊息: {uwr.error}");
+            Debug.LogError($"[Lobby] 回應代碼: {uwr.responseCode}");
+            songCover.sprite = defaultCover;
+        }
+    }
+    }
+}
