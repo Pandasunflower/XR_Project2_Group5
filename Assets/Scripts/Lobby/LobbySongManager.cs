@@ -80,6 +80,7 @@ public class LobbySongManager : MonoBehaviour
 
     public void UpdateUI()
     {
+        Debug.Log("Update UI");
         if (songFolders.Count == 0)
         {
             if (currentSongText != null) currentSongText.text = "No Songs Found";

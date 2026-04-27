@@ -1202,7 +1202,7 @@ MonoBehaviour:
   requestBodyTrackingPermissionOnStartup: 0
   requestFaceTrackingPermissionOnStartup: 0
   requestEyeTrackingPermissionOnStartup: 0
-  requestScenePermissionOnStartup: 0
+  requestScenePermissionOnStartup: 1
   requestRecordAudioPermissionOnStartup: 0
   requestPassthroughCameraAccessPermissionOnStartup: 0
   _localDimming: 1
@@ -1664,6 +1664,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LineRender
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348787547821564741, guid: 79cf0bc1a577cb648840961a74d5cb86,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3083736395465216280, guid: 79cf0bc1a577cb648840961a74d5cb86,
         type: 3}
