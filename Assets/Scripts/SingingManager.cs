@@ -6,6 +6,12 @@ using UnityEngine.Networking;
 using Debug = UnityEngine.Debug;
 
 public class SingingManager : MonoBehaviour {
+
+    [Header("Wwise Settings")]
+    public AK.Wwise.Event bgmEvent;
+    public AK.Wwise.Event vocalEvent;
+    public GameObject wwiseAudioObject;
+
     [Header("Settings")]
     public TextAsset jsonFile;
     public AudioSource bgmSource;
@@ -52,6 +58,9 @@ public class SingingManager : MonoBehaviour {
     public float multiplier = 2.0f; 
     private float[] _errorHistory;
 
+    private uint _playingID = 0;
+    private bool _isPaused = false; 
+
     private List<string> _songList = new List<string>();
 
     public void Start(){
@@ -64,7 +73,8 @@ public class SingingManager : MonoBehaviour {
 
     public void StartGame(string jsonRelativePath, string mp3RelativePath) {
         StopAllCoroutines();
-        bgmSource.Stop();
+        // bgmSource.Stop();
+        _playingID = bgmEvent.Post(wwiseAudioObject);
         if (micInput != null && micInput.testVocalSource != null) micInput.testVocalSource.Stop();
 
         Debug.Log($"<color=blue>開始載入歌曲資源...</color>\nJSON 路徑: {jsonRelativePath}\n");
@@ -74,7 +84,7 @@ public class SingingManager : MonoBehaviour {
     void LoadSongFolders() {
         Debug.Log("找到歌曲數量: " + _songList.Count);
         string fullPath = Path.Combine(Application.dataPath, "StreamingAssets/Songs");
-        
+
         if (Directory.Exists(fullPath)) {
             Debug.Log(fullPath  + " 內的資料夾:");
             string[] dirs = Directory.GetDirectories(fullPath, "*"); 
@@ -111,13 +121,24 @@ public class SingingManager : MonoBehaviour {
             }
         }, AudioType.WAV));
 
-        if (_data != null && bgmSource.clip != null) {
+        if (_data != null) {
+            _currentIndex = 0;
+            _hasFinished = false;
+
             CalculateSongRange();
             SpawnPitchLines();
 
-            bgmSource.Play();
-            if (micInput != null && micInput.useSimulatedVocal && micInput.testVocalSource != null) {
-                micInput.testVocalSource.Play();
+            // --- Wwise 播放取代 bgmSource.Play() ---
+            if (bgmEvent.IsValid()) {
+                bgmEvent.Post(wwiseAudioObject); 
+                Debug.Log("<color=cyan>Wwise BGM Event Posted!</color>");
+            } else {
+                Debug.LogError("Wwise BGM Event 未設定或無效！");
+            }
+
+            // 如果有模擬人聲
+            if (micInput != null && micInput.useSimulatedVocal) {
+                vocalEvent.Post(wwiseAudioObject);
             }
         }
     }
@@ -125,7 +146,7 @@ public class SingingManager : MonoBehaviour {
     private IEnumerator LoadAudio(string url, System.Action<AudioClip> callback, AudioType type = AudioType.WAV) {
         // 處理 URL 中的空格，避免 404 或格式錯誤
         string sanitizedUrl = url.Replace(" ", "%20");
-        
+
         using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(sanitizedUrl, type)) {
             yield return www.SendWebRequest();
 
@@ -140,27 +161,14 @@ public class SingingManager : MonoBehaviour {
             }
         }
     }
-
-    // void SpawnPitchLines() {
-    //     GameObject lineObj = Instantiate(pitchLinePrefab, lineContainer);
-    //     LineRenderer lr = lineObj.GetComponent<LineRenderer>();
-
-    //     lr.useWorldSpace = false; 
-        
-    //     lr.positionCount = _data.frames.Count;
-    //     for (int i = 0; i < _data.frames.Count; i++) {
-    //         Vector3 pos = new Vector3(_data.frames[i].t * timeScale, _data.frames[i].m * pitchScale, 0);
-    //         lr.SetPosition(i, pos);
-    //     }
-    // }
     void SpawnPitchLines() {
         foreach (Transform child in lineContainer) Destroy(child.gameObject);
 
         GameObject lineObj = Instantiate(pitchLinePrefab, lineContainer);
         LineRenderer lr = lineObj.GetComponent<LineRenderer>();
 
-        Debug.Log("lineContainer位置: " + lineContainer.position);
-        
+        // Debug.Log("lineContainer位置: " + lineContainer.position);
+
         // lr.useWorldSpace = false; 
 
         lr.positionCount = _data.frames.Count;
@@ -175,17 +183,31 @@ public class SingingManager : MonoBehaviour {
     }
 
     void Update() {
-        if (bgmSource == null || !bgmSource.isPlaying) return;
-        float currentTime = bgmSource.time;
-        float totalDuration = bgmSource.clip.length;
+        // --- Wwise 播放狀態檢查 ---
+        if (_playingID == 0) return;
 
-        if (currentTime >= totalDuration - 0.1f) {
+        // 取得 Wwise 目前播放位置 (單位：毫秒 ms)
+        int out_ms;
+        AKRESULT res = AkSoundEngine.GetSourcePlayPosition(_playingID, out out_ms);
+        
+        // 如果 Wwise 沒在跑或是讀不到位置，就 return
+        if (res != AKRESULT.AK_Success) return;
+
+        float currentTime = out_ms / 1000f; // 轉為秒，對接你原本的 JSON 時間
+        
+        // 總長度檢查 (如果你 Wwise Event 有設定長度，也可以手動填入)
+        // 這裡暫時維持原本 logic，但注意 Wwise 不直接提供 clip.length
+        float totalDuration = (_data.frames.Count > 0) ? _data.frames[_data.frames.Count - 1].t : 999f;
+
+        if (currentTime >= totalDuration - 0.1f && !_hasFinished) {
             OnSongFinished();
             return;
         }
 
+        // --- 以下邏輯與你原本的基本一致，確保座標正確 ---
         lineContainer.position = Vector3.zero;
 
+        // 更新索引：根據 Wwise 時間找到現在該唱哪一個點
         while (_currentIndex < _data.frames.Count && _data.frames[_currentIndex].t < currentTime) {
             _currentIndex++;
         }
@@ -198,7 +220,7 @@ public class SingingManager : MonoBehaviour {
             float userMidi = (rawUserMidi > 0) ? (rawUserMidi * midiMultiplier) + midiOffset : 0;
 
             if (playerIndicator != null) {
-                if (userMidi > 0 || _hideTimer > 0) { // 加入緩衝判斷
+                if (userMidi > 0 || _hideTimer > 0) {
                     _hideTimer = hideDelay; 
                     playerIndicator.gameObject.SetActive(true);
 
@@ -207,6 +229,7 @@ public class SingingManager : MonoBehaviour {
                     if (_currentVisualMidi <= 0) _currentVisualMidi = clampedMidi;
                     _currentVisualMidi = Mathf.Lerp(_currentVisualMidi, clampedMidi, Time.deltaTime * smoothSpeed);
 
+                    // 讓 Indicator 留在 X = 0 (或你設定的 indicatorXPosition)，Y 軸反應音高
                     playerIndicator.position = new Vector3(indicatorXPosition, _currentVisualMidi * pitchScale, 0);
                     EvaluateScore(targetMidi, _currentVisualMidi); 
                     
@@ -249,7 +272,7 @@ public class SingingManager : MonoBehaviour {
         float diff = Mathf.Abs(target - user);
         float framePoint = 0f;
         // Debug.Log($"目標 MIDI: {target:F2}, 玩家 MIDI: {user:F2}, 差距: {diff:F2}");
-        
+
         if (diff < 1f) {
             framePoint = 100f;
             _totalCheckedFrames++;
@@ -296,7 +319,7 @@ public class SingingManager : MonoBehaviour {
         _hasFinished = true;
 
         UnityEngine.Debug.Log("<color=orange>🎵 音樂播放完畢！進入結算畫面</color>");
-        
+
         bgmSource.Stop();
         if (micInput != null && micInput.testVocalSource != null) {
             micInput.testVocalSource.Stop();
@@ -307,11 +330,11 @@ public class SingingManager : MonoBehaviour {
     void ShowFinalScore() {
         Debug.Log($"<color=orange>=== 演唱結束 ===</color>");
         Debug.Log($"<color=orange>最終得分: {currentTotalScore:F2} / 100</color>");
-        
+
         if (currentTotalScore > 85) Debug.Log("評語: 歌神降臨！");
         else if (currentTotalScore > 60) Debug.Log("評語: 唱得不錯喔！");
         else Debug.Log("評語: 再接再厲！");
-        
-        this.enabled = false; // 停止更新避免重複顯示
+
+        this.enabled = false;
     }
 }
