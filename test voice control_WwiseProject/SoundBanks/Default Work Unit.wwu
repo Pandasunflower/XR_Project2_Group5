@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2571A23F-8183-4845-82A4-E8ECB1A2118A}" SchemaVersion="133">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{2571A23F-8183-4845-82A4-E8ECB1A2118A}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="mainbank" ID="{5460ADC1-BFD3-4E3B-B379-EE4D9D92881B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="" ID="{54FDB143-4683-4098-8BFD-72605C8ADF6A}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{EB60C23B-64F3-4281-A32B-C0B653662B4A}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{1DC6F4A4-9A35-42B8-92AF-FE389DCA47F0}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{F2CB0C9E-143C-4424-B91A-33B7C7F1A0B0}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{5B3CF7F6-BBC1-46D5-AD49-AEEB2856A18C}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{FD62B2B5-A0BC-4700-98EF-CB653F7FC161}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{8B3AF93F-7904-4905-B69B-9D05C4FC64C3}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{27EB1D6A-1A71-4B18-87CE-5454BCC5E89F}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{D27B9F6A-A5F6-4C4D-953F-81B8114A7000}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

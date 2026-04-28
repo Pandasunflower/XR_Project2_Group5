@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3942408572",
+    "Type": "Event",
+    "GUID": "{1F4C0BF4-3F3F-4305-B202-8A5365719BEE}",
+    "Language": "English(US)",
+    "Hash": "{1E183E70-0AEC-4FD3-A276-8E0F3CC4D1B3}",
+    "ObjectPath": "Play_for_the_bgm",
+    "ShortName": "Play_for_the_bgm",
+    "Path": "Event/English(US)/Play_for_the_bgm.bnk",
+    "Media": [
+     {
+      "Id": "736415920",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "for the bgm.wav",
+      "Path": "Media/English(US)/736415920.wem",
+      "CachePath": "41/{41C63F15-056B-9B5E-2F6B-8A0BEDC5719A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3942408572",
+      "Name": "Play_for_the_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_for_the_bgm",
+      "GUID": "{1F4C0BF4-3F3F-4305-B202-8A5365719BEE}",
+      "DurationType": "OneShot",
+      "DurationMin": "133.03201",
+      "DurationMax": "133.03201",
+      "MediaRefs": [
+       {
+        "Id": "736415920"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{38C54D22-2E17-5CF2-E46D-9867AA9ED6D2}"
+ }
+}

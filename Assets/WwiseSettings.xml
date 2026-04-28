@@ -13,7 +13,7 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>C:\Audiokinetic\Wwise2025.1.7.9143</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../../../../../../test voice control/test voice control_WwiseProject/test voice control_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../test voice control_WwiseProject/test voice control_WwiseProject.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

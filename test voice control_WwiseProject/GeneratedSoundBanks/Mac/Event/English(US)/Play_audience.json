@@ -1,0 +1,56 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1245578140",
+    "Type": "Event",
+    "GUID": "{AC22A6A1-5F65-4ACE-A3BB-32DCD06D44D0}",
+    "Language": "English(US)",
+    "Hash": "{4021DA65-6289-E9E6-874C-B62C0D76319D}",
+    "ObjectPath": "Play_audience",
+    "ShortName": "Play_audience",
+    "Path": "Event/English(US)/Play_audience.bnk",
+    "Media": [
+     {
+      "Id": "986860528",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "第三版.wav",
+      "Path": "Media/English(US)/986860528.wem",
+      "CachePath": "A4/{A4F36AF8-DEF9-6139-4EC5-5D69B3D611BB}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1245578140",
+      "Name": "Play_audience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_audience",
+      "GUID": "{AC22A6A1-5F65-4ACE-A3BB-32DCD06D44D0}",
+      "DurationType": "OneShot",
+      "DurationMin": "264.8371",
+      "DurationMax": "264.8371",
+      "MediaRefs": [
+       {
+        "Id": "986860528"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{19170D01-D52F-3085-0F8F-8E19EB95F270}"
+ }
+}

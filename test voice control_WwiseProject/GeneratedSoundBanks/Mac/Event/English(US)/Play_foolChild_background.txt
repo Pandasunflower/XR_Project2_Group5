@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2530940211	Play_foolChild_background			\Default Work Unit\Play_foolChild_background	
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="172">
+	<SoundBanks>
+		<SoundBank Id="1245578140" Type="Event" GUID="{AC22A6A1-5F65-4ACE-A3BB-32DCD06D44D0}" Language="English(US)" Hash="{C3DD8A49-2D84-44C5-EC1A-B42935DF0AA3}">
+			<ObjectPath>Play_audience</ObjectPath>
+			<ShortName>Play_audience</ShortName>
+			<Path>Event/English(US)/Play_audience.bnk</Path>
+			<Media>
+				<File Id="986860528" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>第三版.wav</ShortName>
+					<Path>Media/English(US)/986860528.wem</Path>
+					<CachePath>A4/{A4F36AF8-DEF9-6139-4EC5-5D69B3D611BB}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1245578140" Name="Play_audience" ObjectPath="\Events\Default Work Unit\Play_audience" GUID="{AC22A6A1-5F65-4ACE-A3BB-32DCD06D44D0}" DurationType="OneShot" DurationMin="264.8371" DurationMax="264.8371">
+					<MediaRefs>
+						<MediaRef Id="986860528"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="1163235330" Name="mic_direct" ObjectPath="\Game Parameters\Default Work Unit\mic_direct" GUID="{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"/>
+				<GameParameter Id="2692235896" Name="mic_distance" ObjectPath="\Game Parameters\Default Work Unit\mic_distance" GUID="{094260AC-CB5C-43D8-A2CB-055CC6615208}"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{E8DEF2E0-CD20-8F3A-1D93-B9056BFDE375}</FileHash>
+</SoundBanksInfo>

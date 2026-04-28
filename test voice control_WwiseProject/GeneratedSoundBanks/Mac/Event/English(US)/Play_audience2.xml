@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="172">
+	<SoundBanks>
+		<SoundBank Id="2074062502" Type="Event" GUID="{C0D664F2-8676-4752-9A3E-85F2E420BB86}" Language="English(US)" Hash="{E2125D01-509F-7564-88F6-ECC733E19BA9}">
+			<ObjectPath>Play_audience2</ObjectPath>
+			<ShortName>Play_audience2</ShortName>
+			<Path>Event/English(US)/Play_audience2.bnk</Path>
+			<Media>
+				<File Id="2325055" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>第二版.wav</ShortName>
+					<Path>Media/English(US)/2325055.wem</Path>
+					<CachePath>7F/{7FCBB02A-9889-EB53-0A6E-2D2AF1C95EA7}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2074062502" Name="Play_audience2" ObjectPath="\Events\Default Work Unit\Play_audience2" GUID="{C0D664F2-8676-4752-9A3E-85F2E420BB86}" DurationType="OneShot" DurationMin="264.8371" DurationMax="264.8371">
+					<MediaRefs>
+						<MediaRef Id="2325055"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="658503054" Name="audience_pickup" ObjectPath="\Game Parameters\Default Work Unit\audience_pickup" GUID="{63331C15-0F86-42B0-8B64-7C7C81717607}"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{9C68B151-95CB-2547-1E9F-CE0D0C27A95B}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2733610967",
+    "Type": "Event",
+    "GUID": "{3F0E4D88-963B-4DF1-810B-45F061113D28}",
+    "Language": "English(US)",
+    "Hash": "{05A27A9E-ADB7-366D-DA81-5096A82EC943}",
+    "ObjectPath": "Play_ThreeDay_bgm",
+    "ShortName": "Play_ThreeDay_bgm",
+    "Path": "Event/English(US)/Play_ThreeDay_bgm.bnk",
+    "Media": [
+     {
+      "Id": "810760453",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜背景音.wav",
+      "Path": "Media/English(US)/810760453.wem",
+      "CachePath": "DA/{DA388426-A6E2-21E9-6A01-0EBDA8F696D7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2733610967",
+      "Name": "Play_ThreeDay_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDay_bgm",
+      "GUID": "{3F0E4D88-963B-4DF1-810B-45F061113D28}",
+      "DurationType": "OneShot",
+      "DurationMin": "282.288",
+      "DurationMax": "282.288",
+      "MediaRefs": [
+       {
+        "Id": "810760453"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A7C88692-69EB-750E-ED47-B23B86A27036}"
+ }
+}

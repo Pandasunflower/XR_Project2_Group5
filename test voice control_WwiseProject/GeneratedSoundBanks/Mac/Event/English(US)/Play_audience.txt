@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1245578140	Play_audience			\Default Work Unit\Play_audience	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1163235330	mic_direct			\Default Work Unit\mic_direct	
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="172">
+	<SoundBanks>
+		<SoundBank Id="2328321422" Type="Event" GUID="{834ACF5B-05B3-44F1-84E4-5FD52B26F987}" Language="English(US)" Hash="{13CB856B-4E99-057B-626F-BC1E956C4750}">
+			<ObjectPath>Play_OneGame_people</ObjectPath>
+			<ShortName>Play_OneGame_people</ShortName>
+			<Path>Event/English(US)/Play_OneGame_people.bnk</Path>
+			<Media>
+				<File Id="175530601" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>一場遊戲一場夢人聲.wav</ShortName>
+					<Path>Media/English(US)/175530601.wem</Path>
+					<CachePath>7D/{7DFC0B38-3EFF-E66C-1D02-72FDC81A06C5}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2328321422" Name="Play_OneGame_people" ObjectPath="\Events\Default Work Unit\Play_OneGame_people" GUID="{834ACF5B-05B3-44F1-84E4-5FD52B26F987}" DurationType="OneShot" DurationMin="180.53798" DurationMax="180.53798">
+					<MediaRefs>
+						<MediaRef Id="175530601"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="1163235330" Name="mic_direct" ObjectPath="\Game Parameters\Default Work Unit\mic_direct" GUID="{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"/>
+				<GameParameter Id="2692235896" Name="mic_distance" ObjectPath="\Game Parameters\Default Work Unit\mic_distance" GUID="{094260AC-CB5C-43D8-A2CB-055CC6615208}"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{D390F5C6-21C8-1720-C4F8-27A32FAB63E7}</FileHash>
+</SoundBanksInfo>

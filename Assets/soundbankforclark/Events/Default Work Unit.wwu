@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_for_the_anna" ID="{D4F1D62B-DAC9-4787-9023-E8C9B30D847A}">
+					<ChildrenList>
+						<Action Name="" ID="{8B3AF93F-7904-4905-B69B-9D05C4FC64C3}" ShortID="463482369">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="for the anna" ID="{B09938C9-0D08-4DB0-B0FB-7626E6230E8C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_for_the_bgm" ID="{1F4C0BF4-3F3F-4305-B202-8A5365719BEE}">
+					<ChildrenList>
+						<Action Name="" ID="{D27B9F6A-A5F6-4C4D-953F-81B8114A7000}" ShortID="813084986">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="for the bgm" ID="{E2272ADD-B98B-4EB1-8887-AA82FBA47E4C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_foolChild" ID="{1A1B1320-52CA-40B8-BC12-7C170075809B}">
+					<ChildrenList>
+						<Action Name="" ID="{5B3CF7F6-BBC1-46D5-AD49-AEEB2856A18C}" ShortID="318994042">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="foolchild" ID="{4D58824B-3F7F-407E-8B34-7CBF47A4B6AD}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_foolChild_background" ID="{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}">
+					<ChildrenList>
+						<Action Name="" ID="{54FDB143-4683-4098-8BFD-72605C8ADF6A}" ShortID="401045924">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="foolchildBGM" ID="{E020E97D-73C9-4D06-91C6-99884B4C4C58}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OneGame_people" ID="{834ACF5B-05B3-44F1-84E4-5FD52B26F987}">
+					<ChildrenList>
+						<Action Name="" ID="{FD62B2B5-A0BC-4700-98EF-CB653F7FC161}" ShortID="477868379">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="一場遊戲一場夢人聲" ID="{907E35FE-CA8E-42C8-82BB-1207E02E9429}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OneGame_bgm" ID="{C60CF5BC-8EAE-440C-8674-5A1E49FD3415}">
+					<ChildrenList>
+						<Action Name="" ID="{1DC6F4A4-9A35-42B8-92AF-FE389DCA47F0}" ShortID="508971313">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="一場遊戲一場夢背景音" ID="{6C16AB08-9274-40B2-A4A0-BB18E541A92D}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ThreeDay_people" ID="{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}">
+					<ChildrenList>
+						<Action Name="" ID="{F2CB0C9E-143C-4424-B91A-33B7C7F1A0B0}" ShortID="109233461">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="三天三夜 人生" ID="{E0F82D59-2E13-46F5-A633-AE118AC68FD3}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ThreeDay_bgm" ID="{3F0E4D88-963B-4DF1-810B-45F061113D28}">
+					<ChildrenList>
+						<Action Name="" ID="{EB60C23B-64F3-4281-A32B-C0B653662B4A}" ShortID="700080990">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="三天三夜背景音" ID="{08557C71-7119-4D9F-AB76-E0303A607E59}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_audience" ID="{AC22A6A1-5F65-4ACE-A3BB-32DCD06D44D0}">
+					<ChildrenList>
+						<Action Name="" ID="{27EB1D6A-1A71-4B18-87CE-5454BCC5E89F}" ShortID="633324002">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="第三版" ID="{7833A7DE-39FE-46CF-B238-403FE4A96DA0}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

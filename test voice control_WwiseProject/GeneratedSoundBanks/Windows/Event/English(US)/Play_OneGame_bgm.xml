@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="172">
+	<SoundBanks>
+		<SoundBank Id="310033319" Type="Event" GUID="{C60CF5BC-8EAE-440C-8674-5A1E49FD3415}" Language="English(US)" Hash="{E6AA0526-4732-AC10-828B-B2F7FF2A5B38}">
+			<ObjectPath>Play_OneGame_bgm</ObjectPath>
+			<ShortName>Play_OneGame_bgm</ShortName>
+			<Path>Event/English(US)/Play_OneGame_bgm.bnk</Path>
+			<Media>
+				<File Id="942091088" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>一場遊戲一場夢背景音.wav</ShortName>
+					<Path>Media/English(US)/942091088.wem</Path>
+					<CachePath>16/{16230191-4D7D-ABA1-35BE-4C2B71F77D1B}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="310033319" Name="Play_OneGame_bgm" ObjectPath="\Events\Default Work Unit\Play_OneGame_bgm" GUID="{C60CF5BC-8EAE-440C-8674-5A1E49FD3415}" DurationType="OneShot" DurationMin="180.53798" DurationMax="180.53798">
+					<MediaRefs>
+						<MediaRef Id="942091088"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{DF07B1F9-D7E6-1F5E-6E30-402D3A434DC6}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2074062502	Play_audience2			\Default Work Unit\Play_audience2	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	658503054	audience_pickup			\Default Work Unit\audience_pickup	
+

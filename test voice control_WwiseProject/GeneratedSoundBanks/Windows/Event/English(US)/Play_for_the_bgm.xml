@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="172">
+	<SoundBanks>
+		<SoundBank Id="3942408572" Type="Event" GUID="{1F4C0BF4-3F3F-4305-B202-8A5365719BEE}" Language="English(US)" Hash="{1E183E70-0AEC-4FD3-A276-8E0F3CC4D1B3}">
+			<ObjectPath>Play_for_the_bgm</ObjectPath>
+			<ShortName>Play_for_the_bgm</ShortName>
+			<Path>Event/English(US)/Play_for_the_bgm.bnk</Path>
+			<Media>
+				<File Id="736415920" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>for the bgm.wav</ShortName>
+					<Path>Media/English(US)/736415920.wem</Path>
+					<CachePath>41/{41C63F15-056B-9B5E-2F6B-8A0BEDC5719A}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3942408572" Name="Play_for_the_bgm" ObjectPath="\Events\Default Work Unit\Play_for_the_bgm" GUID="{1F4C0BF4-3F3F-4305-B202-8A5365719BEE}" DurationType="OneShot" DurationMin="133.03201" DurationMax="133.03201">
+					<MediaRefs>
+						<MediaRef Id="736415920"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{D2279C06-92C9-6005-B31A-06CA9B1C04A9}</FileHash>
+</SoundBanksInfo>

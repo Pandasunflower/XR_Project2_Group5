@@ -1,0 +1,62 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1286022046",
+    "Type": "Event",
+    "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
+    "Language": "English(US)",
+    "Hash": "{C2E6FBE4-98D0-9C17-5302-11F00986185D}",
+    "ObjectPath": "Play_ThreeDay_people",
+    "ShortName": "Play_ThreeDay_people",
+    "Path": "Event/English(US)/Play_ThreeDay_people.bnk",
+    "Media": [
+     {
+      "Id": "948265681",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜 人生.wav",
+      "Path": "Media/English(US)/948265681.wem",
+      "CachePath": "75/{752F81DA-D9AD-6EDF-FB78-884028849013}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1286022046",
+      "Name": "Play_ThreeDay_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDay_people",
+      "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
+      "DurationType": "OneShot",
+      "DurationMin": "264.7307",
+      "DurationMax": "264.7307",
+      "MediaRefs": [
+       {
+        "Id": "948265681"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{DFD89CA5-B38B-4380-7C52-9B0A247A2DF0}"
+ }
+}
