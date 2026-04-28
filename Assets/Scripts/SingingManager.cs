@@ -8,13 +8,13 @@ using Debug = UnityEngine.Debug;
 public class SingingManager : MonoBehaviour {
 
     [Header("Wwise Settings")]
-    public AK.Wwise.Event bgmEvent;
-    public AK.Wwise.Event vocalEvent;
-    public GameObject wwiseAudioObject;
+    // public AK.Wwise.Event bgmEvent;
+    // public AK.Wwise.Event vocalEvent;
+    // public GameObject wwiseAudioObject;
 
     [Header("Settings")]
     public TextAsset jsonFile;
-    public AudioSource bgmSource;
+    // public AudioSource bgmSource;  // 暂时禁用音频播放
     public float timeScale = 2.0f;
     public float pitchScale = 0.5f;
     public Vector3 positionOffset;
@@ -58,10 +58,12 @@ public class SingingManager : MonoBehaviour {
     public float multiplier = 2.0f; 
     private float[] _errorHistory;
 
-    private uint _playingID = 0;
+    // private uint _playingID = 0;  // Wwise 暂时禁用
     private bool _isPaused = false; 
 
     private List<string> _songList = new List<string>();
+    
+    private float _testTime = 0f;  // 测试时间推进
 
     public void Start(){
         LoadSongFolders();
@@ -74,8 +76,8 @@ public class SingingManager : MonoBehaviour {
     public void StartGame(string jsonRelativePath, string mp3RelativePath) {
         StopAllCoroutines();
         // bgmSource.Stop();
-        _playingID = bgmEvent.Post(wwiseAudioObject);
-        if (micInput != null && micInput.testVocalSource != null) micInput.testVocalSource.Stop();
+        // _playingID = bgmEvent.Post(wwiseAudioObject);
+        // if (micInput != null && micInput.testVocalSource != null) micInput.testVocalSource.Stop();
 
         Debug.Log($"<color=blue>開始載入歌曲資源...</color>\nJSON 路徑: {jsonRelativePath}\n");
         StartCoroutine(LoadSongResources(jsonRelativePath, mp3RelativePath));
@@ -107,19 +109,20 @@ public class SingingManager : MonoBehaviour {
             yield break; 
         }
 
-        string bgmPath = Path.Combine(Application.dataPath, folderPath, "bgm.wav").Replace("\\", "/");
-        string bgmUrl = "file://" + bgmPath;
-        yield return StartCoroutine(LoadAudio(bgmUrl, (clip) => {
-            bgmSource.clip = clip;
-        }, AudioType.WAV));
+        // 暂时注释音频加载
+        // string bgmPath = Path.Combine(Application.dataPath, folderPath, "bgm.wav").Replace("\\", "/");
+        // string bgmUrl = "file://" + bgmPath;
+        // yield return StartCoroutine(LoadAudio(bgmUrl, (clip) => {
+        //     bgmSource.clip = clip;
+        // }, AudioType.WAV));
 
-        string vocalPath = Path.Combine(Application.dataPath, folderPath, "vocal.wav").Replace("\\", "/");
-        string vocalUrl = "file://" + vocalPath;
-        yield return StartCoroutine(LoadAudio(vocalUrl, (clip) => {
-            if (micInput != null && micInput.testVocalSource != null) {
-                micInput.testVocalSource.clip = clip;
-            }
-        }, AudioType.WAV));
+        // string vocalPath = Path.Combine(Application.dataPath, folderPath, "vocal.wav").Replace("\\", "/");
+        // string vocalUrl = "file://" + vocalPath;
+        // yield return StartCoroutine(LoadAudio(vocalUrl, (clip) => {
+        //     if (micInput != null && micInput.testVocalSource != null) {
+        //         micInput.testVocalSource.clip = clip;
+        //     }
+        // }, AudioType.WAV));
 
         if (_data != null) {
             _currentIndex = 0;
@@ -127,19 +130,21 @@ public class SingingManager : MonoBehaviour {
 
             CalculateSongRange();
             SpawnPitchLines();
+            
+            Debug.Log($"<color=cyan>[JSON 成功載入] 共 {_data.frames.Count} 個音高點，總時長: {_data.frames[_data.frames.Count - 1].t:F2} 秒</color>");
 
             // --- Wwise 播放取代 bgmSource.Play() ---
-            if (bgmEvent.IsValid()) {
-                bgmEvent.Post(wwiseAudioObject); 
-                Debug.Log("<color=cyan>Wwise BGM Event Posted!</color>");
-            } else {
-                Debug.LogError("Wwise BGM Event 未設定或無效！");
-            }
+            // if (bgmEvent.IsValid()) {
+            //     bgmEvent.Post(wwiseAudioObject); 
+            //     Debug.Log("<color=cyan>Wwise BGM Event Posted!</color>");
+            // } else {
+            //     Debug.LogError("Wwise BGM Event 未設定或無效！");
+            // }
 
             // 如果有模擬人聲
-            if (micInput != null && micInput.useSimulatedVocal) {
-                vocalEvent.Post(wwiseAudioObject);
-            }
+            // if (micInput != null && micInput.useSimulatedVocal) {
+            //     vocalEvent.Post(wwiseAudioObject);
+            // }
         }
     }
 
@@ -183,25 +188,27 @@ public class SingingManager : MonoBehaviour {
     }
 
     void Update() {
-        // --- Wwise 播放狀態檢查 ---
-        if (_playingID == 0) return;
+        // --- Wwise 播放狀態檢查（暂时禁用）---
+        // if (_playingID == 0) return;
 
-        // 取得 Wwise 目前播放位置 (單位：毫秒 ms)
-        int out_ms;
-        AKRESULT res = AkSoundEngine.GetSourcePlayPosition(_playingID, out out_ms);
+        // // 取得 Wwise 目前播放位置 (單位：毫秒 ms)
+        // int out_ms;
+        // AKRESULT res = AkSoundEngine.GetSourcePlayPosition(_playingID, out out_ms);
+        // 
+        // // 如果 Wwise 沒在跑或是讀不到位置，就 return
+        // // if (res != AKRESULT.AK_Success) return;
+
+        // float currentTime = out_ms / 1000f; // 轉為秒，對接你原本的 JSON 時間
+        _testTime += Time.deltaTime;  // 測試用：時間推進
+        float currentTime = _testTime;
         
-        // 如果 Wwise 沒在跑或是讀不到位置，就 return
-        if (res != AKRESULT.AK_Success) return;
-
-        float currentTime = out_ms / 1000f; // 轉為秒，對接你原本的 JSON 時間
-        
-        // 總長度檢查 (如果你 Wwise Event 有設定長度，也可以手動填入)
-        // 這裡暫時維持原本 logic，但注意 Wwise 不直接提供 clip.length
-        float totalDuration = (_data.frames.Count > 0) ? _data.frames[_data.frames.Count - 1].t : 999f;
-
-        if (currentTime >= totalDuration - 0.1f && !_hasFinished) {
-            OnSongFinished();
-            return;
+        // 檢查是否超過總時長
+        if (_data != null) {
+            float totalDuration = (_data.frames.Count > 0) ? _data.frames[_data.frames.Count - 1].t : 999f;
+            if (currentTime >= totalDuration - 0.1f && !_hasFinished) {
+                OnSongFinished();
+                return;
+            }
         }
 
         // --- 以下邏輯與你原本的基本一致，確保座標正確 ---
@@ -246,8 +253,16 @@ public class SingingManager : MonoBehaviour {
     }
 
     void UpdatePitchWindow(float currentTime) {
+        if (_data == null || _data.frames.Count == 0) {
+            Debug.LogWarning("_data 或 frames 为空！");
+            return;
+        }
+
         LineRenderer lr = lineContainer.GetComponentInChildren<LineRenderer>();
-        if (lr == null) return;
+        if (lr == null) {
+            Debug.LogWarning("找不到 LineRenderer！");
+            return;
+        }
 
         float windowStart = currentTime - 2.0f;
         float windowEnd = currentTime + 5.0f;
@@ -263,8 +278,15 @@ public class SingingManager : MonoBehaviour {
             }
         }
 
-        lr.positionCount = windowPoints.Count;
-        lr.SetPositions(windowPoints.ToArray());
+        if (windowPoints.Count > 0) {
+            lr.positionCount = windowPoints.Count;
+            lr.SetPositions(windowPoints.ToArray());
+        }
+        
+        // 調試：每秒打印一次
+        if ((int)currentTime % 3 == 0 && (int)currentTime != (int)(currentTime - Time.deltaTime)) {
+            Debug.Log($"[UpdatePitchWindow] currentTime={currentTime:F2}, 窗口點數={windowPoints.Count}, 窗口範圍=[{windowStart:F2}, {windowEnd:F2}]");
+        }
     }
 
     void EvaluateScore(float target, float user) {
@@ -318,12 +340,12 @@ public class SingingManager : MonoBehaviour {
         if (_hasFinished) return;
         _hasFinished = true;
 
-        UnityEngine.Debug.Log("<color=orange>🎵 音樂播放完畢！進入結算畫面</color>");
+        UnityEngine.Debug.Log("<color=orange>🎵 演唱完畢！進入結算畫面</color>");
 
-        bgmSource.Stop();
-        if (micInput != null && micInput.testVocalSource != null) {
-            micInput.testVocalSource.Stop();
-        }
+        // bgmSource.Stop();  // 音频播放已禁用
+        // if (micInput != null && micInput.testVocalSource != null) {
+        //     micInput.testVocalSource.Stop();
+        // }
         ShowFinalScore(); 
     }
 
