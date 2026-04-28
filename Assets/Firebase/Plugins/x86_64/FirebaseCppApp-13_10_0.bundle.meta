@@ -1,81 +1,73 @@
 fileFormatVersion: 2
-guid: c497e3d71dd84767a743206711828696
+guid: 23ea0459d30c548e3a8e79ebf00e9cc3
 labels:
 - gvh
-- gvh_version-13.10.0
-- gvhp_exportpath-Firebase/Plugins/x86_64/FirebaseCppApp-13_10_0.bundle
-timeCreated: 1480838400
 PluginImporter:
-  serializedVersion: 1
+  externalObjects: {}
+  serializedVersion: 2
   iconMap: {}
   executionOrder: {}
+  defineConstraints: []
   isPreloaded: 0
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
   platformData:
-    Android:
+  - first:
+      : Any
+    second:
       enabled: 0
       settings:
-        CPU: AnyCPU
-    Any:
-      enabled: 0
-      settings: {}
-    Editor:
+        Exclude Android: 0
+        Exclude Editor: 0
+        Exclude Linux64: 0
+        Exclude OSXUniversal: 0
+        Exclude Win: 0
+        Exclude Win64: 0
+  - first:
+      Android: Android
+    second:
       enabled: 1
       settings:
-        CPU: AnyCPU
-        DefaultValueInitialized: true
-        OS: AnyOS
-    Linux:
-      enabled: 0
-      settings:
-        CPU: None
-    Linux64:
-      enabled: 0
-      settings:
-        CPU: None
-    LinuxUniversal:
-      enabled: 0
-      settings:
-        CPU: None
-    OSXIntel:
-      enabled: 0
-      settings:
-        CPU: None
-    OSXIntel64:
+        AndroidSharedLibraryType: Executable
+        CPU: ARMv7
+  - first:
+      Any: 
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
       enabled: 1
       settings:
         CPU: x86_64
-    OSXUniversal:
+        DefaultValueInitialized: true
+        OS: AnyOS
+  - first:
+      Standalone: Linux64
+    second:
       enabled: 1
       settings:
         CPU: AnyCPU
-    Web:
-      enabled: 0
-      settings: {}
-    WebStreamed:
-      enabled: 0
-      settings: {}
-    Win:
-      enabled: 0
-      settings:
-        CPU: None
-    Win64:
-      enabled: 0
-      settings:
-        CPU: None
-    WindowsStoreApps:
-      enabled: 0
+  - first:
+      Standalone: OSXUniversal
+    second:
+      enabled: 1
       settings:
         CPU: AnyCPU
-    iOS:
-      enabled: 0
+  - first:
+      Standalone: Win
+    second:
+      enabled: 1
       settings:
-        CompileFlags:
-        FrameworkDependencies:
-    tvOS:
-      enabled: 0
+        CPU: None
+  - first:
+      Standalone: Win64
+    second:
+      enabled: 1
       settings:
-        CompileFlags:
-        FrameworkDependencies:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+        CPU: x86_64
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
