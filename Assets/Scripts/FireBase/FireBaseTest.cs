@@ -4,6 +4,8 @@ using UnityEngine;
 using Firebase.Firestore;
 using Firebase.Extensions;
 using TMPro;
+using Unity.Mathematics;
+using Unity.VisualScripting;
 
 public class FirestoreTest : MonoBehaviour
 {
@@ -11,7 +13,11 @@ public class FirestoreTest : MonoBehaviour
 
     Dictionary<string, GameObject> playerCubes = new Dictionary<string, GameObject>();
     public GameObject cubePrefab;
+    public GameObject cubePrefab2;
     public TextMeshPro resultText;
+    public int stage = 1; //1: stage1, 3: stage3
+
+    public Transform[] NPCpos;
 
     void Start()
     {
@@ -60,6 +66,16 @@ public class FirestoreTest : MonoBehaviour
         {
             SetGameState("l3_end");
         }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            SetOption(1);
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            SetOption(2);
+        }
     }
 
     public void SetGameState(string state)
@@ -80,6 +96,21 @@ public class FirestoreTest : MonoBehaviour
         if (state == "l1_end") CalculateAverageLevel1();
     }
 
+    public void SetOption(int option)
+    {
+        DocumentReference docRef = db.Collection("game").Document("option");
+
+        Dictionary<string, object> data = new Dictionary<string, object>
+        {
+            { "value", option }
+        };
+
+        docRef.SetAsync(data).ContinueWithOnMainThread(task =>
+        {
+            Debug.Log("Option changed to: " + option);
+        });
+    }
+
     void ListenPlayers()
     {
         db.Collection("players").Listen(snapshot =>
@@ -91,7 +122,10 @@ public class FirestoreTest : MonoBehaviour
 
                 if (change.ChangeType == DocumentChange.Type.Added)
                 {
-                    SpawnPlayer(id, data);
+                    if (stage == 1)
+                        SpawnPlayer(id, data);
+                    else if (stage == 3)
+                        SpawnPlayer2(id, data);
                 }
 
                 if (change.ChangeType == DocumentChange.Type.Modified)
@@ -103,6 +137,26 @@ public class FirestoreTest : MonoBehaviour
     }
 
     void SpawnPlayer(string id, IDictionary<string, object> data)
+    {
+        int index = playerCubes.Count;
+
+        Vector3 spawnPos = NPCpos[index].position; // 每個間隔2
+
+        quaternion rot = Quaternion.Euler(0, 180, 0);
+
+        GameObject cube = Instantiate(cubePrefab, spawnPos, rot);
+
+        cube.name = id;
+
+        playerCubes[id] = cube;
+
+        TextMeshPro text = cube.GetComponentInChildren<TextMeshPro>();
+        text.text = data["name"].ToString();
+
+        Debug.Log("Spawn player: " + id);
+    }
+
+    void SpawnPlayer2(string id, IDictionary<string, object> data)
     {
         int index = playerCubes.Count;
 
@@ -212,7 +266,7 @@ public class FirestoreTest : MonoBehaviour
         // 第一階段：亂數跳動
         for (int i = 0; i < 30; i++)
         {
-            int random = Random.Range(1, 11);
+            int random = UnityEngine.Random.Range(1, 11);
 
             ShowResult(random);
 
@@ -222,7 +276,7 @@ public class FirestoreTest : MonoBehaviour
         }
 
         // 第二階段：接近目標
-        int start = Random.Range(1, 6);
+        int start = UnityEngine.Random.Range(1, 6);
 
         for (int i = start; i <= targetInt; i++)
         {
