@@ -21,7 +21,7 @@
    "SourceControlGeneratedFiles": "false",
    "GenerateHeaderFile": "true",
    "GenerateContentTxtFile": "true",
-   "GenerateMetadataXML": "true",
+   "GenerateMetadataXML": "false",
    "GenerateMetadataJSON": "true",
    "GenerateAllBanksMetadata": "false",
    "GeneratePerBankMetadata": "true",
@@ -33,6 +33,6 @@
    "PrintObjectPath": "true",
    "PrintObjectColor": "true"
   },
-  "FileHash": "{587D50F8-0C8A-0312-DC38-2F2086241DD9}"
+  "FileHash": "{61F4A8B3-2F68-9200-90BE-7F34ED9AD44A}"
  }
 }

@@ -14,7 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AUDIENCE = 1245578140U;
-        static const AkUniqueID PLAY_AUDIENCE2 = 2074062502U;
         static const AkUniqueID PLAY_FOOLCHILD = 1746368468U;
         static const AkUniqueID PLAY_FOOLCHILD_BACKGROUND = 2530940211U;
         static const AkUniqueID PLAY_FOR_THE_ANNA = 2949967820U;

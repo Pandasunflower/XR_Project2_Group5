@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{AC22A6A1-5F65-4ACE-A3BB-32DCD06D44D0}",
     "Language": "English(US)",
-    "Hash": "{4021DA65-6289-E9E6-874C-B62C0D76319D}",
+    "Hash": "{C3DD8A49-2D84-44C5-EC1A-B42935DF0AA3}",
     "ObjectPath": "Play_audience",
     "ShortName": "Play_audience",
     "Path": "Event/English(US)/Play_audience.bnk",
@@ -47,10 +47,16 @@
       "Name": "mic_direct",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
       "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
      }
     ]
    }
   ],
-  "FileHash": "{19170D01-D52F-3085-0F8F-8E19EB95F270}"
+  "FileHash": "{3183A28B-06E1-8E3B-0A28-E0C8D7F192C7}"
  }
 }
