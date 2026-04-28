@@ -1,0 +1,268 @@
+using System.Collections.Generic;
+using System.Collections;
+using UnityEngine;
+using Firebase.Firestore;
+using Firebase.Extensions;
+using TMPro;
+
+public class FirestoreTest : MonoBehaviour
+{
+    FirebaseFirestore db;
+
+    Dictionary<string, GameObject> playerCubes = new Dictionary<string, GameObject>();
+    public GameObject cubePrefab;
+    public TextMeshPro resultText;
+
+    void Start()
+    {
+        db = FirebaseFirestore.DefaultInstance;
+        ListenPlayers();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SetGameState("init");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SetGameState("l1_lobby");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SetGameState("l1_voting");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SetGameState("l1_end");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            SetGameState("l2");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            SetGameState("l3_lobby");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            SetGameState("l3_voting");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            SetGameState("l3_end");
+        }
+    }
+
+    public void SetGameState(string state)
+    {
+        DocumentReference docRef = db.Collection("game").Document("state");
+
+        Dictionary<string, object> data = new Dictionary<string, object>
+        {
+            { "value", state }
+        };
+
+        docRef.SetAsync(data).ContinueWithOnMainThread(task =>
+        {
+            Debug.Log("State changed to: " + state);
+        });
+
+        if (state == "init") ClearPlayers();
+        if (state == "l1_end") CalculateAverageLevel1();
+    }
+
+    void ListenPlayers()
+    {
+        db.Collection("players").Listen(snapshot =>
+        {
+            foreach (var change in snapshot.GetChanges())
+            {
+                string id = change.Document.Id;
+                var data = change.Document.ToDictionary();
+
+                if (change.ChangeType == DocumentChange.Type.Added)
+                {
+                    SpawnPlayer(id, data);
+                }
+
+                if (change.ChangeType == DocumentChange.Type.Modified)
+                {
+                    UpdatePlayer(id, data);
+                }
+            }
+        });
+    }
+
+    void SpawnPlayer(string id, IDictionary<string, object> data)
+    {
+        int index = playerCubes.Count;
+
+        Vector3 spawnPos = new Vector3(index * 2f, 0, 0); // 每個間隔2
+
+        GameObject cube = Instantiate(cubePrefab, spawnPos, Quaternion.identity);
+
+        cube.name = id;
+
+        playerCubes[id] = cube;
+
+        TextMeshPro text = cube.GetComponentInChildren<TextMeshPro>();
+        text.text = data["name"].ToString();
+
+        Debug.Log("Spawn player: " + id);
+    }
+
+    void UpdatePlayer(string id, IDictionary<string, object> data)
+    {
+        if (!playerCubes.ContainsKey(id)) return;
+
+        GameObject cube = playerCubes[id];
+
+        Renderer r = cube.GetComponentInChildren<Renderer>();
+
+        bool level1HasVoted = data.ContainsKey("level1HasVoted") && (bool)data["level1HasVoted"];
+        bool level3HasVoted = data.ContainsKey("level3HasVoted") &&(bool)data["level3HasVoted"];
+
+        if (level1HasVoted)
+        {
+            r.material.color = Color.red;
+        }
+
+        if (level3HasVoted)
+        {
+            r.material.color = Color.blue;
+        }
+    }
+
+    public void ClearPlayers()
+    {
+        db.Collection("players").GetSnapshotAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted || task.IsCanceled)
+            {
+                Debug.LogError("Failed to get players");
+                return;
+            }
+
+            QuerySnapshot snapshot = task.Result;
+
+            foreach (DocumentSnapshot doc in snapshot.Documents)
+            {
+                doc.Reference.DeleteAsync();
+            }
+
+            Debug.Log("All players deleted");
+        });
+    }
+
+    void CalculateAverageLevel1()
+    {
+        db.Collection("players").GetSnapshotAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted || task.IsCanceled)
+            {
+                Debug.LogError("Failed to get players");
+                return;
+            }
+
+            QuerySnapshot snapshot = task.Result;
+
+            float total = 0f;
+            int count = 0;
+
+            foreach (DocumentSnapshot doc in snapshot.Documents)
+            {
+                var data = doc.ToDictionary();
+
+                if (data.ContainsKey("level1"))
+                {
+                    float score = System.Convert.ToSingle(data["level1"]);
+
+                    if (score > 0)
+                    {
+                        total += score;
+                        count++;
+                    }
+                }
+            }
+
+            float average = count > 0 ? total / count : 0;
+            Debug.Log("平均分數: " + average);
+            StartCoroutine(ShowAnimatedResult(average));
+        });
+    }
+
+    void ShowResult(float avg)
+    {
+        resultText.text = avg.ToString("F1");
+    }
+
+    IEnumerator ShowAnimatedResult(float realScore)
+    {
+        int targetInt = Mathf.RoundToInt(realScore);
+
+        // 第一階段：亂數跳動
+        for (int i = 0; i < 30; i++)
+        {
+            int random = Random.Range(1, 11);
+
+            ShowResult(random);
+
+            float delay = Mathf.Lerp(0.015f, 0.18f, i / 30f);
+
+            yield return new WaitForSeconds(delay);
+        }
+
+        // 第二階段：接近目標
+        int start = Random.Range(1, 6);
+
+        for (int i = start; i <= targetInt; i++)
+        {
+            ShowResult(i);
+
+            yield return new WaitForSeconds(0.15f);
+        }
+
+        // 第三階段：顯示真實分數
+        yield return new WaitForSeconds(0.3f);
+
+        ShowResult(realScore);
+        yield return StartCoroutine(FinalPunchEffect());
+    }
+
+    IEnumerator FinalPunchEffect()
+    {
+        Transform t = resultText.transform; // 你的分數 UI
+        Vector3 original = Vector3.one;
+
+        // 放大
+        float time = 0;
+        while (time < 0.2f)
+        {
+            time += Time.deltaTime;
+            float scale = Mathf.Lerp(1f, 1.5f, time / 0.2f);
+            t.localScale = new Vector3(scale, scale, scale);
+            yield return null;
+        }
+
+        // 彈回
+        time = 0;
+        while (time < 0.15f)
+        {
+            time += Time.deltaTime;
+            float scale = Mathf.Lerp(1.5f, 1f, time / 0.15f);
+            t.localScale = new Vector3(scale, scale, scale);
+            yield return null;
+        }
+
+        t.localScale = original;
+    }
+}
