@@ -25,6 +25,7 @@ public class SingingManager : MonoBehaviour {
     public Transform lineContainer;
     public Transform playerIndicator;
     public MicrophoneInput micInput;
+    public AK.Wwise.Event akEvent;  // Wwise AkEvent 组件
 
     private SongPitchData _data;
     private int _currentIndex = 0;
@@ -66,6 +67,9 @@ public class SingingManager : MonoBehaviour {
     private float _testTime = 0f;  // 测试时间推进
 
     public void Start(){
+        // 注册 GameObject 到 Wwise
+        AkSoundEngine.RegisterGameObj(gameObject, gameObject.name);
+        
         LoadSongFolders();
         string selected = _songList[_currentIndex].Trim(); 
         string jsonPath = Path.Combine("StreamingAssets/Songs", selected, "pitch_data.json.txt");
@@ -130,6 +134,12 @@ public class SingingManager : MonoBehaviour {
 
             CalculateSongRange();
             SpawnPitchLines();
+            
+            // 启动 AkEvent
+            if (akEvent != null) {
+                akEvent.Post(gameObject);
+                Debug.Log("<color=cyan>[AkEvent] 已启动音乐播放</color>");
+            }
             
             Debug.Log($"<color=cyan>[JSON 成功載入] 共 {_data.frames.Count} 個音高點，總時長: {_data.frames[_data.frames.Count - 1].t:F2} 秒</color>");
 
@@ -342,6 +352,12 @@ public class SingingManager : MonoBehaviour {
 
         UnityEngine.Debug.Log("<color=orange>🎵 演唱完畢！進入結算畫面</color>");
 
+        // 停止 AkEvent
+        if (akEvent != null) {
+            akEvent.Stop(gameObject);
+            Debug.Log("<color=orange>[AkEvent] 已停止音乐播放</color>");
+        }
+        
         // bgmSource.Stop();  // 音频播放已禁用
         // if (micInput != null && micInput.testVocalSource != null) {
         //     micInput.testVocalSource.Stop();
@@ -358,5 +374,10 @@ public class SingingManager : MonoBehaviour {
         else Debug.Log("評語: 再接再厲！");
 
         this.enabled = false;
+    }
+
+    void OnDestroy() {
+        // 從 Wwise 注銷 GameObject
+        AkSoundEngine.UnregisterGameObj(gameObject);
     }
 }

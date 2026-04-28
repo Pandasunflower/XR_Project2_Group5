@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LobbySceneManager : MonoBehaviour
 {
@@ -21,12 +22,7 @@ public class LobbySceneManager : MonoBehaviour
 
     private void ExecuteTransition(string songName)
     {
-        // --- PLACEHOLDER FOR FUTURE IMPLEMENTATION ---
-        // 1. Save the 'songName' to a Static variable or ScriptableObject 
-        //    so the next scene knows what to load.
-        // 2. Call SceneManager.LoadScene("GameScene");
-        // 3. Handle loading screen animations.
-        
-        Debug.Log($"[SYSTEM] Transition logic for '{songName}' would execute here.");
+        Debug.Log($"[SceneManager] 準備加載 Stage1 場景，選定歌曲: {songName}");
+        SceneManager.LoadScene("Stage1");
     }
 }
