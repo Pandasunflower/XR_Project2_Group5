@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 242ae5ee5c4fcd0418370f23e094de16, type: 3}
+  m_Name: D4F1D62B-DAC9-4787-9023-E8C9B30D847A
+  m_EditorClassIdentifier: 
+  objectName: Play_for_the_anna
+  id: 2949967820
+  guid: D4F1D62B-DAC9-4787-9023-E8C9B30D847A
+  IsInUserDefinedSoundBank: 0

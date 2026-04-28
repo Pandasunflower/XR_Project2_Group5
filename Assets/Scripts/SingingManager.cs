@@ -11,6 +11,8 @@ public class SingingManager : MonoBehaviour {
     public AudioSource bgmSource;
     public float timeScale = 2.0f;
     public float pitchScale = 0.5f;
+    public Vector3 positionOffset;
+    public float pitchOffset = -60f;
 
     [Header("References")]
     public GameObject pitchLinePrefab;
@@ -139,13 +141,35 @@ public class SingingManager : MonoBehaviour {
         }
     }
 
+    // void SpawnPitchLines() {
+    //     GameObject lineObj = Instantiate(pitchLinePrefab, lineContainer);
+    //     LineRenderer lr = lineObj.GetComponent<LineRenderer>();
+
+    //     lr.useWorldSpace = false; 
+        
+    //     lr.positionCount = _data.frames.Count;
+    //     for (int i = 0; i < _data.frames.Count; i++) {
+    //         Vector3 pos = new Vector3(_data.frames[i].t * timeScale, _data.frames[i].m * pitchScale, 0);
+    //         lr.SetPosition(i, pos);
+    //     }
+    // }
     void SpawnPitchLines() {
+        foreach (Transform child in lineContainer) Destroy(child.gameObject);
+
         GameObject lineObj = Instantiate(pitchLinePrefab, lineContainer);
         LineRenderer lr = lineObj.GetComponent<LineRenderer>();
+
+        Debug.Log("lineContainer位置: " + lineContainer.position);
         
+        // lr.useWorldSpace = false; 
+
         lr.positionCount = _data.frames.Count;
         for (int i = 0; i < _data.frames.Count; i++) {
-            Vector3 pos = new Vector3(_data.frames[i].t * timeScale, _data.frames[i].m * pitchScale, 0);
+            float x = _data.frames[i].t * timeScale;
+            float y = (_data.frames[i].m + pitchOffset) * pitchScale;
+
+            Vector3 pos = new Vector3(x+positionOffset.x, y+positionOffset.y, 0) ;
+            
             lr.SetPosition(i, pos);
         }
     }
@@ -160,7 +184,7 @@ public class SingingManager : MonoBehaviour {
             return;
         }
 
-        lineContainer.position = Vector3.zero; 
+        lineContainer.position = Vector3.zero;
 
         while (_currentIndex < _data.frames.Count && _data.frames[_currentIndex].t < currentTime) {
             _currentIndex++;
