@@ -295,7 +295,7 @@ public class SingingManager : MonoBehaviour {
         
         // 調試：每秒打印一次
         if ((int)currentTime % 3 == 0 && (int)currentTime != (int)(currentTime - Time.deltaTime)) {
-            Debug.Log($"[UpdatePitchWindow] currentTime={currentTime:F2}, 窗口點數={windowPoints.Count}, 窗口範圍=[{windowStart:F2}, {windowEnd:F2}]");
+            // Debug.Log($"[UpdatePitchWindow] currentTime={currentTime:F2}, 窗口點數={windowPoints.Count}, 窗口範圍=[{windowStart:F2}, {windowEnd:F2}]");
         }
     }
 

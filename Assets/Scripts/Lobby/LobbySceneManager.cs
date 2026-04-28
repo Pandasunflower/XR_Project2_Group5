@@ -22,7 +22,13 @@ public class LobbySceneManager : MonoBehaviour
 
     private void ExecuteTransition(string songName)
     {
-        Debug.Log($"[SceneManager] 準備加載 Stage1 場景，選定歌曲: {songName}");
-        SceneManager.LoadScene("Stage1");
+        // 獲取選定歌曲的索引
+        int songIndex = songManager.GetSelectedSongIndex();
+        
+        // 根據索引決定加載 Stage1 或 Stage2
+        string sceneName = songIndex == 0 ? "pitchTest" : "Stage1";
+        
+        Debug.Log($"[SceneManager] 加載場景: {sceneName}，歌曲索引: {songIndex}，選定歌曲: {songName}");
+        SceneManager.LoadScene(sceneName);
     }
 }

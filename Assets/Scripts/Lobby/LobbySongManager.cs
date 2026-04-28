@@ -72,6 +72,11 @@ public class LobbySongManager : MonoBehaviour
         return songFolders[currentSelectedIndex];
     }
 
+    public int GetSelectedSongIndex()
+    {
+        return currentSelectedIndex;
+    }
+
     private void OnSelectionChanged()
     {
         Debug.Log($"[Lobby] Currently Selected: {songFolders[currentSelectedIndex]}");
