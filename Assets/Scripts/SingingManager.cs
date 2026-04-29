@@ -66,11 +66,21 @@ public class SingingManager : MonoBehaviour {
     
     private float _testTime = 0f;  // 测试时间推进
 
+    public FirestoreTest firestoreTest;
+
     public void Start(){
         // 注册 GameObject 到 Wwise
-        AkSoundEngine.RegisterGameObj(gameObject, gameObject.name);
+        AkUnitySoundEngine.RegisterGameObj(gameObject, gameObject.name);
         
         LoadSongFolders();
+        string selected = _songList[_currentIndex].Trim(); 
+        string jsonPath = Path.Combine("StreamingAssets/Songs", selected, "pitch_data.json.txt");
+        string folderPath = Path.Combine("StreamingAssets/Songs", selected);
+        // StartGame(jsonPath, folderPath);
+    }
+
+    public void realStartGame()
+    {
         string selected = _songList[_currentIndex].Trim(); 
         string jsonPath = Path.Combine("StreamingAssets/Songs", selected, "pitch_data.json.txt");
         string folderPath = Path.Combine("StreamingAssets/Songs", selected);
@@ -78,6 +88,7 @@ public class SingingManager : MonoBehaviour {
     }
 
     public void StartGame(string jsonRelativePath, string mp3RelativePath) {
+        
         StopAllCoroutines();
         // bgmSource.Stop();
         // _playingID = bgmEvent.Post(wwiseAudioObject);
@@ -366,18 +377,26 @@ public class SingingManager : MonoBehaviour {
     }
 
     void ShowFinalScore() {
+        firestoreTest.SetGameState("l1_voting");
         Debug.Log($"<color=orange>=== 演唱結束 ===</color>");
         Debug.Log($"<color=orange>最終得分: {currentTotalScore:F2} / 100</color>");
 
         if (currentTotalScore > 85) Debug.Log("評語: 歌神降臨！");
         else if (currentTotalScore > 60) Debug.Log("評語: 唱得不錯喔！");
         else Debug.Log("評語: 再接再厲！");
-
+        StartCoroutine(waitSeconds());
         this.enabled = false;
+    }
+
+    private IEnumerator waitSeconds()
+    {
+        yield return new WaitForSeconds(10f);
+        firestoreTest.SetGameState("l1_end");
+        firestoreTest.SetAllClapping();
     }
 
     void OnDestroy() {
         // 從 Wwise 注銷 GameObject
-        AkSoundEngine.UnregisterGameObj(gameObject);
+        AkUnitySoundEngine.UnregisterGameObj(gameObject);
     }
 }

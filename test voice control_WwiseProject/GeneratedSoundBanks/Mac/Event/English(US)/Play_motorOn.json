@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{E49946A0-81D0-4D24-8E8A-E41770703AD4}",
     "Language": "English(US)",
-    "Hash": "{C9D4DFF7-2077-C569-6D3F-1BCDB54B8CC2}",
+    "Hash": "{B15E80DE-8CB7-3E30-452E-A504FB1D1585}",
     "ObjectPath": "Play_motorOn",
     "ShortName": "Play_motorOn",
     "Path": "Event/English(US)/Play_motorOn.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{7D4BF2A9-0206-0669-E1B3-751671B4F495}"
+  "FileHash": "{B0BB5F55-B11F-0264-B8CA-001B71E96B51}"
  }
 }

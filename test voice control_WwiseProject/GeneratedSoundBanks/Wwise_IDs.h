@@ -37,6 +37,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID ACCIDENT = 1749433486U;
         static const AkUniqueID AUDIENCE_PICKUP = 658503054U;
         static const AkUniqueID MIC_DIRECT = 1163235330U;
         static const AkUniqueID MIC_DISTANCE = 2692235896U;
@@ -50,7 +51,9 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID ACCIDENTBUS = 2120751940U;
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
+        static const AkUniqueID SONGBUS = 1401307552U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

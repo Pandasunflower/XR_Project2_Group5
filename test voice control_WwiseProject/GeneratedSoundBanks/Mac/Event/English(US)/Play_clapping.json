@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{6790B5D1-392B-440E-9BEF-CBB1ED2862B1}",
     "Language": "English(US)",
-    "Hash": "{D00A8EDD-D0A6-7443-5EDD-A6469AE74A21}",
+    "Hash": "{16A4B695-387B-B869-4773-0073596A5249}",
     "ObjectPath": "Play_clapping",
     "ShortName": "Play_clapping",
     "Path": "Event/English(US)/Play_clapping.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{77C6C0C1-2A0F-5ADC-7AEE-B5CA806E6F1B}"
+  "FileHash": "{06BC7731-5C65-7767-9BB3-E2DCC69BB3A9}"
  }
 }
