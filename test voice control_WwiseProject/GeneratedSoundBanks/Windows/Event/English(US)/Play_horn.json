@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2956245481",
+    "Type": "Event",
+    "GUID": "{72052F8E-22CE-458C-9329-E6CD2921C343}",
+    "Language": "English(US)",
+    "Hash": "{CD59DD1E-652E-DADC-2372-3378C67B6AC9}",
+    "ObjectPath": "Play_horn",
+    "ShortName": "Play_horn",
+    "Path": "Event/English(US)/Play_horn.bnk",
+    "Media": [
+     {
+      "Id": "242180107",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "汽笛鬧場.wav",
+      "Path": "Media/English(US)/242180107.wem",
+      "CachePath": "D6/{D6C81F13-F7B8-41D5-3179-9871BFCA3A1E}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2956245481",
+      "Name": "Play_horn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_horn",
+      "GUID": "{72052F8E-22CE-458C-9329-E6CD2921C343}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.000771",
+      "DurationMax": "4.000771",
+      "MediaRefs": [
+       {
+        "Id": "242180107"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{AB4BF827-AE54-24FE-027C-2992F77B8A89}"
+ }
+}

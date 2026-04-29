@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 242ae5ee5c4fcd0418370f23e094de16, type: 3}
   m_Name: E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B
   m_EditorClassIdentifier: 
-  objectName: Play_ThreeDay_people
-  id: 1286022046
+  objectName: Play_ThreeDayThreeNight_people
+  id: 1319984948
   guid: E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B
   IsInUserDefinedSoundBank: 0

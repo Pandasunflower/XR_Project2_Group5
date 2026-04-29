@@ -222,6 +222,7 @@
 				</Sound>
 				<Sound Name="foolchildBGM" ID="{E020E97D-73C9-4D06-91C6-99884B4C4C58}" ShortID="196980530">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -247,6 +248,7 @@
 				</Sound>
 				<Sound Name="foolchild" ID="{4D58824B-3F7F-407E-8B34-7CBF47A4B6AD}" ShortID="753698663">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -437,6 +439,7 @@
 				</Sound>
 				<Sound Name="三天三夜 人生" ID="{E0F82D59-2E13-46F5-A633-AE118AC68FD3}" ShortID="860402079">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -627,6 +630,7 @@
 				</Sound>
 				<Sound Name="三天三夜背景音" ID="{08557C71-7119-4D9F-AB76-E0303A607E59}" ShortID="510115816">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -842,6 +846,7 @@
 				</Sound>
 				<Sound Name="一場遊戲一場夢_人聲" ID="{C3A4726F-13CD-4E0A-9A2C-83F19CC878B6}" ShortID="138044129">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -854,6 +859,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="一場遊戲一場夢_人聲" ID="{58DFCD4C-CC11-4707-92E3-36F70FB91DF0}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>English(US)</Language>
 							<AudioFile>一場遊戲一場夢_人聲.wav</AudioFile>
 							<MediaIDList>
@@ -1032,7 +1041,13 @@
 				</Sound>
 				<Sound Name="一場遊戲一場夢_背景音" ID="{16002C0B-5138-460F-8953-87CA33CF043F}" ShortID="237005748">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

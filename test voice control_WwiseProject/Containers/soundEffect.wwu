@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<Sound Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" ShortID="435951110">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -28,8 +29,9 @@
 						<ActiveSource Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{950A751E-8DD9-4924-9D7C-D001903988FC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="汽笛" ID="{7A5FF8E0-792A-4905-82FD-3418D166A089}" ShortID="451398648">
+				<Sound Name="汽笛鬧場" ID="{12236449-4CC6-470F-AE05-F88231D9AFA4}" ShortID="775918290">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -41,16 +43,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="汽笛" ID="{4F49F2E9-8AC4-4894-82BF-41B2D3CAB099}">
+						<AudioFileSource Name="汽笛鬧場" ID="{E73F090E-F412-4358-80CA-D3E0A7FB6B81}">
 							<Language>English(US)</Language>
-							<AudioFile>汽笛.wav</AudioFile>
+							<AudioFile>汽笛鬧場.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="876257395"/>
+								<MediaID ID="242180107"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="汽笛" ID="{4F49F2E9-8AC4-4894-82BF-41B2D3CAB099}" Platform="Linked"/>
+						<ActiveSource Name="汽笛鬧場" ID="{E73F090E-F412-4358-80CA-D3E0A7FB6B81}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

@@ -1,0 +1,62 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "560573542",
+    "Type": "Event",
+    "GUID": "{1A1B1320-52CA-40B8-BC12-7C170075809B}",
+    "Language": "English(US)",
+    "Hash": "{441B8BAA-F059-59F7-717A-2AF00EC19D8A}",
+    "ObjectPath": "Play_foolChild_people",
+    "ShortName": "Play_foolChild_people",
+    "Path": "Event/English(US)/Play_foolChild_people.bnk",
+    "Media": [
+     {
+      "Id": "588448560",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "笨小孩人生.wav",
+      "Path": "Media/English(US)/588448560.wem",
+      "CachePath": "94/{94DD3C11-7681-9093-5AF1-BFC8D8535094}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "560573542",
+      "Name": "Play_foolChild_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_foolChild_people",
+      "GUID": "{1A1B1320-52CA-40B8-BC12-7C170075809B}",
+      "DurationType": "OneShot",
+      "DurationMin": "150.5",
+      "DurationMax": "150.5",
+      "MediaRefs": [
+       {
+        "Id": "588448560"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{323C2DAE-09D3-28A2-E063-54FE28717CD9}"
+ }
+}
