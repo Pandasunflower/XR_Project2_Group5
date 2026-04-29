@@ -1,4 +1,6 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	1401307552	SongBus			\Default Work Unit\Main Audio Bus\SongBus	
+	2120751940	AccidentBus			\Default Work Unit\Main Audio Bus\AccidentBus	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{E1A68987-6AC7-48F5-BAF6-28E511938D94}",
     "Language": "English(US)",
-    "Hash": "{0E6B3AAB-1646-9962-8516-D457FEE5BA08}",
+    "Hash": "{68411B07-CF03-750E-4B13-081F438B6B33}",
     "ObjectPath": "Play_motorOff",
     "ShortName": "Play_motorOff",
     "Path": "Event/English(US)/Play_motorOff.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{5391DBFE-A12F-7D08-DF0C-71D59EFCFCA9}"
+  "FileHash": "{B5DF92F6-4705-BE1C-8EC6-5401B651BDB7}"
  }
 }

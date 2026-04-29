@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}",
     "Language": "English(US)",
-    "Hash": "{61A6BD8E-E0F1-C678-4B63-D58006DA6C1E}",
+    "Hash": "{6A05C01F-6E46-AD5F-57D4-DE030C5C817F}",
     "ObjectPath": "Play_foolChild_BGM",
     "ShortName": "Play_foolChild_BGM",
     "Path": "Event/English(US)/Play_foolChild_BGM.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{D4C40043-3A52-DF8A-BFE7-4DBCD771D5EF}"
+  "FileHash": "{974C6195-E91B-9CDE-F5E5-FBC0D2A607CB}"
  }
 }

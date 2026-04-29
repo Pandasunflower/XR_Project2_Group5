@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{59185CB8-C182-451B-8A67-CC5309B5A4B4}",
     "Language": "English(US)",
-    "Hash": "{55E70422-AAF2-0A2C-C6C6-62E154F4A325}",
+    "Hash": "{7EA0BC1A-5100-A95F-0BC5-B3C909901B47}",
     "ObjectPath": "Play_onPhone",
     "ShortName": "Play_onPhone",
     "Path": "Event/English(US)/Play_onPhone.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{99F83322-935E-5FFF-2B09-C947C42CB66F}"
+  "FileHash": "{97B2D521-A17F-5041-944E-9E7066D60783}"
  }
 }

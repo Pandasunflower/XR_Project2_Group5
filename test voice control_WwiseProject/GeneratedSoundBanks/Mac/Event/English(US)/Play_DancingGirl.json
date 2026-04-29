@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5EC2BBD7-962A-456A-8E86-68DAA8293C00}",
     "Language": "English(US)",
-    "Hash": "{321DD8D2-24DE-FD64-BDFC-FAE96B6640B9}",
+    "Hash": "{F0A17D56-5E9C-9B62-8FEA-14C8103E5D2F}",
     "ObjectPath": "Play_DancingGirl",
     "ShortName": "Play_DancingGirl",
     "Path": "Event/English(US)/Play_DancingGirl.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{63F8792C-0F27-A229-E349-FE44FE3A1331}"
+  "FileHash": "{A19C517B-0D06-91D8-A3CC-0301ABCB911F}"
  }
 }
