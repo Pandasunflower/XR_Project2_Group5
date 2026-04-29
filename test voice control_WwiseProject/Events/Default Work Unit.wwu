@@ -190,6 +190,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_clapping" ID="{6790B5D1-392B-440E-9BEF-CBB1ED2862B1}">
+					<ChildrenList>
+						<Action Name="" ID="{890C46EF-D629-4F22-840C-7FF38444E199}" ShortID="1024410379">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="clapping" ID="{DC780770-AE2E-4465-9670-A4573DD05FD1}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_waitingScore" ID="{E6A32843-0796-4165-9705-E9A684A6259B}">
+					<ChildrenList>
+						<Action Name="" ID="{C11B805A-D499-4021-B12E-D5658F18D88F}" ShortID="555179060">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="waitingScore" ID="{167805B0-9A31-48EB-898B-2381C12CD4B7}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

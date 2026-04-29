@@ -14,7 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ASKFORMONEY = 3118526426U;
-        static const AkUniqueID PLAY_AUDIENCE = 1245578140U;
+        static const AkUniqueID PLAY_CLAPPING = 2700014240U;
         static const AkUniqueID PLAY_DANCINGGIRL = 509118324U;
         static const AkUniqueID PLAY_FOOLCHILD_BGM = 1314294175U;
         static const AkUniqueID PLAY_FOOLCHILD_PEOPLE = 560573542U;
@@ -28,8 +28,10 @@ namespace AK
         static const AkUniqueID PLAY_ONEGAMEONEDREAM_PEOPLE = 806402365U;
         static const AkUniqueID PLAY_ONPHONE = 4122281311U;
         static const AkUniqueID PLAY_SPOTLIGHT = 1951773134U;
+        static const AkUniqueID PLAY_THREEDAYTHREENIGHT_AUDIENCE = 2494639119U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_BGM = 3749606501U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_PEOPLE = 1319984948U;
+        static const AkUniqueID PLAY_WAITINGSCORE = 469006591U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

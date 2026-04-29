@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2494639119	Play_ThreeDayThreeNight_audience			\Default Work Unit\Play_ThreeDayThreeNight_audience	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	658503054	audience_pickup			\Default Work Unit\audience_pickup	
+

@@ -1,0 +1,56 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2494639119",
+    "Type": "Event",
+    "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
+    "Language": "English(US)",
+    "Hash": "{E7C3161B-29D4-829B-1439-B709650A55E8}",
+    "ObjectPath": "Play_ThreeDayThreeNight_audience",
+    "ShortName": "Play_ThreeDayThreeNight_audience",
+    "Path": "Event/English(US)/Play_ThreeDayThreeNight_audience.bnk",
+    "Media": [
+     {
+      "Id": "101038991",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜觀眾.wav",
+      "Path": "Media/English(US)/101038991.wem",
+      "CachePath": "E8/{E8D2327C-0388-947D-71DD-6BF363A3B4F1}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2494639119",
+      "Name": "Play_ThreeDayThreeNight_audience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_audience",
+      "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
+      "DurationType": "OneShot",
+      "DurationMin": "264.7307",
+      "DurationMax": "264.7307",
+      "MediaRefs": [
+       {
+        "Id": "101038991"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "658503054",
+      "Name": "audience_pickup",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\audience_pickup",
+      "GUID": "{63331C15-0F86-42B0-8B64-7C7C81717607}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6727F236-E13C-DE24-0246-1D08CA21BE2E}"
+ }
+}

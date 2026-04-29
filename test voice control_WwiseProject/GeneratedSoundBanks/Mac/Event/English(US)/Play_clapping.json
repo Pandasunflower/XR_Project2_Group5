@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2700014240",
+    "Type": "Event",
+    "GUID": "{6790B5D1-392B-440E-9BEF-CBB1ED2862B1}",
+    "Language": "English(US)",
+    "Hash": "{D00A8EDD-D0A6-7443-5EDD-A6469AE74A21}",
+    "ObjectPath": "Play_clapping",
+    "ShortName": "Play_clapping",
+    "Path": "Event/English(US)/Play_clapping.bnk",
+    "Media": [
+     {
+      "Id": "611769857",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "clapping.wav",
+      "Path": "Media/English(US)/611769857.wem",
+      "CachePath": "38/{38D08CAF-8CE9-6C67-36C1-59DD14D2AE0E}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2700014240",
+      "Name": "Play_clapping",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_clapping",
+      "GUID": "{6790B5D1-392B-440E-9BEF-CBB1ED2862B1}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.088042",
+      "DurationMax": "6.088042",
+      "MediaRefs": [
+       {
+        "Id": "611769857"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{77C6C0C1-2A0F-5ADC-7AEE-B5CA806E6F1B}"
+ }
+}
