@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1314294175",
+    "Type": "Event",
+    "GUID": "{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}",
+    "Language": "English(US)",
+    "Hash": "{61A6BD8E-E0F1-C678-4B63-D58006DA6C1E}",
+    "ObjectPath": "Play_foolChild_BGM",
+    "ShortName": "Play_foolChild_BGM",
+    "Path": "Event/English(US)/Play_foolChild_BGM.bnk",
+    "Media": [
+     {
+      "Id": "636954447",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "笨小孩背景.wav",
+      "Path": "Media/English(US)/636954447.wem",
+      "CachePath": "51/{51E1C3CB-B94D-446D-3349-EB223F05C00A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1314294175",
+      "Name": "Play_foolChild_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_foolChild_BGM",
+      "GUID": "{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}",
+      "DurationType": "OneShot",
+      "DurationMin": "152",
+      "DurationMax": "152",
+      "MediaRefs": [
+       {
+        "Id": "636954447"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{44C67ADD-2DD3-6D96-5515-86B35E4945AF}"
+ }
+}

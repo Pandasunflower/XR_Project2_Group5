@@ -102,6 +102,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_DancingGirl" ID="{5EC2BBD7-962A-456A-8E86-68DAA8293C00}">
+					<ChildrenList>
+						<Action Name="" ID="{9A44814D-6BC2-4417-9439-9F155962DF2E}" ShortID="86343542">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_horn" ID="{72052F8E-22CE-458C-9329-E6CD2921C343}">
+					<ChildrenList>
+						<Action Name="" ID="{1B68D764-772D-4139-9A3A-15EB71CADCE1}" ShortID="192219724">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="汽笛鬧場" ID="{12236449-4CC6-470F-AE05-F88231D9AFA4}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
