@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4122281311",
+    "Type": "Event",
+    "GUID": "{59185CB8-C182-451B-8A67-CC5309B5A4B4}",
+    "Language": "English(US)",
+    "Hash": "{55E70422-AAF2-0A2C-C6C6-62E154F4A325}",
+    "ObjectPath": "Play_onPhone",
+    "ShortName": "Play_onPhone",
+    "Path": "Event/English(US)/Play_onPhone.bnk",
+    "Media": [
+     {
+      "Id": "630520721",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "onPhone.wav",
+      "Path": "Media/English(US)/630520721.wem",
+      "CachePath": "4E/{4E6C520E-2AFE-95DD-7A3B-FE8F14B2B19B}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4122281311",
+      "Name": "Play_onPhone",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_onPhone",
+      "GUID": "{59185CB8-C182-451B-8A67-CC5309B5A4B4}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.384",
+      "DurationMax": "3.384",
+      "MediaRefs": [
+       {
+        "Id": "630520721"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C5379076-B951-A36D-60FC-F13DBB0BD730}"
+ }
+}

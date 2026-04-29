@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3693985302",
+    "Type": "Event",
+    "GUID": "{E49946A0-81D0-4D24-8E8A-E41770703AD4}",
+    "Language": "English(US)",
+    "Hash": "{C9D4DFF7-2077-C569-6D3F-1BCDB54B8CC2}",
+    "ObjectPath": "Play_motorOn",
+    "ShortName": "Play_motorOn",
+    "Path": "Event/English(US)/Play_motorOn.bnk",
+    "Media": [
+     {
+      "Id": "56369884",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "motorOn.wav",
+      "Path": "Media/English(US)/56369884.wem",
+      "CachePath": "9F/{9F00B9A9-7BF2-D535-7443-AC7AAADE4CF6}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3693985302",
+      "Name": "Play_motorOn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_motorOn",
+      "GUID": "{E49946A0-81D0-4D24-8E8A-E41770703AD4}",
+      "DurationType": "OneShot",
+      "DurationMin": "11.800834",
+      "DurationMax": "11.800834",
+      "MediaRefs": [
+       {
+        "Id": "56369884"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7D4BF2A9-0206-0669-E1B3-751671B4F495}"
+ }
+}

@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_ASKFORMONEY = 3118526426U;
         static const AkUniqueID PLAY_AUDIENCE = 1245578140U;
         static const AkUniqueID PLAY_DANCINGGIRL = 509118324U;
         static const AkUniqueID PLAY_FOOLCHILD_BGM = 1314294175U;
@@ -20,8 +21,13 @@ namespace AK
         static const AkUniqueID PLAY_FOR_THE_ANNA = 2949967820U;
         static const AkUniqueID PLAY_FOR_THE_BGM = 3942408572U;
         static const AkUniqueID PLAY_HORN = 2956245481U;
+        static const AkUniqueID PLAY_HORN2 = 1275111929U;
+        static const AkUniqueID PLAY_MOTOROFF = 3120712028U;
+        static const AkUniqueID PLAY_MOTORON = 3693985302U;
         static const AkUniqueID PLAY_ONEGAMEONEDREAM_BGM = 4065753090U;
         static const AkUniqueID PLAY_ONEGAMEONEDREAM_PEOPLE = 806402365U;
+        static const AkUniqueID PLAY_ONPHONE = 4122281311U;
+        static const AkUniqueID PLAY_SPOTLIGHT = 1951773134U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_BGM = 3749606501U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_PEOPLE = 1319984948U;
     } // namespace EVENTS

@@ -124,6 +124,72 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_spotlight" ID="{E1312B0E-01A1-4C5E-812D-C62E24711553}">
+					<ChildrenList>
+						<Action Name="" ID="{A09C4A4B-2E69-44D6-BBC5-8A36F6BEDCBD}" ShortID="898427843">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="spotlight" ID="{D1EA7769-9858-4A10-B2A1-353E4086A8FD}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_onPhone" ID="{59185CB8-C182-451B-8A67-CC5309B5A4B4}">
+					<ChildrenList>
+						<Action Name="" ID="{FF4AFAE5-9A6C-4299-A5DE-ED1EFBC8DB3A}" ShortID="325269348">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="onPhone" ID="{BFFABDF1-2550-4C6A-9662-C737BD4348FA}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_askForMoney" ID="{B327097A-BABB-4A3B-8122-65CE6342F7AB}">
+					<ChildrenList>
+						<Action Name="" ID="{C5286CAF-1500-4220-885B-D1FA4CC9A235}" ShortID="940875921">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="askForMoney" ID="{55376C7C-42A3-49C9-BCC9-966FAD853440}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_horn2" ID="{36E3AFB4-4844-40B5-BBBE-070B93625226}">
+					<ChildrenList>
+						<Action Name="" ID="{C8426993-2F16-425F-8093-FFC26C720756}" ShortID="896677663">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="horn2" ID="{FEEDD061-33D0-4207-B126-A8EA1C56ECF3}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_motorOff" ID="{E1A68987-6AC7-48F5-BAF6-28E511938D94}">
+					<ChildrenList>
+						<Action Name="" ID="{402F0753-0795-44B4-8A7C-4C06533881B0}" ShortID="305904296">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="motorOff" ID="{3448FA98-845C-41BB-B31D-6F818C80F541}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_motorOn" ID="{E49946A0-81D0-4D24-8E8A-E41770703AD4}">
+					<ChildrenList>
+						<Action Name="" ID="{9347D720-54B7-4E99-997F-B4682219F671}" ShortID="711155898">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="motorOn" ID="{1E2EAE53-43DA-47B6-BB19-4F95CC77134A}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
