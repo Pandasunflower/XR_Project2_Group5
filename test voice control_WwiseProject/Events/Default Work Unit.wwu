@@ -69,17 +69,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_audience" ID="{AC22A6A1-5F65-4ACE-A3BB-32DCD06D44D0}">
-					<ChildrenList>
-						<Action Name="" ID="{27EB1D6A-1A71-4B18-87CE-5454BCC5E89F}" ShortID="633324002">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="第三版" ID="{7833A7DE-39FE-46CF-B238-403FE4A96DA0}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_OneGameOneDream_people" ID="{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}">
 					<ChildrenList>
 						<Action Name="" ID="{2C72F60C-718D-4CC0-ABBD-E91B29D8FE94}" ShortID="643823866">
@@ -207,6 +196,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="waitingScore" ID="{167805B0-9A31-48EB-898B-2381C12CD4B7}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ThreeDayThreeNight_audience" ID="{F8CF7561-A27F-4953-B271-C41277A86D43}">
+					<ChildrenList>
+						<Action Name="" ID="{254641A3-2DAB-4827-B455-028C5B54DE8A}" ShortID="910318846">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="三天三夜觀眾" ID="{B808AF84-231F-4AC2-ABBB-8D559F7EE769}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_yell" ID="{124A57DF-150E-4619-B100-F7A37ABEC85F}">
+					<ChildrenList>
+						<Action Name="" ID="{35A2E4D7-ACB8-4614-A8B3-4707B9C1CC2E}" ShortID="781182118">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="yell" ID="{FB183C7D-2E1A-4A52-A801-63BC808BE1FD}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
