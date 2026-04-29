@@ -5,6 +5,13 @@ public class LobbySceneManager : MonoBehaviour
 {
     [Header("Dependencies")]
     public LobbySongManager songManager;
+    public SceneTransition transitionManager;
+    public FirestoreTest firestoreTest;
+
+    void Start()
+    {
+        // firestoreTest.SetOption(0);
+    }
 
     public void RequestStartGame()
     {
@@ -26,9 +33,21 @@ public class LobbySceneManager : MonoBehaviour
         int songIndex = songManager.GetSelectedSongIndex();
         
         // 根據索引決定加載 Stage1 或 Stage2
-        string sceneName = songIndex == 0 ? "pitchTest" : "Stage1";
-        
+        string sceneName = songIndex == 0 ? "frozen" : "davewang";
+        int finalSongIndex = songIndex;
+        if (songIndex == 0)
+        {
+            finalSongIndex = 2;
+        }
+        else if (songIndex == 1)
+        {
+            finalSongIndex = 1;
+        }
+
+        firestoreTest.SetOption(finalSongIndex);
+        firestoreTest.SetGameState("init");
         Debug.Log($"[SceneManager] 加載場景: {sceneName}，歌曲索引: {songIndex}，選定歌曲: {songName}");
-        SceneManager.LoadScene(sceneName);
+        // SceneManager.LoadScene(sceneName);
+        transitionManager.goToSceneAsync(finalSongIndex);
     }
 }

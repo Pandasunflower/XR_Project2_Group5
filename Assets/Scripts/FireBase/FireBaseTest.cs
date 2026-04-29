@@ -16,6 +16,7 @@ public class FirestoreTest : MonoBehaviour
     public GameObject cubePrefab2;
     public TextMeshPro resultText;
     public int stage = 1; //1: stage1, 3: stage3
+    public int option = 0;
 
     public Transform[] NPCpos;
 
@@ -23,6 +24,9 @@ public class FirestoreTest : MonoBehaviour
     {
         db = FirebaseFirestore.DefaultInstance;
         ListenPlayers();
+        if (resultText != null)
+            resultText.text = "";
+        SetOption(option);
     }
 
     void Update()
@@ -93,6 +97,7 @@ public class FirestoreTest : MonoBehaviour
         });
 
         if (state == "init") ClearPlayers();
+        // if (state == "l1_lobby") SetAllWaving();
         if (state == "l1_end") CalculateAverageLevel1();
     }
 
@@ -180,19 +185,36 @@ public class FirestoreTest : MonoBehaviour
 
         GameObject cube = playerCubes[id];
 
-        Renderer r = cube.GetComponentInChildren<Renderer>();
+        // Renderer r = cube.GetComponentInChildren<Renderer>();
 
         bool level1HasVoted = data.ContainsKey("level1HasVoted") && (bool)data["level1HasVoted"];
         bool level3HasVoted = data.ContainsKey("level3HasVoted") &&(bool)data["level3HasVoted"];
 
         if (level1HasVoted)
         {
-            r.material.color = Color.red;
+            // r.material.color = Color.red;
+            cube.GetComponent<Animator>().SetBool("Voting", true);
         }
 
         if (level3HasVoted)
         {
-            r.material.color = Color.blue;
+            // r.material.color = Color.blue;
+        }
+    }
+
+    public void SetAllWaving()
+    {
+        foreach (var kv in playerCubes)
+        {
+            kv.Value.GetComponent<Animator>().SetBool("Waving", true);
+        }
+    }
+
+    public void SetAllClapping()
+    {
+        foreach (var kv in playerCubes)
+        {
+            kv.Value.GetComponent<Animator>().SetBool("Clapping", true);
         }
     }
 
