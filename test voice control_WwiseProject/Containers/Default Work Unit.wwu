@@ -230,7 +230,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="SongBus" ID="{3E610D54-4975-44FC-9068-A1B1E2DACEE6}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -250,13 +250,18 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="SongBus" ID="{3E610D54-4975-44FC-9068-A1B1E2DACEE6}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -951,6 +956,56 @@
 					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="三天三夜觀眾" ID="{58BF39E7-FABD-466B-A2BF-5C631A9E67E0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="for-the-first-time-in-forever-from-frozensing-along" ID="{C879FEB3-7C5A-4358-8055-CC146EE68308}" ShortID="422820526">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="for-the-first-time-in-forever-from-frozensing-along" ID="{35C56F69-FCB8-45F2-8BCB-746FDF1E4EC9}">
+							<Language>English(US)</Language>
+							<AudioFile>for-the-first-time-in-forever-from-frozensing-along.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="345055891"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="for-the-first-time-in-forever-from-frozensing-along" ID="{35C56F69-FCB8-45F2-8BCB-746FDF1E4EC9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="王傑-一場遊戲一場夢" ID="{B2DB6388-0E32-40A1-A93A-1345B31B6D32}" ShortID="910760600">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="王傑-一場遊戲一場夢" ID="{2EBB425F-FCEC-415B-8109-C0728AA209B7}">
+							<Language>English(US)</Language>
+							<AudioFile>王傑-一場遊戲一場夢.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="888866671"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="王傑-一場遊戲一場夢" ID="{2EBB425F-FCEC-415B-8109-C0728AA209B7}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

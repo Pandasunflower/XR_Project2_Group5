@@ -16,10 +16,12 @@ namespace AK
         static const AkUniqueID PLAY_ASKFORMONEY = 3118526426U;
         static const AkUniqueID PLAY_CLAPPING = 2700014240U;
         static const AkUniqueID PLAY_DANCINGGIRL = 509118324U;
+        static const AkUniqueID PLAY_DAVEWANG = 3205629941U;
         static const AkUniqueID PLAY_FOOLCHILD_BGM = 1314294175U;
         static const AkUniqueID PLAY_FOOLCHILD_PEOPLE = 560573542U;
         static const AkUniqueID PLAY_FOR_THE_ANNA = 2949967820U;
         static const AkUniqueID PLAY_FOR_THE_BGM = 3942408572U;
+        static const AkUniqueID PLAY_FROZEN = 3459025660U;
         static const AkUniqueID PLAY_HORN = 2956245481U;
         static const AkUniqueID PLAY_HORN2 = 1275111929U;
         static const AkUniqueID PLAY_MOTOROFF = 3120712028U;

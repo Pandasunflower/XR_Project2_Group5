@@ -1270,8 +1270,9 @@ MonoBehaviour:
   myWwiseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 14aa6be34749c23449f4258471f06f6a,
+    WwiseObjectReference: {fileID: 11400000, guid: ec492d69be2880c44a868422a85d612a,
       type: 2}
+  testKey: 32
 --- !u!1 &1285287369
 GameObject:
   m_ObjectHideFlags: 0

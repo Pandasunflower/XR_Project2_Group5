@@ -9,6 +9,22 @@
 							<ObjectRef Name="System" ID="{D92EFB54-58AC-45A6-B973-A66EAF1EE99C}" WorkUnitID="{0F78C614-4287-4803-ADE6-72C347EA5214}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}">
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="SongBus" ID="{3E610D54-4975-44FC-9068-A1B1E2DACEE6}"/>
+									<DuckingParam>
+										<Volume>-10</Volume>
+										<FadeInTime>0.5</FadeInTime>
+										<FadeOutTime>0.5</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+						<Bus Name="SongBus" ID="{3E610D54-4975-44FC-9068-A1B1E2DACEE6}"/>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

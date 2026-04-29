@@ -105,6 +105,8 @@ public class LobbySongManager : MonoBehaviour
         StopAllCoroutines(); 
         StartCoroutine(LoadCoverAsync());
 
+        PlayPreviewMusic();
+
         Debug.Log($"[Lobby UI] Selected: {songFolders[currentSelectedIndex]}");
     }
     IEnumerator LoadCoverAsync() {
@@ -117,27 +119,44 @@ public class LobbySongManager : MonoBehaviour
         Debug.Log($"[Lobby] Loading cover from: {uri}");
 
         using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture(uri)) {
-        yield return uwr.SendWebRequest();
+            yield return uwr.SendWebRequest();
 
-        if (uwr.result == UnityWebRequest.Result.Success) {
-            Texture2D texture = DownloadHandlerTexture.GetContent(uwr);
-            
-            if (texture == null) {
-                Debug.LogError("[Lobby] 雖然請求成功，但 Texture2D 物件為空 (可能是格式錯誤)");
-                yield break;
+            if (uwr.result == UnityWebRequest.Result.Success) {
+                Texture2D texture = DownloadHandlerTexture.GetContent(uwr);
+                
+                if (texture == null) {
+                    Debug.LogError("[Lobby] 雖然請求成功，但 Texture2D 物件為空 (可能是格式錯誤)");
+                    yield break;
+                }
+
+                texture.filterMode = FilterMode.Point; // 保持點陣感
+                
+                Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+                songCover.sprite = newSprite;
+                
+                Debug.Log($"[Lobby] 封面載入成功: {texture.width}x{texture.height}");
+            } else {
+                Debug.LogError($"[Lobby] 請求失敗！錯誤訊息: {uwr.error}");
+                Debug.LogError($"[Lobby] 回應代碼: {uwr.responseCode}");
+                songCover.sprite = defaultCover;
             }
-
-            texture.filterMode = FilterMode.Point; // 保持點陣感
-            
-            Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-            songCover.sprite = newSprite;
-            
-            Debug.Log($"[Lobby] 封面載入成功: {texture.width}x{texture.height}");
-        } else {
-            Debug.LogError($"[Lobby] 請求失敗！錯誤訊息: {uwr.error}");
-            Debug.LogError($"[Lobby] 回應代碼: {uwr.responseCode}");
-            songCover.sprite = defaultCover;
         }
     }
+    // 🎵 新增：處理 Wwise 預覽音樂的核心邏輯
+    private void PlayPreviewMusic()
+    {
+        // 1. 先把這個物件上「正在播放的所有音樂」暴力停掉，避免兩首歌疊在一起
+        AkSoundEngine.StopAll(gameObject); 
+
+        // 2. 組合你的 Wwise Event 名稱
+        // 假設你的資料夾叫 "frozen"，你的 Wwise Event 叫 "Play_frozen"
+        string folderName = songFolders[currentSelectedIndex];
+        string eventName = "Play_" + folderName; 
+
+        // 🔍 加這行在 Console 看名字對不對
+        Debug.Log($"[Wwise Debug] 嘗試播放 Event: {eventName}");
+
+        // 3. 呼叫 Wwise 播放
+        AkSoundEngine.PostEvent(eventName, gameObject);
     }
 }

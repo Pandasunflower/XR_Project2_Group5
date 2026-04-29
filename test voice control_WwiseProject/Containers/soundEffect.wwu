@@ -3,7 +3,7 @@
 	<Containers>
 		<WorkUnit Name="soundEffect" ID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" ShortID="435951110">
+				<Sound Name="王ADEN" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" ShortID="435951110">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -13,7 +13,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -39,7 +39,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -91,7 +91,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -117,7 +117,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -143,7 +143,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -169,7 +169,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -195,7 +195,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -221,7 +221,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -272,7 +272,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

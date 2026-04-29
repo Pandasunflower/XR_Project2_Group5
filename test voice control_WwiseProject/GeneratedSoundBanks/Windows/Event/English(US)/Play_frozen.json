@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3459025660",
+    "Type": "Event",
+    "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
+    "Language": "English(US)",
+    "Hash": "{99439891-39E5-66FC-C68B-08EDC74273D6}",
+    "ObjectPath": "Play_frozen",
+    "ShortName": "Play_frozen",
+    "Path": "Event/English(US)/Play_frozen.bnk",
+    "Media": [
+     {
+      "Id": "345055891",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "for-the-first-time-in-forever-from-frozensing-along.wav",
+      "Path": "Media/English(US)/345055891.wem",
+      "CachePath": "C8/{C87D8AC2-4E4E-84EC-0631-A59572EFE1A6}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3459025660",
+      "Name": "Play_frozen",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_frozen",
+      "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
+      "DurationType": "OneShot",
+      "DurationMin": "133.032",
+      "DurationMax": "133.032",
+      "MediaRefs": [
+       {
+        "Id": "345055891"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9CC5DFEE-81CA-6903-337F-39125A6CBE3C}"
+ }
+}

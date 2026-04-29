@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3205629941",
+    "Type": "Event",
+    "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
+    "Language": "English(US)",
+    "Hash": "{8183F1EF-6C56-B48A-A8A5-4A916BE251E9}",
+    "ObjectPath": "Play_davewang",
+    "ShortName": "Play_davewang",
+    "Path": "Event/English(US)/Play_davewang.bnk",
+    "Media": [
+     {
+      "Id": "888866671",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "王傑-一場遊戲一場夢.wav",
+      "Path": "Media/English(US)/888866671.wem",
+      "CachePath": "AF/{AF0D76DF-47F9-4AE2-1EBB-3FA165FD26A2}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3205629941",
+      "Name": "Play_davewang",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_davewang",
+      "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
+      "DurationType": "OneShot",
+      "DurationMin": "183.0398",
+      "DurationMax": "183.0398",
+      "MediaRefs": [
+       {
+        "Id": "888866671"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B1294E56-686A-557D-D44E-516D2FDD2FE0}"
+ }
+}

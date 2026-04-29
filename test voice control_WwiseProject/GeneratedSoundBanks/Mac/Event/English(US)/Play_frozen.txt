@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3459025660	Play_frozen			\Default Work Unit\Play_frozen	
+
