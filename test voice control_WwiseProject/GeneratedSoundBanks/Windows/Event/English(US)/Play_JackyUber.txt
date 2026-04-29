@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1539366728	Play_JackyUber			\Default Work Unit\Play_JackyUber	
+

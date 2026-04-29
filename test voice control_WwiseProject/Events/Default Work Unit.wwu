@@ -245,6 +245,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_JackyUber" ID="{546E6D8B-F932-410C-AC13-58E73FE1C530}">
+					<ChildrenList>
+						<Action Name="" ID="{C12DF4DC-3469-46B5-91F9-60FFB1A25928}" ShortID="861965262">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="JackyUber" ID="{5BDA7588-B3AB-45EE-AA04-98D49A9F5AD8}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

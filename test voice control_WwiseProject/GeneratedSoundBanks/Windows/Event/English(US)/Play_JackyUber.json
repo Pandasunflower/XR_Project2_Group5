@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1539366728",
+    "Type": "Event",
+    "GUID": "{546E6D8B-F932-410C-AC13-58E73FE1C530}",
+    "Language": "English(US)",
+    "Hash": "{2303ED3F-0F4C-AAD7-ECB3-37E869B7A93A}",
+    "ObjectPath": "Play_JackyUber",
+    "ShortName": "Play_JackyUber",
+    "Path": "Event/English(US)/Play_JackyUber.bnk",
+    "Media": [
+     {
+      "Id": "902117724",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "JackyUber.wav",
+      "Path": "Media/English(US)/902117724.wem",
+      "CachePath": "EF/{EF796C58-F449-B360-0AEA-82078248B730}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1539366728",
+      "Name": "Play_JackyUber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_JackyUber",
+      "GUID": "{546E6D8B-F932-410C-AC13-58E73FE1C530}",
+      "DurationType": "OneShot",
+      "DurationMin": "12.199819",
+      "DurationMax": "12.199819",
+      "MediaRefs": [
+       {
+        "Id": "902117724"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3864F08C-CD7A-C87E-C625-3483DFD371FE}"
+ }
+}

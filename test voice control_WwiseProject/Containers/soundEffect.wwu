@@ -288,6 +288,31 @@
 						<ActiveSource Name="yell" ID="{1A5631F9-A83C-4A36-B1D0-04AFB02F6572}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="JackyUber" ID="{5BDA7588-B3AB-45EE-AA04-98D49A9F5AD8}" ShortID="492249049">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="JackyUber" ID="{DA659449-E4B1-4648-8AFF-5369DD92B255}">
+							<Language>English(US)</Language>
+							<AudioFile>JackyUber.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="902117724"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="JackyUber" ID="{DA659449-E4B1-4648-8AFF-5369DD92B255}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

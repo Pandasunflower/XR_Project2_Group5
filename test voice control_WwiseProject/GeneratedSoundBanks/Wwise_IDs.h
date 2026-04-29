@@ -24,6 +24,7 @@ namespace AK
         static const AkUniqueID PLAY_FROZEN = 3459025660U;
         static const AkUniqueID PLAY_HORN = 2956245481U;
         static const AkUniqueID PLAY_HORN2 = 1275111929U;
+        static const AkUniqueID PLAY_JACKYUBER = 1539366728U;
         static const AkUniqueID PLAY_MOTOROFF = 3120712028U;
         static const AkUniqueID PLAY_MOTORON = 3693985302U;
         static const AkUniqueID PLAY_ONEGAMEONEDREAM_BGM = 4065753090U;
