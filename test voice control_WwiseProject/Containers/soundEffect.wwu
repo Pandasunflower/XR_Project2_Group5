@@ -262,6 +262,32 @@
 						<ActiveSource Name="waitingScore" ID="{AA8219F6-9714-46C0-AE71-BE4899E495CE}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="yell" ID="{FB183C7D-2E1A-4A52-A801-63BC808BE1FD}" ShortID="316864234">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="yell" ID="{1A5631F9-A83C-4A36-B1D0-04AFB02F6572}">
+							<Language>English(US)</Language>
+							<AudioFile>yell.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="654614919"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="yell" ID="{1A5631F9-A83C-4A36-B1D0-04AFB02F6572}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>
