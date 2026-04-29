@@ -18,6 +18,8 @@ public class LobbySongManager : MonoBehaviour
     public int currentSelectedIndex = 0;
     public List<string> songFolders = new List<string>();
 
+    public List<string> songNames = new List<string>();
+
     [Header("UI References")]
     public TextMeshProUGUI currentSongText;
     public TextMeshProUGUI songIndexText;
@@ -27,6 +29,7 @@ public class LobbySongManager : MonoBehaviour
     private void Start()
     {
         RefreshSongList();
+        SetSongNames();
         UpdateUI();
     }
 
@@ -51,6 +54,13 @@ public class LobbySongManager : MonoBehaviour
             Debug.LogError($"[Lobby] Path not found: {path}");
         }
     }
+    public void SetSongNames()
+    {
+         songNames.Add("For the First Time in Forever");
+         songNames.Add("一場遊戲一場夢");
+         Debug.Log($"[Lobby] Song names set: {string.Join(", ", songNames)}");
+    }
+
 
     public void NextSong()
     {
@@ -92,9 +102,9 @@ public class LobbySongManager : MonoBehaviour
             return;
         }
 
-        if (currentSongText != null)
+        if (currentSongText != null && songNames.Count > 0)
         {
-            currentSongText.text = songFolders[currentSelectedIndex];
+            currentSongText.text = songNames[(currentSelectedIndex+1) % songNames.Count];
         }
 
         if (songIndexText != null)
@@ -158,5 +168,10 @@ public class LobbySongManager : MonoBehaviour
 
         // 3. 呼叫 Wwise 播放
         AkSoundEngine.PostEvent(eventName, gameObject);
+    }
+
+    public void StopPreviewMusic()
+    {
+        AkSoundEngine.StopAll(gameObject);
     }
 }

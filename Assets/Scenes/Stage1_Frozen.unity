@@ -1167,7 +1167,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 284112364}
-  - component: {fileID: 284112363}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1175,32 +1174,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &284112363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284112362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2113ca73613b6014eb9bad925669d854, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: ef21e47c00a04c243be06d4f58de6a93,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!4 &284112364
 Transform:
   m_ObjectHideFlags: 0
@@ -1308,6 +1281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1202409515}
   firestoreTest: {fileID: 405044360}
+  singingManager: {fileID: 0}
 --- !u!65 &313636237
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3162,6 +3136,7 @@ GameObject:
   - component: {fileID: 1068268109}
   - component: {fileID: 1068268108}
   - component: {fileID: 1068268107}
+  - component: {fileID: 1068268112}
   m_Layer: 0
   m_Name: '[BuildingBlock] Camera Rig'
   m_TagString: Untagged
@@ -3335,6 +3310,14 @@ Transform:
   - {fileID: 1054030940359594075}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1068268112
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068268106}
+  m_Enabled: 1
 --- !u!1 &1076859360
 GameObject:
   m_ObjectHideFlags: 0

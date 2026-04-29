@@ -1572,8 +1572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   songManager: {fileID: 1393978838}
-  transitionManager: {fileID: 0}
-  firestoreTest: {fileID: 0}
+  transitionManager: {fileID: 1615437150}
+  firestoreTest: {fileID: 1733134109}
 --- !u!114 &1393978838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1589,6 +1589,7 @@ MonoBehaviour:
   songsFolderName: Songs
   currentSelectedIndex: 0
   songFolders: []
+  songNames: []
   currentSongText: {fileID: 1405587523}
   songIndexText: {fileID: 947428111}
   songCover: {fileID: 498943897}
@@ -1774,6 +1775,7 @@ GameObject:
   - component: {fileID: 1476459241}
   - component: {fileID: 1476459240}
   - component: {fileID: 1476459239}
+  - component: {fileID: 1476459244}
   m_Layer: 0
   m_Name: '[BuildingBlock] Camera Rig'
   m_TagString: Untagged
@@ -1946,6 +1948,14 @@ Transform:
   - {fileID: 1150407707}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1476459244
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476459238}
+  m_Enabled: 1
 --- !u!1001 &1548703527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2050,6 +2060,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6229387}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1615437150 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1994553337229442337, guid: 57f89f64eb914d7458080184cff2077b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1548703527}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5683db9bfec465f4199bf1c1327b0e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1615950160
 GameObject:
   m_ObjectHideFlags: 0

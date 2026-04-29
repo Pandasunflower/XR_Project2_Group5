@@ -66,6 +66,8 @@ public class SingingManager : MonoBehaviour {
     
     private float _testTime = 0f;  // 测试时间推进
 
+    private int isStarted = 0;
+
     public FirestoreTest firestoreTest;
 
     public void Start(){
@@ -81,6 +83,8 @@ public class SingingManager : MonoBehaviour {
 
     public void realStartGame()
     {
+        isStarted = 1;
+        _testTime = 0f;  // #sym:isStarted 重置計時，只從真正開始遊戲時才計算時長
         string selected = _songList[_currentIndex].Trim(); 
         string jsonPath = Path.Combine("StreamingAssets/Songs", selected, "pitch_data.json.txt");
         string folderPath = Path.Combine("StreamingAssets/Songs", selected);
@@ -209,6 +213,12 @@ public class SingingManager : MonoBehaviour {
     }
 
     void Update() {
+        // #sym:isStarted 檢查：只有在遊戲開始後才執行邏輯
+        if (isStarted == 0) {
+            _testTime = 0f;
+            return;
+        }
+
         // --- Wwise 播放狀態檢查（暂时禁用）---
         // if (_playingID == 0) return;
 
@@ -234,6 +244,16 @@ public class SingingManager : MonoBehaviour {
 
         // --- 以下邏輯與你原本的基本一致，確保座標正確 ---
         lineContainer.position = Vector3.zero;
+
+        if (_data == null) {
+        Debug.LogError("SingingManager: _data 為空！請檢查是否已成功載入資料。");
+            return; 
+        }
+
+        if (_data.frames == null) {
+            Debug.LogError("SingingManager: _data.frames 為空！");
+            return;
+        }
 
         // 更新索引：根據 Wwise 時間找到現在該唱哪一個點
         while (_currentIndex < _data.frames.Count && _data.frames[_currentIndex].t < currentTime) {
@@ -381,9 +401,9 @@ public class SingingManager : MonoBehaviour {
         Debug.Log($"<color=orange>=== 演唱結束 ===</color>");
         Debug.Log($"<color=orange>最終得分: {currentTotalScore:F2} / 100</color>");
 
-        if (currentTotalScore > 85) Debug.Log("評語: 歌神降臨！");
-        else if (currentTotalScore > 60) Debug.Log("評語: 唱得不錯喔！");
-        else Debug.Log("評語: 再接再厲！");
+        // if (currentTotalScore > 85) Debug.Log("評語: 歌神降臨！");
+        // else if (currentTotalScore > 60) Debug.Log("評語: 唱得不錯喔！");
+        // else Debug.Log("評語: 再接再厲！");
         StartCoroutine(waitSeconds());
         this.enabled = false;
     }
