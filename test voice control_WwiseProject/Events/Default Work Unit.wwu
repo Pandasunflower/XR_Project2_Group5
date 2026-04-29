@@ -25,7 +25,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_foolChild" ID="{1A1B1320-52CA-40B8-BC12-7C170075809B}">
+				<Event Name="Play_foolChild_people" ID="{1A1B1320-52CA-40B8-BC12-7C170075809B}">
 					<ChildrenList>
 						<Action Name="" ID="{5B3CF7F6-BBC1-46D5-AD49-AEEB2856A18C}" ShortID="318994042">
 							<ReferenceList>
@@ -36,7 +36,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_foolChild_background" ID="{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}">
+				<Event Name="Play_foolChild_BGM" ID="{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}">
 					<ChildrenList>
 						<Action Name="" ID="{54FDB143-4683-4098-8BFD-72605C8ADF6A}" ShortID="401045924">
 							<ReferenceList>
@@ -47,29 +47,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_OneGame_people" ID="{834ACF5B-05B3-44F1-84E4-5FD52B26F987}">
-					<ChildrenList>
-						<Action Name="" ID="{FD62B2B5-A0BC-4700-98EF-CB653F7FC161}" ShortID="477868379">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="一場遊戲一場夢人聲" ID="{907E35FE-CA8E-42C8-82BB-1207E02E9429}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_OneGame_bgm" ID="{C60CF5BC-8EAE-440C-8674-5A1E49FD3415}">
-					<ChildrenList>
-						<Action Name="" ID="{1DC6F4A4-9A35-42B8-92AF-FE389DCA47F0}" ShortID="508971313">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="一場遊戲一場夢背景音" ID="{6C16AB08-9274-40B2-A4A0-BB18E541A92D}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_ThreeDay_people" ID="{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}">
+				<Event Name="Play_ThreeDayThreeNight_people" ID="{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}">
 					<ChildrenList>
 						<Action Name="" ID="{F2CB0C9E-143C-4424-B91A-33B7C7F1A0B0}" ShortID="109233461">
 							<ReferenceList>
@@ -80,7 +58,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_ThreeDay_bgm" ID="{3F0E4D88-963B-4DF1-810B-45F061113D28}">
+				<Event Name="Play_ThreeDayThreeNight_bgm" ID="{3F0E4D88-963B-4DF1-810B-45F061113D28}">
 					<ChildrenList>
 						<Action Name="" ID="{EB60C23B-64F3-4281-A32B-C0B653662B4A}" ShortID="700080990">
 							<ReferenceList>
@@ -97,6 +75,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="第三版" ID="{7833A7DE-39FE-46CF-B238-403FE4A96DA0}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OneGameOneDream_people" ID="{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}">
+					<ChildrenList>
+						<Action Name="" ID="{2C72F60C-718D-4CC0-ABBD-E91B29D8FE94}" ShortID="643823866">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="一場遊戲一場夢_人聲" ID="{C3A4726F-13CD-4E0A-9A2C-83F19CC878B6}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OneGameOneDream_BGM" ID="{AC64EA27-5927-48B6-8CE8-0045F5ED9F87}">
+					<ChildrenList>
+						<Action Name="" ID="{C70F133F-BC70-4FF8-ADD1-424148C3302C}" ShortID="714635158">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="一場遊戲一場夢_背景音" ID="{16002C0B-5138-460F-8953-87CA33CF043F}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

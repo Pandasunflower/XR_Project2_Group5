@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="soundEffect" ID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" ShortID="435951110">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{950A751E-8DD9-4924-9D7C-D001903988FC}">
+							<Language>English(US)</Language>
+							<AudioFile>王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="611412987"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{950A751E-8DD9-4924-9D7C-D001903988FC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="汽笛" ID="{7A5FF8E0-792A-4905-82FD-3418D166A089}" ShortID="451398648">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="汽笛" ID="{4F49F2E9-8AC4-4894-82BF-41B2D3CAB099}">
+							<Language>English(US)</Language>
+							<AudioFile>汽笛.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="876257395"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="汽笛" ID="{4F49F2E9-8AC4-4894-82BF-41B2D3CAB099}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

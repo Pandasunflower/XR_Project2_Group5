@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4065753090",
+    "Type": "Event",
+    "GUID": "{AC64EA27-5927-48B6-8CE8-0045F5ED9F87}",
+    "Language": "English(US)",
+    "Hash": "{B6937022-01CC-2B1C-17DB-0E0D651FCB5B}",
+    "ObjectPath": "Play_OneGameOneDream_BGM",
+    "ShortName": "Play_OneGameOneDream_BGM",
+    "Path": "Event/English(US)/Play_OneGameOneDream_BGM.bnk",
+    "Media": [
+     {
+      "Id": "323339064",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "一場遊戲一場夢_背景音.wav",
+      "Path": "Media/English(US)/323339064.wem",
+      "CachePath": "7E/{7E029DBC-418E-DEEC-EA40-496FFC282527}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4065753090",
+      "Name": "Play_OneGameOneDream_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_OneGameOneDream_BGM",
+      "GUID": "{AC64EA27-5927-48B6-8CE8-0045F5ED9F87}",
+      "DurationType": "OneShot",
+      "DurationMin": "183.0398",
+      "DurationMax": "183.0398",
+      "MediaRefs": [
+       {
+        "Id": "323339064"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6FF5B32E-DA61-0AF0-99D7-5F450CBD9875}"
+ }
+}

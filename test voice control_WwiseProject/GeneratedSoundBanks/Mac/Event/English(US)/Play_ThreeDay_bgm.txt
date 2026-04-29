@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2733610967	Play_ThreeDay_bgm			\Default Work Unit\Play_ThreeDay_bgm	
-

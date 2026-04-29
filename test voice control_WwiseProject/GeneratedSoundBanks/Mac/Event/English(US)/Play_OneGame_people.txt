@@ -1,7 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2328321422	Play_OneGame_people			\Default Work Unit\Play_OneGame_people	
-
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	1163235330	mic_direct			\Default Work Unit\mic_direct	
-	2692235896	mic_distance			\Default Work Unit\mic_distance	
-
