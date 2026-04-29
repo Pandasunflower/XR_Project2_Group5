@@ -4389,6 +4389,7 @@ GameObject:
   - component: {fileID: 1572424160}
   - component: {fileID: 1572424165}
   - component: {fileID: 1572424166}
+  - component: {fileID: 1572424167}
   m_Layer: 0
   m_Name: StandPos
   m_TagString: Untagged
@@ -4537,6 +4538,23 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ff50501b1df33574ca293f235a1109b1,
+      type: 2}
+--- !u!114 &1572424167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572424158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96787a0c0a63b5446bda48eb32f25e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myWwiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a39c1157c4e78bc45bcf77aeaaca250a,
       type: 2}
 --- !u!1 &1577531841
 GameObject:
