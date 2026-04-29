@@ -1798,6 +1798,7 @@ MonoBehaviour:
   - {fileID: 1997819886}
   - {fileID: 1131389322}
   - {fileID: 1658571983}
+  singingManager: {fileID: 588768166}
 --- !u!4 &405044361
 Transform:
   m_ObjectHideFlags: 0

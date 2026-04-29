@@ -408,6 +408,13 @@ public class SingingManager : MonoBehaviour {
         this.enabled = false;
     }
 
+    public float GetFinalScore() {
+        if (currentTotalScore <= 70f) {
+            return 7f;
+        }
+        return currentTotalScore / 10f;
+    }
+
     private IEnumerator waitSeconds()
     {
         yield return new WaitForSeconds(10f);

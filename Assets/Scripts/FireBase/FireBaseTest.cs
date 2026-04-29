@@ -20,6 +20,8 @@ public class FirestoreTest : MonoBehaviour
 
     public Transform[] NPCpos;
 
+    public SingingManager singingManager;
+
     void Start()
     {
         db = FirebaseFirestore.DefaultInstance;
@@ -270,9 +272,13 @@ public class FirestoreTest : MonoBehaviour
                 }
             }
 
-            float average = count > 0 ? total / count : 0;
-            Debug.Log("平均分數: " + average);
-            StartCoroutine(ShowAnimatedResult(average));
+            float voteScore = count > 0 ? total / count : 0;
+            float singingScore = singingManager.GetFinalScore();
+            float finalScore = (voteScore + singingScore) / 2f;
+            Debug.Log("平均分數: " + voteScore);
+            Debug.Log("演唱分數: " + singingScore);
+            Debug.Log("最終分數: " + finalScore);
+            StartCoroutine(ShowAnimatedResult(finalScore));
         });
     }
 
