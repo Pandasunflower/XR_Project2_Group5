@@ -9,8 +9,9 @@ public class GrabPigGun : MonoBehaviour
 
     void Update()
     {
-        if (oVRGrabber.grabbedObject == gameObject)
+        if (oVRGrabber.grabbedObject != null)
         {
+            // Debug.Log("Grabbed object: " + oVRGrabber.grabbedObject.name);
             isGrabbed = true;
         }
         else

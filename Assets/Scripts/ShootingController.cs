@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Oculus.Interaction;
+using Unity.Mathematics;
 
 public class ShootingController : MonoBehaviour
 {
@@ -19,6 +20,10 @@ public class ShootingController : MonoBehaviour
 
     public GrabPigGun grabPigGun;
 
+    public quaternion bulletRotation = quaternion.Euler(0, 180f, 0);
+
+    public PlayWwiseEvent shootSound;
+
     void Update()
     {
         if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) && grabPigGun.isGrabbed)
@@ -29,11 +34,15 @@ public class ShootingController : MonoBehaviour
 
     void OnFire()
     {
-        GameObject newBullet = Instantiate(bulletPrefab, shootingPoint.transform.position, shootingPoint.transform.rotation);
-        newBullet.transform.LookAt(shootingPoint.transform.right * 30f);
+        Quaternion rot = shootingPoint.transform.rotation * Quaternion.Euler(0, 180f, 0);
+        GameObject newBullet = Instantiate(bulletPrefab, shootingPoint.transform.position, rot);
+        if (newBullet.GetComponent<Animator>() != null) Debug.Log("Animator component found on bullet prefab.");
+        newBullet.GetComponent<Animator>().SetBool("Hit", true);
+        // newBullet.transform.LookAt(shootingPoint.transform.right * 30f);
         Rigidbody rb = newBullet.GetComponent<Rigidbody>();
         rb.velocity = shootingPoint.transform.forward * bulletSpeed;
         TriggerVibration();
+        shootSound.PlaySound();
     }
 
     void TriggerVibration()
