@@ -32,7 +32,7 @@ public class NPCSpawner : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            RandomizeNPCAnimations("FanDance");
+            RandomizeNPCAnimations();
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -89,7 +89,7 @@ public class NPCSpawner : MonoBehaviour
         return true;
     }
 
-    void RandomizeNPCAnimations(string animationName)
+    void RandomizeNPCAnimations()
     {
         if (_spawnedNpcs == null || _spawnedNpcs.Count == 0)
         {
@@ -103,8 +103,8 @@ public class NPCSpawner : MonoBehaviour
         if (selectedNpc != null)
         {
             selectedNpc.StopAllCoroutines(); 
-            selectedNpc.StartCoroutine(selectedNpc.PlayAnimation(animationName));
-            Debug.Log($"隨機挑選了 {selectedNpc.gameObject.name} (索引: {randomIndex}) 開始跳舞！");
+            selectedNpc.StartCoroutine(selectedNpc.PlayRandomAnimation());
+            Debug.Log($"隨機挑選了 {selectedNpc.gameObject.name} (索引: {randomIndex}) 開始TROLL！");
         }
     }
 

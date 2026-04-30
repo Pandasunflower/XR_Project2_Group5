@@ -66,6 +66,47 @@ public class NpcController : MonoBehaviour
         // Debug.Log($"{gameObject.name} 執行了動畫: {animationName}");
     }
 
+    public IEnumerator PlayRandomAnimation()
+    {
+        if (_animator == null || _animator.runtimeAnimatorController == null)
+        {
+            Debug.LogWarning($"{gameObject.name} 缺少 Animator Controller！");
+            yield break;
+        }
+
+        List<string> boolParams = new List<string>();
+        foreach (AnimatorControllerParameter param in _animator.parameters)
+        {
+            if (param.type == AnimatorControllerParameterType.Bool)
+            {
+                boolParams.Add(param.name);
+            }
+        }
+
+        if (boolParams.Count == 0)
+        {
+            Debug.LogWarning($"{gameObject.name} 的 Animator 中沒有任何 Bool 參數！");
+            yield break;
+        }
+
+        string selectedName = boolParams[Random.Range(0, boolParams.Count)];
+
+        _animator.speed = 1.0f;
+        _animator.SetBool(selectedName, true);
+        is_trolling = true;
+
+        yield return new WaitForSeconds(timeVariation);
+
+        if (is_trolling)
+        {
+            _animator.SetBool(selectedName, false);
+            is_trolling = false;
+            _animator.speed = Random.Range(minIdleSpeed, maxIdleSpeed);
+        }
+
+        // Debug.Log($"{gameObject.name} 隨機執行了動畫: {selectedName}");
+    }
+
     public void StopAnimation(string animationName)
     {
         if (_animator == null || _animator.runtimeAnimatorController == null)

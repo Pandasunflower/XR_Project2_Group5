@@ -1382,7 +1382,7 @@ MonoBehaviour:
   personalSpaceRadius: 0.8
   maxRetriesPerSpawn: 20
   lookTarget: {fileID: 218970112}
-  enableWave: 1
+  enableWave: 0
   waveLength: 40
 --- !u!4 &687058978
 Transform:
