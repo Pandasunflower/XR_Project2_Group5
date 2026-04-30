@@ -14,6 +14,10 @@ public class NpcController : MonoBehaviour
 
     public bool is_trolling = false;
 
+    [Header("隨機速度設定")]
+    public float minIdleSpeed = 0.8f;
+    public float maxIdleSpeed = 1.2f;
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -23,6 +27,19 @@ public class NpcController : MonoBehaviour
     private void Start()
     {
         // StartCoroutine(PlayAnimation("FanDance"));
+        if (_animator != null)
+        {
+            _animator.speed = Random.Range(minIdleSpeed, maxIdleSpeed);
+        }
+    }
+
+    void Update()
+    {
+        Vector3 targetPosition = Camera.main.transform.position;
+        
+        targetPosition.y = transform.position.y;
+        
+        transform.LookAt(targetPosition);
     }
 
     public IEnumerator PlayAnimation(string animationName)
@@ -33,6 +50,7 @@ public class NpcController : MonoBehaviour
             yield break;
         }
 
+        _animator.speed = 1.0f;
         _animator.SetBool(animationName, true);
         is_trolling = true;
 
@@ -42,6 +60,7 @@ public class NpcController : MonoBehaviour
         {
             _animator.SetBool(animationName, false);
             is_trolling = false;
+            _animator.speed = Random.Range(minIdleSpeed, maxIdleSpeed);
         }
 
         // Debug.Log($"{gameObject.name} 執行了動畫: {animationName}");
@@ -71,6 +90,7 @@ public class NpcController : MonoBehaviour
         }
         
         StopAllCoroutines();
+        _animator.speed = Random.Range(minIdleSpeed, maxIdleSpeed);
         foreach (AnimatorControllerParameter param in _animator.parameters)
         {
             if (param.type == AnimatorControllerParameterType.Bool)
