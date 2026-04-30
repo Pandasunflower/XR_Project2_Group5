@@ -36,7 +36,7 @@ ModelImporter:
       name: BulletExplode
       takeName: Armature|ArmatureAction
       internalID: 4781951162920444690
-      firstFrame: 0
+      firstFrame: 33.4
       lastFrame: 59
       wrapMode: 0
       orientationOffsetY: 0
