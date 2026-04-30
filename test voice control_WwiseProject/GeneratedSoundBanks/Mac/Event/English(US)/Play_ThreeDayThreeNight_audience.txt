@@ -4,3 +4,6 @@ Event	ID	Name			Wwise Object Path	Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	658503054	audience_pickup			\Default Work Unit\audience_pickup	
 
+Effect plug-ins	ID	Name	Type				Notes
+	145028528	Static_Sibilance_Remover_Female	Wwise Parametric EQ			
+

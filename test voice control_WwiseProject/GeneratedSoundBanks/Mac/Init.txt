@@ -6,6 +6,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
+	602546716	Room_Large	Wwise RoomVerb			
 	1706684651	Plate_Medium	Wwise RoomVerb			
 	1990128658	Room_Medium	Wwise RoomVerb			
 

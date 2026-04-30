@@ -10,12 +10,20 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{7E99FACD-1B7D-3B46-7E85-F14359F43B77}",
+    "Hash": "{536E248A-0A55-51DC-B974-D42AC8BB19A0}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
      "ShareSets": [
+      {
+       "Id": "602546716",
+       "Name": "Room_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Large",
+       "GUID": "{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
       {
        "Id": "1706684651",
        "Name": "Plate_Medium",
@@ -57,7 +65,14 @@
       "Id": "936729720",
       "Name": "stage3",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\stage3",
-      "GUID": "{3489EC20-BA19-4B1E-BB91-7257005D0D57}"
+      "GUID": "{3489EC20-BA19-4B1E-BB91-7257005D0D57}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "602546716"
+        }
+       ]
+      }
      },
      {
       "Id": "936729722",
@@ -126,6 +141,6 @@
     ]
    }
   ],
-  "FileHash": "{65DFA423-0B4B-61C5-E383-72C39CB3A89E}"
+  "FileHash": "{6A9B7E63-DCE7-7F07-18F9-3D50FAA27E4D}"
  }
 }

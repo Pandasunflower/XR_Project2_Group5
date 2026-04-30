@@ -10,33 +10,21 @@
     "Type": "Event",
     "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
     "Language": "English(US)",
-    "Hash": "{79BE0CF4-E28F-708C-13D4-0C863DD7F804}",
+    "Hash": "{11C32D95-2538-D707-3A39-5E4F6E9BE950}",
     "ObjectPath": "Play_ThreeDayThreeNight_people",
     "ShortName": "Play_ThreeDayThreeNight_people",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_people.bnk",
     "Media": [
      {
-      "Id": "948265681",
+      "Id": "192242864",
       "Language": "English(US)",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "三天三夜 人生.wav",
-      "Path": "Media/English(US)/948265681.wem",
-      "CachePath": "75/{752F81DA-D9AD-6EDF-FB78-884028849013}.wem"
+      "ShortName": "三天三夜 人聲.wav",
+      "Path": "Media/English(US)/192242864.wem",
+      "CachePath": "37/{37B51282-CCC5-93F8-4AAF-F7D9A56436C9}.wem"
      }
     ],
-    "Plugins": {
-     "ShareSets": [
-      {
-       "Id": "1144018367",
-       "Name": "Plate_Large",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Plates\\Plate_Large",
-       "GUID": "{62CB7384-421D-4F9A-9CF1-E90F7336A07B}",
-       "LibName": "Wwise RoomVerb",
-       "LibId": "7733251"
-      }
-     ]
-    },
     "Events": [
      {
       "Id": "1319984948",
@@ -44,20 +32,13 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_people",
       "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
       "DurationType": "OneShot",
-      "DurationMin": "264.7307",
-      "DurationMax": "264.7307",
+      "DurationMin": "282.288",
+      "DurationMax": "282.288",
       "MediaRefs": [
        {
-        "Id": "948265681"
+        "Id": "192242864"
        }
-      ],
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "1144018367"
-        }
-       ]
-      }
+      ]
      }
     ],
     "GameParameters": [
@@ -76,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{96E63D3A-E03A-0B23-0267-EDBBB2D7D61F}"
+  "FileHash": "{59559784-4966-D409-E4F7-7C01BCBB219D}"
  }
 }
