@@ -6,6 +6,8 @@ public class NPCSpawner : MonoBehaviour
 {
     [Header("生成設定")]
     public GameObject[] npcPrefabs;
+    public GameObject[] speicialPrefabs;
+    public float specialScale = 1f;
     public int spawnCount = 10;
     public float minDistance = 2f;
     public float fixedY = -1.544f;
@@ -19,11 +21,14 @@ public class NPCSpawner : MonoBehaviour
     public int score = 0;
     private object _scoreLock = new object();
 
+    private int currentSpawned = 0;
+
     void Start()
     {
         ResetScore();
         if (areaCubes != null && areaCubes.Length > 0 && npcPrefabs != null && npcPrefabs.Length > 0)
         {
+            SpawnSpecialNPCs();
             SpawnNPCs();
         }
     }
@@ -40,11 +45,47 @@ public class NPCSpawner : MonoBehaviour
         }
     }
 
+    void SpawnSpecialNPCs()
+    {
+        
+        int attempts = 0;
+
+        for (int i = 0; i < speicialPrefabs.Length;)
+        {
+            GameObject selectedCube = areaCubes[Random.Range(0, areaCubes.Length)];
+            Bounds bounds = selectedCube.GetComponent<Renderer>().bounds;
+
+            GameObject selectedPrefab = speicialPrefabs[i];
+
+            float randomX = Random.Range(bounds.min.x, bounds.max.x);
+            float randomZ = Random.Range(bounds.min.z, bounds.max.z);
+            Vector3 spawnPos = new Vector3(randomX, fixedY, randomZ);
+            Quaternion spawnRotation = Quaternion.Euler(0f, 180f, 0f);
+
+            if (IsPositionValid(spawnPos))
+            {
+                GameObject newNpc = Instantiate(selectedPrefab, spawnPos, spawnRotation);
+                NpcController controller = newNpc.GetComponent<NpcController>();
+                newNpc.transform.localScale = new Vector3(specialScale, specialScale, specialScale);
+                if (controller != null)
+                {
+                    _spawnedNpcs.Add(controller);
+                }
+                _spawnedPositions.Add(spawnPos);
+                currentSpawned++;
+                i++;
+            }
+            else
+            {
+                Debug.Log($"嘗試生成特殊 NPC 失敗，位置不合法。嘗試次數: {attempts}");
+            }
+        }
+    }
+
     void SpawnNPCs()
     {
         
         int attempts = 0;
-        int currentSpawned = 0;
 
         while (currentSpawned < spawnCount && attempts < spawnCount * 10)
         {

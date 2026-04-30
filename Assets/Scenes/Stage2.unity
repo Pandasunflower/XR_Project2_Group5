@@ -2928,12 +2928,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcPrefabs:
-  - {fileID: 7941277813459836660, guid: 6dd11167b16e8934dbe1fc97da83cafb, type: 3}
+  - {fileID: 2268313805299584094, guid: 83867007d0d5cfb44914d13653a43694, type: 3}
   - {fileID: 8070802498719485112, guid: 34fb370781795004b91f78d3bdd12f50, type: 3}
   - {fileID: 4240253983782928750, guid: 4fd79339ac40a8740a1a2d9dcaebcba7, type: 3}
-  - {fileID: 2268313805299584094, guid: 83867007d0d5cfb44914d13653a43694, type: 3}
-  spawnCount: 30
-  minDistance: 1
+  - {fileID: 7941277813459836660, guid: 6dd11167b16e8934dbe1fc97da83cafb, type: 3}
+  speicialPrefabs:
+  - {fileID: 6871019290551772693, guid: e829872ac14df224c9cfeecc16da6bc1, type: 3}
+  - {fileID: 5419527045784184807, guid: 9f42ee3a315de524e97271a86fb34fb1, type: 3}
+  - {fileID: 4591598982437898775, guid: e6e52b1aadde39d4aae6f36a1f7ae120, type: 3}
+  - {fileID: 1897858194785492222, guid: b3de4efe61b94e141af7d492dc94c068, type: 3}
+  - {fileID: 6877719297472408113, guid: 068671fa8afbdb74083ff7807e4cbd79, type: 3}
+  specialScale: 1.5
+  spawnCount: 100
+  minDistance: 2
   fixedY: -1.544
   areaCubes:
   - {fileID: 380825357}
@@ -7259,10 +7266,10 @@ SceneRoots:
   - {fileID: 1912649489}
   - {fileID: 697564950}
   - {fileID: 795788608}
-  - {fileID: 1415585331}
   - {fileID: 380825361}
   - {fileID: 1411716861}
   - {fileID: 1560410067}
   - {fileID: 299255772}
   - {fileID: 1483700907}
   - {fileID: 117360260}
+  - {fileID: 1415585331}
