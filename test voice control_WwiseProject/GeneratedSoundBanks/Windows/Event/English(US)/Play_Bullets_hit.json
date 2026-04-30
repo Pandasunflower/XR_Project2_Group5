@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3288810203",
+    "Type": "Event",
+    "GUID": "{90F1FFC7-FC3C-427D-B2BD-37DCA1E69A56}",
+    "Language": "English(US)",
+    "Hash": "{8F74A3FE-C967-8EF5-9CC2-B1A3F8AA2C27}",
+    "ObjectPath": "Play_Bullets_hit",
+    "ShortName": "Play_Bullets_hit",
+    "Path": "Event/English(US)/Play_Bullets_hit.bnk",
+    "Media": [
+     {
+      "Id": "332869829",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "子彈射到的聲音.wav",
+      "Path": "Media/English(US)/332869829.wem",
+      "CachePath": "12/{12B0ADAB-10E1-A302-55CB-1229FA448309}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3288810203",
+      "Name": "Play_Bullets_hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Bullets_hit",
+      "GUID": "{90F1FFC7-FC3C-427D-B2BD-37DCA1E69A56}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.96533334",
+      "DurationMax": "0.96533334",
+      "MediaRefs": [
+       {
+        "Id": "332869829"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E2A4C6B2-FFED-2BCB-688E-A060E0A78FD8}"
+ }
+}

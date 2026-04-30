@@ -245,12 +245,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_JackyUber" ID="{546E6D8B-F932-410C-AC13-58E73FE1C530}">
+				<Event Name="Play_Bullets_hit" ID="{90F1FFC7-FC3C-427D-B2BD-37DCA1E69A56}">
 					<ChildrenList>
-						<Action Name="" ID="{C12DF4DC-3469-46B5-91F9-60FFB1A25928}" ShortID="861965262">
+						<Action Name="" ID="{2F54B6C1-8B22-4D98-A1E8-6C3D383C1121}" ShortID="949516426">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="JackyUber" ID="{5BDA7588-B3AB-45EE-AA04-98D49A9F5AD8}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+									<ObjectRef Name="子彈射到的聲音" ID="{1B96CACF-6151-4E69-A217-6BA939E04A26}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_shoot" ID="{D4C6724F-85DF-412E-BEDC-B34A7CF8FA9E}">
+					<ChildrenList>
+						<Action Name="" ID="{9FF7CB21-9490-46D0-A53B-20ABB4C3A81D}" ShortID="496628387">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shoot" ID="{6A624D2A-2E07-4E82-87CA-BEE6BFCC994D}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_JackyUber" ID="{A6100C5F-9413-41F7-A1B6-F40C32FF13BA}">
+					<ChildrenList>
+						<Action Name="" ID="{B98D50A8-9B00-40BD-AAA9-9ADA6440BEF0}" ShortID="326009561">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="JackyUber" ID="{D842B275-7171-4CAC-887B-21460F10183D}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

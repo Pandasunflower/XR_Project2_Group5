@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ASKFORMONEY = 3118526426U;
+        static const AkUniqueID PLAY_BULLETS_HIT = 3288810203U;
         static const AkUniqueID PLAY_CLAPPING = 2700014240U;
         static const AkUniqueID PLAY_DANCINGGIRL = 509118324U;
         static const AkUniqueID PLAY_DAVEWANG = 3205629941U;
@@ -30,6 +31,7 @@ namespace AK
         static const AkUniqueID PLAY_ONEGAMEONEDREAM_BGM = 4065753090U;
         static const AkUniqueID PLAY_ONEGAMEONEDREAM_PEOPLE = 806402365U;
         static const AkUniqueID PLAY_ONPHONE = 4122281311U;
+        static const AkUniqueID PLAY_SHOOT = 2641650631U;
         static const AkUniqueID PLAY_SPOTLIGHT = 1951773134U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_AUDIENCE = 2494639119U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_BGM = 3749606501U;
