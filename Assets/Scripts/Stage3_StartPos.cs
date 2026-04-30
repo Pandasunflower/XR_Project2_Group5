@@ -17,6 +17,7 @@ public class Stage3_StartPos : MonoBehaviour
             firestoreTest.SetGameState("l2");
             // firestoreTest.SetAllWaving();
             GetComponent<PlayWwiseEvent>().PlaySound();
+            GetComponent<PlayWwiseEvent2>().PlaySound();
             // singingManager.realStartGame();
             videoPlayer.Play();
             // AkUnitySoundEngine.PostEvent("Play_OneGameOneDream_BGM", gameObject);
