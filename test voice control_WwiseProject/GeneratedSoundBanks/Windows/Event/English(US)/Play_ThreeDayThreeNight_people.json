@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
     "Language": "English(US)",
-    "Hash": "{47C52E1D-6AC1-01E2-1EE4-F38CA7E3DDD3}",
+    "Hash": "{756E9CDC-05A1-59BD-6CFF-939973E3EAF2}",
     "ObjectPath": "Play_ThreeDayThreeNight_people",
     "ShortName": "Play_ThreeDayThreeNight_people",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_people.bnk",
@@ -25,6 +25,18 @@
       "CachePath": "75/{752F81DA-D9AD-6EDF-FB78-884028849013}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1144018367",
+       "Name": "Plate_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Plates\\Plate_Large",
+       "GUID": "{62CB7384-421D-4F9A-9CF1-E90F7336A07B}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "1319984948",
@@ -38,7 +50,14 @@
        {
         "Id": "948265681"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1144018367"
+        }
+       ]
+      }
      }
     ],
     "GameParameters": [
@@ -57,6 +76,6 @@
     ]
    }
   ],
-  "FileHash": "{CE2E98A9-7A2A-CA9C-5B0A-CBA654913974}"
+  "FileHash": "{D8C85A4F-9A68-3833-329B-4641BA042AAA}"
  }
 }

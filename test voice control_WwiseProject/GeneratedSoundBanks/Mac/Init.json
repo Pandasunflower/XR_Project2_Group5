@@ -10,11 +10,29 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{175E862A-F103-D4BB-37EC-7D2DC523470C}",
+    "Hash": "{7B9EE544-2A5A-0ABE-7E05-542F54CC532A}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1990128658",
+       "Name": "Room_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium",
+       "GUID": "{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "2995775460",
+       "Name": "Room_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
+       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -36,10 +54,36 @@
     },
     "Busses": [
      {
+      "Id": "936729720",
+      "Name": "stage3",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\stage3",
+      "GUID": "{3489EC20-BA19-4B1E-BB91-7257005D0D57}"
+     },
+     {
+      "Id": "936729722",
+      "Name": "stage1",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\stage1",
+      "GUID": "{90FE9495-11ED-40C5-9A86-581F6B5EC299}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2995775460"
+        }
+       ]
+      }
+     },
+     {
       "Id": "1401307552",
       "Name": "SongBus",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SongBus",
-      "GUID": "{3E610D54-4975-44FC-9068-A1B1E2DACEE6}"
+      "GUID": "{3E610D54-4975-44FC-9068-A1B1E2DACEE6}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1990128658"
+        }
+       ]
+      }
      },
      {
       "Id": "2120751940",
@@ -82,6 +126,6 @@
     ]
    }
   ],
-  "FileHash": "{9E61FEC6-B8B9-1B72-13E7-C47B30AA4D0E}"
+  "FileHash": "{42D3B0EA-617F-4107-90EF-AD42D9D9A3A7}"
  }
 }

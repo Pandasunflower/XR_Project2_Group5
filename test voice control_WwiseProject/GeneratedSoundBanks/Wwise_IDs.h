@@ -59,6 +59,8 @@ namespace AK
         static const AkUniqueID ACCIDENTBUS = 2120751940U;
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
         static const AkUniqueID SONGBUS = 1401307552U;
+        static const AkUniqueID STAGE1 = 936729722U;
+        static const AkUniqueID STAGE3 = 936729720U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
