@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3288810203	Play_Bullets_hit			\Default Work Unit\Play_Bullets_hit	
+
