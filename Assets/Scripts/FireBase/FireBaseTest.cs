@@ -45,7 +45,8 @@ public class FirestoreTest : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            SetGameState("l1_voting");
+            // SetGameState("l1_voting");
+            singingManager.ShowFinalScore();
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
