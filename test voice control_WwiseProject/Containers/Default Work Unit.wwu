@@ -13,7 +13,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="stage1" ID="{90FE9495-11ED-40C5-9A86-581F6B5EC299}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -49,13 +49,13 @@
 														<SegmentShape>Exp3</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>0.5075</XPos>
+														<XPos>5.075</XPos>
 														<YPos>-1.21159</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>10</XPos>
+														<XPos>100</XPos>
 														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -130,12 +130,12 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>0.1</XPos>
+														<XPos>1</XPos>
 														<YPos>20</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>10</XPos>
+														<XPos>100</XPos>
 														<YPos>20</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -297,13 +297,13 @@
 														<SegmentShape>Exp3</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>0.5075</XPos>
+														<XPos>5.075</XPos>
 														<YPos>-1.21159</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>10</XPos>
+														<XPos>100</XPos>
 														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -377,12 +377,12 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>0.1</XPos>
+														<XPos>1</XPos>
 														<YPos>20</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>10</XPos>
+														<XPos>100</XPos>
 														<YPos>20</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -442,197 +442,6 @@
 						<ActiveSource Name="笨小孩人生" ID="{D0DACEE3-1522-4D4F-8E45-970DACFF12B1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="三天三夜 人生" ID="{E0F82D59-2E13-46F5-A633-AE118AC68FD3}" ShortID="860402079">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="三天三夜 人生" ID="{BB7C8242-FF22-4047-A89C-A5CD3791367C}">
-							<Language>English(US)</Language>
-							<AudioFile>三天三夜 人生.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="948265681"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="RTPC">
-							<RTPC Name="" ID="{65FAE2C9-011D-48E9-8BB4-B77278404CF2}" ShortID="225239196">
-								<PropertyList>
-									<Property Name="PropertyName" Type="string" Value="Highpass"/>
-								</PropertyList>
-								<ReferenceList>
-									<Reference Name="ControlInput">
-										<ObjectRef Name="mic_distance" ID="{094260AC-CB5C-43D8-A2CB-055CC6615208}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
-									</Reference>
-									<Reference Name="Curve">
-										<Custom>
-											<Curve Name="" ID="{E6123A02-AF63-4AD3-825B-FFC772E9D8F9}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>0</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>0.1</XPos>
-														<YPos>20</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>10</XPos>
-														<YPos>20</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</Custom>
-									</Reference>
-								</ReferenceList>
-							</RTPC>
-							<RTPC Name="" ID="{5BCE0490-1F79-4E51-8AB4-75881D1B8770}" ShortID="348983524">
-								<PropertyList>
-									<Property Name="PropertyName" Type="string" Value="Volume"/>
-								</PropertyList>
-								<ReferenceList>
-									<Reference Name="ControlInput">
-										<ObjectRef Name="mic_distance" ID="{094260AC-CB5C-43D8-A2CB-055CC6615208}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
-									</Reference>
-									<Reference Name="Curve">
-										<Custom>
-											<Curve Name="" ID="{C69EFEEF-5A18-4E57-82CF-ADAA914DBCD4}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>0.0200800000000072</YPos>
-														<Flags>5</Flags>
-														<SegmentShape>Exp3</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>0.5075</XPos>
-														<YPos>-1.21159</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Log1</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>10</XPos>
-														<YPos>-200</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</Custom>
-									</Reference>
-								</ReferenceList>
-							</RTPC>
-							<RTPC Name="" ID="{A5BAED0B-BEAD-4217-B48F-41A5218536A4}" ShortID="4324015">
-								<PropertyList>
-									<Property Name="PropertyName" Type="string" Value="Volume"/>
-								</PropertyList>
-								<ReferenceList>
-									<Reference Name="ControlInput">
-										<ObjectRef Name="mic_direct" ID="{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
-									</Reference>
-									<Reference Name="Curve">
-										<Custom>
-											<Curve Name="" ID="{CC5A7AEB-CF54-4EEA-8C5A-0FEEBC7F6212}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-0.0200800000000072</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>30</XPos>
-														<YPos>0</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Log3</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>89.89737</XPos>
-														<YPos>-200</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Exp3</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>180</XPos>
-														<YPos>-195.00023</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</Custom>
-									</Reference>
-								</ReferenceList>
-							</RTPC>
-							<RTPC Name="" ID="{AD1D864B-6B39-4818-B941-BFF9FC8503B3}" ShortID="1003899211">
-								<PropertyList>
-									<Property Name="PropertyName" Type="string" Value="Lowpass"/>
-								</PropertyList>
-								<ReferenceList>
-									<Reference Name="ControlInput">
-										<ObjectRef Name="mic_direct" ID="{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
-									</Reference>
-									<Reference Name="Curve">
-										<Custom>
-											<Curve Name="" ID="{87E1C8C9-CE69-4939-A0EA-90559C3F268B}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>0</YPos>
-														<Flags>5</Flags>
-														<SegmentShape>Log2</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>30</XPos>
-														<YPos>0</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Exp1</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>90</XPos>
-														<YPos>60</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Exp1</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>180</XPos>
-														<YPos>100</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</Custom>
-									</Reference>
-								</ReferenceList>
-							</RTPC>
-						</ObjectList>
-					</ObjectLists>
-					<ActiveSourceList>
-						<ActiveSource Name="三天三夜 人生" ID="{BB7C8242-FF22-4047-A89C-A5CD3791367C}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="三天三夜背景音" ID="{08557C71-7119-4D9F-AB76-E0303A607E59}" ShortID="510115816">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -663,18 +472,13 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-15</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="stage1" ID="{90FE9495-11ED-40C5-9A86-581F6B5EC299}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -713,12 +517,12 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>0.1</XPos>
+														<XPos>1</XPos>
 														<YPos>20</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>10</XPos>
+														<XPos>100</XPos>
 														<YPos>20</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -750,13 +554,13 @@
 														<SegmentShape>Exp3</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>0.5075</XPos>
+														<XPos>5.075</XPos>
 														<YPos>-1.21159</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>10</XPos>
+														<XPos>100</XPos>
 														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -890,79 +694,6 @@
 						<ActiveSource Name="一場遊戲一場夢_背景音" ID="{683AD592-1E84-4383-9FA2-A40615FA710E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="三天三夜觀眾" ID="{B808AF84-231F-4AC2-ABBB-8D559F7EE769}" ShortID="1037947182">
-					<PropertyList>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="三天三夜觀眾" ID="{58BF39E7-FABD-466B-A2BF-5C631A9E67E0}">
-							<Language>English(US)</Language>
-							<AudioFile>三天三夜觀眾.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="101038991"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="RTPC">
-							<RTPC Name="" ID="{4B33A0D3-51BB-4867-924C-AC29F3E7BC23}" ShortID="422821387">
-								<PropertyList>
-									<Property Name="PropertyName" Type="string" Value="Volume"/>
-								</PropertyList>
-								<ReferenceList>
-									<Reference Name="ControlInput">
-										<ObjectRef Name="audience_pickup" ID="{63331C15-0F86-42B0-8B64-7C7C81717607}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
-									</Reference>
-									<Reference Name="Curve">
-										<Custom>
-											<Curve Name="" ID="{561B205F-CBD6-4578-8404-5A7912DE0852}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>0</YPos>
-														<Flags>5</Flags>
-														<SegmentShape>Exp3</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>10.01427</XPos>
-														<YPos>-16.32779</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Log3</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>15.38106</XPos>
-														<YPos>-200</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Exp3</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>180</XPos>
-														<YPos>-200</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</Custom>
-									</Reference>
-								</ReferenceList>
-							</RTPC>
-						</ObjectList>
-					</ObjectLists>
-					<ActiveSourceList>
-						<ActiveSource Name="三天三夜觀眾" ID="{58BF39E7-FABD-466B-A2BF-5C631A9E67E0}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="for-the-first-time-in-forever-from-frozensing-along" ID="{C879FEB3-7C5A-4358-8055-CC146EE68308}" ShortID="422820526">
 					<PropertyList>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -1011,6 +742,221 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="王傑-一場遊戲一場夢" ID="{2EBB425F-FCEC-415B-8109-C0728AA209B7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="三天三夜 人聲" ID="{218D143F-7EBC-4877-ACD1-63B1FEA5118C}" ShortID="300812402">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="stage3" ID="{3489EC20-BA19-4B1E-BB91-7257005D0D57}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="三天三夜 人聲" ID="{3DB1C63A-2DAC-4162-99FB-A68BFB3CD735}">
+							<Language>English(US)</Language>
+							<AudioFile>三天三夜 人聲.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="192242864"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<RTPC Name="" ID="{29529FBC-632D-4B9E-A044-685F58443DAF}" ShortID="370192059">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="Volume"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="mic_direct" ID="{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{E1AFC91A-5E5B-4D07-9521-C49296880FC9}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-0.0200800000000072</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>30</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>89.89737</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>180</XPos>
+														<YPos>-195.00023</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+							<RTPC Name="" ID="{87ABC75B-2105-4F41-A259-6B55113807D0}" ShortID="28228179">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="mic_direct" ID="{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{1F4BB867-D36B-4E73-8BB3-D492208C4102}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>30</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>90</XPos>
+														<YPos>60</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>180</XPos>
+														<YPos>100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+							<RTPC Name="" ID="{67AB00F4-59A1-4EFD-A2B9-1804AFCBA1E4}" ShortID="1057353601">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="Highpass"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="mic_distance" ID="{094260AC-CB5C-43D8-A2CB-055CC6615208}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{C5687754-C20D-4A8A-843F-1AE361ED20FB}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>20</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>20</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+							<RTPC Name="" ID="{05992E00-47FD-43F0-95A8-D71756427DC7}" ShortID="1046259671">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="Volume"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="mic_distance" ID="{094260AC-CB5C-43D8-A2CB-055CC6615208}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{2882CF04-361F-4548-8F58-3CB57776DC08}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0.0200800000000072</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>5.075</XPos>
+														<YPos>-1.21159</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="三天三夜 人聲" ID="{3DB1C63A-2DAC-4162-99FB-A68BFB3CD735}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="三天三夜 觀眾" ID="{6CA63F36-2E03-497B-AF16-79433BF99885}" ShortID="284114087">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="三天三夜 觀眾" ID="{233C6AD0-F99F-4D1A-9E20-B4A63D6D46B2}">
+							<Language>English(US)</Language>
+							<AudioFile>三天三夜 觀眾.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="116925822"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="三天三夜 觀眾" ID="{233C6AD0-F99F-4D1A-9E20-B4A63D6D46B2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

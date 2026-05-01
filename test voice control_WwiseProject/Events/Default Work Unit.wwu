@@ -52,7 +52,7 @@
 						<Action Name="" ID="{F2CB0C9E-143C-4424-B91A-33B7C7F1A0B0}" ShortID="109233461">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="三天三夜 人生" ID="{E0F82D59-2E13-46F5-A633-AE118AC68FD3}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+									<ObjectRef Name="三天三夜 人聲" ID="{218D143F-7EBC-4877-ACD1-63B1FEA5118C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -203,10 +203,10 @@
 				</Event>
 				<Event Name="Play_ThreeDayThreeNight_audience" ID="{F8CF7561-A27F-4953-B271-C41277A86D43}">
 					<ChildrenList>
-						<Action Name="" ID="{254641A3-2DAB-4827-B455-028C5B54DE8A}" ShortID="910318846">
+						<Action Name="" ID="{DBF916CF-333A-443C-8BDD-68D2B24618DF}" ShortID="921768460">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="三天三夜觀眾" ID="{B808AF84-231F-4AC2-ABBB-8D559F7EE769}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+									<ObjectRef Name="三天三夜 觀眾" ID="{6CA63F36-2E03-497B-AF16-79433BF99885}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -10,11 +10,37 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{175E862A-F103-D4BB-37EC-7D2DC523470C}",
+    "Hash": "{CAB0E7AF-EFB5-EEF5-2DB5-619BB54D67D1}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "602546716",
+       "Name": "Room_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Large",
+       "GUID": "{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "1706684651",
+       "Name": "Plate_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Plates\\Plate_Medium",
+       "GUID": "{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "1990128658",
+       "Name": "Room_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium",
+       "GUID": "{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -36,10 +62,43 @@
     },
     "Busses": [
      {
+      "Id": "936729720",
+      "Name": "stage3",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\stage3",
+      "GUID": "{3489EC20-BA19-4B1E-BB91-7257005D0D57}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "602546716"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "936729722",
+      "Name": "stage1",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\stage1",
+      "GUID": "{90FE9495-11ED-40C5-9A86-581F6B5EC299}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1990128658"
+        }
+       ]
+      }
+     },
+     {
       "Id": "1401307552",
       "Name": "SongBus",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SongBus",
-      "GUID": "{3E610D54-4975-44FC-9068-A1B1E2DACEE6}"
+      "GUID": "{3E610D54-4975-44FC-9068-A1B1E2DACEE6}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1706684651"
+        }
+       ]
+      }
      },
      {
       "Id": "2120751940",
@@ -82,6 +141,6 @@
     ]
    }
   ],
-  "FileHash": "{9E61FEC6-B8B9-1B72-13E7-C47B30AA4D0E}"
+  "FileHash": "{9E05C09A-197C-4A31-50E2-5BA65C43E199}"
  }
 }

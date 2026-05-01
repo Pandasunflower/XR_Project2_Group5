@@ -23,7 +23,33 @@
 								</DuckItem>
 							</DuckingList>
 						</Bus>
-						<Bus Name="SongBus" ID="{3E610D54-4975-44FC-9068-A1B1E2DACEE6}"/>
+						<Bus Name="SongBus" ID="{3E610D54-4975-44FC-9068-A1B1E2DACEE6}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{E6E4E97D-2AEC-4E4A-88C0-89D277C20CD6}" ShortID="539039310">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Plate_Medium" ID="{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="stage3" ID="{3489EC20-BA19-4B1E-BB91-7257005D0D57}"/>
+						<Bus Name="stage1" ID="{90FE9495-11ED-40C5-9A86-581F6B5EC299}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{2DFB1769-D2EB-4C03-944F-DB032644930C}" ShortID="605734931">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

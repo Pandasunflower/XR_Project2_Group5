@@ -1853,6 +1853,13 @@ MonoBehaviour:
   virbrationStrength: 0.5
   virbrationDuration: 0.2
   grabPigGun: {fileID: 697564953}
+  bulletRotation:
+    value:
+      x: 0
+      y: 0.89399666
+      z: -0
+      w: -0.44807363
+  shootSound: {fileID: 0}
 --- !u!4 &795788608
 Transform:
   m_ObjectHideFlags: 0

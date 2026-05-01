@@ -1,8 +1,15 @@
 fileFormatVersion: 2
-guid: fd06eab607778d5408d3560fdc004a3e
+<<<<<<<< Updated upstream:Assets/7.Animator/CharacterAnimator/3.JackyWu/Stage2IdleAnimator.controller.meta
+guid: ecfe64ece23c71c45b41ff389cc9b4be
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000
+========
+guid: c42afb32d0b0b4e44bbb69b0c79b3e35
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+>>>>>>>> Stashed changes:Assets/Wwise/ScriptableObjects/Event/D4C6724F-85DF-412E-BEDC-B34A7CF8FA9E.asset.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

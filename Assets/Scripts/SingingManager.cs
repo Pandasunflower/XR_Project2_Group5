@@ -396,7 +396,7 @@ public class SingingManager : MonoBehaviour {
         ShowFinalScore(); 
     }
 
-    void ShowFinalScore() {
+    public void ShowFinalScore() {
         firestoreTest.SetGameState("l1_voting");
         Debug.Log($"<color=orange>=== 演唱結束 ===</color>");
         Debug.Log($"<color=orange>最終得分: {currentTotalScore:F2} / 100</color>");

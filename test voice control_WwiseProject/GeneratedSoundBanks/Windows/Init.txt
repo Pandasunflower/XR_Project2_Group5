@@ -1,7 +1,14 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	936729720	stage3			\Default Work Unit\Main Audio Bus\stage3	
+	936729722	stage1			\Default Work Unit\Main Audio Bus\stage1	
 	1401307552	SongBus			\Default Work Unit\Main Audio Bus\SongBus	
 	2120751940	AccidentBus			\Default Work Unit\Main Audio Bus\AccidentBus	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	602546716	Room_Large	Wwise RoomVerb			
+	1706684651	Plate_Medium	Wwise RoomVerb			
+	1990128658	Room_Medium	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
