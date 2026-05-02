@@ -11,6 +11,8 @@ public class NPCSpawner : MonoBehaviour
     public int spawnCount = 10;
     public float minDistance = 2f;
     public float fixedY = -1.544f;
+    public float firstTrollTime = 0f;
+    public float trollInterval = 30f;
 
     [Header("範圍參考物件")]
     public GameObject[] areaCubes;
@@ -30,6 +32,7 @@ public class NPCSpawner : MonoBehaviour
         {
             SpawnSpecialNPCs();
             SpawnNPCs();
+            // InvokeRepeating("RandomizeNPCAnimations", firstTrollTime, trollInterval);
         }
     }
 

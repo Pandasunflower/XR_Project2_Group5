@@ -4,6 +4,8 @@ public class PlayWwiseEvent : MonoBehaviour
 {
     [Header("👉 請從下拉選單選擇你要播放的音效")]
     public AK.Wwise.Event myWwiseEvent;
+
+    public KaraokeScrollViewer karaokeScript;
     
     void Start()
     {
@@ -17,7 +19,11 @@ public class PlayWwiseEvent : MonoBehaviour
         if (myWwiseEvent.IsValid())
         {
             // 這會直接讀取你選的 Event
-            myWwiseEvent.Post(gameObject);
+            uint id = myWwiseEvent.Post(gameObject);
+            if (karaokeScript != null)
+            {
+                karaokeScript.SetWwisePlayingID(id);
+            }
             Debug.Log("成功播放音效：" + myWwiseEvent.Name);
         }
         else
