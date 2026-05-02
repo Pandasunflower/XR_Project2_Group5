@@ -320,8 +320,8 @@ public class SingingManager : MonoBehaviour {
         }
 
         if (windowPoints.Count > 0) {
-            lr.positionCount = windowPoints.Count;
-            lr.SetPositions(windowPoints.ToArray());
+            // lr.positionCount = windowPoints.Count;
+            // lr.SetPositions(windowPoints.ToArray());
         }
         
         // 調試：每秒打印一次
