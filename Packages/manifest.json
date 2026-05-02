@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.cqf.urpvolumetricfog": "https://github.com/CristianQiu/Unity-URP-Volumetric-Light.git",
     "com.meta.xr.sdk.all": "201.0.0",
     "com.meta.xr.sdk.interaction.ovr": "201.0.0",
     "com.unity.collab-proxy": "2.12.4",
