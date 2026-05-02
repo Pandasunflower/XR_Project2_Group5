@@ -1455,7 +1455,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 92ccd26ef0be64471b98f167754190b7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.02
+      value: -15.467052
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 92ccd26ef0be64471b98f167754190b7,
         type: 3}
@@ -1507,6 +1507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatmanGangster (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 92ccd26ef0be64471b98f167754190b7,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a7285d67d341740c9bb76385725f4d3c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2459,7 +2464,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 94ac8cdae289744d4974f75d463738ce,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.8729477
+      value: -14.32
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94ac8cdae289744d4974f75d463738ce,
         type: 3}
@@ -2511,6 +2516,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrumpetGangster
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 94ac8cdae289744d4974f75d463738ce,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f23819f2d24c1404ba35aa7c6f757635, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
