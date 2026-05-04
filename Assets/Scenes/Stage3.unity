@@ -769,7 +769,7 @@ MonoBehaviour:
   originalPrefabs:
   - {fileID: 1878973777}
   - {fileID: 860957560}
-  totalCount: 1000
+  totalCount: 6000
   areaSize: {x: 150, y: 150}
   surfaceLayer:
     serializedVersion: 2
@@ -1196,6 +1196,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a7285d67d341740c9bb76385725f4d3c, type: 2}
+    - target: {fileID: 5866666021909216657, guid: a7e317269c2cb4a3584d37528914b705,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2715,6 +2720,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f23819f2d24c1404ba35aa7c6f757635, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 51a71d816f8b54720ad9dc705de76221,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
