@@ -36,7 +36,19 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
-						<Bus Name="stage3" ID="{3489EC20-BA19-4B1E-BB91-7257005D0D57}"/>
+						<Bus Name="stage3" ID="{3489EC20-BA19-4B1E-BB91-7257005D0D57}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{6202484A-D5C3-4370-9748-639C68A2E5ED}" ShortID="20796667">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
 						<Bus Name="stage1" ID="{90FE9495-11ED-40C5-9A86-581F6B5EC299}">
 							<ObjectLists>
 								<ObjectList Name="Effects">
