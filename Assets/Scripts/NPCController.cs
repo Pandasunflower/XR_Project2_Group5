@@ -1,8 +1,13 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using Debug = UnityEngine.Debug;
 
-[RequireComponent(typeof(Animator))] // 強制要求該物件必須有 Animator
+[RequireComponent(typeof(Animator))]
+// [RequireComponent(typeof(MeshCollider))]
+[RequireComponent(typeof(BoxCollider))]
+
 public class NpcController : MonoBehaviour
 {
     [Header("時間設定")]
@@ -32,6 +37,18 @@ public class NpcController : MonoBehaviour
 
     private void Awake()
     {
+        // MeshCollider col = GetComponent<MeshCollider>();
+        // if (col != null)
+        // {
+        //     col.convex = true;
+        //     col.isTrigger = true;
+        //     col.includeLayers = -1; // Include everything
+        // }
+        BoxCollider boxCol = GetComponent<BoxCollider>();
+        if (boxCol != null)
+        {
+            boxCol.isTrigger = true;
+        }
         _animator = GetComponent<Animator>();
         spawner = Object.FindAnyObjectByType<NPCSpawner>();
     }
@@ -185,10 +202,23 @@ public class NpcController : MonoBehaviour
         // Debug.Log($"{gameObject.name} 停止了動畫: {animationName}");
     }
 
-    public void Gotshot(){
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log($"{gameObject.name} Tag: {gameObject.tag}");
+        if (other.CompareTag("bullet"))
+        {
+            if (!is_trolling) return;
+            Debug.Log($"{gameObject.name} 被射中了！");
+            GotShot();
+            Destroy(other.gameObject);
+        }
+    }
+
+    public void GotShot(){
         if (isGoodNpc) return; // 如果是好人NPC，則不執行被射中的行為
         if (!is_trolling) return; // 如果正在執行其他動畫，則不執行被射中的行為
         NPCSpawner NS = Object.FindAnyObjectByType<NPCSpawner>();
+        Debug.Log($"{gameObject.name} 被射中了！");
         NS.StartCoroutine(NS.SpinAndRespawnNPC(this));
     }
 }

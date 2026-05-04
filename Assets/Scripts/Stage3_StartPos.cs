@@ -22,6 +22,8 @@ public class Stage3_StartPos : MonoBehaviour
         //     // AkUnitySoundEngine.PostEvent("Play_OneGameOneDream_BGM", gameObject);
         //     // AkUnitySoundEngine.PostEvent("Play_OneGameOneDream_people", gameObject);
         // }
+        NPCSpawner NS = Object.FindAnyObjectByType<NPCSpawner>();
+        NS.StartGame();
         Debug.Log("Player entered start position trigger.");
         // firestoreTest.SetGameState("init");
         firestoreTest.SetGameState("l2");

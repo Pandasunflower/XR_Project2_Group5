@@ -16,7 +16,8 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftLowerLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -24,7 +25,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -169,7 +170,117 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: PigBullet(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube
+      parentName: PigBullet(Clone)
+      position: {x: -0, y: 0.008124366, z: 0}
+      rotation: {x: -0.7071068, y: -0.000000057601163, z: -0.000000057601163, w: 0.7071068}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Armature
+      parentName: PigBullet(Clone)
+      position: {x: -0, y: 0.000000014901161, z: 0}
+      rotation: {x: -0.7071068, y: -0.000000047078487, z: -0.000000047078487, w: 0.7071068}
+      scale: {x: 11.22606, y: 11.22606, z: 11.22606}
+    - name: Bone
+      parentName: Armature
+      position: {x: 0.00022221565, y: 0.0000000028869596, z: -0.0029921674}
+      rotation: {x: 0.70710677, y: -0.00000001052268, z: -0.000000010522665, w: 0.7071069}
+      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+    - name: Bone.006
+      parentName: Bone
+      position: {x: -0.00009615121, y: 0.0015075326, z: 0.00044536858}
+      rotation: {x: 0.00000008940697, y: -0.000012056679, z: 0.0055799037, w: 0.9999845}
+      scale: {x: 0.22701892, y: 0.22701892, z: 0.22701895}
+    - name: Bone.006_end
+      parentName: Bone.006
+      position: {x: -0, y: 0.016871609, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.007
+      parentName: Bone
+      position: {x: -0.00013889432, y: 0.0053037307, z: 0.00044824916}
+      rotation: {x: 0.00000008940696, y: -0.000011070873, z: 0.0057072495, w: 0.9999838}
+      scale: {x: 0.22701898, y: 0.22701904, z: 0.22701903}
+    - name: Bone.007_end
+      parentName: Bone.007
+      position: {x: -0, y: 0.02003792, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.010
+      parentName: Bone
+      position: {x: -0.00019576191, y: 0.0015075331, z: 0.00060101785}
+      rotation: {x: 0.00000008940697, y: -0.000012054817, z: 0.0055799196, w: 0.9999845}
+      scale: {x: 0.227019, y: 0.22701892, z: 0.22701892}
+    - name: Bone.010_end
+      parentName: Bone.010
+      position: {x: -0, y: 0.016871609, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.011
+      parentName: Bone
+      position: {x: -0.00015319228, y: 0.005276685, z: 0.00029104567}
+      rotation: {x: -0, y: -0.00001107227, z: 0.005707264, w: 0.9999837}
+      scale: {x: 0.22701913, y: 0.2270191, z: 0.22701892}
+    - name: Bone.011_end
+      parentName: Bone.011
+      position: {x: -0, y: 0.02003792, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.012
+      parentName: Bone
+      position: {x: -0.0018447225, y: 0.0034195995, z: 0.0007663583}
+      rotation: {x: 0.000007390975, y: -0.0000078624325, z: 0.690826, w: 0.72302115}
+      scale: {x: 0.2270189, y: 0.2270189, z: 0.2270189}
+    - name: Bone.012_end
+      parentName: Bone.012
+      position: {x: -0, y: 0.015183489, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.013
+      parentName: Bone
+      position: {x: 0.0015845513, y: 0.0032121872, z: 0.000486205}
+      rotation: {x: 0.000010577959, y: -0.00000077440126, z: 0.99809504, w: 0.061695278}
+      scale: {x: 0.22701895, y: 0.2270189, z: 0.22701903}
+    - name: Bone.013_end
+      parentName: Bone.013
+      position: {x: -0, y: 0.012239284, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.014
+      parentName: Bone
+      position: {x: -0.0019767254, y: 0.0034206116, z: 0.0007722497}
+      rotation: {x: -0.0000121295425, y: -0.0000006551727, z: -0.9979331, w: 0.06426106}
+      scale: {x: 0.22701888, y: 0.22701898, z: 0.22701907}
+    - name: Bone.014_end
+      parentName: Bone.014
+      position: {x: -0, y: 0.015765574, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.015
+      parentName: Bone
+      position: {x: 0.0015989178, y: 0.003265984, z: 0.00079885434}
+      rotation: {x: -0.000007748603, y: -0.0000092032315, z: -0.6451933, w: 0.76401937}
+      scale: {x: 0.22701894, y: 0.22701894, z: 0.22701895}
+    - name: Bone.015_end
+      parentName: Bone.015
+      position: {x: -0, y: 0.010817168, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.001
+      parentName: Bone
+      position: {x: -0.000021865368, y: 0.00017029404, z: 0.0000000025078157}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.001_end
+      parentName: Bone.001
+      position: {x: -0, y: 0.0057430626, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -180,13 +291,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0

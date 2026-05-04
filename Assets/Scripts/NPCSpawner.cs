@@ -14,9 +14,12 @@ public class NPCSpawner : MonoBehaviour
     public GameObject[] NonGangGoodNpcPrefabs;
     public GameObject[] speicialPrefabs;
     public GameObject MotorPrefabs;
+    public GameObject MotorPigPrefabs;
     public GameObject motorSpawnPosition;
     public GameObject AdamPrefabs;
+    public GameObject AdamPigPrefabs;
     public GameObject AdamSpawnPosition;
+    public GameObject[] AdamTargetPositions;
     public float specialScale = 1f;
     public int spawnCount = 10;
     public int spawnGangCount = 10;
@@ -67,37 +70,38 @@ public class NPCSpawner : MonoBehaviour
         {
             RandomizeNPCAnimations();
         }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StopAllNPCAnimation();
-        }
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     StopAllNPCAnimation();
+        // }
         if (Input.GetKeyDown(KeyCode.S))
         {
             StartGame();
         }
     }
 
-    void StartGame()
+    public void StartGame()
     {
         eventController.RegisterSpecialEvent(5f, () => {
             GangNPCAnimations();
+            AdamWalk();
             Debug.Log("5 sec");
         });
 
-        eventController.RegisterSpecialEvent(10f, () => {
-            MotorTroll();
-            Debug.Log("10 sec");
-        });
+        // eventController.RegisterSpecialEvent(10f, () => {
+        //     MotorTroll();
+        //     Debug.Log("10 sec");
+        // });
 
-        eventController.RegisterSpecialEvent(15f, () => {
-            RandomizeNPCAnimations();
-            Debug.Log("15 sec");
-        });
+        // eventController.RegisterSpecialEvent(15f, () => {
+        //     RandomizeNPCAnimations();
+        //     Debug.Log("15 sec");
+        // });
 
-        eventController.RegisterSpecialEvent(20f, () => {
-            AdamWalk();
-            Debug.Log("20 sec");
-        });
+        // eventController.RegisterSpecialEvent(20f, () => {
+        //     AdamWalk();
+        //     Debug.Log("20 sec");
+        // });
 
         eventController.StartGame();
     }
@@ -369,11 +373,10 @@ public class NPCSpawner : MonoBehaviour
         Animator anim = adamNpc.GetComponent<Animator>();
         if (anim != null)
         {
-            anim.SetBool("FanDance", true);
-            adamNpc.is_trolling = true;
+            // adamNpc.is_trolling = true;
         }
 
-        StartCoroutine(AdamMoveForward(adamNpc.gameObject));
+        StartCoroutine(AdamMoveForward(adamNpc.gameObject, adamNpc));
     }
     
     private IEnumerator MotorMoveForward(GameObject motor, string animBoolName = "Motor")
@@ -399,27 +402,58 @@ public class NPCSpawner : MonoBehaviour
         }
     }
 
-    private IEnumerator AdamMoveForward(GameObject motor, string animBoolName = "Motor")
+    private IEnumerator AdamMoveForward(GameObject adam, NpcController adamController)
     {
-        // float moveSpeed = 2f;
-        // float moveDuration = 10f;
-        // float elapsed = 0f;
-        
-        // while (elapsed < moveDuration && motor != null)
-        // {
-        //     motor.transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
-        //     elapsed += Time.deltaTime;
-        //     yield return null;
-        // }
+        if (adam == null || AdamTargetPositions == null || AdamTargetPositions.Length == 0) yield break;
 
-        yield return new WaitForSeconds(30f);
-
-        Animator anim = motor.GetComponent<Animator>();
+        Animator anim = adam.GetComponent<Animator>();
         if (anim != null)
         {
-            anim.SetTrigger("Idle");
-            adamNpc.is_trolling = false;
+            anim.SetBool("Running", true);
         }
+
+        float moveSpeed = 3f;
+
+        // 依序移動到每個目標位置
+        foreach (GameObject targetObj in AdamTargetPositions)
+        {
+            if (targetObj == null || adam == null) break;
+
+            Vector3 targetPos = targetObj.transform.position;
+
+            // 移動到目標位置（包括上下移動）
+            while (adam != null && Vector3.Distance(adam.transform.position, targetPos) > 0.5f)
+            {
+                Vector3 direction = (targetPos - adam.transform.position).normalized;
+                adam.transform.position += direction * moveSpeed * Time.deltaTime;
+                
+                // 面向移動方向（只水平旋轉，不傾斜）
+                if (direction.magnitude > 0.01f)
+                {
+                    Vector3 flatDirection = new Vector3(direction.x, 0f, direction.z);
+                    if (flatDirection.sqrMagnitude > 0.001f)
+                    {
+                        adam.transform.rotation = Quaternion.LookRotation(flatDirection);
+                    }
+                }
+                
+                yield return null;
+            }
+        }
+
+        // 停止 Run 動畫，播放 Dance 動畫
+        if (anim != null)
+        {
+            adamNpc.is_trolling = true;
+            anim.SetBool("Running", false);
+            anim.SetBool("FanDance", true);
+        }
+
+        // 持續 Dance 30 秒
+        yield return new WaitForSeconds(200f);
+
+        
+        adamController.is_trolling = false;
     }
 
     void StopAllNPCAnimation()
@@ -430,7 +464,7 @@ public class NPCSpawner : MonoBehaviour
             {
                 if (npc.is_trolling)
                 {
-                    npc.Gotshot();
+                    npc.GotShot();
                 }
             }
         }
@@ -440,17 +474,17 @@ public class NPCSpawner : MonoBehaviour
             {
                 if (npc.is_trolling)
                 {
-                    npc.Gotshot();
+                    npc.GotShot();
                 }
             }
         }
         if (motorNpc != null && motorNpc.is_trolling)
         {
-            motorNpc.Gotshot();
+            motorNpc.GotShot();
         }
         if (adamNpc != null && adamNpc.is_trolling)
         {
-            adamNpc.Gotshot();
+            adamNpc.GotShot();
         }
     }
 
@@ -494,7 +528,13 @@ public class NPCSpawner : MonoBehaviour
             }
 
             Destroy(npc.gameObject);
-            GameObject newMotor = Instantiate(MotorPrefabs, oldPosition, Quaternion.Euler(0f, 180f, 0f));
+            GameObject newMotor;
+            if (MotorPigPrefabs != null) {
+                newMotor = Instantiate(MotorPigPrefabs, oldPosition, Quaternion.Euler(0f, 180f, 0f));
+            }
+            else {
+                newMotor = Instantiate(MotorPrefabs, oldPosition, Quaternion.Euler(0f, 180f, 0f));
+            }
             motorNpc = newMotor.GetComponent<NpcController>();
             if (motorNpc != null)
             {;
@@ -515,7 +555,13 @@ public class NPCSpawner : MonoBehaviour
             }
 
             Destroy(npc.gameObject);
-            GameObject newAdam = Instantiate(AdamPrefabs, oldPosition, Quaternion.Euler(0f, 180f, 0f));
+            GameObject newAdam;
+            if (AdamPigPrefabs != null) {
+                newAdam = Instantiate(AdamPigPrefabs, oldPosition, Quaternion.Euler(0f, 180f, 0f));
+            }
+            else {
+                newAdam = Instantiate(AdamPrefabs, oldPosition, Quaternion.Euler(0f, 180f, 0f));
+            }
             adamNpc = newAdam.GetComponent<NpcController>();
             if (adamNpc != null)
             {
