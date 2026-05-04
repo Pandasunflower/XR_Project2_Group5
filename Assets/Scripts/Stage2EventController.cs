@@ -24,11 +24,11 @@ public class Stage2EventController : MonoBehaviour
         elapsedTime += Time.deltaTime;
         periodicTimer += Time.deltaTime;
 
-        if (periodicTimer >= periodicInterval)
-        {
-            TriggerPeriodicEvent();
-            periodicTimer = 0f; 
-        }
+        // if (periodicTimer >= periodicInterval)
+        // {
+        //     TriggerPeriodicEvent();
+        //     periodicTimer = 0f; 
+        // }
 
         CheckSpecialEvents();
     }

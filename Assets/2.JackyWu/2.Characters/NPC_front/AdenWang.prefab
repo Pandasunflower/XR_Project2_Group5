@@ -71,5 +71,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b838feb44d5542a2b350575d0413ea8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4294403027187968626}
   m_SourcePrefab: {fileID: 100100000, guid: 9b838feb44d5542a2b350575d0413ea8, type: 3}
+--- !u!1 &7941277813459836660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b838feb44d5542a2b350575d0413ea8,
+    type: 3}
+  m_PrefabInstance: {fileID: 7130464612809171877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-4294403027187968626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7941277813459836660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb8023e1d430634482ec04831c83777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeVariation: 30
+  prefabIndex: -1
+  isGoodNpc: 0
+  is_trolling: 0
+  minIdleSpeed: 0.8
+  maxIdleSpeed: 1.2
+  isSpinning: 0
+  isFacingSinger: 1

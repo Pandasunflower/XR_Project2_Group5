@@ -2,18 +2,24 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using Debug = UnityEngine.Debug;
 
 public class NPCSpawner : MonoBehaviour
 {
     [Header("生成設定")]
     public GameObject[] npcPrefabs;
-    public GameObject[] goodnpcPrefabs;
+    public GameObject[] NonGangNpcPrefabs;
+    public GameObject[] goodNpcPrefabs;
+    public GameObject[] NonGangGoodNpcPrefabs;
     public GameObject[] speicialPrefabs;
     public GameObject MotorPrefabs;
-    public Vector3 motorSpawnPosition = new Vector3(-0.043f, -0.049f, -26.12f);
+    public GameObject motorSpawnPosition;
+    public GameObject AdamPrefabs;
+    public GameObject AdamSpawnPosition;
     public float specialScale = 1f;
     public int spawnCount = 10;
+    public int spawnGangCount = 10;
     public int spawnGoodCount = 10;
     public float minDistance = 2f;
     public float fixedY = -1.544f;
@@ -22,11 +28,14 @@ public class NPCSpawner : MonoBehaviour
 
     [Header("範圍參考物件")]
     public GameObject[] areaCubes;
+    public GameObject[] GangAreaCubes;
 
     private List<NpcController> _spawnedSpecialNpcs = new List<NpcController>();
+    private List<NpcController> _spawnedGangNpcs = new List<NpcController>();
     private List<NpcController> _spawnedNpcs = new List<NpcController>();
     private List<NpcController> _spawnedGoodNpcs = new List<NpcController>();
     private NpcController motorNpc;
+    private NpcController adamNpc;
     private List<Vector3> _spawnedPositions = new List<Vector3>();
 
     public int score = 0;
@@ -42,8 +51,11 @@ public class NPCSpawner : MonoBehaviour
         ResetScore();
         if (areaCubes != null && areaCubes.Length > 0 && npcPrefabs != null && npcPrefabs.Length > 0)
         {
+            SpawnAdam();
+            SpawnMotor();
             SpawnSpecialNPCs();
-            SpawnNPCs();
+            SpawnGangNPCs();
+            SpawnNonGangNPCs();
             SpawnGoodNPCs();
             // InvokeRepeating("RandomizeNPCAnimations", firstTrollTime, trollInterval);
         }
@@ -67,16 +79,67 @@ public class NPCSpawner : MonoBehaviour
 
     void StartGame()
     {
+        eventController.RegisterSpecialEvent(5f, () => {
+            GangNPCAnimations();
+            Debug.Log("5 sec");
+        });
+
         eventController.RegisterSpecialEvent(10f, () => {
             MotorTroll();
             Debug.Log("10 sec");
         });
 
-        eventController.RegisterSpecialEvent(65f, () => {
-            Debug.Log("65 sec");
+        eventController.RegisterSpecialEvent(15f, () => {
+            RandomizeNPCAnimations();
+            Debug.Log("15 sec");
+        });
+
+        eventController.RegisterSpecialEvent(20f, () => {
+            AdamWalk();
+            Debug.Log("20 sec");
         });
 
         eventController.StartGame();
+    }
+
+    void SpawnNonGangNPCs()
+    {
+        
+        int attempts = 0;
+
+        while (currentSpawned < spawnCount && attempts < spawnCount * 10)
+        {
+            GameObject selectedCube = areaCubes[Random.Range(0, areaCubes.Length)];
+            Bounds bounds = selectedCube.GetComponent<Renderer>().bounds;
+
+            int selectedIndex = Random.Range(0, NonGangNpcPrefabs.Length);
+            GameObject selectedPrefab = NonGangNpcPrefabs[selectedIndex];
+
+            float randomX = Random.Range(bounds.min.x, bounds.max.x);
+            float randomZ = Random.Range(bounds.min.z, bounds.max.z);
+            Vector3 spawnPos = new Vector3(randomX, fixedY, randomZ);
+            Quaternion spawnRotation = Quaternion.Euler(0f, 180f, 0f);
+
+            if (IsPositionValid(spawnPos))
+            {
+                GameObject newNpc = Instantiate(selectedPrefab, spawnPos, spawnRotation);
+                NpcController controller = newNpc.GetComponent<NpcController>();
+                if (controller != null)
+                {
+                    controller.prefabIndex = selectedIndex;
+                    controller.isGoodNpc = false;
+                    controller.isGangNpc = false;
+                    controller.RandomizeAnimatorSpeed();
+                    _spawnedNpcs.Add(controller);
+                }
+                _spawnedPositions.Add(spawnPos);
+                currentSpawned++;
+            }
+
+            attempts++;
+        }
+
+        Debug.Log($"生成完畢！成功生成數量: {currentSpawned}");
     }
 
     void SpawnSpecialNPCs()
@@ -119,14 +182,51 @@ public class NPCSpawner : MonoBehaviour
         }
     }
 
-    void SpawnNPCs()
+    void SpawnAdam()
+    {
+        if (AdamPrefabs == null || AdamSpawnPosition == null) return;
+        
+        Vector3 spawnPos = AdamSpawnPosition.transform.position;
+        Quaternion spawnRotation = Quaternion.Euler(0f, 180f, 0f);
+        spawnPos = new Vector3(spawnPos.x, fixedY, spawnPos.z);
+        
+        GameObject adam = Instantiate(AdamPrefabs, spawnPos, spawnRotation);
+        
+        adamNpc = adam.GetComponent<NpcController>();
+        if (adamNpc != null)
+        {
+            adamNpc.isFacingSinger = false;
+        }
+        
+        _spawnedPositions.Add(spawnPos);
+    }
+
+    void SpawnMotor()
+    {
+        if (MotorPrefabs == null || motorSpawnPosition == null) return;
+        
+        Vector3 spawnPos = motorSpawnPosition.transform.position;
+        Quaternion spawnRotation = Quaternion.Euler(0f, 0f, 0f);
+        
+        GameObject motor = Instantiate(MotorPrefabs, spawnPos, spawnRotation);
+        
+        motorNpc = motor.GetComponent<NpcController>();
+        if (motorNpc != null)
+        {
+            motorNpc.isFacingSinger = false;
+        }
+        
+        _spawnedPositions.Add(spawnPos);
+    }
+
+    void SpawnGangNPCs()
     {
         
         int attempts = 0;
 
-        while (currentSpawned < spawnCount && attempts < spawnCount * 10)
+        while (currentSpawned < spawnGangCount && attempts < spawnGangCount * 10)
         {
-            GameObject selectedCube = areaCubes[Random.Range(0, areaCubes.Length)];
+            GameObject selectedCube = GangAreaCubes[Random.Range(0, GangAreaCubes.Length)];
             Bounds bounds = selectedCube.GetComponent<Renderer>().bounds;
 
             int selectedIndex = Random.Range(0, npcPrefabs.Length);
@@ -145,8 +245,9 @@ public class NPCSpawner : MonoBehaviour
                 {
                     controller.prefabIndex = selectedIndex;
                     controller.isGoodNpc = false;
+                    controller.isGangNpc = true;
                     controller.RandomizeAnimatorSpeed();
-                    _spawnedNpcs.Add(controller);
+                    _spawnedGangNpcs.Add(controller);
                 }
                 _spawnedPositions.Add(spawnPos);
                 currentSpawned++;
@@ -160,7 +261,7 @@ public class NPCSpawner : MonoBehaviour
 
     void SpawnGoodNPCs()
     {
-        if (goodnpcPrefabs == null || goodnpcPrefabs.Length == 0) return;
+        if (goodNpcPrefabs == null || goodNpcPrefabs.Length == 0) return;
 
         int attempts = 0;
 
@@ -169,8 +270,8 @@ public class NPCSpawner : MonoBehaviour
             GameObject selectedCube = areaCubes[Random.Range(0, areaCubes.Length)];
             Bounds bounds = selectedCube.GetComponent<Renderer>().bounds;
 
-            int selectedIndex = Random.Range(0, goodnpcPrefabs.Length);
-            GameObject selectedPrefab = goodnpcPrefabs[selectedIndex];
+            int selectedIndex = Random.Range(0, goodNpcPrefabs.Length);
+            GameObject selectedPrefab = goodNpcPrefabs[selectedIndex];
 
             float randomX = Random.Range(bounds.min.x, bounds.max.x);
             float randomZ = Random.Range(bounds.min.z, bounds.max.z);
@@ -230,33 +331,55 @@ public class NPCSpawner : MonoBehaviour
         }
     }
 
-    public void MotorTroll(){
-        if (MotorPrefabs == null) return;
-        
-        Vector3 spawnPos = motorSpawnPosition;
-        Quaternion spawnRotation = Quaternion.Euler(0f, 0f, 0f);
-        
-        GameObject motor = Instantiate(MotorPrefabs, spawnPos, spawnRotation);
-        
-        motorNpc = motor.GetComponent<NpcController>();
-        Animator anim = motor.GetComponent<Animator>();
-        if (motorNpc != null)
+    public void GangNPCAnimations()
+    {
+        if (_spawnedNpcs == null || _spawnedNpcs.Count == 0)
         {
-            motorNpc.isFacingSinger = false;
+            Debug.LogWarning("目前沒有生成的 NPC 可以控制！");
+            return;
         }
+        // 所有gang一起同時執行動畫
+        foreach (NpcController npc in _spawnedGangNpcs)
+        {
+            if (npc != null)
+            {
+                npc.StopAllCoroutines(); 
+                npc.StartCoroutine(npc.PlayRandomAnimation());
+            }
+        }
+    }
+
+    public void MotorTroll(){
+        if (motorNpc == null) return;
+        
+        Animator anim = motorNpc.GetComponent<Animator>();
         if (anim != null)
         {
             anim.SetBool("Motor", true);
             motorNpc.is_trolling = true;
         }
         
-        StartCoroutine(MoveForward(motor));
+        StartCoroutine(MotorMoveForward(motorNpc.gameObject));
+    }
+
+    public void AdamWalk()
+    {
+        if (adamNpc == null) return;
+        
+        Animator anim = adamNpc.GetComponent<Animator>();
+        if (anim != null)
+        {
+            anim.SetBool("FanDance", true);
+            adamNpc.is_trolling = true;
+        }
+
+        StartCoroutine(AdamMoveForward(adamNpc.gameObject));
     }
     
-    private IEnumerator MoveForward(GameObject motor)
+    private IEnumerator MotorMoveForward(GameObject motor, string animBoolName = "Motor")
     {
-        float moveSpeed = 2f; // 移動速度
-        float moveDuration = 5f; // 移動持續時間
+        float moveSpeed = 2f;
+        float moveDuration = 10f;
         float elapsed = 0f;
         
         while (elapsed < moveDuration && motor != null)
@@ -265,12 +388,37 @@ public class NPCSpawner : MonoBehaviour
             elapsed += Time.deltaTime;
             yield return null;
         }
-        
-        // 停止動畫
+
+        yield return new WaitForSeconds(30f - moveDuration);
+
         Animator anim = motor.GetComponent<Animator>();
         if (anim != null)
         {
-            anim.SetBool("Motor", false);
+            anim.SetTrigger("Idle");
+            motorNpc.is_trolling = false;
+        }
+    }
+
+    private IEnumerator AdamMoveForward(GameObject motor, string animBoolName = "Motor")
+    {
+        // float moveSpeed = 2f;
+        // float moveDuration = 10f;
+        // float elapsed = 0f;
+        
+        // while (elapsed < moveDuration && motor != null)
+        // {
+        //     motor.transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+        //     elapsed += Time.deltaTime;
+        //     yield return null;
+        // }
+
+        yield return new WaitForSeconds(30f);
+
+        Animator anim = motor.GetComponent<Animator>();
+        if (anim != null)
+        {
+            anim.SetTrigger("Idle");
+            adamNpc.is_trolling = false;
         }
     }
 
@@ -285,6 +433,24 @@ public class NPCSpawner : MonoBehaviour
                     npc.Gotshot();
                 }
             }
+        }
+        foreach (NpcController npc in _spawnedGangNpcs)
+        {
+            if (npc != null)
+            {
+                if (npc.is_trolling)
+                {
+                    npc.Gotshot();
+                }
+            }
+        }
+        if (motorNpc != null && motorNpc.is_trolling)
+        {
+            motorNpc.Gotshot();
+        }
+        if (adamNpc != null && adamNpc.is_trolling)
+        {
+            adamNpc.Gotshot();
         }
     }
 
@@ -310,47 +476,122 @@ public class NPCSpawner : MonoBehaviour
     public void RespawnNPC(NpcController npc)
     {
         if (npc == null) return;
-        if (goodnpcPrefabs == null || goodnpcPrefabs.Length == 0)
+
+        Vector3 oldPosition = npc.transform.position;
+        _spawnedPositions.RemoveAll(p => Vector3.Distance(p, oldPosition) < 0.001f);
+
+        _spawnedNpcs.Remove(npc);
+        _spawnedGangNpcs.Remove(npc);
+        _spawnedSpecialNpcs.Remove(npc);
+        _spawnedGoodNpcs.Remove(npc);
+
+        if (npc == motorNpc)
         {
-            Debug.LogWarning("無法重生：goodnpcPrefabs 尚未配置或為空。" );
+            if (MotorPrefabs == null)
+            {
+                Debug.LogWarning("無法重生 Motor：MotorPrefabs 尚未配置或為空。");
+                return;
+            }
+
+            Destroy(npc.gameObject);
+            GameObject newMotor = Instantiate(MotorPrefabs, oldPosition, Quaternion.Euler(0f, 180f, 0f));
+            motorNpc = newMotor.GetComponent<NpcController>();
+            if (motorNpc != null)
+            {;
+                motorNpc.RandomizeAnimatorSpeed();
+                motorNpc.isGoodNpc = true;
+            }
+            _spawnedPositions.Add(oldPosition);
+            Debug.Log($"已將 Motor 重生：{newMotor.name}。");
+            return;
+        }
+
+        if (npc == adamNpc)
+        {
+            if (AdamPrefabs == null)
+            {
+                Debug.LogWarning("無法重生 Adam：AdamPrefabs 尚未配置或為空。");
+                return;
+            }
+
+            Destroy(npc.gameObject);
+            GameObject newAdam = Instantiate(AdamPrefabs, oldPosition, Quaternion.Euler(0f, 180f, 0f));
+            adamNpc = newAdam.GetComponent<NpcController>();
+            if (adamNpc != null)
+            {
+                adamNpc.RandomizeAnimatorSpeed();
+                adamNpc.isGoodNpc = true;
+            }
+            _spawnedPositions.Add(oldPosition);
+            Debug.Log($"已將 Adam 重生：{newAdam.name}。");
+            return;
+        }
+
+        GameObject[] targetGoodPrefabs = npc.isGangNpc ? goodNpcPrefabs : NonGangGoodNpcPrefabs;
+        string targetName = npc.isGangNpc ? "goodNpcPrefabs" : "NonGangGoodNpcPrefabs";
+
+        if (targetGoodPrefabs == null || targetGoodPrefabs.Length == 0)
+        {
+            Debug.LogWarning($"無法重生：{targetName} 尚未配置或為空。" );
             return;
         }
 
         int prefabIndex = npc.prefabIndex;
-        if (prefabIndex < 0 || prefabIndex >= goodnpcPrefabs.Length)
+        if (prefabIndex < 0 || prefabIndex >= targetGoodPrefabs.Length)
         {
-            Debug.LogWarning($"{npc.gameObject.name} 的 prefabIndex 無效，無法重生為對應 good NPC。" );
+            Debug.LogWarning($"{npc.gameObject.name} 的 prefabIndex 無效，無法重生為對應 {targetName}。" );
             return;
         }
 
-        Vector3 oldPosition = npc.transform.position;
-
-        _spawnedNpcs.Remove(npc);
-
+        Debug.Log($"正在重生 NPC: {npc.gameObject.name}，Prefab 索引: {prefabIndex}，目標陣列: {targetName}" );
         Destroy(npc.gameObject);
 
-        GameObject newNpc = Instantiate(goodnpcPrefabs[prefabIndex], oldPosition, Quaternion.Euler(0f, 180f, 0f));
+        GameObject newNpc = Instantiate(targetGoodPrefabs[prefabIndex], oldPosition, Quaternion.Euler(0f, 180f, 0f));
         NpcController controller = newNpc.GetComponent<NpcController>();
         if (controller != null)
         {
             controller.prefabIndex = prefabIndex;
             controller.isGoodNpc = true;
+            controller.isGangNpc = npc.isGangNpc;
             controller.RandomizeAnimatorSpeed();
             _spawnedGoodNpcs.Add(controller);
         }
 
         _spawnedPositions.Add(oldPosition);
-        Debug.Log($"已將 NPC 重生為 good NPC：{newNpc.name}，goodnpcPrefabs[{prefabIndex}]。" );
+        Debug.Log($"已將 NPC 重生為 good NPC：{newNpc.name}，{targetName}[{prefabIndex}]。" );
     }
 
     public IEnumerator SpinAndRespawnNPC(NpcController npc)
     {
         if (npc == null) yield break;
 
-        npc.GoToSpin();
+        if (npc.isSpinning) yield break;
+
+        if (npc.isGangNpc)
+        {
+            foreach (NpcController gangNpc in _spawnedGangNpcs)
+            {
+                gangNpc.GoToSpin();
+            }
+        }
+        else
+        {
+            npc.GoToSpin();
+        }
 
         yield return new WaitForSeconds(1.5f);
 
-        RespawnNPC(npc);
+        if (npc.isGangNpc)
+        {
+            var gangListCopy = _spawnedGangNpcs.ToList(); 
+            foreach (NpcController gangNpc in gangListCopy)
+            {
+                RespawnNPC(gangNpc);
+            }
+        }
+        else
+        {
+            RespawnNPC(npc);
+        }
     }
 }

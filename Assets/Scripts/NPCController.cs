@@ -18,6 +18,9 @@ public class NpcController : MonoBehaviour
     [HideInInspector]
     public bool isGoodNpc = false;
 
+    [HideInInspector]
+    public bool isGangNpc = false;
+
     public bool is_trolling = false;
 
     [Header("隨機速度設定")]
@@ -116,7 +119,7 @@ public class NpcController : MonoBehaviour
 
         if (is_trolling)
         {
-            _animator.SetBool(selectedName, false);
+            _animator.SetTrigger("Idle");
             is_trolling = false;
             _animator.speed = Random.Range(minIdleSpeed, maxIdleSpeed);
         }
@@ -183,6 +186,8 @@ public class NpcController : MonoBehaviour
     }
 
     public void Gotshot(){
+        if (isGoodNpc) return; // 如果是好人NPC，則不執行被射中的行為
+        if (!is_trolling) return; // 如果正在執行其他動畫，則不執行被射中的行為
         NPCSpawner NS = Object.FindAnyObjectByType<NPCSpawner>();
         NS.StartCoroutine(NS.SpinAndRespawnNPC(this));
     }
