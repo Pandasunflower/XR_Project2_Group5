@@ -2996,7 +2996,6 @@ GameObject:
   m_Component:
   - component: {fileID: 458646640}
   - component: {fileID: 458646642}
-  - component: {fileID: 458646641}
   m_Layer: 0
   m_Name: "\u5DE6\u5587\u53ED"
   m_TagString: Untagged
@@ -3019,23 +3018,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 318445880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &458646641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458646639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96787a0c0a63b5446bda48eb32f25e6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myWwiseEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a39c1157c4e78bc45bcf77aeaaca250a,
-      type: 2}
 --- !u!82 &458646642
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11761,6 +11743,9 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: ff50501b1df33574ca293f235a1109b1,
       type: 2}
   karaokeScript: {fileID: 1284604257}
+  speakerOutputs:
+  - {fileID: 458646639}
+  - {fileID: 345292960}
 --- !u!114 &1572424167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11778,6 +11763,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a39c1157c4e78bc45bcf77aeaaca250a,
       type: 2}
+  speakerOutputs: []
 --- !u!1 &1577531841
 GameObject:
   m_ObjectHideFlags: 0
