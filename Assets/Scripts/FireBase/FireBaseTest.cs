@@ -22,6 +22,9 @@ public class FirestoreTest : MonoBehaviour
 
     public SingingManager singingManager;
 
+     
+     public AK.Wwise.Event wwiseScoreEvent;
+
     void Start()
     {
         db = FirebaseFirestore.DefaultInstance;
@@ -279,6 +282,7 @@ public class FirestoreTest : MonoBehaviour
             Debug.Log("平均分數: " + voteScore);
             Debug.Log("演唱分數: " + singingScore);
             Debug.Log("最終分數: " + finalScore);
+            wwiseScoreEvent.Post(gameObject); // 播放分數揭曉音效
             StartCoroutine(ShowAnimatedResult(finalScore));
         });
     }

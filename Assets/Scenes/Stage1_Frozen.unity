@@ -1850,6 +1850,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 115c3100e81dcdd4ca86a96108a9ed9d,
       type: 2}
   karaokeScript: {fileID: 503966592}
+  speakerOutputs: []
 --- !u!114 &313636235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1977,6 +1978,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b89ec33138a2e1e4184b6e26e2b715e1,
       type: 2}
+  speakerOutputs: []
 --- !u!1 &327060425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,6 +2557,11 @@ MonoBehaviour:
   - {fileID: 1131389322}
   - {fileID: 1658571983}
   singingManager: {fileID: 588768166}
+  wwiseScoreEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5618fd1b54b7d844e9d61b3c21146152,
+      type: 2}
 --- !u!4 &405044361
 Transform:
   m_ObjectHideFlags: 0
@@ -3257,6 +3264,11 @@ MonoBehaviour:
   smoothSpeed: 10
   minMidi: 48
   maxMidi: 84
+  wwiseClapEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2743b8f2f3d10e1458f04f49eef7fac1,
+      type: 2}
   hideDelay: 0.3
   midiOffset: 0
   midiMultiplier: 1
@@ -4826,7 +4838,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 925160905}
-  - component: {fileID: 925160904}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -4834,32 +4845,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &925160904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925160903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2113ca73613b6014eb9bad925669d854, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: ef21e47c00a04c243be06d4f58de6a93,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!4 &925160905
 Transform:
   m_ObjectHideFlags: 0
