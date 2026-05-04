@@ -6,9 +6,11 @@ public class NPCSpawner : MonoBehaviour
 {
     [Header("生成設定")]
     public GameObject[] npcPrefabs;
+    public GameObject[] goodnpcPrefabs;
     public GameObject[] speicialPrefabs;
     public float specialScale = 1f;
     public int spawnCount = 10;
+    public int spawnGoodCount = 10;
     public float minDistance = 2f;
     public float fixedY = -1.544f;
     public float firstTrollTime = 0f;
@@ -17,13 +19,16 @@ public class NPCSpawner : MonoBehaviour
     [Header("範圍參考物件")]
     public GameObject[] areaCubes;
 
+    private List<NpcController> _spawnedSpecialNpcs = new List<NpcController>();
     private List<NpcController> _spawnedNpcs = new List<NpcController>();
+    private List<NpcController> _spawnedGoodNpcs = new List<NpcController>();
     private List<Vector3> _spawnedPositions = new List<Vector3>();
 
     public int score = 0;
     private object _scoreLock = new object();
 
     private int currentSpawned = 0;
+    private int currentGoodSpawned = 0;
 
     void Start()
     {
@@ -32,6 +37,7 @@ public class NPCSpawner : MonoBehaviour
         {
             SpawnSpecialNPCs();
             SpawnNPCs();
+            SpawnGoodNPCs();
             // InvokeRepeating("RandomizeNPCAnimations", firstTrollTime, trollInterval);
         }
     }
@@ -68,14 +74,15 @@ public class NPCSpawner : MonoBehaviour
             if (IsPositionValid(spawnPos))
             {
                 GameObject newNpc = Instantiate(selectedPrefab, spawnPos, spawnRotation);
+
                 NpcController controller = newNpc.GetComponent<NpcController>();
                 newNpc.transform.localScale = new Vector3(specialScale, specialScale, specialScale);
                 if (controller != null)
                 {
-                    _spawnedNpcs.Add(controller);
+                    controller.RandomizeAnimatorSpeed();
+                    _spawnedSpecialNpcs.Add(controller);
                 }
                 _spawnedPositions.Add(spawnPos);
-                currentSpawned++;
                 i++;
             }
             else
@@ -108,6 +115,7 @@ public class NPCSpawner : MonoBehaviour
                 NpcController controller = newNpc.GetComponent<NpcController>();
                 if (controller != null)
                 {
+                    controller.RandomizeAnimatorSpeed();
                     _spawnedNpcs.Add(controller);
                 }
                 _spawnedPositions.Add(spawnPos);
@@ -118,6 +126,43 @@ public class NPCSpawner : MonoBehaviour
         }
 
         Debug.Log($"生成完畢！成功生成數量: {currentSpawned}");
+    }
+
+    void SpawnGoodNPCs()
+    {
+        if (goodnpcPrefabs == null || goodnpcPrefabs.Length == 0) return;
+
+        int attempts = 0;
+
+        while (currentGoodSpawned < spawnGoodCount && attempts < spawnGoodCount * 10)
+        {
+            GameObject selectedCube = areaCubes[Random.Range(0, areaCubes.Length)];
+            Bounds bounds = selectedCube.GetComponent<Renderer>().bounds;
+
+            GameObject selectedPrefab = goodnpcPrefabs[Random.Range(0, goodnpcPrefabs.Length)];
+
+            float randomX = Random.Range(bounds.min.x, bounds.max.x);
+            float randomZ = Random.Range(bounds.min.z, bounds.max.z);
+            Vector3 spawnPos = new Vector3(randomX, fixedY, randomZ);
+            Quaternion spawnRotation = Quaternion.Euler(0f, 180f, 0f);
+
+            if (IsPositionValid(spawnPos))
+            {
+                GameObject newNpc = Instantiate(selectedPrefab, spawnPos, spawnRotation);
+                NpcController controller = newNpc.GetComponent<NpcController>();
+                if (controller != null)
+                {
+                    controller.RandomizeAnimatorSpeed();
+                    _spawnedGoodNpcs.Add(controller);
+                }
+                _spawnedPositions.Add(spawnPos);
+                currentGoodSpawned++;
+            }
+
+            attempts++;
+        }
+
+        Debug.Log($"生成完畢！成功生成數量: {currentGoodSpawned}");
     }
 
     bool IsPositionValid(Vector3 pos)
@@ -160,7 +205,8 @@ public class NPCSpawner : MonoBehaviour
             {
                 if (npc.is_trolling)
                 {
-                    npc.ReturnToIdle();
+                    // npc.StartCoroutine(npc.GoToTurn());
+                    npc.GoToSpin();
                 }
             }
         }

@@ -18,6 +18,8 @@ public class NpcController : MonoBehaviour
     public float minIdleSpeed = 0.8f;
     public float maxIdleSpeed = 1.2f;
 
+    public bool isSpinning = false;
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -27,6 +29,11 @@ public class NpcController : MonoBehaviour
     private void Start()
     {
         // StartCoroutine(PlayAnimation("FanDance"));
+        RandomizeAnimatorSpeed();
+    }
+
+    public void RandomizeAnimatorSpeed()
+    {
         if (_animator != null)
         {
             _animator.speed = Random.Range(minIdleSpeed, maxIdleSpeed);
@@ -38,8 +45,11 @@ public class NpcController : MonoBehaviour
         Vector3 targetPosition = Camera.main.transform.position;
         
         targetPosition.y = transform.position.y;
-        
-        transform.LookAt(targetPosition);
+
+        if (!isSpinning)
+        {
+            transform.LookAt(targetPosition);
+        }
     }
 
     public IEnumerator PlayAnimation(string animationName)
@@ -141,5 +151,27 @@ public class NpcController : MonoBehaviour
         }
         spawner.StartCoroutine(spawner.AddScore());
         is_trolling = false;
+    }
+
+    public void GoToSpin(){
+        if (_animator == null || _animator.runtimeAnimatorController == null)
+        {
+            Debug.LogWarning($"{gameObject.name} 缺少 Animator Controller！");
+            return;
+        }
+        if (_animator.IsInTransition(0)) return;
+        isSpinning = true;
+        foreach (AnimatorControllerParameter param in _animator.parameters)
+        {
+            if (param.type == AnimatorControllerParameterType.Bool)
+            {
+                _animator.SetBool(param.name, false);
+            }
+        }
+        StopAllCoroutines();
+        _animator.SetTrigger("Spin");
+        is_trolling = false;
+        
+        // Debug.Log($"{gameObject.name} 停止了動畫: {animationName}");
     }
 }

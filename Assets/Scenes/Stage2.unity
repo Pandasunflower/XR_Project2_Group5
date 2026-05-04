@@ -1173,6 +1173,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bcd30586d04522c4d983fbf46c29882f,
       type: 2}
+  karaokeScript: {fileID: 0}
 --- !u!114 &423294197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2939,6 +2940,8 @@ MonoBehaviour:
   - {fileID: 8070802498719485112, guid: 34fb370781795004b91f78d3bdd12f50, type: 3}
   - {fileID: 4240253983782928750, guid: 4fd79339ac40a8740a1a2d9dcaebcba7, type: 3}
   - {fileID: 7941277813459836660, guid: 6dd11167b16e8934dbe1fc97da83cafb, type: 3}
+  goodnpcPrefabs:
+  - {fileID: 7840367661544795253, guid: f41c8ffb25a6e9e4da717af4eec0fa74, type: 3}
   speicialPrefabs:
   - {fileID: 6871019290551772693, guid: e829872ac14df224c9cfeecc16da6bc1, type: 3}
   - {fileID: 5419527045784184807, guid: 9f42ee3a315de524e97271a86fb34fb1, type: 3}
@@ -2946,9 +2949,12 @@ MonoBehaviour:
   - {fileID: 1897858194785492222, guid: b3de4efe61b94e141af7d492dc94c068, type: 3}
   - {fileID: 6877719297472408113, guid: 068671fa8afbdb74083ff7807e4cbd79, type: 3}
   specialScale: 1.5
-  spawnCount: 100
-  minDistance: 2
+  spawnCount: 20
+  spawnGoodCount: 20
+  minDistance: 0.2
   fixedY: -1.544
+  firstTrollTime: 0
+  trollInterval: 30
   areaCubes:
   - {fileID: 380825357}
   - {fileID: 299255768}
