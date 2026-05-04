@@ -35,6 +35,8 @@ public class SingingManager : MonoBehaviour {
     public float minMidi = 48f;
     public float maxMidi = 84f;
 
+    public AK.Wwise.Event wwiseClapEvent;
+
     private float _currentVisualMidi = 0f;
 
     [Header("Visual Persistence")]
@@ -417,6 +419,8 @@ public class SingingManager : MonoBehaviour {
 
     private IEnumerator waitSeconds()
     {
+        
+        wwiseClapEvent.Post(gameObject); // 播放鼓掌音效
         yield return new WaitForSeconds(10f);
         firestoreTest.SetGameState("l1_end");
         firestoreTest.SetAllClapping();
