@@ -12,6 +12,12 @@ public class NpcController : MonoBehaviour
 
     private NPCSpawner spawner;
 
+    [HideInInspector]
+    public int prefabIndex = -1;
+
+    [HideInInspector]
+    public bool isGoodNpc = false;
+
     public bool is_trolling = false;
 
     [Header("隨機速度設定")]
@@ -19,6 +25,7 @@ public class NpcController : MonoBehaviour
     public float maxIdleSpeed = 1.2f;
 
     public bool isSpinning = false;
+    public bool isFacingSinger = true;
 
     private void Awake()
     {
@@ -46,7 +53,7 @@ public class NpcController : MonoBehaviour
         
         targetPosition.y = transform.position.y;
 
-        if (!isSpinning)
+        if (!isSpinning && isFacingSinger)
         {
             transform.LookAt(targetPosition);
         }
@@ -173,5 +180,10 @@ public class NpcController : MonoBehaviour
         is_trolling = false;
         
         // Debug.Log($"{gameObject.name} 停止了動畫: {animationName}");
+    }
+
+    public void Gotshot(){
+        NPCSpawner NS = Object.FindAnyObjectByType<NPCSpawner>();
+        NS.StartCoroutine(NS.SpinAndRespawnNPC(this));
     }
 }
