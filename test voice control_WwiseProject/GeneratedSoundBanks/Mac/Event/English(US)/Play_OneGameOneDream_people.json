@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}",
     "Language": "English(US)",
-    "Hash": "{4038F074-1E50-D464-E425-3D3F9B2E7398}",
+    "Hash": "{6867A7E6-8590-A7FC-7172-F82B787EC04A}",
     "ObjectPath": "Play_OneGameOneDream_people",
     "ShortName": "Play_OneGameOneDream_people",
     "Path": "Event/English(US)/Play_OneGameOneDream_people.bnk",
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{757E05AE-E015-87E6-7BE9-E61697E3DBF3}"
+  "FileHash": "{5CE2350A-A2C2-174A-4DB4-75A98C8B752C}"
  }
 }

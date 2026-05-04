@@ -581,8 +581,8 @@
 							<ChildrenList>
 								<Effect Name="Static_Sibilance_Remover_Female" ID="{3E13EF40-7C1A-4EBC-9858-8CB584A642E5}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
-										<Property Name="FrequencyBand2" Type="Real32" Value="6139.14"/>
-										<Property Name="GainBand2" Type="Real32" Value="-4"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="6224.031"/>
+										<Property Name="GainBand2" Type="Real32" Value="-2.769231"/>
 										<Property Name="OnOffBand1" Type="bool" Value="False"/>
 										<Property Name="QFactorBand2" Type="Real32" Value="3"/>
 									</PropertyList>
@@ -1227,7 +1227,7 @@
 										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
 										<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
 										<Property Name="HFDamping" Type="Real32" Value="2.7"/>
-										<Property Name="PreDelay" Type="Real32" Value="35"/>
+										<Property Name="PreDelay" Type="Real32" Value="30"/>
 										<Property Name="Quality" Type="int32" Value="12"/>
 										<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
 										<Property Name="RoomShape" Type="Real32" Value="55"/>
