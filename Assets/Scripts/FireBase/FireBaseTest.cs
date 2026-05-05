@@ -14,6 +14,8 @@ public class FirestoreTest : MonoBehaviour
     Dictionary<string, GameObject> playerCubes = new Dictionary<string, GameObject>();
     public GameObject cubePrefab;
     public GameObject cubePrefab2;
+
+    public GameObject[] playerPrefabs;
     public TextMeshPro resultText;
     public int stage = 1; //1: stage1, 3: stage3
     public int option = 0;
@@ -86,6 +88,16 @@ public class FirestoreTest : MonoBehaviour
         {
             SetOption(2);
         }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            SetGameState("l2_2");
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            SetGameState("l2_3");
+        }
     }
 
     public void SetGameState(string state)
@@ -109,6 +121,7 @@ public class FirestoreTest : MonoBehaviour
 
     public void SetOption(int option)
     {
+        if (option == -1) return;
         DocumentReference docRef = db.Collection("game").Document("option");
 
         Dictionary<string, object> data = new Dictionary<string, object>
