@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{E49946A0-81D0-4D24-8E8A-E41770703AD4}",
     "Language": "English(US)",
-    "Hash": "{B15E80DE-8CB7-3E30-452E-A504FB1D1585}",
+    "Hash": "{8F7FA8CF-5144-2D6F-DB34-68B33F6FA79C}",
     "ObjectPath": "Play_motorOn",
     "ShortName": "Play_motorOn",
     "Path": "Event/English(US)/Play_motorOn.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "motorOn.wav",
       "Path": "Media/English(US)/56369884.wem",
-      "CachePath": "9F/{9F00B9A9-7BF2-D535-7443-AC7AAADE4CF6}.wem"
+      "CachePath": "09/{09FDFF86-517C-92ED-0077-0EDED4C2E22F}.wem"
      }
     ],
     "Events": [
@@ -31,9 +31,7 @@
       "Name": "Play_motorOn",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_motorOn",
       "GUID": "{E49946A0-81D0-4D24-8E8A-E41770703AD4}",
-      "DurationType": "OneShot",
-      "DurationMin": "11.800834",
-      "DurationMax": "11.800834",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "56369884"
@@ -43,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{122463C2-F40D-E349-A7C9-ED8106A83148}"
+  "FileHash": "{6E781072-7D2B-B23E-BF16-69BB1CFB7FC8}"
  }
 }

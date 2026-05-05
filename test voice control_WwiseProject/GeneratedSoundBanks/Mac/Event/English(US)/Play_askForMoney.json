@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{B327097A-BABB-4A3B-8122-65CE6342F7AB}",
     "Language": "English(US)",
-    "Hash": "{003EC925-F0AD-3584-7FE8-AA9EFB76AF37}",
+    "Hash": "{3CF3D04E-9F66-B995-0E19-A5A46D9EA6F5}",
     "ObjectPath": "Play_askForMoney",
     "ShortName": "Play_askForMoney",
     "Path": "Event/English(US)/Play_askForMoney.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "askForMoney.wav",
       "Path": "Media/English(US)/655813830.wem",
-      "CachePath": "76/{76489AD0-8CCE-F2FF-15A2-7D9715AE469F}.wem"
+      "CachePath": "92/{929DF6A5-97B3-6BC6-CABE-5845D69CD234}.wem"
      }
     ],
     "Events": [
@@ -31,9 +31,7 @@
       "Name": "Play_askForMoney",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_askForMoney",
       "GUID": "{B327097A-BABB-4A3B-8122-65CE6342F7AB}",
-      "DurationType": "OneShot",
-      "DurationMin": "5.5906124",
-      "DurationMax": "5.5906124",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "655813830"
@@ -43,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{9D85C768-AFC5-E431-9001-89BEAD101085}"
+  "FileHash": "{84C5B0FD-A8B9-58C8-4955-C3568AE934A9}"
  }
 }
