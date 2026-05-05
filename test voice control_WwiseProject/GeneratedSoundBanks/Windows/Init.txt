@@ -1,3 +1,6 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2692235896	mic_distance			\Default Work Unit\mic_distance	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	936729720	stage3			\Default Work Unit\Main Audio Bus\stage3	
 	936729722	stage1			\Default Work Unit\Main Audio Bus\stage1	
