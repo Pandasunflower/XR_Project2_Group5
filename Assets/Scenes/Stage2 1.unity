@@ -3520,7 +3520,7 @@ Transform:
   m_GameObject: {fileID: 1176725722}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.10032, y: 0, z: -26.09}
+  m_LocalPosition: {x: 1.10032, y: 0.281, z: -26.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4295,6 +4295,9 @@ MonoBehaviour:
   - {fileID: 7377571559750909145, guid: 8ea4f8740f752f347ada2f58411d0ab4, type: 3}
   - {fileID: 8850478926735505558, guid: a85b28dae61a16e46b6696d72f273d51, type: 3}
   - {fileID: 1864203464530729910, guid: 3752ff770d1536c409f556f9449e9ca6, type: 3}
+  - {fileID: 6694118459976999291, guid: 5aeea3915c78bd64ea00a4a7120092c9, type: 3}
+  - {fileID: 9107163178861523766, guid: ab756fad6be1b254f9e10851ba487d91, type: 3}
+  - {fileID: 3287253346159862489, guid: 15d99b148efb083438d261e2fddc5280, type: 3}
   NonGangGoodNpcPrefabs:
   - {fileID: 1864203464530729910, guid: 3752ff770d1536c409f556f9449e9ca6, type: 3}
   speicialPrefabs:
@@ -4323,6 +4326,8 @@ MonoBehaviour:
   MotorPrefabs: {fileID: 136207131579078256, guid: b44dab68859ab2e49ad6e47459397f28,
     type: 3}
   MotorPigPrefabs: {fileID: 0}
+  BikePrefabs: {fileID: 919132149155446097, guid: 094eb0241b97f4c3f9d1ac6be127623c,
+    type: 3}
   motorSpawnPosition: {fileID: 1176725722}
   motorTrollSound:
     idInternal: 0
@@ -4348,7 +4353,7 @@ MonoBehaviour:
   specialScale: 1.2
   spawnCount: 50
   spawnGangCount: 5
-  spawnGoodCount: 200
+  spawnGoodCount: 500
   minDistance: 1
   fixedY: -1.544
   firstTrollTime: 0

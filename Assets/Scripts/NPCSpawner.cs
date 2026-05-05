@@ -18,6 +18,7 @@ public class NPCSpawner : MonoBehaviour
     public AK.Wwise.Event[] sounds;
     public GameObject MotorPrefabs;
     public GameObject MotorPigPrefabs;
+    public GameObject BikePrefabs;
     public GameObject motorSpawnPosition;
     public AK.Wwise.Event motorTrollSound;
     public GameObject AdamPrefabs;
@@ -87,6 +88,14 @@ public class NPCSpawner : MonoBehaviour
 
     public void StartGame()
     {
+        // eventController.RegisterSpecialEvent(10f, () => {
+        //     AdamWalk();
+        //     Debug.Log("10 sec");
+        // });
+        // eventController.RegisterSpecialEvent(15f, () => {
+        //     MotorTroll();
+        //     Debug.Log("15 sec");
+        // });
         eventController.RegisterSpecialEvent(25f, () => {
             RandomizeNPCAnimations();
             Debug.Log("25 sec");
@@ -214,15 +223,36 @@ public class NPCSpawner : MonoBehaviour
         _spawnedPositions.Add(spawnPos);
     }
 
+    // void SpawnMotor()
+    // {
+    //     if (MotorPrefabs == null || motorSpawnPosition == null) return;
+        
+    //     Vector3 spawnPos = motorSpawnPosition.transform.position;
+    //     Quaternion spawnRotation = Quaternion.Euler(0f, 0f, 0f);
+        
+    //     GameObject motor = Instantiate(MotorPrefabs, spawnPos, spawnRotation);
+        
+    //     motorNpc = motor.GetComponent<NpcController>();
+    //     if (motorNpc != null)
+    //     {
+    //         motorNpc.isFacingSinger = false;
+    //     }
+        
+    //     _spawnedPositions.Add(spawnPos);
+    // }
     void SpawnMotor()
     {
-        if (MotorPrefabs == null || motorSpawnPosition == null) return;
+        if (MotorPrefabs == null || BikePrefabs == null || motorSpawnPosition == null) return;
         
         Vector3 spawnPos = motorSpawnPosition.transform.position;
         Quaternion spawnRotation = Quaternion.Euler(0f, 0f, 0f);
         
         GameObject motor = Instantiate(MotorPrefabs, spawnPos, spawnRotation);
+        GameObject bike = Instantiate(BikePrefabs, motor.transform.position, motor.transform.rotation, motor.transform);
         
+        bike.transform.localPosition = Vector3.zero; 
+        bike.transform.localRotation = Quaternion.Euler(-90f, 0f, 0f);
+
         motorNpc = motor.GetComponent<NpcController>();
         if (motorNpc != null)
         {
@@ -359,7 +389,7 @@ public class NPCSpawner : MonoBehaviour
             {
                 npc.StopAllCoroutines(); 
                 npc.StartCoroutine(npc.PlayRandomAnimation());
-                // sounds[npc.prefabIndex].Post(npc.gameObject);
+                sounds[npc.prefabIndex].Post(npc.gameObject);
             }
         }
     }
@@ -429,7 +459,7 @@ public class NPCSpawner : MonoBehaviour
         float moveSpeed = 3f;
 
         float groundY = -0.081f;
-        float correctionThreshold = 0.2f; 
+        float correctionThreshold = 0.05f; 
 
         foreach (GameObject targetObj in AdamTargetPositions)
         {
@@ -454,7 +484,7 @@ public class NPCSpawner : MonoBehaviour
 
                 adam.transform.position = nextPos;
 
-                // 面向處理 (維持原有邏輯)
+                // 面向處理
                 if (direction.magnitude > 0.01f)
                 {
                     Vector3 flatDirection = new Vector3(direction.x, 0f, direction.z);
@@ -533,6 +563,28 @@ public class NPCSpawner : MonoBehaviour
             Debug.Log($"得分增加！當前分數: {score}");
         }
         yield return null;
+    }
+
+    public void StopSounds(NpcController npc)
+    {
+        if (npc == null) return;
+
+        if (npc == motorNpc)
+        {
+            motorTrollSound.Stop(npc.gameObject);
+        }
+        else if (npc == adamNpc)
+        {
+            adamTrollSound.Stop(npc.gameObject);
+        }
+        else if (npc.isGangNpc)
+        {
+            sounds[npc.prefabIndex].Stop(npc.gameObject);
+        }
+        else
+        {
+            sounds[npc.prefabIndex + npcPrefabs.Length].Stop(npc.gameObject);
+        }
     }
 
     public void RespawnNPC(NpcController npc)
@@ -654,21 +706,7 @@ public class NPCSpawner : MonoBehaviour
         // {
         //     npc.GoToSpin();
         // }
-        if (npc == motorNpc)        {
-            motorTrollSound.Stop(npc.gameObject);
-        }
-        else if (npc == adamNpc)
-        {
-            adamTrollSound.Stop(npc.gameObject);
-        }
-        else if (npc.isGangNpc)
-        {
-            sounds[npc.prefabIndex].Stop(npc.gameObject);
-        }
-        else
-        {
-            sounds[npc.prefabIndex + npcPrefabs.Length].Stop(npc.gameObject);
-        }
+        StopSounds(npc);
         npc.GoToSpin();
 
         yield return new WaitForSeconds(1.5f);
