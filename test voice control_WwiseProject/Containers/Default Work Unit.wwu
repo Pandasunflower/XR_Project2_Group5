@@ -304,7 +304,7 @@
 													</Point>
 													<Point>
 														<XPos>100</XPos>
-														<YPos>-200</YPos>
+														<YPos>-17.16673</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -707,6 +707,7 @@
 				</Sound>
 				<Sound Name="for-the-first-time-in-forever-from-frozensing-along" ID="{C879FEB3-7C5A-4358-8055-CC146EE68308}" ShortID="422820526">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -732,6 +733,7 @@
 				</Sound>
 				<Sound Name="王傑-一場遊戲一場夢" ID="{B2DB6388-0E32-40A1-A93A-1345B31B6D32}" ShortID="910760600">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -812,7 +814,7 @@
 													</Point>
 													<Point>
 														<XPos>180</XPos>
-														<YPos>-195.00023</YPos>
+														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -918,19 +920,25 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>0.0200800000000072</YPos>
+														<YPos>4.03838</YPos>
 														<Flags>5</Flags>
 														<SegmentShape>Exp3</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>5.075</XPos>
-														<YPos>-1.21159</YPos>
+														<XPos>20</XPos>
+														<YPos>-0.00754</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
+														<XPos>45.16971</XPos>
+														<YPos>-1.17853</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp1</SegmentShape>
+													</Point>
+													<Point>
 														<XPos>100</XPos>
-														<YPos>-200</YPos>
+														<YPos>-8.86727</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>

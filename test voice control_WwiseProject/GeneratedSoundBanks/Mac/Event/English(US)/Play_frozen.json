@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
     "Language": "English(US)",
-    "Hash": "{99439891-39E5-66FC-C68B-08EDC74273D6}",
+    "Hash": "{9A5F8938-4A20-CB01-F1DB-0F3269C2DEC6}",
     "ObjectPath": "Play_frozen",
     "ShortName": "Play_frozen",
     "Path": "Event/English(US)/Play_frozen.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "for-the-first-time-in-forever-from-frozensing-along.wav",
       "Path": "Media/English(US)/345055891.wem",
-      "CachePath": "C8/{C87D8AC2-4E4E-84EC-0631-A59572EFE1A6}.wem"
+      "CachePath": "7D/{7D5F0C60-D69E-743E-6BAE-4800B3CD5152}.wem"
      }
     ],
     "Events": [
@@ -31,9 +31,7 @@
       "Name": "Play_frozen",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_frozen",
       "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
-      "DurationType": "OneShot",
-      "DurationMin": "133.032",
-      "DurationMax": "133.032",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "345055891"
@@ -43,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{CF6D547B-2647-84BB-594A-2AB3FC6CF51D}"
+  "FileHash": "{E223D36F-259D-19AF-7120-B0FBC4115FFC}"
  }
 }

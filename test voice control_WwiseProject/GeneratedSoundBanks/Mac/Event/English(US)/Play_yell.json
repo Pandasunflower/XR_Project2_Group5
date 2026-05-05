@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{124A57DF-150E-4619-B100-F7A37ABEC85F}",
     "Language": "English(US)",
-    "Hash": "{1E94AE94-58FD-CE1A-95F4-486D5A6B4709}",
+    "Hash": "{FED50761-ABB3-8444-D740-57F37C151362}",
     "ObjectPath": "Play_yell",
     "ShortName": "Play_yell",
     "Path": "Event/English(US)/Play_yell.bnk",
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{7FAE7415-75DC-5473-2BDB-FCAB46667761}"
+  "FileHash": "{EB1B6CB5-6815-F6F8-94F7-FC5526F012F1}"
  }
 }
