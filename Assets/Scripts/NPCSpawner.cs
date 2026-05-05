@@ -80,10 +80,10 @@ public class NPCSpawner : MonoBehaviour
         // {
         //     StopAllNPCAnimation();
         // }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            StartGame();
-        }
+        // if (Input.GetKeyDown(KeyCode.S))
+        // {
+        //     StartGame();
+        // }
     }
 
     public void StartGame()
