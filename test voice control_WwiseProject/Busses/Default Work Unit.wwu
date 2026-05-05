@@ -32,12 +32,13 @@
 																<XPos>0</XPos>
 																<YPos>1.2</YPos>
 																<Flags>5</Flags>
-																<SegmentShape>Log2</SegmentShape>
+																<SegmentShape>Log3</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>40</XPos>
-																<YPos>-2</YPos>
+																<XPos>39.81723</XPos>
+																<YPos>-8.58598</YPos>
 																<Flags>0</Flags>
+																<SegmentShape>Exp3</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
