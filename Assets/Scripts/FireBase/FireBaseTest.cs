@@ -24,8 +24,9 @@ public class FirestoreTest : MonoBehaviour
 
     public SingingManager singingManager;
 
-     
      public AK.Wwise.Event wwiseScoreEvent;
+
+     public AK.Wwise.Event wwiseEndEvent;
 
     void Start()
     {
@@ -297,6 +298,7 @@ public class FirestoreTest : MonoBehaviour
             Debug.Log("最終分數: " + finalScore);
             wwiseScoreEvent.Post(gameObject); // 播放分數揭曉音效
             StartCoroutine(ShowAnimatedResult(finalScore));
+            wwiseEndEvent.Post(gameObject); // 播放結束音效
         });
     }
 

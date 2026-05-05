@@ -24,6 +24,7 @@ namespace AK
         static const AkUniqueID PLAY_FOR_THE_ANNA = 2949967820U;
         static const AkUniqueID PLAY_FOR_THE_BGM = 3942408572U;
         static const AkUniqueID PLAY_FROZEN = 3459025660U;
+        static const AkUniqueID PLAY_GODOWNSTAGE = 2087262618U;
         static const AkUniqueID PLAY_HORN = 2956245481U;
         static const AkUniqueID PLAY_HORN2 = 1275111929U;
         static const AkUniqueID PLAY_JACKYUBER = 1539366728U;
