@@ -298,7 +298,6 @@ public class FirestoreTest : MonoBehaviour
             Debug.Log("最終分數: " + finalScore);
             wwiseScoreEvent.Post(gameObject); // 播放分數揭曉音效
             StartCoroutine(ShowAnimatedResult(finalScore));
-            wwiseEndEvent.Post(gameObject); // 播放結束音效
         });
     }
 
@@ -338,6 +337,7 @@ public class FirestoreTest : MonoBehaviour
 
         ShowResult(realScore);
         yield return StartCoroutine(FinalPunchEffect());
+        wwiseEndEvent.Post(gameObject); // 播放結束音效
     }
 
     IEnumerator FinalPunchEffect()
