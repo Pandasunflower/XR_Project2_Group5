@@ -136,6 +136,9 @@ public class NpcController : MonoBehaviour
 
         if (is_trolling)
         {
+            Debug.Log($"{gameObject.name} 因為時間到而停止了動畫: {selectedName}");
+            spawner.StopSounds(this);
+            _animator.SetBool(selectedName, false);
             _animator.SetTrigger("Idle");
             is_trolling = false;
             _animator.speed = Random.Range(minIdleSpeed, maxIdleSpeed);
