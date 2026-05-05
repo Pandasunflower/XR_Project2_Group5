@@ -24,8 +24,9 @@ public class FirestoreTest : MonoBehaviour
 
     public SingingManager singingManager;
 
-     
      public AK.Wwise.Event wwiseScoreEvent;
+
+     public AK.Wwise.Event wwiseEndEvent;
 
     void Start()
     {
@@ -336,6 +337,7 @@ public class FirestoreTest : MonoBehaviour
 
         ShowResult(realScore);
         yield return StartCoroutine(FinalPunchEffect());
+        wwiseEndEvent.Post(gameObject); // 播放結束音效
     }
 
     IEnumerator FinalPunchEffect()

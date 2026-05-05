@@ -10,33 +10,21 @@
     "Type": "Event",
     "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
     "Language": "English(US)",
-    "Hash": "{0D4966C1-298E-DD55-CCA8-FA205D91E443}",
+    "Hash": "{8E2F1107-6FCE-5E98-3A8F-B98F4734D0B8}",
     "ObjectPath": "Play_ThreeDayThreeNight_audience",
     "ShortName": "Play_ThreeDayThreeNight_audience",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_audience.bnk",
     "Media": [
      {
-      "Id": "116925822",
+      "Id": "399826449",
       "Language": "English(US)",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "三天三夜 觀眾.wav",
-      "Path": "Media/English(US)/116925822.wem",
-      "CachePath": "2F/{2FC5BD2D-FA7C-3710-9C3A-7B3D844E32E0}.wem"
+      "ShortName": "三天三夜 觀眾V2.wav",
+      "Path": "Media/English(US)/399826449.wem",
+      "CachePath": "86/{8611C4E6-815C-1740-E563-A88DDA345B2D}.wem"
      }
     ],
-    "Plugins": {
-     "ShareSets": [
-      {
-       "Id": "145028528",
-       "Name": "Static_Sibilance_Remover_Female",
-       "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\Misc\\Static_Sibilance_Remover_Female",
-       "GUID": "{3E13EF40-7C1A-4EBC-9858-8CB584A642E5}",
-       "LibName": "Wwise Parametric EQ",
-       "LibId": "6881283"
-      }
-     ]
-    },
     "Events": [
      {
       "Id": "2494639119",
@@ -48,16 +36,9 @@
       "DurationMax": "282.288",
       "MediaRefs": [
        {
-        "Id": "116925822"
+        "Id": "399826449"
        }
-      ],
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "145028528"
-        }
-       ]
-      }
+      ]
      }
     ],
     "GameParameters": [
@@ -70,6 +51,6 @@
     ]
    }
   ],
-  "FileHash": "{008D7BAB-B08B-B0A7-E730-2727CEDCAE61}"
+  "FileHash": "{9652FA03-381E-3784-DE5A-2A530BFE2D5C}"
  }
 }
