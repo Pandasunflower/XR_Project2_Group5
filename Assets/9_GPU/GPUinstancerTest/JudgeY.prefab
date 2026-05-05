@@ -16,12 +16,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 67d1d6803e38144bfaa32ed8ac5854a7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67d1d6803e38144bfaa32ed8ac5854a7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67d1d6803e38144bfaa32ed8ac5854a7,
         type: 3}
@@ -78,6 +78,31 @@ PrefabInstance:
         'forearm.L'\n\tTransform 'thigh.R'\n\tTransform 'thumb.03.R'\n\tTransform
         'forearm.R'\n\tTransform 'thumb.02.L'\n\tand more ...\n\tFrom animation clip
         'RightLeftDance'"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417361359673230750, guid: 67d1d6803e38144bfaa32ed8ac5854a7,
+        type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: -0.0000000018626451
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417361359673230750, guid: 67d1d6803e38144bfaa32ed8ac5854a7,
+        type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: -0.004686098
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417361359673230750, guid: 67d1d6803e38144bfaa32ed8ac5854a7,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417361359673230750, guid: 67d1d6803e38144bfaa32ed8ac5854a7,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417361359673230750, guid: 67d1d6803e38144bfaa32ed8ac5854a7,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: -0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
