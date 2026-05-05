@@ -206,7 +206,7 @@
 						<Action Name="" ID="{DBF916CF-333A-443C-8BDD-68D2B24618DF}" ShortID="921768460">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="三天三夜 觀眾" ID="{6CA63F36-2E03-497B-AF16-79433BF99885}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+									<ObjectRef Name="三天三夜 觀眾V2" ID="{65330A94-1C63-418B-B7FE-84A8993435EE}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -273,6 +273,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="JackyUber" ID="{D842B275-7171-4CAC-887B-21460F10183D}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_end" ID="{65337E20-B487-4104-B695-E793D0E72917}">
+					<ChildrenList>
+						<Action Name="" ID="{42FC422E-0F09-41DC-ACB3-694C40489420}" ShortID="862459071">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="end" ID="{A431D849-25E6-47F6-ADEF-E26E3B4244DE}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

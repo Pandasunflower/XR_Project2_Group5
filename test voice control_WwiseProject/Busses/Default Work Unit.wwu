@@ -11,17 +11,47 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}">
-							<DuckingList>
-								<DuckItem>
-									<BusRef Name="SongBus" ID="{3E610D54-4975-44FC-9068-A1B1E2DACEE6}"/>
-									<DuckingParam>
-										<Volume>-10</Volume>
-										<FadeInTime>0.5</FadeInTime>
-										<FadeOutTime>0.5</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-									</DuckingParam>
-								</DuckItem>
-							</DuckingList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{827908C8-F8AF-4E68-A46A-BDA75E5EE3E2}" ShortID="475414947">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="mic_distance" ID="{094260AC-CB5C-43D8-A2CB-055CC6615208}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{1CBDD0FB-0B3E-4967-B86A-C84F20201476}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1.2</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>40</XPos>
+																<YPos>-2</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
 						</Bus>
 						<Bus Name="SongBus" ID="{3E610D54-4975-44FC-9068-A1B1E2DACEE6}">
 							<ObjectLists>
