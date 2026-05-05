@@ -21,3 +21,7 @@ MonoBehaviour:
     importedVersion: 1.0.0
   - packageURL: com.gurbu.gpui.BillboardURP
     importedVersion: 1.0.0
+  - packageURL: com.gurbu.gpui.ca.ShaderGraphNode
+    importedVersion: 1.1.9
+  - packageURL: com.gurbu.gpui.ca.URP10
+    importedVersion: 1.1.9
