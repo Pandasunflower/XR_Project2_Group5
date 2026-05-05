@@ -13,12 +13,15 @@ public class NPCSpawner : MonoBehaviour
     public GameObject[] goodNpcPrefabs;
     public GameObject[] NonGangGoodNpcPrefabs;
     public GameObject[] speicialPrefabs;
+    public AK.Wwise.Event[] sounds;
     public GameObject MotorPrefabs;
     public GameObject MotorPigPrefabs;
     public GameObject motorSpawnPosition;
+    public AK.Wwise.Event motorTrollSound;
     public GameObject AdamPrefabs;
     public GameObject AdamPigPrefabs;
     public GameObject AdamSpawnPosition;
+    public AK.Wwise.Event adamTrollSound;
     public GameObject[] AdamTargetPositions;
     public float specialScale = 1f;
     public int spawnCount = 10;
@@ -66,10 +69,10 @@ public class NPCSpawner : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            RandomizeNPCAnimations();
-        }
+        // if (Input.GetKeyDown(KeyCode.R))
+        // {
+        //     RandomizeNPCAnimations();
+        // }
         // if (Input.GetKeyDown(KeyCode.Space))
         // {
         //     StopAllNPCAnimation();
@@ -82,26 +85,30 @@ public class NPCSpawner : MonoBehaviour
 
     public void StartGame()
     {
-        eventController.RegisterSpecialEvent(5f, () => {
-            GangNPCAnimations();
-            AdamWalk();
-            Debug.Log("5 sec");
+        eventController.RegisterSpecialEvent(25f, () => {
+            RandomizeNPCAnimations();
+            Debug.Log("25 sec");
         });
 
-        // eventController.RegisterSpecialEvent(10f, () => {
-        //     MotorTroll();
-        //     Debug.Log("10 sec");
-        // });
+        eventController.RegisterSpecialEvent(45f, () => {
+            GangNPCAnimations();
+            Debug.Log("45 sec");
+        });
 
-        // eventController.RegisterSpecialEvent(15f, () => {
-        //     RandomizeNPCAnimations();
-        //     Debug.Log("15 sec");
-        // });
+        eventController.RegisterSpecialEvent(72f, () => {
+            AdamWalk();
+            Debug.Log("72 sec");
+        });
 
-        // eventController.RegisterSpecialEvent(20f, () => {
-        //     AdamWalk();
-        //     Debug.Log("20 sec");
-        // });
+        eventController.RegisterSpecialEvent(100f, () => {
+            RandomizeNPCAnimations();
+            Debug.Log("100 sec");
+        });
+
+        eventController.RegisterSpecialEvent(132f, () => {
+            MotorTroll();
+            Debug.Log("132 sec");
+        });
 
         eventController.StartGame();
     }
@@ -331,6 +338,7 @@ public class NPCSpawner : MonoBehaviour
         {
             selectedNpc.StopAllCoroutines(); 
             selectedNpc.StartCoroutine(selectedNpc.PlayRandomAnimation());
+            sounds[selectedNpc.prefabIndex + npcPrefabs.Length].Post(selectedNpc.gameObject);
             Debug.Log($"隨機挑選了 {selectedNpc.gameObject.name} (索引: {randomIndex}) 開始TROLL！");
         }
     }
@@ -349,6 +357,7 @@ public class NPCSpawner : MonoBehaviour
             {
                 npc.StopAllCoroutines(); 
                 npc.StartCoroutine(npc.PlayRandomAnimation());
+                sounds[npc.prefabIndex].Post(npc.gameObject);
             }
         }
     }
@@ -384,6 +393,8 @@ public class NPCSpawner : MonoBehaviour
         float moveSpeed = 2f;
         float moveDuration = 10f;
         float elapsed = 0f;
+
+        motorTrollSound.Post(motor);
         
         while (elapsed < moveDuration && motor != null)
         {
@@ -392,14 +403,15 @@ public class NPCSpawner : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(30f - moveDuration);
+        yield return new WaitForSeconds(200);
 
-        Animator anim = motor.GetComponent<Animator>();
-        if (anim != null)
-        {
-            anim.SetTrigger("Idle");
-            motorNpc.is_trolling = false;
-        }
+        // Animator anim = motor.GetComponent<Animator>();
+        // if (anim != null)
+        // {
+        //     anim.SetTrigger("Idle");
+        //     motorNpc.is_trolling = false;
+        // }
+        motorNpc.is_trolling = false;
     }
 
     private IEnumerator AdamMoveForward(GameObject adam, NpcController adamController)
@@ -445,6 +457,7 @@ public class NPCSpawner : MonoBehaviour
         if (anim != null)
         {
             adamNpc.is_trolling = true;
+            adamTrollSound.Post(adam);
             anim.SetBool("Running", false);
             anim.SetBool("FanDance", true);
         }
@@ -456,37 +469,37 @@ public class NPCSpawner : MonoBehaviour
         adamController.is_trolling = false;
     }
 
-    void StopAllNPCAnimation()
-    {
-        foreach (NpcController npc in _spawnedNpcs)
-        {
-            if (npc != null)
-            {
-                if (npc.is_trolling)
-                {
-                    npc.GotShot();
-                }
-            }
-        }
-        foreach (NpcController npc in _spawnedGangNpcs)
-        {
-            if (npc != null)
-            {
-                if (npc.is_trolling)
-                {
-                    npc.GotShot();
-                }
-            }
-        }
-        if (motorNpc != null && motorNpc.is_trolling)
-        {
-            motorNpc.GotShot();
-        }
-        if (adamNpc != null && adamNpc.is_trolling)
-        {
-            adamNpc.GotShot();
-        }
-    }
+    // void StopAllNPCAnimation()
+    // {
+    //     foreach (NpcController npc in _spawnedNpcs)
+    //     {
+    //         if (npc != null)
+    //         {
+    //             if (npc.is_trolling)
+    //             {
+    //                 npc.GotShot();
+    //             }
+    //         }
+    //     }
+    //     foreach (NpcController npc in _spawnedGangNpcs)
+    //     {
+    //         if (npc != null)
+    //         {
+    //             if (npc.is_trolling)
+    //             {
+    //                 npc.GotShot();
+    //             }
+    //         }
+    //     }
+    //     if (motorNpc != null && motorNpc.is_trolling)
+    //     {
+    //         motorNpc.GotShot();
+    //     }
+    //     if (adamNpc != null && adamNpc.is_trolling)
+    //     {
+    //         adamNpc.GotShot();
+    //     }
+    // }
 
     public void ResetScore()
     {
@@ -613,31 +626,48 @@ public class NPCSpawner : MonoBehaviour
 
         if (npc.isSpinning) yield break;
 
-        if (npc.isGangNpc)
+        // if (npc.isGangNpc)
+        // {
+        //     foreach (NpcController gangNpc in _spawnedGangNpcs)
+        //     {
+        //         gangNpc.GoToSpin();
+        //     }
+        // }
+        // else
+        // {
+        //     npc.GoToSpin();
+        // }
+        if (npc == motorNpc)        {
+            motorTrollSound.Stop(npc.gameObject);
+        }
+        else if (npc == adamNpc)
         {
-            foreach (NpcController gangNpc in _spawnedGangNpcs)
-            {
-                gangNpc.GoToSpin();
-            }
+            adamTrollSound.Stop(npc.gameObject);
+        }
+        else if (npc.isGangNpc)
+        {
+            sounds[npc.prefabIndex].Stop(npc.gameObject);
         }
         else
         {
-            npc.GoToSpin();
+            sounds[npc.prefabIndex + npcPrefabs.Length].Stop(npc.gameObject);
         }
+        npc.GoToSpin();
 
         yield return new WaitForSeconds(1.5f);
 
-        if (npc.isGangNpc)
-        {
-            var gangListCopy = _spawnedGangNpcs.ToList(); 
-            foreach (NpcController gangNpc in gangListCopy)
-            {
-                RespawnNPC(gangNpc);
-            }
-        }
-        else
-        {
-            RespawnNPC(npc);
-        }
+        // if (npc.isGangNpc)
+        // {
+        //     var gangListCopy = _spawnedGangNpcs.ToList(); 
+        //     foreach (NpcController gangNpc in gangListCopy)
+        //     {
+        //         RespawnNPC(gangNpc);
+        //     }
+        // }
+        // else
+        // {
+        //     RespawnNPC(npc);
+        // }
+        RespawnNPC(npc);
     }
 }

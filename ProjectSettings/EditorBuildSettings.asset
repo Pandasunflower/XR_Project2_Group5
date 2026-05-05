@@ -11,12 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lobby.unity
     guid: 381bff358cb2d7a4aa8f8c592cdf04e1
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Stage1_DaveWang.unity
     guid: 0fe54bd97f3eb264b8b42b04824fda3a
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Stage1_Frozen.unity
     guid: b754a487b1702be48bd78d1c5ac5668d
+  - enabled: 1
+    path: Assets/Scenes/Stage2.unity
+    guid: 6c7a106f945ceb248938b0dd7abddb63
+  - enabled: 1
+    path: Assets/Scenes/Stage2 1.unity
+    guid: 5387b681975e04449907b91429c128b3
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d15e8ff1b04d9584e81139aeb0c5aba3,
       type: 2}

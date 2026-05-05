@@ -1695,6 +1695,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: bcd30586d04522c4d983fbf46c29882f,
       type: 2}
   karaokeScript: {fileID: 0}
+  speakerOutputs: []
 --- !u!114 &423294197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1797,6 +1798,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 305326f29013f0b4085f3a22e6f69fc2,
       type: 2}
+  speakerOutputs: []
 --- !u!1 &453418635 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bda276ce613fe4bfbbf58118a99c25ad,
@@ -2546,6 +2548,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: db211d666b2d1bb4c9c0a8b9434b99ba,
       type: 2}
   karaokeScript: {fileID: 0}
+  speakerOutputs: []
 --- !u!1 &713481613 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b6944fc879e14aa7b7915059d52bdc2,
@@ -3559,6 +3562,10 @@ MonoBehaviour:
   option: 0
   NPCpos: []
   singingManager: {fileID: 0}
+  wwiseScoreEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!4 &1236871917
 Transform:
   m_ObjectHideFlags: 0
@@ -4295,15 +4302,42 @@ MonoBehaviour:
   - {fileID: 4591598982437898775, guid: e6e52b1aadde39d4aae6f36a1f7ae120, type: 3}
   - {fileID: 1897858194785492222, guid: b3de4efe61b94e141af7d492dc94c068, type: 3}
   - {fileID: 6877719297472408113, guid: 068671fa8afbdb74083ff7807e4cbd79, type: 3}
+  sounds:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2181fd15ece4e134fa762ba1ae8caf3c,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ec492d69be2880c44a868422a85d612a,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: db958efbf06c2ac49a546e0ebf5ccc72,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 57e033db824ca5a419cb3d02bd9490e9,
+      type: 2}
   MotorPrefabs: {fileID: 136207131579078256, guid: b44dab68859ab2e49ad6e47459397f28,
     type: 3}
   MotorPigPrefabs: {fileID: 0}
   motorSpawnPosition: {fileID: 1176725722}
+  motorTrollSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 73fc10eead6301642845c29124b4fd85,
+      type: 2}
   AdamPrefabs: {fileID: 7941277813459836660, guid: 6dd11167b16e8934dbe1fc97da83cafb,
     type: 3}
   AdamPigPrefabs: {fileID: 7840367661544795253, guid: f41c8ffb25a6e9e4da717af4eec0fa74,
     type: 3}
   AdamSpawnPosition: {fileID: 1638988907}
+  adamTrollSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6ea8624001cd9d549b72ddaab9627354,
+      type: 2}
   AdamTargetPositions:
   - {fileID: 2016959335}
   - {fileID: 144771023}
@@ -4325,7 +4359,10 @@ MonoBehaviour:
   - {fileID: 1686115018}
   - {fileID: 887871255}
   GangAreaCubes:
-  - {fileID: 1724184683}
+  - {fileID: 380825357}
+  - {fileID: 1339184613}
+  - {fileID: 249542106}
+  - {fileID: 1686115018}
   score: 0
   eventController: {fileID: 383369085}
 --- !u!4 &1415585331
