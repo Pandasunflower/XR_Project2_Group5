@@ -122,6 +122,90 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &29691029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29691031}
+  - component: {fileID: 29691030}
+  m_Layer: 0
+  m_Name: GPUI Crowd Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &29691030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29691029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af511a4c6dd81ba478db11563a1d1d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prototypeList:
+  - {fileID: 11400000, guid: 26c58205b09ec45df8b55e321b41a06d, type: 2}
+  autoSelectCamera: 1
+  cameraData:
+    mainCamera: {fileID: 1302834029}
+    renderOnlySelectedCamera: 0
+  useFloatingOriginHandler: 0
+  applyFloatingOriginRotationAndScale: 0
+  floatingOriginTransform: {fileID: 0}
+  isFrustumCulling: 1
+  isOcclusionCulling: 1
+  minCullingDistance: 0
+  selectedPrototypeList:
+  - {fileID: 11400000, guid: 26c58205b09ec45df8b55e321b41a06d, type: 2}
+  isPrototypeTextMode: 0
+  showSceneSettingsBox: 1
+  showPrototypeBox: 1
+  showAdvancedBox: 0
+  showHelpText: 0
+  showDebugBox: 1
+  showGlobalValuesBox: 1
+  showRegisteredPrefabsBox: 1
+  showPrototypesBox: 1
+  keepSimulationLive: 0
+  updateSimulation: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  lightProbeDisabled: 0
+  registeredPrefabs:
+  - prefabPrototype: {fileID: 11400000, guid: 26c58205b09ec45df8b55e321b41a06d, type: 2}
+    registeredPrefabs:
+    - {fileID: 1133793806}
+  prefabList:
+  - {fileID: 8827097488121527840, guid: add3dbe23077c4e56a4053d0052b43f3, type: 3}
+  enableMROnManagerDisable: 1
+  enableMROnRemoveInstance: 1
+  animationEvents: []
+  selectedClipIndex: 3
+  showEventsFoldout: 1
+--- !u!4 &29691031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29691029}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &90272368
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +285,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.48, y: 0.45, z: -7.6}
-  m_LocalScale: {x: 87.872635, y: 0.1419, z: 77.294685}
+  m_LocalScale: {x: 396.16498, y: 0.1419, z: 353.95554}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -404,90 +488,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1207439346
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1207439348}
-  - component: {fileID: 1207439347}
-  m_Layer: 0
-  m_Name: GPUI Crowd Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1207439347
+--- !u!114 &1133793806 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7242653431060721843, guid: add3dbe23077c4e56a4053d0052b43f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2571251631204233242}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207439346}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af511a4c6dd81ba478db11563a1d1d80, type: 3}
+  m_Script: {fileID: 11500000, guid: 383841de6da8ff64dbf29c40801408a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prototypeList:
-  - {fileID: 11400000, guid: 26c58205b09ec45df8b55e321b41a06d, type: 2}
-  autoSelectCamera: 1
-  cameraData:
-    mainCamera: {fileID: 1302834029}
-    renderOnlySelectedCamera: 0
-  useFloatingOriginHandler: 0
-  applyFloatingOriginRotationAndScale: 0
-  floatingOriginTransform: {fileID: 0}
-  isFrustumCulling: 1
-  isOcclusionCulling: 1
-  minCullingDistance: 0
-  selectedPrototypeList:
-  - {fileID: 11400000, guid: 26c58205b09ec45df8b55e321b41a06d, type: 2}
-  isPrototypeTextMode: 0
-  showSceneSettingsBox: 1
-  showPrototypeBox: 1
-  showAdvancedBox: 0
-  showHelpText: 0
-  showDebugBox: 1
-  showGlobalValuesBox: 1
-  showRegisteredPrefabsBox: 1
-  showPrototypesBox: 1
-  keepSimulationLive: 0
-  updateSimulation: 1
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  lightProbeDisabled: 0
-  registeredPrefabs:
-  - prefabPrototype: {fileID: 11400000, guid: 26c58205b09ec45df8b55e321b41a06d, type: 2}
-    registeredPrefabs:
-    - {fileID: 1474174120}
-  prefabList:
-  - {fileID: 8827097488121527840, guid: add3dbe23077c4e56a4053d0052b43f3, type: 3}
-  enableMROnManagerDisable: 1
-  enableMROnRemoveInstance: 1
-  animationEvents: []
-  selectedClipIndex: 0
-  showEventsFoldout: 1
---- !u!4 &1207439348
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207439346}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1302834027
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,13 +579,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302834027}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18422623, y: -0, z: -0, w: 0.9828839}
+  m_LocalRotation: {x: 0.18149501, y: 0.16861843, z: 0.0316049, w: 0.96831226}
   m_LocalPosition: {x: -1.83, y: 6.6, z: -12.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 21.232, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 19.927, y: 21.073, z: 7.482}
 --- !u!114 &1302834031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,7 +670,7 @@ MonoBehaviour:
   scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!1 &1363413278
+--- !u!1 &1345845209
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -666,74 +678,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1363413280}
-  - component: {fileID: 1363413279}
+  - component: {fileID: 1345845211}
+  - component: {fileID: 1345845210}
   m_Layer: 0
-  m_Name: CrowdController
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1363413279
+--- !u!114 &1345845210
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363413278}
+  m_GameObject: {fileID: 1345845209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53787b95b69cc4a60a71cf8c43a15cb0, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b8270a7e6d8d4108abd121bb97c1f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crowdManager: {fileID: 1207439347}
-  audiencePrototypes:
-  - {fileID: 7242653431060721843, guid: add3dbe23077c4e56a4053d0052b43f3, type: 3}
-  totalCount: 10000
-  areaSize: {x: 100, y: 100}
-  surfaceLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  yOffset: 0
-  personalSpaceRadius: 0.8
-  maxRetriesPerSpawn: 20
-  lookTarget: {fileID: 1302834030}
-  gesture1Clip: {fileID: -7536546058115350168, guid: 18fe753aba9e746aa9ca1ea55f689701,
+  crowdManager: {fileID: 29691030}
+  audiencePrefab: {fileID: 7242653431060721843, guid: add3dbe23077c4e56a4053d0052b43f3,
     type: 3}
-  gesture2Clip: {fileID: -887982601649841707, guid: 457eb5791ad134571babb2cad632392e,
+  crowdCount: 10000
+  bigWaveClip: {fileID: -7536546058115350168, guid: 18fe753aba9e746aa9ca1ea55f689701,
     type: 3}
-  gesture3Clip: {fileID: -2463781497245029270, guid: 7ea497418bb63449089fe39c6f995015,
+  ameiFanMoveAClip: {fileID: -887982601649841707, guid: 457eb5791ad134571babb2cad632392e,
     type: 3}
-  gesture4Clip: {fileID: -887982601649841707, guid: 1cfae2aaeac3e4fe898b75cd38da6872,
+  keepJumpingClip: {fileID: -887982601649841707, guid: 1cfae2aaeac3e4fe898b75cd38da6872,
     type: 3}
---- !u!4 &1363413280
+  rightLeftDanceClip: {fileID: -2463781497245029270, guid: 7ea497418bb63449089fe39c6f995015,
+    type: 3}
+--- !u!4 &1345845211
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363413278}
+  m_GameObject: {fileID: 1345845209}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0492487, y: 1.39, z: -12.566133}
+  m_LocalPosition: {x: 0.5508876, y: 1.6373658, z: -10.318834}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1474174120 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7242653431060721843, guid: add3dbe23077c4e56a4053d0052b43f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 2571251631204233242}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383841de6da8ff64dbf29c40801408a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2571251631204233242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -742,6 +734,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2822589413307219680, guid: add3dbe23077c4e56a4053d0052b43f3,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'forearm.R'\n\tTransform 'thigh.L'\n\tTransform
+        'upper_arm.L'\n\tTransform 'spine.001'\n\tTransform 'upper_arm.R'\n\tTransform
+        'forearm.L'\n\tTransform 'thigh.R'\n\tTransform 'thumb.03.R'\n\tTransform
+        'forearm.R'\n\tTransform 'thumb.02.L'\n\tand more ...\n\tFrom animation clip
+        'RightLeftDance'"
+      objectReference: {fileID: 0}
     - target: {fileID: 8199918891242726554, guid: add3dbe23077c4e56a4053d0052b43f3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -797,6 +800,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: JudgeY
       objectReference: {fileID: 0}
+    - target: {fileID: 8827097488121527840, guid: add3dbe23077c4e56a4053d0052b43f3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -810,6 +818,6 @@ SceneRoots:
   - {fileID: 899668583}
   - {fileID: 946154452}
   - {fileID: 90272372}
-  - {fileID: 1207439348}
   - {fileID: 2571251631204233242}
-  - {fileID: 1363413280}
+  - {fileID: 1345845211}
+  - {fileID: 29691031}

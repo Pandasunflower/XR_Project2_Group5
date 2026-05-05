@@ -33,14 +33,14 @@ MonoBehaviour:
     clipFrameCount: 52
     hasRootMotion: 0
     length: 0.85
-    isLoopDisabled: 1
-    isClipLooping: 0
+    isLoopDisabled: 0
+    isClipLooping: 1
   - clipIndex: 3
     clipStartFrame: 265
     clipFrameCount: 52
     hasRootMotion: 1
     length: 0.85
-    isLoopDisabled: 1
+    isLoopDisabled: 0
     isClipLooping: 0
   skinnedMeshDataList:
   - transformName: Cube
@@ -401,7 +401,7 @@ MonoBehaviour:
   textureSizeX: 512
   textureSizeY: 256
   optimizeGameObjects: 1
-  useCrowdAnimator: 0
+  useCrowdAnimator: 1
   crowdAnimatorDefaultClip: 0
   applyRootMotion: 0
   rootMotions:
