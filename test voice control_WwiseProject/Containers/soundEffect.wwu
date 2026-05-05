@@ -6,7 +6,13 @@
 				<Sound Name="王ADEN" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" ShortID="435951110">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -32,7 +38,13 @@
 				<Sound Name="汽笛鬧場" ID="{12236449-4CC6-470F-AE05-F88231D9AFA4}" ShortID="775918290">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -84,7 +96,13 @@
 				<Sound Name="onPhone" ID="{BFFABDF1-2550-4C6A-9662-C737BD4348FA}" ShortID="992400675">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -110,6 +128,7 @@
 				<Sound Name="askForMoney" ID="{55376C7C-42A3-49C9-BCC9-966FAD853440}" ShortID="567683370">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -188,6 +207,7 @@
 				<Sound Name="motorOn" ID="{1E2EAE53-43DA-47B6-BB19-4F95CC77134A}" ShortID="757323858">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -265,7 +285,13 @@
 				<Sound Name="yell" ID="{FB183C7D-2E1A-4A52-A801-63BC808BE1FD}" ShortID="316864234">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
