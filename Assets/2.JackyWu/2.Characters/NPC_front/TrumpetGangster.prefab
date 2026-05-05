@@ -76,6 +76,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5450726817294988904}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 94ac8cdae289744d4974f75d463738ce,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2234116026930866241}
   m_SourcePrefab: {fileID: 100100000, guid: 94ac8cdae289744d4974f75d463738ce, type: 3}
 --- !u!1 &2268313805299584094 stripped
 GameObject:
@@ -95,7 +99,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb8023e1d430634482ec04831c83777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeVariation: 30
+  timeVariation: 200
+  prefabIndex: -1
+  isGoodNpc: 0
+  isGangNpc: 0
   is_trolling: 0
   minIdleSpeed: 0.8
   maxIdleSpeed: 1.2
+  isSpinning: 0
+  isFacingSinger: 1
+--- !u!65 &2234116026930866241
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2268313805299584094}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

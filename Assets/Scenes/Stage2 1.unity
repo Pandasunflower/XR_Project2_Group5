@@ -1483,7 +1483,7 @@ Transform:
   m_GameObject: {fileID: 378213376}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.212, y: 0, z: 0.27}
+  m_LocalPosition: {x: 2.212, y: -0.081, z: 0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3557,6 +3557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubePrefab: {fileID: 0}
   cubePrefab2: {fileID: 0}
+  playerPrefabs: []
   resultText: {fileID: 0}
   stage: 2
   option: -1

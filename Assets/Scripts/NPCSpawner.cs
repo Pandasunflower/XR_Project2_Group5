@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using Debug = UnityEngine.Debug;
+// using System.Numerics;
+using Vector3 = UnityEngine.Vector3;
 
 public class NPCSpawner : MonoBehaviour
 {
@@ -357,7 +359,7 @@ public class NPCSpawner : MonoBehaviour
             {
                 npc.StopAllCoroutines(); 
                 npc.StartCoroutine(npc.PlayRandomAnimation());
-                sounds[npc.prefabIndex].Post(npc.gameObject);
+                // sounds[npc.prefabIndex].Post(npc.gameObject);
             }
         }
     }
@@ -426,20 +428,33 @@ public class NPCSpawner : MonoBehaviour
 
         float moveSpeed = 3f;
 
-        // 依序移動到每個目標位置
+        float groundY = -0.081f;
+        float correctionThreshold = 0.2f; 
+
         foreach (GameObject targetObj in AdamTargetPositions)
         {
             if (targetObj == null || adam == null) break;
 
             Vector3 targetPos = targetObj.transform.position;
 
-            // 移動到目標位置（包括上下移動）
             while (adam != null && Vector3.Distance(adam.transform.position, targetPos) > 0.5f)
             {
-                Vector3 direction = (targetPos - adam.transform.position).normalized;
-                adam.transform.position += direction * moveSpeed * Time.deltaTime;
+                Vector3 currentPos = adam.transform.position;
+                Vector3 direction = (targetPos - currentPos).normalized;
                 
-                // 面向移動方向（只水平旋轉，不傾斜）
+                // 1. 計算下一個位置
+                Vector3 nextPos = currentPos + direction * moveSpeed * Time.deltaTime;
+
+                // 2. 判斷是否需要修正高度
+                // 如果目標點本身就在地板高度附近，且 Adam 目前也接近地板高度
+                if (Mathf.Abs(targetPos.y - groundY) < 0.01f && Mathf.Abs(nextPos.y - groundY) < correctionThreshold)
+                {
+                    nextPos.y = groundY; // 強制吸附回地板
+                }
+
+                adam.transform.position = nextPos;
+
+                // 面向處理 (維持原有邏輯)
                 if (direction.magnitude > 0.01f)
                 {
                     Vector3 flatDirection = new Vector3(direction.x, 0f, direction.z);
@@ -542,6 +557,7 @@ public class NPCSpawner : MonoBehaviour
 
             Destroy(npc.gameObject);
             GameObject newMotor;
+            oldPosition.y = -0.081f;
             if (MotorPigPrefabs != null) {
                 newMotor = Instantiate(MotorPigPrefabs, oldPosition, Quaternion.Euler(0f, 180f, 0f));
             }
@@ -569,6 +585,7 @@ public class NPCSpawner : MonoBehaviour
 
             Destroy(npc.gameObject);
             GameObject newAdam;
+            oldPosition.y = -0.081f;
             if (AdamPigPrefabs != null) {
                 newAdam = Instantiate(AdamPigPrefabs, oldPosition, Quaternion.Euler(0f, 180f, 0f));
             }
