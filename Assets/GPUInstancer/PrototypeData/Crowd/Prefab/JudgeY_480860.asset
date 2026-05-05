@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d9d8aa170c766b479188accfb1f709f, type: 3}
+  m_Name: JudgeY_480860
+  m_EditorClassIdentifier: 
+  prefabObject: {fileID: 8827097488121527840, guid: add3dbe23077c4e56a4053d0052b43f3,
+    type: 3}
+  isShadowCasting: 1
+  useCustomShadowDistance: 0
+  shadowDistance: 0
+  shadowLODMap:
+  - 0
+  - 4
+  - 0
+  - 0
+  - 1
+  - 5
+  - 0
+  - 0
+  - 2
+  - 6
+  - 0
+  - 0
+  - 3
+  - 7
+  - 0
+  - 0
+  useOriginalShaderForShadow: 1
+  cullShadows: 0
+  minDistance: 0
+  maxDistance: 500
+  isFrustumCulling: 1
+  isOcclusionCulling: 1
+  frustumOffset: 0.2
+  minCullingDistance: 0
+  occlusionOffset: 0
+  occlusionAccuracy: 1
+  boundsOffset: {x: 0, y: 0, z: 0}
+  isLODCrossFade: 0
+  isLODCrossFadeAnimate: 1
+  lodFadeTransitionWidth: 0.1
+  lodBiasAdjustment: 1
+  billboard:
+    billboardQuality: 1
+    atlasResolution: 2048
+    frameCount: 8
+    replaceLODCullWithBillboard: 1
+    isOverridingOriginalCutoff: 0
+    cutoffOverride: -1
+    billboardBrightness: 0.5
+    billboardDistance: 0.8
+    quadSize: 0
+    yPivotOffset: 0
+    albedoAtlasTexture: {fileID: 0}
+    normalAtlasTexture: {fileID: 0}
+    customBillboardInLODGroup: 0
+    useCustomBillboard: 0
+    customBillboardMesh: {fileID: 0}
+    customBillboardMaterial: {fileID: 0}
+    isBillboardShadowCasting: 0
+    billboardFaceCamPos: 0
+    normalStrength: 1
+  isBillboardDisabled: 0
+  useGeneratedBillboard: 0
+  checkedForBillboardExtensions: 0
+  autoUpdateTransformData: 0
+  treeType: 0
+  enableRuntimeModifications: 0
+  startWithRigidBody: 0
+  addRemoveInstancesAtRuntime: 0
+  extraBufferSize: 0
+  addRuntimeHandlerScript: 0
+  hasRigidBody: 0
+  rigidbodyData:
+    useGravity: 0
+    angularDrag: 0
+    mass: 0
+    constraints: 0
+    drag: 0
+    isKinematic: 0
+    interpolation: 0
+  meshRenderersDisabled: 0
+  isTransformsSerialized: 0
+  serializedTransformData: {fileID: 0}
+  serializedTransformDataCount: 0
+  animationData: {fileID: 11400000, guid: 5cb8aa9edbc5441fc98846fa16f2ecb7, type: 2}
+  frameRate: 60
+  animatorCullingMode: 1
+  modelPrefabPath: 
+  hasNoAnimator: 0
+  clipList:
+  - {fileID: -887982601649841707, guid: 457eb5791ad134571babb2cad632392e, type: 3}
+  - {fileID: -7536546058115350168, guid: 18fe753aba9e746aa9ca1ea55f689701, type: 3}
+  - {fileID: -2463781497245029270, guid: 7ea497418bb63449089fe39c6f995015, type: 3}
+  - {fileID: -887982601649841707, guid: 1cfae2aaeac3e4fe898b75cd38da6872, type: 3}
+  hasOptionalRenderers: 0
