@@ -28,6 +28,8 @@ public class FirestoreTest : MonoBehaviour
 
      public AK.Wwise.Event wwiseEndEvent;
 
+    public BoxCollider endTrigger; // 階段1結束碰撞器
+
     void Start()
     {
         db = FirebaseFirestore.DefaultInstance;
@@ -338,6 +340,8 @@ public class FirestoreTest : MonoBehaviour
         ShowResult(realScore);
         yield return StartCoroutine(FinalPunchEffect());
         wwiseEndEvent.Post(gameObject); // 播放結束音效
+        if (endTrigger != null)
+            endTrigger.enabled = true; // 啟用碰撞器
     }
 
     IEnumerator FinalPunchEffect()
