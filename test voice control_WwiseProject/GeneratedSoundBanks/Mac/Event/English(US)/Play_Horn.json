@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{72052F8E-22CE-458C-9329-E6CD2921C343}",
     "Language": "English(US)",
-    "Hash": "{E2A83AFA-3453-008F-8222-4A068BC34732}",
+    "Hash": "{02D56F8E-9B10-A3DC-24E8-62BFA4FEE80F}",
     "ObjectPath": "Play_horn",
     "ShortName": "Play_horn",
     "Path": "Event/English(US)/Play_horn.bnk",
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{D514EA1A-2A34-09E9-2103-FED23EA81129}"
+  "FileHash": "{5F7DCEE2-A19A-95F1-24FD-16B2E11FED62}"
  }
 }
