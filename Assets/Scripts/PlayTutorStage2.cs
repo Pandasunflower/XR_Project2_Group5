@@ -13,6 +13,7 @@ public class PlayTutorStage2 : MonoBehaviour
     private GameObject TutorGuy;
     public GameObject TutorPosition;
     public GameObject hitEffectPrefab;
+    public GameObject SHOOTHIM;
     private Stage3_StartPos StartController;
 
     // void awake()
@@ -76,6 +77,10 @@ public class PlayTutorStage2 : MonoBehaviour
         if (TutorGuy != null)
         {
             Destroy(TutorGuy);
+        }
+        if (SHOOTHIM != null)
+        {
+            Destroy(SHOOTHIM);
         }
         else
         {

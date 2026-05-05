@@ -26,6 +26,7 @@ public class NPCSpawner : MonoBehaviour
     public GameObject AdamSpawnPosition;
     public AK.Wwise.Event adamTrollSound;
     public GameObject[] AdamTargetPositions;
+    public GameObject hitEffectPrefab;
     public float specialScale = 1f;
     public int spawnCount = 10;
     public int spawnGangCount = 10;
@@ -598,6 +599,13 @@ public class NPCSpawner : MonoBehaviour
         _spawnedGangNpcs.Remove(npc);
         _spawnedSpecialNpcs.Remove(npc);
         _spawnedGoodNpcs.Remove(npc);
+
+        // smoke
+        GameObject effect = null;       
+        if (hitEffectPrefab != null)
+        {
+            effect = Instantiate(hitEffectPrefab, oldPosition,  Quaternion.Euler(0, 0, 0));
+        }
 
         if (npc == motorNpc)
         {
