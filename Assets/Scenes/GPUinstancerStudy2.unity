@@ -358,7 +358,6 @@ MonoBehaviour:
   totalPopulation: 10000
   upwardThreshold: 0.9
   lookAtTarget: {fileID: 1717176016}
-  randomYOffset: 1
   bigWaveClip: {fileID: -7536546058115350168, guid: aa1a6fc01bbfd478c891f9480e6edb26,
     type: 3}
   ameiFanMoveAClip: {fileID: -887982601649841707, guid: 457eb5791ad134571babb2cad632392e,
@@ -367,6 +366,8 @@ MonoBehaviour:
     type: 3}
   rightLeftDanceClip: {fileID: -887982601649841707, guid: 81e1b25cc9c634b8f8d134ac2396a90c,
     type: 3}
+  useRandomOffsetForOthers: 1
+  offsetRatio: 0.229
 --- !u!1 &533307947
 GameObject:
   m_ObjectHideFlags: 0
