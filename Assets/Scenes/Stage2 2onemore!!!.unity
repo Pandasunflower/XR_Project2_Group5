@@ -2797,6 +2797,7 @@ GameObject:
   - component: {fileID: 544617217}
   - component: {fileID: 544617215}
   - component: {fileID: 544617216}
+  - component: {fileID: 544617218}
   m_Layer: 0
   m_Name: RightHandAnchor
   m_TagString: Untagged
@@ -2843,6 +2844,7 @@ MonoBehaviour:
   m_controller: 2
   m_parentTransform: {fileID: 0}
   m_player: {fileID: 0}
+  isLocked: 0
 --- !u!135 &544617216
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2891,6 +2893,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &544617218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544617213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556423bbc726a44458dadc8ac79ca6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &565531419
 GameObject:
   m_ObjectHideFlags: 0

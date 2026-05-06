@@ -678,6 +678,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorPrefabs: {fileID: 5673469370836002056, guid: b5a67f334039fcc4e904b7ce8a79737f,
     type: 3}
+  SpawnEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   TutorPosition: {fileID: 133729912}
   hitEffectPrefab: {fileID: 8132996894463331240, guid: 3b45c05e7e1aaf7439f28935cec11b89,
     type: 3}
@@ -5050,6 +5054,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4c779e7e04566459483748d623c3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EndEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  transitionManager: {fileID: 0}
+  finalSongIndex: 0
   npcPrefabs:
   - {fileID: 8070802498719485112, guid: 34fb370781795004b91f78d3bdd12f50, type: 3}
   - {fileID: 4240253983782928750, guid: 4fd79339ac40a8740a1a2d9dcaebcba7, type: 3}
