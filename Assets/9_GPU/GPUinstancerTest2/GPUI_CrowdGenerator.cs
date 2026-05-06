@@ -34,7 +34,7 @@ namespace MyCrowdSystem
         private List<GPUICrowdPrefab> allInstances = new List<GPUICrowdPrefab>();
         private float minX = float.MaxValue;
         private float maxX = float.MinValue;
-        private Coroutine waveCoroutine; // 用來控制波浪的協程
+        private Coroutine waveCoroutine;
 
         void Start()
         {
@@ -85,7 +85,6 @@ namespace MyCrowdSystem
                 }
             }
 
-            // 核心修正 1：生成後，把所有人依照 X 座標由左至右排好
             allInstances.Sort((a, b) => a.transform.position.x.CompareTo(b.transform.position.x));
 
             GPUInstancerAPI.RegisterPrefabInstanceList(crowdManager, allInstances.ConvertAll(x => (GPUInstancerPrefab)x));
@@ -105,7 +104,6 @@ namespace MyCrowdSystem
             if (Input.GetKeyDown(KeyCode.L) && rightLeftDanceClip != null) ChangeAnim(rightLeftDanceClip, useRandomOffsetForOthers);
         }
 
-        // 核心修正 2：用協程控制時間差，達到完美波浪
         IEnumerator WaveSequence()
         {
             float timer = 0f;
@@ -118,24 +116,31 @@ namespace MyCrowdSystem
                 timer += Time.deltaTime;
                 float currentWaveX = minX + (timer / waveDelay) * rangeX;
 
-                // 只要波浪走到這個人的 X 座標，就觸發跳躍
                 while (currentIndex < allInstances.Count && allInstances[currentIndex].transform.position.x <= currentWaveX)
                 {
-                    // startTime 設為 0.0f 確保從第一幀重新播放，解決定格問題
                     GPUICrowdAPI.StartAnimation(allInstances[currentIndex], bigWaveClip, 0.0f, 1.0f, 0.1f);
                     currentIndex++;
                 }
                 yield return null;
             }
+
+            // --- 新增：等待波浪到底，然後自動切換 ---
+            if (bigWaveClip != null && ameiFanMoveAClip != null)
+            {
+                // 等待最後一個人的跳躍動畫快播完 (預留 0.2 秒做平滑過渡)
+                yield return new WaitForSeconds(bigWaveClip.length - 0.2f);
+                
+                // 全場自動接續 AmeiFanMoveA，並套用隨機偏移讓動作自然
+                ChangeAnim(ameiFanMoveAClip, useRandomOffsetForOthers);
+            }
         }
 
         void ChangeAnim(AnimationClip targetClip, bool isRandom)
         {
-            if (waveCoroutine != null) StopCoroutine(waveCoroutine); // 切換其他動畫時，停止波浪
+            if (waveCoroutine != null) StopCoroutine(waveCoroutine); 
 
             foreach (GPUICrowdPrefab instance in allInstances)
             {
-                // 用 0.0f 取代 -1.0f，確保不會因為負數時間導致定格
                 float startTime = isRandom ? Random.Range(0f, offsetRatio) : 0.0f;
                 GPUICrowdAPI.StartAnimation(instance, targetClip, startTime, 1.0f, 0.2f);
             }
