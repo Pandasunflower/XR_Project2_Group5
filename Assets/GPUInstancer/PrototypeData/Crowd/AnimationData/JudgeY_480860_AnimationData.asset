@@ -26,7 +26,7 @@ MonoBehaviour:
     clipFrameCount: 41
     hasRootMotion: 1
     length: 1.6666666
-    isLoopDisabled: 0
+    isLoopDisabled: 1
     isClipLooping: 1
   - clipIndex: 2
     clipStartFrame: 86
