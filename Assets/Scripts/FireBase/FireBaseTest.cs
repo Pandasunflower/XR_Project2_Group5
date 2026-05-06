@@ -6,6 +6,8 @@ using Firebase.Extensions;
 using TMPro;
 using Unity.Mathematics;
 using Unity.VisualScripting;
+using System.Diagnostics;
+using Debug = UnityEngine.Debug;
 
 public class FirestoreTest : MonoBehaviour
 {
@@ -25,9 +27,12 @@ public class FirestoreTest : MonoBehaviour
 
     public SingingManager singingManager;
 
-     public AK.Wwise.Event wwiseScoreEvent;
+    public AK.Wwise.Event wwiseScoreEvent;
 
-     public AK.Wwise.Event wwiseEndEvent;
+    public AK.Wwise.Event wwiseEndEvent;
+
+    public GameObject hostObject;
+
 
     public BoxCollider endTrigger; // 階段1結束碰撞器
 
@@ -465,8 +470,14 @@ public class FirestoreTest : MonoBehaviour
         ShowResult(realScore);
         yield return StartCoroutine(FinalPunchEffect());
         wwiseEndEvent.Post(gameObject); // 播放結束音效
+        PlayHostAnimation();
         if (endTrigger != null)
             endTrigger.enabled = true; // 啟用碰撞器
+    }
+
+    void PlayHostAnimation() {
+        // Debug.Log($"Triggering host animation {hostObject.name}");
+        hostObject.GetComponent<Animator>().SetTrigger("point");
     }
 
     IEnumerator FinalPunchEffect()

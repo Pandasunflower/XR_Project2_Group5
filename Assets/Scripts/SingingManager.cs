@@ -54,7 +54,6 @@ public class SingingManager : MonoBehaviour {
     public float currentTotalScore = 0f;
     private int _totalCheckedFrames = 0;
     private float _accumulatedPoints = 0f;
-
     public LineRenderer lineRenderer;
     public int maxPoints = 50;
     public float xSpacing = 0.2f;
