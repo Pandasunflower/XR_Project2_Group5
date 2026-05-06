@@ -594,6 +594,43 @@
     ]
    },
    {
+    "Id": "2102220028",
+    "Type": "Event",
+    "GUID": "{D778E0C0-F555-4959-8D20-BAFD280C1570}",
+    "Language": "English(US)",
+    "Hash": "{84C37E9C-D1F9-97DE-CFC4-07F6CE074404}",
+    "ObjectPath": "Play_jumphey",
+    "ShortName": "Play_jumphey",
+    "Path": "Event/English(US)/Play_jumphey.bnk",
+    "Media": [
+     {
+      "Id": "391161705",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "jumphey.wav",
+      "Path": "Media/English(US)/391161705.wem",
+      "CachePath": "4A/{4A96653C-20D2-74DA-8649-1315F7499088}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2102220028",
+      "Name": "Play_jumphey",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_jumphey",
+      "GUID": "{D778E0C0-F555-4959-8D20-BAFD280C1570}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.0855417",
+      "DurationMax": "2.0855417",
+      "MediaRefs": [
+       {
+        "Id": "391161705"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "2472290785",
     "Type": "Event",
     "GUID": "{65337E20-B487-4104-B695-E793D0E72917}",
@@ -1206,6 +1243,6 @@
     ]
    }
   ],
-  "FileHash": "{05C061E8-5591-EBB1-8D32-5591380A1B0F}"
+  "FileHash": "{82CBBE89-4BE5-01F5-C7AC-6F9AB8B554F5}"
  }
 }
