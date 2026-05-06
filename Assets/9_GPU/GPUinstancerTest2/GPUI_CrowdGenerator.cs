@@ -11,49 +11,35 @@ namespace MyCrowdSystem
         public GPUICrowdManager crowdManager;
         public List<GPUICrowdPrefab> audiencePrefabs; 
 
-        [Header("散佈設定")]
+        [Header("散佈與朝向")]
         public MeshFilter targetMeshFilter;
         public int totalPopulation = 10000;
-        [Range(0, 1)] public float upwardThreshold = 0.9f;
-
-        [Header("朝向設定")]
+        
+        [Range(0.1f, 1f)] 
+        [Tooltip("過濾強度：0.5 代表面要朝上且傾斜度小於 45 度；0.9 代表只長在非常平坦的頂面。")]
+        public float upwardThreshold = 0.8f; // 提高初始值以過濾底面
+        
         public Transform lookAtTarget;
-        public bool randomYOffset = true;
 
-        [Header("動畫按鍵設定 (請拖入 AnimationClip)")]
-        public AnimationClip bigWaveClip;       // 建議綁定：G
-        public AnimationClip ameiFanMoveAClip;  // 建議綁定：H
-        public AnimationClip keepJumpingClip;   // 建議綁定：J
-        public AnimationClip rightLeftDanceClip; // 建議綁定：L
+        [Header("動畫設定")]
+        public AnimationClip bigWaveClip;       
+        public AnimationClip ameiFanMoveAClip;  
+        public AnimationClip keepJumpingClip;   
+        public AnimationClip rightLeftDanceClip; 
+        
+        [Header("隨機偏移控制")]
+        public bool useRandomOffsetForOthers = true; 
+        [Range(0f, 1f)] public float offsetRatio = 0.5f; 
 
         private List<GPUICrowdPrefab> allInstances = new List<GPUICrowdPrefab>();
 
         void Start()
         {
             if (crowdManager == null || targetMeshFilter == null || audiencePrefabs.Count == 0) return;
-            GenerateCrowdWithOrientation();
+            GenerateCrowdOnTopSurfaceOnly();
         }
 
-        void Update()
-        {
-            // 監聽按鍵觸發動畫切換
-            if (Input.GetKeyDown(KeyCode.G) && bigWaveClip != null) ChangeAnim(bigWaveClip);
-            if (Input.GetKeyDown(KeyCode.H) && ameiFanMoveAClip != null) ChangeAnim(ameiFanMoveAClip);
-            if (Input.GetKeyDown(KeyCode.J) && keepJumpingClip != null) ChangeAnim(keepJumpingClip);
-            if (Input.GetKeyDown(KeyCode.L) && rightLeftDanceClip != null) ChangeAnim(rightLeftDanceClip);
-        }
-
-        void ChangeAnim(AnimationClip targetClip)
-        {
-            // 透過 GPUICrowdAPI 命令所有生成的實例切換動畫
-            foreach (GPUICrowdPrefab instance in allInstances)
-            {
-                // 使用 0.2f 的過渡時間讓動作切換更平滑
-                GPUICrowdAPI.StartAnimation(instance, targetClip, -1.0f, 1.0f, 0.2f);
-            }
-        }
-
-        void GenerateCrowdWithOrientation()
+        void GenerateCrowdOnTopSurfaceOnly()
         {
             Mesh mesh = targetMeshFilter.sharedMesh;
             Vector3[] vertices = mesh.vertices;
@@ -61,8 +47,8 @@ namespace MyCrowdSystem
             Vector3[] normals = mesh.normals;
 
             int spawnedCount = 0;
-            int maxAttempts = totalPopulation * 15;
             int attempts = 0;
+            int maxAttempts = totalPopulation * 20; // 增加嘗試次數以找尋符合的面
 
             while (spawnedCount < totalPopulation && attempts < maxAttempts)
             {
@@ -70,8 +56,12 @@ namespace MyCrowdSystem
                 int triIndex = Random.Range(0, triangles.Length / 3) * 3;
                 int i1 = triangles[triIndex], i2 = triangles[triIndex + 1], i3 = triangles[triIndex + 2];
 
-                Vector3 worldNormal = targetMeshFilter.transform.TransformDirection((normals[i1] + normals[i2] + normals[i3]).normalized);
+                // 取得面法線並轉為世界坐標
+                Vector3 avgNormal = (normals[i1] + normals[i2] + normals[i3]).normalized;
+                Vector3 worldNormal = targetMeshFilter.transform.TransformDirection(avgNormal);
 
+                // 核心判定：只有當世界法線的 Y 軸 > upwardThreshold 時才生成
+                // 頂面 Y ~ 1, 底面 Y ~ -1。設定 > 0.5 即可完全排除底面。
                 if (worldNormal.y > upwardThreshold)
                 {
                     Vector3 a = vertices[i1], b = vertices[i2], c = vertices[i3];
@@ -79,17 +69,12 @@ namespace MyCrowdSystem
                     if (r1 + r2 > 1) { r1 = 1 - r1; r2 = 1 - r2; }
                     Vector3 worldPos = targetMeshFilter.transform.TransformPoint(a + r1 * (b - a) + r2 * (c - a));
 
-                    Quaternion finalRotation;
+                    Quaternion finalRotation = Quaternion.identity;
                     if (lookAtTarget != null)
                     {
                         Vector3 direction = (lookAtTarget.position - worldPos);
                         direction.y = 0;
                         finalRotation = Quaternion.LookRotation(direction);
-                        if (randomYOffset) finalRotation *= Quaternion.Euler(0, Random.Range(-5f, 5f), 0);
-                    }
-                    else
-                    {
-                        finalRotation = Quaternion.Euler(0, Random.Range(0, 360f), 0);
                     }
 
                     GPUICrowdPrefab selectedPrefab = audiencePrefabs[Random.Range(0, audiencePrefabs.Count)];
@@ -99,9 +84,27 @@ namespace MyCrowdSystem
                 }
             }
 
-            List<GPUInstancerPrefab> baseInstances = allInstances.ConvertAll(x => (GPUInstancerPrefab)x);
-            GPUInstancerAPI.RegisterPrefabInstanceList(crowdManager, baseInstances); //
-            GPUInstancerAPI.InitializeGPUInstancer(crowdManager); //
+            GPUInstancerAPI.RegisterPrefabInstanceList(crowdManager, allInstances.ConvertAll(x => (GPUInstancerPrefab)x));
+            GPUInstancerAPI.InitializeGPUInstancer(crowdManager);
+            
+            Debug.Log($"生成完畢：在朝上面成功生成 {spawnedCount} 人，過濾嘗試了 {attempts} 次。");
+        }
+
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.G) && bigWaveClip != null) ChangeAnim(bigWaveClip, false);
+            if (Input.GetKeyDown(KeyCode.H) && ameiFanMoveAClip != null) ChangeAnim(ameiFanMoveAClip, useRandomOffsetForOthers);
+            if (Input.GetKeyDown(KeyCode.J) && keepJumpingClip != null) ChangeAnim(keepJumpingClip, useRandomOffsetForOthers);
+            if (Input.GetKeyDown(KeyCode.L) && rightLeftDanceClip != null) ChangeAnim(rightLeftDanceClip, useRandomOffsetForOthers);
+        }
+
+        void ChangeAnim(AnimationClip targetClip, bool isRandom)
+        {
+            foreach (GPUICrowdPrefab instance in allInstances)
+            {
+                float startTime = isRandom ? Random.Range(0f, offsetRatio) : -1.0f;
+                GPUICrowdAPI.StartAnimation(instance, targetClip, startTime, 1.0f, 0.2f);
+            }
         }
     }
 }
