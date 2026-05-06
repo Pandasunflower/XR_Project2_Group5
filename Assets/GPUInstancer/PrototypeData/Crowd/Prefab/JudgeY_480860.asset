@@ -16,7 +16,7 @@ MonoBehaviour:
     type: 3}
   isShadowCasting: 1
   useCustomShadowDistance: 0
-  shadowDistance: 0
+  shadowDistance: 86
   shadowLODMap:
   - 0
   - 4
@@ -35,13 +35,13 @@ MonoBehaviour:
   - 0
   - 0
   useOriginalShaderForShadow: 1
-  cullShadows: 0
+  cullShadows: 1
   minDistance: 0
   maxDistance: 500
   isFrustumCulling: 1
   isOcclusionCulling: 1
   frustumOffset: 0.2
-  minCullingDistance: 0
+  minCullingDistance: 1
   occlusionOffset: 0
   occlusionAccuracy: 1
   boundsOffset: {x: 0, y: 0, z: 0}
