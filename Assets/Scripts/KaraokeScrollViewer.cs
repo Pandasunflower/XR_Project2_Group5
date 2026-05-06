@@ -42,11 +42,24 @@ public class KaraokeScrollViewer : MonoBehaviour
     public Color wrongNoteColor = new Color(1f, 0f, 0f, 1f);
     public Color correctNoteColor = new Color(0f, 1f, 0f, 1f);
 
-    private List<GameObject> spawnedNotes = new List<GameObject>();
+    private class NoteVisual
+    {
+        public GameObject go;
+        public Renderer renderer;
+        public Material material;
+        public float startTime;
+        public float endTime;
+        public float midi;
+        public bool wasCorrect = false;
+        public bool wasEvaluated = false;
+        public Color currentColor = Color.clear;
+    }
+
+    private List<NoteVisual> spawnedNotes = new List<NoteVisual>();
     private AudioSource _unityAudio;
     private bool isInitialized = false;
-    private float _currentTargetMidi = 0f;  // 存储当前应唱的目标 MIDI 音高
-    private float _midiTolerance = 3f;  // 允许的 MIDI 差异 (1 = 正确)
+    private float _currentTargetMidi = 0f;
+    private float _midiTolerance = 3f;
 
     void Start()
     {
@@ -101,7 +114,7 @@ public class KaraokeScrollViewer : MonoBehaviour
 
     void GenerateVisualNotes()
     {
-        foreach (var n in spawnedNotes) if (n != null) Destroy(n);
+        foreach (var n in spawnedNotes) if (n != null && n.go != null) Destroy(n.go);
         spawnedNotes.Clear();
 
         if (PitchDataManager.Instance == null || PitchDataManager.Instance.CurrentSongNotes == null) return;
@@ -116,16 +129,28 @@ public class KaraokeScrollViewer : MonoBehaviour
             float yPos = ((note.midi - midiYOffset) * midiToYScale) + additionalYOffset;
 
             GameObject go = Instantiate(notePrefab, transform);
-
-            // 設定大小 (變小變扁)
             go.transform.localScale = new Vector3(width, visualHeight, visualDepth);
-
-            // 位移邏輯：補償 Pivot 在中心點的問題 (Start + 寬度一半)
             float xPosCentered = xPosStart + (width / 2f) + midiXOffset;
             go.transform.localPosition = new Vector3(xPosCentered, yPos, additionalZOffset);
 
-            SetNoteColor(go, nextNoteColor);
-            spawnedNotes.Add(go);
+            Renderer r = go.GetComponent<Renderer>();
+            Material mat = null;
+            if (r != null)
+            {
+                mat = r.material;
+                mat.color = nextNoteColor;
+            }
+
+            spawnedNotes.Add(new NoteVisual
+            {
+                go = go,
+                renderer = r,
+                material = mat,
+                startTime = note.startTime,
+                endTime = note.startTime + note.duration,
+                midi = note.midi,
+                currentColor = nextNoteColor
+            });
         }
     }
 
@@ -163,46 +188,67 @@ public class KaraokeScrollViewer : MonoBehaviour
 
     void UpdateNoteColors(float currentTime)
     {
+        float midiDiff = float.NaN;
+        bool hasMidiDiff = false;
+
+        if (singingManager != null)
+        {
+            midiDiff = singingManager.GetMidiDiff();
+            hasMidiDiff = !float.IsNaN(midiDiff);
+        }
+
         foreach (var note in spawnedNotes)
         {
-            if (note == null) continue;
+            if (note == null || note.go == null) continue;
 
-            // 根據 localPosition.x 逆推起點時間 (需補償 Pivot 造成的位移)
-            float width = note.transform.localScale.x;
-            float noteStart = (note.transform.localPosition.x - (width / 2f)) / timeToXScale;
-            float noteEnd = noteStart + (width / timeToXScale);
-
-            if (currentTime < noteStart)
+            Color targetColor;
+            if (currentTime < note.startTime)
             {
-                SetNoteColor(note, nextNoteColor);
+                targetColor = nextNoteColor;
             }
-            else if (currentTime >= noteStart && currentTime <= noteEnd)
+            else if (currentTime >= note.startTime && currentTime <= note.endTime)
             {
-                // 当前正在播放的音符
-                SetNoteColor(note, currentNoteColor);
-            }
-            else
-            {
-                // 已播放的音符：通過 SingingManager 檢查當時是否音準正確
-                if (singingManager != null)
+                if (hasMidiDiff && Mathf.Abs(midiDiff) < _midiTolerance)
                 {
-                    float midiDiff = singingManager.GetMidiDiff();
-                    if (midiDiff != 0 && Mathf.Abs(midiDiff) < _midiTolerance)
-                        SetNoteColor(note, correctNoteColor);  // 音準正確時顯示綠色
-                    else
-                        SetNoteColor(note, wrongNoteColor);
+                    targetColor = correctNoteColor;
+                    note.wasCorrect = true;
+                    note.wasEvaluated = true;
                 }
                 else
                 {
-                    SetNoteColor(note, playedNoteColor);
+                    targetColor = currentNoteColor;
+                    if (hasMidiDiff)
+                    {
+                        note.wasEvaluated = true;
+                    }
                 }
             }
+            else
+            {
+                if (!note.wasEvaluated)
+                {
+                    // 如果已經經過該 note 但尚未評估，視作未命中
+                    targetColor = wrongNoteColor;
+                    note.wasEvaluated = true;
+                }
+                else if (note.wasCorrect)
+                {
+                    targetColor = correctNoteColor;
+                }
+                else
+                {
+                    targetColor = wrongNoteColor;
+                }
+            }
+
+            SetNoteColor(note, targetColor);
         }
     }
 
-    void SetNoteColor(GameObject go, Color col)
+    void SetNoteColor(NoteVisual note, Color col)
     {
-        Renderer r = go.GetComponent<Renderer>();
-        if (r != null) r.material.color = col;
+        if (note.material == null || note.currentColor == col) return;
+        note.material.color = col;
+        note.currentColor = col;
     }
 }

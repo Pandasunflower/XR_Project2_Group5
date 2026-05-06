@@ -14155,7 +14155,7 @@ MonoBehaviour:
   wwisePlayingID: 0
   singingManager: {fileID: 1692521562}
   notePrefab: {fileID: 1951394304}
-  timeToXScale: 10
+  timeToXScale: 5
   midiToYScale: 0.5
   midiYOffset: 60
   midiXOffset: 1.92

@@ -364,19 +364,19 @@ public class SingingManager : MonoBehaviour {
     /// <returns>MIDI 差異值 (負數表示低於目標，正數表示高於目標；0 表示無有效音準)</returns>
     public float GetMidiDiff()
     {
-        if (micInput == null) return 0f;
+        if (micInput == null) return float.NaN;
         
         float rawUserMidi = micInput.GetCurrentPitchFiltered();
-        if (rawUserMidi <= 0) return 0f;
+        if (rawUserMidi <= 0) return float.NaN;
 
         float userMidi = (rawUserMidi * midiMultiplier) + midiOffset;
         
-        if (_currentIndex < _data.frames.Count) {
+        if (_data != null && _data.frames != null && _currentIndex < _data.frames.Count) {
             float targetMidi = _data.frames[_currentIndex].m;
             return userMidi - targetMidi;
         }
 
-        return 0f;
+        return float.NaN;
     }
 
     void CalculateSongRange() {
