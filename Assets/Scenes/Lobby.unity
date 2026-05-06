@@ -2359,6 +2359,7 @@ MonoBehaviour:
   stage: 0
   option: 0
   NPCpos: []
+  target: {fileID: 0}
   singingManager: {fileID: 0}
   wwiseScoreEvent:
     idInternal: 0
@@ -2368,7 +2369,11 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  hostObject: {fileID: 0}
   endTrigger: {fileID: 0}
+  signPrefab: {fileID: 0}
+  wallParent: {fileID: 0}
+  index: 0
 --- !u!4 &1733134110
 Transform:
   m_ObjectHideFlags: 0
