@@ -37,7 +37,7 @@ MonoBehaviour:
   useOriginalShaderForShadow: 1
   cullShadows: 1
   minDistance: 0
-  maxDistance: 500
+  maxDistance: 300
   isFrustumCulling: 1
   isOcclusionCulling: 1
   frustumOffset: 0.2

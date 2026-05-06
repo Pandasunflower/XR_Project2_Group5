@@ -6634,7 +6634,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327814662}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6709,7 +6709,6 @@ GameObject:
   - component: {fileID: 1343546226}
   - component: {fileID: 1343546225}
   - component: {fileID: 1343546224}
-  - component: {fileID: 1343546223}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -6717,27 +6716,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1343546223
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343546222}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1343546224
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6745,7 +6723,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343546222}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9023,7 +9001,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0.000000057601163, z: -0.000000057601163, w: 0.7071068}
   m_LocalPosition: {x: -0.2, y: -2.2, z: -4.37}
-  m_LocalScale: {x: 100, y: 100.00003, z: 100.00003}
+  m_LocalScale: {x: 96.957, y: 100.00003, z: 100.00003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9255,7 +9233,16 @@ MonoBehaviour:
   isOcclusionCulling: 1
   minCullingDistance: 0
   selectedPrototypeList:
+  - {fileID: 11400000, guid: ffb8bd7650c4c4924a961874da94d188, type: 2}
+  - {fileID: 11400000, guid: 3689ef8efd88249f3b865ffe2a1d5f4e, type: 2}
+  - {fileID: 11400000, guid: 62b6449380b2442409887200559f7a16, type: 2}
+  - {fileID: 11400000, guid: a23a745e950d74f9887ffd7cd708531c, type: 2}
+  - {fileID: 11400000, guid: 2b5f26ca200d74b6fb25a924da43a6e3, type: 2}
+  - {fileID: 11400000, guid: d5c3fcfe4ec8f411ca229c3126f1f73d, type: 2}
+  - {fileID: 11400000, guid: 8feda79beb0e4471dbd467254911164d, type: 2}
   - {fileID: 11400000, guid: 0ef6d53184573401981fe485074692bd, type: 2}
+  - {fileID: 11400000, guid: a2bff80bf70ed4aa690b42ed9c1cf901, type: 2}
+  - {fileID: 11400000, guid: b87340fcde85949aaa2720e7b10a7753, type: 2}
   isPrototypeTextMode: 0
   showSceneSettingsBox: 1
   showPrototypeBox: 1
@@ -9270,7 +9257,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  lightProbeDisabled: 0
+  lightProbeDisabled: 1
   registeredPrefabs:
   - prefabPrototype: {fileID: 11400000, guid: ffb8bd7650c4c4924a961874da94d188, type: 2}
     registeredPrefabs: []
@@ -10923,19 +10910,19 @@ MonoBehaviour:
   zones:
   - zoneName: 
     targetMeshFilter: {fileID: 2106696212}
-    population: 8000
-    upwardThreshold: 0.9
-  - zoneName: 
-    targetMeshFilter: {fileID: 2042982290}
     population: 5000
     upwardThreshold: 0.9
   - zoneName: 
-    targetMeshFilter: {fileID: 0}
+    targetMeshFilter: {fileID: 2042982290}
     population: 1000
     upwardThreshold: 0.9
   - zoneName: 
+    targetMeshFilter: {fileID: 0}
+    population: 500
+    upwardThreshold: 0.9
+  - zoneName: 
     targetMeshFilter: {fileID: 1343546225}
-    population: 1000
+    population: 500
     upwardThreshold: 0.9
   lookAtTarget: {fileID: 1254005743}
   bigWaveClip: {fileID: -7536546058115350168, guid: aa1a6fc01bbfd478c891f9480e6edb26,
@@ -11100,7 +11087,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106696210}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
