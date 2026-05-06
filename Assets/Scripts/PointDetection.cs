@@ -18,7 +18,7 @@ public class PointDetection : MonoBehaviour
         // }
         if (other.CompareTag("LeftHand") || other.CompareTag("RightHand"))
         {
-            Debug.Log($"poseDetection 碰撞物件: {other.gameObject.name}");
+            // Debug.Log($"poseDetection 碰撞物件: {other.gameObject.name}");
             poseDetection.isIn = true;
             poseDetection.Tag = gameObject.tag == "keepJumpingClip" ? 1 : 2;
         }
@@ -36,7 +36,7 @@ public class PointDetection : MonoBehaviour
         // }
         if (other.CompareTag("LeftHand") || other.CompareTag("RightHand"))
         {
-            Debug.Log($"poseDetection 離開物件: {other.gameObject.name}");
+            // Debug.Log($"poseDetection 離開物件: {other.gameObject.name}");
             poseDetection.isIn = false;
             poseDetection.Tag = 2;
         }

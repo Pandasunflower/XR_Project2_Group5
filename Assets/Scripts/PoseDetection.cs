@@ -45,14 +45,14 @@ public class PoseDetection : MonoBehaviour
             if (Tag == 1)
             {
                 crowdGenerator.callChangeAnim(1, false);
-                Debug.Log("keepJumpingClip");
+                // Debug.Log("keepJumpingClip");
                 isIn = false;
                 Tag = 0;
             }
             else if (Tag == 2)
             {
                 crowdGenerator.callChangeAnim(2, false);
-                Debug.Log("rightLeftDanceClip");
+                // Debug.Log("rightLeftDanceClip");
                 isIn = false;
                 Tag = 0;
             }

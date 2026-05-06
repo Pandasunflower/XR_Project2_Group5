@@ -29,33 +29,21 @@ public class Stage3CamVideoControl : MonoBehaviour
         // }
     }
 
-    void Start()
+    public void StartGame()
     {
         // SwitchToCamera();
         StartCoroutine(VideoCamChange());
     }
 
     public IEnumerator VideoCamChange(){
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(312f);
+        Debug.Log("312 sec");
         SwitchToVideo();
-        // yield return new WaitForSeconds(10f);
-        // SwitchToCamera();
-        // yield return new WaitForSeconds(10f);
-        // SwitchToVideo();
-        // yield return new WaitForSeconds(10f);
-        // SwitchToCamera();
-        // yield return new WaitForSeconds(10f);
-        // SwitchToVideo();
-        // yield return new WaitForSeconds(10f);
-        // SwitchToCamera();
-        // yield return new WaitForSeconds(10f);
-        // SwitchToVideo();
-        // yield return new WaitForSeconds(10f);
-        // SwitchToCamera();
     }
 
     public void SwitchToVideo()
     {
+        Debug.Log("Switching to video view");
         screenRenderer1.material = videoMaterial;
         screenRenderer2.material = videoMaterial;
 
@@ -71,6 +59,7 @@ public class Stage3CamVideoControl : MonoBehaviour
 
     public void SwitchToCamera()
     {
+        Debug.Log("Switching to camera view");
         videoPlayer1.Stop();
         videoPlayer2.Stop();
 

@@ -161,17 +161,17 @@ namespace MyCrowdSystem
 
         public void callChangeAnim(int i, bool isRandom)
         {
-            Debug.Log($"呼叫動畫變更: {i}, 隨機偏移: {isRandom}");
+            // Debug.Log($"呼叫動畫變更: {i}, 隨機偏移: {isRandom}");
             if (i == 0 && ameiFanMoveAClip != null) {
-                Debug.Log("觸發 ameiFanMoveAClip 動畫");
+                // Debug.Log("觸發 ameiFanMoveAClip 動畫");
                 ChangeAnim(ameiFanMoveAClip, isRandom);
             }
             else if (i == 1 && keepJumpingClip != null) {
-                Debug.Log("觸發 keepJumpingClip 動畫");
+                // Debug.Log("觸發 keepJumpingClip 動畫");
                 ChangeAnim(keepJumpingClip, isRandom);
             }
             else if (i == 2 && rightLeftDanceClip != null) {
-                Debug.Log("觸發 rightLeftDanceClip 動畫");
+                // Debug.Log("觸發 rightLeftDanceClip 動畫");
                 ChangeAnim(rightLeftDanceClip, isRandom);
             }
         }

@@ -18,9 +18,8 @@ public class MicrophoneDetection : MonoBehaviour
     {
         if (other.CompareTag("Microphone"))
         {
-
-            Debug.Log($"碰撞物件: {other.gameObject.name}");
             crowdGenerator.callChangeAnim(0, false);
         }
+        
     }
 }
