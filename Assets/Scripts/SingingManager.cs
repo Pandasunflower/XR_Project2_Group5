@@ -358,6 +358,27 @@ public class SingingManager : MonoBehaviour {
         // Debug.Log("目前分數：" + currentTotalScore);
     }
 
+    /// <summary>
+    /// 取得用戶目前音準與目標音高的差異
+    /// </summary>
+    /// <returns>MIDI 差異值 (負數表示低於目標，正數表示高於目標；0 表示無有效音準)</returns>
+    public float GetMidiDiff()
+    {
+        if (micInput == null) return 0f;
+        
+        float rawUserMidi = micInput.GetCurrentPitchFiltered();
+        if (rawUserMidi <= 0) return 0f;
+
+        float userMidi = (rawUserMidi * midiMultiplier) + midiOffset;
+        
+        if (_currentIndex < _data.frames.Count) {
+            float targetMidi = _data.frames[_currentIndex].m;
+            return userMidi - targetMidi;
+        }
+
+        return 0f;
+    }
+
     void CalculateSongRange() {
         if (_data.frames == null || _data.frames.Count == 0) return;
 

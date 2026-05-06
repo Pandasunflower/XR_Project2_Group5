@@ -14153,10 +14153,12 @@ MonoBehaviour:
   jsonName: note_segments.json.txt
   audioProviderObject: {fileID: 1572424158}
   wwisePlayingID: 0
+  singingManager: {fileID: 1692521562}
   notePrefab: {fileID: 1951394304}
   timeToXScale: 10
   midiToYScale: 0.5
   midiYOffset: 60
+  midiXOffset: 1.92
   visualHeight: 0.2
   visualDepth: 0.3
   additionalYOffset: 3
@@ -14164,6 +14166,8 @@ MonoBehaviour:
   nextNoteColor: {r: 0.7, g: 0.7, b: 0.7, a: 1}
   currentNoteColor: {r: 1, g: 0, b: 0.6, a: 1}
   playedNoteColor: {r: 0.4, g: 0.4, b: 0.4, a: 0.5}
+  wrongNoteColor: {r: 0.3647059, g: 0, b: 0, a: 1}
+  correctNoteColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &1290967122
 GameObject:
   m_ObjectHideFlags: 0

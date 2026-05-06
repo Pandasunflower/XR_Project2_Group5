@@ -19,11 +19,16 @@ public class KaraokeScrollViewer : MonoBehaviour
     [Tooltip("若使用 Wwise，可由外部設定此 PlayingID")]
     public uint wwisePlayingID = AkUnitySoundEngine.AK_INVALID_PLAYING_ID;
 
+    [Header("音準檢測")]
+    [Tooltip("拖入 SingingManager 來取得音準差異")]
+    public SingingManager singingManager;
+
     [Header("視覺映射參數")]
     public GameObject notePrefab;
     public float timeToXScale = 10f;  
     public float midiToYScale = 1.0f; 
     public float midiYOffset = 60f;
+    public float midiXOffset = 1.92f;
     [Space(10)]
     public float visualHeight = 0.3f;    // 方塊厚度
     public float visualDepth = 0.3f;     // 方塊深度
@@ -33,11 +38,15 @@ public class KaraokeScrollViewer : MonoBehaviour
     [Header("音高條顏色狀態")]
     public Color nextNoteColor = new Color(0.7f, 0.7f, 0.7f, 1f);   
     public Color currentNoteColor = new Color(1f, 0f, 0.6f, 1f);    
-    public Color playedNoteColor = new Color(0.4f, 0.4f, 0.4f, 0.5f); 
+    public Color playedNoteColor = new Color(0.4f, 0.4f, 0.4f, 0.5f);
+    public Color wrongNoteColor = new Color(1f, 0f, 0f, 1f);
+    public Color correctNoteColor = new Color(0f, 1f, 0f, 1f);
 
     private List<GameObject> spawnedNotes = new List<GameObject>();
     private AudioSource _unityAudio;
     private bool isInitialized = false;
+    private float _currentTargetMidi = 0f;  // 存储当前应唱的目标 MIDI 音高
+    private float _midiTolerance = 3f;  // 允许的 MIDI 差异 (1 = 正确)
 
     void Start()
     {
@@ -84,6 +93,12 @@ public class KaraokeScrollViewer : MonoBehaviour
         wwisePlayingID = id;
     }
 
+    // 設定音準容差 (預設為 1 semitone = 100 cents)
+    public void SetMidiTolerance(float tolerance)
+    {
+        _midiTolerance = tolerance;
+    }
+
     void GenerateVisualNotes()
     {
         foreach (var n in spawnedNotes) if (n != null) Destroy(n);
@@ -106,7 +121,7 @@ public class KaraokeScrollViewer : MonoBehaviour
             go.transform.localScale = new Vector3(width, visualHeight, visualDepth);
 
             // 位移邏輯：補償 Pivot 在中心點的問題 (Start + 寬度一半)
-            float xPosCentered = xPosStart + (width / 2f);
+            float xPosCentered = xPosStart + (width / 2f) + midiXOffset;
             go.transform.localPosition = new Vector3(xPosCentered, yPos, additionalZOffset);
 
             SetNoteColor(go, nextNoteColor);
@@ -158,11 +173,30 @@ public class KaraokeScrollViewer : MonoBehaviour
             float noteEnd = noteStart + (width / timeToXScale);
 
             if (currentTime < noteStart)
+            {
                 SetNoteColor(note, nextNoteColor);
+            }
             else if (currentTime >= noteStart && currentTime <= noteEnd)
+            {
+                // 当前正在播放的音符
                 SetNoteColor(note, currentNoteColor);
+            }
             else
-                SetNoteColor(note, playedNoteColor);
+            {
+                // 已播放的音符：通過 SingingManager 檢查當時是否音準正確
+                if (singingManager != null)
+                {
+                    float midiDiff = singingManager.GetMidiDiff();
+                    if (midiDiff != 0 && Mathf.Abs(midiDiff) < _midiTolerance)
+                        SetNoteColor(note, correctNoteColor);  // 音準正確時顯示綠色
+                    else
+                        SetNoteColor(note, wrongNoteColor);
+                }
+                else
+                {
+                    SetNoteColor(note, playedNoteColor);
+                }
+            }
         }
     }
 
