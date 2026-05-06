@@ -12,9 +12,15 @@ public class PointDetection : MonoBehaviour
         // {
         //     poseDetection.leftIn = true;
         // }
-        if (other.CompareTag("RightHand"))
+        // else if (other.CompareTag("RightHand"))
+        // {
+        //     poseDetection.rightIn = true;
+        // }
+        if (other.CompareTag("LeftHand") || other.CompareTag("RightHand"))
         {
-            poseDetection.rightIn = true;
+            Debug.Log($"poseDetection 碰撞物件: {other.gameObject.name}");
+            poseDetection.isIn = true;
+            poseDetection.Tag = gameObject.tag == "keepJumpingClip" ? 1 : 2;
         }
     }
 
@@ -24,9 +30,15 @@ public class PointDetection : MonoBehaviour
         // {
         //     poseDetection.leftIn = false;
         // }
-        if (other.CompareTag("RightHand"))
+        // else if (other.CompareTag("RightHand"))
+        // {
+        //     poseDetection.rightIn = false;
+        // }
+        if (other.CompareTag("LeftHand") || other.CompareTag("RightHand"))
         {
-            poseDetection.rightIn = false;
+            Debug.Log($"poseDetection 離開物件: {other.gameObject.name}");
+            poseDetection.isIn = false;
+            poseDetection.Tag = 2;
         }
     }
 }

@@ -7,6 +7,8 @@ public class PoseDetection : MonoBehaviour
 {
     public bool leftIn = false;
     public bool rightIn = false;
+    public bool isIn = false;
+    public int Tag = 0;
 
     public GPUI_CrowdGenerator crowdGenerator;
 
@@ -36,11 +38,24 @@ public class PoseDetection : MonoBehaviour
         //     Debug.Log("右手舉高");
         //     rightIn = false;
         // }
-        if (rightIn)
+        // Debug.Log($"PoseDetection 狀態 - leftIn: {leftIn}, rightIn: {rightIn}, isIn: {isIn}");
+        if (isIn)
         {
-            crowdGenerator.callChangeAnim(2, true);
-            Debug.Log("右手舉高");
-            rightIn = false;
+            Debug.Log($"PoseDetection 狀態 Tag: {Tag}");
+            if (Tag == 1)
+            {
+                crowdGenerator.callChangeAnim(1, false);
+                Debug.Log("keepJumpingClip");
+                isIn = false;
+                Tag = 0;
+            }
+            else if (Tag == 2)
+            {
+                crowdGenerator.callChangeAnim(2, false);
+                Debug.Log("rightLeftDanceClip");
+                isIn = false;
+                Tag = 0;
+            }
         }
     }
 }

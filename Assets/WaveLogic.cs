@@ -19,6 +19,10 @@ public class WaveLogic : MonoBehaviour
 
     void Update()
     {
+        if (isWaveLeft || isWaveRight)
+        {
+            // Debug.Log($"WaveLogic 狀態 - isWaveLeft: {isWaveLeft}, isWaveRight: {isWaveRight}");
+        }
         if (isWaveLeft && isWaveRight)
         {
             crowdGenerator.TriggerBigWave();

@@ -10,6 +10,8 @@ TagManager:
   - LeftHand
   - Microphone
   - Wave
+  - rightLeftDanceClip
+  - keepJumpingClip
   layers:
   - Default
   - TransparentFX
