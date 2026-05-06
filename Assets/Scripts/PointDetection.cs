@@ -8,11 +8,11 @@ public class PointDetection : MonoBehaviour
     public PoseDetection poseDetection;
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("LeftHand"))
-        {
-            poseDetection.leftIn = true;
-        }
-        else if (other.CompareTag("RightHand"))
+        // if (other.CompareTag("LeftHand"))
+        // {
+        //     poseDetection.leftIn = true;
+        // }
+        if (other.CompareTag("RightHand"))
         {
             poseDetection.rightIn = true;
         }
@@ -20,11 +20,11 @@ public class PointDetection : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("LeftHand"))
-        {
-            poseDetection.leftIn = false;
-        }
-        else if (other.CompareTag("RightHand"))
+        // if (other.CompareTag("LeftHand"))
+        // {
+        //     poseDetection.leftIn = false;
+        // }
+        if (other.CompareTag("RightHand"))
         {
             poseDetection.rightIn = false;
         }

@@ -48,6 +48,7 @@ namespace MyCrowdSystem
         {
             if (crowdManager == null || zones.Count == 0 || audiencePrefabs.Count == 0) return;
             GenerateAllZones();
+
         }
 
         void GenerateAllZones()
@@ -110,14 +111,24 @@ namespace MyCrowdSystem
         // ---------- 以下動畫控制與波浪邏輯完全不變 ----------
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.G) && bigWaveClip != null)
+            // if (Input.GetKeyDown(KeyCode.G) && bigWaveClip != null)
+            // {
+            //     if (waveCoroutine != null) StopCoroutine(waveCoroutine);
+            //     waveCoroutine = StartCoroutine(WaveSequence());
+            // }
+            // if (Input.GetKeyDown(KeyCode.H) && ameiFanMoveAClip != null) ChangeAnim(ameiFanMoveAClip, useRandomOffsetForOthers);
+            // if (Input.GetKeyDown(KeyCode.J) && keepJumpingClip != null) ChangeAnim(keepJumpingClip, useRandomOffsetForOthers);
+            // if (Input.GetKeyDown(KeyCode.L) && rightLeftDanceClip != null) ChangeAnim(rightLeftDanceClip, useRandomOffsetForOthers);
+
+        }
+
+        public void TriggerBigWave()
+        {
+            if (bigWaveClip != null)
             {
                 if (waveCoroutine != null) StopCoroutine(waveCoroutine);
                 waveCoroutine = StartCoroutine(WaveSequence());
             }
-            if (Input.GetKeyDown(KeyCode.H) && ameiFanMoveAClip != null) ChangeAnim(ameiFanMoveAClip, useRandomOffsetForOthers);
-            if (Input.GetKeyDown(KeyCode.J) && keepJumpingClip != null) ChangeAnim(keepJumpingClip, useRandomOffsetForOthers);
-            if (Input.GetKeyDown(KeyCode.L) && rightLeftDanceClip != null) ChangeAnim(rightLeftDanceClip, useRandomOffsetForOthers);
         }
 
         IEnumerator WaveSequence()
@@ -145,6 +156,13 @@ namespace MyCrowdSystem
                 yield return new WaitForSeconds(bigWaveClip.length - 0.2f);
                 ChangeAnim(ameiFanMoveAClip, useRandomOffsetForOthers);
             }
+        }
+
+        public void callChangeAnim(int i, bool isRandom)
+        {
+            if (i == 0 && ameiFanMoveAClip != null) ChangeAnim(ameiFanMoveAClip, isRandom);
+            else if (i == 1 && keepJumpingClip != null) ChangeAnim(keepJumpingClip, isRandom);
+            else if (i == 2 && rightLeftDanceClip != null) ChangeAnim(rightLeftDanceClip, isRandom);
         }
 
         void ChangeAnim(AnimationClip targetClip, bool isRandom)

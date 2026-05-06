@@ -3510,6 +3510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftIn: 0
   rightIn: 0
+  crowdGenerator: {fileID: 0}
 --- !u!4 &731383055
 Transform:
   m_ObjectHideFlags: 0
@@ -9244,14 +9245,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a2bff80bf70ed4aa690b42ed9c1cf901, type: 2}
   - {fileID: 11400000, guid: b87340fcde85949aaa2720e7b10a7753, type: 2}
   isPrototypeTextMode: 0
-  showSceneSettingsBox: 1
+  showSceneSettingsBox: 0
   showPrototypeBox: 1
   showAdvancedBox: 0
   showHelpText: 0
   showDebugBox: 1
   showGlobalValuesBox: 1
-  showRegisteredPrefabsBox: 1
-  showPrototypesBox: 1
+  showRegisteredPrefabsBox: 0
+  showPrototypesBox: 0
   keepSimulationLive: 0
   updateSimulation: 1
   layerMask:
@@ -9637,6 +9638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isWaveLeft: 0
   isWaveRight: 0
+  crowdGenerator: {fileID: 0}
 --- !u!1 &1878973777 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 51a71d816f8b54720ad9dc705de76221,
