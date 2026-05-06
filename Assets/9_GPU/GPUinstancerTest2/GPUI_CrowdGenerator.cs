@@ -3,71 +3,89 @@ using System.Collections.Generic;
 using GPUInstancer;
 using GPUInstancer.CrowdAnimations;
 
-public class GPUI_CrowdGenerator : MonoBehaviour
+namespace MyCrowdSystem
 {
-    [Header("GPUI 設定")]
-    public GPUICrowdManager crowdManager; // 拖入 GPUICrowdManager
-
-    [Header("觀眾 Prefab 清單 (請拖入 10 個已 Bake 的物件)")]
-    // 這裡我們直接用 GameObject，讓你能在 Inspector 看到 10 個框框拖進去
-    public List<GPUICrowdPrefab> audiencePrefabs; 
-
-    [Header("散佈設定")]
-    public MeshFilter targetMeshFilter; // 拖入目標 Mesh
-    public int totalPopulation = 10000;
-
-    // 用來儲存生成的實例，以便之後控制動畫
-    private List<GPUICrowdPrefab> allInstances = new List<GPUICrowdPrefab>();
-
-    void Start()
+    public class GPUI_CrowdGenerator : MonoBehaviour
     {
-        if (crowdManager == null || targetMeshFilter == null || audiencePrefabs.Count == 0)
+        [Header("GPUI 設定")]
+        public GPUICrowdManager crowdManager;
+        public List<GPUICrowdPrefab> audiencePrefabs; 
+
+        [Header("散佈設定")]
+        public MeshFilter targetMeshFilter;
+        public int totalPopulation = 10000;
+        [Range(0, 1)] public float upwardThreshold = 0.9f;
+
+        [Header("朝向設定")]
+        public Transform lookAtTarget; // 拖入舞台中心點
+        public bool randomYOffset = true; // 是否允許每個人有稍微不同的左右偏移，看起來更自然
+
+        private List<GPUICrowdPrefab> allInstances = new List<GPUICrowdPrefab>();
+
+        void Start()
         {
-            Debug.LogError("Inspector 欄位有空缺！");
-            return;
+            if (crowdManager == null || targetMeshFilter == null || audiencePrefabs.Count == 0) return;
+            GenerateCrowdWithOrientation();
         }
 
-        GenerateCrowdOnMesh();
-    }
-
-    void GenerateCrowdOnMesh()
-    {
-        Mesh mesh = targetMeshFilter.sharedMesh;
-        Vector3[] vertices = mesh.vertices;
-        int[] triangles = mesh.triangles;
-
-        for (int i = 0; i < totalPopulation; i++)
+        void GenerateCrowdWithOrientation()
         {
-            // 1. 取得 Mesh 表面隨機位置
-            Vector3 randomPoint = GetRandomPointOnMeshSurface(vertices, triangles);
-            Vector3 worldPos = targetMeshFilter.transform.TransformPoint(randomPoint);
-            Quaternion randomRot = Quaternion.Euler(0, Random.Range(0, 360f), 0);
+            Mesh mesh = targetMeshFilter.sharedMesh;
+            Vector3[] vertices = mesh.vertices;
+            int[] triangles = mesh.triangles;
+            Vector3[] normals = mesh.normals;
 
-            // 2. 隨機選一個 Prefab (從你那 10 個裡面選)
-            GPUICrowdPrefab selectedPrefab = audiencePrefabs[Random.Range(0, audiencePrefabs.Count)];
+            int spawnedCount = 0;
+            int maxAttempts = totalPopulation * 15;
+            int attempts = 0;
 
-            // 3. 仿照昨天成功的邏輯：直接 Instantiate
-            GPUICrowdPrefab go = Instantiate(selectedPrefab, worldPos, randomRot);
-            allInstances.Add(go);
+            while (spawnedCount < totalPopulation && attempts < maxAttempts)
+            {
+                attempts++;
+                int triIndex = Random.Range(0, triangles.Length / 3) * 3;
+                int i1 = triangles[triIndex], i2 = triangles[triIndex + 1], i3 = triangles[triIndex + 2];
+
+                Vector3 worldNormal = targetMeshFilter.transform.TransformDirection((normals[i1] + normals[i2] + normals[i3]).normalized);
+
+                if (worldNormal.y > upwardThreshold)
+                {
+                    Vector3 a = vertices[i1], b = vertices[i2], c = vertices[i3];
+                    float r1 = Random.value, r2 = Random.value;
+                    if (r1 + r2 > 1) { r1 = 1 - r1; r2 = 1 - r2; }
+                    Vector3 worldPos = targetMeshFilter.transform.TransformPoint(a + r1 * (b - a) + r2 * (c - a));
+
+                    // --- 新增：計算朝向邏輯 ---
+                    Quaternion finalRotation;
+                    if (lookAtTarget != null)
+                    {
+                        Vector3 direction = (lookAtTarget.position - worldPos);
+                        direction.y = 0; // 鎖定 Y 軸，防止觀眾「仰頭」或「低頭」看舞台，保持站姿垂直
+                        finalRotation = Quaternion.LookRotation(direction);
+                        
+                        if (randomYOffset)
+                        {
+                            // 稍微加上 -5 到 5 度的隨機偏移，讓人群不那麼死板
+                            finalRotation *= Quaternion.Euler(0, Random.Range(-5f, 5f), 0);
+                        }
+                    }
+                    else
+                    {
+                        finalRotation = Quaternion.Euler(0, Random.Range(0, 360f), 0);
+                    }
+
+                    GPUICrowdPrefab selectedPrefab = audiencePrefabs[Random.Range(0, audiencePrefabs.Count)];
+                    GPUICrowdPrefab go = Instantiate(selectedPrefab, worldPos, finalRotation);
+                    allInstances.Add(go);
+                    spawnedCount++;
+                }
+            }
+
+            // 使用昨天的成功邏輯：Register 並 Initialize
+            List<GPUInstancerPrefab> baseInstances = allInstances.ConvertAll(x => (GPUInstancerPrefab)x);
+            GPUInstancerAPI.RegisterPrefabInstanceList(crowdManager, baseInstances);
+            GPUInstancerAPI.InitializeGPUInstancer(crowdManager);
+            
+            Debug.Log($"萬人生成完畢！所有人已朝向：{(lookAtTarget != null ? lookAtTarget.name : "隨機方向")}");
         }
-
-        // 4. 統一交給 GPUI 接管 (這部分邏輯與你昨天的成功版一模一樣)
-        List<GPUInstancerPrefab> baseInstances = allInstances.ConvertAll(x => (GPUInstancerPrefab)x);
-        GPUInstancerAPI.RegisterPrefabInstanceList(crowdManager, baseInstances);
-        
-        // 5. 啟動 GPU 渲染
-        GPUInstancerAPI.InitializeGPUInstancer(crowdManager);
-
-        Debug.Log($"成功生成 {totalPopulation} 人，分佈於 {targetMeshFilter.name} 表面。");
-    }
-
-    // 三角形隨機取點 (讓分佈更均勻)
-    Vector3 GetRandomPointOnMeshSurface(Vector3[] v, int[] t)
-    {
-        int triIndex = Random.Range(0, t.Length / 3) * 3;
-        Vector3 a = v[t[triIndex]], b = v[t[triIndex + 1]], c = v[t[triIndex + 2]];
-        float r1 = Random.value, r2 = Random.value;
-        if (r1 + r2 > 1) { r1 = 1 - r1; r2 = 1 - r2; }
-        return a + r1 * (b - a) + r2 * (c - a);
     }
 }
