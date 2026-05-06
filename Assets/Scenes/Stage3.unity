@@ -10910,19 +10910,19 @@ MonoBehaviour:
   zones:
   - zoneName: 
     targetMeshFilter: {fileID: 2106696212}
-    population: 5000
-    upwardThreshold: 0.9
-  - zoneName: 
-    targetMeshFilter: {fileID: 2042982290}
     population: 1000
     upwardThreshold: 0.9
   - zoneName: 
-    targetMeshFilter: {fileID: 0}
-    population: 500
+    targetMeshFilter: {fileID: 2042982290}
+    population: 200
+    upwardThreshold: 0.9
+  - zoneName: 
+    targetMeshFilter: {fileID: 1327814664}
+    population: 100
     upwardThreshold: 0.9
   - zoneName: 
     targetMeshFilter: {fileID: 1343546225}
-    population: 500
+    population: 50
     upwardThreshold: 0.9
   lookAtTarget: {fileID: 1254005743}
   bigWaveClip: {fileID: -7536546058115350168, guid: aa1a6fc01bbfd478c891f9480e6edb26,
