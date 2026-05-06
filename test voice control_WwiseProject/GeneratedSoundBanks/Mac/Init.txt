@@ -7,6 +7,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1401307552	SongBus			\Default Work Unit\Main Audio Bus\SongBus	
 	2120751940	AccidentBus			\Default Work Unit\Main Audio Bus\AccidentBus	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+	2854002871	audience			\Default Work Unit\Main Audio Bus\audience	
 
 Effect plug-ins	ID	Name	Type				Notes
 	602546716	Room_Large	Wwise RoomVerb			
