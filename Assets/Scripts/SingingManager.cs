@@ -268,29 +268,29 @@ public class SingingManager : MonoBehaviour {
             float rawUserMidi = micInput != null ? micInput.GetCurrentPitchFiltered() : 0;
             float userMidi = (rawUserMidi > 0) ? (rawUserMidi * midiMultiplier) + midiOffset : 0;
 
-            if (playerIndicator != null) {
-                if (userMidi > 0 || _hideTimer > 0) {
-                    _hideTimer = hideDelay; 
-                    playerIndicator.gameObject.SetActive(true);
+            // if (playerIndicator != null) {
+            //     if (userMidi > 0 || _hideTimer > 0) {
+            //         _hideTimer = hideDelay; 
+            //         playerIndicator.gameObject.SetActive(true);
 
-                    float clampedMidi = Mathf.Clamp(userMidi, minMidi, maxMidi);
+            //         float clampedMidi = Mathf.Clamp(userMidi, minMidi, maxMidi);
 
-                    if (_currentVisualMidi <= 0) _currentVisualMidi = clampedMidi;
-                    _currentVisualMidi = Mathf.Lerp(_currentVisualMidi, clampedMidi, Time.deltaTime * smoothSpeed);
+            //         if (_currentVisualMidi <= 0) _currentVisualMidi = clampedMidi;
+            //         _currentVisualMidi = Mathf.Lerp(_currentVisualMidi, clampedMidi, Time.deltaTime * smoothSpeed);
 
-                    // 讓 Indicator 留在 X = 0 (或你設定的 indicatorXPosition)，Y 軸反應音高
-                    playerIndicator.position = new Vector3(indicatorXPosition, _currentVisualMidi * pitchScale, 0);
-                    EvaluateScore(targetMidi, _currentVisualMidi); 
+            //         // 讓 Indicator 留在 X = 0 (或你設定的 indicatorXPosition)，Y 軸反應音高
+            //         playerIndicator.position = new Vector3(indicatorXPosition, _currentVisualMidi * pitchScale, 0);
+            //         EvaluateScore(targetMidi, _currentVisualMidi); 
                     
-                } else {
-                    if (_hideTimer > 0) {
-                        _hideTimer -= Time.deltaTime;
-                    } else {
-                        playerIndicator.gameObject.SetActive(false);
-                        _currentVisualMidi = 0; 
-                    }
-                }
-            }
+            //     } else {
+            //         if (_hideTimer > 0) {
+            //             _hideTimer -= Time.deltaTime;
+            //         } else {
+            //             playerIndicator.gameObject.SetActive(false);
+            //             _currentVisualMidi = 0; 
+            //         }
+            //     }
+            // }
         }
     }
 
