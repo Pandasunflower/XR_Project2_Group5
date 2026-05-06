@@ -6,9 +6,17 @@ using System.Linq;
 using Debug = UnityEngine.Debug;
 // using System.Numerics;
 using Vector3 = UnityEngine.Vector3;
+using UnityEngine.SceneManagement;
 
 public class NPCSpawner : MonoBehaviour
 {
+    [Header("結束的聲音")]
+    public AK.Wwise.Event EndEvent;
+
+    [Header("結束的場景")]
+    public SceneTransition transitionManager;
+    public int finalSongIndex;
+
     [Header("生成設定")]
     public GameObject[] npcPrefabs;
     public GameObject[] NonGangNpcPrefabs;
@@ -120,6 +128,14 @@ public class NPCSpawner : MonoBehaviour
         eventController.RegisterSpecialEvent(132f, () => {
             MotorTroll();
             Debug.Log("132 sec");
+        });
+        eventController.RegisterSpecialEvent(150f, () => {
+            EndEvent.Post(gameObject);
+            Debug.Log("150 sec");
+        });
+        eventController.RegisterSpecialEvent(163f, () => {
+            Debug.Log("遊戲結束，總計時間：" + Mathf.FloorToInt(163f) + " 秒");
+            transitionManager.goToSceneAsync(finalSongIndex);
         });
 
         eventController.StartGame();

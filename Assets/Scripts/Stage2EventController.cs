@@ -4,12 +4,17 @@ using System;
 
 public class Stage2EventController : MonoBehaviour
 {
+    
+
     private bool isGameRunning = false;
     private float elapsedTime = 0f;
     private float periodicTimer = 0f;
 
     [Header("設定")]
     public float periodicInterval = 30f;
+
+
+    
 
     public NPCSpawner npcSpawner;
 
