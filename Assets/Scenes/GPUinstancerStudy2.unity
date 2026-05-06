@@ -207,13 +207,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327240821}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0, y: -0.9995095, z: -0, w: -0.03131711}
+  m_LocalPosition: {x: 0, y: -1.92, z: 36.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -183.589, z: 0}
 --- !u!114 &327240825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
   upwardThreshold: 0.9
   lookAtTarget: {fileID: 1717176016}
   randomYOffset: 1
-  bigWaveClip: {fileID: -7536546058115350168, guid: 18fe753aba9e746aa9ca1ea55f689701,
+  bigWaveClip: {fileID: -7536546058115350168, guid: aa1a6fc01bbfd478c891f9480e6edb26,
     type: 3}
   ameiFanMoveAClip: {fileID: -887982601649841707, guid: 457eb5791ad134571babb2cad632392e,
     type: 3}
