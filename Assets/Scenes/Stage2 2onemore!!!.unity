@@ -5557,6 +5557,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  hostObject: {fileID: 0}
   endTrigger: {fileID: 0}
   signPrefab: {fileID: 0}
   wallParent: {fileID: 0}
@@ -6644,10 +6645,11 @@ MonoBehaviour:
   - {fileID: 360803825}
   - {fileID: 258972789}
   - {fileID: 378213376}
-  hitEffectPrefab: {fileID: 0}
+  hitEffectPrefab: {fileID: 8132996894463331240, guid: 3b45c05e7e1aaf7439f28935cec11b89,
+    type: 3}
   specialScale: 1.2
   spawnCount: 50
-  spawnGangCount: 3
+  spawnGangCount: 5
   spawnGoodCount: 500
   minDistance: 1
   fixedY: -1.544
@@ -6666,7 +6668,7 @@ MonoBehaviour:
   - {fileID: 1686115018}
   score: 0
   eventController: {fileID: 383369085}
-  firestoreTest: {fileID: 0}
+  firestoreTest: {fileID: 1236871916}
 --- !u!4 &1415585331
 Transform:
   m_ObjectHideFlags: 0

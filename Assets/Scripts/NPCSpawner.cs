@@ -113,7 +113,7 @@ public class NPCSpawner : MonoBehaviour
 
         eventController.RegisterSpecialEvent(45f, () => {
             GangNPCAnimations();
-            Debug.Log("45 sec");
+            Debug.Log("Gang start 45 sec");
         });
 
         eventController.RegisterSpecialEvent(72f, () => {
@@ -121,7 +121,13 @@ public class NPCSpawner : MonoBehaviour
             Debug.Log("72 sec");
         });
 
+        eventController.RegisterSpecialEvent(87f, () => {
+            RandomizeNPCAnimations();
+            Debug.Log("87 sec");
+        });
+
         eventController.RegisterSpecialEvent(100f, () => {
+            RandomizeNPCAnimations();
             RandomizeNPCAnimations();
             Debug.Log("100 sec");
         });
@@ -130,6 +136,7 @@ public class NPCSpawner : MonoBehaviour
             MotorTroll();
             Debug.Log("132 sec");
         });
+
         eventController.RegisterSpecialEvent(150f, () => {
             EndEvent.Post(gameObject);
             Debug.Log("150 sec");

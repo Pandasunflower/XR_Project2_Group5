@@ -88,10 +88,6 @@ public class PlayTutorStage2 : MonoBehaviour
         {
             Destroy(SHOOTHIM);
         }
-        else
-        {
-            Debug.LogError("No GameObject with tag 'Tutor' found in the scene.");
-        }
         StartController = Object.FindAnyObjectByType<Stage3_StartPos>();
         
         if (gotShot) return; // 如果已經被射擊過，則不再執行
