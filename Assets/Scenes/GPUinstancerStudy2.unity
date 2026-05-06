@@ -359,6 +359,14 @@ MonoBehaviour:
   upwardThreshold: 0.9
   lookAtTarget: {fileID: 1717176016}
   randomYOffset: 1
+  bigWaveClip: {fileID: -7536546058115350168, guid: 18fe753aba9e746aa9ca1ea55f689701,
+    type: 3}
+  ameiFanMoveAClip: {fileID: -887982601649841707, guid: 457eb5791ad134571babb2cad632392e,
+    type: 3}
+  keepJumpingClip: {fileID: -3584619823844665163, guid: 26352a01d1e474932b2acb00f91462ef,
+    type: 3}
+  rightLeftDanceClip: {fileID: -887982601649841707, guid: 81e1b25cc9c634b8f8d134ac2396a90c,
+    type: 3}
 --- !u!1 &533307947
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +488,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 57254bafdff0e4859ac38b294e540110,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4
+      value: -5.79
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57254bafdff0e4859ac38b294e540110,
         type: 3}

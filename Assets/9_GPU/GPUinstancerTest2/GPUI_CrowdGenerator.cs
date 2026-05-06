@@ -17,8 +17,14 @@ namespace MyCrowdSystem
         [Range(0, 1)] public float upwardThreshold = 0.9f;
 
         [Header("朝向設定")]
-        public Transform lookAtTarget; // 拖入舞台中心點
-        public bool randomYOffset = true; // 是否允許每個人有稍微不同的左右偏移，看起來更自然
+        public Transform lookAtTarget;
+        public bool randomYOffset = true;
+
+        [Header("動畫按鍵設定 (請拖入 AnimationClip)")]
+        public AnimationClip bigWaveClip;       // 建議綁定：G
+        public AnimationClip ameiFanMoveAClip;  // 建議綁定：H
+        public AnimationClip keepJumpingClip;   // 建議綁定：J
+        public AnimationClip rightLeftDanceClip; // 建議綁定：L
 
         private List<GPUICrowdPrefab> allInstances = new List<GPUICrowdPrefab>();
 
@@ -26,6 +32,25 @@ namespace MyCrowdSystem
         {
             if (crowdManager == null || targetMeshFilter == null || audiencePrefabs.Count == 0) return;
             GenerateCrowdWithOrientation();
+        }
+
+        void Update()
+        {
+            // 監聽按鍵觸發動畫切換
+            if (Input.GetKeyDown(KeyCode.G) && bigWaveClip != null) ChangeAnim(bigWaveClip);
+            if (Input.GetKeyDown(KeyCode.H) && ameiFanMoveAClip != null) ChangeAnim(ameiFanMoveAClip);
+            if (Input.GetKeyDown(KeyCode.J) && keepJumpingClip != null) ChangeAnim(keepJumpingClip);
+            if (Input.GetKeyDown(KeyCode.L) && rightLeftDanceClip != null) ChangeAnim(rightLeftDanceClip);
+        }
+
+        void ChangeAnim(AnimationClip targetClip)
+        {
+            // 透過 GPUICrowdAPI 命令所有生成的實例切換動畫
+            foreach (GPUICrowdPrefab instance in allInstances)
+            {
+                // 使用 0.2f 的過渡時間讓動作切換更平滑
+                GPUICrowdAPI.StartAnimation(instance, targetClip, -1.0f, 1.0f, 0.2f);
+            }
         }
 
         void GenerateCrowdWithOrientation()
@@ -54,19 +79,13 @@ namespace MyCrowdSystem
                     if (r1 + r2 > 1) { r1 = 1 - r1; r2 = 1 - r2; }
                     Vector3 worldPos = targetMeshFilter.transform.TransformPoint(a + r1 * (b - a) + r2 * (c - a));
 
-                    // --- 新增：計算朝向邏輯 ---
                     Quaternion finalRotation;
                     if (lookAtTarget != null)
                     {
                         Vector3 direction = (lookAtTarget.position - worldPos);
-                        direction.y = 0; // 鎖定 Y 軸，防止觀眾「仰頭」或「低頭」看舞台，保持站姿垂直
+                        direction.y = 0;
                         finalRotation = Quaternion.LookRotation(direction);
-                        
-                        if (randomYOffset)
-                        {
-                            // 稍微加上 -5 到 5 度的隨機偏移，讓人群不那麼死板
-                            finalRotation *= Quaternion.Euler(0, Random.Range(-5f, 5f), 0);
-                        }
+                        if (randomYOffset) finalRotation *= Quaternion.Euler(0, Random.Range(-5f, 5f), 0);
                     }
                     else
                     {
@@ -80,12 +99,9 @@ namespace MyCrowdSystem
                 }
             }
 
-            // 使用昨天的成功邏輯：Register 並 Initialize
             List<GPUInstancerPrefab> baseInstances = allInstances.ConvertAll(x => (GPUInstancerPrefab)x);
-            GPUInstancerAPI.RegisterPrefabInstanceList(crowdManager, baseInstances);
-            GPUInstancerAPI.InitializeGPUInstancer(crowdManager);
-            
-            Debug.Log($"萬人生成完畢！所有人已朝向：{(lookAtTarget != null ? lookAtTarget.name : "隨機方向")}");
+            GPUInstancerAPI.RegisterPrefabInstanceList(crowdManager, baseInstances); //
+            GPUInstancerAPI.InitializeGPUInstancer(crowdManager); //
         }
     }
 }
