@@ -63,6 +63,7 @@ public class NPCSpawner : MonoBehaviour
     private int currentGoodSpawned = 0;
     
     public Stage2EventController eventController;
+    public FirestoreTest firestoreTest;
 
     void Start()
     {
@@ -399,6 +400,8 @@ public class NPCSpawner : MonoBehaviour
             Debug.LogWarning("目前沒有生成的 NPC 可以控制！");
             return;
         }
+
+        firestoreTest.SetGameState("l2");
         // 所有gang一起同時執行動畫
         foreach (NpcController npc in _spawnedGangNpcs)
         {
@@ -413,7 +416,7 @@ public class NPCSpawner : MonoBehaviour
 
     public void MotorTroll(){
         if (motorNpc == null) return;
-        
+        firestoreTest.SetGameState("l2_3");
         Animator anim = motorNpc.GetComponent<Animator>();
         if (anim != null)
         {
@@ -427,7 +430,7 @@ public class NPCSpawner : MonoBehaviour
     public void AdamWalk()
     {
         if (adamNpc == null) return;
-        
+        firestoreTest.SetGameState("l2_2");
         Animator anim = adamNpc.GetComponent<Animator>();
         if (anim != null)
         {

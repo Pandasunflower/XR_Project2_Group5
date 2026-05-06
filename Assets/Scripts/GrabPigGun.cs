@@ -6,12 +6,12 @@ public class GrabPigGun : MonoBehaviour
 {
     public OVRGrabber oVRGrabber;
     public bool isGrabbed = false;
+    // public bool isLocked = false;
 
     void Update()
     {
         if (oVRGrabber.grabbedObject != null)
         {
-            // Debug.Log("Grabbed object: " + oVRGrabber.grabbedObject.name);
             isGrabbed = true;
         }
         else

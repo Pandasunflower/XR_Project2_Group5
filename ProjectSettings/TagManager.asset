@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Dude_instancing
   - bullet
+  - RightHand
+  - LeftHand
+  - Microphone
+  - Wave
   layers:
   - Default
   - TransparentFX
