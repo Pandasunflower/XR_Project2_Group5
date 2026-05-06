@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{1A1B1320-52CA-40B8-BC12-7C170075809B}",
     "Language": "English(US)",
-    "Hash": "{9AAB3D91-E19F-2BE6-BC6C-59887148DE0B}",
+    "Hash": "{8DE87A49-4784-3337-F582-E1CB70C42E23}",
     "ObjectPath": "Play_foolChild_people",
     "ShortName": "Play_foolChild_people",
     "Path": "Event/English(US)/Play_foolChild_people.bnk",
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{644E86B1-5F44-0FD7-FD38-FECE59BE0199}"
+  "FileHash": "{7847FAC7-6F17-E6D0-FA3F-AFD26F58BD45}"
  }
 }

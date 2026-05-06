@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{B327097A-BABB-4A3B-8122-65CE6342F7AB}",
     "Language": "English(US)",
-    "Hash": "{B45BEE06-DAF4-3A3B-9BFA-63206279A123}",
+    "Hash": "{3CF3D04E-9F66-B995-0E19-A5A46D9EA6F5}",
     "ObjectPath": "Play_askForMoney",
     "ShortName": "Play_askForMoney",
     "Path": "Event/English(US)/Play_askForMoney.bnk",
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{269783F8-FDA9-699B-F1CC-B5D39F75FC9D}"
+  "FileHash": "{EACC4E4C-AF80-D4C2-0242-F106947640D5}"
  }
 }

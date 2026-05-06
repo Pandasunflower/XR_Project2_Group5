@@ -10,6 +10,8 @@ public class Stage3_StartPos : MonoBehaviour
     public FirestoreTest firestoreTest;
     private PlayTutorStage2 TutorCS;
     private NPCSpawner NS;
+
+    private bool hasBeenTriggered = false;
     void Start()
     {
         TutorCS = Object.FindAnyObjectByType<PlayTutorStage2>();
@@ -18,6 +20,9 @@ public class Stage3_StartPos : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (hasBeenTriggered) return; // 如果已經觸發過，則不再執行
+        
+        hasBeenTriggered = true; // 標記為已觸發
         TutorCS.StartCoroutine(TutorCS.SpawnTutor());
         GetComponent<BoxCollider>().enabled = false;
     }

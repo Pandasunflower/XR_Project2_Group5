@@ -1,0 +1,1211 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "RootPaths": {
+   "ProjectRoot": "../..",
+   "SourceFilesRoot": "../../.cache",
+   "SoundBanksRoot": ".",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "."
+  },
+  "DialogueEvents": [],
+  "SoundBanks": [
+   {
+    "Id": "469006591",
+    "Type": "Event",
+    "GUID": "{E6A32843-0796-4165-9705-E9A684A6259B}",
+    "Language": "English(US)",
+    "Hash": "{EB63B876-BDEA-AEB1-AC6C-29938FF56FE2}",
+    "ObjectPath": "Play_waitingScore",
+    "ShortName": "Play_waitingScore",
+    "Path": "Event/English(US)/Play_waitingScore.bnk",
+    "Media": [
+     {
+      "Id": "892712706",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "waitingScore.wav",
+      "Path": "Media/English(US)/892712706.wem",
+      "CachePath": "72/{72E1CC41-0178-DC27-20D8-8E4BAEE4FB5A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "469006591",
+      "Name": "Play_waitingScore",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_waitingScore",
+      "GUID": "{E6A32843-0796-4165-9705-E9A684A6259B}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.1124263",
+      "DurationMax": "3.1124263",
+      "MediaRefs": [
+       {
+        "Id": "892712706"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "509118324",
+    "Type": "Event",
+    "GUID": "{5EC2BBD7-962A-456A-8E86-68DAA8293C00}",
+    "Language": "English(US)",
+    "Hash": "{6A927F75-61CA-2F07-97FD-0B3C58C95665}",
+    "ObjectPath": "Play_DancingGirl",
+    "ShortName": "Play_DancingGirl",
+    "Path": "Event/English(US)/Play_DancingGirl.bnk",
+    "Media": [
+     {
+      "Id": "611412987",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip.wav",
+      "Path": "Media/English(US)/611412987.wem",
+      "CachePath": "7C/{7CC84EA1-95E5-D911-DB34-EC8AB4DE0DBA}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "509118324",
+      "Name": "Play_DancingGirl",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_DancingGirl",
+      "GUID": "{5EC2BBD7-962A-456A-8E86-68DAA8293C00}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "611412987"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "560573542",
+    "Type": "Event",
+    "GUID": "{1A1B1320-52CA-40B8-BC12-7C170075809B}",
+    "Language": "English(US)",
+    "Hash": "{8DE87A49-4784-3337-F582-E1CB70C42E23}",
+    "ObjectPath": "Play_foolChild_people",
+    "ShortName": "Play_foolChild_people",
+    "Path": "Event/English(US)/Play_foolChild_people.bnk",
+    "Media": [
+     {
+      "Id": "588448560",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "笨小孩人生.wav",
+      "Path": "Media/English(US)/588448560.wem",
+      "CachePath": "94/{94DD3C11-7681-9093-5AF1-BFC8D8535094}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "560573542",
+      "Name": "Play_foolChild_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_foolChild_people",
+      "GUID": "{1A1B1320-52CA-40B8-BC12-7C170075809B}",
+      "DurationType": "OneShot",
+      "DurationMin": "150.5",
+      "DurationMax": "150.5",
+      "MediaRefs": [
+       {
+        "Id": "588448560"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   },
+   {
+    "Id": "793661728",
+    "Type": "Event",
+    "GUID": "{124A57DF-150E-4619-B100-F7A37ABEC85F}",
+    "Language": "English(US)",
+    "Hash": "{FED50761-ABB3-8444-D740-57F37C151362}",
+    "ObjectPath": "Play_yell",
+    "ShortName": "Play_yell",
+    "Path": "Event/English(US)/Play_yell.bnk",
+    "Media": [
+     {
+      "Id": "654614919",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "yell.wav",
+      "Path": "Media/English(US)/654614919.wem",
+      "CachePath": "70/{702CD9D7-EEF8-0845-3495-18D71FCC5404}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "793661728",
+      "Name": "Play_yell",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_yell",
+      "GUID": "{124A57DF-150E-4619-B100-F7A37ABEC85F}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "654614919"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "806402365",
+    "Type": "Event",
+    "GUID": "{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}",
+    "Language": "English(US)",
+    "Hash": "{6867A7E6-8590-A7FC-7172-F82B787EC04A}",
+    "ObjectPath": "Play_OneGameOneDream_people",
+    "ShortName": "Play_OneGameOneDream_people",
+    "Path": "Event/English(US)/Play_OneGameOneDream_people.bnk",
+    "Media": [
+     {
+      "Id": "59556136",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "一場遊戲一場夢_人聲.wav",
+      "Path": "Media/English(US)/59556136.wem",
+      "CachePath": "85/{852E964E-74F1-E75B-F106-9122C5F4ECF0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "806402365",
+      "Name": "Play_OneGameOneDream_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_OneGameOneDream_people",
+      "GUID": "{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}",
+      "DurationType": "OneShot",
+      "DurationMin": "183.0398",
+      "DurationMax": "183.0398",
+      "MediaRefs": [
+       {
+        "Id": "59556136"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   },
+   {
+    "Id": "1275111929",
+    "Type": "Event",
+    "GUID": "{36E3AFB4-4844-40B5-BBBE-070B93625226}",
+    "Language": "English(US)",
+    "Hash": "{D545BB0F-6008-6453-9F2C-42C02B58F545}",
+    "ObjectPath": "Play_horn2",
+    "ShortName": "Play_horn2",
+    "Path": "Event/English(US)/Play_horn2.bnk",
+    "Media": [
+     {
+      "Id": "136836942",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "horn2.wav",
+      "Path": "Media/English(US)/136836942.wem",
+      "CachePath": "87/{876C7D6C-FD15-672E-0A4D-DB2E9C256447}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1275111929",
+      "Name": "Play_horn2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_horn2",
+      "GUID": "{36E3AFB4-4844-40B5-BBBE-070B93625226}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7822222",
+      "DurationMax": "0.7822222",
+      "MediaRefs": [
+       {
+        "Id": "136836942"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1314294175",
+    "Type": "Event",
+    "GUID": "{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}",
+    "Language": "English(US)",
+    "Hash": "{6A05C01F-6E46-AD5F-57D4-DE030C5C817F}",
+    "ObjectPath": "Play_foolChild_BGM",
+    "ShortName": "Play_foolChild_BGM",
+    "Path": "Event/English(US)/Play_foolChild_BGM.bnk",
+    "Media": [
+     {
+      "Id": "636954447",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "笨小孩背景.wav",
+      "Path": "Media/English(US)/636954447.wem",
+      "CachePath": "51/{51E1C3CB-B94D-446D-3349-EB223F05C00A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1314294175",
+      "Name": "Play_foolChild_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_foolChild_BGM",
+      "GUID": "{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}",
+      "DurationType": "OneShot",
+      "DurationMin": "152",
+      "DurationMax": "152",
+      "MediaRefs": [
+       {
+        "Id": "636954447"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1319984948",
+    "Type": "Event",
+    "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
+    "Language": "English(US)",
+    "Hash": "{E6BCC10B-A31C-18E9-C956-FCA29AD74735}",
+    "ObjectPath": "Play_ThreeDayThreeNight_people",
+    "ShortName": "Play_ThreeDayThreeNight_people",
+    "Path": "Event/English(US)/Play_ThreeDayThreeNight_people.bnk",
+    "Media": [
+     {
+      "Id": "192242864",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜 人聲.wav",
+      "Path": "Media/English(US)/192242864.wem",
+      "CachePath": "37/{37B51282-CCC5-93F8-4AAF-F7D9A56436C9}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1319984948",
+      "Name": "Play_ThreeDayThreeNight_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_people",
+      "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
+      "DurationType": "OneShot",
+      "DurationMin": "282.288",
+      "DurationMax": "282.288",
+      "MediaRefs": [
+       {
+        "Id": "192242864"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   },
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{58BF901B-FC33-EC9D-E565-6DF0754A44A9}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "602546716",
+       "Name": "Room_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Large",
+       "GUID": "{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "1706684651",
+       "Name": "Plate_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Plates\\Plate_Medium",
+       "GUID": "{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "1990128658",
+       "Name": "Room_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium",
+       "GUID": "{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Devices\\Default Work Unit\\No_Output",
+       "GUID": "{B1D4A15F-50FD-4AF5-961A-069801F1947E}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Devices\\Default Work Unit\\System",
+       "GUID": "{D92EFB54-58AC-45A6-B973-A66EAF1EE99C}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "936729720",
+      "Name": "stage3",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\stage3",
+      "GUID": "{3489EC20-BA19-4B1E-BB91-7257005D0D57}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "602546716"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "936729722",
+      "Name": "stage1",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\stage1",
+      "GUID": "{90FE9495-11ED-40C5-9A86-581F6B5EC299}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1990128658"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1401307552",
+      "Name": "SongBus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SongBus",
+      "GUID": "{3E610D54-4975-44FC-9068-A1B1E2DACEE6}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1706684651"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2120751940",
+      "Name": "AccidentBus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\AccidentBus",
+      "GUID": "{751D5068-10BD-4D8C-AE85-3517F0AD927F}"
+     },
+     {
+      "Id": "2246998526",
+      "Name": "Main Audio Bus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "658503054",
+      "Name": "audience_pickup",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\audience_pickup",
+      "GUID": "{63331C15-0F86-42B0-8B64-7C7C81717607}"
+     },
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "1749433486",
+      "Name": "accident",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\accident",
+      "GUID": "{B040BC2D-CFD4-4EDC-AFA7-B9132C01A29E}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   },
+   {
+    "Id": "1539366728",
+    "Type": "Event",
+    "GUID": "{A6100C5F-9413-41F7-A1B6-F40C32FF13BA}",
+    "Language": "English(US)",
+    "Hash": "{58E8D20E-EC05-50E2-8CA1-BAF1E4E2466E}",
+    "ObjectPath": "Play_JackyUber",
+    "ShortName": "Play_JackyUber",
+    "Path": "Event/English(US)/Play_JackyUber.bnk",
+    "Media": [
+     {
+      "Id": "902117724",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "JackyUber.wav",
+      "Path": "Media/English(US)/902117724.wem",
+      "CachePath": "7C/{7CAFB20A-FB9B-C42C-3D55-356BEC0F3D68}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1539366728",
+      "Name": "Play_JackyUber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_JackyUber",
+      "GUID": "{A6100C5F-9413-41F7-A1B6-F40C32FF13BA}",
+      "DurationType": "OneShot",
+      "DurationMin": "12.20025",
+      "DurationMax": "12.20025",
+      "MediaRefs": [
+       {
+        "Id": "902117724"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1951773134",
+    "Type": "Event",
+    "GUID": "{E1312B0E-01A1-4C5E-812D-C62E24711553}",
+    "Language": "English(US)",
+    "Hash": "{BAD9C26A-09F5-464B-6C17-224B094FB821}",
+    "ObjectPath": "Play_spotlight",
+    "ShortName": "Play_spotlight",
+    "Path": "Event/English(US)/Play_spotlight.bnk",
+    "Media": [
+     {
+      "Id": "362176217",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "spotlight.wav",
+      "Path": "Media/English(US)/362176217.wem",
+      "CachePath": "FB/{FBE66F06-C38B-D86C-9DAA-3FF2D353A9AB}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1951773134",
+      "Name": "Play_spotlight",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_spotlight",
+      "GUID": "{E1312B0E-01A1-4C5E-812D-C62E24711553}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0002291",
+      "DurationMax": "1.0002291",
+      "MediaRefs": [
+       {
+        "Id": "362176217"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2087262618",
+    "Type": "Event",
+    "GUID": "{C5F9DB79-C0C2-434E-9528-C47444499F09}",
+    "Language": "English(US)",
+    "Hash": "{0719505D-D0CE-5389-54FA-E241DA49E72A}",
+    "ObjectPath": "Play_GoDownStage",
+    "ShortName": "Play_GoDownStage",
+    "Path": "Event/English(US)/Play_GoDownStage.bnk",
+    "Media": [
+     {
+      "Id": "464577955",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "GoDownStage.wav",
+      "Path": "Media/English(US)/464577955.wem",
+      "CachePath": "D3/{D338E6A4-B66C-FEF7-A157-461C8765E37D}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2087262618",
+      "Name": "Play_GoDownStage",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_GoDownStage",
+      "GUID": "{C5F9DB79-C0C2-434E-9528-C47444499F09}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.952",
+      "DurationMax": "5.952",
+      "MediaRefs": [
+       {
+        "Id": "464577955"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2472290785",
+    "Type": "Event",
+    "GUID": "{65337E20-B487-4104-B695-E793D0E72917}",
+    "Language": "English(US)",
+    "Hash": "{9034C92A-076E-87A3-C7AC-C3B84ECECF8D}",
+    "ObjectPath": "Play_end",
+    "ShortName": "Play_end",
+    "Path": "Event/English(US)/Play_end.bnk",
+    "Media": [
+     {
+      "Id": "379200882",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "end.wav",
+      "Path": "Media/English(US)/379200882.wem",
+      "CachePath": "29/{29F21B9E-D75D-6A9A-CA3D-3FCA5568D574}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2472290785",
+      "Name": "Play_end",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_end",
+      "GUID": "{65337E20-B487-4104-B695-E793D0E72917}",
+      "DurationType": "OneShot",
+      "DurationMin": "222.07565",
+      "DurationMax": "222.07565",
+      "MediaRefs": [
+       {
+        "Id": "379200882"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2494639119",
+    "Type": "Event",
+    "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
+    "Language": "English(US)",
+    "Hash": "{8E2F1107-6FCE-5E98-3A8F-B98F4734D0B8}",
+    "ObjectPath": "Play_ThreeDayThreeNight_audience",
+    "ShortName": "Play_ThreeDayThreeNight_audience",
+    "Path": "Event/English(US)/Play_ThreeDayThreeNight_audience.bnk",
+    "Media": [
+     {
+      "Id": "399826449",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜 觀眾V2.wav",
+      "Path": "Media/English(US)/399826449.wem",
+      "CachePath": "86/{8611C4E6-815C-1740-E563-A88DDA345B2D}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2494639119",
+      "Name": "Play_ThreeDayThreeNight_audience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_audience",
+      "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
+      "DurationType": "OneShot",
+      "DurationMin": "282.288",
+      "DurationMax": "282.288",
+      "MediaRefs": [
+       {
+        "Id": "399826449"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "658503054",
+      "Name": "audience_pickup",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\audience_pickup",
+      "GUID": "{63331C15-0F86-42B0-8B64-7C7C81717607}"
+     }
+    ]
+   },
+   {
+    "Id": "2641650631",
+    "Type": "Event",
+    "GUID": "{D4C6724F-85DF-412E-BEDC-B34A7CF8FA9E}",
+    "Language": "English(US)",
+    "Hash": "{F2565671-7741-5E5F-345D-44B57A7274CE}",
+    "ObjectPath": "Play_shoot",
+    "ShortName": "Play_shoot",
+    "Path": "Event/English(US)/Play_shoot.bnk",
+    "Media": [
+     {
+      "Id": "742584192",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "shoot.wav",
+      "Path": "Media/English(US)/742584192.wem",
+      "CachePath": "56/{56B980F9-AA37-48D4-3B94-988BA1CCD5DD}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2641650631",
+      "Name": "Play_shoot",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_shoot",
+      "GUID": "{D4C6724F-85DF-412E-BEDC-B34A7CF8FA9E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.33820862",
+      "DurationMax": "0.33820862",
+      "MediaRefs": [
+       {
+        "Id": "742584192"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2700014240",
+    "Type": "Event",
+    "GUID": "{6790B5D1-392B-440E-9BEF-CBB1ED2862B1}",
+    "Language": "English(US)",
+    "Hash": "{16A4B695-387B-B869-4773-0073596A5249}",
+    "ObjectPath": "Play_clapping",
+    "ShortName": "Play_clapping",
+    "Path": "Event/English(US)/Play_clapping.bnk",
+    "Media": [
+     {
+      "Id": "611769857",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "clapping.wav",
+      "Path": "Media/English(US)/611769857.wem",
+      "CachePath": "38/{38D08CAF-8CE9-6C67-36C1-59DD14D2AE0E}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2700014240",
+      "Name": "Play_clapping",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_clapping",
+      "GUID": "{6790B5D1-392B-440E-9BEF-CBB1ED2862B1}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.088042",
+      "DurationMax": "6.088042",
+      "MediaRefs": [
+       {
+        "Id": "611769857"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2880737896",
+    "Type": "User",
+    "GUID": "{5460ADC1-BFD3-4E3B-B379-EE4D9D92881B}",
+    "Language": "SFX",
+    "Hash": "{21BCF7A1-7AEC-307E-AAA9-E8CF3CB7A881}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\mainbank",
+    "ShortName": "mainbank",
+    "Path": "mainbank.bnk"
+   },
+   {
+    "Id": "2949967820",
+    "Type": "Event",
+    "GUID": "{D4F1D62B-DAC9-4787-9023-E8C9B30D847A}",
+    "Language": "English(US)",
+    "Hash": "{A2ED5415-F40D-2A7E-0D24-466A6EC311D4}",
+    "ObjectPath": "Play_for_the_anna",
+    "ShortName": "Play_for_the_anna",
+    "Path": "Event/English(US)/Play_for_the_anna.bnk",
+    "Media": [
+     {
+      "Id": "419200233",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "for the anna.wav",
+      "Path": "Media/English(US)/419200233.wem",
+      "CachePath": "3E/{3EFF2A5E-716B-2ACE-4128-CA964FEF345A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2949967820",
+      "Name": "Play_for_the_anna",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_for_the_anna",
+      "GUID": "{D4F1D62B-DAC9-4787-9023-E8C9B30D847A}",
+      "DurationType": "OneShot",
+      "DurationMin": "133.03201",
+      "DurationMax": "133.03201",
+      "MediaRefs": [
+       {
+        "Id": "419200233"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   },
+   {
+    "Id": "2956245481",
+    "Type": "Event",
+    "GUID": "{72052F8E-22CE-458C-9329-E6CD2921C343}",
+    "Language": "English(US)",
+    "Hash": "{E2A83AFA-3453-008F-8222-4A068BC34732}",
+    "ObjectPath": "Play_horn",
+    "ShortName": "Play_horn",
+    "Path": "Event/English(US)/Play_horn.bnk",
+    "Media": [
+     {
+      "Id": "242180107",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "汽笛鬧場.wav",
+      "Path": "Media/English(US)/242180107.wem",
+      "CachePath": "2D/{2DE53E4E-E7DE-8C6E-2B85-4C050DF9755E}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2956245481",
+      "Name": "Play_horn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_horn",
+      "GUID": "{72052F8E-22CE-458C-9329-E6CD2921C343}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "242180107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3118526426",
+    "Type": "Event",
+    "GUID": "{B327097A-BABB-4A3B-8122-65CE6342F7AB}",
+    "Language": "English(US)",
+    "Hash": "{3CF3D04E-9F66-B995-0E19-A5A46D9EA6F5}",
+    "ObjectPath": "Play_askForMoney",
+    "ShortName": "Play_askForMoney",
+    "Path": "Event/English(US)/Play_askForMoney.bnk",
+    "Media": [
+     {
+      "Id": "655813830",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "askForMoney.wav",
+      "Path": "Media/English(US)/655813830.wem",
+      "CachePath": "92/{929DF6A5-97B3-6BC6-CABE-5845D69CD234}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3118526426",
+      "Name": "Play_askForMoney",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_askForMoney",
+      "GUID": "{B327097A-BABB-4A3B-8122-65CE6342F7AB}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "655813830"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3120712028",
+    "Type": "Event",
+    "GUID": "{E1A68987-6AC7-48F5-BAF6-28E511938D94}",
+    "Language": "English(US)",
+    "Hash": "{68411B07-CF03-750E-4B13-081F438B6B33}",
+    "ObjectPath": "Play_motorOff",
+    "ShortName": "Play_motorOff",
+    "Path": "Event/English(US)/Play_motorOff.bnk",
+    "Media": [
+     {
+      "Id": "990449826",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "motorOff.wav",
+      "Path": "Media/English(US)/990449826.wem",
+      "CachePath": "23/{2375AE86-731D-7B4E-FB5E-BED3B127C1E7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3120712028",
+      "Name": "Play_motorOff",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_motorOff",
+      "GUID": "{E1A68987-6AC7-48F5-BAF6-28E511938D94}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.264896",
+      "DurationMax": "4.264896",
+      "MediaRefs": [
+       {
+        "Id": "990449826"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3205629941",
+    "Type": "Event",
+    "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
+    "Language": "English(US)",
+    "Hash": "{1C7C5700-9C75-9805-7ADB-FB4C4D0CE0A6}",
+    "ObjectPath": "Play_davewang",
+    "ShortName": "Play_davewang",
+    "Path": "Event/English(US)/Play_davewang.bnk",
+    "Media": [
+     {
+      "Id": "888866671",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "王傑-一場遊戲一場夢.wav",
+      "Path": "Media/English(US)/888866671.wem",
+      "CachePath": "DB/{DBA5D2EA-AD1E-2703-18B5-F78406C63AA4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3205629941",
+      "Name": "Play_davewang",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_davewang",
+      "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "888866671"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3288810203",
+    "Type": "Event",
+    "GUID": "{90F1FFC7-FC3C-427D-B2BD-37DCA1E69A56}",
+    "Language": "English(US)",
+    "Hash": "{8F74A3FE-C967-8EF5-9CC2-B1A3F8AA2C27}",
+    "ObjectPath": "Play_Bullets_hit",
+    "ShortName": "Play_Bullets_hit",
+    "Path": "Event/English(US)/Play_Bullets_hit.bnk",
+    "Media": [
+     {
+      "Id": "332869829",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "子彈射到的聲音.wav",
+      "Path": "Media/English(US)/332869829.wem",
+      "CachePath": "12/{12B0ADAB-10E1-A302-55CB-1229FA448309}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3288810203",
+      "Name": "Play_Bullets_hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Bullets_hit",
+      "GUID": "{90F1FFC7-FC3C-427D-B2BD-37DCA1E69A56}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.96533334",
+      "DurationMax": "0.96533334",
+      "MediaRefs": [
+       {
+        "Id": "332869829"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3459025660",
+    "Type": "Event",
+    "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
+    "Language": "English(US)",
+    "Hash": "{9A5F8938-4A20-CB01-F1DB-0F3269C2DEC6}",
+    "ObjectPath": "Play_frozen",
+    "ShortName": "Play_frozen",
+    "Path": "Event/English(US)/Play_frozen.bnk",
+    "Media": [
+     {
+      "Id": "345055891",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "for-the-first-time-in-forever-from-frozensing-along.wav",
+      "Path": "Media/English(US)/345055891.wem",
+      "CachePath": "7D/{7D5F0C60-D69E-743E-6BAE-4800B3CD5152}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3459025660",
+      "Name": "Play_frozen",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_frozen",
+      "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "345055891"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3693985302",
+    "Type": "Event",
+    "GUID": "{E49946A0-81D0-4D24-8E8A-E41770703AD4}",
+    "Language": "English(US)",
+    "Hash": "{80FE67B0-60B6-A0C3-CEC0-86BB51ACACB8}",
+    "ObjectPath": "Play_motorOn",
+    "ShortName": "Play_motorOn",
+    "Path": "Event/English(US)/Play_motorOn.bnk",
+    "Media": [
+     {
+      "Id": "56369884",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "motorOn.wav",
+      "Path": "Media/English(US)/56369884.wem",
+      "CachePath": "09/{09FDFF86-517C-92ED-0077-0EDED4C2E22F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3693985302",
+      "Name": "Play_motorOn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_motorOn",
+      "GUID": "{E49946A0-81D0-4D24-8E8A-E41770703AD4}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "56369884"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3749606501",
+    "Type": "Event",
+    "GUID": "{3F0E4D88-963B-4DF1-810B-45F061113D28}",
+    "Language": "English(US)",
+    "Hash": "{8FCD382D-2D1B-B653-2AAB-60D7ECCD3309}",
+    "ObjectPath": "Play_ThreeDayThreeNight_bgm",
+    "ShortName": "Play_ThreeDayThreeNight_bgm",
+    "Path": "Event/English(US)/Play_ThreeDayThreeNight_bgm.bnk",
+    "Media": [
+     {
+      "Id": "810760453",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜背景音.wav",
+      "Path": "Media/English(US)/810760453.wem",
+      "CachePath": "DA/{DA388426-A6E2-21E9-6A01-0EBDA8F696D7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3749606501",
+      "Name": "Play_ThreeDayThreeNight_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_bgm",
+      "GUID": "{3F0E4D88-963B-4DF1-810B-45F061113D28}",
+      "DurationType": "OneShot",
+      "DurationMin": "282.288",
+      "DurationMax": "282.288",
+      "MediaRefs": [
+       {
+        "Id": "810760453"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3942408572",
+    "Type": "Event",
+    "GUID": "{1F4C0BF4-3F3F-4305-B202-8A5365719BEE}",
+    "Language": "English(US)",
+    "Hash": "{1E183E70-0AEC-4FD3-A276-8E0F3CC4D1B3}",
+    "ObjectPath": "Play_for_the_bgm",
+    "ShortName": "Play_for_the_bgm",
+    "Path": "Event/English(US)/Play_for_the_bgm.bnk",
+    "Media": [
+     {
+      "Id": "736415920",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "for the bgm.wav",
+      "Path": "Media/English(US)/736415920.wem",
+      "CachePath": "41/{41C63F15-056B-9B5E-2F6B-8A0BEDC5719A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3942408572",
+      "Name": "Play_for_the_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_for_the_bgm",
+      "GUID": "{1F4C0BF4-3F3F-4305-B202-8A5365719BEE}",
+      "DurationType": "OneShot",
+      "DurationMin": "133.03201",
+      "DurationMax": "133.03201",
+      "MediaRefs": [
+       {
+        "Id": "736415920"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "4065753090",
+    "Type": "Event",
+    "GUID": "{AC64EA27-5927-48B6-8CE8-0045F5ED9F87}",
+    "Language": "English(US)",
+    "Hash": "{AB79D5AC-E6CE-2B00-9546-6815CA92E703}",
+    "ObjectPath": "Play_OneGameOneDream_BGM",
+    "ShortName": "Play_OneGameOneDream_BGM",
+    "Path": "Event/English(US)/Play_OneGameOneDream_BGM.bnk",
+    "Media": [
+     {
+      "Id": "323339064",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "一場遊戲一場夢_背景音.wav",
+      "Path": "Media/English(US)/323339064.wem",
+      "CachePath": "7E/{7E029DBC-418E-DEEC-EA40-496FFC282527}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4065753090",
+      "Name": "Play_OneGameOneDream_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_OneGameOneDream_BGM",
+      "GUID": "{AC64EA27-5927-48B6-8CE8-0045F5ED9F87}",
+      "DurationType": "OneShot",
+      "DurationMin": "183.0398",
+      "DurationMax": "183.0398",
+      "MediaRefs": [
+       {
+        "Id": "323339064"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "4122281311",
+    "Type": "Event",
+    "GUID": "{59185CB8-C182-451B-8A67-CC5309B5A4B4}",
+    "Language": "English(US)",
+    "Hash": "{D194D967-C8EE-6160-B696-593687D55ABB}",
+    "ObjectPath": "Play_onPhone",
+    "ShortName": "Play_onPhone",
+    "Path": "Event/English(US)/Play_onPhone.bnk",
+    "Media": [
+     {
+      "Id": "630520721",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "onPhone.wav",
+      "Path": "Media/English(US)/630520721.wem",
+      "CachePath": "78/{78B3F712-BE6C-4BFF-C6F2-1E3BAFD4569C}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4122281311",
+      "Name": "Play_onPhone",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_onPhone",
+      "GUID": "{59185CB8-C182-451B-8A67-CC5309B5A4B4}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "630520721"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C4137DB5-A4B3-E6EA-78FD-A46EE5BC8BFE}"
+ }
+}

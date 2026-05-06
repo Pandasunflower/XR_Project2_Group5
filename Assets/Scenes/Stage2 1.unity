@@ -678,6 +678,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorPrefabs: {fileID: 5673469370836002056, guid: b5a67f334039fcc4e904b7ce8a79737f,
     type: 3}
+  SpawnEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6ea8624001cd9d549b72ddaab9627354,
+      type: 2}
   TutorPosition: {fileID: 133729912}
   hitEffectPrefab: {fileID: 8132996894463331240, guid: 3b45c05e7e1aaf7439f28935cec11b89,
     type: 3}
