@@ -252,7 +252,7 @@
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>5</Value>
+								<Value>-1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
