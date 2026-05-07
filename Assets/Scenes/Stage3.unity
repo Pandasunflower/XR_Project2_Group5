@@ -7765,10 +7765,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3fb49376fc8ad14ab4435f2daeca67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCamera: {fileID: 0}
+  speakerOutputs: []
   micHeadAxis: 1
   invertAxis: 0
-  audienceZones:
-  - {fileID: 872881492}
+  mouthVerticalOffset: 0.15
 --- !u!1 &942102704
 GameObject:
   m_ObjectHideFlags: 0
@@ -17775,11 +17776,11 @@ MonoBehaviour:
   zones:
   - zoneName: 
     targetMeshFilter: {fileID: 2106696212}
-    population: 100
+    population: 3000
     upwardThreshold: 0.9
   - zoneName: 
     targetMeshFilter: {fileID: 2042982290}
-    population: 100
+    population: 1000
     upwardThreshold: 0.9
   - zoneName: 
     targetMeshFilter: {fileID: 1327814664}
