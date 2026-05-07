@@ -2869,7 +2869,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4049,7 +4049,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447295790}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7653,6 +7653,22 @@ MonoBehaviour:
   micHeadAxis: 1
   invertAxis: 0
   mouthVerticalOffset: 0.15
+--- !u!114 &930578107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930578097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3fb49376fc8ad14ab4435f2daeca67d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  micHeadAxis: 1
+  invertAxis: 0
+  audienceZones:
+  - {fileID: 872881492}
 --- !u!1 &942102704
 GameObject:
   m_ObjectHideFlags: 0
@@ -11694,7 +11710,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -12038,6 +12054,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 930578106}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 430a0916306b24ad0bc42f42c5478227,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 930578107}
   m_SourcePrefab: {fileID: 100100000, guid: 430a0916306b24ad0bc42f42c5478227, type: 3}
 --- !u!1 &1434483140
 GameObject:
@@ -17765,7 +17785,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

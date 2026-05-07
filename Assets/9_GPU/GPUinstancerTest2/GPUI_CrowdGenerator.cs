@@ -46,6 +46,7 @@ namespace MyCrowdSystem
         private float minX = float.MaxValue;
         private float maxX = float.MinValue;
         private Coroutine waveCoroutine;
+        private int currentAnimIndex = 0;
 
         void Start()
         {
@@ -167,20 +168,21 @@ namespace MyCrowdSystem
         {
             AkUnitySoundEngine.StopAll(gameObject); // 停止當前所有 Wwise 音效，確保不會重疊播放
             // Debug.Log($"呼叫動畫變更: {i}, 隨機偏移: {isRandom}");
-            if (i == 0 && ameiFanMoveAClip != null) {
+            if (i == 0 && ameiFanMoveAClip != null && currentAnimIndex != 0) {
                 // Debug.Log("觸發 ameiFanMoveAClip 動畫");
                 ChangeAnim(ameiFanMoveAClip, isRandom);
             }
-            else if (i == 1 && keepJumpingClip != null) {
+            else if (i == 1 && keepJumpingClip != null && currentAnimIndex != 1) {
                 // Debug.Log("觸發 keepJumpingClip 動畫");
                 crowdSoundEvent.Post(gameObject); // 播放 Wwise 音效
                 ChangeAnim(keepJumpingClip, isRandom);
 
             }
-            else if (i == 2 && rightLeftDanceClip != null) {
+            else if (i == 2 && rightLeftDanceClip != null && currentAnimIndex != 2) {
                 // Debug.Log("觸發 rightLeftDanceClip 動畫");
                 ChangeAnim(rightLeftDanceClip, isRandom);
             }
+            currentAnimIndex = i;
         }
 
         void ChangeAnim(AnimationClip targetClip, bool isRandom)
