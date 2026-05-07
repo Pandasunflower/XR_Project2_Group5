@@ -452,7 +452,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="stage3" ID="{3489EC20-BA19-4B1E-BB91-7257005D0D57}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -760,6 +760,11 @@
 				<Sound Name="三天三夜 人聲" ID="{218D143F-7EBC-4877-ACD1-63B1FEA5118C}" ShortID="300812402">
 					<PropertyList>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1036,13 +1041,18 @@
 				<Sound Name="三天三夜 觀眾V2" ID="{65330A94-1C63-418B-B7FE-84A8993435EE}" ShortID="213929233">
 					<PropertyList>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="audience" ID="{103CB983-C59F-4C8F-9ACA-AFF182E11667}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+							<ObjectRef Name="stage3" ID="{3489EC20-BA19-4B1E-BB91-7257005D0D57}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1073,23 +1083,23 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>0</YPos>
+														<YPos>-18.325</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>29.97389</XPos>
-														<YPos>-0</YPos>
+														<XPos>90</XPos>
+														<YPos>-18.325</YPos>
 														<Flags>0</Flags>
-														<SegmentShape>Exp1</SegmentShape>
+														<SegmentShape>Exp3</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>59.94471</XPos>
-														<YPos>-18.32467</YPos>
+														<XPos>150.46997</XPos>
+														<YPos>8.81177</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>180</XPos>
-														<YPos>-18</YPos>
+														<YPos>8.59324</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>

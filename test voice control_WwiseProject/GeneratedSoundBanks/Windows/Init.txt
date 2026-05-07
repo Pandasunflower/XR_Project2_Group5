@@ -10,7 +10,6 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2854002871	audience			\Default Work Unit\Main Audio Bus\audience	
 
 Effect plug-ins	ID	Name	Type				Notes
-	602546716	Room_Large	Wwise RoomVerb			
 	1706684651	Plate_Medium	Wwise RoomVerb			
 	1990128658	Room_Medium	Wwise RoomVerb			
 

@@ -10,20 +10,12 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{91E3C8E8-9452-7FB9-FB81-2AA3AE257C7B}",
+    "Hash": "{AFB48569-2F75-4F99-5003-DAA132C519B3}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
      "ShareSets": [
-      {
-       "Id": "602546716",
-       "Name": "Room_Large",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Large",
-       "GUID": "{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}",
-       "LibName": "Wwise RoomVerb",
-       "LibId": "7733251"
-      },
       {
        "Id": "1706684651",
        "Name": "Plate_Medium",
@@ -69,7 +61,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "602546716"
+         "Id": "1990128658"
         }
        ]
       }
@@ -147,6 +139,6 @@
     ]
    }
   ],
-  "FileHash": "{725036C0-9723-573D-B066-8915EE8EB6A3}"
+  "FileHash": "{6D6B6250-FFBE-ACBC-1AAB-74C7651BEBF6}"
  }
 }

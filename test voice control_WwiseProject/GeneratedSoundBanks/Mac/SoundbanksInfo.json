@@ -301,7 +301,7 @@
     "Type": "Event",
     "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
     "Language": "English(US)",
-    "Hash": "{E6BCC10B-A31C-18E9-C956-FCA29AD74735}",
+    "Hash": "{F33ABB1A-3009-6B80-C02E-F5B9C876DB19}",
     "ObjectPath": "Play_ThreeDayThreeNight_people",
     "ShortName": "Play_ThreeDayThreeNight_people",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_people.bnk",
@@ -352,20 +352,12 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{06AED5E8-2175-E3CF-1C82-408E0492A30F}",
+    "Hash": "{7DAB5627-E18C-59EC-2118-CE20A81A782A}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
      "ShareSets": [
-      {
-       "Id": "602546716",
-       "Name": "Room_Large",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Large",
-       "GUID": "{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}",
-       "LibName": "Wwise RoomVerb",
-       "LibId": "7733251"
-      },
       {
        "Id": "1706684651",
        "Name": "Plate_Medium",
@@ -411,7 +403,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "602546716"
+         "Id": "1990128658"
         }
        ]
       }
@@ -676,7 +668,7 @@
     "Type": "Event",
     "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
     "Language": "English(US)",
-    "Hash": "{C475E112-84BF-22F2-A534-BADB417396BC}",
+    "Hash": "{9314B24E-F03C-9A12-C10A-D04EC9820DAE}",
     "ObjectPath": "Play_ThreeDayThreeNight_audience",
     "ShortName": "Play_ThreeDayThreeNight_audience",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_audience.bnk",
@@ -1105,7 +1097,7 @@
     "Type": "Event",
     "GUID": "{3F0E4D88-963B-4DF1-810B-45F061113D28}",
     "Language": "English(US)",
-    "Hash": "{8FCD382D-2D1B-B653-2AAB-60D7ECCD3309}",
+    "Hash": "{912BFBA1-ED67-FCA9-18A6-E49E2AF1FFEA}",
     "ObjectPath": "Play_ThreeDayThreeNight_bgm",
     "ShortName": "Play_ThreeDayThreeNight_bgm",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_bgm.bnk",
@@ -1247,6 +1239,6 @@
     ]
    }
   ],
-  "FileHash": "{3AF21408-10D9-85C8-8440-50EEFDF60B08}"
+  "FileHash": "{8A6567D9-41C8-E068-B3EE-6C57FA0BA3D2}"
  }
 }
