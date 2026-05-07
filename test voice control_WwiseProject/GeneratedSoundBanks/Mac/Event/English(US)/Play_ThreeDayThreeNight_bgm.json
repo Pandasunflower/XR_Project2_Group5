@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{3F0E4D88-963B-4DF1-810B-45F061113D28}",
     "Language": "English(US)",
-    "Hash": "{8FCD382D-2D1B-B653-2AAB-60D7ECCD3309}",
+    "Hash": "{912BFBA1-ED67-FCA9-18A6-E49E2AF1FFEA}",
     "ObjectPath": "Play_ThreeDayThreeNight_bgm",
     "ShortName": "Play_ThreeDayThreeNight_bgm",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_bgm.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{CC1BE28C-01C9-B171-39AC-B1E41A42AD31}"
+  "FileHash": "{764980B2-B913-D8C4-AF3C-31A3ECD5896C}"
  }
 }

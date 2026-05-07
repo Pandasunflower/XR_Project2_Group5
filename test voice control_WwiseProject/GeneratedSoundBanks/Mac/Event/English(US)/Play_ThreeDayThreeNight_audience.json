@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
     "Language": "English(US)",
-    "Hash": "{C475E112-84BF-22F2-A534-BADB417396BC}",
+    "Hash": "{9314B24E-F03C-9A12-C10A-D04EC9820DAE}",
     "ObjectPath": "Play_ThreeDayThreeNight_audience",
     "ShortName": "Play_ThreeDayThreeNight_audience",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_audience.bnk",
@@ -51,6 +51,6 @@
     ]
    }
   ],
-  "FileHash": "{E1E2AD28-6E11-36E6-D3E7-2DEB9EAD1CB5}"
+  "FileHash": "{E8DB1D34-89A9-D9BC-B136-E49C592BB286}"
  }
 }
