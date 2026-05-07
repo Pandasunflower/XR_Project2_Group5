@@ -15,6 +15,8 @@ public class Stage3CamVideoControl : MonoBehaviour
     public Material cameraMaterial;
     public Material videoMaterial;
 
+    public AK.Wwise.Event PlayEndEvent;
+
     void  Update()
     {
         // if (Input.GetKeyDown(KeyCode.K))
@@ -36,8 +38,11 @@ public class Stage3CamVideoControl : MonoBehaviour
     }
 
     public IEnumerator VideoCamChange(){
-        yield return new WaitForSeconds(312f);
-        Debug.Log("312 sec");
+        yield return new WaitForSeconds(283f);
+        Debug.Log("283 sec");
+        PlayEndEvent.Post(gameObject);
+        yield return new WaitForSeconds(30f);
+        Debug.Log("30 sec");
         SwitchToVideo();
     }
 

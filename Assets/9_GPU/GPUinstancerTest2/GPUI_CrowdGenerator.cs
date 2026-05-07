@@ -5,6 +5,7 @@ using GPUInstancer;
 using GPUInstancer.CrowdAnimations;
 using Debug = UnityEngine.Debug;
 
+
 namespace MyCrowdSystem
 {
     // 定義一個「區域」的資料結構，讓你在 Inspector 可以無限新增
@@ -19,6 +20,7 @@ namespace MyCrowdSystem
 
     public class GPUI_CrowdGenerator : MonoBehaviour
     {
+        public AK.Wwise.Event crowdSoundEvent; // Wwise 事件參考
         [Header("GPUI 設定")]
         public GPUICrowdManager crowdManager;
         public List<GPUICrowdPrefab> audiencePrefabs; 
@@ -134,6 +136,7 @@ namespace MyCrowdSystem
 
         IEnumerator WaveSequence()
         {
+            AkUnitySoundEngine.StopAll(gameObject); // 停止當前所有 Wwise 音效，確保不會重疊播放
             float timer = 0f;
             int currentIndex = 0;
             float rangeX = maxX - minX;
@@ -143,6 +146,7 @@ namespace MyCrowdSystem
             {
                 timer += Time.deltaTime;
                 float currentWaveX = minX + (timer / waveDelay) * rangeX;
+
 
                 while (currentIndex < allInstances.Count && allInstances[currentIndex].transform.position.x <= currentWaveX)
                 {
@@ -161,6 +165,7 @@ namespace MyCrowdSystem
 
         public void callChangeAnim(int i, bool isRandom)
         {
+            AkUnitySoundEngine.StopAll(gameObject); // 停止當前所有 Wwise 音效，確保不會重疊播放
             // Debug.Log($"呼叫動畫變更: {i}, 隨機偏移: {isRandom}");
             if (i == 0 && ameiFanMoveAClip != null) {
                 // Debug.Log("觸發 ameiFanMoveAClip 動畫");
@@ -168,7 +173,9 @@ namespace MyCrowdSystem
             }
             else if (i == 1 && keepJumpingClip != null) {
                 // Debug.Log("觸發 keepJumpingClip 動畫");
+                crowdSoundEvent.Post(gameObject); // 播放 Wwise 音效
                 ChangeAnim(keepJumpingClip, isRandom);
+
             }
             else if (i == 2 && rightLeftDanceClip != null) {
                 // Debug.Log("觸發 rightLeftDanceClip 動畫");

@@ -156,7 +156,7 @@ public class LobbySongManager : MonoBehaviour
     private void PlayPreviewMusic()
     {
         // 1. 先把這個物件上「正在播放的所有音樂」暴力停掉，避免兩首歌疊在一起
-        AkSoundEngine.StopAll(gameObject); 
+        AkUnitySoundEngine.StopAll(gameObject); 
 
         // 2. 組合你的 Wwise Event 名稱
         // 假設你的資料夾叫 "frozen"，你的 Wwise Event 叫 "Play_frozen"
@@ -167,11 +167,11 @@ public class LobbySongManager : MonoBehaviour
         Debug.Log($"[Wwise Debug] 嘗試播放 Event: {eventName}");
 
         // 3. 呼叫 Wwise 播放
-        AkSoundEngine.PostEvent(eventName, gameObject);
+        AkUnitySoundEngine.PostEvent(eventName, gameObject);
     }
 
     public void StopPreviewMusic()
     {
-        AkSoundEngine.StopAll(gameObject);
+        AkUnitySoundEngine.StopAll(gameObject);
     }
 }
