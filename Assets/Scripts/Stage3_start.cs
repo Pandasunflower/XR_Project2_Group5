@@ -7,6 +7,7 @@ using Debug = UnityEngine.Debug;
 public class Stage3_Starts : MonoBehaviour
 {
     public FirestoreTest firestoreTest;
+    public VideoPlayer videoPlayer;
 
     private bool hasBeenTriggered = false;
 
@@ -27,6 +28,7 @@ public class Stage3_Starts : MonoBehaviour
 
         hasBeenTriggered = true; // 標記為已觸發
         Stage3CamVideoControlCS.StartGame();
+        videoPlayer.Play();
         GetComponent<PlayWwiseEvent>().PlaySound();
         GetComponent<PlayWwiseEvent2>().PlaySound();
         GetComponent<PlayWwiseEvent3>().PlaySound();

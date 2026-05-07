@@ -5820,6 +5820,7 @@ MonoBehaviour:
   signPrefab: {fileID: 0}
   wallParent: {fileID: 0}
   index: 0
+  testTexture: {fileID: 0}
 --- !u!4 &1236871917
 Transform:
   m_ObjectHideFlags: 0

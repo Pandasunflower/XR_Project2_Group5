@@ -48,11 +48,11 @@ public class Stage3CamVideoControl : MonoBehaviour
 
     public IEnumerator VideoCamChange(){
         firestoreTest.SetGameState("l3_voting");
-        yield return new WaitForSeconds(283f);
+        yield return new WaitForSeconds(10f);
         Debug.Log("283 sec");
         firestoreTest.SetGameState("l3_votingend");
         PlayEndEvent.Post(gameObject);
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(10f);
         Debug.Log("20 sec");
         firestoreTest.SetGameState("l3_sign");
         screenRendererMid.material = signMaterial;
