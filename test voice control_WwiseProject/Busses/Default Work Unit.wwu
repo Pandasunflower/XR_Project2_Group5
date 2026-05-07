@@ -79,6 +79,17 @@
 									</EffectSlot>
 								</ObjectList>
 							</ObjectLists>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="audience" ID="{103CB983-C59F-4C8F-9ACA-AFF182E11667}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
 						</Bus>
 						<Bus Name="stage1" ID="{90FE9495-11ED-40C5-9A86-581F6B5EC299}">
 							<ObjectLists>
@@ -93,6 +104,7 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
+						<Bus Name="audience" ID="{103CB983-C59F-4C8F-9ACA-AFF182E11667}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
