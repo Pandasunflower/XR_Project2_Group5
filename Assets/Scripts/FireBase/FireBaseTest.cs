@@ -116,6 +116,11 @@ public class FirestoreTest : MonoBehaviour
         {
             SetGameState("l2_3");
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            SpawnTestSigns(30);
+        }
     }
 
     public void SetGameState(string state)
@@ -300,35 +305,36 @@ public class FirestoreTest : MonoBehaviour
         if (level3sign != "")
         {
             int vote3 = System.Convert.ToInt32(data["level3"]);
-            float scale = GetScale(vote3);
-            Texture2D tex = Base64ToTexture(level3sign);
+            CreateSign(Base64ToTexture(level3sign), vote3);
+            // float scale = GetScale(vote3);
+            // Texture2D tex = Base64ToTexture(level3sign);
 
-            GameObject obj = Instantiate(signPrefab, wallParent);
-            int col = 5;
-            obj.GetComponent<Renderer>().material.mainTexture = tex;
-            obj.transform.localScale = new Vector3(scale * obj.transform.localScale.x, scale * obj.transform.localScale.y, obj.transform.localScale.z);
-            float spacingX = 0.9f * obj.transform.localScale.x;
-            float spacingY = 1.5f * obj.transform.localScale.y;
+            // GameObject obj = Instantiate(signPrefab, wallParent);
+            // int col = 5;
+            // obj.GetComponent<Renderer>().material.mainTexture = tex;
+            // obj.transform.localScale = new Vector3(scale * obj.transform.localScale.x, scale * obj.transform.localScale.y, obj.transform.localScale.z);
+            // float spacingX = 0.9f * obj.transform.localScale.x;
+            // float spacingY = 1.5f * obj.transform.localScale.y;
 
-            float xIndex = 0;
-            if (index == 0)
-            {
-                xIndex = 0;
-            }
-            else
-            {
-                int offsetIndex = (index + 1) / 2;
-                int direction = (index % 2 == 0) ? 1 : -1;
-                xIndex = offsetIndex * direction;
-            }
+            // float xIndex = 0;
+            // if (index == 0)
+            // {
+            //     xIndex = 0;
+            // }
+            // else
+            // {
+            //     int offsetIndex = (index + 1) / 2;
+            //     int direction = (index % 2 == 0) ? 1 : -1;
+            //     xIndex = offsetIndex * direction;
+            // }
 
-            obj.transform.localPosition = new Vector3(
-                xIndex * spacingX,
-                -(index / col) * spacingY,
-                0
-            );
+            // obj.transform.localPosition = new Vector3(
+            //     xIndex * spacingX,
+            //     -(index / col) * spacingY,
+            //     0
+            // );
 
-            index++;
+            // index++;
         }
     }
 
@@ -506,5 +512,55 @@ public class FirestoreTest : MonoBehaviour
         }
 
         t.localScale = original;
+    }
+
+    [SerializeField] private Texture2D testTexture;
+
+    public void SpawnTestSigns(int count = 30)
+    {
+        for (int i = 0; i < count; i++)
+        {
+            int vote = UnityEngine.Random.Range(1, 300);
+
+            CreateSign(testTexture, vote);
+        }
+    }
+
+    void CreateSign(Texture2D tex, int vote3)
+    {
+        float scale = GetScale(vote3);
+
+        GameObject obj = Instantiate(signPrefab, wallParent);
+
+        obj.GetComponent<Renderer>().material.mainTexture = tex;
+
+        // ===== 縮小倍率 =====
+        scale *= 0.01f;
+
+        obj.transform.localScale = new Vector3(
+            scale*2,
+            scale,
+            0.000001f
+        );
+
+        // ===== Grid 設定 =====
+        int col = 5;
+
+        float spacingX = 1.2f;
+        float spacingY = 1.5f;
+
+        // ===== 算 row / col =====
+        int row = index / col;
+        int column = index % col;
+
+        // 置中
+        float startX = -(col - 1) * spacingX * 0.5f;
+
+        float x = startX + column * spacingX;
+        float y = -row * spacingY;
+
+        obj.transform.localPosition = new Vector3(x*scale*1.2f, 0, y*scale*2);
+
+        index++;
     }
 }
