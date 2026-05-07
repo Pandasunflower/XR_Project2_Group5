@@ -78,6 +78,7 @@ public class NPCSpawner : MonoBehaviour
             SpawnGoodNPCs();
             // InvokeRepeating("RandomizeNPCAnimations", firstTrollTime, trollInterval);
         }
+        // firestoreTest.SetGameState("l2");
     }
 
     void Update()
@@ -143,6 +144,7 @@ public class NPCSpawner : MonoBehaviour
         });
         eventController.RegisterSpecialEvent(163f, () => {
             Debug.Log("遊戲結束，總計時間：" + Mathf.FloorToInt(163f) + " 秒");
+            AkUnitySoundEngine.StopAll(); // 停止當前所有 Wwise 音效，確保不會重疊播放
             transitionManager.goToSceneAsync(finalSongIndex);
         });
 
