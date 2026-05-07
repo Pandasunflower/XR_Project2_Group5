@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
     "Language": "English(US)",
-    "Hash": "{9314B24E-F03C-9A12-C10A-D04EC9820DAE}",
+    "Hash": "{59C0D8BA-E3C1-F283-3B89-0BD2774C3241}",
     "ObjectPath": "Play_ThreeDayThreeNight_audience",
     "ShortName": "Play_ThreeDayThreeNight_audience",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_audience.bnk",
@@ -43,14 +43,20 @@
     ],
     "GameParameters": [
      {
-      "Id": "658503054",
-      "Name": "audience_pickup",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\audience_pickup",
-      "GUID": "{63331C15-0F86-42B0-8B64-7C7C81717607}"
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
      }
     ]
    }
   ],
-  "FileHash": "{38A70BF3-5D18-1975-CF5A-A9BCF59C5339}"
+  "FileHash": "{AB6317D2-3D7C-F64F-D9EC-BEF51FCB00DA}"
  }
 }

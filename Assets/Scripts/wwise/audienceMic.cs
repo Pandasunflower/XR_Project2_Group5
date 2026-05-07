@@ -1,39 +1,62 @@
 using UnityEngine;
 
-public class AudienceMicController : MonoBehaviour
+public class AudienceMicrophone : MonoBehaviour
 {
     public enum MicAxis { Forward, Up, Right }
 
-    [Header("麥克風指向設定")]
-    public MicAxis micHeadAxis = MicAxis.Up;
-    public bool invertAxis = false;
+    [Header("1. 測量目標 (玩家 Camera)")]
+    public Transform playerCamera;
+    
+    [Header("2. 發聲目標 (喇叭)")]
+    public GameObject[] speakerOutputs;
 
-    [Header("所有的觀眾區塊")]
-    public GameObject[] audienceZones;
+    [Header("麥克風物理設定")]
+    public MicAxis micHeadAxis = MicAxis.Up; 
+    public bool invertAxis = false;
+    public float mouthVerticalOffset = 0.15f;
 
     void Update()
     {
-        if (audienceZones == null) return;
+        if (playerCamera == null || speakerOutputs == null) return;
 
-        // 1. 取得麥克風頭部目前的向量
-        Vector3 micHeadDir = GetMicHeadVector();
+        // --- A. 定義位置 ---
+        Vector3 mouthPos = playerCamera.position - (playerCamera.up * mouthVerticalOffset);
         Vector3 micPos = transform.position;
 
-        // 2. 針對每一個觀眾區塊計算夾角
-        foreach (GameObject zone in audienceZones)
-        {
-            if (zone != null)
-            {
-                // 計算從麥克風指向該觀眾區塊的向量
-                Vector3 dirToZone = (zone.transform.position - micPos).normalized;
-                
-                // 計算麥克風頭部有沒有對準該區塊
-                float angle = Vector3.Angle(micHeadDir, dirToZone);
+        // --- B. 計算距離 ---
+        float distance = Vector3.Distance(micPos, mouthPos);
 
-                // 3. 將夾角傳給 Wwise (只影響該區塊的 GameObject)
-                AkSoundEngine.SetRTPCValue("audience_pickup", angle, zone);
+        // --- C. 雙向量角度計算 ---
+
+        // 1. 麥克風指向夾角 (麥克風頭有沒有對準嘴巴)
+        Vector3 micHeadDir = GetMicHeadVector();
+        Vector3 dirMicToMouth = (mouthPos - micPos).normalized;
+        float micAngle = Vector3.Angle(micHeadDir, dirMicToMouth);
+
+        // 2. 嘴巴指向夾角 (玩家的臉有沒有對準麥克風)
+        Vector3 mouthForward = playerCamera.forward; // 嘴巴朝向通常等於視角朝向
+        Vector3 dirMouthToMic = (micPos - mouthPos).normalized;
+        float mouthAngle = Vector3.Angle(mouthForward, dirMouthToMic);
+
+        // 3. 融合角度 (這就是你要的「比較好」的邏輯)
+        // 我們將兩個偏移角結合，只要其中一個歪掉，數值就會變大
+        // 你也可以根據需求調整權重，例如臉轉開的影響比麥克風拿歪的影響更大
+        float totalCombinedAngle = (micAngle + mouthAngle) * 0.5f; 
+
+        // --- D. 傳送至 Wwise ---
+        foreach (GameObject speaker in speakerOutputs)
+        {
+            if (speaker != null)
+            {
+                // 用這個融合後的角度來控制你的 LPF (紅線與藍線)
+                AkSoundEngine.SetRTPCValue("mic_direct", totalCombinedAngle, speaker);
             }
         }
+
+        // --- 視覺化除錯 ---
+        Debug.DrawRay(micPos, micHeadDir * 0.3f, Color.blue);   // 麥克風指向
+        Debug.DrawRay(mouthPos, mouthForward * 0.3f, Color.green); // 嘴巴指向
+        Debug.DrawLine(micPos, mouthPos, Color.red);           // 兩者間的連線
     }
 
     private Vector3 GetMicHeadVector()
