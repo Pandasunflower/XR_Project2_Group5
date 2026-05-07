@@ -366,7 +366,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e3c4574cff668b24b9b83f632e3bdec7, type: 2}
+      objectReference: {fileID: 2100000, guid: 7c61c6e6e0e7f12478691dd8b2d3e91b, type: 2}
     - target: {fileID: 919132149155446097, guid: f27ad2154de1f447486345e3e6f1d4a4,
         type: 3}
       propertyPath: m_Name
@@ -384,6 +384,12 @@ PrefabInstance:
 --- !u!4 &81778841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f27ad2154de1f447486345e3e6f1d4a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 81778840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &81778842 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: f27ad2154de1f447486345e3e6f1d4a4,
     type: 3}
   m_PrefabInstance: {fileID: 81778840}
   m_PrefabAsset: {fileID: 0}
@@ -10532,13 +10538,16 @@ MonoBehaviour:
   videoPlayer1: {fileID: 116858753}
   screenRenderer2: {fileID: 737151307}
   videoPlayer2: {fileID: 161294482}
+  screenRendererMid: {fileID: 81778842}
   cameraMaterial: {fileID: 2100000, guid: 7c61c6e6e0e7f12478691dd8b2d3e91b, type: 2}
+  signMaterial: {fileID: 2100000, guid: e3c4574cff668b24b9b83f632e3bdec7, type: 2}
   videoMaterial: {fileID: 2100000, guid: 7463f8ccb03ef5040aca096a711441df, type: 2}
   PlayEndEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 1c250bee3fa62f8418d6381a666410c2,
       type: 2}
+  firestoreTest: {fileID: 0}
 --- !u!4 &1265999646
 Transform:
   m_ObjectHideFlags: 0
