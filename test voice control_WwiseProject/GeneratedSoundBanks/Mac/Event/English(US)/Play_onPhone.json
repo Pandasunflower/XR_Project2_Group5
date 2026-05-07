@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{59185CB8-C182-451B-8A67-CC5309B5A4B4}",
     "Language": "English(US)",
-    "Hash": "{7EA0BC1A-5100-A95F-0BC5-B3C909901B47}",
+    "Hash": "{D194D967-C8EE-6160-B696-593687D55ABB}",
     "ObjectPath": "Play_onPhone",
     "ShortName": "Play_onPhone",
     "Path": "Event/English(US)/Play_onPhone.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "onPhone.wav",
       "Path": "Media/English(US)/630520721.wem",
-      "CachePath": "4E/{4E6C520E-2AFE-95DD-7A3B-FE8F14B2B19B}.wem"
+      "CachePath": "78/{78B3F712-BE6C-4BFF-C6F2-1E3BAFD4569C}.wem"
      }
     ],
     "Events": [
@@ -31,9 +31,7 @@
       "Name": "Play_onPhone",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_onPhone",
       "GUID": "{59185CB8-C182-451B-8A67-CC5309B5A4B4}",
-      "DurationType": "OneShot",
-      "DurationMin": "3.384",
-      "DurationMax": "3.384",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "630520721"
@@ -43,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{97B2D521-A17F-5041-944E-9E7066D60783}"
+  "FileHash": "{92C99E37-5028-429A-9694-2747209D91F0}"
  }
 }

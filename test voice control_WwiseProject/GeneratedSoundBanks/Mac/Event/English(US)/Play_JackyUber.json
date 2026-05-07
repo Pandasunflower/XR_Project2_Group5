@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1539366728",
+    "Type": "Event",
+    "GUID": "{A6100C5F-9413-41F7-A1B6-F40C32FF13BA}",
+    "Language": "English(US)",
+    "Hash": "{58E8D20E-EC05-50E2-8CA1-BAF1E4E2466E}",
+    "ObjectPath": "Play_JackyUber",
+    "ShortName": "Play_JackyUber",
+    "Path": "Event/English(US)/Play_JackyUber.bnk",
+    "Media": [
+     {
+      "Id": "902117724",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "JackyUber.wav",
+      "Path": "Media/English(US)/902117724.wem",
+      "CachePath": "7C/{7CAFB20A-FB9B-C42C-3D55-356BEC0F3D68}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1539366728",
+      "Name": "Play_JackyUber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_JackyUber",
+      "GUID": "{A6100C5F-9413-41F7-A1B6-F40C32FF13BA}",
+      "DurationType": "OneShot",
+      "DurationMin": "12.20025",
+      "DurationMax": "12.20025",
+      "MediaRefs": [
+       {
+        "Id": "902117724"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3F8E0D69-B23F-45F9-5BA8-302DC6F7DFB2}"
+ }
+}

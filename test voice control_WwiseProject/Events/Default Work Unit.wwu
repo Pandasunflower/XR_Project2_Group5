@@ -52,7 +52,7 @@
 						<Action Name="" ID="{F2CB0C9E-143C-4424-B91A-33B7C7F1A0B0}" ShortID="109233461">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="三天三夜 人生" ID="{E0F82D59-2E13-46F5-A633-AE118AC68FD3}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+									<ObjectRef Name="三天三夜 人聲" ID="{218D143F-7EBC-4877-ACD1-63B1FEA5118C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -96,7 +96,7 @@
 						<Action Name="" ID="{9A44814D-6BC2-4417-9439-9F155962DF2E}" ShortID="86343542">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+									<ObjectRef Name="王ADEN" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -203,10 +203,10 @@
 				</Event>
 				<Event Name="Play_ThreeDayThreeNight_audience" ID="{F8CF7561-A27F-4953-B271-C41277A86D43}">
 					<ChildrenList>
-						<Action Name="" ID="{254641A3-2DAB-4827-B455-028C5B54DE8A}" ShortID="910318846">
+						<Action Name="" ID="{DBF916CF-333A-443C-8BDD-68D2B24618DF}" ShortID="921768460">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="三天三夜觀眾" ID="{B808AF84-231F-4AC2-ABBB-8D559F7EE769}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+									<ObjectRef Name="三天三夜 觀眾V2" ID="{65330A94-1C63-418B-B7FE-84A8993435EE}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -218,6 +218,94 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="yell" ID="{FB183C7D-2E1A-4A52-A801-63BC808BE1FD}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_frozen" ID="{EDC31231-87C0-4A94-B929-19FEE3102348}">
+					<ChildrenList>
+						<Action Name="" ID="{8E3EB0E8-20D0-4C0F-A57C-99067A7B350C}" ShortID="1056960493">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="for-the-first-time-in-forever-from-frozensing-along" ID="{C879FEB3-7C5A-4358-8055-CC146EE68308}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_davewang" ID="{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}">
+					<ChildrenList>
+						<Action Name="" ID="{DAFA9F65-8708-409C-B5D2-4F17ACF1B118}" ShortID="451087153">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="王傑-一場遊戲一場夢" ID="{B2DB6388-0E32-40A1-A93A-1345B31B6D32}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Bullets_hit" ID="{90F1FFC7-FC3C-427D-B2BD-37DCA1E69A56}">
+					<ChildrenList>
+						<Action Name="" ID="{2F54B6C1-8B22-4D98-A1E8-6C3D383C1121}" ShortID="949516426">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="子彈射到的聲音" ID="{1B96CACF-6151-4E69-A217-6BA939E04A26}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_shoot" ID="{D4C6724F-85DF-412E-BEDC-B34A7CF8FA9E}">
+					<ChildrenList>
+						<Action Name="" ID="{9FF7CB21-9490-46D0-A53B-20ABB4C3A81D}" ShortID="496628387">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shoot" ID="{6A624D2A-2E07-4E82-87CA-BEE6BFCC994D}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_JackyUber" ID="{A6100C5F-9413-41F7-A1B6-F40C32FF13BA}">
+					<ChildrenList>
+						<Action Name="" ID="{B98D50A8-9B00-40BD-AAA9-9ADA6440BEF0}" ShortID="326009561">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="JackyUber" ID="{D842B275-7171-4CAC-887B-21460F10183D}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_end" ID="{65337E20-B487-4104-B695-E793D0E72917}">
+					<ChildrenList>
+						<Action Name="" ID="{42FC422E-0F09-41DC-ACB3-694C40489420}" ShortID="862459071">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="end" ID="{A431D849-25E6-47F6-ADEF-E26E3B4244DE}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GoDownStage" ID="{C5F9DB79-C0C2-434E-9528-C47444499F09}">
+					<ChildrenList>
+						<Action Name="" ID="{E02719CA-6CB2-40D4-AAE6-E4197125A464}" ShortID="446944771">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GoDownStage" ID="{6E9CB498-29F0-47E9-9035-A306D4639FFC}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_jumphey" ID="{D778E0C0-F555-4959-8D20-BAFD280C1570}">
+					<ChildrenList>
+						<Action Name="" ID="{11CEDB8C-72FF-4A3A-9B31-E35DDFCC7BD0}" ShortID="605237804">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jumphey" ID="{32CC95AA-BA1F-4CAD-862C-902892D918BC}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

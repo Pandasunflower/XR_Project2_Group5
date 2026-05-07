@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{72052F8E-22CE-458C-9329-E6CD2921C343}",
     "Language": "English(US)",
-    "Hash": "{0C953A8B-9EAA-18BA-5D4F-ED64037E77AF}",
+    "Hash": "{E2A83AFA-3453-008F-8222-4A068BC34732}",
     "ObjectPath": "Play_horn",
     "ShortName": "Play_horn",
     "Path": "Event/English(US)/Play_horn.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "汽笛鬧場.wav",
       "Path": "Media/English(US)/242180107.wem",
-      "CachePath": "D6/{D6C81F13-F7B8-41D5-3179-9871BFCA3A1E}.wem"
+      "CachePath": "2D/{2DE53E4E-E7DE-8C6E-2B85-4C050DF9755E}.wem"
      }
     ],
     "Events": [
@@ -31,9 +31,7 @@
       "Name": "Play_horn",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_horn",
       "GUID": "{72052F8E-22CE-458C-9329-E6CD2921C343}",
-      "DurationType": "OneShot",
-      "DurationMin": "4.000771",
-      "DurationMax": "4.000771",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "242180107"
@@ -43,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{CC1980E2-027C-B025-526A-4BF9D1B6438F}"
+  "FileHash": "{D514EA1A-2A34-09E9-2103-FED23EA81129}"
  }
 }

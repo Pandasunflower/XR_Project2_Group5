@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2641650631",
+    "Type": "Event",
+    "GUID": "{D4C6724F-85DF-412E-BEDC-B34A7CF8FA9E}",
+    "Language": "English(US)",
+    "Hash": "{F2565671-7741-5E5F-345D-44B57A7274CE}",
+    "ObjectPath": "Play_shoot",
+    "ShortName": "Play_shoot",
+    "Path": "Event/English(US)/Play_shoot.bnk",
+    "Media": [
+     {
+      "Id": "742584192",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "shoot.wav",
+      "Path": "Media/English(US)/742584192.wem",
+      "CachePath": "56/{56B980F9-AA37-48D4-3B94-988BA1CCD5DD}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2641650631",
+      "Name": "Play_shoot",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_shoot",
+      "GUID": "{D4C6724F-85DF-412E-BEDC-B34A7CF8FA9E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.33820862",
+      "DurationMax": "0.33820862",
+      "MediaRefs": [
+       {
+        "Id": "742584192"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D2473418-DF44-814E-A615-073280814881}"
+ }
+}

@@ -1,0 +1,105 @@
+﻿
+#include "Include/PlatformDefines.hlsl"
+
+#pragma kernel CSInstancedCameraCalculationKernel
+#pragma kernel CSInstancedCameraCalculationKernelCrossFade
+
+RWStructuredBuffer<uint4> gpuiInstanceLODData; // lodNo - shadowLodNo - cfLodNo - cfLevel 
+#include "Include/Culling.hlsl"
+#include "Include/Camera.hlsl"
+
+bool IsValidTransformMatrix(float4x4 m)
+{
+    bool isValid = true;
+    // 1. Check last row is (0, 0, 0, 1)
+    if (any(abs(m[3].xyz) > 1e-5) || abs(m[3].w - 1.0) > 1e-5)
+        isValid = false;
+
+    // 2. Check for NaNs or Infs in upper-left 3x3
+    [unroll]
+    for (int i = 0; i < 3; ++i)
+    {
+        float3 row = m[i].xyz;
+        if (any(isnan(row)) || any(isinf(row)))
+            isValid = false;
+    }
+
+    // Extract axes
+    float3 x = m[0].xyz;
+    float3 y = m[1].xyz;
+    float3 z = m[2].xyz;
+
+    // 3. Check positive scale (non-zero)
+    float sx = length(x);
+    float sy = length(y);
+    float sz = length(z);
+
+    if (sx <= 1e-6 || sy <= 1e-6 || sz <= 1e-6)
+        isValid = false;
+
+    // Normalize axes
+    float3 nx = x / sx;
+    float3 ny = y / sy;
+    float3 nz = z / sz;
+
+    // 4. Check orthogonality
+    if (abs(dot(nx, ny)) > 1e-3 || abs(dot(ny, nz)) > 1e-3 || abs(dot(nz, nx)) > 1e-3)
+        isValid = false;
+
+    // 5. Check handedness (cross(x, y) should ≈ z)
+    float3 expectedZ = cross(nx, ny);
+    if (length(expectedZ - nz) > 1e-3)
+        isValid = false;
+
+    return isValid;
+}
+
+[numthreads(GPUI_THREADS, 1, 1)]
+void CSInstancedCameraCalculationKernel(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= bufferSize)
+        return;
+
+    float dist = 0;
+    bool culled = false;
+    float size = 0;
+
+    uint4 lodData = uint4(9, 9, 9, 0);
+    float4x4 instanceMatrix = gpuiInstanceData[id.x];
+    
+    CalculateDistanceAndSize(instanceMatrix, dist, size);
+    IsCulled(instanceMatrix, dist, culled);
+    CalculateLODNo(size, dist, culled, lodData.x, lodData.y);
+
+    gpuiInstanceLODData[id.x] = lodData;
+}
+
+[numthreads(GPUI_THREADS, 1, 1)]
+void CSInstancedCameraCalculationKernelCrossFade(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= bufferSize)
+        return;
+
+    float dist = 0;
+    bool culled = false;
+    float size = 0;
+    
+    uint4 lodData = uint4(9, 9, 9, 0);
+    float4x4 instanceMatrix = gpuiInstanceData[id.x];
+    
+    CalculateDistanceAndSize(instanceMatrix, dist, size);
+    IsCulled(instanceMatrix, dist, culled);
+    CalculateLODNo(size, dist, culled, lodData.x, lodData.y);
+    
+    if (animateCrossFade)
+    {
+        uint4 previousLodData = gpuiInstanceLODData[id.x];
+        lodData.w = previousLodData.w;
+        lodData.z = previousLodData.z;
+        CalculateCFLODNoAnimate(previousLodData.x, lodData.x, lodData.z, lodData.w);
+    }
+    else
+        CalculateCFLODNo(size, lodData.x, lodData.z, lodData.w);
+    
+    gpuiInstanceLODData[id.x] = lodData;
+}

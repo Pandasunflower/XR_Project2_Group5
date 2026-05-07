@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3205629941",
+    "Type": "Event",
+    "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
+    "Language": "English(US)",
+    "Hash": "{1C7C5700-9C75-9805-7ADB-FB4C4D0CE0A6}",
+    "ObjectPath": "Play_davewang",
+    "ShortName": "Play_davewang",
+    "Path": "Event/English(US)/Play_davewang.bnk",
+    "Media": [
+     {
+      "Id": "888866671",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "王傑-一場遊戲一場夢.wav",
+      "Path": "Media/English(US)/888866671.wem",
+      "CachePath": "DB/{DBA5D2EA-AD1E-2703-18B5-F78406C63AA4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3205629941",
+      "Name": "Play_davewang",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_davewang",
+      "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "888866671"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BB67EF6D-0903-2BA9-66AE-8667D4619845}"
+ }
+}

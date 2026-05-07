@@ -10,19 +10,19 @@
     "Type": "Event",
     "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
     "Language": "English(US)",
-    "Hash": "{E7C3161B-29D4-829B-1439-B709650A55E8}",
+    "Hash": "{C475E112-84BF-22F2-A534-BADB417396BC}",
     "ObjectPath": "Play_ThreeDayThreeNight_audience",
     "ShortName": "Play_ThreeDayThreeNight_audience",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_audience.bnk",
     "Media": [
      {
-      "Id": "101038991",
+      "Id": "399826449",
       "Language": "English(US)",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "三天三夜觀眾.wav",
-      "Path": "Media/English(US)/101038991.wem",
-      "CachePath": "E8/{E8D2327C-0388-947D-71DD-6BF363A3B4F1}.wem"
+      "ShortName": "三天三夜 觀眾V2.wav",
+      "Path": "Media/English(US)/399826449.wem",
+      "CachePath": "86/{8611C4E6-815C-1740-E563-A88DDA345B2D}.wem"
      }
     ],
     "Events": [
@@ -32,11 +32,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_audience",
       "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
       "DurationType": "OneShot",
-      "DurationMin": "264.7307",
-      "DurationMax": "264.7307",
+      "DurationMin": "282.288",
+      "DurationMax": "282.288",
       "MediaRefs": [
        {
-        "Id": "101038991"
+        "Id": "399826449"
        }
       ]
      }
@@ -51,6 +51,6 @@
     ]
    }
   ],
-  "FileHash": "{3780A042-C83F-0768-9117-27D46526C597}"
+  "FileHash": "{78EE625B-F975-1A08-BC79-25F068434A48}"
  }
 }

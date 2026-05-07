@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2087262618",
+    "Type": "Event",
+    "GUID": "{C5F9DB79-C0C2-434E-9528-C47444499F09}",
+    "Language": "English(US)",
+    "Hash": "{0719505D-D0CE-5389-54FA-E241DA49E72A}",
+    "ObjectPath": "Play_GoDownStage",
+    "ShortName": "Play_GoDownStage",
+    "Path": "Event/English(US)/Play_GoDownStage.bnk",
+    "Media": [
+     {
+      "Id": "464577955",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "GoDownStage.wav",
+      "Path": "Media/English(US)/464577955.wem",
+      "CachePath": "D3/{D338E6A4-B66C-FEF7-A157-461C8765E37D}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2087262618",
+      "Name": "Play_GoDownStage",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_GoDownStage",
+      "GUID": "{C5F9DB79-C0C2-434E-9528-C47444499F09}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.952",
+      "DurationMax": "5.952",
+      "MediaRefs": [
+       {
+        "Id": "464577955"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EF6571D6-0BDE-B907-7621-7B2A17FC8D1D}"
+ }
+}

@@ -35,6 +35,8 @@ public class SingingManager : MonoBehaviour {
     public float minMidi = 48f;
     public float maxMidi = 84f;
 
+    public AK.Wwise.Event wwiseClapEvent;
+
     private float _currentVisualMidi = 0f;
 
     [Header("Visual Persistence")]
@@ -52,7 +54,6 @@ public class SingingManager : MonoBehaviour {
     public float currentTotalScore = 0f;
     private int _totalCheckedFrames = 0;
     private float _accumulatedPoints = 0f;
-
     public LineRenderer lineRenderer;
     public int maxPoints = 50;
     public float xSpacing = 0.2f;
@@ -65,6 +66,8 @@ public class SingingManager : MonoBehaviour {
     private List<string> _songList = new List<string>();
     
     private float _testTime = 0f;  // 测试时间推进
+
+    private int isStarted = 0;
 
     public FirestoreTest firestoreTest;
 
@@ -81,6 +84,8 @@ public class SingingManager : MonoBehaviour {
 
     public void realStartGame()
     {
+        isStarted = 1;
+        _testTime = 0f;  // #sym:isStarted 重置計時，只從真正開始遊戲時才計算時長
         string selected = _songList[_currentIndex].Trim(); 
         string jsonPath = Path.Combine("StreamingAssets/Songs", selected, "pitch_data.json.txt");
         string folderPath = Path.Combine("StreamingAssets/Songs", selected);
@@ -209,6 +214,12 @@ public class SingingManager : MonoBehaviour {
     }
 
     void Update() {
+        // #sym:isStarted 檢查：只有在遊戲開始後才執行邏輯
+        if (isStarted == 0) {
+            _testTime = 0f;
+            return;
+        }
+
         // --- Wwise 播放狀態檢查（暂时禁用）---
         // if (_playingID == 0) return;
 
@@ -235,6 +246,16 @@ public class SingingManager : MonoBehaviour {
         // --- 以下邏輯與你原本的基本一致，確保座標正確 ---
         lineContainer.position = Vector3.zero;
 
+        if (_data == null) {
+        Debug.LogError("SingingManager: _data 為空！請檢查是否已成功載入資料。");
+            return; 
+        }
+
+        if (_data.frames == null) {
+            Debug.LogError("SingingManager: _data.frames 為空！");
+            return;
+        }
+
         // 更新索引：根據 Wwise 時間找到現在該唱哪一個點
         while (_currentIndex < _data.frames.Count && _data.frames[_currentIndex].t < currentTime) {
             _currentIndex++;
@@ -247,29 +268,29 @@ public class SingingManager : MonoBehaviour {
             float rawUserMidi = micInput != null ? micInput.GetCurrentPitchFiltered() : 0;
             float userMidi = (rawUserMidi > 0) ? (rawUserMidi * midiMultiplier) + midiOffset : 0;
 
-            if (playerIndicator != null) {
-                if (userMidi > 0 || _hideTimer > 0) {
-                    _hideTimer = hideDelay; 
-                    playerIndicator.gameObject.SetActive(true);
+            // if (playerIndicator != null) {
+            //     if (userMidi > 0 || _hideTimer > 0) {
+            //         _hideTimer = hideDelay; 
+            //         playerIndicator.gameObject.SetActive(true);
 
-                    float clampedMidi = Mathf.Clamp(userMidi, minMidi, maxMidi);
+            //         float clampedMidi = Mathf.Clamp(userMidi, minMidi, maxMidi);
 
-                    if (_currentVisualMidi <= 0) _currentVisualMidi = clampedMidi;
-                    _currentVisualMidi = Mathf.Lerp(_currentVisualMidi, clampedMidi, Time.deltaTime * smoothSpeed);
+            //         if (_currentVisualMidi <= 0) _currentVisualMidi = clampedMidi;
+            //         _currentVisualMidi = Mathf.Lerp(_currentVisualMidi, clampedMidi, Time.deltaTime * smoothSpeed);
 
-                    // 讓 Indicator 留在 X = 0 (或你設定的 indicatorXPosition)，Y 軸反應音高
-                    playerIndicator.position = new Vector3(indicatorXPosition, _currentVisualMidi * pitchScale, 0);
-                    EvaluateScore(targetMidi, _currentVisualMidi); 
+            //         // 讓 Indicator 留在 X = 0 (或你設定的 indicatorXPosition)，Y 軸反應音高
+            //         playerIndicator.position = new Vector3(indicatorXPosition, _currentVisualMidi * pitchScale, 0);
+            //         EvaluateScore(targetMidi, _currentVisualMidi); 
                     
-                } else {
-                    if (_hideTimer > 0) {
-                        _hideTimer -= Time.deltaTime;
-                    } else {
-                        playerIndicator.gameObject.SetActive(false);
-                        _currentVisualMidi = 0; 
-                    }
-                }
-            }
+            //     } else {
+            //         if (_hideTimer > 0) {
+            //             _hideTimer -= Time.deltaTime;
+            //         } else {
+            //             playerIndicator.gameObject.SetActive(false);
+            //             _currentVisualMidi = 0; 
+            //         }
+            //     }
+            // }
         }
     }
 
@@ -300,8 +321,8 @@ public class SingingManager : MonoBehaviour {
         }
 
         if (windowPoints.Count > 0) {
-            lr.positionCount = windowPoints.Count;
-            lr.SetPositions(windowPoints.ToArray());
+            // lr.positionCount = windowPoints.Count;
+            // lr.SetPositions(windowPoints.ToArray());
         }
         
         // 調試：每秒打印一次
@@ -335,6 +356,27 @@ public class SingingManager : MonoBehaviour {
             Debug.Log("目前分數：" + currentTotalScore);
         }
         // Debug.Log("目前分數：" + currentTotalScore);
+    }
+
+    /// <summary>
+    /// 取得用戶目前音準與目標音高的差異
+    /// </summary>
+    /// <returns>MIDI 差異值 (負數表示低於目標，正數表示高於目標；0 表示無有效音準)</returns>
+    public float GetMidiDiff()
+    {
+        if (micInput == null) return float.NaN;
+        
+        float rawUserMidi = micInput.GetCurrentPitchFiltered();
+        if (rawUserMidi <= 0) return float.NaN;
+
+        float userMidi = (rawUserMidi * midiMultiplier) + midiOffset;
+        
+        if (_data != null && _data.frames != null && _currentIndex < _data.frames.Count) {
+            float targetMidi = _data.frames[_currentIndex].m;
+            return userMidi - targetMidi;
+        }
+
+        return float.NaN;
     }
 
     void CalculateSongRange() {
@@ -376,20 +418,29 @@ public class SingingManager : MonoBehaviour {
         ShowFinalScore(); 
     }
 
-    void ShowFinalScore() {
+    public void ShowFinalScore() {
         firestoreTest.SetGameState("l1_voting");
         Debug.Log($"<color=orange>=== 演唱結束 ===</color>");
         Debug.Log($"<color=orange>最終得分: {currentTotalScore:F2} / 100</color>");
 
-        if (currentTotalScore > 85) Debug.Log("評語: 歌神降臨！");
-        else if (currentTotalScore > 60) Debug.Log("評語: 唱得不錯喔！");
-        else Debug.Log("評語: 再接再厲！");
+        // if (currentTotalScore > 85) Debug.Log("評語: 歌神降臨！");
+        // else if (currentTotalScore > 60) Debug.Log("評語: 唱得不錯喔！");
+        // else Debug.Log("評語: 再接再厲！");
         StartCoroutine(waitSeconds());
         this.enabled = false;
     }
 
+    public float GetFinalScore() {
+        if (currentTotalScore <= 70f) {
+            return 7f;
+        }
+        return currentTotalScore / 10f;
+    }
+
     private IEnumerator waitSeconds()
     {
+        
+        wwiseClapEvent.Post(gameObject); // 播放鼓掌音效
         yield return new WaitForSeconds(10f);
         firestoreTest.SetGameState("l1_end");
         firestoreTest.SetAllClapping();

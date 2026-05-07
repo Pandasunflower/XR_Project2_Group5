@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/PigBullet.prefab.meta
+guid: 958468822067b8b49b313f105b81a21e
+PrefabImporter:
+  externalObjects: {}
+========
+guid: 19659ccf2509ba84ab8bf443cdbc0ef1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+>>>>>>>> f92186ae8949ea4d918cd51cdf13e1feb1144089:Assets/7.Animator/CharacterAnimator/3.JackyWu/Stage2DanceAnimator.controller.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

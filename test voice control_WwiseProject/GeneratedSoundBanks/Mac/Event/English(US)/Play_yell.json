@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{124A57DF-150E-4619-B100-F7A37ABEC85F}",
     "Language": "English(US)",
-    "Hash": "{134D2AB8-7FA3-38F3-4D72-3E6631AA35C4}",
+    "Hash": "{FED50761-ABB3-8444-D740-57F37C151362}",
     "ObjectPath": "Play_yell",
     "ShortName": "Play_yell",
     "Path": "Event/English(US)/Play_yell.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "yell.wav",
       "Path": "Media/English(US)/654614919.wem",
-      "CachePath": "95/{95EC5273-C446-2D23-9D0A-B169AC9FADBD}.wem"
+      "CachePath": "70/{702CD9D7-EEF8-0845-3495-18D71FCC5404}.wem"
      }
     ],
     "Events": [
@@ -31,9 +31,7 @@
       "Name": "Play_yell",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_yell",
       "GUID": "{124A57DF-150E-4619-B100-F7A37ABEC85F}",
-      "DurationType": "OneShot",
-      "DurationMin": "7.935583",
-      "DurationMax": "7.935583",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "654614919"
@@ -43,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{BC57599B-7299-6E12-B7B0-0CAFF9C424E6}"
+  "FileHash": "{EB1B6CB5-6815-F6F8-94F7-FC5526F012F1}"
  }
 }

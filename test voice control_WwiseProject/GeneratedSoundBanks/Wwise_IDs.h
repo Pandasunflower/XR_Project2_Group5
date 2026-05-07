@@ -14,19 +14,27 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ASKFORMONEY = 3118526426U;
+        static const AkUniqueID PLAY_BULLETS_HIT = 3288810203U;
         static const AkUniqueID PLAY_CLAPPING = 2700014240U;
         static const AkUniqueID PLAY_DANCINGGIRL = 509118324U;
+        static const AkUniqueID PLAY_DAVEWANG = 3205629941U;
+        static const AkUniqueID PLAY_END = 2472290785U;
         static const AkUniqueID PLAY_FOOLCHILD_BGM = 1314294175U;
         static const AkUniqueID PLAY_FOOLCHILD_PEOPLE = 560573542U;
         static const AkUniqueID PLAY_FOR_THE_ANNA = 2949967820U;
         static const AkUniqueID PLAY_FOR_THE_BGM = 3942408572U;
+        static const AkUniqueID PLAY_FROZEN = 3459025660U;
+        static const AkUniqueID PLAY_GODOWNSTAGE = 2087262618U;
         static const AkUniqueID PLAY_HORN = 2956245481U;
         static const AkUniqueID PLAY_HORN2 = 1275111929U;
+        static const AkUniqueID PLAY_JACKYUBER = 1539366728U;
+        static const AkUniqueID PLAY_JUMPHEY = 2102220028U;
         static const AkUniqueID PLAY_MOTOROFF = 3120712028U;
         static const AkUniqueID PLAY_MOTORON = 3693985302U;
         static const AkUniqueID PLAY_ONEGAMEONEDREAM_BGM = 4065753090U;
         static const AkUniqueID PLAY_ONEGAMEONEDREAM_PEOPLE = 806402365U;
         static const AkUniqueID PLAY_ONPHONE = 4122281311U;
+        static const AkUniqueID PLAY_SHOOT = 2641650631U;
         static const AkUniqueID PLAY_SPOTLIGHT = 1951773134U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_AUDIENCE = 2494639119U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_BGM = 3749606501U;
@@ -52,8 +60,11 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID ACCIDENTBUS = 2120751940U;
+        static const AkUniqueID AUDIENCE = 2854002871U;
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
         static const AkUniqueID SONGBUS = 1401307552U;
+        static const AkUniqueID STAGE1 = 936729722U;
+        static const AkUniqueID STAGE3 = 936729720U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

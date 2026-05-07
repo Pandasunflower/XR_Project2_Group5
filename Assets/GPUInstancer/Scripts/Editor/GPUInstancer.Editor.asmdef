@@ -1,0 +1,38 @@
+{
+    "name": "GPUInstancer.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:74b7ab95492e74e49804395faecc2951",
+        "GUID:15fc0a57446b3144c949da3e2b9737a9",
+        "GUID:2665a8d13d1b3f18800f46e256720795",
+        "GUID:9e24947de15b9834991c9d8411ea37cf",
+        "GUID:69448af7b92c7f342b298e06a37122aa"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "7.0.0",
+            "define": "GPUI_URP"
+        },
+        {
+            "name": "com.unity.burst",
+            "expression": "1.0.0",
+            "define": "GPUI_BURST"
+        },
+        {
+            "name": "com.unity.addressables",
+            "expression": "1.0.0",
+            "define": "GPUI_ADDRESSABLES"
+        }
+    ],
+    "noEngineReferences": false
+}

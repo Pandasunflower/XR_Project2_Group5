@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5EC2BBD7-962A-456A-8E86-68DAA8293C00}",
     "Language": "English(US)",
-    "Hash": "{F0A17D56-5E9C-9B62-8FEA-14C8103E5D2F}",
+    "Hash": "{6A927F75-61CA-2F07-97FD-0B3C58C95665}",
     "ObjectPath": "Play_DancingGirl",
     "ShortName": "Play_DancingGirl",
     "Path": "Event/English(US)/Play_DancingGirl.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip.wav",
       "Path": "Media/English(US)/611412987.wem",
-      "CachePath": "F1/{F1451DCE-AEE2-ED4F-A540-152BE14278C8}.wem"
+      "CachePath": "7C/{7CC84EA1-95E5-D911-DB34-EC8AB4DE0DBA}.wem"
      }
     ],
     "Events": [
@@ -31,9 +31,7 @@
       "Name": "Play_DancingGirl",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_DancingGirl",
       "GUID": "{5EC2BBD7-962A-456A-8E86-68DAA8293C00}",
-      "DurationType": "OneShot",
-      "DurationMin": "20.04",
-      "DurationMax": "20.04",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "611412987"
@@ -43,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{A19C517B-0D06-91D8-A3CC-0301ABCB911F}"
+  "FileHash": "{50EB1B16-90ED-828F-0409-2188BBFC457F}"
  }
 }

@@ -6,6 +6,8 @@ using Firebase.Extensions;
 using TMPro;
 using Unity.Mathematics;
 using Unity.VisualScripting;
+using System.Diagnostics;
+using Debug = UnityEngine.Debug;
 
 public class FirestoreTest : MonoBehaviour
 {
@@ -14,11 +16,29 @@ public class FirestoreTest : MonoBehaviour
     Dictionary<string, GameObject> playerCubes = new Dictionary<string, GameObject>();
     public GameObject cubePrefab;
     public GameObject cubePrefab2;
+
+    public GameObject[] playerPrefabs;
     public TextMeshPro resultText;
     public int stage = 1; //1: stage1, 3: stage3
     public int option = 0;
 
     public Transform[] NPCpos;
+    public Transform target;
+
+    public SingingManager singingManager;
+
+    public AK.Wwise.Event wwiseScoreEvent;
+
+    public AK.Wwise.Event wwiseEndEvent;
+
+    public GameObject hostObject;
+
+
+    public BoxCollider endTrigger; // 階段1結束碰撞器
+
+    public GameObject signPrefab;
+    public Transform wallParent;
+    public int index = 0;
 
     void Start()
     {
@@ -43,7 +63,8 @@ public class FirestoreTest : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            SetGameState("l1_voting");
+            // SetGameState("l1_voting");
+            singingManager.ShowFinalScore();
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
@@ -68,7 +89,12 @@ public class FirestoreTest : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha8))
         {
-            SetGameState("l3_end");
+            SetGameState("l3_votingend");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            SetGameState("l3_sign");
         }
 
         if (Input.GetKeyDown(KeyCode.A))
@@ -79,6 +105,16 @@ public class FirestoreTest : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B))
         {
             SetOption(2);
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            SetGameState("l2_2");
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            SetGameState("l2_3");
         }
     }
 
@@ -103,6 +139,7 @@ public class FirestoreTest : MonoBehaviour
 
     public void SetOption(int option)
     {
+        if (option == -1) return;
         DocumentReference docRef = db.Collection("game").Document("option");
 
         Dictionary<string, object> data = new Dictionary<string, object>
@@ -137,6 +174,7 @@ public class FirestoreTest : MonoBehaviour
                 {
                     UpdatePlayer(id, data);
                 }
+
             }
         });
     }
@@ -145,16 +183,33 @@ public class FirestoreTest : MonoBehaviour
     {
         int index = playerCubes.Count;
 
-        Vector3 spawnPos = NPCpos[index].position; // 每個間隔2
+        Vector3 spawnPos = NPCpos[index].position;
 
+        GameObject cube;
         quaternion rot = Quaternion.Euler(0, 180, 0);
-
-        GameObject cube = Instantiate(cubePrefab, spawnPos, rot);
-
+        if (data["level1Character"].ToString() == "0")
+        {
+            cube = Instantiate(playerPrefabs[0], spawnPos, rot);
+        }
+        else if (data["level1Character"].ToString() == "1")
+        {
+            cube = Instantiate(playerPrefabs[1], spawnPos, rot);
+        }
+        else if (data["level1Character"].ToString() == "2")
+        {
+            cube = Instantiate(playerPrefabs[2], spawnPos, rot);
+        }
+        else if (data["level1Character"].ToString() == "3")
+        {
+            cube = Instantiate(playerPrefabs[3], spawnPos, rot);
+        }
+        else
+        {
+            cube = Instantiate(cubePrefab, spawnPos, rot);
+        }
+        
         cube.name = id;
-
         playerCubes[id] = cube;
-
         TextMeshPro text = cube.GetComponentInChildren<TextMeshPro>();
         text.text = data["name"].ToString();
 
@@ -165,19 +220,60 @@ public class FirestoreTest : MonoBehaviour
     {
         int index = playerCubes.Count;
 
-        Vector3 spawnPos = new Vector3(index * 2f, 0, 0); // 每個間隔2
+        Vector3 spawnPos = NPCpos[index].position;
+        Vector3 dir = (target.position - spawnPos);
+        dir.y = 0;
 
-        GameObject cube = Instantiate(cubePrefab, spawnPos, Quaternion.identity);
-
+        GameObject cube;
+        Quaternion rot = Quaternion.Euler(0, -35, 0);
+        // Quaternion rot2 = Quaternion.LookRotation(dir) * rot;
+        Quaternion rot2 = Quaternion.LookRotation(dir) * rot;
+        if (data["level1Character"].ToString() == "0")
+        {
+            cube = Instantiate(playerPrefabs[0], spawnPos, rot2);
+        }
+        else if (data["level1Character"].ToString() == "1")
+        {
+            cube = Instantiate(playerPrefabs[1], spawnPos, rot2);
+        }
+        else if (data["level1Character"].ToString() == "2")
+        {
+            cube = Instantiate(playerPrefabs[2], spawnPos, rot2);
+        }
+        else if (data["level1Character"].ToString() == "3")
+        {
+            cube = Instantiate(playerPrefabs[3], spawnPos, rot2);
+        }
+        else
+        {
+            cube = Instantiate(cubePrefab, spawnPos, rot2);
+        }
+        
         cube.name = id;
-
         playerCubes[id] = cube;
-
         TextMeshPro text = cube.GetComponentInChildren<TextMeshPro>();
         text.text = data["name"].ToString();
 
         Debug.Log("Spawn player: " + id);
     }
+
+    // void SpawnPlayer2(string id, IDictionary<string, object> data)
+    // {
+    //     int index = playerCubes.Count;
+
+    //     Vector3 spawnPos = new Vector3(index * 2f, 0, 0); // 每個間隔2
+
+    //     GameObject cube = Instantiate(cubePrefab, spawnPos, Quaternion.identity);
+
+    //     cube.name = id;
+
+    //     playerCubes[id] = cube;
+
+    //     TextMeshPro text = cube.GetComponentInChildren<TextMeshPro>();
+    //     text.text = data["name"].ToString();
+
+    //     Debug.Log("Spawn player: " + id);
+    // }
 
     void UpdatePlayer(string id, IDictionary<string, object> data)
     {
@@ -189,6 +285,7 @@ public class FirestoreTest : MonoBehaviour
 
         bool level1HasVoted = data.ContainsKey("level1HasVoted") && (bool)data["level1HasVoted"];
         bool level3HasVoted = data.ContainsKey("level3HasVoted") &&(bool)data["level3HasVoted"];
+        string level3sign = data.ContainsKey("level3Sign") ? data["level3Sign"].ToString() : "";
 
         if (level1HasVoted)
         {
@@ -200,7 +297,62 @@ public class FirestoreTest : MonoBehaviour
         {
             // r.material.color = Color.blue;
         }
+        if (level3sign != "")
+        {
+            int vote3 = System.Convert.ToInt32(data["level3"]);
+            float scale = GetScale(vote3);
+            Texture2D tex = Base64ToTexture(level3sign);
+
+            GameObject obj = Instantiate(signPrefab, wallParent);
+            int col = 5;
+            obj.GetComponent<Renderer>().material.mainTexture = tex;
+            obj.transform.localScale = new Vector3(scale * obj.transform.localScale.x, scale * obj.transform.localScale.y, obj.transform.localScale.z);
+            float spacingX = 0.9f * obj.transform.localScale.x;
+            float spacingY = 1.5f * obj.transform.localScale.y;
+
+            float xIndex = 0;
+            if (index == 0)
+            {
+                xIndex = 0;
+            }
+            else
+            {
+                int offsetIndex = (index + 1) / 2;
+                int direction = (index % 2 == 0) ? 1 : -1;
+                xIndex = offsetIndex * direction;
+            }
+
+            obj.transform.localPosition = new Vector3(
+                xIndex * spacingX,
+                -(index / col) * spacingY,
+                0
+            );
+
+            index++;
+        }
     }
+
+    float GetScale(int vote)
+    {
+        if (vote < 10) return 0.8f;
+        if (vote < 60) return 1.0f;
+        if (vote < 200) return 1.5f;
+        return 2.2f;
+    }
+
+    Texture2D Base64ToTexture(string base64)
+    {
+        if (base64.Contains(","))
+            base64 = base64.Split(',')[1];
+
+        byte[] bytes = System.Convert.FromBase64String(base64);
+
+        Texture2D tex = new Texture2D(2, 2);
+        tex.LoadImage(bytes);
+
+        return tex;
+    }
+
 
     public void SetAllWaving()
     {
@@ -270,9 +422,14 @@ public class FirestoreTest : MonoBehaviour
                 }
             }
 
-            float average = count > 0 ? total / count : 0;
-            Debug.Log("平均分數: " + average);
-            StartCoroutine(ShowAnimatedResult(average));
+            float voteScore = count > 0 ? total / count : 0;
+            float singingScore = singingManager.GetFinalScore();
+            float finalScore = (voteScore + singingScore) / 2f;
+            Debug.Log("平均分數: " + voteScore);
+            Debug.Log("演唱分數: " + singingScore);
+            Debug.Log("最終分數: " + finalScore);
+            wwiseScoreEvent.Post(gameObject); // 播放分數揭曉音效
+            StartCoroutine(ShowAnimatedResult(finalScore));
         });
     }
 
@@ -312,6 +469,15 @@ public class FirestoreTest : MonoBehaviour
 
         ShowResult(realScore);
         yield return StartCoroutine(FinalPunchEffect());
+        wwiseEndEvent.Post(gameObject); // 播放結束音效
+        PlayHostAnimation();
+        if (endTrigger != null)
+            endTrigger.enabled = true; // 啟用碰撞器
+    }
+
+    void PlayHostAnimation() {
+        // Debug.Log($"Triggering host animation {hostObject.name}");
+        hostObject.GetComponent<Animator>().SetTrigger("point");
     }
 
     IEnumerator FinalPunchEffect()
