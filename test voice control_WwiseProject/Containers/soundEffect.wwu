@@ -417,6 +417,7 @@
 				</Sound>
 				<Sound Name="jumphey" ID="{32CC95AA-BA1F-4CAD-862C-902892D918BC}" ShortID="83624772">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
