@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e722f34228af9e42aa4774e8b7b783f, type: 3}
+  m_Script: {fileID: 11500000, guid: bc5b4a1a6ced7bd4890dad0f1fe3b6ee, type: 3}
   m_Name: Windows
   m_EditorClassIdentifier: 
   IgnorePropertyNameList: []
@@ -131,7 +131,7 @@ MonoBehaviour:
     m_MaximumHardwareTimeoutMs: 1000
     m_DebugOutOfRangeCheckEnabled: 0
     m_DebugOutOfRangeLimit: 16
-    m_SuspendAudioDuringFocusLoss: 0
+    m_SuspendAudioDuringFocusLoss: 1
     m_RenderDuringFocusLoss: 0
     m_SoundBankPersistentDataPath: 
     m_UseSubFoldersForGeneratedFiles: 0

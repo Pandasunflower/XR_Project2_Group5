@@ -36,6 +36,7 @@ namespace AK
         static const AkUniqueID PLAY_ONPHONE = 4122281311U;
         static const AkUniqueID PLAY_SHOOT = 2641650631U;
         static const AkUniqueID PLAY_SPOTLIGHT = 1951773134U;
+        static const AkUniqueID PLAY_TEST = 3187507146U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_AUDIENCE = 2494639119U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_BGM = 3749606501U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_PEOPLE = 1319984948U;

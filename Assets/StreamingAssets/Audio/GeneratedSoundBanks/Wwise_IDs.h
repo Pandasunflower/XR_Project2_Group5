@@ -13,19 +13,39 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_AUDIENCE = 1245578140U;
-        static const AkUniqueID PLAY_FOOLCHILD = 1746368468U;
-        static const AkUniqueID PLAY_FOOLCHILD_BACKGROUND = 2530940211U;
+        static const AkUniqueID PLAY_ASKFORMONEY = 3118526426U;
+        static const AkUniqueID PLAY_BULLETS_HIT = 3288810203U;
+        static const AkUniqueID PLAY_CLAPPING = 2700014240U;
+        static const AkUniqueID PLAY_DANCINGGIRL = 509118324U;
+        static const AkUniqueID PLAY_DAVEWANG = 3205629941U;
+        static const AkUniqueID PLAY_END = 2472290785U;
+        static const AkUniqueID PLAY_FOOLCHILD_BGM = 1314294175U;
+        static const AkUniqueID PLAY_FOOLCHILD_PEOPLE = 560573542U;
         static const AkUniqueID PLAY_FOR_THE_ANNA = 2949967820U;
         static const AkUniqueID PLAY_FOR_THE_BGM = 3942408572U;
-        static const AkUniqueID PLAY_ONEGAME_BGM = 310033319U;
-        static const AkUniqueID PLAY_ONEGAME_PEOPLE = 2328321422U;
-        static const AkUniqueID PLAY_THREEDAY_BGM = 2733610967U;
-        static const AkUniqueID PLAY_THREEDAY_PEOPLE = 1286022046U;
+        static const AkUniqueID PLAY_FROZEN = 3459025660U;
+        static const AkUniqueID PLAY_GODOWNSTAGE = 2087262618U;
+        static const AkUniqueID PLAY_HORN = 2956245481U;
+        static const AkUniqueID PLAY_HORN2 = 1275111929U;
+        static const AkUniqueID PLAY_JACKYUBER = 1539366728U;
+        static const AkUniqueID PLAY_JUMPHEY = 2102220028U;
+        static const AkUniqueID PLAY_MOTOROFF = 3120712028U;
+        static const AkUniqueID PLAY_MOTORON = 3693985302U;
+        static const AkUniqueID PLAY_ONEGAMEONEDREAM_BGM = 4065753090U;
+        static const AkUniqueID PLAY_ONEGAMEONEDREAM_PEOPLE = 806402365U;
+        static const AkUniqueID PLAY_ONPHONE = 4122281311U;
+        static const AkUniqueID PLAY_SHOOT = 2641650631U;
+        static const AkUniqueID PLAY_SPOTLIGHT = 1951773134U;
+        static const AkUniqueID PLAY_THREEDAYTHREENIGHT_AUDIENCE = 2494639119U;
+        static const AkUniqueID PLAY_THREEDAYTHREENIGHT_BGM = 3749606501U;
+        static const AkUniqueID PLAY_THREEDAYTHREENIGHT_PEOPLE = 1319984948U;
+        static const AkUniqueID PLAY_WAITINGSCORE = 469006591U;
+        static const AkUniqueID PLAY_YELL = 793661728U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID ACCIDENT = 1749433486U;
         static const AkUniqueID AUDIENCE_PICKUP = 658503054U;
         static const AkUniqueID MIC_DIRECT = 1163235330U;
         static const AkUniqueID MIC_DISTANCE = 2692235896U;
@@ -39,7 +59,12 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID ACCIDENTBUS = 2120751940U;
+        static const AkUniqueID AUDIENCE = 2854002871U;
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
+        static const AkUniqueID SONGBUS = 1401307552U;
+        static const AkUniqueID STAGE1 = 936729722U;
+        static const AkUniqueID STAGE3 = 936729720U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

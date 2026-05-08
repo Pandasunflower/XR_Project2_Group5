@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
     "Language": "English(US)",
-    "Hash": "{80A31252-7600-22DA-3E1B-95BABED1A612}",
+    "Hash": "{F33ABB1A-3009-6B80-C02E-F5B9C876DB19}",
     "ObjectPath": "Play_ThreeDayThreeNight_people",
     "ShortName": "Play_ThreeDayThreeNight_people",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_people.bnk",
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{03684262-DED7-437A-B504-DE1A43E76DC0}"
+  "FileHash": "{EE486AC0-4F1D-885A-1930-456ABFCDCA2E}"
  }
 }

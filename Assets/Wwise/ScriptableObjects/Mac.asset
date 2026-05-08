@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af3e1a8114d7c2b49a559273e018db66, type: 3}
+  m_Script: {fileID: 11500000, guid: 84d3c3a58dee3bd4693eb56796e823aa, type: 3}
   m_Name: Mac
   m_EditorClassIdentifier: 
   IgnorePropertyNameList: []
@@ -131,7 +131,7 @@ MonoBehaviour:
     m_MaximumHardwareTimeoutMs: 1000
     m_DebugOutOfRangeCheckEnabled: 0
     m_DebugOutOfRangeLimit: 16
-    m_SuspendAudioDuringFocusLoss: 0
+    m_SuspendAudioDuringFocusLoss: 1
     m_RenderDuringFocusLoss: 0
     m_SoundBankPersistentDataPath: 
     m_UseSubFoldersForGeneratedFiles: 0

@@ -301,7 +301,7 @@
     "Type": "Event",
     "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
     "Language": "English(US)",
-    "Hash": "{80A31252-7600-22DA-3E1B-95BABED1A612}",
+    "Hash": "{F33ABB1A-3009-6B80-C02E-F5B9C876DB19}",
     "ObjectPath": "Play_ThreeDayThreeNight_people",
     "ShortName": "Play_ThreeDayThreeNight_people",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_people.bnk",
@@ -957,6 +957,41 @@
     ]
    },
    {
+    "Id": "3187507146",
+    "Type": "Event",
+    "GUID": "{88202C87-D72D-48C6-87C0-85C3A437EA61}",
+    "Language": "English(US)",
+    "Hash": "{6FCD7E10-E6DA-C075-3E95-03CFA344F190}",
+    "ObjectPath": "Play_test",
+    "ShortName": "Play_test",
+    "Path": "Event/English(US)/Play_test.bnk",
+    "Media": [
+     {
+      "Id": "655813830",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "askForMoney.wav",
+      "Path": "Media/English(US)/655813830.wem",
+      "CachePath": "92/{929DF6A5-97B3-6BC6-CABE-5845D69CD234}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3187507146",
+      "Name": "Play_test",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_test",
+      "GUID": "{88202C87-D72D-48C6-87C0-85C3A437EA61}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "655813830"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "3205629941",
     "Type": "Event",
     "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
@@ -1245,6 +1280,6 @@
     ]
    }
   ],
-  "FileHash": "{198FD0FA-0DD1-6E8D-308B-C35A65EB3CCC}"
+  "FileHash": "{1ED4AA04-0BD4-4464-EB8B-680BBBE3F445}"
  }
 }

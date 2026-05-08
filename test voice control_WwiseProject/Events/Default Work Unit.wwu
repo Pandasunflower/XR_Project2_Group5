@@ -311,6 +311,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_test" ID="{88202C87-D72D-48C6-87C0-85C3A437EA61}">
+					<ChildrenList>
+						<Action Name="" ID="{08792FA9-3D22-4C9C-B252-4F682B377830}" ShortID="52039313">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="askForMoney" ID="{55376C7C-42A3-49C9-BCC9-966FAD853440}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
