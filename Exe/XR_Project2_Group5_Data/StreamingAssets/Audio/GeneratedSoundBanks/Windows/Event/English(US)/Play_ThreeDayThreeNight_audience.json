@@ -1,0 +1,62 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2494639119",
+    "Type": "Event",
+    "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
+    "Language": "English(US)",
+    "Hash": "{59C0D8BA-E3C1-F283-3B89-0BD2774C3241}",
+    "ObjectPath": "Play_ThreeDayThreeNight_audience",
+    "ShortName": "Play_ThreeDayThreeNight_audience",
+    "Path": "Event/English(US)/Play_ThreeDayThreeNight_audience.bnk",
+    "Media": [
+     {
+      "Id": "399826449",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜 觀眾V2.wav",
+      "Path": "Media/English(US)/399826449.wem",
+      "CachePath": "86/{8611C4E6-815C-1740-E563-A88DDA345B2D}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2494639119",
+      "Name": "Play_ThreeDayThreeNight_audience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_audience",
+      "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
+      "DurationType": "OneShot",
+      "DurationMin": "282.288",
+      "DurationMax": "282.288",
+      "MediaRefs": [
+       {
+        "Id": "399826449"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{AB6317D2-3D7C-F64F-D9EC-BEF51FCB00DA}"
+ }
+}

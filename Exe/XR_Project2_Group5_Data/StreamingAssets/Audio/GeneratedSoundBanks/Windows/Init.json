@@ -1,0 +1,144 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{AFB48569-2F75-4F99-5003-DAA132C519B3}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1706684651",
+       "Name": "Plate_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Plates\\Plate_Medium",
+       "GUID": "{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "1990128658",
+       "Name": "Room_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium",
+       "GUID": "{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Devices\\Default Work Unit\\No_Output",
+       "GUID": "{B1D4A15F-50FD-4AF5-961A-069801F1947E}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Devices\\Default Work Unit\\System",
+       "GUID": "{D92EFB54-58AC-45A6-B973-A66EAF1EE99C}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "936729720",
+      "Name": "stage3",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\stage3",
+      "GUID": "{3489EC20-BA19-4B1E-BB91-7257005D0D57}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1990128658"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "936729722",
+      "Name": "stage1",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\stage1",
+      "GUID": "{90FE9495-11ED-40C5-9A86-581F6B5EC299}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1990128658"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1401307552",
+      "Name": "SongBus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SongBus",
+      "GUID": "{3E610D54-4975-44FC-9068-A1B1E2DACEE6}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1706684651"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2120751940",
+      "Name": "AccidentBus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\AccidentBus",
+      "GUID": "{751D5068-10BD-4D8C-AE85-3517F0AD927F}"
+     },
+     {
+      "Id": "2246998526",
+      "Name": "Main Audio Bus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "2854002871",
+      "Name": "audience",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\audience",
+      "GUID": "{103CB983-C59F-4C8F-9ACA-AFF182E11667}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "658503054",
+      "Name": "audience_pickup",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\audience_pickup",
+      "GUID": "{63331C15-0F86-42B0-8B64-7C7C81717607}"
+     },
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "1749433486",
+      "Name": "accident",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\accident",
+      "GUID": "{B040BC2D-CFD4-4EDC-AFA7-B9132C01A29E}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6D6B6250-FFBE-ACBC-1AAB-74C7651BEBF6}"
+ }
+}

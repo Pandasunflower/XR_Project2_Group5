@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3693985302",
+    "Type": "Event",
+    "GUID": "{E49946A0-81D0-4D24-8E8A-E41770703AD4}",
+    "Language": "English(US)",
+    "Hash": "{80FE67B0-60B6-A0C3-CEC0-86BB51ACACB8}",
+    "ObjectPath": "Play_motorOn",
+    "ShortName": "Play_motorOn",
+    "Path": "Event/English(US)/Play_motorOn.bnk",
+    "Media": [
+     {
+      "Id": "56369884",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "motorOn.wav",
+      "Path": "Media/English(US)/56369884.wem",
+      "CachePath": "09/{09FDFF86-517C-92ED-0077-0EDED4C2E22F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3693985302",
+      "Name": "Play_motorOn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_motorOn",
+      "GUID": "{E49946A0-81D0-4D24-8E8A-E41770703AD4}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "56369884"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2BC19F6C-5AE1-8878-15B7-C128660C4A7C}"
+ }
+}

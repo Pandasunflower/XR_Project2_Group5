@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3120712028",
+    "Type": "Event",
+    "GUID": "{E1A68987-6AC7-48F5-BAF6-28E511938D94}",
+    "Language": "English(US)",
+    "Hash": "{68411B07-CF03-750E-4B13-081F438B6B33}",
+    "ObjectPath": "Play_motorOff",
+    "ShortName": "Play_motorOff",
+    "Path": "Event/English(US)/Play_motorOff.bnk",
+    "Media": [
+     {
+      "Id": "990449826",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "motorOff.wav",
+      "Path": "Media/English(US)/990449826.wem",
+      "CachePath": "23/{2375AE86-731D-7B4E-FB5E-BED3B127C1E7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3120712028",
+      "Name": "Play_motorOff",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_motorOff",
+      "GUID": "{E1A68987-6AC7-48F5-BAF6-28E511938D94}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.264896",
+      "DurationMax": "4.264896",
+      "MediaRefs": [
+       {
+        "Id": "990449826"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EB501DB6-0089-3E19-CC46-065CD9B5EFCE}"
+ }
+}

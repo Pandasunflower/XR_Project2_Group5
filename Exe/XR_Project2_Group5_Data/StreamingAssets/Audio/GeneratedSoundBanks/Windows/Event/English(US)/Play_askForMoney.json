@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3118526426",
+    "Type": "Event",
+    "GUID": "{B327097A-BABB-4A3B-8122-65CE6342F7AB}",
+    "Language": "English(US)",
+    "Hash": "{3CF3D04E-9F66-B995-0E19-A5A46D9EA6F5}",
+    "ObjectPath": "Play_askForMoney",
+    "ShortName": "Play_askForMoney",
+    "Path": "Event/English(US)/Play_askForMoney.bnk",
+    "Media": [
+     {
+      "Id": "655813830",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "askForMoney.wav",
+      "Path": "Media/English(US)/655813830.wem",
+      "CachePath": "92/{929DF6A5-97B3-6BC6-CABE-5845D69CD234}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3118526426",
+      "Name": "Play_askForMoney",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_askForMoney",
+      "GUID": "{B327097A-BABB-4A3B-8122-65CE6342F7AB}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "655813830"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EACC4E4C-AF80-D4C2-0242-F106947640D5}"
+ }
+}

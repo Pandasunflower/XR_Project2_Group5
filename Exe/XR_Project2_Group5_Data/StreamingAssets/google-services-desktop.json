@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "224259278973",
+    "project_id": "roadtogrammy-28015",
+    "storage_bucket": "roadtogrammy-28015.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224259278973:android:484dc8b97a76412ac0c914",
+        "android_client_info": {
+          "package_name": "com.company.roadtogrammy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApNzirSKsMGH2_hSpkZbVP4hCDfoW4068"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224259278973:android:fc3586b8786a0712c0c914",
+        "android_client_info": {
+          "package_name": "com.roadtogrammy.vote"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApNzirSKsMGH2_hSpkZbVP4hCDfoW4068"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

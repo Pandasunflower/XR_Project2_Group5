@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "793661728",
+    "Type": "Event",
+    "GUID": "{124A57DF-150E-4619-B100-F7A37ABEC85F}",
+    "Language": "English(US)",
+    "Hash": "{FED50761-ABB3-8444-D740-57F37C151362}",
+    "ObjectPath": "Play_yell",
+    "ShortName": "Play_yell",
+    "Path": "Event/English(US)/Play_yell.bnk",
+    "Media": [
+     {
+      "Id": "654614919",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "yell.wav",
+      "Path": "Media/English(US)/654614919.wem",
+      "CachePath": "70/{702CD9D7-EEF8-0845-3495-18D71FCC5404}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "793661728",
+      "Name": "Play_yell",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_yell",
+      "GUID": "{124A57DF-150E-4619-B100-F7A37ABEC85F}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "654614919"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1E8944F5-1D6A-9192-0C95-196F52E3CBB8}"
+ }
+}

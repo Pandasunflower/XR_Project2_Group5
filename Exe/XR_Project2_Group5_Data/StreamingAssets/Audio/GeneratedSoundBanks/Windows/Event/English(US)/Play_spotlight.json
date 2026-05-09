@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1951773134",
+    "Type": "Event",
+    "GUID": "{E1312B0E-01A1-4C5E-812D-C62E24711553}",
+    "Language": "English(US)",
+    "Hash": "{BAD9C26A-09F5-464B-6C17-224B094FB821}",
+    "ObjectPath": "Play_spotlight",
+    "ShortName": "Play_spotlight",
+    "Path": "Event/English(US)/Play_spotlight.bnk",
+    "Media": [
+     {
+      "Id": "362176217",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "spotlight.wav",
+      "Path": "Media/English(US)/362176217.wem",
+      "CachePath": "FB/{FBE66F06-C38B-D86C-9DAA-3FF2D353A9AB}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1951773134",
+      "Name": "Play_spotlight",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_spotlight",
+      "GUID": "{E1312B0E-01A1-4C5E-812D-C62E24711553}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0002291",
+      "DurationMax": "1.0002291",
+      "MediaRefs": [
+       {
+        "Id": "362176217"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C0342F71-03BF-20FD-E1B8-A203C76A4610}"
+ }
+}

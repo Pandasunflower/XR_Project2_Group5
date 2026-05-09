@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4065753090	Play_OneGameOneDream_BGM			\Default Work Unit\Play_OneGameOneDream_BGM	
+

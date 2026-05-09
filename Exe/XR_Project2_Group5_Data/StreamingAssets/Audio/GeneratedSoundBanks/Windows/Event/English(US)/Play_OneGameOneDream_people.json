@@ -1,0 +1,62 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "806402365",
+    "Type": "Event",
+    "GUID": "{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}",
+    "Language": "English(US)",
+    "Hash": "{6867A7E6-8590-A7FC-7172-F82B787EC04A}",
+    "ObjectPath": "Play_OneGameOneDream_people",
+    "ShortName": "Play_OneGameOneDream_people",
+    "Path": "Event/English(US)/Play_OneGameOneDream_people.bnk",
+    "Media": [
+     {
+      "Id": "59556136",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "一場遊戲一場夢_人聲.wav",
+      "Path": "Media/English(US)/59556136.wem",
+      "CachePath": "85/{852E964E-74F1-E75B-F106-9122C5F4ECF0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "806402365",
+      "Name": "Play_OneGameOneDream_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_OneGameOneDream_people",
+      "GUID": "{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}",
+      "DurationType": "OneShot",
+      "DurationMin": "183.0398",
+      "DurationMax": "183.0398",
+      "MediaRefs": [
+       {
+        "Id": "59556136"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2E580740-88C3-12CB-8BF2-1C54862F3C17}"
+ }
+}
