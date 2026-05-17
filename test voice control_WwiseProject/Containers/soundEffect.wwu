@@ -3,449 +3,461 @@
 	<Containers>
 		<WorkUnit Name="soundEffect" ID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="王ADEN" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" ShortID="435951110">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-3</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
+				<Folder Name="第一關" ID="{226CA7E3-6AEF-48E0-94B1-99A01C033585}" ShortID="712900104">
 					<ChildrenList>
-						<AudioFileSource Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{950A751E-8DD9-4924-9D7C-D001903988FC}">
-							<Language>English(US)</Language>
-							<AudioFile>王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="611412987"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="GoDownStage" ID="{6E9CB498-29F0-47E9-9035-A306D4639FFC}" ShortID="919145263">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GoDownStage" ID="{C297D3D5-F8FE-4356-9CEB-DAB688F6746C}">
+									<Language>English(US)</Language>
+									<AudioFile>GoDownStage.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="464577955"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GoDownStage" ID="{C297D3D5-F8FE-4356-9CEB-DAB688F6746C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="clapping" ID="{DC780770-AE2E-4465-9670-A4573DD05FD1}" ShortID="855355516">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="clapping" ID="{FE8B6F07-B7F2-4E6C-AAFA-66391F2A35FB}">
+									<Language>English(US)</Language>
+									<AudioFile>clapping.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="611769857"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="clapping" ID="{FE8B6F07-B7F2-4E6C-AAFA-66391F2A35FB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="spotlight" ID="{D1EA7769-9858-4A10-B2A1-353E4086A8FD}" ShortID="921745184">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="spotlight" ID="{3EE4E8F9-C901-414D-8618-08803F08CDCF}">
+									<Language>English(US)</Language>
+									<AudioFile>spotlight.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="362176217"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="spotlight" ID="{3EE4E8F9-C901-414D-8618-08803F08CDCF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="waitingScore" ID="{167805B0-9A31-48EB-898B-2381C12CD4B7}" ShortID="58397997">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="waitingScore" ID="{AA8219F6-9714-46C0-AE71-BE4899E495CE}">
+									<Language>English(US)</Language>
+									<AudioFile>waitingScore.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="892712706"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="waitingScore" ID="{AA8219F6-9714-46C0-AE71-BE4899E495CE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{950A751E-8DD9-4924-9D7C-D001903988FC}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="汽笛鬧場" ID="{12236449-4CC6-470F-AE05-F88231D9AFA4}" ShortID="775918290">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-5</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
+				</Folder>
+				<Folder Name="第二關" ID="{53D866C5-0455-48A4-80BB-6B40A5C49F3B}" ShortID="870287539">
 					<ChildrenList>
-						<AudioFileSource Name="汽笛鬧場" ID="{E73F090E-F412-4358-80CA-D3E0A7FB6B81}">
-							<Language>English(US)</Language>
-							<AudioFile>汽笛鬧場.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="242180107"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="askForMoney" ID="{55376C7C-42A3-49C9-BCC9-966FAD853440}" ShortID="567683370">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="askForMoney" ID="{91E7E49C-90EE-435C-8A1F-F39BA50B2634}">
+									<Language>English(US)</Language>
+									<AudioFile>askForMoney.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="655813830"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="askForMoney" ID="{91E7E49C-90EE-435C-8A1F-F39BA50B2634}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="horn2" ID="{FEEDD061-33D0-4207-B126-A8EA1C56ECF3}" ShortID="474790138">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="horn2" ID="{7ED72BF7-740B-4343-AA05-321E81F712C0}">
+									<Language>English(US)</Language>
+									<AudioFile>horn2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="136836942"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="horn2" ID="{7ED72BF7-740B-4343-AA05-321E81F712C0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="JackyUber" ID="{D842B275-7171-4CAC-887B-21460F10183D}" ShortID="969414079">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="JackyUber" ID="{617CA67E-FBE1-419C-8B7F-ED643A04CD59}">
+									<Language>English(US)</Language>
+									<AudioFile>JackyUber.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="902117724"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="JackyUber" ID="{617CA67E-FBE1-419C-8B7F-ED643A04CD59}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="motorOff" ID="{3448FA98-845C-41BB-B31D-6F818C80F541}" ShortID="295699423">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="motorOff" ID="{EA2013E9-ABD0-4135-BB41-87D55DC21F47}">
+									<Language>English(US)</Language>
+									<AudioFile>motorOff.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="990449826"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="motorOff" ID="{EA2013E9-ABD0-4135-BB41-87D55DC21F47}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="motorOn" ID="{1E2EAE53-43DA-47B6-BB19-4F95CC77134A}" ShortID="757323858">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="motorOn" ID="{493E5405-B7DD-4390-9187-ACBBD205DCF6}">
+									<Language>English(US)</Language>
+									<AudioFile>motorOn.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="56369884"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="motorOn" ID="{493E5405-B7DD-4390-9187-ACBBD205DCF6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="shoot" ID="{6A624D2A-2E07-4E82-87CA-BEE6BFCC994D}" ShortID="27702647">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="shoot" ID="{4CF736CA-99DB-4FFF-AA58-F0D70133D719}">
+									<Language>English(US)</Language>
+									<AudioFile>shoot.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="742584192"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="shoot" ID="{4CF736CA-99DB-4FFF-AA58-F0D70133D719}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="yell" ID="{FB183C7D-2E1A-4A52-A801-63BC808BE1FD}" ShortID="316864234">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="yell" ID="{1A5631F9-A83C-4A36-B1D0-04AFB02F6572}">
+									<Language>English(US)</Language>
+									<AudioFile>yell.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="654614919"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="yell" ID="{1A5631F9-A83C-4A36-B1D0-04AFB02F6572}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="子彈射到的聲音" ID="{1B96CACF-6151-4E69-A217-6BA939E04A26}" ShortID="909089388">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="子彈射到的聲音" ID="{8F461CCB-DEBB-469C-82F7-C47847BF04CD}">
+									<Language>English(US)</Language>
+									<AudioFile>子彈射到的聲音.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="332869829"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="子彈射到的聲音" ID="{8F461CCB-DEBB-469C-82F7-C47847BF04CD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="汽笛鬧場" ID="{12236449-4CC6-470F-AE05-F88231D9AFA4}" ShortID="775918290">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="汽笛鬧場" ID="{E73F090E-F412-4358-80CA-D3E0A7FB6B81}">
+									<Language>English(US)</Language>
+									<AudioFile>汽笛鬧場.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="242180107"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="汽笛鬧場" ID="{E73F090E-F412-4358-80CA-D3E0A7FB6B81}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="王ADEN" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" ShortID="435951110">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{950A751E-8DD9-4924-9D7C-D001903988FC}">
+									<Language>English(US)</Language>
+									<AudioFile>王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="611412987"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="王ADEN -【雙重人格 Different Personalities】Music Video-Trimmed by FlexClip" ID="{950A751E-8DD9-4924-9D7C-D001903988FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="onPhone" ID="{BFFABDF1-2550-4C6A-9662-C737BD4348FA}" ShortID="992400675">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="onPhone" ID="{747AC147-817D-4B02-AE9B-AC6A56D3704A}">
+									<Language>English(US)</Language>
+									<AudioFile>onPhone.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="630520721"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="onPhone" ID="{747AC147-817D-4B02-AE9B-AC6A56D3704A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="汽笛鬧場" ID="{E73F090E-F412-4358-80CA-D3E0A7FB6B81}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="spotlight" ID="{D1EA7769-9858-4A10-B2A1-353E4086A8FD}" ShortID="921745184">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
+				</Folder>
+				<Folder Name="第三關" ID="{7866F6E1-03FA-455A-8F25-C8595EC82622}" ShortID="109246839">
 					<ChildrenList>
-						<AudioFileSource Name="spotlight" ID="{3EE4E8F9-C901-414D-8618-08803F08CDCF}">
-							<Language>English(US)</Language>
-							<AudioFile>spotlight.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="362176217"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="jumphey" ID="{32CC95AA-BA1F-4CAD-862C-902892D918BC}" ShortID="83624772">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="jumphey" ID="{794F866D-159C-4C6D-8945-35EC70888A92}">
+									<Language>English(US)</Language>
+									<AudioFile>jumphey.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="391161705"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="jumphey" ID="{794F866D-159C-4C6D-8945-35EC70888A92}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="spotlight" ID="{3EE4E8F9-C901-414D-8618-08803F08CDCF}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="onPhone" ID="{BFFABDF1-2550-4C6A-9662-C737BD4348FA}" ShortID="992400675">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="onPhone" ID="{747AC147-817D-4B02-AE9B-AC6A56D3704A}">
-							<Language>English(US)</Language>
-							<AudioFile>onPhone.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="630520721"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="onPhone" ID="{747AC147-817D-4B02-AE9B-AC6A56D3704A}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="askForMoney" ID="{55376C7C-42A3-49C9-BCC9-966FAD853440}" ShortID="567683370">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="askForMoney" ID="{91E7E49C-90EE-435C-8A1F-F39BA50B2634}">
-							<Language>English(US)</Language>
-							<AudioFile>askForMoney.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="655813830"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="askForMoney" ID="{91E7E49C-90EE-435C-8A1F-F39BA50B2634}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="horn2" ID="{FEEDD061-33D0-4207-B126-A8EA1C56ECF3}" ShortID="474790138">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="horn2" ID="{7ED72BF7-740B-4343-AA05-321E81F712C0}">
-							<Language>English(US)</Language>
-							<AudioFile>horn2.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="136836942"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="horn2" ID="{7ED72BF7-740B-4343-AA05-321E81F712C0}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="motorOff" ID="{3448FA98-845C-41BB-B31D-6F818C80F541}" ShortID="295699423">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="motorOff" ID="{EA2013E9-ABD0-4135-BB41-87D55DC21F47}">
-							<Language>English(US)</Language>
-							<AudioFile>motorOff.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="990449826"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="motorOff" ID="{EA2013E9-ABD0-4135-BB41-87D55DC21F47}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="motorOn" ID="{1E2EAE53-43DA-47B6-BB19-4F95CC77134A}" ShortID="757323858">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>2</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="motorOn" ID="{493E5405-B7DD-4390-9187-ACBBD205DCF6}">
-							<Language>English(US)</Language>
-							<AudioFile>motorOn.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="56369884"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="motorOn" ID="{493E5405-B7DD-4390-9187-ACBBD205DCF6}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="clapping" ID="{DC780770-AE2E-4465-9670-A4573DD05FD1}" ShortID="855355516">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="clapping" ID="{FE8B6F07-B7F2-4E6C-AAFA-66391F2A35FB}">
-							<Language>English(US)</Language>
-							<AudioFile>clapping.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="611769857"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="clapping" ID="{FE8B6F07-B7F2-4E6C-AAFA-66391F2A35FB}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="waitingScore" ID="{167805B0-9A31-48EB-898B-2381C12CD4B7}" ShortID="58397997">
-					<PropertyList>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="waitingScore" ID="{AA8219F6-9714-46C0-AE71-BE4899E495CE}">
-							<Language>English(US)</Language>
-							<AudioFile>waitingScore.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="892712706"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="waitingScore" ID="{AA8219F6-9714-46C0-AE71-BE4899E495CE}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="yell" ID="{FB183C7D-2E1A-4A52-A801-63BC808BE1FD}" ShortID="316864234">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-5</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="yell" ID="{1A5631F9-A83C-4A36-B1D0-04AFB02F6572}">
-							<Language>English(US)</Language>
-							<AudioFile>yell.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="654614919"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="yell" ID="{1A5631F9-A83C-4A36-B1D0-04AFB02F6572}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="子彈射到的聲音" ID="{1B96CACF-6151-4E69-A217-6BA939E04A26}" ShortID="909089388">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="子彈射到的聲音" ID="{8F461CCB-DEBB-469C-82F7-C47847BF04CD}">
-							<Language>English(US)</Language>
-							<AudioFile>子彈射到的聲音.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="332869829"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="子彈射到的聲音" ID="{8F461CCB-DEBB-469C-82F7-C47847BF04CD}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="shoot" ID="{6A624D2A-2E07-4E82-87CA-BEE6BFCC994D}" ShortID="27702647">
-					<PropertyList>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="AccidentBus" ID="{751D5068-10BD-4D8C-AE85-3517F0AD927F}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="shoot" ID="{4CF736CA-99DB-4FFF-AA58-F0D70133D719}">
-							<Language>English(US)</Language>
-							<AudioFile>shoot.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="742584192"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="shoot" ID="{4CF736CA-99DB-4FFF-AA58-F0D70133D719}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="JackyUber" ID="{D842B275-7171-4CAC-887B-21460F10183D}" ShortID="969414079">
-					<PropertyList>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="JackyUber" ID="{617CA67E-FBE1-419C-8B7F-ED643A04CD59}">
-							<Language>English(US)</Language>
-							<AudioFile>JackyUber.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="902117724"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="JackyUber" ID="{617CA67E-FBE1-419C-8B7F-ED643A04CD59}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="GoDownStage" ID="{6E9CB498-29F0-47E9-9035-A306D4639FFC}" ShortID="919145263">
-					<PropertyList>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="GoDownStage" ID="{C297D3D5-F8FE-4356-9CEB-DAB688F6746C}">
-							<Language>English(US)</Language>
-							<AudioFile>GoDownStage.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="464577955"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="GoDownStage" ID="{C297D3D5-F8FE-4356-9CEB-DAB688F6746C}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="jumphey" ID="{32CC95AA-BA1F-4CAD-862C-902892D918BC}" ShortID="83624772">
-					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-3</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="jumphey" ID="{794F866D-159C-4C6D-8945-35EC70888A92}">
-							<Language>English(US)</Language>
-							<AudioFile>jumphey.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="391161705"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="jumphey" ID="{794F866D-159C-4C6D-8945-35EC70888A92}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

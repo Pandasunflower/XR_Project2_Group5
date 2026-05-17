@@ -3,281 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_for_the_anna" ID="{D4F1D62B-DAC9-4787-9023-E8C9B30D847A}">
-					<ChildrenList>
-						<Action Name="" ID="{8B3AF93F-7904-4905-B69B-9D05C4FC64C3}" ShortID="463482369">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="for the anna" ID="{B09938C9-0D08-4DB0-B0FB-7626E6230E8C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_for_the_bgm" ID="{1F4C0BF4-3F3F-4305-B202-8A5365719BEE}">
-					<ChildrenList>
-						<Action Name="" ID="{D27B9F6A-A5F6-4C4D-953F-81B8114A7000}" ShortID="813084986">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="for the bgm" ID="{E2272ADD-B98B-4EB1-8887-AA82FBA47E4C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_foolChild_people" ID="{1A1B1320-52CA-40B8-BC12-7C170075809B}">
-					<ChildrenList>
-						<Action Name="" ID="{5B3CF7F6-BBC1-46D5-AD49-AEEB2856A18C}" ShortID="318994042">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="foolchild" ID="{4D58824B-3F7F-407E-8B34-7CBF47A4B6AD}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_foolChild_BGM" ID="{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}">
-					<ChildrenList>
-						<Action Name="" ID="{54FDB143-4683-4098-8BFD-72605C8ADF6A}" ShortID="401045924">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="foolchildBGM" ID="{E020E97D-73C9-4D06-91C6-99884B4C4C58}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_ThreeDayThreeNight_people" ID="{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}">
-					<ChildrenList>
-						<Action Name="" ID="{F2CB0C9E-143C-4424-B91A-33B7C7F1A0B0}" ShortID="109233461">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="三天三夜 人聲" ID="{218D143F-7EBC-4877-ACD1-63B1FEA5118C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_ThreeDayThreeNight_bgm" ID="{3F0E4D88-963B-4DF1-810B-45F061113D28}">
-					<ChildrenList>
-						<Action Name="" ID="{EB60C23B-64F3-4281-A32B-C0B653662B4A}" ShortID="700080990">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="三天三夜背景音" ID="{08557C71-7119-4D9F-AB76-E0303A607E59}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_OneGameOneDream_people" ID="{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}">
-					<ChildrenList>
-						<Action Name="" ID="{2C72F60C-718D-4CC0-ABBD-E91B29D8FE94}" ShortID="643823866">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="一場遊戲一場夢_人聲" ID="{C3A4726F-13CD-4E0A-9A2C-83F19CC878B6}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_OneGameOneDream_BGM" ID="{AC64EA27-5927-48B6-8CE8-0045F5ED9F87}">
-					<ChildrenList>
-						<Action Name="" ID="{C70F133F-BC70-4FF8-ADD1-424148C3302C}" ShortID="714635158">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="一場遊戲一場夢_背景音" ID="{16002C0B-5138-460F-8953-87CA33CF043F}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_DancingGirl" ID="{5EC2BBD7-962A-456A-8E86-68DAA8293C00}">
-					<ChildrenList>
-						<Action Name="" ID="{9A44814D-6BC2-4417-9439-9F155962DF2E}" ShortID="86343542">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="王ADEN" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_horn" ID="{72052F8E-22CE-458C-9329-E6CD2921C343}">
-					<ChildrenList>
-						<Action Name="" ID="{1B68D764-772D-4139-9A3A-15EB71CADCE1}" ShortID="192219724">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="汽笛鬧場" ID="{12236449-4CC6-470F-AE05-F88231D9AFA4}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_spotlight" ID="{E1312B0E-01A1-4C5E-812D-C62E24711553}">
-					<ChildrenList>
-						<Action Name="" ID="{A09C4A4B-2E69-44D6-BBC5-8A36F6BEDCBD}" ShortID="898427843">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="spotlight" ID="{D1EA7769-9858-4A10-B2A1-353E4086A8FD}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_onPhone" ID="{59185CB8-C182-451B-8A67-CC5309B5A4B4}">
-					<ChildrenList>
-						<Action Name="" ID="{FF4AFAE5-9A6C-4299-A5DE-ED1EFBC8DB3A}" ShortID="325269348">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="onPhone" ID="{BFFABDF1-2550-4C6A-9662-C737BD4348FA}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_askForMoney" ID="{B327097A-BABB-4A3B-8122-65CE6342F7AB}">
-					<ChildrenList>
-						<Action Name="" ID="{C5286CAF-1500-4220-885B-D1FA4CC9A235}" ShortID="940875921">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="askForMoney" ID="{55376C7C-42A3-49C9-BCC9-966FAD853440}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_horn2" ID="{36E3AFB4-4844-40B5-BBBE-070B93625226}">
-					<ChildrenList>
-						<Action Name="" ID="{C8426993-2F16-425F-8093-FFC26C720756}" ShortID="896677663">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="horn2" ID="{FEEDD061-33D0-4207-B126-A8EA1C56ECF3}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_motorOff" ID="{E1A68987-6AC7-48F5-BAF6-28E511938D94}">
-					<ChildrenList>
-						<Action Name="" ID="{402F0753-0795-44B4-8A7C-4C06533881B0}" ShortID="305904296">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="motorOff" ID="{3448FA98-845C-41BB-B31D-6F818C80F541}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_motorOn" ID="{E49946A0-81D0-4D24-8E8A-E41770703AD4}">
-					<ChildrenList>
-						<Action Name="" ID="{9347D720-54B7-4E99-997F-B4682219F671}" ShortID="711155898">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="motorOn" ID="{1E2EAE53-43DA-47B6-BB19-4F95CC77134A}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_clapping" ID="{6790B5D1-392B-440E-9BEF-CBB1ED2862B1}">
-					<ChildrenList>
-						<Action Name="" ID="{890C46EF-D629-4F22-840C-7FF38444E199}" ShortID="1024410379">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="clapping" ID="{DC780770-AE2E-4465-9670-A4573DD05FD1}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_waitingScore" ID="{E6A32843-0796-4165-9705-E9A684A6259B}">
-					<ChildrenList>
-						<Action Name="" ID="{C11B805A-D499-4021-B12E-D5658F18D88F}" ShortID="555179060">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="waitingScore" ID="{167805B0-9A31-48EB-898B-2381C12CD4B7}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_ThreeDayThreeNight_audience" ID="{F8CF7561-A27F-4953-B271-C41277A86D43}">
-					<ChildrenList>
-						<Action Name="" ID="{DBF916CF-333A-443C-8BDD-68D2B24618DF}" ShortID="921768460">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="三天三夜 觀眾V2" ID="{65330A94-1C63-418B-B7FE-84A8993435EE}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_yell" ID="{124A57DF-150E-4619-B100-F7A37ABEC85F}">
-					<ChildrenList>
-						<Action Name="" ID="{35A2E4D7-ACB8-4614-A8B3-4707B9C1CC2E}" ShortID="781182118">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="yell" ID="{FB183C7D-2E1A-4A52-A801-63BC808BE1FD}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_frozen" ID="{EDC31231-87C0-4A94-B929-19FEE3102348}">
-					<ChildrenList>
-						<Action Name="" ID="{8E3EB0E8-20D0-4C0F-A57C-99067A7B350C}" ShortID="1056960493">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="for-the-first-time-in-forever-from-frozensing-along" ID="{C879FEB3-7C5A-4358-8055-CC146EE68308}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_davewang" ID="{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}">
-					<ChildrenList>
-						<Action Name="" ID="{DAFA9F65-8708-409C-B5D2-4F17ACF1B118}" ShortID="451087153">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="王傑-一場遊戲一場夢" ID="{B2DB6388-0E32-40A1-A93A-1345B31B6D32}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Bullets_hit" ID="{90F1FFC7-FC3C-427D-B2BD-37DCA1E69A56}">
-					<ChildrenList>
-						<Action Name="" ID="{2F54B6C1-8B22-4D98-A1E8-6C3D383C1121}" ShortID="949516426">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="子彈射到的聲音" ID="{1B96CACF-6151-4E69-A217-6BA939E04A26}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_shoot" ID="{D4C6724F-85DF-412E-BEDC-B34A7CF8FA9E}">
-					<ChildrenList>
-						<Action Name="" ID="{9FF7CB21-9490-46D0-A53B-20ABB4C3A81D}" ShortID="496628387">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="shoot" ID="{6A624D2A-2E07-4E82-87CA-BEE6BFCC994D}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_JackyUber" ID="{A6100C5F-9413-41F7-A1B6-F40C32FF13BA}">
-					<ChildrenList>
-						<Action Name="" ID="{B98D50A8-9B00-40BD-AAA9-9ADA6440BEF0}" ShortID="326009561">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="JackyUber" ID="{D842B275-7171-4CAC-887B-21460F10183D}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_end" ID="{65337E20-B487-4104-B695-E793D0E72917}">
 					<ChildrenList>
 						<Action Name="" ID="{42FC422E-0F09-41DC-ACB3-694C40489420}" ShortID="862459071">
@@ -289,39 +14,339 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_GoDownStage" ID="{C5F9DB79-C0C2-434E-9528-C47444499F09}">
+				<Folder Name="第一關" ID="{85F14933-0796-48A2-A253-5F5ED500D510}" ShortID="320228695">
 					<ChildrenList>
-						<Action Name="" ID="{E02719CA-6CB2-40D4-AAE6-E4197125A464}" ShortID="446944771">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="GoDownStage" ID="{6E9CB498-29F0-47E9-9035-A306D4639FFC}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Folder Name="音樂" ID="{B9F97E60-C856-477F-9F56-A65705F7E140}" ShortID="728028798">
+							<ChildrenList>
+								<Event Name="Play_for_the_anna" ID="{D4F1D62B-DAC9-4787-9023-E8C9B30D847A}">
+									<ChildrenList>
+										<Action Name="" ID="{8B3AF93F-7904-4905-B69B-9D05C4FC64C3}" ShortID="463482369">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="for the anna" ID="{B09938C9-0D08-4DB0-B0FB-7626E6230E8C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_for_the_bgm" ID="{1F4C0BF4-3F3F-4305-B202-8A5365719BEE}">
+									<ChildrenList>
+										<Action Name="" ID="{D27B9F6A-A5F6-4C4D-953F-81B8114A7000}" ShortID="813084986">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="for the bgm" ID="{E2272ADD-B98B-4EB1-8887-AA82FBA47E4C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_OneGameOneDream_BGM" ID="{AC64EA27-5927-48B6-8CE8-0045F5ED9F87}">
+									<ChildrenList>
+										<Action Name="" ID="{C70F133F-BC70-4FF8-ADD1-424148C3302C}" ShortID="714635158">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="一場遊戲一場夢_背景音" ID="{16002C0B-5138-460F-8953-87CA33CF043F}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_OneGameOneDream_people" ID="{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}">
+									<ChildrenList>
+										<Action Name="" ID="{2C72F60C-718D-4CC0-ABBD-E91B29D8FE94}" ShortID="643823866">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="一場遊戲一場夢_人聲" ID="{C3A4726F-13CD-4E0A-9A2C-83F19CC878B6}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="音效" ID="{91C79C0C-9373-41FE-9B86-D03F073CD426}" ShortID="413273878">
+							<ChildrenList>
+								<Event Name="Play_clapping" ID="{6790B5D1-392B-440E-9BEF-CBB1ED2862B1}">
+									<ChildrenList>
+										<Action Name="" ID="{890C46EF-D629-4F22-840C-7FF38444E199}" ShortID="1024410379">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="clapping" ID="{DC780770-AE2E-4465-9670-A4573DD05FD1}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_GoDownStage" ID="{C5F9DB79-C0C2-434E-9528-C47444499F09}">
+									<ChildrenList>
+										<Action Name="" ID="{E02719CA-6CB2-40D4-AAE6-E4197125A464}" ShortID="446944771">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GoDownStage" ID="{6E9CB498-29F0-47E9-9035-A306D4639FFC}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_spotlight" ID="{E1312B0E-01A1-4C5E-812D-C62E24711553}">
+									<ChildrenList>
+										<Action Name="" ID="{A09C4A4B-2E69-44D6-BBC5-8A36F6BEDCBD}" ShortID="898427843">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="spotlight" ID="{D1EA7769-9858-4A10-B2A1-353E4086A8FD}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_waitingScore" ID="{E6A32843-0796-4165-9705-E9A684A6259B}">
+									<ChildrenList>
+										<Action Name="" ID="{C11B805A-D499-4021-B12E-D5658F18D88F}" ShortID="555179060">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="waitingScore" ID="{167805B0-9A31-48EB-898B-2381C12CD4B7}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Play_davewang" ID="{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}">
+							<ChildrenList>
+								<Action Name="" ID="{DAFA9F65-8708-409C-B5D2-4F17ACF1B118}" ShortID="451087153">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="王傑-一場遊戲一場夢" ID="{B2DB6388-0E32-40A1-A93A-1345B31B6D32}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_frozen" ID="{EDC31231-87C0-4A94-B929-19FEE3102348}">
+							<ChildrenList>
+								<Action Name="" ID="{8E3EB0E8-20D0-4C0F-A57C-99067A7B350C}" ShortID="1056960493">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="for-the-first-time-in-forever-from-frozensing-along" ID="{C879FEB3-7C5A-4358-8055-CC146EE68308}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_jumphey" ID="{D778E0C0-F555-4959-8D20-BAFD280C1570}">
+				</Folder>
+				<Folder Name="第二關" ID="{4025A7D7-F1C5-477E-8EF6-2B664B1376BC}" ShortID="905027807">
 					<ChildrenList>
-						<Action Name="" ID="{11CEDB8C-72FF-4A3A-9B31-E35DDFCC7BD0}" ShortID="605237804">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="jumphey" ID="{32CC95AA-BA1F-4CAD-862C-902892D918BC}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Folder Name="音樂" ID="{68E8E318-FD17-45A3-933A-3EFF81725337}" ShortID="5386160">
+							<ChildrenList>
+								<Event Name="Play_foolChild_BGM" ID="{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}">
+									<ChildrenList>
+										<Action Name="" ID="{54FDB143-4683-4098-8BFD-72605C8ADF6A}" ShortID="401045924">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="foolchildBGM" ID="{E020E97D-73C9-4D06-91C6-99884B4C4C58}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_foolChild_people" ID="{1A1B1320-52CA-40B8-BC12-7C170075809B}">
+									<ChildrenList>
+										<Action Name="" ID="{5B3CF7F6-BBC1-46D5-AD49-AEEB2856A18C}" ShortID="318994042">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="foolchild" ID="{4D58824B-3F7F-407E-8B34-7CBF47A4B6AD}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="音效" ID="{5A0FAE7D-9998-4F31-9EB4-6347F87F6891}" ShortID="538475001">
+							<ChildrenList>
+								<Event Name="Play_askForMoney" ID="{B327097A-BABB-4A3B-8122-65CE6342F7AB}">
+									<ChildrenList>
+										<Action Name="" ID="{C5286CAF-1500-4220-885B-D1FA4CC9A235}" ShortID="940875921">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="askForMoney" ID="{55376C7C-42A3-49C9-BCC9-966FAD853440}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Bullets_hit" ID="{90F1FFC7-FC3C-427D-B2BD-37DCA1E69A56}">
+									<ChildrenList>
+										<Action Name="" ID="{2F54B6C1-8B22-4D98-A1E8-6C3D383C1121}" ShortID="949516426">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="子彈射到的聲音" ID="{1B96CACF-6151-4E69-A217-6BA939E04A26}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_DancingGirl" ID="{5EC2BBD7-962A-456A-8E86-68DAA8293C00}">
+									<ChildrenList>
+										<Action Name="" ID="{9A44814D-6BC2-4417-9439-9F155962DF2E}" ShortID="86343542">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="王ADEN" ID="{21D5C255-CA64-407D-986B-17911EA6533E}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_horn" ID="{72052F8E-22CE-458C-9329-E6CD2921C343}">
+									<ChildrenList>
+										<Action Name="" ID="{1B68D764-772D-4139-9A3A-15EB71CADCE1}" ShortID="192219724">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="汽笛鬧場" ID="{12236449-4CC6-470F-AE05-F88231D9AFA4}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_horn2" ID="{36E3AFB4-4844-40B5-BBBE-070B93625226}">
+									<ChildrenList>
+										<Action Name="" ID="{C8426993-2F16-425F-8093-FFC26C720756}" ShortID="896677663">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="horn2" ID="{FEEDD061-33D0-4207-B126-A8EA1C56ECF3}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_JackyUber" ID="{A6100C5F-9413-41F7-A1B6-F40C32FF13BA}">
+									<ChildrenList>
+										<Action Name="" ID="{B98D50A8-9B00-40BD-AAA9-9ADA6440BEF0}" ShortID="326009561">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="JackyUber" ID="{D842B275-7171-4CAC-887B-21460F10183D}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_motorOff" ID="{E1A68987-6AC7-48F5-BAF6-28E511938D94}">
+									<ChildrenList>
+										<Action Name="" ID="{402F0753-0795-44B4-8A7C-4C06533881B0}" ShortID="305904296">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="motorOff" ID="{3448FA98-845C-41BB-B31D-6F818C80F541}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_motorOn" ID="{E49946A0-81D0-4D24-8E8A-E41770703AD4}">
+									<ChildrenList>
+										<Action Name="" ID="{9347D720-54B7-4E99-997F-B4682219F671}" ShortID="711155898">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="motorOn" ID="{1E2EAE53-43DA-47B6-BB19-4F95CC77134A}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_onPhone" ID="{59185CB8-C182-451B-8A67-CC5309B5A4B4}">
+									<ChildrenList>
+										<Action Name="" ID="{FF4AFAE5-9A6C-4299-A5DE-ED1EFBC8DB3A}" ShortID="325269348">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="onPhone" ID="{BFFABDF1-2550-4C6A-9662-C737BD4348FA}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_shoot" ID="{D4C6724F-85DF-412E-BEDC-B34A7CF8FA9E}">
+									<ChildrenList>
+										<Action Name="" ID="{9FF7CB21-9490-46D0-A53B-20ABB4C3A81D}" ShortID="496628387">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="shoot" ID="{6A624D2A-2E07-4E82-87CA-BEE6BFCC994D}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_yell" ID="{124A57DF-150E-4619-B100-F7A37ABEC85F}">
+									<ChildrenList>
+										<Action Name="" ID="{35A2E4D7-ACB8-4614-A8B3-4707B9C1CC2E}" ShortID="781182118">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="yell" ID="{FB183C7D-2E1A-4A52-A801-63BC808BE1FD}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_test" ID="{88202C87-D72D-48C6-87C0-85C3A437EA61}">
+				</Folder>
+				<Folder Name="第三關" ID="{DA4D47C6-B248-4D2B-8941-22C73E59BFD0}" ShortID="462886509">
 					<ChildrenList>
-						<Action Name="" ID="{08792FA9-3D22-4C9C-B252-4F682B377830}" ShortID="52039313">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="askForMoney" ID="{55376C7C-42A3-49C9-BCC9-966FAD853440}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Folder Name="音樂" ID="{24F9EFDF-7087-4E5B-8F3A-73F7F8DAC772}" ShortID="767714379">
+							<ChildrenList>
+								<Event Name="Play_ThreeDayThreeNight_audience" ID="{F8CF7561-A27F-4953-B271-C41277A86D43}">
+									<ChildrenList>
+										<Action Name="" ID="{DBF916CF-333A-443C-8BDD-68D2B24618DF}" ShortID="921768460">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="三天三夜 觀眾V2" ID="{65330A94-1C63-418B-B7FE-84A8993435EE}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_ThreeDayThreeNight_bgm" ID="{3F0E4D88-963B-4DF1-810B-45F061113D28}">
+									<ChildrenList>
+										<Action Name="" ID="{EB60C23B-64F3-4281-A32B-C0B653662B4A}" ShortID="700080990">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="三天三夜背景音" ID="{08557C71-7119-4D9F-AB76-E0303A607E59}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_ThreeDayThreeNight_people" ID="{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}">
+									<ChildrenList>
+										<Action Name="" ID="{F2CB0C9E-143C-4424-B91A-33B7C7F1A0B0}" ShortID="109233461">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="三天三夜 人聲" ID="{218D143F-7EBC-4877-ACD1-63B1FEA5118C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="音效" ID="{2D7C66FD-A43D-4035-9BA3-C6F542A82D7F}" ShortID="253086029">
+							<ChildrenList>
+								<Event Name="Play_jumphey" ID="{D778E0C0-F555-4959-8D20-BAFD280C1570}">
+									<ChildrenList>
+										<Action Name="" ID="{11CEDB8C-72FF-4A3A-9B31-E35DDFCC7BD0}" ShortID="605237804">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="jumphey" ID="{32CC95AA-BA1F-4CAD-862C-902892D918BC}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
