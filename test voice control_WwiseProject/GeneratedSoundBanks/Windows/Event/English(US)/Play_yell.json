@@ -29,7 +29,7 @@
      {
       "Id": "793661728",
       "Name": "Play_yell",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_yell",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_yell",
       "GUID": "{124A57DF-150E-4619-B100-F7A37ABEC85F}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{1E8944F5-1D6A-9192-0C95-196F52E3CBB8}"
+  "FileHash": "{C7FB107C-1D19-4632-A89B-D7E346FC8926}"
  }
 }

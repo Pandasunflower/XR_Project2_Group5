@@ -29,7 +29,7 @@
      {
       "Id": "1314294175",
       "Name": "Play_foolChild_BGM",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_foolChild_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音樂\\Play_foolChild_BGM",
       "GUID": "{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}",
       "DurationType": "OneShot",
       "DurationMin": "152",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{0B7BD109-0D90-3024-0083-C1AB5A32E3C8}"
+  "FileHash": "{417A9CEE-566C-3BA3-903D-0081C626CACB}"
  }
 }

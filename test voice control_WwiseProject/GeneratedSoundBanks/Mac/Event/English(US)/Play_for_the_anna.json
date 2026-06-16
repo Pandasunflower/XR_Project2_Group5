@@ -29,7 +29,7 @@
      {
       "Id": "2949967820",
       "Name": "Play_for_the_anna",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_for_the_anna",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音樂\\Play_for_the_anna",
       "GUID": "{D4F1D62B-DAC9-4787-9023-E8C9B30D847A}",
       "DurationType": "OneShot",
       "DurationMin": "133.03201",
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{35097759-C706-81C5-6CBD-D048229D8E1B}"
+  "FileHash": "{A8475F21-2E5E-AA51-77A9-983050D16F7C}"
  }
 }

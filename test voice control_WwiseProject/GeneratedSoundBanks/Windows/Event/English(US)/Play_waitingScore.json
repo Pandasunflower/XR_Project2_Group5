@@ -29,7 +29,7 @@
      {
       "Id": "469006591",
       "Name": "Play_waitingScore",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_waitingScore",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音效\\Play_waitingScore",
       "GUID": "{E6A32843-0796-4165-9705-E9A684A6259B}",
       "DurationType": "OneShot",
       "DurationMin": "3.1124263",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{5766FB7B-1637-C126-B6CD-954339EB7006}"
+  "FileHash": "{AA0814A7-6A79-6BBA-188C-BC38E8DE2747}"
  }
 }

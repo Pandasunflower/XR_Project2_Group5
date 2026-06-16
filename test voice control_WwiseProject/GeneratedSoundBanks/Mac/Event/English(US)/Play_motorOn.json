@@ -29,7 +29,7 @@
      {
       "Id": "3693985302",
       "Name": "Play_motorOn",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_motorOn",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_motorOn",
       "GUID": "{E49946A0-81D0-4D24-8E8A-E41770703AD4}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{DBA57D03-7FE2-232E-2918-F5BE77D6C3F9}"
+  "FileHash": "{8A935EDF-E353-7768-404F-1F3D69D2F89C}"
  }
 }

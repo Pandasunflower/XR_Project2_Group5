@@ -29,7 +29,7 @@
      {
       "Id": "3118526426",
       "Name": "Play_askForMoney",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_askForMoney",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_askForMoney",
       "GUID": "{B327097A-BABB-4A3B-8122-65CE6342F7AB}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{EACC4E4C-AF80-D4C2-0242-F106947640D5}"
+  "FileHash": "{C259AA17-E934-4639-994F-DB1E01D49E59}"
  }
 }

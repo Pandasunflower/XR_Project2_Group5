@@ -29,7 +29,7 @@
      {
       "Id": "2494639119",
       "Name": "Play_ThreeDayThreeNight_audience",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_audience",
+      "ObjectPath": "\\Events\\Default Work Unit\\第三關\\音樂\\Play_ThreeDayThreeNight_audience",
       "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
       "DurationType": "OneShot",
       "DurationMin": "282.288",
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{AB6317D2-3D7C-F64F-D9EC-BEF51FCB00DA}"
+  "FileHash": "{3751FF95-62ED-0809-37CD-005258E4CEF9}"
  }
 }

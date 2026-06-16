@@ -29,7 +29,7 @@
      {
       "Id": "3942408572",
       "Name": "Play_for_the_bgm",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_for_the_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音樂\\Play_for_the_bgm",
       "GUID": "{1F4C0BF4-3F3F-4305-B202-8A5365719BEE}",
       "DurationType": "OneShot",
       "DurationMin": "133.03201",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{D53EA2B9-A996-1AC0-E8CB-9F8C7F86A469}"
+  "FileHash": "{F35F8469-C475-9093-81F8-60D30E12783F}"
  }
 }

@@ -29,7 +29,7 @@
      {
       "Id": "3120712028",
       "Name": "Play_motorOff",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_motorOff",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_motorOff",
       "GUID": "{E1A68987-6AC7-48F5-BAF6-28E511938D94}",
       "DurationType": "OneShot",
       "DurationMin": "4.264896",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{B5DF92F6-4705-BE1C-8EC6-5401B651BDB7}"
+  "FileHash": "{2C5BD310-E19A-E687-1227-287CDE085C5F}"
  }
 }

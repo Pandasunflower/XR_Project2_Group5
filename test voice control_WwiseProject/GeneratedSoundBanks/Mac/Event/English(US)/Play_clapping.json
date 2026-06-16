@@ -29,7 +29,7 @@
      {
       "Id": "2700014240",
       "Name": "Play_clapping",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_clapping",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音效\\Play_clapping",
       "GUID": "{6790B5D1-392B-440E-9BEF-CBB1ED2862B1}",
       "DurationType": "OneShot",
       "DurationMin": "6.088042",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{06BC7731-5C65-7767-9BB3-E2DCC69BB3A9}"
+  "FileHash": "{77E9E916-FC10-7B1A-BF35-3AD7588A4665}"
  }
 }

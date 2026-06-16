@@ -29,7 +29,7 @@
      {
       "Id": "509118324",
       "Name": "Play_DancingGirl",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_DancingGirl",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_DancingGirl",
       "GUID": "{5EC2BBD7-962A-456A-8E86-68DAA8293C00}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{BE776250-110C-FF28-0AEB-C59FA574795A}"
+  "FileHash": "{3BA7B4E9-916E-52B9-2FEF-E7A0EFAC3E75}"
  }
 }

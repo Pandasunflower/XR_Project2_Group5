@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{721822B8-2093-4488-8445-48D4E88C56EB}" SchemaVersion="133" RootDocumentID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" ParentDocumentID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}">
+	<Events>
+		<WorkUnit Name="Test" ID="{721822B8-2093-4488-8445-48D4E88C56EB}" OwnerID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_OneGameOneDream" ID="{6C9EEB6E-1CBF-4E90-86EF-072480250550}">
+					<ChildrenList>
+						<Action Name="" ID="{F47B3CED-D70D-43DC-B8DB-F403E390B00C}" ShortID="628967380">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OneGameOneDream" ID="{EB5ED449-1418-4652-AA42-672D5EEE404E}" WorkUnitID="{93D3F03C-DBD9-4E9D-8F13-F02D2CB67A0D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

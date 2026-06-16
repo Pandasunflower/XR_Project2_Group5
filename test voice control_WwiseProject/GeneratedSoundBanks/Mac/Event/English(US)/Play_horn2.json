@@ -29,7 +29,7 @@
      {
       "Id": "1275111929",
       "Name": "Play_horn2",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_horn2",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_horn2",
       "GUID": "{36E3AFB4-4844-40B5-BBBE-070B93625226}",
       "DurationType": "OneShot",
       "DurationMin": "0.7822222",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{01BDB254-1580-4121-F3E5-E2FE4B0133E2}"
+  "FileHash": "{5FEB7991-5D8D-FD3D-DD31-A5A61A9F6003}"
  }
 }

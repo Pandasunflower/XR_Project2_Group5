@@ -347,6 +347,7 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<WorkUnit Name="Test" ID="{721822B8-2093-4488-8445-48D4E88C56EB}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

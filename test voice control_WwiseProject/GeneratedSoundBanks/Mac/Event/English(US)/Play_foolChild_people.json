@@ -29,7 +29,7 @@
      {
       "Id": "560573542",
       "Name": "Play_foolChild_people",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_foolChild_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音樂\\Play_foolChild_people",
       "GUID": "{1A1B1320-52CA-40B8-BC12-7C170075809B}",
       "DurationType": "OneShot",
       "DurationMin": "150.5",
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{A9AEE81B-553A-ABBB-1DCD-84E034EB70BE}"
+  "FileHash": "{FAD22D82-35A1-4022-110B-E169224CAD1D}"
  }
 }

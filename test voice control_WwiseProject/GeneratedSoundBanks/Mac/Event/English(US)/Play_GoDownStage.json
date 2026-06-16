@@ -29,7 +29,7 @@
      {
       "Id": "2087262618",
       "Name": "Play_GoDownStage",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_GoDownStage",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音效\\Play_GoDownStage",
       "GUID": "{C5F9DB79-C0C2-434E-9528-C47444499F09}",
       "DurationType": "OneShot",
       "DurationMin": "5.952",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{EF6571D6-0BDE-B907-7621-7B2A17FC8D1D}"
+  "FileHash": "{A0CA4799-D25F-E34B-DE78-38D5948EF449}"
  }
 }

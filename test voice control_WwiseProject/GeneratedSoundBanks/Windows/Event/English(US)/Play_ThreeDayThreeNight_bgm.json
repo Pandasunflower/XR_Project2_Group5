@@ -29,7 +29,7 @@
      {
       "Id": "3749606501",
       "Name": "Play_ThreeDayThreeNight_bgm",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\第三關\\音樂\\Play_ThreeDayThreeNight_bgm",
       "GUID": "{3F0E4D88-963B-4DF1-810B-45F061113D28}",
       "DurationType": "OneShot",
       "DurationMin": "282.288",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{86C2D7DB-F6C3-0B17-91EF-280FB128CD7E}"
+  "FileHash": "{B781A796-7A09-01FB-5E96-BC938001F340}"
  }
 }

@@ -37,7 +37,7 @@
      {
       "Id": "469006591",
       "Name": "Play_waitingScore",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_waitingScore",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音效\\Play_waitingScore",
       "GUID": "{E6A32843-0796-4165-9705-E9A684A6259B}",
       "DurationType": "OneShot",
       "DurationMin": "3.1124263",
@@ -74,7 +74,7 @@
      {
       "Id": "509118324",
       "Name": "Play_DancingGirl",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_DancingGirl",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_DancingGirl",
       "GUID": "{5EC2BBD7-962A-456A-8E86-68DAA8293C00}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -109,7 +109,7 @@
      {
       "Id": "560573542",
       "Name": "Play_foolChild_people",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_foolChild_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音樂\\Play_foolChild_people",
       "GUID": "{1A1B1320-52CA-40B8-BC12-7C170075809B}",
       "DurationType": "OneShot",
       "DurationMin": "150.5",
@@ -160,7 +160,7 @@
      {
       "Id": "793661728",
       "Name": "Play_yell",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_yell",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_yell",
       "GUID": "{124A57DF-150E-4619-B100-F7A37ABEC85F}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -195,7 +195,7 @@
      {
       "Id": "806402365",
       "Name": "Play_OneGameOneDream_people",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_OneGameOneDream_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音樂\\Play_OneGameOneDream_people",
       "GUID": "{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}",
       "DurationType": "OneShot",
       "DurationMin": "183.0398",
@@ -246,7 +246,7 @@
      {
       "Id": "1275111929",
       "Name": "Play_horn2",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_horn2",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_horn2",
       "GUID": "{36E3AFB4-4844-40B5-BBBE-070B93625226}",
       "DurationType": "OneShot",
       "DurationMin": "0.7822222",
@@ -283,7 +283,7 @@
      {
       "Id": "1314294175",
       "Name": "Play_foolChild_BGM",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_foolChild_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音樂\\Play_foolChild_BGM",
       "GUID": "{A85F5D05-D6A5-46F0-A119-1137E0F0FBED}",
       "DurationType": "OneShot",
       "DurationMin": "152",
@@ -320,7 +320,7 @@
      {
       "Id": "1319984948",
       "Name": "Play_ThreeDayThreeNight_people",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\第三關\\音樂\\Play_ThreeDayThreeNight_people",
       "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
       "DurationType": "OneShot",
       "DurationMin": "282.288",
@@ -504,7 +504,7 @@
      {
       "Id": "1539366728",
       "Name": "Play_JackyUber",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_JackyUber",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_JackyUber",
       "GUID": "{A6100C5F-9413-41F7-A1B6-F40C32FF13BA}",
       "DurationType": "OneShot",
       "DurationMin": "12.20025",
@@ -541,7 +541,7 @@
      {
       "Id": "1951773134",
       "Name": "Play_spotlight",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_spotlight",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音效\\Play_spotlight",
       "GUID": "{E1312B0E-01A1-4C5E-812D-C62E24711553}",
       "DurationType": "OneShot",
       "DurationMin": "1.0002291",
@@ -578,7 +578,7 @@
      {
       "Id": "2087262618",
       "Name": "Play_GoDownStage",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_GoDownStage",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音效\\Play_GoDownStage",
       "GUID": "{C5F9DB79-C0C2-434E-9528-C47444499F09}",
       "DurationType": "OneShot",
       "DurationMin": "5.952",
@@ -615,7 +615,7 @@
      {
       "Id": "2102220028",
       "Name": "Play_jumphey",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_jumphey",
+      "ObjectPath": "\\Events\\Default Work Unit\\第三關\\音效\\Play_jumphey",
       "GUID": "{D778E0C0-F555-4959-8D20-BAFD280C1570}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -687,7 +687,7 @@
      {
       "Id": "2494639119",
       "Name": "Play_ThreeDayThreeNight_audience",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_audience",
+      "ObjectPath": "\\Events\\Default Work Unit\\第三關\\音樂\\Play_ThreeDayThreeNight_audience",
       "GUID": "{F8CF7561-A27F-4953-B271-C41277A86D43}",
       "DurationType": "OneShot",
       "DurationMin": "282.288",
@@ -738,7 +738,7 @@
      {
       "Id": "2641650631",
       "Name": "Play_shoot",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_shoot",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_shoot",
       "GUID": "{D4C6724F-85DF-412E-BEDC-B34A7CF8FA9E}",
       "DurationType": "OneShot",
       "DurationMin": "0.33820862",
@@ -775,7 +775,7 @@
      {
       "Id": "2700014240",
       "Name": "Play_clapping",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_clapping",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音效\\Play_clapping",
       "GUID": "{6790B5D1-392B-440E-9BEF-CBB1ED2862B1}",
       "DurationType": "OneShot",
       "DurationMin": "6.088042",
@@ -792,11 +792,37 @@
     "Id": "2880737896",
     "Type": "User",
     "GUID": "{5460ADC1-BFD3-4E3B-B379-EE4D9D92881B}",
-    "Language": "SFX",
-    "Hash": "{21BCF7A1-7AEC-307E-AAA9-E8CF3CB7A881}",
+    "Language": "English(US)",
+    "Hash": "{2826F40A-9E1B-68F6-23BA-A8BC38A3762F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\mainbank",
     "ShortName": "mainbank",
-    "Path": "mainbank.bnk"
+    "Path": "English(US)/mainbank.bnk",
+    "Media": [
+     {
+      "Id": "1049721955",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "一場遊戲一場夢.wav",
+      "CachePath": "7A/{7A5576E6-506C-469F-3CC3-635DA98EE0F3}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2809997089",
+      "Name": "Play_OneGameOneDream",
+      "ObjectPath": "\\Events\\Default Work Unit\\Test\\Play_OneGameOneDream",
+      "GUID": "{6C9EEB6E-1CBF-4E90-86EF-072480250550}",
+      "DurationType": "OneShot",
+      "DurationMin": "257.4106",
+      "DurationMax": "257.4106",
+      "MediaRefs": [
+       {
+        "Id": "1049721955"
+       }
+      ]
+     }
+    ]
    },
    {
     "Id": "2949967820",
@@ -822,7 +848,7 @@
      {
       "Id": "2949967820",
       "Name": "Play_for_the_anna",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_for_the_anna",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音樂\\Play_for_the_anna",
       "GUID": "{D4F1D62B-DAC9-4787-9023-E8C9B30D847A}",
       "DurationType": "OneShot",
       "DurationMin": "133.03201",
@@ -873,7 +899,7 @@
      {
       "Id": "2956245481",
       "Name": "Play_horn",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_horn",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_horn",
       "GUID": "{72052F8E-22CE-458C-9329-E6CD2921C343}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -908,7 +934,7 @@
      {
       "Id": "3118526426",
       "Name": "Play_askForMoney",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_askForMoney",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_askForMoney",
       "GUID": "{B327097A-BABB-4A3B-8122-65CE6342F7AB}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -943,7 +969,7 @@
      {
       "Id": "3120712028",
       "Name": "Play_motorOff",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_motorOff",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_motorOff",
       "GUID": "{E1A68987-6AC7-48F5-BAF6-28E511938D94}",
       "DurationType": "OneShot",
       "DurationMin": "4.264896",
@@ -951,41 +977,6 @@
       "MediaRefs": [
        {
         "Id": "990449826"
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "Id": "3187507146",
-    "Type": "Event",
-    "GUID": "{88202C87-D72D-48C6-87C0-85C3A437EA61}",
-    "Language": "English(US)",
-    "Hash": "{6FCD7E10-E6DA-C075-3E95-03CFA344F190}",
-    "ObjectPath": "Play_test",
-    "ShortName": "Play_test",
-    "Path": "Event/English(US)/Play_test.bnk",
-    "Media": [
-     {
-      "Id": "655813830",
-      "Language": "English(US)",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "askForMoney.wav",
-      "Path": "Media/English(US)/655813830.wem",
-      "CachePath": "92/{929DF6A5-97B3-6BC6-CABE-5845D69CD234}.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "3187507146",
-      "Name": "Play_test",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_test",
-      "GUID": "{88202C87-D72D-48C6-87C0-85C3A437EA61}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "655813830"
        }
       ]
      }
@@ -1015,7 +1006,7 @@
      {
       "Id": "3205629941",
       "Name": "Play_davewang",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_davewang",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\Play_davewang",
       "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -1050,7 +1041,7 @@
      {
       "Id": "3288810203",
       "Name": "Play_Bullets_hit",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Bullets_hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_Bullets_hit",
       "GUID": "{90F1FFC7-FC3C-427D-B2BD-37DCA1E69A56}",
       "DurationType": "OneShot",
       "DurationMin": "0.96533334",
@@ -1087,7 +1078,7 @@
      {
       "Id": "3459025660",
       "Name": "Play_frozen",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_frozen",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\Play_frozen",
       "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -1122,7 +1113,7 @@
      {
       "Id": "3693985302",
       "Name": "Play_motorOn",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_motorOn",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_motorOn",
       "GUID": "{E49946A0-81D0-4D24-8E8A-E41770703AD4}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -1157,7 +1148,7 @@
      {
       "Id": "3749606501",
       "Name": "Play_ThreeDayThreeNight_bgm",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\第三關\\音樂\\Play_ThreeDayThreeNight_bgm",
       "GUID": "{3F0E4D88-963B-4DF1-810B-45F061113D28}",
       "DurationType": "OneShot",
       "DurationMin": "282.288",
@@ -1194,7 +1185,7 @@
      {
       "Id": "3942408572",
       "Name": "Play_for_the_bgm",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_for_the_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音樂\\Play_for_the_bgm",
       "GUID": "{1F4C0BF4-3F3F-4305-B202-8A5365719BEE}",
       "DurationType": "OneShot",
       "DurationMin": "133.03201",
@@ -1231,7 +1222,7 @@
      {
       "Id": "4065753090",
       "Name": "Play_OneGameOneDream_BGM",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_OneGameOneDream_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音樂\\Play_OneGameOneDream_BGM",
       "GUID": "{AC64EA27-5927-48B6-8CE8-0045F5ED9F87}",
       "DurationType": "OneShot",
       "DurationMin": "183.0398",
@@ -1268,7 +1259,7 @@
      {
       "Id": "4122281311",
       "Name": "Play_onPhone",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_onPhone",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_onPhone",
       "GUID": "{59185CB8-C182-451B-8A67-CC5309B5A4B4}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -1280,6 +1271,6 @@
     ]
    }
   ],
-  "FileHash": "{1ED4AA04-0BD4-4464-EB8B-680BBBE3F445}"
+  "FileHash": "{17A378B9-FCC7-386B-EDB5-9C15946A6D84}"
  }
 }

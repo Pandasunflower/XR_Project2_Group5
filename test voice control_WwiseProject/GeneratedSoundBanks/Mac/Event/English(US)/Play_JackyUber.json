@@ -29,7 +29,7 @@
      {
       "Id": "1539366728",
       "Name": "Play_JackyUber",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_JackyUber",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_JackyUber",
       "GUID": "{A6100C5F-9413-41F7-A1B6-F40C32FF13BA}",
       "DurationType": "OneShot",
       "DurationMin": "12.20025",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{3F8E0D69-B23F-45F9-5BA8-302DC6F7DFB2}"
+  "FileHash": "{E0F59A8A-2DCB-A32B-A6FE-3E6CC5B4C280}"
  }
 }

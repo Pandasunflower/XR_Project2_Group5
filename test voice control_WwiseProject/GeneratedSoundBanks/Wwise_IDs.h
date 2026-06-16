@@ -31,12 +31,12 @@ namespace AK
         static const AkUniqueID PLAY_JUMPHEY = 2102220028U;
         static const AkUniqueID PLAY_MOTOROFF = 3120712028U;
         static const AkUniqueID PLAY_MOTORON = 3693985302U;
+        static const AkUniqueID PLAY_ONEGAMEONEDREAM = 2809997089U;
         static const AkUniqueID PLAY_ONEGAMEONEDREAM_BGM = 4065753090U;
         static const AkUniqueID PLAY_ONEGAMEONEDREAM_PEOPLE = 806402365U;
         static const AkUniqueID PLAY_ONPHONE = 4122281311U;
         static const AkUniqueID PLAY_SHOOT = 2641650631U;
         static const AkUniqueID PLAY_SPOTLIGHT = 1951773134U;
-        static const AkUniqueID PLAY_TEST = 3187507146U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_AUDIENCE = 2494639119U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_BGM = 3749606501U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_PEOPLE = 1319984948U;

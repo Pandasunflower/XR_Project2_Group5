@@ -29,7 +29,7 @@
      {
       "Id": "1319984948",
       "Name": "Play_ThreeDayThreeNight_people",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_ThreeDayThreeNight_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\第三關\\音樂\\Play_ThreeDayThreeNight_people",
       "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
       "DurationType": "OneShot",
       "DurationMin": "282.288",
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{4C7737FC-C3A3-BA6D-A1DB-E3679BD6599A}"
+  "FileHash": "{08B12B67-1655-F861-E587-0E68A7E46A3C}"
  }
 }

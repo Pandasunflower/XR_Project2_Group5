@@ -29,7 +29,7 @@
      {
       "Id": "2102220028",
       "Name": "Play_jumphey",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_jumphey",
+      "ObjectPath": "\\Events\\Default Work Unit\\第三關\\音效\\Play_jumphey",
       "GUID": "{D778E0C0-F555-4959-8D20-BAFD280C1570}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{1606BD08-ACA0-94D2-67BD-0AEE62F43A7B}"
+  "FileHash": "{3D71D069-B5CC-50C8-14B1-372F71BD0D6A}"
  }
 }

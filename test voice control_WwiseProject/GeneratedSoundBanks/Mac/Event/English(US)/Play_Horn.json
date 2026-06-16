@@ -29,7 +29,7 @@
      {
       "Id": "2956245481",
       "Name": "Play_horn",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_horn",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_horn",
       "GUID": "{72052F8E-22CE-458C-9329-E6CD2921C343}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{D514EA1A-2A34-09E9-2103-FED23EA81129}"
+  "FileHash": "{18F6BF41-440B-F9C9-03EB-DF73F60DA107}"
  }
 }

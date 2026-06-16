@@ -29,7 +29,7 @@
      {
       "Id": "4122281311",
       "Name": "Play_onPhone",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_onPhone",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_onPhone",
       "GUID": "{59185CB8-C182-451B-8A67-CC5309B5A4B4}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{F3861908-AFBC-8987-76EB-54CBA59BE47E}"
+  "FileHash": "{C4FB1045-6B00-7592-D9F5-DD7FFE129523}"
  }
 }

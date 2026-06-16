@@ -29,7 +29,7 @@
      {
       "Id": "806402365",
       "Name": "Play_OneGameOneDream_people",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_OneGameOneDream_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音樂\\Play_OneGameOneDream_people",
       "GUID": "{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}",
       "DurationType": "OneShot",
       "DurationMin": "183.0398",
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{5CE2350A-A2C2-174A-4DB4-75A98C8B752C}"
+  "FileHash": "{D27C0278-A692-0D8B-14D5-C727748557A4}"
  }
 }

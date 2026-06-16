@@ -29,7 +29,7 @@
      {
       "Id": "1951773134",
       "Name": "Play_spotlight",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_spotlight",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音效\\Play_spotlight",
       "GUID": "{E1312B0E-01A1-4C5E-812D-C62E24711553}",
       "DurationType": "OneShot",
       "DurationMin": "1.0002291",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{C0342F71-03BF-20FD-E1B8-A203C76A4610}"
+  "FileHash": "{08A56783-601E-8793-F283-A96D9725DB76}"
  }
 }

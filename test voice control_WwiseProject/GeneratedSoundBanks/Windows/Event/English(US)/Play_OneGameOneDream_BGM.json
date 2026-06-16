@@ -29,7 +29,7 @@
      {
       "Id": "4065753090",
       "Name": "Play_OneGameOneDream_BGM",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_OneGameOneDream_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音樂\\Play_OneGameOneDream_BGM",
       "GUID": "{AC64EA27-5927-48B6-8CE8-0045F5ED9F87}",
       "DurationType": "OneShot",
       "DurationMin": "183.0398",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{FF455CAF-1411-9CF5-E86A-2B82607B7ADD}"
+  "FileHash": "{B91236D3-AD89-22D5-4B33-AC26CDF29B4C}"
  }
 }

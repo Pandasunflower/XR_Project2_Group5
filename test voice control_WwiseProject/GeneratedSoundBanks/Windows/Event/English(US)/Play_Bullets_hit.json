@@ -29,7 +29,7 @@
      {
       "Id": "3288810203",
       "Name": "Play_Bullets_hit",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Bullets_hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_Bullets_hit",
       "GUID": "{90F1FFC7-FC3C-427D-B2BD-37DCA1E69A56}",
       "DurationType": "OneShot",
       "DurationMin": "0.96533334",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{E2A4C6B2-FFED-2BCB-688E-A060E0A78FD8}"
+  "FileHash": "{29C6B65E-2CA1-8422-F216-9DFA8ADF0BEA}"
  }
 }

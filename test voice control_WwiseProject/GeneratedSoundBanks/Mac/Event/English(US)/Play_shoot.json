@@ -29,7 +29,7 @@
      {
       "Id": "2641650631",
       "Name": "Play_shoot",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_shoot",
+      "ObjectPath": "\\Events\\Default Work Unit\\第二關\\音效\\Play_shoot",
       "GUID": "{D4C6724F-85DF-412E-BEDC-B34A7CF8FA9E}",
       "DurationType": "OneShot",
       "DurationMin": "0.33820862",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{9EF06994-1E76-5CB9-64ED-F3CA991B5B3C}"
+  "FileHash": "{543EF5B1-DBD1-1D28-1775-41FDD2CBB245}"
  }
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{93D3F03C-DBD9-4E9D-8F13-F02D2CB67A0D}" SchemaVersion="133" RootDocumentID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}" ParentDocumentID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}">
+	<Containers>
+		<WorkUnit Name="Test" ID="{93D3F03C-DBD9-4E9D-8F13-F02D2CB67A0D}" OwnerID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="OneGameOneDream" ID="{EB5ED449-1418-4652-AA42-672D5EEE404E}" ShortID="41564023">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="一場遊戲一場夢" ID="{AF145576-5C17-402D-8AE6-7DD5793A2699}">
+							<Language>English(US)</Language>
+							<AudioFile>一場遊戲一場夢.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1049721955"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="一場遊戲一場夢" ID="{AF145576-5C17-402D-8AE6-7DD5793A2699}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>
