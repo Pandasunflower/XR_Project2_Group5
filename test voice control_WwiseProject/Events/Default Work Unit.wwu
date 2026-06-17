@@ -348,6 +348,98 @@
 					</ChildrenList>
 				</Folder>
 				<WorkUnit Name="Test" ID="{721822B8-2093-4488-8445-48D4E88C56EB}" PersistMode="Reference"/>
+				<Folder Name="forDemo" ID="{F8171935-58FA-42A0-88F6-3C369AE7A877}" ShortID="1017571864">
+					<ChildrenList>
+						<Event Name="Play_Stage2_BGM" ID="{C71A0D9E-BFDF-4A0E-97D8-F5C1067DFF2F}">
+							<ChildrenList>
+								<Action Name="" ID="{0DAEE94D-F0E6-499E-8023-FCF7E7E180C8}" ShortID="310317128">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="笨小孩背景" ID="{547B00E2-9289-4ED4-8970-02E132DF5A80}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Stage2_people" ID="{48D4D23E-22B8-4E53-AFD3-20D06F8E7037}">
+							<ChildrenList>
+								<Action Name="" ID="{4BB1B775-300C-497D-BBE1-D3BFD5C5A790}" ShortID="604415345">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="笨小孩人生" ID="{3D17D598-C9CD-42EF-BF82-56CE5DD4E484}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Stage3_BGM" ID="{87464828-E14A-405B-9358-3703D5F67E4A}">
+							<ChildrenList>
+								<Action Name="" ID="{25B6D558-3318-4E6B-9856-49BF5EEB715B}" ShortID="91825427">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="三天三夜 伴奏" ID="{6D6D4D6B-4424-48AE-90EB-72E396679C9C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Stage3_people" ID="{0BACFEC1-DE9B-4814-90CE-7848B07BF9F9}">
+							<ChildrenList>
+								<Action Name="" ID="{98648C49-CC6B-4E81-9CB8-460121FF2B59}" ShortID="112587792">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="三天三夜 人聲" ID="{036FC411-88AF-4CD8-8F54-F3526534579E}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Stage3_audience" ID="{2E049C2E-D1D1-4E9B-885F-CA191388AA8A}">
+							<ChildrenList>
+								<Action Name="" ID="{94461312-B2F9-4725-B9A3-8B30437FAE75}" ShortID="187906485">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="三天三夜 觀眾" ID="{5BB88A57-C9AA-48A0-B2C5-5AB7804D16C9}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Stage1_BGM" ID="{FC506387-0825-4066-B58C-B461093E52EF}">
+							<ChildrenList>
+								<Action Name="" ID="{AC497FD6-D65B-45CB-A669-73F86C1A5B09}" ShortID="669761444">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="一場遊戲一場夢_伴奏" ID="{30FD22A4-3534-4788-A682-324CDD2F18E8}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_end_01" ID="{B67B9E84-3AB8-4D12-937C-A71869F5E043}">
+							<ChildrenList>
+								<Action Name="" ID="{ACE82F75-E525-4AED-A493-876229287059}" ShortID="269096418">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="end" ID="{A1FC2C13-A9ED-4C95-B535-915C083AFAB7}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Stage1_people" ID="{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}">
+							<ChildrenList>
+								<Action Name="" ID="{D8F818A6-824A-4472-B321-4D268AEE5D93}" ShortID="868813604">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="一場遊戲一場夢_人聲" ID="{48FA7644-A907-4CDC-8B29-9507AACF65DA}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
