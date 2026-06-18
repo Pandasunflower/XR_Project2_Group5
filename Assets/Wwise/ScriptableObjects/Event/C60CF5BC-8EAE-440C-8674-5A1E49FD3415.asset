@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Play_OneGame_bgm
   id: 310033319
   guid: C60CF5BC-8EAE-440C-8674-5A1E49FD3415
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1
