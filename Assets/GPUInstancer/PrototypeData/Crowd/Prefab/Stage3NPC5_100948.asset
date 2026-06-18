@@ -74,10 +74,10 @@ MonoBehaviour:
   checkedForBillboardExtensions: 1
   autoUpdateTransformData: 0
   treeType: 0
-  enableRuntimeModifications: 0
+  enableRuntimeModifications: 1
   startWithRigidBody: 0
-  addRemoveInstancesAtRuntime: 0
-  extraBufferSize: 0
+  addRemoveInstancesAtRuntime: 1
+  extraBufferSize: 10000
   addRuntimeHandlerScript: 0
   hasRigidBody: 0
   rigidbodyData:

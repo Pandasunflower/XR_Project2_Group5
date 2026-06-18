@@ -16,6 +16,12 @@ public class AnimationManager : MonoBehaviour
     public float spaceMin = 1.5f;
     public float spaceMax = 2.0f;
     public Vector3 center = new Vector3(0, 0, 0);
+    public float normalSpeed = 1f;
+    public float waveSpeed = 0.2f;
+    public float waveMoveSpeed = 2f;
+    public float waveFrequency = 0.8f;
+
+    [SerializeField] private int globalIndex = 0;
 
     private float _space = 1.5f;
     private int _selectedPrototypeIndex = 0;
@@ -53,7 +59,7 @@ public class AnimationManager : MonoBehaviour
         // Instantiate instance GOs:
         float width = (_rowCount - 1) * _space; 
         float height = (_collumnCount - 1) * _space;
-        
+
         for (int r = 0; r < _rowCount; r++)
         {
             for (int c = 0; c < _collumnCount; c++)
@@ -76,6 +82,9 @@ public class AnimationManager : MonoBehaviour
                     prefabObject,
                     pos,
                     prefabObject.transform.rotation);
+
+                var gp = instanceGO.GetComponent<PrefabIndex>();
+                gp.index = globalIndex++;
 
                 _instanceList.Add(instanceGO.GetComponent<GPUICrowdPrefab>());
             }
@@ -105,18 +114,28 @@ public class AnimationManager : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1)) StartCoroutine(SetCrowdAnimators(0));
-        else if (Input.GetKeyDown(KeyCode.Alpha2)) StartCoroutine(SetCrowdAnimators(1));
+        else if (Input.GetKeyDown(KeyCode.Alpha2)) StartCoroutine(SetWaveCrowdAnimators(1));
         else if (Input.GetKeyDown(KeyCode.Alpha3)) StartCoroutine(SetCrowdAnimators(2));
         else if (Input.GetKeyDown(KeyCode.Alpha4)) StartCoroutine(SetCrowdAnimators(3));
     }
 
-    IEnumerator SetCrowdAnimators(int index)
+    public IEnumerator SetCrowdAnimators(int index)
     {
         if (gpuiCrowdManager != null)
         {
             while (!gpuiCrowdManager.isInitialized)
                 yield return null;
             SetAnimations(index);
+        }
+    }
+
+    public IEnumerator SetWaveCrowdAnimators(int index)
+    {
+        if (gpuiCrowdManager != null)
+        {
+            while (!gpuiCrowdManager.isInitialized)
+                yield return null;
+            SetWaveAnimations(index);
         }
     }
 
@@ -139,9 +158,47 @@ public class AnimationManager : MonoBehaviour
                             startTime = UnityEngine.Random.Range(0, clipData.length);
 
                             GPUICrowdAPI.StartAnimation(crowdInstance, clipData, startTime);
+                            GPUICrowdAPI.SetAnimationSpeed(crowdInstance, normalSpeed);
                         }
                     }
                 }
+            }
+        }
+    }
+
+    public void SetWaveAnimations(int index)
+    {
+        if (gpuiCrowdManager == null) return;
+
+        var registered = gpuiCrowdManager.GetRegisteredPrefabsRuntimeData();
+
+        if (registered == null) return;
+
+        foreach (GPUICrowdPrototype prototype in registered.Keys)
+        {
+            if (prototype.animationData == null ||
+                !prototype.animationData.useCrowdAnimator)
+                continue;
+
+
+            GPUIAnimationClipData clipData =
+                prototype.animationData.clipDataList[index];
+
+            List<GPUInstancerPrefab> instances = registered[prototype];
+
+            int columnCount = _collumnCount;
+
+            for (int i = 0; i < instances.Count; i++)
+            {
+                GPUICrowdPrefab instance = (GPUICrowdPrefab)instances[i];
+
+                int row = instance.gameObject.GetComponent<PrefabIndex>().index / _collumnCount;
+                float wave = Mathf.Sin(row * waveFrequency + Time.time * waveMoveSpeed);
+
+                float startTime = Mathf.Lerp(0, clipData.length * 0.5f,  (wave + 1f) * 0.5f);
+
+                GPUICrowdAPI.StartAnimation(instance, clipData, startTime);
+                GPUICrowdAPI.SetAnimationSpeed(instance, waveSpeed);
             }
         }
     }

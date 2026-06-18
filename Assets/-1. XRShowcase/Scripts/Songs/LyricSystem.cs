@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.IO;
 
 [System.Serializable]
 public class LyricLine
@@ -19,6 +20,7 @@ public class LyricSystem : MonoBehaviour
 
     [Header("Lyrics UI")]
     public TextMeshProUGUI lyricUI;
+    public TextMeshPro lyricUI2;
 
     private List<LyricLine> lyrics = new List<LyricLine>();
     private int index = 0;
@@ -47,22 +49,25 @@ public class LyricSystem : MonoBehaviour
         {
             if (time >= lyrics[index].time && time < lyrics[index + 1].time)
             {
-                lyricUI.text = lyrics[index].text;
+                if (!lyricUI) lyricUI2.text = lyrics[index].text;
+                else lyricUI.text = lyrics[index].text;
             }
             else if (time >= lyrics[index + 1].time)
             {
                 index++;
-                lyricUI.text = lyrics[index].text;
+                if (!lyricUI) lyricUI2.text = lyrics[index].text;
+                else lyricUI.text = lyrics[index].text;
             }
         }
     }
 
-    void Play()
+    public void Play()
     {
         playingId = AkUnitySoundEngine.PostEvent(songEventName, gameObject);
 
         index = 0;
-        lyricUI.text = lyrics.Count > 0 ? lyrics[0].text : "";
+        // if (!lyricUI) lyricUI2.text = lyrics.Count > 0 ? lyrics[0].text : "";
+        // else lyricUI.text = lyrics.Count > 0 ? lyrics[0].text : "";
 
         playStartTime = Time.realtimeSinceStartup;
         isPlaying = true;
