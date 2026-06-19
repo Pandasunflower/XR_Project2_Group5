@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3419914841	Play_Stage2_BGM			\Default Work Unit\forDemo\Play_Stage2_BGM	
+

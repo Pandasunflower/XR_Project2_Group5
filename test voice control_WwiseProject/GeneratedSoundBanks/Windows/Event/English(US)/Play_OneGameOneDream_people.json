@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}",
     "Language": "English(US)",
-    "Hash": "{6867A7E6-8590-A7FC-7172-F82B787EC04A}",
+    "Hash": "{35F2D630-4D18-0DE7-B6BA-44E46F460D30}",
     "ObjectPath": "Play_OneGameOneDream_people",
     "ShortName": "Play_OneGameOneDream_people",
     "Path": "Event/English(US)/Play_OneGameOneDream_people.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "一場遊戲一場夢_人聲.wav",
       "Path": "Media/English(US)/59556136.wem",
-      "CachePath": "85/{852E964E-74F1-E75B-F106-9122C5F4ECF0}.wem"
+      "CachePath": "88/{882E55CF-2DF7-4E85-AA2B-259960808354}.wem"
      }
     ],
     "Events": [
@@ -32,8 +32,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音樂\\Play_OneGameOneDream_people",
       "GUID": "{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}",
       "DurationType": "OneShot",
-      "DurationMin": "183.0398",
-      "DurationMax": "183.0398",
+      "DurationMin": "92.89059",
+      "DurationMax": "92.89059",
       "MediaRefs": [
        {
         "Id": "59556136"
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{A7BBB39E-1899-BAD9-1491-B2ED1D0DE056}"
+  "FileHash": "{DCC2018E-C811-9091-19F2-F0E2216F4DC4}"
  }
 }

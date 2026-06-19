@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1128932765",
+    "Type": "Event",
+    "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
+    "Language": "English(US)",
+    "Hash": "{C2B9BB0E-9F43-4578-5E56-3E914DAD8256}",
+    "ObjectPath": "Play_Stage1_people",
+    "ShortName": "Play_Stage1_people",
+    "Path": "Event/English(US)/Play_Stage1_people.bnk",
+    "Media": [
+     {
+      "Id": "59556136",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "一場遊戲一場夢_人聲.wav",
+      "Path": "Media/English(US)/59556136.wem",
+      "CachePath": "88/{882E55CF-2DF7-4E85-AA2B-259960808354}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1128932765",
+      "Name": "Play_Stage1_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage1_people",
+      "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
+      "DurationType": "OneShot",
+      "DurationMin": "92.89059",
+      "DurationMax": "92.89059",
+      "MediaRefs": [
+       {
+        "Id": "59556136"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{37F81FFE-3140-BB22-2A5F-F443043EA27C}"
+ }
+}

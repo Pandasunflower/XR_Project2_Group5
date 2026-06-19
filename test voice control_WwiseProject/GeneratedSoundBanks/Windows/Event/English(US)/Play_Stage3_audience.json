@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "860181832",
+    "Type": "Event",
+    "GUID": "{2E049C2E-D1D1-4E9B-885F-CA191388AA8A}",
+    "Language": "English(US)",
+    "Hash": "{DD9B215A-12C4-07FE-4054-A3212F8DC85C}",
+    "ObjectPath": "Play_Stage3_audience",
+    "ShortName": "Play_Stage3_audience",
+    "Path": "Event/English(US)/Play_Stage3_audience.bnk",
+    "Media": [
+     {
+      "Id": "116925822",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜 觀眾.wav",
+      "Path": "Media/English(US)/116925822.wem",
+      "CachePath": "2F/{2FC5BD2D-FA7C-3710-9C3A-7B3D844E32E0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "860181832",
+      "Name": "Play_Stage3_audience",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage3_audience",
+      "GUID": "{2E049C2E-D1D1-4E9B-885F-CA191388AA8A}",
+      "DurationType": "OneShot",
+      "DurationMin": "282.288",
+      "DurationMax": "282.288",
+      "MediaRefs": [
+       {
+        "Id": "116925822"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{90E72AF0-270C-226E-2DA3-85404A1DF503}"
+ }
+}

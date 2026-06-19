@@ -14,6 +14,43 @@
   "DialogueEvents": [],
   "SoundBanks": [
    {
+    "Id": "140947920",
+    "Type": "Event",
+    "GUID": "{48D4D23E-22B8-4E53-AFD3-20D06F8E7037}",
+    "Language": "English(US)",
+    "Hash": "{33B1619A-9446-2CAB-D307-742BBDD7F0A7}",
+    "ObjectPath": "Play_Stage2_people",
+    "ShortName": "Play_Stage2_people",
+    "Path": "Event/English(US)/Play_Stage2_people.bnk",
+    "Media": [
+     {
+      "Id": "588448560",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "笨小孩人生.wav",
+      "Path": "Media/English(US)/588448560.wem",
+      "CachePath": "94/{94DD3C11-7681-9093-5AF1-BFC8D8535094}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "140947920",
+      "Name": "Play_Stage2_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage2_people",
+      "GUID": "{48D4D23E-22B8-4E53-AFD3-20D06F8E7037}",
+      "DurationType": "OneShot",
+      "DurationMin": "150.5",
+      "DurationMax": "150.5",
+      "MediaRefs": [
+       {
+        "Id": "588448560"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "469006591",
     "Type": "Event",
     "GUID": "{E6A32843-0796-4165-9705-E9A684A6259B}",
@@ -176,7 +213,7 @@
     "Type": "Event",
     "GUID": "{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}",
     "Language": "English(US)",
-    "Hash": "{6867A7E6-8590-A7FC-7172-F82B787EC04A}",
+    "Hash": "{35F2D630-4D18-0DE7-B6BA-44E46F460D30}",
     "ObjectPath": "Play_OneGameOneDream_people",
     "ShortName": "Play_OneGameOneDream_people",
     "Path": "Event/English(US)/Play_OneGameOneDream_people.bnk",
@@ -188,7 +225,7 @@
       "Location": "Loose",
       "ShortName": "一場遊戲一場夢_人聲.wav",
       "Path": "Media/English(US)/59556136.wem",
-      "CachePath": "85/{852E964E-74F1-E75B-F106-9122C5F4ECF0}.wem"
+      "CachePath": "88/{882E55CF-2DF7-4E85-AA2B-259960808354}.wem"
      }
     ],
     "Events": [
@@ -198,8 +235,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\第一關\\音樂\\Play_OneGameOneDream_people",
       "GUID": "{DF60E71B-63A0-4F2E-97B2-E982A0916DF3}",
       "DurationType": "OneShot",
-      "DurationMin": "183.0398",
-      "DurationMax": "183.0398",
+      "DurationMin": "92.89059",
+      "DurationMax": "92.89059",
       "MediaRefs": [
        {
         "Id": "59556136"
@@ -219,6 +256,154 @@
       "Name": "mic_distance",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
       "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   },
+   {
+    "Id": "860181832",
+    "Type": "Event",
+    "GUID": "{2E049C2E-D1D1-4E9B-885F-CA191388AA8A}",
+    "Language": "English(US)",
+    "Hash": "{DD9B215A-12C4-07FE-4054-A3212F8DC85C}",
+    "ObjectPath": "Play_Stage3_audience",
+    "ShortName": "Play_Stage3_audience",
+    "Path": "Event/English(US)/Play_Stage3_audience.bnk",
+    "Media": [
+     {
+      "Id": "116925822",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜 觀眾.wav",
+      "Path": "Media/English(US)/116925822.wem",
+      "CachePath": "2F/{2FC5BD2D-FA7C-3710-9C3A-7B3D844E32E0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "860181832",
+      "Name": "Play_Stage3_audience",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage3_audience",
+      "GUID": "{2E049C2E-D1D1-4E9B-885F-CA191388AA8A}",
+      "DurationType": "OneShot",
+      "DurationMin": "282.288",
+      "DurationMax": "282.288",
+      "MediaRefs": [
+       {
+        "Id": "116925822"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1128932765",
+    "Type": "Event",
+    "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
+    "Language": "English(US)",
+    "Hash": "{C2B9BB0E-9F43-4578-5E56-3E914DAD8256}",
+    "ObjectPath": "Play_Stage1_people",
+    "ShortName": "Play_Stage1_people",
+    "Path": "Event/English(US)/Play_Stage1_people.bnk",
+    "Media": [
+     {
+      "Id": "59556136",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "一場遊戲一場夢_人聲.wav",
+      "Path": "Media/English(US)/59556136.wem",
+      "CachePath": "88/{882E55CF-2DF7-4E85-AA2B-259960808354}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1128932765",
+      "Name": "Play_Stage1_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage1_people",
+      "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
+      "DurationType": "OneShot",
+      "DurationMin": "92.89059",
+      "DurationMax": "92.89059",
+      "MediaRefs": [
+       {
+        "Id": "59556136"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1260835640",
+    "Type": "Event",
+    "GUID": "{87464828-E14A-405B-9358-3703D5F67E4A}",
+    "Language": "English(US)",
+    "Hash": "{772727FD-04C4-C2A7-F379-FD9CD4606CB0}",
+    "ObjectPath": "Play_Stage3_BGM",
+    "ShortName": "Play_Stage3_BGM",
+    "Path": "Event/English(US)/Play_Stage3_BGM.bnk",
+    "Media": [
+     {
+      "Id": "385510995",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜 伴奏.wav",
+      "Path": "Media/English(US)/385510995.wem",
+      "CachePath": "2A/{2AA70078-064D-590F-4475-32C30878C690}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1260835640",
+      "Name": "Play_Stage3_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage3_BGM",
+      "GUID": "{87464828-E14A-405B-9358-3703D5F67E4A}",
+      "DurationType": "OneShot",
+      "DurationMin": "118.488144",
+      "DurationMax": "118.488144",
+      "MediaRefs": [
+       {
+        "Id": "385510995"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1261203211",
+    "Type": "Event",
+    "GUID": "{0BACFEC1-DE9B-4814-90CE-7848B07BF9F9}",
+    "Language": "English(US)",
+    "Hash": "{DFC7A4FA-5F91-1A18-FD29-5C930E408A46}",
+    "ObjectPath": "Play_Stage3_people",
+    "ShortName": "Play_Stage3_people",
+    "Path": "Event/English(US)/Play_Stage3_people.bnk",
+    "Media": [
+     {
+      "Id": "192242864",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜 人聲.wav",
+      "Path": "Media/English(US)/192242864.wem",
+      "CachePath": "4C/{4C935025-119B-77AF-896C-2859B40DA451}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1261203211",
+      "Name": "Play_Stage3_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage3_people",
+      "GUID": "{0BACFEC1-DE9B-4814-90CE-7848B07BF9F9}",
+      "DurationType": "OneShot",
+      "DurationMin": "118.488144",
+      "DurationMax": "118.488144",
+      "MediaRefs": [
+       {
+        "Id": "192242864"
+       }
+      ]
      }
     ]
    },
@@ -301,7 +486,7 @@
     "Type": "Event",
     "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
     "Language": "English(US)",
-    "Hash": "{F33ABB1A-3009-6B80-C02E-F5B9C876DB19}",
+    "Hash": "{1C99418E-B25A-772C-B562-5128F804D227}",
     "ObjectPath": "Play_ThreeDayThreeNight_people",
     "ShortName": "Play_ThreeDayThreeNight_people",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_people.bnk",
@@ -313,7 +498,7 @@
       "Location": "Loose",
       "ShortName": "三天三夜 人聲.wav",
       "Path": "Media/English(US)/192242864.wem",
-      "CachePath": "37/{37B51282-CCC5-93F8-4AAF-F7D9A56436C9}.wem"
+      "CachePath": "4C/{4C935025-119B-77AF-896C-2859B40DA451}.wem"
      }
     ],
     "Events": [
@@ -323,8 +508,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\第三關\\音樂\\Play_ThreeDayThreeNight_people",
       "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
       "DurationType": "OneShot",
-      "DurationMin": "282.288",
-      "DurationMax": "282.288",
+      "DurationMin": "118.488144",
+      "DurationMax": "118.488144",
       "MediaRefs": [
        {
         "Id": "192242864"
@@ -512,6 +697,43 @@
       "MediaRefs": [
        {
         "Id": "902117724"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1643914477",
+    "Type": "Event",
+    "GUID": "{B67B9E84-3AB8-4D12-937C-A71869F5E043}",
+    "Language": "English(US)",
+    "Hash": "{C3CB4DFA-B0E4-5F81-D0E1-BE6831E1248C}",
+    "ObjectPath": "Play_end_01",
+    "ShortName": "Play_end_01",
+    "Path": "Event/English(US)/Play_end_01.bnk",
+    "Media": [
+     {
+      "Id": "379200882",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "end.wav",
+      "Path": "Media/English(US)/379200882.wem",
+      "CachePath": "29/{29F21B9E-D75D-6A9A-CA3D-3FCA5568D574}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1643914477",
+      "Name": "Play_end_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_end_01",
+      "GUID": "{B67B9E84-3AB8-4D12-937C-A71869F5E043}",
+      "DurationType": "OneShot",
+      "DurationMin": "222.07565",
+      "DurationMax": "222.07565",
+      "MediaRefs": [
+       {
+        "Id": "379200882"
        }
       ]
      }
@@ -1055,6 +1277,43 @@
     ]
    },
    {
+    "Id": "3419914841",
+    "Type": "Event",
+    "GUID": "{C71A0D9E-BFDF-4A0E-97D8-F5C1067DFF2F}",
+    "Language": "English(US)",
+    "Hash": "{0FEFD9FA-BE2D-27D7-DCBC-C270CB2FE964}",
+    "ObjectPath": "Play_Stage2_BGM",
+    "ShortName": "Play_Stage2_BGM",
+    "Path": "Event/English(US)/Play_Stage2_BGM.bnk",
+    "Media": [
+     {
+      "Id": "636954447",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "笨小孩背景.wav",
+      "Path": "Media/English(US)/636954447.wem",
+      "CachePath": "51/{51E1C3CB-B94D-446D-3349-EB223F05C00A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3419914841",
+      "Name": "Play_Stage2_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage2_BGM",
+      "GUID": "{C71A0D9E-BFDF-4A0E-97D8-F5C1067DFF2F}",
+      "DurationType": "OneShot",
+      "DurationMin": "152",
+      "DurationMax": "152",
+      "MediaRefs": [
+       {
+        "Id": "636954447"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "3459025660",
     "Type": "Event",
     "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
@@ -1199,6 +1458,43 @@
     ]
    },
    {
+    "Id": "4043888610",
+    "Type": "Event",
+    "GUID": "{FC506387-0825-4066-B58C-B461093E52EF}",
+    "Language": "English(US)",
+    "Hash": "{040E026E-0F6F-D311-9BC8-E32EBB638FA9}",
+    "ObjectPath": "Play_Stage1_BGM",
+    "ShortName": "Play_Stage1_BGM",
+    "Path": "Event/English(US)/Play_Stage1_BGM.bnk",
+    "Media": [
+     {
+      "Id": "114303497",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "一場遊戲一場夢_伴奏.wav",
+      "Path": "Media/English(US)/114303497.wem",
+      "CachePath": "CF/{CFEA6BA8-3F4D-118B-ED0B-E0F658285609}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4043888610",
+      "Name": "Play_Stage1_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage1_BGM",
+      "GUID": "{FC506387-0825-4066-B58C-B461093E52EF}",
+      "DurationType": "OneShot",
+      "DurationMin": "92.89059",
+      "DurationMax": "92.89059",
+      "MediaRefs": [
+       {
+        "Id": "114303497"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "4065753090",
     "Type": "Event",
     "GUID": "{AC64EA27-5927-48B6-8CE8-0045F5ED9F87}",
@@ -1271,6 +1567,6 @@
     ]
    }
   ],
-  "FileHash": "{08039BF6-957A-D301-BA1D-35EAB9E253BE}"
+  "FileHash": "{3E312CCE-41A3-1CF4-231D-A85D415626E8}"
  }
 }

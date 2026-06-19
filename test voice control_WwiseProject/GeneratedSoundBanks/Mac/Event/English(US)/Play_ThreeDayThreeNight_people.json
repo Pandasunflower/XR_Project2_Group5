@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
     "Language": "English(US)",
-    "Hash": "{F33ABB1A-3009-6B80-C02E-F5B9C876DB19}",
+    "Hash": "{1C99418E-B25A-772C-B562-5128F804D227}",
     "ObjectPath": "Play_ThreeDayThreeNight_people",
     "ShortName": "Play_ThreeDayThreeNight_people",
     "Path": "Event/English(US)/Play_ThreeDayThreeNight_people.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "三天三夜 人聲.wav",
       "Path": "Media/English(US)/192242864.wem",
-      "CachePath": "37/{37B51282-CCC5-93F8-4AAF-F7D9A56436C9}.wem"
+      "CachePath": "4C/{4C935025-119B-77AF-896C-2859B40DA451}.wem"
      }
     ],
     "Events": [
@@ -32,8 +32,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\第三關\\音樂\\Play_ThreeDayThreeNight_people",
       "GUID": "{E8DFE84B-E6AA-4C1D-AD96-6D5FDFDF449B}",
       "DurationType": "OneShot",
-      "DurationMin": "282.288",
-      "DurationMax": "282.288",
+      "DurationMin": "118.488144",
+      "DurationMax": "118.488144",
       "MediaRefs": [
        {
         "Id": "192242864"
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{08B12B67-1655-F861-E587-0E68A7E46A3C}"
+  "FileHash": "{E788B9B9-4E4F-651F-F82F-D70568CA342C}"
  }
 }

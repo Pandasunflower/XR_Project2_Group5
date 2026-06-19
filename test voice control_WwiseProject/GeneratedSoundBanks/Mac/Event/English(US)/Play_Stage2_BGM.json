@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3419914841",
+    "Type": "Event",
+    "GUID": "{C71A0D9E-BFDF-4A0E-97D8-F5C1067DFF2F}",
+    "Language": "English(US)",
+    "Hash": "{0FEFD9FA-BE2D-27D7-DCBC-C270CB2FE964}",
+    "ObjectPath": "Play_Stage2_BGM",
+    "ShortName": "Play_Stage2_BGM",
+    "Path": "Event/English(US)/Play_Stage2_BGM.bnk",
+    "Media": [
+     {
+      "Id": "636954447",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "笨小孩背景.wav",
+      "Path": "Media/English(US)/636954447.wem",
+      "CachePath": "51/{51E1C3CB-B94D-446D-3349-EB223F05C00A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3419914841",
+      "Name": "Play_Stage2_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage2_BGM",
+      "GUID": "{C71A0D9E-BFDF-4A0E-97D8-F5C1067DFF2F}",
+      "DurationType": "OneShot",
+      "DurationMin": "152",
+      "DurationMax": "152",
+      "MediaRefs": [
+       {
+        "Id": "636954447"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A17DA8C0-BE22-DCFC-1BED-5FC70E7481EB}"
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4043888610",
+    "Type": "Event",
+    "GUID": "{FC506387-0825-4066-B58C-B461093E52EF}",
+    "Language": "English(US)",
+    "Hash": "{040E026E-0F6F-D311-9BC8-E32EBB638FA9}",
+    "ObjectPath": "Play_Stage1_BGM",
+    "ShortName": "Play_Stage1_BGM",
+    "Path": "Event/English(US)/Play_Stage1_BGM.bnk",
+    "Media": [
+     {
+      "Id": "114303497",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "一場遊戲一場夢_伴奏.wav",
+      "Path": "Media/English(US)/114303497.wem",
+      "CachePath": "CF/{CFEA6BA8-3F4D-118B-ED0B-E0F658285609}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4043888610",
+      "Name": "Play_Stage1_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage1_BGM",
+      "GUID": "{FC506387-0825-4066-B58C-B461093E52EF}",
+      "DurationType": "OneShot",
+      "DurationMin": "92.89059",
+      "DurationMax": "92.89059",
+      "MediaRefs": [
+       {
+        "Id": "114303497"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{814BD546-2D3F-C216-C715-BA1FBE9626F0}"
+ }
+}

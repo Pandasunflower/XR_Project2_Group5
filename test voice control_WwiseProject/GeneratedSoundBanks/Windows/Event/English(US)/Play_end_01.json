@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1643914477",
+    "Type": "Event",
+    "GUID": "{B67B9E84-3AB8-4D12-937C-A71869F5E043}",
+    "Language": "English(US)",
+    "Hash": "{C3CB4DFA-B0E4-5F81-D0E1-BE6831E1248C}",
+    "ObjectPath": "Play_end_01",
+    "ShortName": "Play_end_01",
+    "Path": "Event/English(US)/Play_end_01.bnk",
+    "Media": [
+     {
+      "Id": "379200882",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "end.wav",
+      "Path": "Media/English(US)/379200882.wem",
+      "CachePath": "29/{29F21B9E-D75D-6A9A-CA3D-3FCA5568D574}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1643914477",
+      "Name": "Play_end_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_end_01",
+      "GUID": "{B67B9E84-3AB8-4D12-937C-A71869F5E043}",
+      "DurationType": "OneShot",
+      "DurationMin": "222.07565",
+      "DurationMax": "222.07565",
+      "MediaRefs": [
+       {
+        "Id": "379200882"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C02E504A-7AA3-506A-37FC-F33901C143C7}"
+ }
+}

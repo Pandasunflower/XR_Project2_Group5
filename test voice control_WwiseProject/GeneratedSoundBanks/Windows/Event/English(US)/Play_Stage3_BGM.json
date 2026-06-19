@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1260835640",
+    "Type": "Event",
+    "GUID": "{87464828-E14A-405B-9358-3703D5F67E4A}",
+    "Language": "English(US)",
+    "Hash": "{772727FD-04C4-C2A7-F379-FD9CD4606CB0}",
+    "ObjectPath": "Play_Stage3_BGM",
+    "ShortName": "Play_Stage3_BGM",
+    "Path": "Event/English(US)/Play_Stage3_BGM.bnk",
+    "Media": [
+     {
+      "Id": "385510995",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜 伴奏.wav",
+      "Path": "Media/English(US)/385510995.wem",
+      "CachePath": "2A/{2AA70078-064D-590F-4475-32C30878C690}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1260835640",
+      "Name": "Play_Stage3_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage3_BGM",
+      "GUID": "{87464828-E14A-405B-9358-3703D5F67E4A}",
+      "DurationType": "OneShot",
+      "DurationMin": "118.488144",
+      "DurationMax": "118.488144",
+      "MediaRefs": [
+       {
+        "Id": "385510995"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2BAE626C-7AE8-CD84-ACFE-FFF0D8E0C22B}"
+ }
+}

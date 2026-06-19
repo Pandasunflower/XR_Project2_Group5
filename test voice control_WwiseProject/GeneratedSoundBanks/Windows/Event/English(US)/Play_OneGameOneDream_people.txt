@@ -1,5 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
-	806402365	Play_OneGameOneDream_people			\Default Work Unit\Play_OneGameOneDream_people	
+	806402365	Play_OneGameOneDream_people			\Default Work Unit\第一關\音樂\Play_OneGameOneDream_people	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1163235330	mic_direct			\Default Work Unit\mic_direct	

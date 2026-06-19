@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1261203211",
+    "Type": "Event",
+    "GUID": "{0BACFEC1-DE9B-4814-90CE-7848B07BF9F9}",
+    "Language": "English(US)",
+    "Hash": "{DFC7A4FA-5F91-1A18-FD29-5C930E408A46}",
+    "ObjectPath": "Play_Stage3_people",
+    "ShortName": "Play_Stage3_people",
+    "Path": "Event/English(US)/Play_Stage3_people.bnk",
+    "Media": [
+     {
+      "Id": "192242864",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "三天三夜 人聲.wav",
+      "Path": "Media/English(US)/192242864.wem",
+      "CachePath": "4C/{4C935025-119B-77AF-896C-2859B40DA451}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1261203211",
+      "Name": "Play_Stage3_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage3_people",
+      "GUID": "{0BACFEC1-DE9B-4814-90CE-7848B07BF9F9}",
+      "DurationType": "OneShot",
+      "DurationMin": "118.488144",
+      "DurationMax": "118.488144",
+      "MediaRefs": [
+       {
+        "Id": "192242864"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{64BD3E2C-1E46-6D08-C10E-2DB72E1FB2BE}"
+ }
+}

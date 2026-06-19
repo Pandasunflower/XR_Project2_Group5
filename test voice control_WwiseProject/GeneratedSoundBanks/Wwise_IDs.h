@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_DANCINGGIRL = 509118324U;
         static const AkUniqueID PLAY_DAVEWANG = 3205629941U;
         static const AkUniqueID PLAY_END = 2472290785U;
+        static const AkUniqueID PLAY_END_01 = 1643914477U;
         static const AkUniqueID PLAY_FOOLCHILD_BGM = 1314294175U;
         static const AkUniqueID PLAY_FOOLCHILD_PEOPLE = 560573542U;
         static const AkUniqueID PLAY_FOR_THE_ANNA = 2949967820U;
@@ -37,6 +38,13 @@ namespace AK
         static const AkUniqueID PLAY_ONPHONE = 4122281311U;
         static const AkUniqueID PLAY_SHOOT = 2641650631U;
         static const AkUniqueID PLAY_SPOTLIGHT = 1951773134U;
+        static const AkUniqueID PLAY_STAGE1_BGM = 4043888610U;
+        static const AkUniqueID PLAY_STAGE1_PEOPLE = 1128932765U;
+        static const AkUniqueID PLAY_STAGE2_BGM = 3419914841U;
+        static const AkUniqueID PLAY_STAGE2_PEOPLE = 140947920U;
+        static const AkUniqueID PLAY_STAGE3_AUDIENCE = 860181832U;
+        static const AkUniqueID PLAY_STAGE3_BGM = 1260835640U;
+        static const AkUniqueID PLAY_STAGE3_PEOPLE = 1261203211U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_AUDIENCE = 2494639119U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_BGM = 3749606501U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_PEOPLE = 1319984948U;
