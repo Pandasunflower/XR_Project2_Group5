@@ -6,6 +6,7 @@ using MyCrowdSystem;
 public class MicrophoneDetection : MonoBehaviour
 {
     public GPUI_CrowdGenerator crowdGenerator;
+    public AnimationManager animationManager;
 
     void Awake()
     {
@@ -13,12 +14,23 @@ public class MicrophoneDetection : MonoBehaviour
         {
             crowdGenerator = FindObjectOfType<GPUI_CrowdGenerator>();
         }
+        if (animationManager == null)
+        {
+            animationManager = FindObjectOfType<AnimationManager>();
+        }
     }
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Microphone"))
         {
-            crowdGenerator.callChangeAnim(0, false);
+            if (animationManager != null)
+            {
+                animationManager.StartCoroutine(animationManager.SetCrowdAnimators(0));
+            }
+            else if (crowdGenerator != null)
+            {
+                crowdGenerator.callChangeAnim(0, false);
+            }
         }
         
     }

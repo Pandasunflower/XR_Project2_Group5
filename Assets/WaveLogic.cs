@@ -8,12 +8,18 @@ public class WaveLogic : MonoBehaviour
     public bool isWaveLeft = false;
     public bool isWaveRight = false;
     public GPUI_CrowdGenerator crowdGenerator;
+    public AnimationManager animationManager;
 
     void Awake()
     {
         if (crowdGenerator == null)
         {
             crowdGenerator = FindObjectOfType<GPUI_CrowdGenerator>();
+        }
+
+        if (animationManager == null)
+        {
+            animationManager = FindObjectOfType<AnimationManager>();
         }
     }
 
@@ -25,7 +31,14 @@ public class WaveLogic : MonoBehaviour
         }
         if (isWaveLeft && isWaveRight)
         {
-            crowdGenerator.TriggerBigWave();
+            if (animationManager != null)
+            {
+                animationManager.StartCoroutine(animationManager.SetWaveCrowdAnimators(1));
+            }
+            else if (crowdGenerator != null)
+            {
+                crowdGenerator.TriggerBigWave();
+            }
             Debug.Log("波浪舞");
             isWaveLeft = false;
             isWaveRight = false;

@@ -2976,6 +2976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crowdGenerator: {fileID: 0}
+  animationManager: {fileID: 542942682}
 --- !u!1 &362338342
 GameObject:
   m_ObjectHideFlags: 0
@@ -6343,6 +6344,7 @@ MonoBehaviour:
   isIn: 0
   Tag: 0
   crowdGenerator: {fileID: 0}
+  animationManager: {fileID: 542942682}
 --- !u!4 &731383055
 Transform:
   m_ObjectHideFlags: 0
@@ -12193,6 +12195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crowdGenerator: {fileID: 0}
+  animationManager: {fileID: 542942682}
 --- !u!1 &1420050094
 GameObject:
   m_ObjectHideFlags: 0
@@ -16281,7 +16284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isWaveLeft: 0
   isWaveRight: 0
-  crowdGenerator: {fileID: 2082289855}
+  crowdGenerator: {fileID: 0}
+  animationManager: {fileID: 542942682}
 --- !u!1 &1873445604
 GameObject:
   m_ObjectHideFlags: 0
@@ -18910,6 +18914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crowdGenerator: {fileID: 0}
+  animationManager: {fileID: 542942682}
 --- !u!1001 &93028808945250666
 PrefabInstance:
   m_ObjectHideFlags: 0
