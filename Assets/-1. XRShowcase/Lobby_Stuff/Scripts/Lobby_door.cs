@@ -4,7 +4,7 @@ public class Lobby_door : MonoBehaviour
 {
     [Header("Dependencies")]
     [Tooltip("拖入場景中的 LobbySceneManager")]
-    public LobbySceneManager lobbySceneManager;
+    public LobbySceneManagerShowcase lobbySceneManager;
     private bool hasBeenTriggered = false;
 
     private void OnTriggerEnter(Collider other)

@@ -31,7 +31,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d4c867f6b72b714dbb5fd1780afe208, type: 3}
-  m_Name: FWForStage3
+  m_Name: FWForStage3 1
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 0}
@@ -68,7 +68,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FWForStage3
+  m_Name: FWForStage3 1
   m_Graph: {fileID: 114350483966674976}
   m_Infos:
     m_RendererSettings:
@@ -4134,7 +4134,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Gradient, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"colorKeys":[{"color":{"r":95.87452697753906,"g":95.87452697753906,"b":95.87452697753906,"a":1.0},"time":0.002944991225376725},{"color":{"r":0.0,"g":0.7615131735801697,"b":2.9960787296295168,"a":1.0},"time":0.0117647061124444},{"color":{"r":11.763895988464356,"g":1.2687137126922608,"b":29.885269165039064,"a":1.0},"time":0.026474403217434884},{"color":{"r":0.36078423261642458,"g":2.9960777759552,"b":0.6969577074050903,"a":1.0},"time":0.9911803007125855}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":0.800000011920929,"time":0.800000011920929},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
+      m_SerializableObject: '{"colorKeys":[{"color":{"r":95.87452697753906,"g":95.87452697753906,"b":95.87452697753906,"a":1.0},"time":0.0},{"color":{"r":0.0,"g":2.9960787296295168,"b":0.3376530408859253,"a":1.0},"time":0.0117647061124444},{"color":{"r":1.380987286567688,"g":2.9960777759552,"b":0.36078423261642458,"a":1.0},"time":0.9911803007125855}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":0.800000011920929,"time":0.800000011920929},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
     m_Space: 2147483647
   m_Property:
     name: Color

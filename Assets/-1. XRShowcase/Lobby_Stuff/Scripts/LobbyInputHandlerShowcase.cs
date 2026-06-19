@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class LobbyInputHandlerShowcase : MonoBehaviour
 {
     [Header("Core References")]
-    public LobbySongManager songManager;
-    public LobbySceneManager sceneManager;
+    public LobbySongManagerShowcase songManager;
+    public LobbySceneManagerShowcase sceneManager;
 
     [Header("Input Settings")]
     public float inputCooldown = 0.2f;
