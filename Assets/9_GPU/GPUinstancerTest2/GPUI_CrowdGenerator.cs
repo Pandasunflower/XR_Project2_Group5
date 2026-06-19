@@ -12,9 +12,9 @@ namespace MyCrowdSystem
     [System.Serializable]
     public class CrowdZone
     {
-        public string zoneName = "看台區 A"; // 方便你在 Inspector 辨識
+        public string zoneName = "Zone1";
         public MeshFilter targetMeshFilter;
-        public int population = 5000; // 這個區域的人數
+        public int population = 900;
         [Range(0.1f, 1f)] public float upwardThreshold = 0.8f;
     }
 
