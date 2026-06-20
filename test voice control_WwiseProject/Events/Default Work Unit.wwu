@@ -440,6 +440,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_TimeIsUp" ID="{D89D5AC0-D84E-43D7-B05A-12B2EE9AFC38}">
+					<ChildrenList>
+						<Action Name="" ID="{B636A6BD-E7E8-4929-89F1-E01160C6F1A5}" ShortID="414338631">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="時間快到囉" ID="{1A200A07-5E1F-4A49-8173-C047FA0CF680}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

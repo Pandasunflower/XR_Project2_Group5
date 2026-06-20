@@ -1133,6 +1133,43 @@
     ]
    },
    {
+    "Id": "3043573794",
+    "Type": "Event",
+    "GUID": "{D89D5AC0-D84E-43D7-B05A-12B2EE9AFC38}",
+    "Language": "English(US)",
+    "Hash": "{B6310079-000E-1DFF-4DF5-8151689EC2CB}",
+    "ObjectPath": "Play_TimeIsUp",
+    "ShortName": "Play_TimeIsUp",
+    "Path": "Event/English(US)/Play_TimeIsUp.bnk",
+    "Media": [
+     {
+      "Id": "710219977",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "時間快到囉.wav",
+      "Path": "Media/English(US)/710219977.wem",
+      "CachePath": "DA/{DA90B876-ECE7-0F4E-0AE3-B90ADFB6CA73}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3043573794",
+      "Name": "Play_TimeIsUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_TimeIsUp",
+      "GUID": "{D89D5AC0-D84E-43D7-B05A-12B2EE9AFC38}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.1085715",
+      "DurationMax": "3.1085715",
+      "MediaRefs": [
+       {
+        "Id": "710219977"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "3118526426",
     "Type": "Event",
     "GUID": "{B327097A-BABB-4A3B-8122-65CE6342F7AB}",
@@ -1567,6 +1604,6 @@
     ]
    }
   ],
-  "FileHash": "{5A443703-5EDE-FE2B-BB22-21036CD1587C}"
+  "FileHash": "{EDC63EEF-6DCE-7BE2-F895-339DE4332836}"
  }
 }

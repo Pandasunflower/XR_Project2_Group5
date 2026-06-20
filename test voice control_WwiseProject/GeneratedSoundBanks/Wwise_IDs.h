@@ -48,6 +48,7 @@ namespace AK
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_AUDIENCE = 2494639119U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_BGM = 3749606501U;
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_PEOPLE = 1319984948U;
+        static const AkUniqueID PLAY_TIMEISUP = 3043573794U;
         static const AkUniqueID PLAY_WAITINGSCORE = 469006591U;
         static const AkUniqueID PLAY_YELL = 793661728U;
     } // namespace EVENTS

@@ -1482,6 +1482,31 @@
 								<ActiveSource Name="end" ID="{A8292D39-BF2D-4DBD-9B22-3833C12DC215}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="時間快到囉" ID="{1A200A07-5E1F-4A49-8173-C047FA0CF680}" ShortID="193345243">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="時間快到囉" ID="{D24C4B46-92DF-4AB9-9227-316FC9D8A607}">
+									<Language>English(US)</Language>
+									<AudioFile>時間快到囉.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="710219977"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="時間快到囉" ID="{D24C4B46-92DF-4AB9-9227-316FC9D8A607}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
