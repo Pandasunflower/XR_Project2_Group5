@@ -51,6 +51,16 @@
     ]
    },
    {
+    "Id": "290285391",
+    "Type": "User",
+    "GUID": "{68E703B7-CC55-4A2E-9A62-90088709FA6F}",
+    "Language": "SFX",
+    "Hash": "{E65BD0D7-BA85-9244-0D0E-07C38415CB99}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\lobby",
+    "ShortName": "lobby",
+    "Path": "lobby.bnk"
+   },
+   {
     "Id": "469006591",
     "Type": "Event",
     "GUID": "{E6A32843-0796-4165-9705-E9A684A6259B}",
@@ -172,6 +182,16 @@
       "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
      }
     ]
+   },
+   {
+    "Id": "565721261",
+    "Type": "User",
+    "GUID": "{AC0BBD11-6CFF-44FB-844C-61E34D942627}",
+    "Language": "SFX",
+    "Hash": "{1AD17F74-79E9-1A4B-30E1-5698D2296924}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\firstStage",
+    "ShortName": "firstStage",
+    "Path": "firstStage.bnk"
    },
    {
     "Id": "793661728",
@@ -1652,6 +1672,6 @@
     ]
    }
   ],
-  "FileHash": "{CBBC4FE7-7832-F90B-E011-50801EBD3DC1}"
+  "FileHash": "{F726C9F0-FF3F-37AC-DB7A-A61000112523}"
  }
 }

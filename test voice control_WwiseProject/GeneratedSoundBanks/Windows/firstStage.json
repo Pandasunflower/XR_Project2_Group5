@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "565721261",
+    "Type": "User",
+    "GUID": "{AC0BBD11-6CFF-44FB-844C-61E34D942627}",
+    "Language": "SFX",
+    "Hash": "{1AD17F74-79E9-1A4B-30E1-5698D2296924}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\firstStage",
+    "ShortName": "firstStage",
+    "Path": "firstStage.bnk"
+   }
+  ],
+  "FileHash": "{C0156AC0-0131-7D93-C9C8-558595B59DAC}"
+ }
+}

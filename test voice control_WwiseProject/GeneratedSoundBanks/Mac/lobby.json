@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "290285391",
+    "Type": "User",
+    "GUID": "{68E703B7-CC55-4A2E-9A62-90088709FA6F}",
+    "Language": "SFX",
+    "Hash": "{E65BD0D7-BA85-9244-0D0E-07C38415CB99}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\lobby",
+    "ShortName": "lobby",
+    "Path": "lobby.bnk"
+   }
+  ],
+  "FileHash": "{020B8431-0F17-A052-96B9-82F653D7006D}"
+ }
+}

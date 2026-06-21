@@ -1,3 +1,3 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2087262618	Play_GoDownStage			\Default Work Unit\Play_GoDownStage	
+	2087262618	Play_GoDownStage			\Default Work Unit\第一關\音效\Play_GoDownStage	
 

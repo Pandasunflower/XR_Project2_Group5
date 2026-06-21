@@ -5,11 +5,8 @@
 			<ChildrenList>
 				<SoundBank Name="mainbank" ID="{5460ADC1-BFD3-4E3B-B379-EE4D9D92881B}">
 					<ObjectInclusionList>
-						<ObjectRef Name="" ID="{C11B805A-D499-4021-B12E-D5658F18D88F}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{54FDB143-4683-4098-8BFD-72605C8ADF6A}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="" ID="{DAFA9F65-8708-409C-B5D2-4F17ACF1B118}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{B98D50A8-9B00-40BD-AAA9-9ADA6440BEF0}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="" ID="{E02719CA-6CB2-40D4-AAE6-E4197125A464}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{1B68D764-772D-4139-9A3A-15EB71CADCE1}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{42FC422E-0F09-41DC-ACB3-694C40489420}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{C5286CAF-1500-4220-885B-D1FA4CC9A235}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
@@ -21,26 +18,41 @@
 						<ObjectRef Name="" ID="{DBF916CF-333A-443C-8BDD-68D2B24618DF}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{D8F818A6-824A-4472-B321-4D268AEE5D93}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{402F0753-0795-44B4-8A7C-4C06533881B0}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="" ID="{A09C4A4B-2E69-44D6-BBC5-8A36F6BEDCBD}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{AC497FD6-D65B-45CB-A669-73F86C1A5B09}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{35A2E4D7-ACB8-4614-A8B3-4707B9C1CC2E}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{9FF7CB21-9490-46D0-A53B-20ABB4C3A81D}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{5B3CF7F6-BBC1-46D5-AD49-AEEB2856A18C}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{94461312-B2F9-4725-B9A3-8B30437FAE75}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="" ID="{8B3AF93F-7904-4905-B69B-9D05C4FC64C3}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{B636A6BD-E7E8-4929-89F1-E01160C6F1A5}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{4BB1B775-300C-497D-BBE1-D3BFD5C5A790}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{0F5FE376-F96B-497E-8AB9-84FFE1FBC5D0}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{0DAEE94D-F0E6-499E-8023-FCF7E7E180C8}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{11CEDB8C-72FF-4A3A-9B31-E35DDFCC7BD0}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{ACE82F75-E525-4AED-A493-876229287059}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="" ID="{8E3EB0E8-20D0-4C0F-A57C-99067A7B350C}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="" ID="{D27B9F6A-A5F6-4C4D-953F-81B8114A7000}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="" ID="{2C72F60C-718D-4CC0-ABBD-E91B29D8FE94}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{2F54B6C1-8B22-4D98-A1E8-6C3D383C1121}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{25B6D558-3318-4E6B-9856-49BF5EEB715B}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{98648C49-CC6B-4E81-9CB8-460121FF2B59}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{9347D720-54B7-4E99-997F-B4682219F671}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="lobby" ID="{68E703B7-CC55-4A2E-9A62-90088709FA6F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="" ID="{DAFA9F65-8708-409C-B5D2-4F17ACF1B118}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{8E3EB0E8-20D0-4C0F-A57C-99067A7B350C}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="firstStage" ID="{AC0BBD11-6CFF-44FB-844C-61E34D942627}">
+					<ObjectInclusionList>
+						<ObjectRef Name="" ID="{C11B805A-D499-4021-B12E-D5658F18D88F}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{E02719CA-6CB2-40D4-AAE6-E4197125A464}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{A09C4A4B-2E69-44D6-BBC5-8A36F6BEDCBD}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{8B3AF93F-7904-4905-B69B-9D05C4FC64C3}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{D27B9F6A-A5F6-4C4D-953F-81B8114A7000}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{2C72F60C-718D-4CC0-ABBD-E91B29D8FE94}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{890C46EF-D629-4F22-840C-7FF38444E199}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{C70F133F-BC70-4FF8-ADD1-424148C3302C}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
