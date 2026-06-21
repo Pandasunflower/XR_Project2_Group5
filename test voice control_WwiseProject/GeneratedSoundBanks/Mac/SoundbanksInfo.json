@@ -1068,6 +1068,16 @@
     ]
    },
    {
+    "Id": "2842888517",
+    "Type": "User",
+    "GUID": "{E8564746-B1BB-481F-8A59-7873F0687565}",
+    "Language": "SFX",
+    "Hash": "{EFB461AD-418F-0934-430F-D22E2C48A6DB}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\forDemoBank",
+    "ShortName": "forDemoBank",
+    "Path": "forDemoBank.bnk"
+   },
+   {
     "Id": "2880737896",
     "Type": "User",
     "GUID": "{5460ADC1-BFD3-4E3B-B379-EE4D9D92881B}",
@@ -1672,6 +1682,6 @@
     ]
    }
   ],
-  "FileHash": "{57C765E3-885A-6AED-F72A-0E6F90918DA8}"
+  "FileHash": "{64014F48-7287-27E4-CDEC-FBA3B833EA95}"
  }
 }

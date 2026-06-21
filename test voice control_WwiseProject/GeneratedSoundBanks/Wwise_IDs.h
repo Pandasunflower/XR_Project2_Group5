@@ -66,6 +66,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID FIRSTSTAGE = 565721261U;
+        static const AkUniqueID FORDEMOBANK = 2842888517U;
         static const AkUniqueID LOBBY = 290285391U;
         static const AkUniqueID MAINBANK = 2880737896U;
     } // namespace BANKS
