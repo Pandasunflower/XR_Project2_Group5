@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3876215541",
+    "Type": "Event",
+    "GUID": "{90D3EB6F-F34D-4E3E-9794-0E8141DC90A2}",
+    "Language": "English(US)",
+    "Hash": "{A5EB8B8C-F2A7-DB2C-27DE-00D70D5281FF}",
+    "ObjectPath": "Play_firework",
+    "ShortName": "Play_firework",
+    "Path": "Event/English(US)/Play_firework.bnk",
+    "Media": [
+     {
+      "Id": "775328321",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "firework.wav",
+      "Path": "Media/English(US)/775328321.wem",
+      "CachePath": "23/{23ABDD8E-2B69-8816-A00C-FB49E0AC9BF9}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3876215541",
+      "Name": "Play_firework",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_firework",
+      "GUID": "{90D3EB6F-F34D-4E3E-9794-0E8141DC90A2}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.3175511",
+      "DurationMax": "3.3175511",
+      "MediaRefs": [
+       {
+        "Id": "775328321"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1A4E87B2-F5BA-44AE-EA2B-99057C118A0C}"
+ }
+}

@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3876215541	Play_firework			\Default Work Unit\Play_firework	
+
