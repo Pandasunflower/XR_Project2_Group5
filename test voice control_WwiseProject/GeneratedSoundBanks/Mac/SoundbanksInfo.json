@@ -1011,21 +1011,22 @@
     ]
    },
    {
-    "Id": "2880737896",
-    "Type": "User",
-    "GUID": "{5460ADC1-BFD3-4E3B-B379-EE4D9D92881B}",
+    "Id": "2809997089",
+    "Type": "Event",
+    "GUID": "{6C9EEB6E-1CBF-4E90-86EF-072480250550}",
     "Language": "English(US)",
-    "Hash": "{2826F40A-9E1B-68F6-23BA-A8BC38A3762F}",
-    "ObjectPath": "\\SoundBanks\\Default Work Unit\\mainbank",
-    "ShortName": "mainbank",
-    "Path": "English(US)/mainbank.bnk",
+    "Hash": "{6FDB5F63-EA99-B806-1578-B5D54530821A}",
+    "ObjectPath": "Play_OneGameOneDream",
+    "ShortName": "Play_OneGameOneDream",
+    "Path": "Event/English(US)/Play_OneGameOneDream.bnk",
     "Media": [
      {
       "Id": "1049721955",
       "Language": "English(US)",
       "Streaming": "false",
-      "Location": "Memory",
+      "Location": "Loose",
       "ShortName": "一場遊戲一場夢.wav",
+      "Path": "Media/English(US)/1049721955.wem",
       "CachePath": "7A/{7A5576E6-506C-469F-3CC3-635DA98EE0F3}.wem"
      }
     ],
@@ -1045,6 +1046,16 @@
       ]
      }
     ]
+   },
+   {
+    "Id": "2880737896",
+    "Type": "User",
+    "GUID": "{5460ADC1-BFD3-4E3B-B379-EE4D9D92881B}",
+    "Language": "SFX",
+    "Hash": "{21BCF7A1-7AEC-307E-AAA9-E8CF3CB7A881}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\mainbank",
+    "ShortName": "mainbank",
+    "Path": "mainbank.bnk"
    },
    {
     "Id": "2949967820",
@@ -1641,6 +1652,6 @@
     ]
    }
   ],
-  "FileHash": "{799FCBD2-C2E2-098C-5B8B-768FF9453107}"
+  "FileHash": "{BE59CD40-26B9-9137-55B6-6634DC1F327E}"
  }
 }

@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2809997089",
+    "Type": "Event",
+    "GUID": "{6C9EEB6E-1CBF-4E90-86EF-072480250550}",
+    "Language": "English(US)",
+    "Hash": "{6FDB5F63-EA99-B806-1578-B5D54530821A}",
+    "ObjectPath": "Play_OneGameOneDream",
+    "ShortName": "Play_OneGameOneDream",
+    "Path": "Event/English(US)/Play_OneGameOneDream.bnk",
+    "Media": [
+     {
+      "Id": "1049721955",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "一場遊戲一場夢.wav",
+      "Path": "Media/English(US)/1049721955.wem",
+      "CachePath": "7A/{7A5576E6-506C-469F-3CC3-635DA98EE0F3}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2809997089",
+      "Name": "Play_OneGameOneDream",
+      "ObjectPath": "\\Events\\Default Work Unit\\Test\\Play_OneGameOneDream",
+      "GUID": "{6C9EEB6E-1CBF-4E90-86EF-072480250550}",
+      "DurationType": "OneShot",
+      "DurationMin": "257.4106",
+      "DurationMax": "257.4106",
+      "MediaRefs": [
+       {
+        "Id": "1049721955"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2D9E012F-BDC3-1217-FC5C-0A2424064FA2}"
+ }
+}

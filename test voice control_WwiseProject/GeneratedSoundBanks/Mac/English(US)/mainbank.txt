@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2809997089	Play_OneGameOneDream			\Default Work Unit\Test\Play_OneGameOneDream	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1049721955	OneGameOneDream	.cache\7A\{7A5576E6-506C-469F-3CC3-635DA98EE0F3}.wem		\Containers\Default Work Unit\Test\OneGameOneDream		45407328
-
