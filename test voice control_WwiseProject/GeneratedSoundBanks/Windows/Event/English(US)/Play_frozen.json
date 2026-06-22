@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
     "Language": "English(US)",
-    "Hash": "{9A5F8938-4A20-CB01-F1DB-0F3269C2DEC6}",
+    "Hash": "{1A6B9EE7-0979-FF5E-0BDE-482078D3CE98}",
     "ObjectPath": "Play_frozen",
     "ShortName": "Play_frozen",
     "Path": "Event/English(US)/Play_frozen.bnk",
@@ -18,7 +18,7 @@
      {
       "Id": "345055891",
       "Language": "English(US)",
-      "Streaming": "false",
+      "Streaming": "true",
       "Location": "Loose",
       "ShortName": "for-the-first-time-in-forever-from-frozensing-along.wav",
       "Path": "Media/English(US)/345055891.wem",
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{357A8A49-59A8-2E2C-5D21-39BBFAD8B60C}"
+  "FileHash": "{0B0A2310-30D8-3141-91BA-3391D6180832}"
  }
 }

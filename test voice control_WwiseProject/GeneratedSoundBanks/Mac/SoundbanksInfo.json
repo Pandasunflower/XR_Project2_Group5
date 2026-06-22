@@ -1287,7 +1287,7 @@
     "Type": "Event",
     "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
     "Language": "English(US)",
-    "Hash": "{1C7C5700-9C75-9805-7ADB-FB4C4D0CE0A6}",
+    "Hash": "{136631D4-2746-B9FE-AFA1-E4177FAC2C73}",
     "ObjectPath": "Play_davewang",
     "ShortName": "Play_davewang",
     "Path": "Event/English(US)/Play_davewang.bnk",
@@ -1295,7 +1295,7 @@
      {
       "Id": "888866671",
       "Language": "English(US)",
-      "Streaming": "false",
+      "Streaming": "true",
       "Location": "Loose",
       "ShortName": "王傑-一場遊戲一場夢.wav",
       "Path": "Media/English(US)/888866671.wem",
@@ -1396,7 +1396,7 @@
     "Type": "Event",
     "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
     "Language": "English(US)",
-    "Hash": "{9A5F8938-4A20-CB01-F1DB-0F3269C2DEC6}",
+    "Hash": "{1A6B9EE7-0979-FF5E-0BDE-482078D3CE98}",
     "ObjectPath": "Play_frozen",
     "ShortName": "Play_frozen",
     "Path": "Event/English(US)/Play_frozen.bnk",
@@ -1404,7 +1404,7 @@
      {
       "Id": "345055891",
       "Language": "English(US)",
-      "Streaming": "false",
+      "Streaming": "true",
       "Location": "Loose",
       "ShortName": "for-the-first-time-in-forever-from-frozensing-along.wav",
       "Path": "Media/English(US)/345055891.wem",
@@ -1503,7 +1503,7 @@
     "Type": "Event",
     "GUID": "{90D3EB6F-F34D-4E3E-9794-0E8141DC90A2}",
     "Language": "English(US)",
-    "Hash": "{A5EB8B8C-F2A7-DB2C-27DE-00D70D5281FF}",
+    "Hash": "{98D6741E-3007-4F36-5AC2-AB5B5972B06D}",
     "ObjectPath": "Play_firework",
     "ShortName": "Play_firework",
     "Path": "Event/English(US)/Play_firework.bnk",
@@ -1515,18 +1515,16 @@
       "Location": "Loose",
       "ShortName": "firework.wav",
       "Path": "Media/English(US)/775328321.wem",
-      "CachePath": "23/{23ABDD8E-2B69-8816-A00C-FB49E0AC9BF9}.wem"
+      "CachePath": "EE/{EE023AF9-B160-AA1D-77CB-6863205B15D7}.wem"
      }
     ],
     "Events": [
      {
       "Id": "3876215541",
       "Name": "Play_firework",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_firework",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_firework",
       "GUID": "{90D3EB6F-F34D-4E3E-9794-0E8141DC90A2}",
-      "DurationType": "OneShot",
-      "DurationMin": "3.3175511",
-      "DurationMax": "3.3175511",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "775328321"
@@ -1682,6 +1680,6 @@
     ]
    }
   ],
-  "FileHash": "{64014F48-7287-27E4-CDEC-FBA3B833EA95}"
+  "FileHash": "{415957B8-2FC5-1F9B-A901-D6EFB0799BD5}"
  }
 }
