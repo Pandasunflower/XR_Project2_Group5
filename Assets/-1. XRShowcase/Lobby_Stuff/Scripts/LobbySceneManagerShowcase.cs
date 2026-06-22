@@ -9,6 +9,7 @@ public class LobbySceneManagerShowcase : MonoBehaviour
     public LobbySongManagerShowcase songManager;
     public SceneTransition transitionManager;
     public FirestoreTest firestoreTest;
+    public List<int> songIndexMapping;
 
     void Start()
     {
@@ -37,14 +38,27 @@ public class LobbySceneManagerShowcase : MonoBehaviour
         
         // 根據索引決定加載 Stage1 或 Stage2
         string sceneName = songIndex == 0 ? "davewang" : "frozen";
-        int finalSongIndex = songIndex;
-        if (songIndex == 0)
+        int finalSongIndex;
+        // int finalSongIndex = songIndex;
+        // if (songIndex == 0)
+        // {
+        //     finalSongIndex = 1;
+        // }
+        // else if (songIndex == 1)
+        // {
+        //     finalSongIndex = 2;
+        // }
+        switch (sceneName)
         {
-            finalSongIndex = 1;
-        }
-        else if (songIndex == 1)
-        {
-            finalSongIndex = 2;
+            case "davewang":
+                finalSongIndex = songIndexMapping.Count > 0 ? songIndexMapping[0] : 1;
+                break;
+            case "frozen":
+                finalSongIndex = songIndexMapping.Count > 1 ? songIndexMapping[1] : 2;
+                break;
+            default:
+                finalSongIndex = 1;
+                break;
         }
 
         firestoreTest.SetOption(finalSongIndex);

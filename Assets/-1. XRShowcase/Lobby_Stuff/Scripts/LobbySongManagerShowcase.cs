@@ -59,9 +59,9 @@ public class LobbySongManagerShowcase : MonoBehaviour
     }
     public void SetSongNames()
     {
-         songNames.Add("For the First Time in Forever");
-         songNames.Add("一場遊戲一場夢");
-         Debug.Log($"[Lobby] Song names set: {string.Join(", ", songNames)}");
+        songNames.Add("For the First Time in Forever");
+        songNames.Add("一場遊戲一場夢");
+        Debug.Log($"[Lobby] Song names set: {string.Join(", ", songNames)}");
     }
 
 
