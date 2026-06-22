@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{90D3EB6F-F34D-4E3E-9794-0E8141DC90A2}",
     "Language": "English(US)",
-    "Hash": "{3CDDFBDD-AA17-9274-8D8B-DADC4BF6F21F}",
+    "Hash": "{98D6741E-3007-4F36-5AC2-AB5B5972B06D}",
     "ObjectPath": "Play_firework",
     "ShortName": "Play_firework",
     "Path": "Event/English(US)/Play_firework.bnk",
@@ -29,7 +29,7 @@
      {
       "Id": "3876215541",
       "Name": "Play_firework",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_firework",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_firework",
       "GUID": "{90D3EB6F-F34D-4E3E-9794-0E8141DC90A2}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{3FC0AEF7-FB36-9023-32E7-C81C8D21CD63}"
+  "FileHash": "{7C75CCA3-D3D9-3966-0D8D-2337D8510558}"
  }
 }
