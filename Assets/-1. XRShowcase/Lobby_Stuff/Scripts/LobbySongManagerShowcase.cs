@@ -79,10 +79,36 @@ public class LobbySongManagerShowcase : MonoBehaviour
         OnSelectionChanged();
     }
 
+    // 直接依 index 選歌（例如從 Raycast 選 TV 觸發）。會更新 UI 並播放預覽音樂。
+    // index 沒有對應的歌曲時，currentSelectedIndex 會被設為 -1，並回傳 false。
+    public bool SelectSong(int index)
+    {
+        if (index < 0 || index >= songFolders.Count)
+        {
+            currentSelectedIndex = -1;
+            AkUnitySoundEngine.StopAll();
+            Debug.Log($"[Lobby] SelectSong: index {index} 沒有對應的歌曲，已設為 -1。");
+            return false;
+        }
+
+        currentSelectedIndex = index;
+        OnSelectionChanged();
+        UpdateUI(); // UpdateUI 內部會呼叫 PlayPreviewMusic() 播放預覽音樂
+
+        Debug.Log($"[Lobby] SelectSong: 已選擇第 {index + 1} 首歌（{songFolders[index]}）。");
+        return true;
+    }
+
     public string GetSelectedSongPath()
     {
-        if (songFolders.Count == 0) return null;
+        if (!IsCurrentIndexValid()) return null;
         return songFolders[currentSelectedIndex];
+    }
+
+    // currentSelectedIndex 可能因為「選到沒有對應歌曲的 TV」而被設成 -1，這裡統一判斷是否能安全索引 songFolders
+    private bool IsCurrentIndexValid()
+    {
+        return currentSelectedIndex >= 0 && currentSelectedIndex < songFolders.Count;
     }
 
     public int GetSelectedSongIndex()
@@ -92,6 +118,12 @@ public class LobbySongManagerShowcase : MonoBehaviour
 
     private void OnSelectionChanged()
     {
+        if (!IsCurrentIndexValid())
+        {
+            Debug.Log("[Lobby] Currently Selected: 無（currentSelectedIndex 無效）");
+            return;
+        }
+
         Debug.Log($"[Lobby] Currently Selected: {songFolders[currentSelectedIndex]}");
         // Trigger UI updates here in the future
     }
@@ -99,9 +131,11 @@ public class LobbySongManagerShowcase : MonoBehaviour
     public void UpdateUI()
     {
         Debug.Log("Update UI");
-        if (songFolders.Count == 0)
+        if (songFolders.Count == 0 || !IsCurrentIndexValid())
         {
             if (currentSongText != null) currentSongText.text = "No Songs Found";
+            if (songIndexText != null) songIndexText.text = "--/--";
+            if (songCover != null && defaultCover != null) songCover.sprite = defaultCover;
             return;
         }
 
@@ -123,6 +157,12 @@ public class LobbySongManagerShowcase : MonoBehaviour
         Debug.Log($"[Lobby UI] Selected: {songFolders[currentSelectedIndex]}");
     }
     IEnumerator LoadCoverAsync() {
+        if (!IsCurrentIndexValid())
+        {
+            Debug.Log("[Lobby] currentSelectedIndex 無效，略過載入封面。");
+            yield break;
+        }
+
         string folderName = songFolders[currentSelectedIndex];
         string fileName = "cover.png";
         string fullPath = Path.Combine(Application.streamingAssetsPath, songsFolderName, folderName, fileName);
@@ -159,7 +199,13 @@ public class LobbySongManagerShowcase : MonoBehaviour
     public void PlayPreviewMusic()
     {
         // 1. 先把這個物件上「正在播放的所有音樂」暴力停掉，避免兩首歌疊在一起
-        AkUnitySoundEngine.StopAll(gameObject); 
+        AkUnitySoundEngine.StopAll(gameObject);
+
+        if (!IsCurrentIndexValid())
+        {
+            Debug.Log("[Lobby] currentSelectedIndex 無效，已停止所有音效，略過播放預覽音樂。");
+            return;
+        }
 
         // 2. 組合你的 Wwise Event 名稱
         // 假設你的資料夾叫 "frozen"，你的 Wwise Event 叫 "Play_frozen"

@@ -32,6 +32,14 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
 
     private readonly List<VideoPlayer> _videoPlayers = new List<VideoPlayer>();
 
+    [Header("Screen Select Settings")]
+    [Tooltip("OVRCameraRig 的 trackingSpace（可不填，自動尋找）")]
+    public Transform trackingSpace;
+    [Tooltip("從 controller 發出射線的最大距離")]
+    public float screenSelectRayDistance = 10f;
+    [Tooltip("Screen Collider 所在的 Layer，留空（Everything）則不限制")]
+    public LayerMask screenSelectLayerMask = ~0;
+
     // [Header("Controller Settings")]
     // [Range(0.1f, 0.9f)]
     // public float stickThreshold = 0.5f;
@@ -41,6 +49,16 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
         BuildTvOutlineList();
         BuildVideoPlayerList();
         ApplyOutlineWidth();
+    }
+
+    void OnEnable()
+    {
+        if (trackingSpace == null)
+        {
+            var rig = FindObjectOfType<OVRCameraRig>();
+            if (rig != null)
+                trackingSpace = rig.trackingSpace;
+        }
     }
 
     private void ApplyOutlineWidth()
@@ -134,6 +152,98 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
             if (outline != null) outline.enabled = _outlineVisible;
     }
 
+    // ──────────────────────────────────────────────────────────
+    //  按下 trigger 時，若射線打到某個 TV 底下的 Screen Collider，直接選擇對應的歌
+    // ──────────────────────────────────────────────────────────
+    private void TrySelectSongByRaycast(OVRInput.Controller controller)
+    {
+        if (tvsParent == null) return;
+
+        Ray ray = GetControllerRay(controller);
+
+        if (!Physics.Raycast(ray, out RaycastHit hit, screenSelectRayDistance, screenSelectLayerMask))
+            return;
+
+        int index = GetTvIndexFromHit(hit.transform);
+        if (index < 0) return;
+
+        SelectSong(index);
+    }
+
+    // 從被打到的物件往上找，直到找到「tvsParent 的直接子物件」，回傳它在 tvsParent 底下的順序
+    private int GetTvIndexFromHit(Transform hitTransform)
+    {
+        Transform current = hitTransform;
+        while (current != null)
+        {
+            if (current.parent == tvsParent)
+                return current.GetSiblingIndex();
+
+            current = current.parent;
+        }
+        return -1;
+    }
+
+    private void SelectSong(int index)
+    {
+        _lastInputTime = Time.time;
+
+        // 不管有沒有對應的歌曲，TV 的高亮永遠可以正常切換（純視覺，跟歌曲資料無關）
+        SetActiveTv(index);
+
+        if (songManager == null)
+        {
+            Debug.Log("[LobbyInputHandlerShowcase] songManager 未指定，無法選歌。");
+            return;
+        }
+
+        bool success;
+        try
+        {
+            // songManager.SelectSong 內部會設定 currentSelectedIndex、更新 UI，並播放預覽音樂
+            success = songManager.SelectSong(index);
+        }
+        catch (System.Exception e)
+        {
+            songManager.currentSelectedIndex = -1;
+            Debug.Log($"[LobbyInputHandlerShowcase] 選歌時發生例外，已重設為 -1。錯誤：{e.Message}");
+            success = false;
+        }
+
+        if (!success)
+        {
+            HandleNoMatchingSong(index);
+        }
+    }
+
+    // 此 TV 沒有對應的歌曲時的處理入口（之後可在這裡加特殊彩蛋邏輯，目前先留空）
+    private void HandleNoMatchingSong(int index)
+    {
+        // TODO: 之後在這裡針對「沒有對應歌曲」的 TV (index) 加上特殊彩蛋效果
+    }
+
+    private Ray GetControllerRay(OVRInput.Controller controller)
+    {
+        Vector3 localPos = OVRInput.GetLocalControllerPosition(controller);
+        Quaternion localRot = OVRInput.GetLocalControllerRotation(controller);
+
+        Vector3 worldPos;
+        Vector3 worldForward;
+
+        if (trackingSpace != null)
+        {
+            worldPos = trackingSpace.TransformPoint(localPos);
+            worldForward = trackingSpace.TransformDirection(localRot * Vector3.forward);
+        }
+        else
+        {
+            worldPos = localPos;
+            worldForward = localRot * Vector3.forward;
+        }
+
+        return new Ray(worldPos, worldForward);
+    }
+
     void Update()
     {
         if (Time.time - _lastInputTime < inputCooldown) return;
@@ -145,8 +255,8 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
         // float h = stickPos.x;
         
         bool ButtonPressed = OVRInput.GetDown(OVRInput.RawButton.A);
-        bool ButtonPressedNext = OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger);
-        bool ButtonPressedPrev = OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger);
+        // bool ButtonPressedNext = OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger);
+        // bool ButtonPressedPrev = OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger);
 
         // if (h < -stickThreshold || Input.GetKeyDown(KeyCode.A))
         // {
@@ -161,20 +271,20 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
         //     songManager.UpdateUI();
         // }
 
-        if (ButtonPressedNext || Input.GetKeyDown(KeyCode.A))
-        {
-            songManager.NextSong();
-            _lastInputTime = Time.time;
-            songManager.UpdateUI();
-            SetActiveTv(songManager.currentSelectedIndex);
-        }
-        if (ButtonPressedPrev || Input.GetKeyDown(KeyCode.D))
-        {
-            songManager.PreviousSong();
-            _lastInputTime = Time.time;
-            songManager.UpdateUI();
-            SetActiveTv(songManager.currentSelectedIndex);
-        }
+        // if (ButtonPressedNext || Input.GetKeyDown(KeyCode.A))
+        // {
+        //     songManager.NextSong();
+        //     _lastInputTime = Time.time;
+        //     songManager.UpdateUI();
+        //     SetActiveTv(songManager.currentSelectedIndex);
+        // }
+        // if (ButtonPressedPrev || Input.GetKeyDown(KeyCode.D))
+        // {
+        //     songManager.PreviousSong();
+        //     _lastInputTime = Time.time;
+        //     songManager.UpdateUI();
+        //     SetActiveTv(songManager.currentSelectedIndex);
+        // }
 
         if (ButtonPressed || Input.GetKeyDown(KeyCode.Return))
         {
@@ -182,9 +292,15 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
             _lastInputTime = Time.time;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ToggleCurrentTvOutline();
-        }
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     ToggleCurrentTvOutline();
+        // }
+
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch))
+            TrySelectSongByRaycast(OVRInput.Controller.LTouch);
+
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
+            TrySelectSongByRaycast(OVRInput.Controller.RTouch);
     }
 }

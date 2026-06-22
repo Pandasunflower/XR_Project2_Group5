@@ -37,7 +37,19 @@ public class LobbySceneManagerShowcase : MonoBehaviour
         songManager.StopPreviewMusic();
         
         // 根據索引決定加載 Stage1 或 Stage2
-        string sceneName = songIndex == 0 ? "davewang" : "frozen";
+        string sceneName = "";
+        switch (songIndex)
+        {
+            case 0:
+                sceneName = "davewang";
+                break;
+            case 1:
+                sceneName = "frozen";
+                break;
+            default:
+                sceneName = "";
+                break;
+        }
         int finalSongIndex;
         // int finalSongIndex = songIndex;
         // if (songIndex == 0)
@@ -57,8 +69,14 @@ public class LobbySceneManagerShowcase : MonoBehaviour
                 finalSongIndex = songIndexMapping.Count > 1 ? songIndexMapping[1] : 2;
                 break;
             default:
-                finalSongIndex = 1;
+                finalSongIndex = -1;
                 break;
+        }
+
+        if (finalSongIndex == -1)
+        {
+            Debug.Log($"[SceneManager] Invalid song index");
+            return;
         }
 
         firestoreTest.SetOption(finalSongIndex);
