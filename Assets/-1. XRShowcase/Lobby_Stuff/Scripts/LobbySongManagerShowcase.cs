@@ -26,6 +26,9 @@ public class LobbySongManagerShowcase : MonoBehaviour
     public Image songCover;
     public Sprite defaultCover;
 
+    [Header("SongList")]
+    public List<AK.Wwise.Event> songList;
+
     private void Start()
     {
         RefreshSongList();
@@ -160,14 +163,14 @@ public class LobbySongManagerShowcase : MonoBehaviour
 
         // 2. 組合你的 Wwise Event 名稱
         // 假設你的資料夾叫 "frozen"，你的 Wwise Event 叫 "Play_frozen"
-        string folderName = songFolders[currentSelectedIndex];
-        string eventName = "Play_" + folderName; 
+        int songIndex = GetSelectedSongIndex();
+        AK.Wwise.Event selectedSongEvent = songList[songIndex];
 
         // 🔍 加這行在 Console 看名字對不對
-        Debug.Log($"[Wwise Debug] 嘗試播放 Event: {eventName}");
+        Debug.Log($"[Wwise Debug] 嘗試播放 Event: {selectedSongEvent.Name}");
 
         // 3. 呼叫 Wwise 播放
-        AkUnitySoundEngine.PostEvent(eventName, gameObject);
+        selectedSongEvent.Post(gameObject);
     }
 
     public void StopPreviewMusic()
