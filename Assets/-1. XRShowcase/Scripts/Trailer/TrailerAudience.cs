@@ -31,10 +31,12 @@ public class TrailerAudience : MonoBehaviour
 
     private void Start()
     {
-        foreach (GameObject audience in connectAudience)
-        {
-            audience.transform.localScale = Vector3.zero;
-        }
+        // foreach (GameObject audience in connectAudience)
+        // {
+        //     audience.transform.localScale = Vector3.zero;
+        // }
+        GenerateCrowd();
+        
     }
 
     private void OnDestroy()
