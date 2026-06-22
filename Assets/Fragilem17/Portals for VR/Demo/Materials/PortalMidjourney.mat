@@ -122,7 +122,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlbedoAlpha: 0.99939996
+    - _AlbedoAlpha: 0.89981097
     - _Alpha: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
@@ -172,7 +172,7 @@ Material:
     - _ZTest: 4
     - _ZWrite: 0
     - _ZWriteControl: 0
-    - _refraction: 0.02184409
+    - _refraction: 0.029517462
     - _useTransparency: 1
     m_Colors:
     - _AlbedoSpeed: {r: 0, g: 0, b: -0.5, a: 0}
@@ -196,6 +196,6 @@ Material:
     - _Tiling_And_Offset_Transparency: {r: 0.95, g: 0.95, b: 0.025, a: 0.025}
     - _Tint: {r: 1, g: 1, b: 1, a: 1}
     - _TransparancySpeed: {r: 0, g: 0, b: 0.5, a: 0}
-    - _WorldDir: {r: 0, g: 0, b: 0, a: 0}
-    - _WorldPos: {r: 0, g: 0, b: 0, a: 0}
+    - _WorldDir: {r: 1, g: 0, b: 0, a: 0}
+    - _WorldPos: {r: -19.5, g: 1.6000581, b: 16.317303, a: 0}
   m_BuildTextureStacks: []
