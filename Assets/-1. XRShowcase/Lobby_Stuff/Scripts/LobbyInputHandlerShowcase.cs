@@ -17,6 +17,8 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
     [Header("TV Outline Settings")]
     [Tooltip("拖入 TVs 父物件，底下每個子物件（TV、TV2...）依序對應第 1、2、3... 首歌")]
     public Transform tvsParent;
+    [Tooltip("套用到所有 TV Outline 的粗度")]
+    public float outlineWidth = 5f;
 
     // 每個 TV 底下蒐集到的 Outline（TV 本身或 Screen 子物件上的都算）
     private readonly List<List<Outline>> _tvOutlines = new List<List<Outline>>();
@@ -38,6 +40,14 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
     {
         BuildTvOutlineList();
         BuildVideoPlayerList();
+        ApplyOutlineWidth();
+    }
+
+    private void ApplyOutlineWidth()
+    {
+        foreach (var outlines in _tvOutlines)
+            foreach (var outline in outlines)
+                if (outline != null) outline.OutlineWidth = outlineWidth;
     }
 
     void Start()

@@ -1841,6 +1841,7 @@ MonoBehaviour:
   sceneManager: {fileID: 1270190359}
   inputCooldown: 0.2
   tvsParent: {fileID: 1336820573}
+  outlineWidth: 7
   rewindOnSelect: 0
   videoPlayersParent: {fileID: 1038976179}
 --- !u!4 &1270190358
