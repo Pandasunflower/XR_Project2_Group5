@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class LobbyInputHandlerShowcase : MonoBehaviour
 {
@@ -22,6 +23,13 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
     private int _currentTvIndex = -1;
     private bool _outlineVisible = true;
 
+    [Header("Video Player Settings")]
+    [Tooltip("拖入 VideoPlayers 父物件，底下每個子物件（VideoPlayer1、VideoPlayer2...）依序對應第 1、2、3... 首歌")]
+    public bool rewindOnSelect = true;
+    public Transform videoPlayersParent;
+
+    private readonly List<VideoPlayer> _videoPlayers = new List<VideoPlayer>();
+
     // [Header("Controller Settings")]
     // [Range(0.1f, 0.9f)]
     // public float stickThreshold = 0.5f;
@@ -29,6 +37,7 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
     void Awake()
     {
         BuildTvOutlineList();
+        BuildVideoPlayerList();
     }
 
     void Start()
@@ -58,24 +67,51 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
         }
     }
 
+    private void BuildVideoPlayerList()
+    {
+        _videoPlayers.Clear();
+        if (videoPlayersParent == null) return;
+
+        foreach (Transform vp in videoPlayersParent)
+        {
+            _videoPlayers.Add(vp.GetComponentInChildren<VideoPlayer>(true));
+        }
+    }
+
     private void SetActiveTv(int index)
     {
-        if (_tvOutlines.Count == 0) return;
-
-        if (_currentTvIndex >= 0 && _currentTvIndex < _tvOutlines.Count)
+        if (_tvOutlines.Count > 0)
         {
-            foreach (var outline in _tvOutlines[_currentTvIndex])
-                if (outline != null) outline.enabled = false;
-        }
+            if (_currentTvIndex >= 0 && _currentTvIndex < _tvOutlines.Count)
+            {
+                foreach (var outline in _tvOutlines[_currentTvIndex])
+                    if (outline != null) outline.enabled = false;
+            }
 
-        if (index >= 0 && index < _tvOutlines.Count)
-        {
-            foreach (var outline in _tvOutlines[index])
-                if (outline != null) outline.enabled = true;
+            if (index >= 0 && index < _tvOutlines.Count)
+            {
+                foreach (var outline in _tvOutlines[index])
+                    if (outline != null) outline.enabled = true;
+            }
         }
 
         _currentTvIndex = index;
         _outlineVisible = true; // 切到新的一定先點亮
+
+        if (rewindOnSelect)
+        {
+            RewindVideo(index);
+        }
+    }
+
+    private void RewindVideo(int index)
+    {
+        if (index < 0 || index >= _videoPlayers.Count) return;
+
+        VideoPlayer vp = _videoPlayers[index];
+        if (vp == null) return;
+
+        vp.frame = 0;
     }
 
     private void ToggleCurrentTvOutline()

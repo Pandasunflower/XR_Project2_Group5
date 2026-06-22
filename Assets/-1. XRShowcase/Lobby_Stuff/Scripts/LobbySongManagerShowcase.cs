@@ -156,26 +156,21 @@ public class LobbySongManagerShowcase : MonoBehaviour
         }
     }
     // 🎵 新增：處理 Wwise 預覽音樂的核心邏輯
-    private void PlayPreviewMusic()
+    public void PlayPreviewMusic()
     {
         // 1. 先把這個物件上「正在播放的所有音樂」暴力停掉，避免兩首歌疊在一起
         AkUnitySoundEngine.StopAll(gameObject); 
 
         // 2. 組合你的 Wwise Event 名稱
         // 假設你的資料夾叫 "frozen"，你的 Wwise Event 叫 "Play_frozen"
-        int songIndex = GetSelectedSongIndex();
-        if (songIndex < 0 || songIndex >= songList.Count)        {
-            Debug.LogWarning($"[Wwise Debug] 無效的歌曲索引: {songIndex}");
-            return;
-        }
-        string eventName = songList[songIndex].Name; // 直接從 AK.Wwise.Event 物件取得名稱
-
+        string folderName = songFolders[currentSelectedIndex];
+        string eventName = "Play_" + folderName; 
 
         // 🔍 加這行在 Console 看名字對不對
         Debug.Log($"[Wwise Debug] 嘗試播放 Event: {eventName}");
 
         // 3. 呼叫 Wwise 播放
-        songList[songIndex].Post(gameObject); // 這裡的 gameObject 是指這個 LobbySongManagerShowcase 的物件，Wwise 會把聲音掛在這個物件上
+        AkUnitySoundEngine.PostEvent(eventName, gameObject);
     }
 
     public void StopPreviewMusic()
