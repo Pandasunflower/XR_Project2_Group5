@@ -8,6 +8,7 @@ public class Stage1_StartPos : MonoBehaviour
     public VideoPlayer videoPlayer;
     public FirestoreTest firestoreTest;
     public SingingManager singingManager;
+    public LyricSystem lyricSystem;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -19,7 +20,8 @@ public class Stage1_StartPos : MonoBehaviour
             GetComponent<PlayWwiseEvent>().PlaySound();
             GetComponent<PlayWwiseEvent2>().PlaySound();
             singingManager.realStartGame();
-            videoPlayer.Play();
+            lyricSystem.Play();
+            // videoPlayer.Play();
             // AkUnitySoundEngine.PostEvent("Play_OneGameOneDream_BGM", gameObject);
             // AkUnitySoundEngine.PostEvent("Play_OneGameOneDream_people", gameObject);
         }

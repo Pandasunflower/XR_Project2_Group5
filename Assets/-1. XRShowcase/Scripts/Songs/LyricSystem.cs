@@ -63,7 +63,7 @@ public class LyricSystem : MonoBehaviour
 
     public void Play()
     {
-        playingId = AkUnitySoundEngine.PostEvent(songEventName, gameObject);
+        // playingId = AkUnitySoundEngine.PostEvent(songEventName, gameObject);
 
         index = 0;
         // if (!lyricUI) lyricUI2.text = lyrics.Count > 0 ? lyrics[0].text : "";
