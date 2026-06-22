@@ -53,6 +53,7 @@
 				</SoundBank>
 				<SoundBank Name="forDemoBank" ID="{E8564746-B1BB-481F-8A59-7873F0687565}">
 					<ObjectInclusionList>
+						<ObjectRef Name="" ID="{F47B3CED-D70D-43DC-B8DB-F403E390B00C}" WorkUnitID="{721822B8-2093-4488-8445-48D4E88C56EB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{D8F818A6-824A-4472-B321-4D268AEE5D93}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{AC497FD6-D65B-45CB-A669-73F86C1A5B09}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{94461312-B2F9-4725-B9A3-8B30437FAE75}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>

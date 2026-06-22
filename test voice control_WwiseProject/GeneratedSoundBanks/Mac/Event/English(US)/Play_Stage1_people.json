@@ -10,19 +10,19 @@
     "Type": "Event",
     "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
     "Language": "English(US)",
-    "Hash": "{C2B9BB0E-9F43-4578-5E56-3E914DAD8256}",
+    "Hash": "{05B032B7-7596-8F7D-556F-E44EB77CEF2F}",
     "ObjectPath": "Play_Stage1_people",
     "ShortName": "Play_Stage1_people",
     "Path": "Event/English(US)/Play_Stage1_people.bnk",
     "Media": [
      {
-      "Id": "59556136",
+      "Id": "764896096",
       "Language": "English(US)",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "一場遊戲一場夢_人聲.wav",
-      "Path": "Media/English(US)/59556136.wem",
-      "CachePath": "88/{882E55CF-2DF7-4E85-AA2B-259960808354}.wem"
+      "ShortName": "stage1_people.wav",
+      "Path": "Media/English(US)/764896096.wem",
+      "CachePath": "0B/{0B6399E2-E527-353F-C9AF-769572EF4047}.wem"
      }
     ],
     "Events": [
@@ -32,17 +32,17 @@
       "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage1_people",
       "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
       "DurationType": "OneShot",
-      "DurationMin": "92.89059",
-      "DurationMax": "92.89059",
+      "DurationMin": "121.041",
+      "DurationMax": "121.041",
       "MediaRefs": [
        {
-        "Id": "59556136"
+        "Id": "764896096"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{CB746B4F-0207-2E35-4B3E-8A4303CA7FB6}"
+  "FileHash": "{DEB16276-8909-CF57-19D0-398D4A673702}"
  }
 }

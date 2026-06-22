@@ -321,19 +321,19 @@
     "Type": "Event",
     "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
     "Language": "English(US)",
-    "Hash": "{C2B9BB0E-9F43-4578-5E56-3E914DAD8256}",
+    "Hash": "{05B032B7-7596-8F7D-556F-E44EB77CEF2F}",
     "ObjectPath": "Play_Stage1_people",
     "ShortName": "Play_Stage1_people",
     "Path": "Event/English(US)/Play_Stage1_people.bnk",
     "Media": [
      {
-      "Id": "59556136",
+      "Id": "764896096",
       "Language": "English(US)",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "一場遊戲一場夢_人聲.wav",
-      "Path": "Media/English(US)/59556136.wem",
-      "CachePath": "88/{882E55CF-2DF7-4E85-AA2B-259960808354}.wem"
+      "ShortName": "stage1_people.wav",
+      "Path": "Media/English(US)/764896096.wem",
+      "CachePath": "0B/{0B6399E2-E527-353F-C9AF-769572EF4047}.wem"
      }
     ],
     "Events": [
@@ -343,11 +343,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage1_people",
       "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
       "DurationType": "OneShot",
-      "DurationMin": "92.89059",
-      "DurationMax": "92.89059",
+      "DurationMin": "121.041",
+      "DurationMax": "121.041",
       "MediaRefs": [
        {
-        "Id": "59556136"
+        "Id": "764896096"
        }
       ]
      }
@@ -1575,19 +1575,19 @@
     "Type": "Event",
     "GUID": "{FC506387-0825-4066-B58C-B461093E52EF}",
     "Language": "English(US)",
-    "Hash": "{040E026E-0F6F-D311-9BC8-E32EBB638FA9}",
+    "Hash": "{71C54C54-086C-D836-C453-A19B24A4AD79}",
     "ObjectPath": "Play_Stage1_BGM",
     "ShortName": "Play_Stage1_BGM",
     "Path": "Event/English(US)/Play_Stage1_BGM.bnk",
     "Media": [
      {
-      "Id": "114303497",
+      "Id": "819567358",
       "Language": "English(US)",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "一場遊戲一場夢_伴奏.wav",
-      "Path": "Media/English(US)/114303497.wem",
-      "CachePath": "CF/{CFEA6BA8-3F4D-118B-ED0B-E0F658285609}.wem"
+      "ShortName": "stage1_bgm.wav",
+      "Path": "Media/English(US)/819567358.wem",
+      "CachePath": "AD/{ADDD13DD-2A51-41CB-9AFB-E455D4B45F55}.wem"
      }
     ],
     "Events": [
@@ -1597,11 +1597,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage1_BGM",
       "GUID": "{FC506387-0825-4066-B58C-B461093E52EF}",
       "DurationType": "OneShot",
-      "DurationMin": "92.89059",
-      "DurationMax": "92.89059",
+      "DurationMin": "121.398",
+      "DurationMax": "121.398",
       "MediaRefs": [
        {
-        "Id": "114303497"
+        "Id": "819567358"
        }
       ]
      }
@@ -1680,6 +1680,6 @@
     ]
    }
   ],
-  "FileHash": "{415957B8-2FC5-1F9B-A901-D6EFB0799BD5}"
+  "FileHash": "{ED2E769C-C547-E3B0-A78F-E55DC84C8D18}"
  }
 }

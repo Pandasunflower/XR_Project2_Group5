@@ -410,7 +410,7 @@
 								<Action Name="" ID="{AC497FD6-D65B-45CB-A669-73F86C1A5B09}" ShortID="669761444">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="一場遊戲一場夢_伴奏" ID="{30FD22A4-3534-4788-A682-324CDD2F18E8}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+											<ObjectRef Name="stage1_bgm" ID="{86DF934D-9167-4FC0-BB31-295662B59BDB}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -432,7 +432,7 @@
 								<Action Name="" ID="{D8F818A6-824A-4472-B321-4D268AEE5D93}" ShortID="868813604">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="一場遊戲一場夢_人聲" ID="{48FA7644-A907-4CDC-8B29-9507AACF65DA}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+											<ObjectRef Name="stage1_people" ID="{DFEADB62-31CB-4CE3-A326-E3B8C8A5EB6A}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
