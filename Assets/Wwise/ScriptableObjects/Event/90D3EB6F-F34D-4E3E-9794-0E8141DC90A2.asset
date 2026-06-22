@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 242ae5ee5c4fcd0418370f23e094de16, type: 3}
-  m_Name: C0D664F2-8676-4752-9A3E-85F2E420BB86
+  m_Name: 90D3EB6F-F34D-4E3E-9794-0E8141DC90A2
   m_EditorClassIdentifier: 
-  objectName: Play_audience2
-  id: 2074062502
-  guid: C0D664F2-8676-4752-9A3E-85F2E420BB86
-  IsInUserDefinedSoundBank: 1
+  objectName: Play_firework
+  id: 3876215541
+  guid: 90D3EB6F-F34D-4E3E-9794-0E8141DC90A2
+  IsInUserDefinedSoundBank: 0

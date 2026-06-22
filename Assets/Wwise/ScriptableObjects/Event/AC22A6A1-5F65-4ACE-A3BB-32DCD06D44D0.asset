@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Play_audience
   id: 1245578140
   guid: AC22A6A1-5F65-4ACE-A3BB-32DCD06D44D0
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1
