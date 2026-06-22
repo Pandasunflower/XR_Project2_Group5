@@ -164,13 +164,18 @@ public class LobbySongManagerShowcase : MonoBehaviour
         // 2. 組合你的 Wwise Event 名稱
         // 假設你的資料夾叫 "frozen"，你的 Wwise Event 叫 "Play_frozen"
         int songIndex = GetSelectedSongIndex();
-        AK.Wwise.Event selectedSongEvent = songList[songIndex];
+        if (songIndex < 0 || songIndex >= songList.Count)        {
+            Debug.LogWarning($"[Wwise Debug] 無效的歌曲索引: {songIndex}");
+            return;
+        }
+        string eventName = songList[songIndex].Name; // 直接從 AK.Wwise.Event 物件取得名稱
+
 
         // 🔍 加這行在 Console 看名字對不對
-        Debug.Log($"[Wwise Debug] 嘗試播放 Event: {selectedSongEvent.Name}");
+        Debug.Log($"[Wwise Debug] 嘗試播放 Event: {eventName}");
 
         // 3. 呼叫 Wwise 播放
-        selectedSongEvent.Post(gameObject);
+        songList[songIndex].Post(gameObject); // 這裡的 gameObject 是指這個 LobbySongManagerShowcase 的物件，Wwise 會把聲音掛在這個物件上
     }
 
     public void StopPreviewMusic()

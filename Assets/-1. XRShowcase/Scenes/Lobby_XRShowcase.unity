@@ -2334,7 +2334,7 @@ MonoBehaviour:
   songNames: []
   currentSongText: {fileID: 1699704681}
   songIndexText: {fileID: 0}
-  songCover: {fileID: 0}
+  songCover: {fileID: 1107230333}
   defaultCover: {fileID: 0}
   songList:
   - idInternal: 0
