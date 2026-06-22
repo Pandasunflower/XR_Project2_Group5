@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
     "Language": "English(US)",
-    "Hash": "{1C7C5700-9C75-9805-7ADB-FB4C4D0CE0A6}",
+    "Hash": "{136631D4-2746-B9FE-AFA1-E4177FAC2C73}",
     "ObjectPath": "Play_davewang",
     "ShortName": "Play_davewang",
     "Path": "Event/English(US)/Play_davewang.bnk",
@@ -18,7 +18,7 @@
      {
       "Id": "888866671",
       "Language": "English(US)",
-      "Streaming": "false",
+      "Streaming": "true",
       "Location": "Loose",
       "ShortName": "王傑-一場遊戲一場夢.wav",
       "Path": "Media/English(US)/888866671.wem",
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{A2EA9C1D-11DE-690C-1F90-3A459722604F}"
+  "FileHash": "{80FBEFA5-6EE4-B654-335B-72CC44FFF3D1}"
  }
 }

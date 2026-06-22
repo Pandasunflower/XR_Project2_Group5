@@ -438,6 +438,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_firework" ID="{90D3EB6F-F34D-4E3E-9794-0E8141DC90A2}">
+							<ChildrenList>
+								<Action Name="" ID="{0F5FE376-F96B-497E-8AB9-84FFE1FBC5D0}" ShortID="649607393">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="firework" ID="{41FE073C-9241-45FE-9941-B427440D22CC}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_TimeIsUp" ID="{D89D5AC0-D84E-43D7-B05A-12B2EE9AFC38}">
@@ -446,17 +457,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="時間快到囉" ID="{1A200A07-5E1F-4A49-8173-C047FA0CF680}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_firework" ID="{90D3EB6F-F34D-4E3E-9794-0E8141DC90A2}">
-					<ChildrenList>
-						<Action Name="" ID="{0F5FE376-F96B-497E-8AB9-84FFE1FBC5D0}" ShortID="649607393">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="firework" ID="{41FE073C-9241-45FE-9941-B427440D22CC}" WorkUnitID="{9AAE56C5-F0F7-4DF5-8BC4-2F6B94B3500E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

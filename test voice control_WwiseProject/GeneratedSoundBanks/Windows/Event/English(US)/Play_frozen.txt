@@ -1,3 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3459025660	Play_frozen			\Default Work Unit\第一關\Play_frozen	
 
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	345055891	for-the-first-time-in-forever-from-frozensing-along	.cache\7D\{7D5F0C60-D69E-743E-6BAE-4800B3CD5152}.wem	345055891.wem	\Containers\Default Work Unit\lobby\for-the-first-time-in-forever-from-frozensing-along	
+

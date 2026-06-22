@@ -460,6 +460,7 @@
 				</Folder>
 				<Sound Name="firework" ID="{41FE073C-9241-45FE-9941-B427440D22CC}" ShortID="227417274">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
