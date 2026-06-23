@@ -476,6 +476,32 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="SongList" ID="{879A0AAE-7464-4C69-9305-F388A37E8BB4}" ShortID="87715538">
+					<ChildrenList>
+						<Event Name="Play_eatMe_people" ID="{FBC2051B-6B90-4D95-94AA-211D9C377887}">
+							<ChildrenList>
+								<Action Name="" ID="{AAC6CA2F-1121-4694-82D6-496D492DB8C3}" ShortID="984192760">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="op(people)" ID="{4AC606DE-EB7F-4BEB-9529-A311A14C8C61}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_eatMe_bgm" ID="{2BF93448-A888-460B-97FE-4969A7D6BDCC}">
+							<ChildrenList>
+								<Action Name="" ID="{CE8129FA-89E2-4383-9414-A5D8F49A65DD}" ShortID="894150938">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="1_op_(Instrumental)" ID="{9A1EC909-A754-4B1D-A588-261E6FB3C7AC}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -153,7 +153,7 @@ public class SingingManager : MonoBehaviour {
             
             // 启动 AkEvent
             if (akEvent != null) {
-                akEvent.Post(gameObject);
+                //akEvent.Post(gameObject);
                 Debug.Log("<color=cyan>[AkEvent] 已启动音乐播放</color>");
             }
             

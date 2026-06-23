@@ -68,6 +68,18 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<Folder Name="SongList" ID="{8A803A70-5BBF-41F3-A63B-83A3A83A2677}" ShortID="177370001">
+					<ChildrenList>
+						<SoundBank Name="eatMe" ID="{C139EE80-6AFA-434E-B783-DEC11AC62A5D}">
+							<ObjectInclusionList>
+								<ObjectRef Name="" ID="{CE8129FA-89E2-4383-9414-A5D8F49A65DD}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="" ID="{AAC6CA2F-1121-4694-82D6-496D492DB8C3}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

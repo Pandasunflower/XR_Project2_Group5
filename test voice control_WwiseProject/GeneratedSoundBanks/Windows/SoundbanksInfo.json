@@ -1377,6 +1377,53 @@
     ]
    },
    {
+    "Id": "3350003293",
+    "Type": "Event",
+    "GUID": "{2BF93448-A888-460B-97FE-4969A7D6BDCC}",
+    "Language": "English(US)",
+    "Hash": "{F8CA4940-E10A-4D17-EC07-205E0F1AA493}",
+    "ObjectPath": "Play_eatMe_bgm",
+    "ShortName": "Play_eatMe_bgm",
+    "Path": "Event/English(US)/Play_eatMe_bgm.bnk",
+    "Media": [
+     {
+      "Id": "807926840",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_op_(Instrumental).wav",
+      "Path": "Media/English(US)/807926840.wem",
+      "CachePath": "86/{865BA5BE-B0A5-A0D4-5ADC-C298164B23B4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3350003293",
+      "Name": "Play_eatMe_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Play_eatMe_bgm",
+      "GUID": "{2BF93448-A888-460B-97FE-4969A7D6BDCC}",
+      "DurationType": "OneShot",
+      "DurationMin": "213.99365",
+      "DurationMax": "213.99365",
+      "MediaRefs": [
+       {
+        "Id": "807926840"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3394390039",
+    "Type": "User",
+    "GUID": "{C139EE80-6AFA-434E-B783-DEC11AC62A5D}",
+    "Language": "SFX",
+    "Hash": "{239F80C5-80D1-58BB-2FF0-3203EB186F12}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SongList\\eatMe",
+    "ShortName": "eatMe",
+    "Path": "eatMe.bnk"
+   },
+   {
     "Id": "3419914841",
     "Type": "Event",
     "GUID": "{C71A0D9E-BFDF-4A0E-97D8-F5C1067DFF2F}",
@@ -1700,8 +1747,45 @@
       ]
      }
     ]
+   },
+   {
+    "Id": "4134769132",
+    "Type": "Event",
+    "GUID": "{FBC2051B-6B90-4D95-94AA-211D9C377887}",
+    "Language": "English(US)",
+    "Hash": "{BDEE0DF6-C4BF-06B3-4B2A-E1BF9A35196D}",
+    "ObjectPath": "Play_eatMe_people",
+    "ShortName": "Play_eatMe_people",
+    "Path": "Event/English(US)/Play_eatMe_people.bnk",
+    "Media": [
+     {
+      "Id": "401522030",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "op(people).wav",
+      "Path": "Media/English(US)/401522030.wem",
+      "CachePath": "55/{55B34E07-CF84-D66D-7A7C-298640AC1F37}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4134769132",
+      "Name": "Play_eatMe_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Play_eatMe_people",
+      "GUID": "{FBC2051B-6B90-4D95-94AA-211D9C377887}",
+      "DurationType": "OneShot",
+      "DurationMin": "205.69478",
+      "DurationMax": "205.69478",
+      "MediaRefs": [
+       {
+        "Id": "401522030"
+       }
+      ]
+     }
+    ]
    }
   ],
-  "FileHash": "{33E7F36E-0AA1-DA30-9EC5-50BC99934056}"
+  "FileHash": "{43172F11-C6B4-A98D-2A8C-83F50B38277B}"
  }
 }

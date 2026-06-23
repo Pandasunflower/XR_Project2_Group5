@@ -1569,6 +1569,64 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="songList" ID="{895E2C6B-7465-4528-8E1E-7310E1B99D0A}" ShortID="671395454">
+					<ChildrenList>
+						<Folder Name="eatMe" ID="{E1CBDFEC-4EEB-4EFC-AED3-BE6B494FBF03}" ShortID="615796434">
+							<ChildrenList>
+								<Sound Name="1_op_(Instrumental)" ID="{9A1EC909-A754-4B1D-A588-261E6FB3C7AC}" ShortID="198041399">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1_op_(Instrumental)" ID="{772786BA-B5A5-4B72-A95B-181CB1BFE01A}">
+											<Language>English(US)</Language>
+											<AudioFile>1_op_(Instrumental).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="807926840"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="1_op_(Instrumental)" ID="{772786BA-B5A5-4B72-A95B-181CB1BFE01A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="op(people)" ID="{4AC606DE-EB7F-4BEB-9529-A311A14C8C61}" ShortID="592211277">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="op(people)" ID="{EB01845B-E80C-4C98-B071-661DC1F42B9C}">
+											<Language>English(US)</Language>
+											<AudioFile>op(people).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="401522030"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="op(people)" ID="{EB01845B-E80C-4C98-B071-661DC1F42B9C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

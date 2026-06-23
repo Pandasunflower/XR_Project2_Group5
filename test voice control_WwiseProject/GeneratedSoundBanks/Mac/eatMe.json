@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3394390039",
+    "Type": "User",
+    "GUID": "{C139EE80-6AFA-434E-B783-DEC11AC62A5D}",
+    "Language": "SFX",
+    "Hash": "{239F80C5-80D1-58BB-2FF0-3203EB186F12}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SongList\\eatMe",
+    "ShortName": "eatMe",
+    "Path": "eatMe.bnk"
+   }
+  ],
+  "FileHash": "{E417CDFD-C111-3425-BB97-B5423E90A65A}"
+ }
+}

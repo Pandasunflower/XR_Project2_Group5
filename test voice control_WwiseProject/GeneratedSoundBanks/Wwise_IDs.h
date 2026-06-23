@@ -18,6 +18,8 @@ namespace AK
         static const AkUniqueID PLAY_CLAPPING = 2700014240U;
         static const AkUniqueID PLAY_DANCINGGIRL = 509118324U;
         static const AkUniqueID PLAY_DAVEWANG = 3205629941U;
+        static const AkUniqueID PLAY_EATME_BGM = 3350003293U;
+        static const AkUniqueID PLAY_EATME_PEOPLE = 4134769132U;
         static const AkUniqueID PLAY_END = 2472290785U;
         static const AkUniqueID PLAY_END_01 = 1643914477U;
         static const AkUniqueID PLAY_FIREWORK = 3876215541U;
@@ -66,6 +68,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID EATME = 3394390039U;
         static const AkUniqueID FIRSTSTAGE = 565721261U;
         static const AkUniqueID FORDEMOBANK = 2842888517U;
         static const AkUniqueID LOBBY = 290285391U;
