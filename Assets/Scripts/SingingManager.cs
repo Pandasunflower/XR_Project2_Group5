@@ -13,7 +13,8 @@ public class SingingManager : MonoBehaviour {
     // public GameObject wwiseAudioObject;
 
     [Header("Settings")]
-    public int songIndex = 0;
+    // public int songIndex = 0;
+    public string songFolderName = "davewang"; // Inside StreamingAssets/Songs
     public TextAsset jsonFile;
     // public AudioSource bgmSource;  // 暂时禁用音频播放
     public float timeScale = 2.0f;
@@ -77,9 +78,9 @@ public class SingingManager : MonoBehaviour {
         AkUnitySoundEngine.RegisterGameObj(gameObject, gameObject.name);
         
         LoadSongFolders();
-        string selected = _songList[songIndex].Trim(); 
-        string jsonPath = Path.Combine("StreamingAssets/Songs", selected, "pitch_data.json.txt");
-        string folderPath = Path.Combine("StreamingAssets/Songs", selected);
+        // string selected = _songList[songIndex].Trim(); 
+        // string jsonPath = Path.Combine("StreamingAssets/Songs", selected, "pitch_data.json.txt");
+        // string folderPath = Path.Combine("StreamingAssets/Songs", selected);
         // StartGame(jsonPath, folderPath);
     }
 
@@ -87,7 +88,8 @@ public class SingingManager : MonoBehaviour {
     {
         isStarted = 1;
         _testTime = 0f;  // #sym:isStarted 重置計時，只從真正開始遊戲時才計算時長
-        string selected = _songList[songIndex].Trim(); 
+        // string selected = _songList[songIndex].Trim(); 
+        string selected = songFolderName;
         string jsonPath = Path.Combine("StreamingAssets/Songs", selected, "pitch_data.json.txt");
         string folderPath = Path.Combine("StreamingAssets/Songs", selected);
         StartGame(jsonPath, folderPath);
@@ -153,10 +155,10 @@ public class SingingManager : MonoBehaviour {
             SpawnPitchLines();
             
             // 启动 AkEvent
-            if (akEvent != null) {
-                akEvent.Post(gameObject);
-                Debug.Log("<color=cyan>[AkEvent] 已启动音乐播放</color>");
-            }
+            // if (akEvent != null) {
+            //     akEvent.Post(gameObject);
+            //     Debug.Log("<color=cyan>[AkEvent] 已启动音乐播放</color>");
+            // }
             
             Debug.Log($"<color=cyan>[JSON 成功載入] 共 {_data.frames.Count} 個音高點，總時長: {_data.frames[_data.frames.Count - 1].t:F2} 秒</color>");
 
@@ -407,10 +409,10 @@ public class SingingManager : MonoBehaviour {
         UnityEngine.Debug.Log("<color=orange>🎵 演唱完畢！進入結算畫面</color>");
 
         // 停止 AkEvent
-        if (akEvent != null) {
-            akEvent.Stop(gameObject);
-            Debug.Log("<color=orange>[AkEvent] 已停止音乐播放</color>");
-        }
+        // if (akEvent != null) {
+        //     akEvent.Stop(gameObject);
+        //     Debug.Log("<color=orange>[AkEvent] 已停止音乐播放</color>");
+        // }
         
         // bgmSource.Stop();  // 音频播放已禁用
         // if (micInput != null && micInput.testVocalSource != null) {

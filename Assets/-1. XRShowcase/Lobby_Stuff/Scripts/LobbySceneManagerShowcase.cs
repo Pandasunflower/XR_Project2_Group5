@@ -83,6 +83,7 @@ public class LobbySceneManagerShowcase : MonoBehaviour
         firestoreTest.SetGameState("init");
         Debug.Log($"[SceneManager] 加載場景: {sceneName}，歌曲索引: {finalSongIndex}，選定歌曲: {songName}");
         // SceneManager.LoadScene(sceneName);
+        GameConfig.SelectedGame = songIndex;
         transitionManager.goToSceneAsync(finalSongIndex); // 加載 Stage1 或 Stage2
     }
 }

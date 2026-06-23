@@ -16,6 +16,7 @@ public class LobbySongManagerShowcase : MonoBehaviour
     
     [Header("Selected State")]
     public int currentSelectedIndex = 0;
+    public bool useDefaultSongs = true;
     public List<string> songFolders = new List<string>();
 
     public List<string> songNames = new List<string>();
@@ -31,36 +32,47 @@ public class LobbySongManagerShowcase : MonoBehaviour
 
     private void Start()
     {
-        RefreshSongList();
-        SetSongNames();
+        // RefreshSongList();
+        if (useDefaultSongs)
+        {
+            SetSongFolders();
+            SetSongNames();
+        }
         UpdateUI();
     }
 
-    public void RefreshSongList()
-    {
-        songFolders.Clear();
-        string path = Path.Combine(Application.streamingAssetsPath, songsFolderName);
+    // public void RefreshSongList()
+    // {
+    //     songFolders.Clear();
+    //     string path = Path.Combine(Application.streamingAssetsPath, songsFolderName);
 
-        if (Directory.Exists(path))
-        {
-            // Get all subdirectories (each represents a song)
-            string[] directories = Directory.GetDirectories(path);
-            foreach (string dir in directories)
-            {
-                songFolders.Add(Path.GetFileName(dir));
-                Debug.Log($"[Lobby] Found song folder: {dir}");
-            }
-            Debug.Log($"[Lobby] Found {songFolders.Count} songs.");
-        }
-        else
-        {
-            Debug.LogError($"[Lobby] Path not found: {path}");
-        }
+    //     if (Directory.Exists(path))
+    //     {
+    //         // Get all subdirectories (each represents a song)
+    //         string[] directories = Directory.GetDirectories(path);
+    //         foreach (string dir in directories)
+    //         {
+    //             songFolders.Add(Path.GetFileName(dir));
+    //             Debug.Log($"[Lobby] Found song folder: {dir}");
+    //         }
+    //         Debug.Log($"[Lobby] Found {songFolders.Count} songs.");
+    //     }
+    //     else
+    //     {
+    //         Debug.LogError($"[Lobby] Path not found: {path}");
+    //     }
+    // }
+
+    public void SetSongFolders()
+    {
+        songFolders.Add("davewang");
+        songFolders.Add("Frozen");
+        Debug.Log($"[Lobby] Song folders set: {string.Join(", ", songFolders)}");
     }
     public void SetSongNames()
     {
-        songNames.Add("For the First Time in Forever");
         songNames.Add("一場遊戲一場夢");
+        songNames.Add("For the First Time in Forever");
         Debug.Log($"[Lobby] Song names set: {string.Join(", ", songNames)}");
     }
 
@@ -185,13 +197,13 @@ public class LobbySongManagerShowcase : MonoBehaviour
                 texture.filterMode = FilterMode.Point; // 保持點陣感
                 
                 Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-                songCover.sprite = newSprite;
+                if (newSprite != null) songCover.sprite = newSprite;
                 
                 Debug.Log($"[Lobby] 封面載入成功: {texture.width}x{texture.height}");
             } else {
                 Debug.LogError($"[Lobby] 請求失敗！錯誤訊息: {uwr.error}");
                 Debug.LogError($"[Lobby] 回應代碼: {uwr.responseCode}");
-                songCover.sprite = defaultCover;
+                if (defaultCover != null) songCover.sprite = defaultCover;
             }
         }
     }
