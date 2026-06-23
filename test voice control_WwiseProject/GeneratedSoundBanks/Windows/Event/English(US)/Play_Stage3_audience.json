@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{2E049C2E-D1D1-4E9B-885F-CA191388AA8A}",
     "Language": "English(US)",
-    "Hash": "{DD9B215A-12C4-07FE-4054-A3212F8DC85C}",
+    "Hash": "{ADE5C8EF-91E7-E67A-F306-E02B59B2F9D7}",
     "ObjectPath": "Play_Stage3_audience",
     "ShortName": "Play_Stage3_audience",
     "Path": "Event/English(US)/Play_Stage3_audience.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{90E72AF0-270C-226E-2DA3-85404A1DF503}"
+  "FileHash": "{916A8162-F361-E786-2EB8-98A5409432FB}"
  }
 }

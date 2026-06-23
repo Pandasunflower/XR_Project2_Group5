@@ -456,39 +456,40 @@
 								<ActiveSource Name="jumphey" ID="{794F866D-159C-4C6D-8945-35EC70888A92}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="firework" ID="{41FE073C-9241-45FE-9941-B427440D22CC}" ShortID="227417274">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="firework" ID="{F7899BBB-FFB0-4CE0-B1E1-8ACC78AAA39F}">
+									<Language>English(US)</Language>
+									<AudioFile>firework.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="775328321"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="firework" ID="{F7899BBB-FFB0-4CE0-B1E1-8ACC78AAA39F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Sound Name="firework" ID="{41FE073C-9241-45FE-9941-B427440D22CC}" ShortID="227417274">
-					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="IsVoice" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>3</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="firework" ID="{F7899BBB-FFB0-4CE0-B1E1-8ACC78AAA39F}">
-							<Language>English(US)</Language>
-							<AudioFile>firework.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="775328321"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="firework" ID="{F7899BBB-FFB0-4CE0-B1E1-8ACC78AAA39F}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

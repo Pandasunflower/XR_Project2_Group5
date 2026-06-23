@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{613833F5-77F6-4855-B7F3-7D72DFA9E9DC}",
     "Language": "English(US)",
-    "Hash": "{187F307F-6C9D-A6DB-B38C-11208FCF80B8}",
+    "Hash": "{1834A3C1-E3CD-5CA0-2E18-0B10BF8BA982}",
     "ObjectPath": "Play_forgetUforgetMe",
     "ShortName": "Play_forgetUforgetMe",
     "Path": "Event/English(US)/Play_forgetUforgetMe.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{0BF29CA1-FFAC-7702-2207-86FD217A7DCD}"
+  "FileHash": "{5C734BE0-5124-FE2F-F450-AF45E41B5AB1}"
  }
 }

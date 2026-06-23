@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{42DEB3B3-2E1B-4B26-A9BF-A8430CA0C396}",
     "Language": "English(US)",
-    "Hash": "{CD4432CD-51B0-4B04-D1BF-13B80903F401}",
+    "Hash": "{FF4245D6-0F6E-904D-DC04-2EC7C3A9D2B7}",
     "ObjectPath": "Play_eatMe",
     "ShortName": "Play_eatMe",
     "Path": "Event/English(US)/Play_eatMe.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{0156E169-BB23-D797-7B30-7E8DC0DECE68}"
+  "FileHash": "{591D5ACA-3E39-8B25-6558-71F80F2DE2DF}"
  }
 }
