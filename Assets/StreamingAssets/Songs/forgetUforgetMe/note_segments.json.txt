@@ -1,56 +1,6 @@
 {
   "notes": [
     {
-      "startTime": 5.6000000000000005,
-      "midi": 38,
-      "duration": 0.2
-    },
-    {
-      "startTime": 5.800000000000001,
-      "midi": 37,
-      "duration": 0.2
-    },
-    {
-      "startTime": 6.0,
-      "midi": 39,
-      "duration": 0.1
-    },
-    {
-      "startTime": 6.1000000000000005,
-      "midi": 36,
-      "duration": 0.1
-    },
-    {
-      "startTime": 16.900000000000002,
-      "midi": 43,
-      "duration": 0.1
-    },
-    {
-      "startTime": 17.0,
-      "midi": 37,
-      "duration": 0.1
-    },
-    {
-      "startTime": 17.1,
-      "midi": 48,
-      "duration": 0.1
-    },
-    {
-      "startTime": 17.2,
-      "midi": 63,
-      "duration": 0.1
-    },
-    {
-      "startTime": 17.3,
-      "midi": 62,
-      "duration": 0.2
-    },
-    {
-      "startTime": 17.5,
-      "midi": 63,
-      "duration": 2.400000000000001
-    },
-    {
       "startTime": 30.5,
       "midi": 48,
       "duration": 0.1
