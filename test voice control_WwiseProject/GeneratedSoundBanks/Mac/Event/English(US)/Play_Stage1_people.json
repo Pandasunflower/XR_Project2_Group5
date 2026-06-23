@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
     "Language": "English(US)",
-    "Hash": "{72133E04-BE62-DA15-2D2D-25B228FABD56}",
+    "Hash": "{A567A54A-8B39-DB07-C866-A04D371D08F0}",
     "ObjectPath": "Play_Stage1_people",
     "ShortName": "Play_Stage1_people",
     "Path": "Event/English(US)/Play_Stage1_people.bnk",
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{82487440-936D-25B1-27CE-9425B5C7DF28}"
+  "FileHash": "{9B3FBA9E-0982-3677-D270-1D2207AE50B7}"
  }
 }

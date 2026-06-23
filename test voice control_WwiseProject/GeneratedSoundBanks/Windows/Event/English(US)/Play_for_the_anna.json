@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D4F1D62B-DAC9-4787-9023-E8C9B30D847A}",
     "Language": "English(US)",
-    "Hash": "{A2ED5415-F40D-2A7E-0D24-466A6EC311D4}",
+    "Hash": "{399CC110-67AE-49F2-47B6-F8D4ADE2932C}",
     "ObjectPath": "Play_for_the_anna",
     "ShortName": "Play_for_the_anna",
     "Path": "Event/English(US)/Play_for_the_anna.bnk",
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{76D5D35C-A1E8-D169-78FC-39B8DA0DF10F}"
+  "FileHash": "{F77C78F4-ED87-F089-EAF7-CDB1970C58A9}"
  }
 }
