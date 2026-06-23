@@ -10,19 +10,19 @@
     "Type": "Event",
     "GUID": "{A7843F7F-8000-444B-B14D-06D1CF81526F}",
     "Language": "English(US)",
-    "Hash": "{50DD01DC-8738-6FDB-8C52-53D8F7EC46FC}",
+    "Hash": "{1F7E4B01-B85A-2257-7335-8DACC7B7953E}",
     "ObjectPath": "Play_forgetUforgetMe_bgm",
     "ShortName": "Play_forgetUforgetMe_bgm",
     "Path": "Event/English(US)/Play_forgetUforgetMe_bgm.bnk",
     "Media": [
      {
-      "Id": "1023556999",
+      "Id": "874699023",
       "Language": "English(US)",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Instrumental).wav",
-      "Path": "Media/English(US)/1023556999.wem",
-      "CachePath": "AD/{AD55F5BE-0B60-5DA4-9AC4-7F18AA2A04E5}.wem"
+      "ShortName": "1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV)_(Instrumental).wav",
+      "Path": "Media/English(US)/874699023.wem",
+      "CachePath": "CE/{CE43436F-233F-D983-D3AB-A1C974C93B16}.wem"
      }
     ],
     "Events": [
@@ -32,17 +32,17 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SongList\\forgetUforgetMe\\Play_forgetUforgetMe_bgm",
       "GUID": "{A7843F7F-8000-444B-B14D-06D1CF81526F}",
       "DurationType": "OneShot",
-      "DurationMin": "180.20499",
-      "DurationMax": "180.20499",
+      "DurationMin": "278.40726",
+      "DurationMax": "278.40726",
       "MediaRefs": [
        {
-        "Id": "1023556999"
+        "Id": "874699023"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{75D0968B-4B63-A857-A481-29E039D3F249}"
+  "FileHash": "{5AA99B85-FEA5-E4AA-972A-5E9A98BA4D37}"
  }
 }

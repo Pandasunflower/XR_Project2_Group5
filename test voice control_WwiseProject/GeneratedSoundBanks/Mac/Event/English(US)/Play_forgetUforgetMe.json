@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{613833F5-77F6-4855-B7F3-7D72DFA9E9DC}",
     "Language": "English(US)",
-    "Hash": "{1834A3C1-E3CD-5CA0-2E18-0B10BF8BA982}",
+    "Hash": "{4FFC2713-9952-9921-FE5B-0021FC093F39}",
     "ObjectPath": "Play_forgetUforgetMe",
     "ShortName": "Play_forgetUforgetMe",
     "Path": "Event/English(US)/Play_forgetUforgetMe.bnk",
@@ -18,11 +18,11 @@
      {
       "Id": "773202057",
       "Language": "English(US)",
-      "Streaming": "false",
+      "Streaming": "true",
       "Location": "Loose",
       "ShortName": "forgetUforgetMe.wav",
       "Path": "Media/English(US)/773202057.wem",
-      "CachePath": "D3/{D3CB0136-6B42-2EB3-FE6F-660D6D5F7511}.wem"
+      "CachePath": "34/{34B00FF2-6EE7-9394-0FAC-12A5E8709252}.wem"
      }
     ],
     "Events": [
@@ -32,8 +32,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SongList\\forgetUforgetMe\\Play_forgetUforgetMe",
       "GUID": "{613833F5-77F6-4855-B7F3-7D72DFA9E9DC}",
       "DurationType": "OneShot",
-      "DurationMin": "180.3605",
-      "DurationMax": "180.3605",
+      "DurationMin": "278.40726",
+      "DurationMax": "278.40726",
       "MediaRefs": [
        {
         "Id": "773202057"
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{5C734BE0-5124-FE2F-F450-AF45E41B5AB1}"
+  "FileHash": "{E27006BE-FBF2-A6CE-B44B-59C035E03AFE}"
  }
 }

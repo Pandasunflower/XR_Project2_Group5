@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3212447547",
+    "Type": "Event",
+    "GUID": "{354CDA62-DD46-4F73-8737-7A6AC0AD95D3}",
+    "Language": "English(US)",
+    "Hash": "{E170AAE3-28E2-BB33-AC3D-927BA6A18CEB}",
+    "ObjectPath": "Play_ILikeU",
+    "ShortName": "Play_ILikeU",
+    "Path": "Event/English(US)/Play_ILikeU.bnk",
+    "Media": [
+     {
+      "Id": "641040582",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "IlikeU.wav",
+      "Path": "Media/English(US)/641040582.wem",
+      "CachePath": "A1/{A1A75644-FFDA-46C4-40DF-4C572D00B92F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3212447547",
+      "Name": "Play_ILikeU",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\ILikeU\\Play_ILikeU",
+      "GUID": "{354CDA62-DD46-4F73-8737-7A6AC0AD95D3}",
+      "DurationType": "OneShot",
+      "DurationMin": "219.66077",
+      "DurationMax": "219.66077",
+      "MediaRefs": [
+       {
+        "Id": "641040582"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6A50B014-402F-EC2C-F047-EA25A5E8006D}"
+ }
+}

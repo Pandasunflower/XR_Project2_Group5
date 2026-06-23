@@ -1,3 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3379250955	Play_forgetUforgetMe			\Default Work Unit\SongList\forgetUforgetMe\Play_forgetUforgetMe	
 
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	773202057	forgetUforgetMe	.cache\34\{34B00FF2-6EE7-9394-0FAC-12A5E8709252}.wem	773202057.wem	\Containers\Default Work Unit\songList\forgetUforgetMe\forgetUforgetMe	
+

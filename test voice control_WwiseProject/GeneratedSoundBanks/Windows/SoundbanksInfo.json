@@ -14,6 +14,16 @@
   "DialogueEvents": [],
   "SoundBanks": [
    {
+    "Id": "55075196",
+    "Type": "User",
+    "GUID": "{507238E3-049A-41CB-83A5-48DA1DF6345B}",
+    "Language": "SFX",
+    "Hash": "{CB67412D-1D48-D3A9-7628-192EF02DB73C}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SongList\\ILikeU",
+    "ShortName": "ILikeU",
+    "Path": "ILikeU.bnk"
+   },
+   {
     "Id": "140947920",
     "Type": "Event",
     "GUID": "{48D4D23E-22B8-4E53-AFD3-20D06F8E7037}",
@@ -65,6 +75,57 @@
     ]
    },
    {
+    "Id": "184094710",
+    "Type": "Event",
+    "GUID": "{E3641E2C-2617-4CCB-8AC9-B4BA810B961F}",
+    "Language": "English(US)",
+    "Hash": "{D3043027-13F4-C9CB-0FBD-9F9A75A5DC40}",
+    "ObjectPath": "Play_weiweimonmon_people",
+    "ShortName": "Play_weiweimonmon_people",
+    "Path": "Event/English(US)/Play_weiweimonmon_people.bnk",
+    "Media": [
+     {
+      "Id": "602176123",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1__崴孟三百天禮物_ Official Music Video (128)_(Vocals).wav",
+      "Path": "Media/English(US)/602176123.wem",
+      "CachePath": "2E/{2EAED90C-2A35-B770-B850-097E52DE4799}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "184094710",
+      "Name": "Play_weiweimonmon_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\weiweimonmon\\Play_weiweimonmon_people",
+      "GUID": "{E3641E2C-2617-4CCB-8AC9-B4BA810B961F}",
+      "DurationType": "OneShot",
+      "DurationMin": "235.6129",
+      "DurationMax": "235.6129",
+      "MediaRefs": [
+       {
+        "Id": "602176123"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   },
+   {
     "Id": "290285391",
     "Type": "User",
     "GUID": "{68E703B7-CC55-4A2E-9A62-90088709FA6F}",
@@ -79,19 +140,19 @@
     "Type": "Event",
     "GUID": "{A7843F7F-8000-444B-B14D-06D1CF81526F}",
     "Language": "English(US)",
-    "Hash": "{50DD01DC-8738-6FDB-8C52-53D8F7EC46FC}",
+    "Hash": "{1F7E4B01-B85A-2257-7335-8DACC7B7953E}",
     "ObjectPath": "Play_forgetUforgetMe_bgm",
     "ShortName": "Play_forgetUforgetMe_bgm",
     "Path": "Event/English(US)/Play_forgetUforgetMe_bgm.bnk",
     "Media": [
      {
-      "Id": "1023556999",
+      "Id": "874699023",
       "Language": "English(US)",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Instrumental).wav",
-      "Path": "Media/English(US)/1023556999.wem",
-      "CachePath": "AD/{AD55F5BE-0B60-5DA4-9AC4-7F18AA2A04E5}.wem"
+      "ShortName": "1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV)_(Instrumental).wav",
+      "Path": "Media/English(US)/874699023.wem",
+      "CachePath": "CE/{CE43436F-233F-D983-D3AB-A1C974C93B16}.wem"
      }
     ],
     "Events": [
@@ -101,11 +162,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SongList\\forgetUforgetMe\\Play_forgetUforgetMe_bgm",
       "GUID": "{A7843F7F-8000-444B-B14D-06D1CF81526F}",
       "DurationType": "OneShot",
-      "DurationMin": "180.20499",
-      "DurationMax": "180.20499",
+      "DurationMin": "278.40726",
+      "DurationMax": "278.40726",
       "MediaRefs": [
        {
-        "Id": "1023556999"
+        "Id": "874699023"
        }
       ]
      }
@@ -243,6 +304,53 @@
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\firstStage",
     "ShortName": "firstStage",
     "Path": "firstStage.bnk"
+   },
+   {
+    "Id": "738403599",
+    "Type": "Event",
+    "GUID": "{CD75007A-BAF9-4C80-9C00-87294C309694}",
+    "Language": "English(US)",
+    "Hash": "{4BD55BAA-BFC7-621A-332C-FE4E0F7E43F8}",
+    "ObjectPath": "Play_weiweimonmon_bgm",
+    "ShortName": "Play_weiweimonmon_bgm",
+    "Path": "Event/English(US)/Play_weiweimonmon_bgm.bnk",
+    "Media": [
+     {
+      "Id": "903272079",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1__崴孟三百天禮物_ Official Music Video (128)_(Instrumental).wav",
+      "Path": "Media/English(US)/903272079.wem",
+      "CachePath": "46/{46A22495-B685-8337-DB0E-4B47BF9E96BC}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "738403599",
+      "Name": "Play_weiweimonmon_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\weiweimonmon\\Play_weiweimonmon_bgm",
+      "GUID": "{CD75007A-BAF9-4C80-9C00-87294C309694}",
+      "DurationType": "OneShot",
+      "DurationMin": "235.6129",
+      "DurationMax": "235.6129",
+      "MediaRefs": [
+       {
+        "Id": "903272079"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "773964775",
+    "Type": "User",
+    "GUID": "{C9D68B85-DBA7-405F-81A9-B5B6944BAB62}",
+    "Language": "SFX",
+    "Hash": "{776FE19A-9B0A-5A01-2133-C3E91318972A}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SongList\\weiweimonmon",
+    "ShortName": "weiweimonmon",
+    "Path": "weiweimonmon.bnk"
    },
    {
     "Id": "793661728",
@@ -853,19 +961,19 @@
     "Type": "Event",
     "GUID": "{EA5D5F51-26CB-4512-AAA4-5547427DD527}",
     "Language": "English(US)",
-    "Hash": "{AF1D212E-D192-5C68-65C3-4C388FF6E3DE}",
+    "Hash": "{4972B5BE-E636-1915-8EF7-F96B759615ED}",
     "ObjectPath": "Play_forgetUforgetMe_people",
     "ShortName": "Play_forgetUforgetMe_people",
     "Path": "Event/English(US)/Play_forgetUforgetMe_people.bnk",
     "Media": [
      {
-      "Id": "842220159",
+      "Id": "600652979",
       "Language": "English(US)",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Vocals).wav",
-      "Path": "Media/English(US)/842220159.wem",
-      "CachePath": "0C/{0CF6D491-BD02-40B1-D36B-9D85505BDF60}.wem"
+      "ShortName": "1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV)_(Vocals).wav",
+      "Path": "Media/English(US)/600652979.wem",
+      "CachePath": "1F/{1F7CB4E2-7369-E19B-E99B-53E04583E10B}.wem"
      }
     ],
     "Events": [
@@ -875,11 +983,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SongList\\forgetUforgetMe\\Play_forgetUforgetMe_people",
       "GUID": "{EA5D5F51-26CB-4512-AAA4-5547427DD527}",
       "DurationType": "OneShot",
-      "DurationMin": "180.20499",
-      "DurationMax": "180.20499",
+      "DurationMin": "278.40726",
+      "DurationMax": "278.40726",
       "MediaRefs": [
        {
-        "Id": "842220159"
+        "Id": "600652979"
        }
       ]
      }
@@ -955,6 +1063,43 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
+     }
+    ]
+   },
+   {
+    "Id": "2035991780",
+    "Type": "Event",
+    "GUID": "{5B67BD0B-270B-4CF0-9A6F-D55B05F550B2}",
+    "Language": "English(US)",
+    "Hash": "{168746F0-F1D0-6D32-2504-F6E5131A477C}",
+    "ObjectPath": "Play_weiweimonmon",
+    "ShortName": "Play_weiweimonmon",
+    "Path": "Event/English(US)/Play_weiweimonmon.bnk",
+    "Media": [
+     {
+      "Id": "452061077",
+      "Language": "English(US)",
+      "Streaming": "true",
+      "Location": "Loose",
+      "ShortName": "weiweimonmon.wav",
+      "Path": "Media/English(US)/452061077.wem",
+      "CachePath": "E7/{E71F0F6C-D321-C0F0-FD7B-E3BDA54C657C}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2035991780",
+      "Name": "Play_weiweimonmon",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\weiweimonmon\\Play_weiweimonmon",
+      "GUID": "{5B67BD0B-270B-4CF0-9A6F-D55B05F550B2}",
+      "DurationType": "OneShot",
+      "DurationMin": "235.6129",
+      "DurationMax": "235.6129",
+      "MediaRefs": [
+       {
+        "Id": "452061077"
+       }
+      ]
      }
     ]
    },
@@ -1517,6 +1662,43 @@
     ]
    },
    {
+    "Id": "3212447547",
+    "Type": "Event",
+    "GUID": "{354CDA62-DD46-4F73-8737-7A6AC0AD95D3}",
+    "Language": "English(US)",
+    "Hash": "{E170AAE3-28E2-BB33-AC3D-927BA6A18CEB}",
+    "ObjectPath": "Play_ILikeU",
+    "ShortName": "Play_ILikeU",
+    "Path": "Event/English(US)/Play_ILikeU.bnk",
+    "Media": [
+     {
+      "Id": "641040582",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "IlikeU.wav",
+      "Path": "Media/English(US)/641040582.wem",
+      "CachePath": "A1/{A1A75644-FFDA-46C4-40DF-4C572D00B92F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3212447547",
+      "Name": "Play_ILikeU",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\ILikeU\\Play_ILikeU",
+      "GUID": "{354CDA62-DD46-4F73-8737-7A6AC0AD95D3}",
+      "DurationType": "OneShot",
+      "DurationMin": "219.66077",
+      "DurationMax": "219.66077",
+      "MediaRefs": [
+       {
+        "Id": "641040582"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "3288810203",
     "Type": "Event",
     "GUID": "{90F1FFC7-FC3C-427D-B2BD-37DCA1E69A56}",
@@ -1595,7 +1777,7 @@
     "Type": "Event",
     "GUID": "{613833F5-77F6-4855-B7F3-7D72DFA9E9DC}",
     "Language": "English(US)",
-    "Hash": "{1834A3C1-E3CD-5CA0-2E18-0B10BF8BA982}",
+    "Hash": "{4FFC2713-9952-9921-FE5B-0021FC093F39}",
     "ObjectPath": "Play_forgetUforgetMe",
     "ShortName": "Play_forgetUforgetMe",
     "Path": "Event/English(US)/Play_forgetUforgetMe.bnk",
@@ -1603,11 +1785,11 @@
      {
       "Id": "773202057",
       "Language": "English(US)",
-      "Streaming": "false",
+      "Streaming": "true",
       "Location": "Loose",
       "ShortName": "forgetUforgetMe.wav",
       "Path": "Media/English(US)/773202057.wem",
-      "CachePath": "D3/{D3CB0136-6B42-2EB3-FE6F-660D6D5F7511}.wem"
+      "CachePath": "34/{34B00FF2-6EE7-9394-0FAC-12A5E8709252}.wem"
      }
     ],
     "Events": [
@@ -1617,8 +1799,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SongList\\forgetUforgetMe\\Play_forgetUforgetMe",
       "GUID": "{613833F5-77F6-4855-B7F3-7D72DFA9E9DC}",
       "DurationType": "OneShot",
-      "DurationMin": "180.3605",
-      "DurationMax": "180.3605",
+      "DurationMin": "278.40726",
+      "DurationMax": "278.40726",
       "MediaRefs": [
        {
         "Id": "773202057"
@@ -1706,6 +1888,94 @@
         "Id": "345055891"
        }
       ]
+     }
+    ]
+   },
+   {
+    "Id": "3512494960",
+    "Type": "Event",
+    "GUID": "{C10FBBE6-32D8-49DB-83DC-EC227EBBAC26}",
+    "Language": "English(US)",
+    "Hash": "{90F66A5A-038C-A64F-04EF-C3674873E2BD}",
+    "ObjectPath": "Play_ILikeU_bgm",
+    "ShortName": "Play_ILikeU_bgm",
+    "Path": "Event/English(US)/Play_ILikeU_bgm.bnk",
+    "Media": [
+     {
+      "Id": "810169652",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_芒果醬 Mango Jump〈我喜歡你 I'm Into You〉｜Official Music Video_(Instrumental).wav",
+      "Path": "Media/English(US)/810169652.wem",
+      "CachePath": "59/{59C42932-DB8B-25FA-E962-D7F161376217}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3512494960",
+      "Name": "Play_ILikeU_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\ILikeU\\Play_ILikeU_bgm",
+      "GUID": "{C10FBBE6-32D8-49DB-83DC-EC227EBBAC26}",
+      "DurationType": "OneShot",
+      "DurationMin": "219.66077",
+      "DurationMax": "219.66077",
+      "MediaRefs": [
+       {
+        "Id": "810169652"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3548379683",
+    "Type": "Event",
+    "GUID": "{5375CB83-9321-46B1-9A15-F4785BFE7DCA}",
+    "Language": "English(US)",
+    "Hash": "{9F3ADEFC-86A3-2DAC-3761-F52E0C771649}",
+    "ObjectPath": "Play_ILikeU_people",
+    "ShortName": "Play_ILikeU_people",
+    "Path": "Event/English(US)/Play_ILikeU_people.bnk",
+    "Media": [
+     {
+      "Id": "727514922",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_芒果醬 Mango Jump〈我喜歡你 I'm Into You〉｜Official Music Video_(Vocals).wav",
+      "Path": "Media/English(US)/727514922.wem",
+      "CachePath": "8D/{8D727EFD-1DDD-DF0E-DFC1-08C1EE96A101}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3548379683",
+      "Name": "Play_ILikeU_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\ILikeU\\Play_ILikeU_people",
+      "GUID": "{5375CB83-9321-46B1-9A15-F4785BFE7DCA}",
+      "DurationType": "OneShot",
+      "DurationMin": "219.66077",
+      "DurationMax": "219.66077",
+      "MediaRefs": [
+       {
+        "Id": "727514922"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
      }
     ]
    },
@@ -1928,6 +2198,16 @@
     ]
    },
    {
+    "Id": "4072029455",
+    "Type": "User",
+    "GUID": "{C27EA4F9-3618-4D19-A226-D63CFBBEAE3E}",
+    "Language": "SFX",
+    "Hash": "{6532A5D7-5F7B-7618-A419-9383269B2139}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SongList\\New_SoundBank",
+    "ShortName": "New_SoundBank",
+    "Path": "New_SoundBank.bnk"
+   },
+   {
     "Id": "4122281311",
     "Type": "Event",
     "GUID": "{59185CB8-C182-451B-8A67-CC5309B5A4B4}",
@@ -2014,6 +2294,6 @@
     ]
    }
   ],
-  "FileHash": "{B5FEFF73-5C38-01B8-BAA6-8E2B8CAFD3CB}"
+  "FileHash": "{09BA47AA-CD84-5766-7A10-52AD33C25CF6}"
  }
 }

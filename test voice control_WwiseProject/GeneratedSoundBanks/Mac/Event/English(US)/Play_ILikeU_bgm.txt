@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3512494960	Play_ILikeU_bgm			\Default Work Unit\SongList\ILikeU\Play_ILikeU_bgm	
+

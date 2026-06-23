@@ -1,0 +1,62 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3548379683",
+    "Type": "Event",
+    "GUID": "{5375CB83-9321-46B1-9A15-F4785BFE7DCA}",
+    "Language": "English(US)",
+    "Hash": "{9F3ADEFC-86A3-2DAC-3761-F52E0C771649}",
+    "ObjectPath": "Play_ILikeU_people",
+    "ShortName": "Play_ILikeU_people",
+    "Path": "Event/English(US)/Play_ILikeU_people.bnk",
+    "Media": [
+     {
+      "Id": "727514922",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_芒果醬 Mango Jump〈我喜歡你 I'm Into You〉｜Official Music Video_(Vocals).wav",
+      "Path": "Media/English(US)/727514922.wem",
+      "CachePath": "8D/{8D727EFD-1DDD-DF0E-DFC1-08C1EE96A101}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3548379683",
+      "Name": "Play_ILikeU_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\ILikeU\\Play_ILikeU_people",
+      "GUID": "{5375CB83-9321-46B1-9A15-F4785BFE7DCA}",
+      "DurationType": "OneShot",
+      "DurationMin": "219.66077",
+      "DurationMax": "219.66077",
+      "MediaRefs": [
+       {
+        "Id": "727514922"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9970BEA3-5610-3109-60E9-D582146B884A}"
+ }
+}

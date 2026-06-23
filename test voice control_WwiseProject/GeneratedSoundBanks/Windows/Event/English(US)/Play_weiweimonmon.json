@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2035991780",
+    "Type": "Event",
+    "GUID": "{5B67BD0B-270B-4CF0-9A6F-D55B05F550B2}",
+    "Language": "English(US)",
+    "Hash": "{168746F0-F1D0-6D32-2504-F6E5131A477C}",
+    "ObjectPath": "Play_weiweimonmon",
+    "ShortName": "Play_weiweimonmon",
+    "Path": "Event/English(US)/Play_weiweimonmon.bnk",
+    "Media": [
+     {
+      "Id": "452061077",
+      "Language": "English(US)",
+      "Streaming": "true",
+      "Location": "Loose",
+      "ShortName": "weiweimonmon.wav",
+      "Path": "Media/English(US)/452061077.wem",
+      "CachePath": "E7/{E71F0F6C-D321-C0F0-FD7B-E3BDA54C657C}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2035991780",
+      "Name": "Play_weiweimonmon",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\weiweimonmon\\Play_weiweimonmon",
+      "GUID": "{5B67BD0B-270B-4CF0-9A6F-D55B05F550B2}",
+      "DurationType": "OneShot",
+      "DurationMin": "235.6129",
+      "DurationMax": "235.6129",
+      "MediaRefs": [
+       {
+        "Id": "452061077"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6374DFF1-916C-3234-DEEF-A720681F98A8}"
+ }
+}

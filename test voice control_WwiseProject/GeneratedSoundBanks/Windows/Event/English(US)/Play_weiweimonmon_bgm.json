@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "738403599",
+    "Type": "Event",
+    "GUID": "{CD75007A-BAF9-4C80-9C00-87294C309694}",
+    "Language": "English(US)",
+    "Hash": "{4BD55BAA-BFC7-621A-332C-FE4E0F7E43F8}",
+    "ObjectPath": "Play_weiweimonmon_bgm",
+    "ShortName": "Play_weiweimonmon_bgm",
+    "Path": "Event/English(US)/Play_weiweimonmon_bgm.bnk",
+    "Media": [
+     {
+      "Id": "903272079",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1__崴孟三百天禮物_ Official Music Video (128)_(Instrumental).wav",
+      "Path": "Media/English(US)/903272079.wem",
+      "CachePath": "46/{46A22495-B685-8337-DB0E-4B47BF9E96BC}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "738403599",
+      "Name": "Play_weiweimonmon_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\weiweimonmon\\Play_weiweimonmon_bgm",
+      "GUID": "{CD75007A-BAF9-4C80-9C00-87294C309694}",
+      "DurationType": "OneShot",
+      "DurationMin": "235.6129",
+      "DurationMax": "235.6129",
+      "MediaRefs": [
+       {
+        "Id": "903272079"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7DE5A9B9-40EE-E337-F556-8EA410873758}"
+ }
+}

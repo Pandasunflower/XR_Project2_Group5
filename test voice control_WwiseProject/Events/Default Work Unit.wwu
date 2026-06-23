@@ -522,7 +522,7 @@
 										<Action Name="" ID="{3054BC33-3C65-4185-A537-640B69D7EABD}" ShortID="788108699">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="forgetUforgetMe" ID="{5E48BB70-A8FE-41BF-B1CD-B4E1E090372C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+													<ObjectRef Name="forgetUforgetMe" ID="{75865BCD-D60E-4A8D-B5CC-385CA2B38447}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -533,7 +533,7 @@
 										<Action Name="" ID="{0E8AFBC5-6BA0-4E9C-8759-070A2F76448D}" ShortID="275548182">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="forgetUforgetMe_people" ID="{46E371DA-0932-4E26-B169-8284D231162E}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+													<ObjectRef Name="forgetUforgetMe_people" ID="{3A1E1448-3DAE-44C1-BD9B-81114D3003EB}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -544,7 +544,81 @@
 										<Action Name="" ID="{0090D941-80C1-4DA3-9436-5952515D8A89}" ShortID="871548639">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="forgetUforgetMe_bgm" ID="{8E12AA7A-C77B-4171-A156-3B92B7045E4C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+													<ObjectRef Name="forgetUfoegetMe_bgm" ID="{306961FF-C675-4BCD-8BE8-AB2365686343}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="weiweimonmon" ID="{614D7EBC-E6F8-4A11-BE0B-6E77F65A0132}" ShortID="757235529">
+							<ChildrenList>
+								<Event Name="Play_weiweimonmon_people" ID="{E3641E2C-2617-4CCB-8AC9-B4BA810B961F}">
+									<ChildrenList>
+										<Action Name="" ID="{8E203795-674D-47C4-9E35-4D6C57C9D750}" ShortID="192198728">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="weiweimonmon_people" ID="{12326FA2-D725-489A-A2C6-4A10AB9BDF75}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_weiweimonmon" ID="{5B67BD0B-270B-4CF0-9A6F-D55B05F550B2}">
+									<ChildrenList>
+										<Action Name="" ID="{9C9044FE-35DA-4D67-AF0C-CD5F556DC8F1}" ShortID="400342453">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="weiweimonmon" ID="{A34958CF-2F64-487B-BCED-095348A08569}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_weiweimonmon_bgm" ID="{CD75007A-BAF9-4C80-9C00-87294C309694}">
+									<ChildrenList>
+										<Action Name="" ID="{BCF3445F-4D02-43AC-A7A7-B73689FE8D2C}" ShortID="520439815">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="weiweimonmon_bgm" ID="{67478FF1-E8C9-47FE-8CFB-81B8C827F973}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="ILikeU" ID="{2A7A4BE0-5CD3-4BF6-83DD-0CE4A94E2E61}" ShortID="299001112">
+							<ChildrenList>
+								<Event Name="Play_ILikeU" ID="{354CDA62-DD46-4F73-8737-7A6AC0AD95D3}">
+									<ChildrenList>
+										<Action Name="" ID="{D67B0120-62FA-4EE9-A993-5C8CD86859F4}" ShortID="683704689">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ILikeU" ID="{8AF34714-BF4D-4FBF-BD11-793855595C49}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_ILikeU_bgm" ID="{C10FBBE6-32D8-49DB-83DC-EC227EBBAC26}">
+									<ChildrenList>
+										<Action Name="" ID="{A993080D-3333-4530-9786-F3BA9CB1BF61}" ShortID="1015941639">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ILikeU_bgm" ID="{B53CB08F-7F87-41A4-B489-C6F71C1096EA}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_ILikeU_people" ID="{5375CB83-9321-46B1-9A15-F4785BFE7DCA}">
+									<ChildrenList>
+										<Action Name="" ID="{306082DE-957D-46A7-8297-B5FD10D89498}" ShortID="286572432">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ILikeU_people" ID="{BB7661FE-EA9E-4CE1-82AF-472EA900760F}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

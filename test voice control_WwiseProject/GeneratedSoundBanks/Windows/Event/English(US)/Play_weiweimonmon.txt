@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2035991780	Play_weiweimonmon			\Default Work Unit\SongList\weiweimonmon\Play_weiweimonmon	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	452061077	weiweimonmon	.cache\E7\{E71F0F6C-D321-C0F0-FD7B-E3BDA54C657C}.wem	452061077.wem	\Containers\Default Work Unit\songList\weiweimonmon\weiweimonmon	
+

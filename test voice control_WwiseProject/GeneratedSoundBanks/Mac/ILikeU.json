@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "55075196",
+    "Type": "User",
+    "GUID": "{507238E3-049A-41CB-83A5-48DA1DF6345B}",
+    "Language": "SFX",
+    "Hash": "{CB67412D-1D48-D3A9-7628-192EF02DB73C}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SongList\\ILikeU",
+    "ShortName": "ILikeU",
+    "Path": "ILikeU.bnk"
+   }
+  ],
+  "FileHash": "{940BF7C1-3A40-8840-67A1-32B16A69ED52}"
+ }
+}

@@ -1294,32 +1294,6 @@
 								<ActiveSource Name="for-the-first-time-in-forever-from-frozensing-along" ID="{35C56F69-FCB8-45F2-8BCB-746FDF1E4EC9}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="forgetUforgetMe" ID="{5E48BB70-A8FE-41BF-B1CD-B4E1E090372C}" ShortID="767501189">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="forgetUforgetMe" ID="{7DB5BDD9-70B5-4AC1-A296-65B37D15A985}">
-									<Language>English(US)</Language>
-									<AudioFile>forgetUforgetMe.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="773202057"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="forgetUforgetMe" ID="{7DB5BDD9-70B5-4AC1-A296-65B37D15A985}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="eatMe" ID="{BBBCD3C2-1CDC-4325-AC3C-020E69C8B151}" ShortID="20862425">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -1344,6 +1318,37 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="op_(byEvon)" ID="{2C2BB926-EE02-4827-80EC-DBD0B14D1725}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="weiweimonmon" ID="{A34958CF-2F64-487B-BCED-095348A08569}" ShortID="31087136">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="weiweimonmon" ID="{EF608393-037F-4AF6-9BC9-5010AB101C64}">
+									<Language>English(US)</Language>
+									<AudioFile>weiweimonmon.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="452061077"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="weiweimonmon" ID="{EF608393-037F-4AF6-9BC9-5010AB101C64}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -2349,7 +2354,7 @@
 						</Folder>
 						<Folder Name="forgetUforgetMe" ID="{2B0D7135-C8E4-47A7-8637-BC1D571188A9}" ShortID="879135461">
 							<ChildrenList>
-								<Sound Name="forgetUforgetMe_bgm" ID="{8E12AA7A-C77B-4171-A156-3B92B7045E4C}" ShortID="372088101">
+								<Sound Name="forgetUfoegetMe_bgm" ID="{306961FF-C675-4BCD-8BE8-AB2365686343}" ShortID="854194374">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -2363,19 +2368,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Instrumental)" ID="{94B3BF94-2D2A-4D26-9A49-892A76672A61}">
+										<AudioFileSource Name="1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV)_(Instrumental)" ID="{9548D6B3-05D1-49C0-B08B-BA5284E37585}">
 											<Language>English(US)</Language>
-											<AudioFile>1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Instrumental).wav</AudioFile>
+											<AudioFile>1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV)_(Instrumental).wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1023556999"/>
+												<MediaID ID="874699023"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Instrumental)" ID="{94B3BF94-2D2A-4D26-9A49-892A76672A61}" Platform="Linked"/>
+										<ActiveSource Name="1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV)_(Instrumental)" ID="{9548D6B3-05D1-49C0-B08B-BA5284E37585}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="forgetUforgetMe_people" ID="{46E371DA-0932-4E26-B169-8284D231162E}" ShortID="764145953">
+								<Sound Name="forgetUforgetMe_people" ID="{3A1E1448-3DAE-44C1-BD9B-81114D3003EB}" ShortID="585774933">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -2394,53 +2399,17 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Vocals)" ID="{835AB43C-6B84-4A95-BC26-E3FF2DA86F35}">
+										<AudioFileSource Name="1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV)_(Vocals)" ID="{6A679C22-0E32-43FC-BB6E-89A809C03C91}">
 											<Language>English(US)</Language>
-											<AudioFile>1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Vocals).wav</AudioFile>
+											<AudioFile>1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV)_(Vocals).wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="842220159"/>
+												<MediaID ID="600652979"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="RTPC">
-											<RTPC Name="" ID="{E60CDB19-6EC3-4DC9-A20B-B8B232CA93C7}" ShortID="139875575">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Highpass"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="mic_distance" ID="{094260AC-CB5C-43D8-A2CB-055CC6615208}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{45230A7E-F57B-4F36-8C90-C81ABB43E5A6}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>20</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>20</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-											<RTPC Name="" ID="{8F6FB4AC-9F34-4AE1-8DF1-7CFC9123FC61}" ShortID="418797296">
+											<RTPC Name="" ID="{10BC334C-AE67-4F27-9F2D-5C6878F4E1E6}" ShortID="544217073">
 												<PropertyList>
 													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
 												</PropertyList>
@@ -2450,7 +2419,7 @@
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{B41B943D-9319-403E-BBBF-851BECF9E5EB}">
+															<Curve Name="" ID="{03B1A290-FFF7-4BFD-A024-C4DAEE103EF4}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="65537"/>
 																</PropertyList>
@@ -2484,7 +2453,7 @@
 													</Reference>
 												</ReferenceList>
 											</RTPC>
-											<RTPC Name="" ID="{657BC199-7F2E-496A-97D1-BA57AE4D0984}" ShortID="912163069">
+											<RTPC Name="" ID="{F4C51E15-126B-4DEB-AEE4-22BAA3E63ADD}" ShortID="225015149">
 												<PropertyList>
 													<Property Name="PropertyName" Type="string" Value="Volume"/>
 												</PropertyList>
@@ -2494,7 +2463,7 @@
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{F8A1B0DE-2234-40A2-9356-58CD9B038227}">
+															<Curve Name="" ID="{E473B395-5149-4E3E-8139-2688907B8019}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -2533,7 +2502,43 @@
 													</Reference>
 												</ReferenceList>
 											</RTPC>
-											<RTPC Name="" ID="{996E18B9-B123-48D5-84BB-760579DE818C}" ShortID="425019400">
+											<RTPC Name="" ID="{46160E2E-4120-4155-8361-5C48BD039900}" ShortID="410048341">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Highpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="mic_distance" ID="{094260AC-CB5C-43D8-A2CB-055CC6615208}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{09F6861A-E79E-4968-983B-6A1537991457}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>20</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>20</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+											<RTPC Name="" ID="{FD8DC1E8-F3D4-4BE5-B6D3-78960D505787}" ShortID="19431065">
 												<PropertyList>
 													<Property Name="PropertyName" Type="string" Value="Volume"/>
 												</PropertyList>
@@ -2543,7 +2548,7 @@
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{397251D4-3EE7-4446-A9E4-1DEB582AD88E}">
+															<Curve Name="" ID="{D1851CC9-B68B-41FE-B2C6-7F9DD33AA2FB}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -2574,7 +2579,527 @@
 										</ObjectList>
 									</ObjectLists>
 									<ActiveSourceList>
-										<ActiveSource Name="1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Vocals)" ID="{835AB43C-6B84-4A95-BC26-E3FF2DA86F35}" Platform="Linked"/>
+										<ActiveSource Name="1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV)_(Vocals)" ID="{6A679C22-0E32-43FC-BB6E-89A809C03C91}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="forgetUforgetMe" ID="{75865BCD-D60E-4A8D-B5CC-385CA2B38447}" ShortID="73857531">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="forgetUforgetMe" ID="{6EC874DB-A762-4F8E-B4F2-59639C140FB3}">
+											<Language>English(US)</Language>
+											<AudioFile>forgetUforgetMe.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="773202057"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="forgetUforgetMe" ID="{6EC874DB-A762-4F8E-B4F2-59639C140FB3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="weiweimonmon" ID="{B7CA620C-34C9-4524-BA96-6254FB517509}" ShortID="104769745">
+							<ChildrenList>
+								<Sound Name="weiweimonmon_bgm" ID="{67478FF1-E8C9-47FE-8CFB-81B8C827F973}" ShortID="398252000">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1__崴孟三百天禮物_ Official Music Video (128)_(Instrumental)" ID="{0B5F2BFE-4878-411B-9775-43930D5E2490}">
+											<Language>English(US)</Language>
+											<AudioFile>1__崴孟三百天禮物_ Official Music Video (128)_(Instrumental).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="903272079"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="1__崴孟三百天禮物_ Official Music Video (128)_(Instrumental)" ID="{0B5F2BFE-4878-411B-9775-43930D5E2490}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="weiweimonmon_people" ID="{12326FA2-D725-489A-A2C6-4A10AB9BDF75}" ShortID="959681962">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="stage1" ID="{90FE9495-11ED-40C5-9A86-581F6B5EC299}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1__崴孟三百天禮物_ Official Music Video (128)_(Vocals)" ID="{8EFA8C7A-9937-4462-B533-64C46B24A582}">
+											<Language>English(US)</Language>
+											<AudioFile>1__崴孟三百天禮物_ Official Music Video (128)_(Vocals).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="602176123"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{0A613348-7DB0-41FD-AE8E-94A3B41AD955}" ShortID="398689979">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="mic_direct" ID="{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{4E988663-2491-4834-A1E9-45B05AEAD1BB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>30</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>90</XPos>
+																		<YPos>60</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>180</XPos>
+																		<YPos>100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+											<RTPC Name="" ID="{BE8E4545-6060-4A72-94E9-AD2207BDF384}" ShortID="346169616">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="mic_direct" ID="{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{E10381B1-93A0-4036-BADD-AAD15DCD6857}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.999999999999972</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>30</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>89.89737</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>180</XPos>
+																		<YPos>-195.00023</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+											<RTPC Name="" ID="{B42992B9-C465-4791-B0F4-30DB536E10A4}" ShortID="456463274">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="mic_distance" ID="{094260AC-CB5C-43D8-A2CB-055CC6615208}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{6C8D4E29-C8C4-4834-BC7E-3A7AF08459AF}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.0200800000000072</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>5.075</XPos>
+																		<YPos>-1.21159</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+											<RTPC Name="" ID="{3F5CA4AF-76C7-4D21-8ACE-1FE427F971C0}" ShortID="385997145">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Highpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="mic_distance" ID="{094260AC-CB5C-43D8-A2CB-055CC6615208}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{E47418A9-A55B-43C1-AC11-B697B21115B1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>20</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>20</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="1__崴孟三百天禮物_ Official Music Video (128)_(Vocals)" ID="{8EFA8C7A-9937-4462-B533-64C46B24A582}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="ILikeU" ID="{77C51A7A-8786-4911-882D-09598B37625D}" ShortID="781937365">
+							<ChildrenList>
+								<Sound Name="ILikeU_bgm" ID="{B53CB08F-7F87-41A4-B489-C6F71C1096EA}" ShortID="918807935">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1_芒果醬 Mango Jump〈我喜歡你 I'm Into You〉｜Official Music Video_(Instrumental)" ID="{58EE6643-1E84-4D8A-8753-E70B866F3B49}">
+											<Language>English(US)</Language>
+											<AudioFile>1_芒果醬 Mango Jump〈我喜歡你 I'm Into You〉｜Official Music Video_(Instrumental).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="810169652"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="1_芒果醬 Mango Jump〈我喜歡你 I'm Into You〉｜Official Music Video_(Instrumental)" ID="{58EE6643-1E84-4D8A-8753-E70B866F3B49}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ILikeU_people" ID="{BB7661FE-EA9E-4CE1-82AF-472EA900760F}" ShortID="92598388">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="stage1" ID="{90FE9495-11ED-40C5-9A86-581F6B5EC299}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1_芒果醬 Mango Jump〈我喜歡你 I'm Into You〉｜Official Music Video_(Vocals)" ID="{2C8DA9B9-13C5-418D-B70D-A072741072BE}">
+											<Language>English(US)</Language>
+											<AudioFile>1_芒果醬 Mango Jump〈我喜歡你 I'm Into You〉｜Official Music Video_(Vocals).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="727514922"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{4D61E603-3F00-4D77-9C97-D9421D7BE8A6}" ShortID="85294606">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="mic_direct" ID="{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{AC9CBAE2-5A97-4D67-B7E6-EA54474F0C20}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>30</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>90</XPos>
+																		<YPos>60</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>180</XPos>
+																		<YPos>100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+											<RTPC Name="" ID="{3B859059-0199-4F04-9108-AEEC9E053FE9}" ShortID="963232321">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="mic_direct" ID="{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{D21B34AA-C283-4FE5-8DFA-395F1943EB2E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.999999999999972</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>30</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>89.89737</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>180</XPos>
+																		<YPos>-195.00023</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+											<RTPC Name="" ID="{B406D056-8EAB-4518-ABFA-399749D564DA}" ShortID="479557288">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Highpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="mic_distance" ID="{094260AC-CB5C-43D8-A2CB-055CC6615208}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{F852D8F6-759C-48B6-8EEF-91B947B8A413}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>20</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>20</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+											<RTPC Name="" ID="{B904EA3D-8406-46FF-B345-8C9C82A868B8}" ShortID="520033551">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="mic_distance" ID="{094260AC-CB5C-43D8-A2CB-055CC6615208}" WorkUnitID="{5D7B4D28-6931-4EB0-81B8-28F720703D8D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{8122AC15-5445-49C1-AC90-0300CDFA5F83}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.0200800000000072</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>5.075</XPos>
+																		<YPos>-1.21159</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="1_芒果醬 Mango Jump〈我喜歡你 I'm Into You〉｜Official Music Video_(Vocals)" ID="{2C8DA9B9-13C5-418D-B70D-A072741072BE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ILikeU" ID="{8AF34714-BF4D-4FBF-BD11-793855595C49}" ShortID="1064360747">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IlikeU" ID="{624B13DE-C7DA-4E0F-8899-46EDA9E86DFC}">
+											<Language>English(US)</Language>
+											<AudioFile>IlikeU.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="641040582"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="IlikeU" ID="{624B13DE-C7DA-4E0F-8899-46EDA9E86DFC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

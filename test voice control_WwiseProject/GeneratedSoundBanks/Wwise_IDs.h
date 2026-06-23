@@ -35,6 +35,9 @@ namespace AK
         static const AkUniqueID PLAY_GODOWNSTAGE = 2087262618U;
         static const AkUniqueID PLAY_HORN = 2956245481U;
         static const AkUniqueID PLAY_HORN2 = 1275111929U;
+        static const AkUniqueID PLAY_ILIKEU = 3212447547U;
+        static const AkUniqueID PLAY_ILIKEU_BGM = 3512494960U;
+        static const AkUniqueID PLAY_ILIKEU_PEOPLE = 3548379683U;
         static const AkUniqueID PLAY_JACKYUBER = 1539366728U;
         static const AkUniqueID PLAY_JUMPHEY = 2102220028U;
         static const AkUniqueID PLAY_MOTOROFF = 3120712028U;
@@ -57,6 +60,9 @@ namespace AK
         static const AkUniqueID PLAY_THREEDAYTHREENIGHT_PEOPLE = 1319984948U;
         static const AkUniqueID PLAY_TIMEISUP = 3043573794U;
         static const AkUniqueID PLAY_WAITINGSCORE = 469006591U;
+        static const AkUniqueID PLAY_WEIWEIMONMON = 2035991780U;
+        static const AkUniqueID PLAY_WEIWEIMONMON_BGM = 738403599U;
+        static const AkUniqueID PLAY_WEIWEIMONMON_PEOPLE = 184094710U;
         static const AkUniqueID PLAY_YELL = 793661728U;
         static const AkUniqueID STOP_AUDIENCE = 1961052290U;
     } // namespace EVENTS
@@ -76,8 +82,11 @@ namespace AK
         static const AkUniqueID FIRSTSTAGE = 565721261U;
         static const AkUniqueID FORDEMOBANK = 2842888517U;
         static const AkUniqueID FORGETUFORGETME = 1542590026U;
+        static const AkUniqueID ILIKEU = 55075196U;
         static const AkUniqueID LOBBY = 290285391U;
         static const AkUniqueID MAINBANK = 2880737896U;
+        static const AkUniqueID NEW_SOUNDBANK = 4072029455U;
+        static const AkUniqueID WEIWEIMONMON = 773964775U;
     } // namespace BANKS
 
     namespace BUSSES

@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "773964775",
+    "Type": "User",
+    "GUID": "{C9D68B85-DBA7-405F-81A9-B5B6944BAB62}",
+    "Language": "SFX",
+    "Hash": "{776FE19A-9B0A-5A01-2133-C3E91318972A}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SongList\\weiweimonmon",
+    "ShortName": "weiweimonmon",
+    "Path": "weiweimonmon.bnk"
+   }
+  ],
+  "FileHash": "{8728DF66-9BB9-8FF6-053D-51952F9BB772}"
+ }
+}
