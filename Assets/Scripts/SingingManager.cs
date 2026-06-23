@@ -13,6 +13,7 @@ public class SingingManager : MonoBehaviour {
     // public GameObject wwiseAudioObject;
 
     [Header("Settings")]
+    public int songIndex = 0;
     public TextAsset jsonFile;
     // public AudioSource bgmSource;  // 暂时禁用音频播放
     public float timeScale = 2.0f;
@@ -76,7 +77,7 @@ public class SingingManager : MonoBehaviour {
         AkUnitySoundEngine.RegisterGameObj(gameObject, gameObject.name);
         
         LoadSongFolders();
-        string selected = _songList[_currentIndex].Trim(); 
+        string selected = _songList[songIndex].Trim(); 
         string jsonPath = Path.Combine("StreamingAssets/Songs", selected, "pitch_data.json.txt");
         string folderPath = Path.Combine("StreamingAssets/Songs", selected);
         // StartGame(jsonPath, folderPath);
@@ -86,7 +87,7 @@ public class SingingManager : MonoBehaviour {
     {
         isStarted = 1;
         _testTime = 0f;  // #sym:isStarted 重置計時，只從真正開始遊戲時才計算時長
-        string selected = _songList[_currentIndex].Trim(); 
+        string selected = _songList[songIndex].Trim(); 
         string jsonPath = Path.Combine("StreamingAssets/Songs", selected, "pitch_data.json.txt");
         string folderPath = Path.Combine("StreamingAssets/Songs", selected);
         StartGame(jsonPath, folderPath);
@@ -267,7 +268,7 @@ public class SingingManager : MonoBehaviour {
             float targetMidi = _data.frames[_currentIndex].m;
             float rawUserMidi = micInput != null ? micInput.GetCurrentPitchFiltered() : 0;
             float userMidi = (rawUserMidi > 0) ? (rawUserMidi * midiMultiplier) + midiOffset : 0;
-
+            EvaluateScore(targetMidi, _currentVisualMidi); 
             // if (playerIndicator != null) {
             //     if (userMidi > 0 || _hideTimer > 0) {
             //         _hideTimer = hideDelay; 
@@ -441,7 +442,7 @@ public class SingingManager : MonoBehaviour {
     {
         
         wwiseClapEvent.Post(gameObject); // 播放鼓掌音效
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(15f);
         firestoreTest.SetGameState("l1_end");
         firestoreTest.SetAllClapping();
     }

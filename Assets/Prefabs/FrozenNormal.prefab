@@ -235,6 +235,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrozenNormal
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: dd68012add6ab44589cf666cbc3a8e6f,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bf67621233eb546a5a59568932541f35, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
