@@ -80,7 +80,7 @@ public class LobbySongManagerShowcase : MonoBehaviour
     public void SetSongFolders()
     {
         songFolders.Add("davewang");
-        songFolders.Add("Frozen");
+        songFolders.Add("frozen");
         Debug.Log($"[Lobby] Song folders set: {string.Join(", ", songFolders)}");
     }
     public void SetSongNames()
@@ -204,7 +204,7 @@ public class LobbySongManagerShowcase : MonoBehaviour
                 Texture2D texture = DownloadHandlerTexture.GetContent(uwr);
                 
                 if (texture == null) {
-                    Debug.LogError("[Lobby] 雖然請求成功，但 Texture2D 物件為空 (可能是格式錯誤)");
+                    Debug.LogWarning("[Lobby] 雖然請求成功，但 Texture2D 物件為空 (可能是格式錯誤)");
                     yield break;
                 }
 
@@ -215,8 +215,8 @@ public class LobbySongManagerShowcase : MonoBehaviour
                 
                 Debug.Log($"[Lobby] 封面載入成功: {texture.width}x{texture.height}");
             } else {
-                Debug.LogError($"[Lobby] 請求失敗！錯誤訊息: {uwr.error}");
-                Debug.LogError($"[Lobby] 回應代碼: {uwr.responseCode}");
+                Debug.LogWarning($"[Lobby] 請求失敗！錯誤訊息: {uwr.error}");
+                Debug.LogWarning($"[Lobby] 回應代碼: {uwr.responseCode}");
                 if (defaultCover != null) songCover.sprite = defaultCover;
             }
         }

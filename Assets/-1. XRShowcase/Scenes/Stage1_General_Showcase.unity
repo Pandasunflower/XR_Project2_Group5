@@ -10318,7 +10318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pitchDataManager: {fileID: 551825593}
-  songFolder: StreamingAssets/Songs/Demo
+  songFolder: StreamingAssets/Songs/davewang
   jsonName: note_segments.json.txt
   audioProviderObject: {fileID: 1572424158}
   wwisePlayingID: 0
@@ -11450,6 +11450,108 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1195940952}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1404255693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404255694}
+  - component: {fileID: 1404255695}
+  m_Layer: 0
+  m_Name: SongSelector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1404255694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404255693}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 21.829657, y: -9.354102, z: -4.596489}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1692521563}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1404255695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404255693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e658337360714d246a9e9ac2ff9167f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  songs:
+  - songFolderName: davewang
+    karaokeFolder: StreamingAssets/Songs/davewang
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 5efecef2b0e9ebb4da382f856669a6b9,
+        type: 2}
+    wwiseEvent2:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b43e924fd70fc184a8bf2fb21e327b05,
+        type: 2}
+    lrcFile: {fileID: 4900000, guid: 7adb66ad7e60cb044b89723bf00c2864, type: 3}
+  - songFolderName: frozen
+    karaokeFolder: StreamingAssets/Songs/frozen
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b89ec33138a2e1e4184b6e26e2b715e1,
+        type: 2}
+    wwiseEvent2:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 115c3100e81dcdd4ca86a96108a9ed9d,
+        type: 2}
+    lrcFile: {fileID: 0}
+  - songFolderName: eatMe
+    karaokeFolder: StreamingAssets/Songs/eatMe
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 0750d5c061e9cef4bbfa85b338f8d4a9,
+        type: 2}
+    wwiseEvent2:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 4c6fb57b0652e8745a7f50e0b6897351,
+        type: 2}
+    lrcFile: {fileID: 0}
+  - songFolderName: forgetUforgetMe
+    karaokeFolder: StreamingAssets/Songs/forgetUforgetMe
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: f1da9ddcab276ca4093bc85046442f40,
+        type: 2}
+    wwiseEvent2:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 142e608d4346ccc49ae69fa1ee489e3e,
+        type: 2}
+    lrcFile: {fileID: 0}
+  singingManager: {fileID: 1692521562}
+  karaokeScrollViewer: {fileID: 1284604257}
+  playWwiseEvent: {fileID: 1572424166}
+  playWwiseEvent2: {fileID: 1572424167}
+  lyricSystem: {fileID: 890230352}
 --- !u!1 &1408083326
 GameObject:
   m_ObjectHideFlags: 0
@@ -14839,7 +14941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f84cfb749a1c841a353c506a9ec8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songIndex: 1
+  songFolderName: davewang
   jsonFile: {fileID: 11500000, guid: 3d9ba794c334bd241b842f23fae0e421, type: 3}
   timeScale: 2
   pitchScale: 0.06
@@ -14885,6 +14987,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1404255694}
   - {fileID: 1996344787}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

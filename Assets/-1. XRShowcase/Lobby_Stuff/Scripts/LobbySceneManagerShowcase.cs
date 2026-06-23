@@ -46,8 +46,11 @@ public class LobbySceneManagerShowcase : MonoBehaviour
             case 1:
                 sceneName = "frozen";
                 break;
+            case 2:
+                sceneName = "eatMe";
+                break;
             default:
-                sceneName = "";
+                sceneName = "(no name)";
                 break;
         }
         int finalSongIndex;
@@ -60,25 +63,30 @@ public class LobbySceneManagerShowcase : MonoBehaviour
         // {
         //     finalSongIndex = 2;
         // }
-        switch (sceneName)
+        switch (songIndex)
         {
-            case "davewang":
+            case 0:
                 finalSongIndex = songIndexMapping.Count > 0 ? songIndexMapping[0] : 1;
                 break;
-            case "frozen":
+            case 1:
                 finalSongIndex = songIndexMapping.Count > 1 ? songIndexMapping[1] : 2;
+                break;
+            case 2:
+                finalSongIndex = songIndexMapping.Count > 2 ? songIndexMapping[2] : 3;
+                break;
+            case 3:
+                finalSongIndex = songIndexMapping.Count > 3 ? songIndexMapping[3] : 4;
                 break;
             default:
                 finalSongIndex = -1;
                 break;
         }
 
-        if (finalSongIndex == -1)
-        {
-            Debug.Log($"[SceneManager] Invalid song index");
-            return;
-        }
-
+        // if (finalSongIndex == -1)
+        // {
+        //     Debug.Log($"[SceneManager] Invalid song index");
+        //     return;
+        // }
         firestoreTest.SetOption(finalSongIndex);
         firestoreTest.SetGameState("init");
         Debug.Log($"[SceneManager] 加載場景: {sceneName}，歌曲索引: {finalSongIndex}，選定歌曲: {songName}");
