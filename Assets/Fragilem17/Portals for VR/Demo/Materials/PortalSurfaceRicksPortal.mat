@@ -36,7 +36,7 @@ Material:
     RenderType: Transparent
   disabledShaderPasses:
   - DepthOnly
-  m_LockedProperties: 
+  m_LockedProperties: _Surface
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -139,7 +139,7 @@ Material:
     - _DstBlend: 10
     - _EnvironmentReflections: 1
     - _Factor: 1
-    - _FadeColorBlend: 0
+    - _FadeColorBlend: 1
     - _ForceEye: -1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -173,12 +173,12 @@ Material:
     - _ZWriteControl: 0
     - _refraction: 0.019093186
     m_Colors:
-    - _AlbedoSpeed: {r: 0, g: 0, b: -0.1, a: 0}
+    - _AlbedoSpeed: {r: 0, g: 0, b: -0.05, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color2: {r: 1, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FadeColor: {r: 0, g: 1, b: 0.1019609, a: 1}
+    - _FadeColor: {r: 0, g: 0, b: 0, a: 1}
     - _NormalSpeed: {r: 0, g: 0, b: -0.8, a: 0}
     - _NormalSpeed_1: {r: 0, g: 0, b: -1, a: 0}
     - _OffsetAlbedo: {r: 0, g: 0, b: 0, a: 0}
@@ -192,8 +192,8 @@ Material:
     - _Tiling_And_Offset: {r: 1, g: 1, b: 0, a: 0}
     - _Tiling_And_Offset_Normal: {r: 1, g: 1, b: 0, a: 0}
     - _Tiling_And_Offset_Transparency: {r: 1, g: 1, b: 0, a: 0}
-    - _Tint: {r: 1, g: 1, b: 1, a: 1}
-    - _TransparancySpeed: {r: 0, g: 0, b: -0.8, a: 0}
+    - _Tint: {r: 0, g: 0.51041675, b: 1, a: 1}
+    - _TransparancySpeed: {r: 0, g: 0, b: -1, a: 0}
     - _WorldDir: {r: 0, g: 0, b: 0, a: 0}
     - _WorldPos: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
