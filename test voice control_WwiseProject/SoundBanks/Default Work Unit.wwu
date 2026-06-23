@@ -32,6 +32,8 @@
 				<SoundBank Name="lobby" ID="{68E703B7-CC55-4A2E-9A62-90088709FA6F}">
 					<ObjectInclusionList>
 						<ObjectRef Name="" ID="{DAFA9F65-8708-409C-B5D2-4F17ACF1B118}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{3054BC33-3C65-4185-A537-640B69D7EABD}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{748F6D33-8459-4577-BCB0-7CBA8E441B17}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{8E3EB0E8-20D0-4C0F-A57C-99067A7B350C}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
