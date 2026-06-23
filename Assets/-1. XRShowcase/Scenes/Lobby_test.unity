@@ -2741,7 +2741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
+  outlineMode: 1
   outlineColor: {r: 0.30588236, g: 1, b: 0.9529412, a: 1}
   outlineWidth: 20
   precomputeOutline: 0
@@ -3935,6 +3935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songsFolderName: Songs
   currentSelectedIndex: 0
+  useDefaultSongs: 1
   songFolders: []
   songNames: []
   currentSongText: {fileID: 0}
@@ -3942,6 +3943,8 @@ MonoBehaviour:
   songCover: {fileID: 0}
   defaultCover: {fileID: 0}
   songList: []
+  audioSourceObject: {fileID: 0}
+  allTvAudioObjects: []
 --- !u!114 &1270190361
 MonoBehaviour:
   m_ObjectHideFlags: 0
