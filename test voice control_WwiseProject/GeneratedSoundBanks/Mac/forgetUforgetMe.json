@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1542590026",
+    "Type": "User",
+    "GUID": "{299D13F7-00EA-411F-9C3D-1FC0891B5C22}",
+    "Language": "SFX",
+    "Hash": "{C8972893-E216-ACEC-6FAD-55EFD981787A}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SongList\\forgetUforgetMe",
+    "ShortName": "forgetUforgetMe",
+    "Path": "forgetUforgetMe.bnk"
+   }
+  ],
+  "FileHash": "{7A48CCC0-3F3C-6226-CB87-2515F945ABD4}"
+ }
+}

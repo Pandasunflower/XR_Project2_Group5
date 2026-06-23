@@ -29,7 +29,7 @@
      {
       "Id": "3350003293",
       "Name": "Play_eatMe_bgm",
-      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Play_eatMe_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\eatMe\\Play_eatMe_bgm",
       "GUID": "{2BF93448-A888-460B-97FE-4969A7D6BDCC}",
       "DurationType": "OneShot",
       "DurationMin": "213.99365",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{7C0A2632-C5C0-904F-BC93-FBC66CB28874}"
+  "FileHash": "{3A15F8EC-9C2C-0940-EC8A-55F8457EF24A}"
  }
 }

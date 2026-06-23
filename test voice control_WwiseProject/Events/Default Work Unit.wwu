@@ -117,7 +117,7 @@
 								<Action Name="" ID="{DAFA9F65-8708-409C-B5D2-4F17ACF1B118}" ShortID="451087153">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="王傑-一場遊戲一場夢" ID="{B2DB6388-0E32-40A1-A93A-1345B31B6D32}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+											<ObjectRef Name="OneGameOneDream" ID="{B2DB6388-0E32-40A1-A93A-1345B31B6D32}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -128,7 +128,7 @@
 								<Action Name="" ID="{8E3EB0E8-20D0-4C0F-A57C-99067A7B350C}" ShortID="1056960493">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="for-the-first-time-in-forever-from-frozensing-along" ID="{C879FEB3-7C5A-4358-8055-CC146EE68308}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+											<ObjectRef Name="forTheFirstTimeInForever" ID="{C879FEB3-7C5A-4358-8055-CC146EE68308}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -462,7 +462,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop________" ID="{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}">
+				<Event Name="Stop_audience" ID="{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}">
 					<ChildrenList>
 						<Action Name="" ID="{DAE43A58-1428-43A6-8F90-8DA7044AAB5D}" ShortID="951329102">
 							<PropertyList>
@@ -478,28 +478,80 @@
 				</Event>
 				<Folder Name="SongList" ID="{879A0AAE-7464-4C69-9305-F388A37E8BB4}" ShortID="87715538">
 					<ChildrenList>
-						<Event Name="Play_eatMe_people" ID="{FBC2051B-6B90-4D95-94AA-211D9C377887}">
+						<Folder Name="eatMe" ID="{A0FE0C9C-3D89-4395-B7E8-47E26EB87B6F}" ShortID="384311822">
 							<ChildrenList>
-								<Action Name="" ID="{AAC6CA2F-1121-4694-82D6-496D492DB8C3}" ShortID="984192760">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="op(people)" ID="{4AC606DE-EB7F-4BEB-9529-A311A14C8C61}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Play_eatMe_people" ID="{FBC2051B-6B90-4D95-94AA-211D9C377887}">
+									<ChildrenList>
+										<Action Name="" ID="{AAC6CA2F-1121-4694-82D6-496D492DB8C3}" ShortID="984192760">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="op(people)" ID="{4AC606DE-EB7F-4BEB-9529-A311A14C8C61}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_eatMe_bgm" ID="{2BF93448-A888-460B-97FE-4969A7D6BDCC}">
+									<ChildrenList>
+										<Action Name="" ID="{CE8129FA-89E2-4383-9414-A5D8F49A65DD}" ShortID="894150938">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="1_op_(Instrumental)" ID="{9A1EC909-A754-4B1D-A588-261E6FB3C7AC}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_eatMe" ID="{42DEB3B3-2E1B-4B26-A9BF-A8430CA0C396}">
+									<ChildrenList>
+										<Action Name="" ID="{748F6D33-8459-4577-BCB0-7CBA8E441B17}" ShortID="739769354">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="eatMe" ID="{BBBCD3C2-1CDC-4325-AC3C-020E69C8B151}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="Play_eatMe_bgm" ID="{2BF93448-A888-460B-97FE-4969A7D6BDCC}">
+						</Folder>
+						<Folder Name="forgetUforgetMe" ID="{000EE0BB-2443-4EB7-8B67-64C068A3C374}" ShortID="1068204508">
 							<ChildrenList>
-								<Action Name="" ID="{CE8129FA-89E2-4383-9414-A5D8F49A65DD}" ShortID="894150938">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="1_op_(Instrumental)" ID="{9A1EC909-A754-4B1D-A588-261E6FB3C7AC}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Play_forgetUforgetMe" ID="{613833F5-77F6-4855-B7F3-7D72DFA9E9DC}">
+									<ChildrenList>
+										<Action Name="" ID="{3054BC33-3C65-4185-A537-640B69D7EABD}" ShortID="788108699">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="forgetUforgetMe" ID="{5E48BB70-A8FE-41BF-B1CD-B4E1E090372C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_forgetUforgetMe_people" ID="{EA5D5F51-26CB-4512-AAA4-5547427DD527}">
+									<ChildrenList>
+										<Action Name="" ID="{0E8AFBC5-6BA0-4E9C-8759-070A2F76448D}" ShortID="275548182">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="forgetUforgetMe_people" ID="{46E371DA-0932-4E26-B169-8284D231162E}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_forgetUforgetMe_bgm" ID="{A7843F7F-8000-444B-B14D-06D1CF81526F}">
+									<ChildrenList>
+										<Action Name="" ID="{0090D941-80C1-4DA3-9436-5952515D8A89}" ShortID="871548639">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="forgetUforgetMe_bgm" ID="{8E12AA7A-C77B-4171-A156-3B92B7045E4C}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

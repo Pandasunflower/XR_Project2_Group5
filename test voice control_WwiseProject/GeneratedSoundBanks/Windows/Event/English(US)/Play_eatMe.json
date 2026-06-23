@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2321016366",
+    "Type": "Event",
+    "GUID": "{42DEB3B3-2E1B-4B26-A9BF-A8430CA0C396}",
+    "Language": "English(US)",
+    "Hash": "{CD4432CD-51B0-4B04-D1BF-13B80903F401}",
+    "ObjectPath": "Play_eatMe",
+    "ShortName": "Play_eatMe",
+    "Path": "Event/English(US)/Play_eatMe.bnk",
+    "Media": [
+     {
+      "Id": "502385288",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "op_(byEvon).wav",
+      "Path": "Media/English(US)/502385288.wem",
+      "CachePath": "3D/{3D85397D-ACA6-1334-D3A2-A1066C44E520}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2321016366",
+      "Name": "Play_eatMe",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\eatMe\\Play_eatMe",
+      "GUID": "{42DEB3B3-2E1B-4B26-A9BF-A8430CA0C396}",
+      "DurationType": "OneShot",
+      "DurationMin": "213.99365",
+      "DurationMax": "213.99365",
+      "MediaRefs": [
+       {
+        "Id": "502385288"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0156E169-BB23-D797-7B30-7E8DC0DECE68}"
+ }
+}

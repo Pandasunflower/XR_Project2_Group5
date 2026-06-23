@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
     "Language": "English(US)",
-    "Hash": "{136631D4-2746-B9FE-AFA1-E4177FAC2C73}",
+    "Hash": "{B3D52007-6449-6B9D-B26F-CE6F3379372F}",
     "ObjectPath": "Play_davewang",
     "ShortName": "Play_davewang",
     "Path": "Event/English(US)/Play_davewang.bnk",
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{5B589996-E3DB-3E39-464B-A4DFFB85BBAC}"
+  "FileHash": "{6AC670BC-F6B4-B940-E632-E12E07B3AA5B}"
  }
 }

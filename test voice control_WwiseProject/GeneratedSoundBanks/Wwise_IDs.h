@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PLAY_CLAPPING = 2700014240U;
         static const AkUniqueID PLAY_DANCINGGIRL = 509118324U;
         static const AkUniqueID PLAY_DAVEWANG = 3205629941U;
+        static const AkUniqueID PLAY_EATME = 2321016366U;
         static const AkUniqueID PLAY_EATME_BGM = 3350003293U;
         static const AkUniqueID PLAY_EATME_PEOPLE = 4134769132U;
         static const AkUniqueID PLAY_END = 2472290785U;
@@ -27,6 +28,9 @@ namespace AK
         static const AkUniqueID PLAY_FOOLCHILD_PEOPLE = 560573542U;
         static const AkUniqueID PLAY_FOR_THE_ANNA = 2949967820U;
         static const AkUniqueID PLAY_FOR_THE_BGM = 3942408572U;
+        static const AkUniqueID PLAY_FORGETUFORGETME = 3379250955U;
+        static const AkUniqueID PLAY_FORGETUFORGETME_BGM = 302493792U;
+        static const AkUniqueID PLAY_FORGETUFORGETME_PEOPLE = 1786437427U;
         static const AkUniqueID PLAY_FROZEN = 3459025660U;
         static const AkUniqueID PLAY_GODOWNSTAGE = 2087262618U;
         static const AkUniqueID PLAY_HORN = 2956245481U;
@@ -54,7 +58,7 @@ namespace AK
         static const AkUniqueID PLAY_TIMEISUP = 3043573794U;
         static const AkUniqueID PLAY_WAITINGSCORE = 469006591U;
         static const AkUniqueID PLAY_YELL = 793661728U;
-        static const AkUniqueID STOP________ = 977393253U;
+        static const AkUniqueID STOP_AUDIENCE = 1961052290U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
@@ -71,6 +75,7 @@ namespace AK
         static const AkUniqueID EATME = 3394390039U;
         static const AkUniqueID FIRSTSTAGE = 565721261U;
         static const AkUniqueID FORDEMOBANK = 2842888517U;
+        static const AkUniqueID FORGETUFORGETME = 1542590026U;
         static const AkUniqueID LOBBY = 290285391U;
         static const AkUniqueID MAINBANK = 2880737896U;
     } // namespace BANKS

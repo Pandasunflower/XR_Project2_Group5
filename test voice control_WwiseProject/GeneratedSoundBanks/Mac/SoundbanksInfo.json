@@ -61,6 +61,43 @@
     "Path": "lobby.bnk"
    },
    {
+    "Id": "302493792",
+    "Type": "Event",
+    "GUID": "{A7843F7F-8000-444B-B14D-06D1CF81526F}",
+    "Language": "English(US)",
+    "Hash": "{EFD435AB-43C5-F908-3ABB-3D81AC0B1F81}",
+    "ObjectPath": "Play_forgetUforgetMe_bgm",
+    "ShortName": "Play_forgetUforgetMe_bgm",
+    "Path": "Event/English(US)/Play_forgetUforgetMe_bgm.bnk",
+    "Media": [
+     {
+      "Id": "1023556999",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Instrumental).wav",
+      "Path": "Media/English(US)/1023556999.wem",
+      "CachePath": "AD/{AD55F5BE-0B60-5DA4-9AC4-7F18AA2A04E5}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "302493792",
+      "Name": "Play_forgetUforgetMe_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\forgetUforgetMe\\Play_forgetUforgetMe_bgm",
+      "GUID": "{A7843F7F-8000-444B-B14D-06D1CF81526F}",
+      "DurationType": "OneShot",
+      "DurationMin": "180.20499",
+      "DurationMax": "180.20499",
+      "MediaRefs": [
+       {
+        "Id": "1023556999"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "469006591",
     "Type": "Event",
     "GUID": "{E6A32843-0796-4165-9705-E9A684A6259B}",
@@ -313,28 +350,6 @@
         "Id": "116925822"
        }
       ]
-     }
-    ]
-   },
-   {
-    "Id": "977393253",
-    "Type": "Event",
-    "GUID": "{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}",
-    "Language": "SFX",
-    "Hash": "{DED6C6DF-1273-E292-8CE8-E76BF9153C68}",
-    "ObjectPath": "Stop________",
-    "ShortName": "Stop________",
-    "Path": "Event/Stop________.bnk",
-    "Events": [
-     {
-      "Id": "977393253",
-      "Name": "Stop________",
-      "ObjectPath": "\\Events\\Default Work Unit\\Stop________",
-      "GUID": "{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
      }
     ]
    },
@@ -745,6 +760,16 @@
     ]
    },
    {
+    "Id": "1542590026",
+    "Type": "User",
+    "GUID": "{299D13F7-00EA-411F-9C3D-1FC0891B5C22}",
+    "Language": "SFX",
+    "Hash": "{C8972893-E216-ACEC-6FAD-55EFD981787A}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SongList\\forgetUforgetMe",
+    "ShortName": "forgetUforgetMe",
+    "Path": "forgetUforgetMe.bnk"
+   },
+   {
     "Id": "1643914477",
     "Type": "Event",
     "GUID": "{B67B9E84-3AB8-4D12-937C-A71869F5E043}",
@@ -782,6 +807,57 @@
     ]
    },
    {
+    "Id": "1786437427",
+    "Type": "Event",
+    "GUID": "{EA5D5F51-26CB-4512-AAA4-5547427DD527}",
+    "Language": "English(US)",
+    "Hash": "{821D57A1-9E8E-48ED-FC4F-A7AFE41423F0}",
+    "ObjectPath": "Play_forgetUforgetMe_people",
+    "ShortName": "Play_forgetUforgetMe_people",
+    "Path": "Event/English(US)/Play_forgetUforgetMe_people.bnk",
+    "Media": [
+     {
+      "Id": "842220159",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Vocals).wav",
+      "Path": "Media/English(US)/842220159.wem",
+      "CachePath": "0C/{0CF6D491-BD02-40B1-D36B-9D85505BDF60}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1786437427",
+      "Name": "Play_forgetUforgetMe_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\forgetUforgetMe\\Play_forgetUforgetMe_people",
+      "GUID": "{EA5D5F51-26CB-4512-AAA4-5547427DD527}",
+      "DurationType": "OneShot",
+      "DurationMin": "180.20499",
+      "DurationMax": "180.20499",
+      "MediaRefs": [
+       {
+        "Id": "842220159"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   },
+   {
     "Id": "1951773134",
     "Type": "Event",
     "GUID": "{E1312B0E-01A1-4C5E-812D-C62E24711553}",
@@ -815,6 +891,28 @@
         "Id": "362176217"
        }
       ]
+     }
+    ]
+   },
+   {
+    "Id": "1961052290",
+    "Type": "Event",
+    "GUID": "{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}",
+    "Language": "SFX",
+    "Hash": "{A315400D-3D04-965E-8E22-C4B636F0BBE7}",
+    "ObjectPath": "Stop_audience",
+    "ShortName": "Stop_audience",
+    "Path": "Event/Stop_audience.bnk",
+    "Events": [
+     {
+      "Id": "1961052290",
+      "Name": "Stop_audience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_audience",
+      "GUID": "{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ]
    },
@@ -885,6 +983,43 @@
       "MediaRefs": [
        {
         "Id": "391161705"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2321016366",
+    "Type": "Event",
+    "GUID": "{42DEB3B3-2E1B-4B26-A9BF-A8430CA0C396}",
+    "Language": "English(US)",
+    "Hash": "{CD4432CD-51B0-4B04-D1BF-13B80903F401}",
+    "ObjectPath": "Play_eatMe",
+    "ShortName": "Play_eatMe",
+    "Path": "Event/English(US)/Play_eatMe.bnk",
+    "Media": [
+     {
+      "Id": "502385288",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "op_(byEvon).wav",
+      "Path": "Media/English(US)/502385288.wem",
+      "CachePath": "3D/{3D85397D-ACA6-1334-D3A2-A1066C44E520}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2321016366",
+      "Name": "Play_eatMe",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\eatMe\\Play_eatMe",
+      "GUID": "{42DEB3B3-2E1B-4B26-A9BF-A8430CA0C396}",
+      "DurationType": "OneShot",
+      "DurationMin": "213.99365",
+      "DurationMax": "213.99365",
+      "MediaRefs": [
+       {
+        "Id": "502385288"
        }
       ]
      }
@@ -1309,7 +1444,7 @@
     "Type": "Event",
     "GUID": "{90352F3A-D7A6-4B5D-9F2E-D92350A91FC4}",
     "Language": "English(US)",
-    "Hash": "{136631D4-2746-B9FE-AFA1-E4177FAC2C73}",
+    "Hash": "{B3D52007-6449-6B9D-B26F-CE6F3379372F}",
     "ObjectPath": "Play_davewang",
     "ShortName": "Play_davewang",
     "Path": "Event/English(US)/Play_davewang.bnk",
@@ -1400,7 +1535,7 @@
      {
       "Id": "3350003293",
       "Name": "Play_eatMe_bgm",
-      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Play_eatMe_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\eatMe\\Play_eatMe_bgm",
       "GUID": "{2BF93448-A888-460B-97FE-4969A7D6BDCC}",
       "DurationType": "OneShot",
       "DurationMin": "213.99365",
@@ -1408,6 +1543,43 @@
       "MediaRefs": [
        {
         "Id": "807926840"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3379250955",
+    "Type": "Event",
+    "GUID": "{613833F5-77F6-4855-B7F3-7D72DFA9E9DC}",
+    "Language": "English(US)",
+    "Hash": "{187F307F-6C9D-A6DB-B38C-11208FCF80B8}",
+    "ObjectPath": "Play_forgetUforgetMe",
+    "ShortName": "Play_forgetUforgetMe",
+    "Path": "Event/English(US)/Play_forgetUforgetMe.bnk",
+    "Media": [
+     {
+      "Id": "773202057",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "forgetUforgetMe.wav",
+      "Path": "Media/English(US)/773202057.wem",
+      "CachePath": "D3/{D3CB0136-6B42-2EB3-FE6F-660D6D5F7511}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3379250955",
+      "Name": "Play_forgetUforgetMe",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\forgetUforgetMe\\Play_forgetUforgetMe",
+      "GUID": "{613833F5-77F6-4855-B7F3-7D72DFA9E9DC}",
+      "DurationType": "OneShot",
+      "DurationMin": "180.3605",
+      "DurationMax": "180.3605",
+      "MediaRefs": [
+       {
+        "Id": "773202057"
        }
       ]
      }
@@ -1465,7 +1637,7 @@
     "Type": "Event",
     "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
     "Language": "English(US)",
-    "Hash": "{1A6B9EE7-0979-FF5E-0BDE-482078D3CE98}",
+    "Hash": "{B96C2124-927E-4447-35C4-04B452933206}",
     "ObjectPath": "Play_frozen",
     "ShortName": "Play_frozen",
     "Path": "Event/English(US)/Play_frozen.bnk",
@@ -1753,7 +1925,7 @@
     "Type": "Event",
     "GUID": "{FBC2051B-6B90-4D95-94AA-211D9C377887}",
     "Language": "English(US)",
-    "Hash": "{BDEE0DF6-C4BF-06B3-4B2A-E1BF9A35196D}",
+    "Hash": "{E4261038-8F65-BC4C-9CD9-83EC8B399C6E}",
     "ObjectPath": "Play_eatMe_people",
     "ShortName": "Play_eatMe_people",
     "Path": "Event/English(US)/Play_eatMe_people.bnk",
@@ -1772,7 +1944,7 @@
      {
       "Id": "4134769132",
       "Name": "Play_eatMe_people",
-      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Play_eatMe_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\eatMe\\Play_eatMe_people",
       "GUID": "{FBC2051B-6B90-4D95-94AA-211D9C377887}",
       "DurationType": "OneShot",
       "DurationMin": "205.69478",
@@ -1783,9 +1955,23 @@
        }
       ]
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
     ]
    }
   ],
-  "FileHash": "{BE1D0CB1-C9AD-48AB-4C31-5FB0BF79C89D}"
+  "FileHash": "{72A87324-C516-6E11-7A1C-97EE32B91AEB}"
  }
 }

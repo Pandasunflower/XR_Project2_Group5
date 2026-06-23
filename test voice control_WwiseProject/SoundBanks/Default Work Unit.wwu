@@ -78,6 +78,14 @@
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
 						</SoundBank>
+						<SoundBank Name="forgetUforgetMe" ID="{299D13F7-00EA-411F-9C3D-1FC0891B5C22}">
+							<ObjectInclusionList>
+								<ObjectRef Name="" ID="{0090D941-80C1-4DA3-9436-5952515D8A89}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="" ID="{0E8AFBC5-6BA0-4E9C-8759-070A2F76448D}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

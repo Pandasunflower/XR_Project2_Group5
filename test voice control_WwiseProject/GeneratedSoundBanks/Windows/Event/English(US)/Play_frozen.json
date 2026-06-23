@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{EDC31231-87C0-4A94-B929-19FEE3102348}",
     "Language": "English(US)",
-    "Hash": "{1A6B9EE7-0979-FF5E-0BDE-482078D3CE98}",
+    "Hash": "{B96C2124-927E-4447-35C4-04B452933206}",
     "ObjectPath": "Play_frozen",
     "ShortName": "Play_frozen",
     "Path": "Event/English(US)/Play_frozen.bnk",
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{0B0A2310-30D8-3141-91BA-3391D6180832}"
+  "FileHash": "{146674A3-E9F2-C2A8-03D9-D03AED9BD608}"
  }
 }

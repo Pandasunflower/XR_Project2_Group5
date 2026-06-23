@@ -1,0 +1,62 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1786437427",
+    "Type": "Event",
+    "GUID": "{EA5D5F51-26CB-4512-AAA4-5547427DD527}",
+    "Language": "English(US)",
+    "Hash": "{821D57A1-9E8E-48ED-FC4F-A7AFE41423F0}",
+    "ObjectPath": "Play_forgetUforgetMe_people",
+    "ShortName": "Play_forgetUforgetMe_people",
+    "Path": "Event/English(US)/Play_forgetUforgetMe_people.bnk",
+    "Media": [
+     {
+      "Id": "842220159",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Vocals).wav",
+      "Path": "Media/English(US)/842220159.wem",
+      "CachePath": "0C/{0CF6D491-BD02-40B1-D36B-9D85505BDF60}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1786437427",
+      "Name": "Play_forgetUforgetMe_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\forgetUforgetMe\\Play_forgetUforgetMe_people",
+      "GUID": "{EA5D5F51-26CB-4512-AAA4-5547427DD527}",
+      "DurationType": "OneShot",
+      "DurationMin": "180.20499",
+      "DurationMax": "180.20499",
+      "MediaRefs": [
+       {
+        "Id": "842220159"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{38BE9BA3-3236-B4AD-7B19-F012AD2D1C27}"
+ }
+}
