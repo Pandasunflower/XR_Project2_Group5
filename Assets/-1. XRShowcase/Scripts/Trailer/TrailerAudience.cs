@@ -53,12 +53,12 @@ public class TrailerAudience : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) StartCoroutine(SetCrowdAnimators(0));
-        else if (Input.GetKeyDown(KeyCode.Alpha2)) StartCoroutine(SetWaveCrowdAnimators(1));
-        else if (Input.GetKeyDown(KeyCode.Alpha3)) StartCoroutine(SetCrowdAnimators(2));
-        else if (Input.GetKeyDown(KeyCode.Alpha4)) StartCoroutine(SetCrowdAnimators(3));
-        else if (Input.GetKeyDown(KeyCode.Alpha5)) GenerateCrowd();
-        else if (Input.GetKeyDown(KeyCode.Alpha6)) StartCoroutine(ShowAudienceCoroutine());
+        // if (Input.GetKeyDown(KeyCode.Alpha1)) StartCoroutine(SetCrowdAnimators(0));
+        // else if (Input.GetKeyDown(KeyCode.Alpha2)) StartCoroutine(SetWaveCrowdAnimators(1));
+        // else if (Input.GetKeyDown(KeyCode.Alpha3)) StartCoroutine(SetCrowdAnimators(2));
+        // else if (Input.GetKeyDown(KeyCode.Alpha4)) StartCoroutine(SetCrowdAnimators(3));
+        // else if (Input.GetKeyDown(KeyCode.Alpha5)) GenerateCrowd();
+        // else if (Input.GetKeyDown(KeyCode.Alpha6)) StartCoroutine(ShowAudienceCoroutine());
 
     }
 
@@ -177,7 +177,7 @@ public class TrailerAudience : MonoBehaviour
         target.localScale = end;
     }
 
-    IEnumerator SetCrowdAnimators(int index)
+    public IEnumerator SetCrowdAnimators(int index)
     {
         if (gpuiCrowdManager != null)
         {

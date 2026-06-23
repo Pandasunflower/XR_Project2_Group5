@@ -32,6 +32,7 @@ public class FirestoreTest : MonoBehaviour
     public AK.Wwise.Event wwiseEndEvent;
 
     public GameObject hostObject;
+    
 
 
     public BoxCollider endTrigger; // 階段1結束碰撞器
@@ -39,6 +40,10 @@ public class FirestoreTest : MonoBehaviour
     public GameObject signPrefab;
     public Transform wallParent;
     public int index = 0;
+
+    public TrailerAudience trailerAudience;
+
+    private string currentGameState = "";
 
     void Start()
     {
@@ -138,8 +143,14 @@ public class FirestoreTest : MonoBehaviour
         });
 
         if (state == "init") ClearPlayers();
-        // if (state == "l1_lobby") SetAllWaving();
-        if (state == "l1_end") CalculateAverageLevel1();
+        else if (state == "l1_lobby") StartCoroutine(trailerAudience.SetCrowdAnimators(1));
+        else if (state == "l1_voting")
+        {
+            StartCoroutine(trailerAudience.SetCrowdAnimators(3));
+        }
+        else if (state == "l1_end") CalculateAverageLevel1();
+
+        currentGameState = state;
     }
 
     public void SetOption(int option)
@@ -193,20 +204,29 @@ public class FirestoreTest : MonoBehaviour
         GameObject cube;
         quaternion rot = Quaternion.Euler(0, 180, 0);
         if (data["level1Character"].ToString() == "0")
-        {
+        { 
             cube = Instantiate(playerPrefabs[0], spawnPos, rot);
+            if (currentGameState == "l1_lobby")
+                cube.GetComponent<Animator>().SetBool("Waving", true);
+            
         }
         else if (data["level1Character"].ToString() == "1")
         {
             cube = Instantiate(playerPrefabs[1], spawnPos, rot);
+            if (currentGameState == "l1_lobby")
+                cube.GetComponent<Animator>().SetBool("Waving", true);
         }
         else if (data["level1Character"].ToString() == "2")
         {
             cube = Instantiate(playerPrefabs[2], spawnPos, rot);
+            if (currentGameState == "l1_lobby")
+                cube.GetComponent<Animator>().SetBool("Waving", true);
         }
         else if (data["level1Character"].ToString() == "3")
         {
             cube = Instantiate(playerPrefabs[3], spawnPos, rot);
+            if (currentGameState == "l1_lobby")
+                cube.GetComponent<Animator>().SetBool("Waving", true);
         }
         else
         {
@@ -382,7 +402,7 @@ public class FirestoreTest : MonoBehaviour
         {
             if (task.IsFaulted || task.IsCanceled)
             {
-                Debug.LogError("Failed to get players");
+                Debug.LogError(task.Exception.Flatten());
                 return;
             }
 
