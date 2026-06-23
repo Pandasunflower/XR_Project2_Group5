@@ -1,3 +1,3 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3350003293	Play_eatMe_bgm			\Default Work Unit\SongList\Play_eatMe_bgm	
+	3350003293	Play_eatMe_bgm			\Default Work Unit\SongList\eatMe\Play_eatMe_bgm	
 

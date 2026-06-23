@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{90D3EB6F-F34D-4E3E-9794-0E8141DC90A2}",
     "Language": "English(US)",
-    "Hash": "{98D6741E-3007-4F36-5AC2-AB5B5972B06D}",
+    "Hash": "{76562F37-C091-5DC2-48E4-2D6425F62AAE}",
     "ObjectPath": "Play_firework",
     "ShortName": "Play_firework",
     "Path": "Event/English(US)/Play_firework.bnk",
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{7C75CCA3-D3D9-3966-0D8D-2337D8510558}"
+  "FileHash": "{110550AD-5511-6FBD-D921-DC961C5C318D}"
  }
 }

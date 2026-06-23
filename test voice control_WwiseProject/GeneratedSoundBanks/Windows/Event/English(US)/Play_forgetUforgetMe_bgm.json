@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{A7843F7F-8000-444B-B14D-06D1CF81526F}",
     "Language": "English(US)",
-    "Hash": "{EFD435AB-43C5-F908-3ABB-3D81AC0B1F81}",
+    "Hash": "{50DD01DC-8738-6FDB-8C52-53D8F7EC46FC}",
     "ObjectPath": "Play_forgetUforgetMe_bgm",
     "ShortName": "Play_forgetUforgetMe_bgm",
     "Path": "Event/English(US)/Play_forgetUforgetMe_bgm.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{94793D53-19E4-3D2E-7644-1788A6D54DC0}"
+  "FileHash": "{75D0968B-4B63-A857-A481-29E039D3F249}"
  }
 }

@@ -18,7 +18,7 @@
     "Type": "Event",
     "GUID": "{48D4D23E-22B8-4E53-AFD3-20D06F8E7037}",
     "Language": "English(US)",
-    "Hash": "{33B1619A-9446-2CAB-D307-742BBDD7F0A7}",
+    "Hash": "{43872F91-BA72-9703-D986-0AD10EEB67D4}",
     "ObjectPath": "Play_Stage2_people",
     "ShortName": "Play_Stage2_people",
     "Path": "Event/English(US)/Play_Stage2_people.bnk",
@@ -48,6 +48,20 @@
        }
       ]
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
     ]
    },
    {
@@ -65,7 +79,7 @@
     "Type": "Event",
     "GUID": "{A7843F7F-8000-444B-B14D-06D1CF81526F}",
     "Language": "English(US)",
-    "Hash": "{EFD435AB-43C5-F908-3ABB-3D81AC0B1F81}",
+    "Hash": "{50DD01DC-8738-6FDB-8C52-53D8F7EC46FC}",
     "ObjectPath": "Play_forgetUforgetMe_bgm",
     "ShortName": "Play_forgetUforgetMe_bgm",
     "Path": "Event/English(US)/Play_forgetUforgetMe_bgm.bnk",
@@ -321,7 +335,7 @@
     "Type": "Event",
     "GUID": "{2E049C2E-D1D1-4E9B-885F-CA191388AA8A}",
     "Language": "English(US)",
-    "Hash": "{DD9B215A-12C4-07FE-4054-A3212F8DC85C}",
+    "Hash": "{ADE5C8EF-91E7-E67A-F306-E02B59B2F9D7}",
     "ObjectPath": "Play_Stage3_audience",
     "ShortName": "Play_Stage3_audience",
     "Path": "Event/English(US)/Play_Stage3_audience.bnk",
@@ -358,7 +372,7 @@
     "Type": "Event",
     "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
     "Language": "English(US)",
-    "Hash": "{DAEF2E3C-D28F-9102-A893-37B30850F050}",
+    "Hash": "{72133E04-BE62-DA15-2D2D-25B228FABD56}",
     "ObjectPath": "Play_Stage1_people",
     "ShortName": "Play_Stage1_people",
     "Path": "Event/English(US)/Play_Stage1_people.bnk",
@@ -388,6 +402,20 @@
        }
       ]
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
     ]
    },
    {
@@ -395,7 +423,7 @@
     "Type": "Event",
     "GUID": "{87464828-E14A-405B-9358-3703D5F67E4A}",
     "Language": "English(US)",
-    "Hash": "{772727FD-04C4-C2A7-F379-FD9CD4606CB0}",
+    "Hash": "{2CB21354-15FA-E4D1-2BEA-AFA6A7F4CD61}",
     "ObjectPath": "Play_Stage3_BGM",
     "ShortName": "Play_Stage3_BGM",
     "Path": "Event/English(US)/Play_Stage3_BGM.bnk",
@@ -432,7 +460,7 @@
     "Type": "Event",
     "GUID": "{0BACFEC1-DE9B-4814-90CE-7848B07BF9F9}",
     "Language": "English(US)",
-    "Hash": "{DFC7A4FA-5F91-1A18-FD29-5C930E408A46}",
+    "Hash": "{1121C4D5-C9E6-0351-54F1-125C5FBD41AC}",
     "ObjectPath": "Play_Stage3_people",
     "ShortName": "Play_Stage3_people",
     "Path": "Event/English(US)/Play_Stage3_people.bnk",
@@ -461,6 +489,20 @@
         "Id": "192242864"
        }
       ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
      }
     ]
    },
@@ -811,7 +853,7 @@
     "Type": "Event",
     "GUID": "{EA5D5F51-26CB-4512-AAA4-5547427DD527}",
     "Language": "English(US)",
-    "Hash": "{821D57A1-9E8E-48ED-FC4F-A7AFE41423F0}",
+    "Hash": "{AF1D212E-D192-5C68-65C3-4C388FF6E3DE}",
     "ObjectPath": "Play_forgetUforgetMe_people",
     "ShortName": "Play_forgetUforgetMe_people",
     "Path": "Event/English(US)/Play_forgetUforgetMe_people.bnk",
@@ -993,7 +1035,7 @@
     "Type": "Event",
     "GUID": "{42DEB3B3-2E1B-4B26-A9BF-A8430CA0C396}",
     "Language": "English(US)",
-    "Hash": "{CD4432CD-51B0-4B04-D1BF-13B80903F401}",
+    "Hash": "{FF4245D6-0F6E-904D-DC04-2EC7C3A9D2B7}",
     "ObjectPath": "Play_eatMe",
     "ShortName": "Play_eatMe",
     "Path": "Event/English(US)/Play_eatMe.bnk",
@@ -1335,7 +1377,7 @@
     "Type": "Event",
     "GUID": "{D89D5AC0-D84E-43D7-B05A-12B2EE9AFC38}",
     "Language": "English(US)",
-    "Hash": "{B6310079-000E-1DFF-4DF5-8151689EC2CB}",
+    "Hash": "{864D2CA0-886B-2937-E3D6-FEEA7E204462}",
     "ObjectPath": "Play_TimeIsUp",
     "ShortName": "Play_TimeIsUp",
     "Path": "Event/English(US)/Play_TimeIsUp.bnk",
@@ -1516,7 +1558,7 @@
     "Type": "Event",
     "GUID": "{2BF93448-A888-460B-97FE-4969A7D6BDCC}",
     "Language": "English(US)",
-    "Hash": "{F8CA4940-E10A-4D17-EC07-205E0F1AA493}",
+    "Hash": "{406F265D-76AA-0F35-F4A9-000756C5D817}",
     "ObjectPath": "Play_eatMe_bgm",
     "ShortName": "Play_eatMe_bgm",
     "Path": "Event/English(US)/Play_eatMe_bgm.bnk",
@@ -1553,7 +1595,7 @@
     "Type": "Event",
     "GUID": "{613833F5-77F6-4855-B7F3-7D72DFA9E9DC}",
     "Language": "English(US)",
-    "Hash": "{187F307F-6C9D-A6DB-B38C-11208FCF80B8}",
+    "Hash": "{1834A3C1-E3CD-5CA0-2E18-0B10BF8BA982}",
     "ObjectPath": "Play_forgetUforgetMe",
     "ShortName": "Play_forgetUforgetMe",
     "Path": "Event/English(US)/Play_forgetUforgetMe.bnk",
@@ -1600,7 +1642,7 @@
     "Type": "Event",
     "GUID": "{C71A0D9E-BFDF-4A0E-97D8-F5C1067DFF2F}",
     "Language": "English(US)",
-    "Hash": "{0FEFD9FA-BE2D-27D7-DCBC-C270CB2FE964}",
+    "Hash": "{4896B642-E4DA-0AE4-3B70-310C4525C844}",
     "ObjectPath": "Play_Stage2_BGM",
     "ShortName": "Play_Stage2_BGM",
     "Path": "Event/English(US)/Play_Stage2_BGM.bnk",
@@ -1744,7 +1786,7 @@
     "Type": "Event",
     "GUID": "{90D3EB6F-F34D-4E3E-9794-0E8141DC90A2}",
     "Language": "English(US)",
-    "Hash": "{98D6741E-3007-4F36-5AC2-AB5B5972B06D}",
+    "Hash": "{76562F37-C091-5DC2-48E4-2D6425F62AAE}",
     "ObjectPath": "Play_firework",
     "ShortName": "Play_firework",
     "Path": "Event/English(US)/Play_firework.bnk",
@@ -1816,7 +1858,7 @@
     "Type": "Event",
     "GUID": "{FC506387-0825-4066-B58C-B461093E52EF}",
     "Language": "English(US)",
-    "Hash": "{B84CE181-64E3-18F4-1075-5A8CB3A3CC6E}",
+    "Hash": "{52C2A7D4-5861-9BED-2A42-EF441EDCC2D3}",
     "ObjectPath": "Play_Stage1_BGM",
     "ShortName": "Play_Stage1_BGM",
     "Path": "Event/English(US)/Play_Stage1_BGM.bnk",
@@ -1925,7 +1967,7 @@
     "Type": "Event",
     "GUID": "{FBC2051B-6B90-4D95-94AA-211D9C377887}",
     "Language": "English(US)",
-    "Hash": "{E4261038-8F65-BC4C-9CD9-83EC8B399C6E}",
+    "Hash": "{3287F709-E08C-ABC4-76D9-9A2B1213770A}",
     "ObjectPath": "Play_eatMe_people",
     "ShortName": "Play_eatMe_people",
     "Path": "Event/English(US)/Play_eatMe_people.bnk",
@@ -1972,6 +2014,6 @@
     ]
    }
   ],
-  "FileHash": "{94D66D06-3271-A4E4-CDDE-A4A7B9D09A36}"
+  "FileHash": "{1EB95BF8-18B1-6095-E995-DCD4B92C6E03}"
  }
 }

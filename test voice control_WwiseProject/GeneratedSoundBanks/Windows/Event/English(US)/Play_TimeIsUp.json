@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D89D5AC0-D84E-43D7-B05A-12B2EE9AFC38}",
     "Language": "English(US)",
-    "Hash": "{B6310079-000E-1DFF-4DF5-8151689EC2CB}",
+    "Hash": "{864D2CA0-886B-2937-E3D6-FEEA7E204462}",
     "ObjectPath": "Play_TimeIsUp",
     "ShortName": "Play_TimeIsUp",
     "Path": "Event/English(US)/Play_TimeIsUp.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{189FA558-FF3A-6BC2-FB1C-DD2E5D44DAEE}"
+  "FileHash": "{6F1F7740-DEE0-7AD8-27DE-B8893B6E9566}"
  }
 }

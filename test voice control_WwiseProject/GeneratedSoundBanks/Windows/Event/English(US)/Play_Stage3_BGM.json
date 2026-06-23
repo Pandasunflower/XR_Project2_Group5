@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{87464828-E14A-405B-9358-3703D5F67E4A}",
     "Language": "English(US)",
-    "Hash": "{772727FD-04C4-C2A7-F379-FD9CD4606CB0}",
+    "Hash": "{2CB21354-15FA-E4D1-2BEA-AFA6A7F4CD61}",
     "ObjectPath": "Play_Stage3_BGM",
     "ShortName": "Play_Stage3_BGM",
     "Path": "Event/English(US)/Play_Stage3_BGM.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{2BAE626C-7AE8-CD84-ACFE-FFF0D8E0C22B}"
+  "FileHash": "{FA5C87DE-AEB3-1EA9-0C4C-3763F25C45C5}"
  }
 }
