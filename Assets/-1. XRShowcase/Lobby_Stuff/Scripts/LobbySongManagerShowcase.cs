@@ -30,6 +30,20 @@ public class LobbySongManagerShowcase : MonoBehaviour
     [Header("SongList")]
     public List<AK.Wwise.Event> songList;
 
+    [Header("Wwise Audio Source")]
+    [Tooltip("目前選中的 TV GameObject，由 LobbyInputHandlerShowcase 在選歌時自動設定")]
+    public GameObject audioSourceObject;
+    [Tooltip("所有 TV 的 GameObject，由 LobbyInputHandlerShowcase 在 Start 時填入，StopAll 時會逐一停止")]
+    public List<GameObject> allTvAudioObjects = new List<GameObject>();
+
+    // [Header("Preview Music Objects")]
+    // public GameObject previewMusicObject;
+
+    // private void Awake()
+    // {
+    //     allTvAudioObjects.Clear();
+    // }
+
     private void Start()
     {
         // RefreshSongList();
@@ -207,32 +221,40 @@ public class LobbySongManagerShowcase : MonoBehaviour
             }
         }
     }
-    // 🎵 新增：處理 Wwise 預覽音樂的核心邏輯
+    // 停止所有 TV 物件上的 Wwise 音效
+    private void StopAllTvAudio()
+    {
+        foreach (var tv in allTvAudioObjects)
+            if (tv != null) AkUnitySoundEngine.StopAll(tv);
+    }
+
+    // 🎵 處理 Wwise 預覽音樂的核心邏輯
     public void PlayPreviewMusic()
     {
-        // 1. 先把這個物件上「正在播放的所有音樂」暴力停掉，避免兩首歌疊在一起
-        AkUnitySoundEngine.StopAll(gameObject);
+        // 1. 停止所有 TV 上正在播放的音樂，避免疊音
+        StopAllTvAudio();
 
         if (!IsCurrentIndexValid())
         {
+            AkUnitySoundEngine.StopAll(); // 全域保險，確保完全安靜
             Debug.Log("[Lobby] currentSelectedIndex 無效，已停止所有音效，略過播放預覽音樂。");
             return;
         }
 
-        // 2. 組合你的 Wwise Event 名稱
-        // 假設你的資料夾叫 "frozen"，你的 Wwise Event 叫 "Play_frozen"
+        // 2. 組合 Wwise Event 名稱
         string folderName = songFolders[currentSelectedIndex];
-        string eventName = "Play_" + folderName; 
-
-        // 🔍 加這行在 Console 看名字對不對
+        string eventName = "Play_" + folderName;
         Debug.Log($"[Wwise Debug] 嘗試播放 Event: {eventName}");
 
-        // 3. 呼叫 Wwise 播放
-        AkUnitySoundEngine.PostEvent(eventName, gameObject);
+        // 3. 從選中的 TV 物件發出聲音（由 LobbyInputHandlerShowcase 設定 audioSourceObject）
+        GameObject source = audioSourceObject != null ? audioSourceObject : gameObject;
+        Debug.Log($"[Wwise Debug] 音源物件: {source.name} (InstanceID: {source.GetInstanceID()})");
+        AkUnitySoundEngine.PostEvent(eventName, source);
     }
 
     public void StopPreviewMusic()
     {
-        AkUnitySoundEngine.StopAll(gameObject);
+        StopAllTvAudio();
+        AkUnitySoundEngine.StopAll();
     }
 }

@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
@@ -68,12 +69,42 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
                 if (outline != null) outline.OutlineWidth = outlineWidth;
     }
 
+    private void ApplyOutlineMode()
+    {
+        foreach (var outlines in _tvOutlines)
+            foreach (var outline in outlines)
+                if (outline != null) outline.OutlineMode = Outline.Mode.OutlineVisible;
+    }
+
     void Start()
     {
+        ApplyOutlineMode();
         DisableAllTvOutlines();
+        RegisterTvAudioObjects();
 
         int startIndex = songManager != null ? songManager.currentSelectedIndex : 0;
         SetActiveTv(startIndex);
+    }
+
+    // 把所有 TV GameObject 註冊到 songManager，供 PlayPreviewMusic 的 StopAll 使用
+    private void RegisterTvAudioObjects()
+    {
+        if (songManager == null || tvsParent == null) return;
+
+        songManager.allTvAudioObjects.Clear();
+        foreach (Transform tv in tvsParent)
+        {
+            songManager.allTvAudioObjects.Add(tv.gameObject);
+            Debug.Log($"[RegisterTvAudioObjects] 已註冊: {tv.name}");
+        }
+
+        if (songManager.allTvAudioObjects.Count > 0)
+        {
+            songManager.audioSourceObject = songManager.allTvAudioObjects[0];
+            Debug.Log($"[RegisterTvAudioObjects] 預設音源設為: {songManager.audioSourceObject.name}");
+        }
+
+        Debug.Log($"[RegisterTvAudioObjects] 共註冊 {songManager.allTvAudioObjects.Count} 個 TV");
     }
 
     private void DisableAllTvOutlines()
@@ -197,6 +228,11 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
             return;
         }
 
+        // 告訴 songManager 要從哪個 TV 物件發出聲音
+        songManager.audioSourceObject = (tvsParent != null && index >= 0 && index < tvsParent.childCount)
+            ? tvsParent.GetChild(index).gameObject
+            : null;
+
         bool success;
         try
         {
@@ -214,6 +250,13 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
         {
             HandleNoMatchingSong(index);
         }
+    }
+
+    private IEnumerator StopMusicThenStartGame()
+    {
+        if (songManager != null) songManager.StopPreviewMusic();
+        yield return new WaitForSeconds(0.05f);
+        sceneManager.RequestStartGame();
     }
 
     // 此 TV 沒有對應的歌曲時的處理入口（之後可在這裡加特殊彩蛋邏輯，目前先留空）
@@ -288,8 +331,8 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
 
         if (ButtonPressed || Input.GetKeyDown(KeyCode.Return))
         {
-            sceneManager.RequestStartGame();
             _lastInputTime = Time.time;
+            StartCoroutine(StopMusicThenStartGame());
         }
 
         // if (Input.GetKeyDown(KeyCode.Space))
