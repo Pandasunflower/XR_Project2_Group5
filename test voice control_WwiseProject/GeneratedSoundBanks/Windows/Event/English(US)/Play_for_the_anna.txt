@@ -1,5 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2949967820	Play_for_the_anna			\Default Work Unit\Play_for_the_anna	
+	2949967820	Play_for_the_anna			\Default Work Unit\第一關\音樂\Play_for_the_anna	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1163235330	mic_direct			\Default Work Unit\mic_direct	

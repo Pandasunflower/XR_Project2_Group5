@@ -18,7 +18,7 @@
     "Type": "Event",
     "GUID": "{48D4D23E-22B8-4E53-AFD3-20D06F8E7037}",
     "Language": "English(US)",
-    "Hash": "{43872F91-BA72-9703-D986-0AD10EEB67D4}",
+    "Hash": "{EDF7813A-DEF0-A4BA-3D2D-ACFAF7C767EC}",
     "ObjectPath": "Play_Stage2_people",
     "ShortName": "Play_Stage2_people",
     "Path": "Event/English(US)/Play_Stage2_people.bnk",
@@ -372,7 +372,7 @@
     "Type": "Event",
     "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
     "Language": "English(US)",
-    "Hash": "{72133E04-BE62-DA15-2D2D-25B228FABD56}",
+    "Hash": "{A567A54A-8B39-DB07-C866-A04D371D08F0}",
     "ObjectPath": "Play_Stage1_people",
     "ShortName": "Play_Stage1_people",
     "Path": "Event/English(US)/Play_Stage1_people.bnk",
@@ -460,7 +460,7 @@
     "Type": "Event",
     "GUID": "{0BACFEC1-DE9B-4814-90CE-7848B07BF9F9}",
     "Language": "English(US)",
-    "Hash": "{1121C4D5-C9E6-0351-54F1-125C5FBD41AC}",
+    "Hash": "{37C609F9-E05B-B64E-E24E-7BF317D6BA2E}",
     "ObjectPath": "Play_Stage3_people",
     "ShortName": "Play_Stage3_people",
     "Path": "Event/English(US)/Play_Stage3_people.bnk",
@@ -1291,7 +1291,7 @@
     "Type": "Event",
     "GUID": "{D4F1D62B-DAC9-4787-9023-E8C9B30D847A}",
     "Language": "English(US)",
-    "Hash": "{A2ED5415-F40D-2A7E-0D24-466A6EC311D4}",
+    "Hash": "{399CC110-67AE-49F2-47B6-F8D4ADE2932C}",
     "ObjectPath": "Play_for_the_anna",
     "ShortName": "Play_for_the_anna",
     "Path": "Event/English(US)/Play_for_the_anna.bnk",
@@ -1967,7 +1967,7 @@
     "Type": "Event",
     "GUID": "{FBC2051B-6B90-4D95-94AA-211D9C377887}",
     "Language": "English(US)",
-    "Hash": "{3287F709-E08C-ABC4-76D9-9A2B1213770A}",
+    "Hash": "{C4367962-C038-4CA3-E808-42AC3B16996D}",
     "ObjectPath": "Play_eatMe_people",
     "ShortName": "Play_eatMe_people",
     "Path": "Event/English(US)/Play_eatMe_people.bnk",
@@ -2014,6 +2014,6 @@
     ]
    }
   ],
-  "FileHash": "{1EB95BF8-18B1-6095-E995-DCD4B92C6E03}"
+  "FileHash": "{B5FEFF73-5C38-01B8-BAA6-8E2B8CAFD3CB}"
  }
 }
