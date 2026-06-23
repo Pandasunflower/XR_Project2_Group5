@@ -10318,7 +10318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pitchDataManager: {fileID: 551825593}
-  songFolder: StreamingAssets/Songs/davewang
+  songFolder: StreamingAssets/Songs/Demo
   jsonName: note_segments.json.txt
   audioProviderObject: {fileID: 1572424158}
   wwisePlayingID: 0
@@ -14839,7 +14839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f84cfb749a1c841a353c506a9ec8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songIndex: 0
+  songIndex: 1
   jsonFile: {fileID: 11500000, guid: 3d9ba794c334bd241b842f23fae0e421, type: 3}
   timeScale: 2
   pitchScale: 0.06
