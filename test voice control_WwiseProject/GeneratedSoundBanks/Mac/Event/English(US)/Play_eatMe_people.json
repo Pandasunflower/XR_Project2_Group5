@@ -1,0 +1,62 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4134769132",
+    "Type": "Event",
+    "GUID": "{FBC2051B-6B90-4D95-94AA-211D9C377887}",
+    "Language": "English(US)",
+    "Hash": "{E4261038-8F65-BC4C-9CD9-83EC8B399C6E}",
+    "ObjectPath": "Play_eatMe_people",
+    "ShortName": "Play_eatMe_people",
+    "Path": "Event/English(US)/Play_eatMe_people.bnk",
+    "Media": [
+     {
+      "Id": "401522030",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "op(people).wav",
+      "Path": "Media/English(US)/401522030.wem",
+      "CachePath": "55/{55B34E07-CF84-D66D-7A7C-298640AC1F37}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4134769132",
+      "Name": "Play_eatMe_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\eatMe\\Play_eatMe_people",
+      "GUID": "{FBC2051B-6B90-4D95-94AA-211D9C377887}",
+      "DurationType": "OneShot",
+      "DurationMin": "205.69478",
+      "DurationMax": "205.69478",
+      "MediaRefs": [
+       {
+        "Id": "401522030"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{ADB792BD-EEC4-D354-7109-59A975FF47B0}"
+ }
+}

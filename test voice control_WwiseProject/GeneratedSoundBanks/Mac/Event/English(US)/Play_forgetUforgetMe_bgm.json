@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "302493792",
+    "Type": "Event",
+    "GUID": "{A7843F7F-8000-444B-B14D-06D1CF81526F}",
+    "Language": "English(US)",
+    "Hash": "{EFD435AB-43C5-F908-3ABB-3D81AC0B1F81}",
+    "ObjectPath": "Play_forgetUforgetMe_bgm",
+    "ShortName": "Play_forgetUforgetMe_bgm",
+    "Path": "Event/English(US)/Play_forgetUforgetMe_bgm.bnk",
+    "Media": [
+     {
+      "Id": "1023556999",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_王傑 Dave Wang - 忘了你忘了我 Forget About You _ Forget About Me (官方完整版MV) (128)_(Instrumental).wav",
+      "Path": "Media/English(US)/1023556999.wem",
+      "CachePath": "AD/{AD55F5BE-0B60-5DA4-9AC4-7F18AA2A04E5}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "302493792",
+      "Name": "Play_forgetUforgetMe_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\forgetUforgetMe\\Play_forgetUforgetMe_bgm",
+      "GUID": "{A7843F7F-8000-444B-B14D-06D1CF81526F}",
+      "DurationType": "OneShot",
+      "DurationMin": "180.20499",
+      "DurationMax": "180.20499",
+      "MediaRefs": [
+       {
+        "Id": "1023556999"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A0402D6C-B9F2-5640-2F80-9BC865516D84}"
+ }
+}

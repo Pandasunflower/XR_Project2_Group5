@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1961052290	Stop_audience			\Default Work Unit\Stop_audience	
+

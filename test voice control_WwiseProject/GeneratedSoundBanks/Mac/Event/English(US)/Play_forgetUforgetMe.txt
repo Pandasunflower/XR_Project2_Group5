@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3379250955	Play_forgetUforgetMe			\Default Work Unit\SongList\forgetUforgetMe\Play_forgetUforgetMe	
+

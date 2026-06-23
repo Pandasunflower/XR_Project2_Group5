@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	3205629941	Play_davewang			\Default Work Unit\第一關\Play_davewang	
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	888866671	王傑-一場遊戲一場夢	.cache\DB\{DBA5D2EA-AD1E-2703-18B5-F78406C63AA4}.wem	888866671.wem	\Containers\Default Work Unit\lobby\王傑-一場遊戲一場夢	
+	888866671	OneGameOneDream	.cache\DB\{DBA5D2EA-AD1E-2703-18B5-F78406C63AA4}.wem	888866671.wem	\Containers\Default Work Unit\lobby\OneGameOneDream	
 
