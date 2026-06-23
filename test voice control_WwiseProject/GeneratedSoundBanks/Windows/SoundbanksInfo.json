@@ -317,11 +317,33 @@
     ]
    },
    {
+    "Id": "977393253",
+    "Type": "Event",
+    "GUID": "{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}",
+    "Language": "SFX",
+    "Hash": "{DED6C6DF-1273-E292-8CE8-E76BF9153C68}",
+    "ObjectPath": "Stop________",
+    "ShortName": "Stop________",
+    "Path": "Event/Stop________.bnk",
+    "Events": [
+     {
+      "Id": "977393253",
+      "Name": "Stop________",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop________",
+      "GUID": "{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
     "Id": "1128932765",
     "Type": "Event",
     "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
     "Language": "English(US)",
-    "Hash": "{05B032B7-7596-8F7D-556F-E44EB77CEF2F}",
+    "Hash": "{DAEF2E3C-D28F-9102-A893-37B30850F050}",
     "ObjectPath": "Play_Stage1_people",
     "ShortName": "Play_Stage1_people",
     "Path": "Event/English(US)/Play_Stage1_people.bnk",
@@ -333,7 +355,7 @@
       "Location": "Loose",
       "ShortName": "stage1_people.wav",
       "Path": "Media/English(US)/764896096.wem",
-      "CachePath": "0B/{0B6399E2-E527-353F-C9AF-769572EF4047}.wem"
+      "CachePath": "1B/{1B58655A-7FB4-A4F4-39E6-9E0EE33E398A}.wem"
      }
     ],
     "Events": [
@@ -343,8 +365,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage1_people",
       "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
       "DurationType": "OneShot",
-      "DurationMin": "121.041",
-      "DurationMax": "121.041",
+      "DurationMin": "120.97343",
+      "DurationMax": "120.97343",
       "MediaRefs": [
        {
         "Id": "764896096"
@@ -1575,7 +1597,7 @@
     "Type": "Event",
     "GUID": "{FC506387-0825-4066-B58C-B461093E52EF}",
     "Language": "English(US)",
-    "Hash": "{71C54C54-086C-D836-C453-A19B24A4AD79}",
+    "Hash": "{B84CE181-64E3-18F4-1075-5A8CB3A3CC6E}",
     "ObjectPath": "Play_Stage1_BGM",
     "ShortName": "Play_Stage1_BGM",
     "Path": "Event/English(US)/Play_Stage1_BGM.bnk",
@@ -1587,7 +1609,7 @@
       "Location": "Loose",
       "ShortName": "stage1_bgm.wav",
       "Path": "Media/English(US)/819567358.wem",
-      "CachePath": "AD/{ADDD13DD-2A51-41CB-9AFB-E455D4B45F55}.wem"
+      "CachePath": "6E/{6EF8314E-7C0C-5A18-7B3C-9CB2DB27A4EC}.wem"
      }
     ],
     "Events": [
@@ -1680,6 +1702,6 @@
     ]
    }
   ],
-  "FileHash": "{1F12F178-78AC-ECF0-A3EF-3562B50CDAFD}"
+  "FileHash": "{33E7F36E-0AA1-DA30-9EC5-50BC99934056}"
  }
 }

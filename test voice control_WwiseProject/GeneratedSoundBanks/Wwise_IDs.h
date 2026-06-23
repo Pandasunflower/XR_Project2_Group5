@@ -52,6 +52,7 @@ namespace AK
         static const AkUniqueID PLAY_TIMEISUP = 3043573794U;
         static const AkUniqueID PLAY_WAITINGSCORE = 469006591U;
         static const AkUniqueID PLAY_YELL = 793661728U;
+        static const AkUniqueID STOP________ = 977393253U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

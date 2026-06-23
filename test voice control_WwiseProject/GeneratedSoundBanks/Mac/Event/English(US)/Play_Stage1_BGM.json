@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{FC506387-0825-4066-B58C-B461093E52EF}",
     "Language": "English(US)",
-    "Hash": "{71C54C54-086C-D836-C453-A19B24A4AD79}",
+    "Hash": "{B84CE181-64E3-18F4-1075-5A8CB3A3CC6E}",
     "ObjectPath": "Play_Stage1_BGM",
     "ShortName": "Play_Stage1_BGM",
     "Path": "Event/English(US)/Play_Stage1_BGM.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "stage1_bgm.wav",
       "Path": "Media/English(US)/819567358.wem",
-      "CachePath": "AD/{ADDD13DD-2A51-41CB-9AFB-E455D4B45F55}.wem"
+      "CachePath": "6E/{6EF8314E-7C0C-5A18-7B3C-9CB2DB27A4EC}.wem"
      }
     ],
     "Events": [
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{6C8D4EFF-EFA8-4419-5480-DCCCC76E9679}"
+  "FileHash": "{C9ED67FD-6D66-8160-38D3-3051A8B07EFD}"
  }
 }

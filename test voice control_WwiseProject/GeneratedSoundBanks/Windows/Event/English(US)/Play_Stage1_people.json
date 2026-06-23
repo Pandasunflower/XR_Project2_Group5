@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
     "Language": "English(US)",
-    "Hash": "{05B032B7-7596-8F7D-556F-E44EB77CEF2F}",
+    "Hash": "{DAEF2E3C-D28F-9102-A893-37B30850F050}",
     "ObjectPath": "Play_Stage1_people",
     "ShortName": "Play_Stage1_people",
     "Path": "Event/English(US)/Play_Stage1_people.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "stage1_people.wav",
       "Path": "Media/English(US)/764896096.wem",
-      "CachePath": "0B/{0B6399E2-E527-353F-C9AF-769572EF4047}.wem"
+      "CachePath": "1B/{1B58655A-7FB4-A4F4-39E6-9E0EE33E398A}.wem"
      }
     ],
     "Events": [
@@ -32,8 +32,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Play_Stage1_people",
       "GUID": "{5F3469A5-E09E-4CD3-AD57-3C5A57350FDE}",
       "DurationType": "OneShot",
-      "DurationMin": "121.041",
-      "DurationMax": "121.041",
+      "DurationMin": "120.97343",
+      "DurationMax": "120.97343",
       "MediaRefs": [
        {
         "Id": "764896096"
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{0598CE94-23AC-73EE-095A-DB12892EDF21}"
+  "FileHash": "{356594C5-35CF-F8E3-A119-B3EAC305AE13}"
  }
 }

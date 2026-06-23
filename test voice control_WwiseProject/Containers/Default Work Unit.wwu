@@ -1517,7 +1517,7 @@
 								<ActiveSource Name="時間快到囉" ID="{D24C4B46-92DF-4AB9-9227-316FC9D8A607}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="stage1_bgm" ID="{86DF934D-9167-4FC0-BB31-295662B59BDB}" ShortID="794393439">
+						<Sound Name="stage1_bgm" ID="{8311B020-B011-41FE-AD22-9A300A1AB140}" ShortID="378604226">
 							<PropertyList>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
 							</PropertyList>
@@ -1530,7 +1530,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="stage1_bgm" ID="{D0C66B28-2D81-4279-99F1-0FC6E3C481F0}">
+								<AudioFileSource Name="stage1_bgm" ID="{EBCFCE05-899A-47E5-87E2-0BB4CE85607D}">
 									<Language>English(US)</Language>
 									<AudioFile>stage1_bgm.wav</AudioFile>
 									<MediaIDList>
@@ -1539,10 +1539,10 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="stage1_bgm" ID="{D0C66B28-2D81-4279-99F1-0FC6E3C481F0}" Platform="Linked"/>
+								<ActiveSource Name="stage1_bgm" ID="{EBCFCE05-899A-47E5-87E2-0BB4CE85607D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="stage1_people" ID="{DFEADB62-31CB-4CE3-A326-E3B8C8A5EB6A}" ShortID="825391914">
+						<Sound Name="stage1_people" ID="{6F80B807-CB62-4346-AC1A-486E9B1FC1D4}" ShortID="427530541">
 							<PropertyList>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
 							</PropertyList>
@@ -1555,7 +1555,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="stage1_people" ID="{F4A531DA-C46F-4296-9729-28D0986F8EDE}">
+								<AudioFileSource Name="stage1_people" ID="{14CE7182-C97C-4B73-B18D-A9A6E8434BA5}">
 									<Language>English(US)</Language>
 									<AudioFile>stage1_people.wav</AudioFile>
 									<MediaIDList>
@@ -1564,7 +1564,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="stage1_people" ID="{F4A531DA-C46F-4296-9729-28D0986F8EDE}" Platform="Linked"/>
+								<ActiveSource Name="stage1_people" ID="{14CE7182-C97C-4B73-B18D-A9A6E8434BA5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
