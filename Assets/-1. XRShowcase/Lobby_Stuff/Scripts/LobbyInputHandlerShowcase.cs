@@ -10,6 +10,7 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
     [Header("Core References")]
     public LobbySongManagerShowcase songManager;
     public LobbySceneManagerShowcase sceneManager;
+    public PostProcessEffectController postProcessEffectController;
 
     [Header("Input Settings")]
     public float inputCooldown = 0.2f;
@@ -173,7 +174,7 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
         vp.frame = 0;
     }
 
-    private void ToggleCurrentTvOutline()
+    public void ToggleCurrentTvOutline()
     {
         if (_currentTvIndex < 0 || _currentTvIndex >= _tvOutlines.Count) return;
 
@@ -254,6 +255,8 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
 
     private IEnumerator StopMusicThenStartGame()
     {
+        ToggleCurrentTvOutline();
+        postProcessEffectController.PlayEffect();
         if (songManager != null) songManager.StopPreviewMusic();
         yield return new WaitForSeconds(0.05f);
         sceneManager.RequestStartGame();
@@ -340,8 +343,8 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
         //     ToggleCurrentTvOutline();
         // }
 
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch))
-            TrySelectSongByRaycast(OVRInput.Controller.LTouch);
+        // if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch))
+        //     TrySelectSongByRaycast(OVRInput.Controller.LTouch);
 
         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
             TrySelectSongByRaycast(OVRInput.Controller.RTouch);

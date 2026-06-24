@@ -197,29 +197,29 @@ public class LobbySongManagerShowcase : MonoBehaviour
         if (!uri.Contains("://")) uri = "file://" + uri;
         Debug.Log($"[Lobby] Loading cover from: {uri}");
 
-        using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture(uri)) {
-            yield return uwr.SendWebRequest();
+        // using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture(uri)) {
+        //     yield return uwr.SendWebRequest();
 
-            if (uwr.result == UnityWebRequest.Result.Success) {
-                Texture2D texture = DownloadHandlerTexture.GetContent(uwr);
+        //     if (uwr.result == UnityWebRequest.Result.Success) {
+        //         Texture2D texture = DownloadHandlerTexture.GetContent(uwr);
                 
-                if (texture == null) {
-                    Debug.LogWarning("[Lobby] 雖然請求成功，但 Texture2D 物件為空 (可能是格式錯誤)");
-                    yield break;
-                }
+        //         if (texture == null) {
+        //             Debug.LogWarning("[Lobby] 雖然請求成功，但 Texture2D 物件為空 (可能是格式錯誤)");
+        //             yield break;
+        //         }
 
-                texture.filterMode = FilterMode.Point; // 保持點陣感
+        //         texture.filterMode = FilterMode.Point; // 保持點陣感
                 
-                Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-                if (newSprite != null) songCover.sprite = newSprite;
+        //         Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+        //         if (newSprite != null) songCover.sprite = newSprite;
                 
-                Debug.Log($"[Lobby] 封面載入成功: {texture.width}x{texture.height}");
-            } else {
-                Debug.LogWarning($"[Lobby] 請求失敗！錯誤訊息: {uwr.error}");
-                Debug.LogWarning($"[Lobby] 回應代碼: {uwr.responseCode}");
-                if (defaultCover != null) songCover.sprite = defaultCover;
-            }
-        }
+        //         Debug.Log($"[Lobby] 封面載入成功: {texture.width}x{texture.height}");
+        //     } else {
+        //         Debug.LogWarning($"[Lobby] 請求失敗！錯誤訊息: {uwr.error}");
+        //         Debug.LogWarning($"[Lobby] 回應代碼: {uwr.responseCode}");
+        //         if (defaultCover != null) songCover.sprite = defaultCover;
+        //     }
+        // }
     }
     // 停止所有 TV 物件上的 Wwise 音效
     private void StopAllTvAudio()
