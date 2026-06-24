@@ -449,6 +449,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_audience" ID="{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}">
+							<ChildrenList>
+								<Action Name="" ID="{DAE43A58-1428-43A6-8F90-8DA7044AAB5D}" ShortID="951329102">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="三天三夜 觀眾" ID="{5BB88A57-C9AA-48A0-B2C5-5AB7804D16C9}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_TimeIsUp" ID="{D89D5AC0-D84E-43D7-B05A-12B2EE9AFC38}">
@@ -457,20 +471,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="時間快到囉" ID="{1A200A07-5E1F-4A49-8173-C047FA0CF680}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_audience" ID="{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}">
-					<ChildrenList>
-						<Action Name="" ID="{DAE43A58-1428-43A6-8F90-8DA7044AAB5D}" ShortID="951329102">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="三天三夜 觀眾" ID="{5BB88A57-C9AA-48A0-B2C5-5AB7804D16C9}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -619,6 +619,43 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="ILikeU_people" ID="{BB7661FE-EA9E-4CE1-82AF-472EA900760F}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Silent" ID="{B4AA172B-4161-476A-999A-334331AE9B0E}" ShortID="208816281">
+							<ChildrenList>
+								<Event Name="Play_Silent_bgm" ID="{49DD4D9C-BEA3-46D7-BA21-000FCE09AC58}">
+									<ChildrenList>
+										<Action Name="" ID="{F5461CEB-B670-4908-A9A7-1D27403E5CC7}" ShortID="722757707">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Silent_bgm" ID="{32EBDEED-523D-498E-9717-FD76E81872EC}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Silent_people" ID="{046C1EF9-F8DF-435F-8EEB-B84D05FD2B45}">
+									<ChildrenList>
+										<Action Name="" ID="{363439B8-987D-4A77-B947-29B3225B67EE}" ShortID="123681582">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Silent_people" ID="{CA9415C6-E48B-47B4-9DFB-E447F5E10F65}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Silent" ID="{B0C99251-7674-46B1-A2DC-105E30A12D5A}">
+									<ChildrenList>
+										<Action Name="" ID="{1C6B846C-36F1-4C6A-AB30-1553CFF80B91}" ShortID="922373419">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Silent" ID="{F056AA86-C718-4565-9D66-3A4D50182F32}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

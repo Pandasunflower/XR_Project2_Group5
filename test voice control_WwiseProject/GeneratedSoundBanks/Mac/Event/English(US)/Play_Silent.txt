@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4209596861	Play_Silent			\Default Work Unit\SongList\Silent\Play_Silent	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	268440148	Silent	.cache\4D\{4DDC6B9A-2D11-7FD6-190E-C4C19DC73E51}.wem	268440148.wem	\Containers\Default Work Unit\songList\Silent\Silent	
+

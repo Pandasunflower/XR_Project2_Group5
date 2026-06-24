@@ -3279,6 +3279,98 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Silent" ID="{61394E3A-6EC1-4339-9981-5D7EC1912EE9}" ShortID="352112115">
+							<ChildrenList>
+								<Sound Name="Silent_bgm" ID="{32EBDEED-523D-498E-9717-FD76E81872EC}" ShortID="429302599">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1_silent_(Instrumental)" ID="{F88F82C0-5426-4BD8-9C5D-F8D516D3540E}">
+											<Language>English(US)</Language>
+											<AudioFile>1_silent_(Instrumental).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="434165930"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="1_silent_(Instrumental)" ID="{F88F82C0-5426-4BD8-9C5D-F8D516D3540E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silent_people" ID="{CA9415C6-E48B-47B4-9DFB-E447F5E10F65}" ShortID="770656305">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="stage1" ID="{90FE9495-11ED-40C5-9A86-581F6B5EC299}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1_silent_(Vocals)" ID="{3F1E414B-233B-4B41-8A4C-9CFB8B25879F}">
+											<Language>English(US)</Language>
+											<AudioFile>1_silent_(Vocals).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="783660752"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="1_silent_(Vocals)" ID="{3F1E414B-233B-4B41-8A4C-9CFB8B25879F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silent" ID="{F056AA86-C718-4565-9D66-3A4D50182F32}" ShortID="650200807">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="silent" ID="{C0AA3BE5-CD48-4723-97CE-11A4D33C3E99}">
+											<Language>English(US)</Language>
+											<AudioFile>silent.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="268440148"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="silent" ID="{C0AA3BE5-CD48-4723-97CE-11A4D33C3E99}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -47,6 +47,9 @@ namespace AK
         static const AkUniqueID PLAY_ONEGAMEONEDREAM_PEOPLE = 806402365U;
         static const AkUniqueID PLAY_ONPHONE = 4122281311U;
         static const AkUniqueID PLAY_SHOOT = 2641650631U;
+        static const AkUniqueID PLAY_SILENT = 4209596861U;
+        static const AkUniqueID PLAY_SILENT_BGM = 3791770966U;
+        static const AkUniqueID PLAY_SILENT_PEOPLE = 3014677865U;
         static const AkUniqueID PLAY_SPOTLIGHT = 1951773134U;
         static const AkUniqueID PLAY_STAGE1_BGM = 4043888610U;
         static const AkUniqueID PLAY_STAGE1_PEOPLE = 1128932765U;
@@ -85,6 +88,7 @@ namespace AK
         static const AkUniqueID ILIKEU = 55075196U;
         static const AkUniqueID LOBBY = 290285391U;
         static const AkUniqueID MAINBANK = 2880737896U;
+        static const AkUniqueID SILENT = 3160623154U;
         static const AkUniqueID WEIWEIMONMON = 773964775U;
     } // namespace BANKS
 

@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3014677865",
+    "Type": "Event",
+    "GUID": "{046C1EF9-F8DF-435F-8EEB-B84D05FD2B45}",
+    "Language": "English(US)",
+    "Hash": "{1D2F5930-54BD-985F-DB10-5FF1F502BDFE}",
+    "ObjectPath": "Play_Silent_people",
+    "ShortName": "Play_Silent_people",
+    "Path": "Event/English(US)/Play_Silent_people.bnk",
+    "Media": [
+     {
+      "Id": "783660752",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_silent_(Vocals).wav",
+      "Path": "Media/English(US)/783660752.wem",
+      "CachePath": "15/{150C1624-7912-E0AB-A07E-228A92BB8BB1}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3014677865",
+      "Name": "Play_Silent_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Silent\\Play_Silent_people",
+      "GUID": "{046C1EF9-F8DF-435F-8EEB-B84D05FD2B45}",
+      "DurationType": "OneShot",
+      "DurationMin": "331.08176",
+      "DurationMax": "331.08176",
+      "MediaRefs": [
+       {
+        "Id": "783660752"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{81B71BA2-FC30-CA74-BA83-29BBD10C0F29}"
+ }
+}
