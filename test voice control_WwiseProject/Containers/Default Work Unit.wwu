@@ -3090,7 +3090,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4B92ADF-B9C0-4D7E-A166-44EA2A3D5AE1}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="stage1" ID="{90FE9495-11ED-40C5-9A86-581F6B5EC299}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7EA29160-9309-44CA-B420-7EF0203D6423}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
