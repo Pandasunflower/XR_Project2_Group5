@@ -4315,6 +4315,7 @@ GameObject:
   - component: {fileID: 1270190367}
   - component: {fileID: 1270190366}
   - component: {fileID: 1270190365}
+  - component: {fileID: 1270190369}
   m_Layer: 0
   m_Name: Lobby_Controller
   m_TagString: Untagged
@@ -4400,6 +4401,7 @@ MonoBehaviour:
   - forgetUforgetMe
   - ILikeU
   - weiweimonmon
+  - Silence
   songNames:
   - "\u4E00\u5834\u904A\u6232\u4E00\u5834\u5922"
   - For the First Time in Forever
@@ -4407,6 +4409,7 @@ MonoBehaviour:
   - "\u5FD8\u4E86\u4F60\u5FD8\u4E86\u6211"
   - "\u6211\u559C\u6B61\u4F60"
   - "\u8473\u8473\u5922\u5922"
+  - "\u5B89\u975C"
   currentSongText: {fileID: 0}
   songIndexText: {fileID: 0}
   songCover: {fileID: 0}
@@ -4635,6 +4638,36 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: be87caf4d2b731f48a10176fd5729856,
+      type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1270190369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270190354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efa7207e4f3f214c97d6dcd93c999d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 13bc17dd0a11ff14dbcd5dd4d2cee6e3,
       type: 2}
   useCallbacks: 0
   stopSoundOnDestroy: 1
