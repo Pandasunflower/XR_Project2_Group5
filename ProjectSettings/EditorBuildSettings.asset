@@ -21,14 +21,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage2 2onemore!!!.unity
     guid: feaccb1047545431bbdbd2f741f4a3a7
   - enabled: 1
-    path: Assets/Scenes/Stage3.unity
-    guid: f0a3615d6231c9e458d2a5ce3264e24f
+    path: Assets/-1. XRShowcase/Scenes/Stage3_test.unity
+    guid: 37d5f5bc14434234395143df5a8b46fb
+  - enabled: 1
+    path: Assets/-1. XRShowcase/Scenes/Stage1_General_Showcase.unity
+    guid: 5982c466964b4ee439e32dde611e2c63
   - enabled: 0
     path: Assets/Scenes/Stage1_DaveWang.unity
     guid: 0fe54bd97f3eb264b8b42b04824fda3a
   - enabled: 1
-    path: Assets/-1. XRShowcase/Scenes/Stage1_General_Showcase.unity
-    guid: 5982c466964b4ee439e32dde611e2c63
+    path: Assets/Scenes/Stage3.unity
+    guid: f0a3615d6231c9e458d2a5ce3264e24f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d15e8ff1b04d9584e81139aeb0c5aba3,
       type: 2}
