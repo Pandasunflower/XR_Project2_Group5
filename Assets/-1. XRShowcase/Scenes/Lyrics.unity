@@ -436,7 +436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &972461227
 RectTransform:
   m_ObjectHideFlags: 0
@@ -453,7 +453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 448}
+  m_AnchoredPosition: {x: 0, y: 496}
   m_SizeDelta: {x: 1400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972461228
@@ -504,8 +504,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -585,10 +585,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb131563a22afb409818a2d5ebc42f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songName: eatMe
-  songEventName: Play_eatMe
+  songName: DumbKid
+  songEventName: Play_Stage2_people
   debugUI: {fileID: 972461228}
-  lyricsFile: {fileID: 4900000, guid: 8c5133a71e0547540ac8dee6a4980bb4, type: 3}
+  lyricsFile: {fileID: 4900000, guid: 8a120872e7c3afe45a86a91d0474b645, type: 3}
 --- !u!4 &1254224833
 Transform:
   m_ObjectHideFlags: 0
@@ -624,7 +624,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f9919acf2aaac094a9279edfd195d2df,
+    WwiseObjectReference: {fileID: 11400000, guid: 7394aeb7472782c4dad90dd710c9d5fd,
       type: 2}
   useCallbacks: 0
   stopSoundOnDestroy: 1
@@ -760,7 +760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1559367066
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1132,7 +1132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2145732860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   songEventName: Play_eatMe
-  lrcFile: {fileID: 4900000, guid: de298592d483e834ebdbbbe8fec989c4, type: 3}
+  lrcFile: {fileID: 4900000, guid: ecfeb43c0697b5446849f58482ccd170, type: 3}
   lyricUI: {fileID: 1559367067}
   lyricUI2: {fileID: 0}
 --- !u!4 &2145732861
