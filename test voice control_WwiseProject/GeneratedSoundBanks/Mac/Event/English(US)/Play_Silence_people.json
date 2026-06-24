@@ -1,19 +1,19 @@
 {
  "SoundBanksInfo": {
-  "Platform": "Windows",
-  "BasePlatform": "Windows",
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
   "SchemaVersion": "16",
   "SoundBankVersion": "172",
   "SoundBanks": [
    {
-    "Id": "3014677865",
+    "Id": "3172830947",
     "Type": "Event",
     "GUID": "{046C1EF9-F8DF-435F-8EEB-B84D05FD2B45}",
     "Language": "English(US)",
-    "Hash": "{1D2F5930-54BD-985F-DB10-5FF1F502BDFE}",
-    "ObjectPath": "Play_Silent_people",
-    "ShortName": "Play_Silent_people",
-    "Path": "Event/English(US)/Play_Silent_people.bnk",
+    "Hash": "{0E6897A5-54D1-9A02-6ACB-A70A82363176}",
+    "ObjectPath": "Play_Silence_people",
+    "ShortName": "Play_Silence_people",
+    "Path": "Event/English(US)/Play_Silence_people.bnk",
     "Media": [
      {
       "Id": "783660752",
@@ -27,9 +27,9 @@
     ],
     "Events": [
      {
-      "Id": "3014677865",
-      "Name": "Play_Silent_people",
-      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Silent\\Play_Silent_people",
+      "Id": "3172830947",
+      "Name": "Play_Silence_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Silent\\Play_Silence_people",
       "GUID": "{046C1EF9-F8DF-435F-8EEB-B84D05FD2B45}",
       "DurationType": "OneShot",
       "DurationMin": "331.08176",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{3739C1A4-9C62-6817-C389-C65440C15977}"
+  "FileHash": "{EBA7DB7A-7112-9D7D-44C7-A5BA51DA881B}"
  }
 }
