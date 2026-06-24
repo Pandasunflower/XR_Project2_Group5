@@ -11533,7 +11533,7 @@ MonoBehaviour:
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 11400000, guid: 4c6fb57b0652e8745a7f50e0b6897351,
         type: 2}
-    lrcFile: {fileID: 0}
+    lrcFile: {fileID: 4900000, guid: de298592d483e834ebdbbbe8fec989c4, type: 3}
   - songFolderName: forgetUforgetMe
     karaokeFolder: StreamingAssets/Songs/forgetUforgetMe
     wwiseEvent:
@@ -11546,7 +11546,33 @@ MonoBehaviour:
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 11400000, guid: 142e608d4346ccc49ae69fa1ee489e3e,
         type: 2}
-    lrcFile: {fileID: 0}
+    lrcFile: {fileID: 4900000, guid: eb4eaa4e22e5d78499a1768ed4818bbe, type: 3}
+  - songFolderName: ImIntoU
+    karaokeFolder: StreamingAssets/Songs/ImIntoU
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 34f0b2fa02461344b9515022a0e3a116,
+        type: 2}
+    wwiseEvent2:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 72e44c95b2b36114c8586eb3e8e12835,
+        type: 2}
+    lrcFile: {fileID: 4900000, guid: ecfeb43c0697b5446849f58482ccd170, type: 3}
+  - songFolderName: WeiMon
+    karaokeFolder: StreamingAssets/Songs/WeiMon
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 94c77dd499d698e4ea9187dcf92f1bce,
+        type: 2}
+    wwiseEvent2:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: a028f7952a46ffb49a22b2f874595f44,
+        type: 2}
+    lrcFile: {fileID: 4900000, guid: 3c7073185059d9145b789ac739692313, type: 3}
   singingManager: {fileID: 1692521562}
   karaokeScrollViewer: {fileID: 1284604257}
   playWwiseEvent: {fileID: 1572424166}
