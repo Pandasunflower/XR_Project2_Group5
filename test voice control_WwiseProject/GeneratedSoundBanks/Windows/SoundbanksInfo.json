@@ -2045,7 +2045,7 @@
     "Type": "Event",
     "GUID": "{5375CB83-9321-46B1-9A15-F4785BFE7DCA}",
     "Language": "English(US)",
-    "Hash": "{7073457C-C6C1-0C4C-FDB5-4EA8839BD0F1}",
+    "Hash": "{EA1B9AEE-BA6D-6954-64E5-EFBB347A63EA}",
     "ObjectPath": "Play_ILikeU_people",
     "ShortName": "Play_ILikeU_people",
     "Path": "Event/English(US)/Play_ILikeU_people.bnk",
@@ -2433,6 +2433,6 @@
     ]
    }
   ],
-  "FileHash": "{C5FDD2A7-792D-6739-2059-A6431CC01B76}"
+  "FileHash": "{FD18BFDA-2291-83BF-D136-6A3F306CD512}"
  }
 }
