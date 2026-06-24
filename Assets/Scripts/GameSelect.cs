@@ -2,5 +2,5 @@ using UnityEngine;
 
 public static class GameConfig
 {
-    public static int SelectedGame = 0;
+    public static int SelectedGame = 1;
 }

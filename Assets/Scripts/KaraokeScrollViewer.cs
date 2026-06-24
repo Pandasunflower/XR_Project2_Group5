@@ -25,15 +25,23 @@ public class KaraokeScrollViewer : MonoBehaviour
 
     [Header("視覺映射參數")]
     public GameObject notePrefab;
-    public float timeToXScale = 10f;  
-    public float midiToYScale = 1.0f; 
-    public float midiYOffset = 60f;
+    public float timeToXScale = 10f;
     public float midiXOffset = 1.92f;
     [Space(10)]
-    public float visualHeight = 0.3f;    // 方塊厚度
-    public float visualDepth = 0.3f;     // 方塊深度
-    public float additionalYOffset = 2.0f; // 整體垂直位移
+    public float visualHeight = 0.3f;
+    public float visualDepth = 0.3f;
+    public float additionalYOffset = 0f; // 整體垂直位移（以視覺範圍中心為基準）
     public float additionalZOffset = 2.0f;
+
+    [Header("音高自動範圍")]
+    [Tooltip("所有音符 Y 軸映射的總高度（世界單位），上下各一半")]
+    public float visualYRange = 5f;
+    [Tooltip("讓音高範圍上下各多留一點餘白（semitone）")]
+    public float midiPadding = 1f;
+
+    [Header("偵測結果（唯讀）")]
+    [SerializeField] private float _detectedMidiMin;
+    [SerializeField] private float _detectedMidiMax;
 
     [Header("音高條顏色狀態")]
     public Color nextNoteColor = new Color(0.7f, 0.7f, 0.7f, 1f);   
@@ -120,13 +128,32 @@ public class KaraokeScrollViewer : MonoBehaviour
         if (PitchDataManager.Instance == null || PitchDataManager.Instance.CurrentSongNotes == null) return;
 
         var notes = PitchDataManager.Instance.CurrentSongNotes.notes;
+        if (notes == null || notes.Count == 0) return;
+
+        // ── 第一遍：掃出整首歌的音高上下限 ──
+        float midiMin = float.MaxValue;
+        float midiMax = float.MinValue;
+        foreach (var note in notes)
+        {
+            if (note.midi < midiMin) midiMin = note.midi;
+            if (note.midi > midiMax) midiMax = note.midi;
+        }
+        midiMin -= midiPadding;
+        midiMax += midiPadding;
+        _detectedMidiMin = midiMin;
+        _detectedMidiMax = midiMax;
+        Debug.Log($"[KaraokeScrollViewer] 偵測音高範圍：{midiMin:F1} ~ {midiMax:F1}，visualYRange={visualYRange}");
+
+        // ── 第二遍：用偵測範圍 remap Y 位置 ──
+        float midiRange = Mathf.Max(midiMax - midiMin, 1f);
 
         foreach (var note in notes)
         {
             float width = note.duration * timeToXScale;
             float xPosStart = note.startTime * timeToXScale;
-            // 計算 MIDI 音高位置並加上額外垂直位移
-            float yPos = ((note.midi - midiYOffset) * midiToYScale) + additionalYOffset;
+
+            float normalizedMidi = (note.midi - midiMin) / midiRange; // 0 ~ 1
+            float yPos = (normalizedMidi - 0.5f) * visualYRange + additionalYOffset;
 
             GameObject go = Instantiate(notePrefab, transform);
             go.transform.localScale = new Vector3(width, visualHeight, visualDepth);

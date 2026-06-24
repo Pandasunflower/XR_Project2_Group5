@@ -57,9 +57,11 @@ public class SingingManager : MonoBehaviour {
     private int _totalCheckedFrames = 0;
     private float _accumulatedPoints = 0f;
     public LineRenderer lineRenderer;
+    [Tooltip("關閉後 LineRenderer 不會顯示也不會更新")]
+    public bool enableLineRenderer = true;
     public int maxPoints = 50;
     public float xSpacing = 0.2f;
-    public float multiplier = 2.0f; 
+    public float multiplier = 2.0f;
     private float[] _errorHistory;
 
     // private uint _playingID = 0;  // Wwise 暂时禁用
@@ -152,7 +154,7 @@ public class SingingManager : MonoBehaviour {
             _hasFinished = false;
 
             CalculateSongRange();
-            SpawnPitchLines();
+            if (enableLineRenderer) SpawnPitchLines();
             
             // 启动 AkEvent
             // if (akEvent != null) {
@@ -247,7 +249,8 @@ public class SingingManager : MonoBehaviour {
         }
 
         // --- 以下邏輯與你原本的基本一致，確保座標正確 ---
-        lineContainer.position = Vector3.zero;
+        if (enableLineRenderer && lineContainer != null)
+            lineContainer.position = Vector3.zero;
 
         if (_data == null) {
         Debug.LogError("SingingManager: _data 為空！請檢查是否已成功載入資料。");
@@ -298,6 +301,8 @@ public class SingingManager : MonoBehaviour {
     }
 
     void UpdatePitchWindow(float currentTime) {
+        if (!enableLineRenderer) return;
+
         if (_data == null || _data.frames.Count == 0) {
             Debug.LogWarning("_data 或 frames 为空！");
             return;

@@ -10325,13 +10325,15 @@ MonoBehaviour:
   singingManager: {fileID: 1692521562}
   notePrefab: {fileID: 1553706732}
   timeToXScale: 5
-  midiToYScale: 1
-  midiYOffset: 60
   midiXOffset: 0
   visualHeight: 0.2
   visualDepth: 0.3
   additionalYOffset: 3
   additionalZOffset: 15
+  visualYRange: 5
+  midiPadding: 1
+  _detectedMidiMin: 0
+  _detectedMidiMax: 0
   nextNoteColor: {r: 0.7, g: 0.7, b: 0.7, a: 1}
   currentNoteColor: {r: 1, g: 0, b: 0.6, a: 1}
   playedNoteColor: {r: 0.4, g: 0.4, b: 0.4, a: 0.5}
@@ -14986,9 +14988,9 @@ MonoBehaviour:
   pitchScale: 0.06
   positionOffset: {x: 0, y: 0, z: 0}
   pitchOffset: -60
-  pitchLinePrefab: {fileID: 1587454052}
-  lineContainer: {fileID: 1864224558}
-  playerIndicator: {fileID: 1054886565}
+  pitchLinePrefab: {fileID: 0}
+  lineContainer: {fileID: 0}
+  playerIndicator: {fileID: 0}
   micInput: {fileID: 1491609768}
   akEvent:
     idInternal: 0
@@ -15009,6 +15011,7 @@ MonoBehaviour:
   indicatorXPosition: 1.8
   currentTotalScore: 0
   lineRenderer: {fileID: 1587454054}
+  enableLineRenderer: 0
   maxPoints: 50
   xSpacing: 0.2
   multiplier: 2
