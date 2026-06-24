@@ -11573,6 +11573,19 @@ MonoBehaviour:
       WwiseObjectReference: {fileID: 11400000, guid: a028f7952a46ffb49a22b2f874595f44,
         type: 2}
     lrcFile: {fileID: 4900000, guid: 3c7073185059d9145b789ac739692313, type: 3}
+  - songFolderName: Silence
+    karaokeFolder: StreamingAssets/Songs/Silence
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b9c6af3b87957584eb03888664842051,
+        type: 2}
+    wwiseEvent2:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: f313a8fe29dd3b243aba324e5edf598a,
+        type: 2}
+    lrcFile: {fileID: 4900000, guid: 66dcfa6fb227d59419887af1e18205ed, type: 3}
   singingManager: {fileID: 1692521562}
   karaokeScrollViewer: {fileID: 1284604257}
   playWwiseEvent: {fileID: 1572424166}

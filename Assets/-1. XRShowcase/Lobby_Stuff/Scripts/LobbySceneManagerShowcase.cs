@@ -49,11 +49,24 @@ public class LobbySceneManagerShowcase : MonoBehaviour
             case 2:
                 sceneName = "eatMe";
                 break;
+            case 3:
+                sceneName = "forgetUfogetMe";
+                break;
+            case 4:
+                sceneName = "ILikeU";
+                break;
+            case 5:
+                sceneName = "weiweimonmon";
+                break;
+            case 6:
+                sceneName = "Silence";
+                break;
             default:
                 sceneName = "(no name)";
                 break;
         }
         int finalSongIndex;
+        finalSongIndex = 5;
         // int finalSongIndex = songIndex;
         // if (songIndex == 0)
         // {
@@ -63,33 +76,33 @@ public class LobbySceneManagerShowcase : MonoBehaviour
         // {
         //     finalSongIndex = 2;
         // }
-        switch (songIndex)
-        {
-            case 0:
-                finalSongIndex = songIndexMapping.Count > 0 ? songIndexMapping[0] : 1;
-                break;
-            case 1:
-                finalSongIndex = songIndexMapping.Count > 1 ? songIndexMapping[1] : 2;
-                break;
-            case 2:
-                finalSongIndex = songIndexMapping.Count > 2 ? songIndexMapping[2] : 3;
-                break;
-            case 3:
-                finalSongIndex = songIndexMapping.Count > 3 ? songIndexMapping[3] : 4;
-                break;
-            case 4:
-                finalSongIndex = songIndexMapping.Count > 4 ? songIndexMapping[4] : 5;
-                break;
-            case 5:
-                finalSongIndex = songIndexMapping.Count > 5 ? songIndexMapping[5] : 6;
-                break;
-            case 6:
-                finalSongIndex = songIndexMapping.Count > 6 ? songIndexMapping[6] : 7;
-                break;
-            default:
-                finalSongIndex = -1;
-                break;
-        }
+        // switch (songIndex)
+        // {
+        //     case 0:
+        //         finalSongIndex = songIndexMapping.Count > 0 ? songIndexMapping[0] : 1;
+        //         break;
+        //     case 1:
+        //         finalSongIndex = songIndexMapping.Count > 1 ? songIndexMapping[1] : 2;
+        //         break;
+        //     case 2:
+        //         finalSongIndex = songIndexMapping.Count > 2 ? songIndexMapping[2] : 3;
+        //         break;
+        //     case 3:
+        //         finalSongIndex = songIndexMapping.Count > 3 ? songIndexMapping[3] : 4;
+        //         break;
+        //     case 4:
+        //         finalSongIndex = songIndexMapping.Count > 4 ? songIndexMapping[4] : 5;
+        //         break;
+        //     case 5:
+        //         finalSongIndex = songIndexMapping.Count > 5 ? songIndexMapping[5] : 6;
+        //         break;
+        //     case 6:
+        //         finalSongIndex = songIndexMapping.Count > 6 ? songIndexMapping[6] : 7;
+        //         break;
+        //     default:
+        //         finalSongIndex = -1;
+        //         break;
+        // }
 
         // if (finalSongIndex == -1)
         // {

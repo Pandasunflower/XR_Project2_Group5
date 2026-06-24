@@ -4378,7 +4378,7 @@ MonoBehaviour:
   songManager: {fileID: 1270190360}
   transitionManager: {fileID: 1960880527}
   firestoreTest: {fileID: 707177806}
-  songIndexMapping: 050000000500000005000000050000000500000005000000
+  songIndexMapping: 05000000050000000500000005000000050000000500000005000000
 --- !u!114 &1270190360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4667,7 +4667,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 13bc17dd0a11ff14dbcd5dd4d2cee6e3,
+    WwiseObjectReference: {fileID: 11400000, guid: f8819460b3a0bcf40b35fc414175a188,
       type: 2}
   useCallbacks: 0
   stopSoundOnDestroy: 1
