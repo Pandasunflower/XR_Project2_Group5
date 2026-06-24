@@ -443,7 +443,7 @@
     "Type": "Event",
     "GUID": "{2E049C2E-D1D1-4E9B-885F-CA191388AA8A}",
     "Language": "English(US)",
-    "Hash": "{ADE5C8EF-91E7-E67A-F306-E02B59B2F9D7}",
+    "Hash": "{C5A644F2-FC39-F596-0564-BA0AFF287F08}",
     "ObjectPath": "Play_Stage3_audience",
     "ShortName": "Play_Stage3_audience",
     "Path": "Event/English(US)/Play_Stage3_audience.bnk",
@@ -472,6 +472,20 @@
         "Id": "116925822"
        }
       ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
      }
     ]
    },
@@ -2198,16 +2212,6 @@
     ]
    },
    {
-    "Id": "4072029455",
-    "Type": "User",
-    "GUID": "{C27EA4F9-3618-4D19-A226-D63CFBBEAE3E}",
-    "Language": "SFX",
-    "Hash": "{6532A5D7-5F7B-7618-A419-9383269B2139}",
-    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SongList\\New_SoundBank",
-    "ShortName": "New_SoundBank",
-    "Path": "New_SoundBank.bnk"
-   },
-   {
     "Id": "4122281311",
     "Type": "Event",
     "GUID": "{59185CB8-C182-451B-8A67-CC5309B5A4B4}",
@@ -2294,6 +2298,6 @@
     ]
    }
   ],
-  "FileHash": "{4C8E6856-44E3-CD58-863D-079D72E706CB}"
+  "FileHash": "{CB0B0D7C-143B-D202-9D30-D1AF8DC9D192}"
  }
 }

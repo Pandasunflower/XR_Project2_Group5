@@ -8126,7 +8126,7 @@ MonoBehaviour:
   myWwiseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9c82a5e025672754c98c72a3f39647d2,
+    WwiseObjectReference: {fileID: 11400000, guid: 73eaa4e82f75b0f48b9f533a08a1e365,
       type: 2}
   speakerOutputs:
   - {fileID: 1210501676}
@@ -8150,7 +8150,7 @@ MonoBehaviour:
   myWwiseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 384e3f5a9ab95e94fbcd386ca9b87ce2,
+    WwiseObjectReference: {fileID: 11400000, guid: ef2b7f1d120bf6845b1b8206d6d0547f,
       type: 2}
   karaokeScript: {fileID: 0}
   speakerOutputs:
@@ -8246,7 +8246,7 @@ MonoBehaviour:
   myWwiseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8ecf83e7a5752204ab8d9bb7f67cd0d4,
+    WwiseObjectReference: {fileID: 11400000, guid: d550e35940ce86a4e9a7f8b0f33bdfd2,
       type: 2}
   speakerOutputs:
   - {fileID: 704530608}
@@ -12593,6 +12593,16 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 1c250bee3fa62f8418d6381a666410c2,
+      type: 2}
+  PlaySignEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cb2246becf9594e4ba854b006a2b1707,
+      type: 2}
+  StopEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 93a337d2ed929c240994cf8f818276f7,
       type: 2}
   firestoreTest: {fileID: 972826275}
 --- !u!4 &1265999646

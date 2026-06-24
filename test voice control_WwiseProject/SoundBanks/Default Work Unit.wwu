@@ -99,11 +99,6 @@
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
 						</SoundBank>
-						<SoundBank Name="New_SoundBank" ID="{C27EA4F9-3618-4D19-A226-D63CFBBEAE3E}">
-							<ObjectInclusionList/>
-							<ObjectExclusionList/>
-							<GameSyncExclusionList/>
-						</SoundBank>
 						<SoundBank Name="ILikeU" ID="{507238E3-049A-41CB-83A5-48DA1DF6345B}">
 							<ObjectInclusionList>
 								<ObjectRef Name="" ID="{A993080D-3333-4530-9786-F3BA9CB1BF61}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>

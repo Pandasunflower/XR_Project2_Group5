@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{2E049C2E-D1D1-4E9B-885F-CA191388AA8A}",
     "Language": "English(US)",
-    "Hash": "{ADE5C8EF-91E7-E67A-F306-E02B59B2F9D7}",
+    "Hash": "{C5A644F2-FC39-F596-0564-BA0AFF287F08}",
     "ObjectPath": "Play_Stage3_audience",
     "ShortName": "Play_Stage3_audience",
     "Path": "Event/English(US)/Play_Stage3_audience.bnk",
@@ -40,9 +40,23 @@
        }
       ]
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
     ]
    }
   ],
-  "FileHash": "{C6CDA614-6ED1-FE4D-4905-639911C46B62}"
+  "FileHash": "{1234B4CD-16E2-50AF-4A4D-043E36EDF44A}"
  }
 }

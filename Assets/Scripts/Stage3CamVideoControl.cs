@@ -18,6 +18,7 @@ public class Stage3CamVideoControl : MonoBehaviour
     public Material videoMaterial;
 
     public AK.Wwise.Event PlayEndEvent;
+    public AK.Wwise.Event PlaySignEvent;
 
     public FirestoreTest firestoreTest;
 
@@ -48,12 +49,14 @@ public class Stage3CamVideoControl : MonoBehaviour
 
     public IEnumerator VideoCamChange(){
         firestoreTest.SetGameState("l3_voting");
-        yield return new WaitForSeconds(283f);
-        Debug.Log("283 sec");
+        yield return new WaitForSeconds(121f);
+        PlaySignEvent.Post(gameObject);
+        AkUnitySoundEngine.StopAll();
+        Debug.Log("121 sec");
         firestoreTest.SetGameState("l3_votingend");
+        yield return new WaitForSeconds(5f);
         PlayEndEvent.Post(gameObject);
-        yield return new WaitForSeconds(20f);
-        Debug.Log("20 sec");
+        Debug.Log("5 sec");
         firestoreTest.SetGameState("l3_sign");
         screenRendererMid.material = signMaterial;
         yield return new WaitForSeconds(30f);

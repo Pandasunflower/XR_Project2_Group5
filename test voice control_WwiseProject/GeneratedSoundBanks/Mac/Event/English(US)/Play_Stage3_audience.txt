@@ -1,3 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	860181832	Play_Stage3_audience			\Default Work Unit\forDemo\Play_Stage3_audience	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1163235330	mic_direct			\Default Work Unit\mic_direct	
+	2692235896	mic_distance			\Default Work Unit\mic_distance	
+

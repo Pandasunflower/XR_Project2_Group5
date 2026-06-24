@@ -85,7 +85,6 @@ namespace AK
         static const AkUniqueID ILIKEU = 55075196U;
         static const AkUniqueID LOBBY = 290285391U;
         static const AkUniqueID MAINBANK = 2880737896U;
-        static const AkUniqueID NEW_SOUNDBANK = 4072029455U;
         static const AkUniqueID WEIWEIMONMON = 773964775U;
     } // namespace BANKS
 
