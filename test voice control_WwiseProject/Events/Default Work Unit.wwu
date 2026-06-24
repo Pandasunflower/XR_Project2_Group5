@@ -449,6 +449,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_audience" ID="{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}">
+							<ChildrenList>
+								<Action Name="" ID="{DAE43A58-1428-43A6-8F90-8DA7044AAB5D}" ShortID="951329102">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="三天三夜 觀眾" ID="{5BB88A57-C9AA-48A0-B2C5-5AB7804D16C9}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_TimeIsUp" ID="{D89D5AC0-D84E-43D7-B05A-12B2EE9AFC38}">
@@ -457,20 +471,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="時間快到囉" ID="{1A200A07-5E1F-4A49-8173-C047FA0CF680}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_audience" ID="{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}">
-					<ChildrenList>
-						<Action Name="" ID="{DAE43A58-1428-43A6-8F90-8DA7044AAB5D}" ShortID="951329102">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="三天三夜 觀眾" ID="{5BB88A57-C9AA-48A0-B2C5-5AB7804D16C9}" WorkUnitID="{9B8CC1F6-F522-4838-9C09-AC37E1740293}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
