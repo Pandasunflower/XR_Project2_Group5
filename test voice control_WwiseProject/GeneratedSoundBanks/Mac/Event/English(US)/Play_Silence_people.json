@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{046C1EF9-F8DF-435F-8EEB-B84D05FD2B45}",
     "Language": "English(US)",
-    "Hash": "{0E6897A5-54D1-9A02-6ACB-A70A82363176}",
+    "Hash": "{6AAA0998-D2FB-7D1F-CC88-24EDC911B831}",
     "ObjectPath": "Play_Silence_people",
     "ShortName": "Play_Silence_people",
     "Path": "Event/English(US)/Play_Silence_people.bnk",
@@ -40,9 +40,23 @@
        }
       ]
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1163235330",
+      "Name": "mic_direct",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_direct",
+      "GUID": "{C2BEFD57-2CDA-4803-BF3A-DFC86FF1B6D1}"
+     },
+     {
+      "Id": "2692235896",
+      "Name": "mic_distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\mic_distance",
+      "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
+     }
     ]
    }
   ],
-  "FileHash": "{EBA7DB7A-7112-9D7D-44C7-A5BA51DA881B}"
+  "FileHash": "{805718B4-B336-7032-DB5D-FB5F320EBB35}"
  }
 }
