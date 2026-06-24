@@ -1692,7 +1692,7 @@
     "Type": "Event",
     "GUID": "{046C1EF9-F8DF-435F-8EEB-B84D05FD2B45}",
     "Language": "English(US)",
-    "Hash": "{6AAA0998-D2FB-7D1F-CC88-24EDC911B831}",
+    "Hash": "{8ED0086F-791B-835F-0547-BA7020B43CE7}",
     "ObjectPath": "Play_Silence_people",
     "ShortName": "Play_Silence_people",
     "Path": "Event/English(US)/Play_Silence_people.bnk",
@@ -2045,7 +2045,7 @@
     "Type": "Event",
     "GUID": "{5375CB83-9321-46B1-9A15-F4785BFE7DCA}",
     "Language": "English(US)",
-    "Hash": "{9F3ADEFC-86A3-2DAC-3761-F52E0C771649}",
+    "Hash": "{7073457C-C6C1-0C4C-FDB5-4EA8839BD0F1}",
     "ObjectPath": "Play_ILikeU_people",
     "ShortName": "Play_ILikeU_people",
     "Path": "Event/English(US)/Play_ILikeU_people.bnk",
@@ -2433,6 +2433,6 @@
     ]
    }
   ],
-  "FileHash": "{5DA3F209-32AA-39A8-9C31-CC5D8CDF1A7F}"
+  "FileHash": "{D7A7F141-B79E-1B90-F3EA-D61D6E544FF7}"
  }
 }

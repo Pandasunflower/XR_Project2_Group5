@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{046C1EF9-F8DF-435F-8EEB-B84D05FD2B45}",
     "Language": "English(US)",
-    "Hash": "{6AAA0998-D2FB-7D1F-CC88-24EDC911B831}",
+    "Hash": "{8ED0086F-791B-835F-0547-BA7020B43CE7}",
     "ObjectPath": "Play_Silence_people",
     "ShortName": "Play_Silence_people",
     "Path": "Event/English(US)/Play_Silence_people.bnk",
@@ -57,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{EF8A8FB3-7CAA-3726-4541-54F79E75A365}"
+  "FileHash": "{E74D317D-83FF-4958-88B0-04AEECEA3804}"
  }
 }
