@@ -6,14 +6,14 @@
   "SoundBankVersion": "172",
   "SoundBanks": [
    {
-    "Id": "3791770966",
+    "Id": "3859904816",
     "Type": "Event",
     "GUID": "{49DD4D9C-BEA3-46D7-BA21-000FCE09AC58}",
     "Language": "English(US)",
-    "Hash": "{27577651-592A-3F79-52AE-AD851846E970}",
-    "ObjectPath": "Play_Silent_bgm",
-    "ShortName": "Play_Silent_bgm",
-    "Path": "Event/English(US)/Play_Silent_bgm.bnk",
+    "Hash": "{29ED2A77-B16D-89F4-5A2C-EC1C93EE0857}",
+    "ObjectPath": "Play_Silence_bgm",
+    "ShortName": "Play_Silence_bgm",
+    "Path": "Event/English(US)/Play_Silence_bgm.bnk",
     "Media": [
      {
       "Id": "434165930",
@@ -27,9 +27,9 @@
     ],
     "Events": [
      {
-      "Id": "3791770966",
-      "Name": "Play_Silent_bgm",
-      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Silent\\Play_Silent_bgm",
+      "Id": "3859904816",
+      "Name": "Play_Silence_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Silent\\Play_Silence_bgm",
       "GUID": "{49DD4D9C-BEA3-46D7-BA21-000FCE09AC58}",
       "DurationType": "OneShot",
       "DurationMin": "331.08176",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{99DDE799-4D39-9C75-5E50-4E791CDC8FF7}"
+  "FileHash": "{16C888AE-9329-FF51-EFE5-14CD39A74DED}"
  }
 }
