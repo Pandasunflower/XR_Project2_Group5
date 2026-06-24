@@ -11547,8 +11547,8 @@ MonoBehaviour:
       WwiseObjectReference: {fileID: 11400000, guid: 142e608d4346ccc49ae69fa1ee489e3e,
         type: 2}
     lrcFile: {fileID: 4900000, guid: eb4eaa4e22e5d78499a1768ed4818bbe, type: 3}
-  - songFolderName: ImIntoU
-    karaokeFolder: StreamingAssets/Songs/ImIntoU
+  - songFolderName: ILikeU
+    karaokeFolder: StreamingAssets/Songs/ILikeU
     wwiseEvent:
       idInternal: 0
       valueGuidInternal: 
@@ -11560,8 +11560,8 @@ MonoBehaviour:
       WwiseObjectReference: {fileID: 11400000, guid: 72e44c95b2b36114c8586eb3e8e12835,
         type: 2}
     lrcFile: {fileID: 4900000, guid: ecfeb43c0697b5446849f58482ccd170, type: 3}
-  - songFolderName: WeiMon
-    karaokeFolder: StreamingAssets/Songs/WeiMon
+  - songFolderName: weiweimonmon
+    karaokeFolder: StreamingAssets/Songs/weiweimonmon
     wwiseEvent:
       idInternal: 0
       valueGuidInternal: 

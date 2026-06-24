@@ -77,6 +77,15 @@ public class LobbySceneManagerShowcase : MonoBehaviour
             case 3:
                 finalSongIndex = songIndexMapping.Count > 3 ? songIndexMapping[3] : 4;
                 break;
+            case 4:
+                finalSongIndex = songIndexMapping.Count > 4 ? songIndexMapping[4] : 5;
+                break;
+            case 5:
+                finalSongIndex = songIndexMapping.Count > 5 ? songIndexMapping[5] : 6;
+                break;
+            case 6:
+                finalSongIndex = songIndexMapping.Count > 6 ? songIndexMapping[6] : 7;
+                break;
             default:
                 finalSongIndex = -1;
                 break;

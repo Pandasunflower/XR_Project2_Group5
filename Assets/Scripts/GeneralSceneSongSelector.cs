@@ -40,25 +40,36 @@ public class GeneralSceneSongSelector : MonoBehaviour
 
         int index = 0;
 
-        switch (Originindex)
-        {
-            case 0:
-                index = 0;
-                break;
-            case 1:
-                index = 1;
-                break;
-            case 2:
-                index = 2;
-                break;
-            case 3:
-                index = 3;
-                break;
-            default:
-                index = 0;
-                Debug.LogWarning($"[GeneralSceneSongSelector] Originindex={Originindex} 不在預期範圍，使用 index=0");
-                break;
-        }
+        // switch (Originindex)
+        // {
+        //     case 0:
+        //         index = 0;
+        //         break;
+        //     case 1:
+        //         index = 1;
+        //         break;
+        //     case 2:
+        //         index = 2;
+        //         break;
+        //     case 3:
+        //         index = 3;
+        //         break;
+        //     case 4:
+        //         index = 4;
+        //         break;
+        //     case 5:
+        //         index = 5;
+        //         break;
+        //     case 6:
+        //         index = 6;
+        //         break;
+        //     default:
+        //         index = 0;
+        //         Debug.LogWarning($"[GeneralSceneSongSelector] Originindex={Originindex} 不在預期範圍，使用 index=0");
+        //         break;
+        // }
+        index = Originindex;
+        
         Debug.Log($"[GeneralSceneSongSelector] Originindex={Originindex}，對應 index={index}，準備套用歌曲資料。");
 
         if (index < 0 || index >= songs.Count)

@@ -42,6 +42,8 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
     [Tooltip("Screen Collider 所在的 Layer，留空（Everything）則不限制")]
     public LayerMask screenSelectLayerMask = ~0;
 
+    private bool isTrans = false;
+
     // [Header("Controller Settings")]
     // [Range(0.1f, 0.9f)]
     // public float stickThreshold = 0.5f;
@@ -332,8 +334,9 @@ public class LobbyInputHandlerShowcase : MonoBehaviour
         //     SetActiveTv(songManager.currentSelectedIndex);
         // }
 
-        if (ButtonPressed || Input.GetKeyDown(KeyCode.Return))
+        if ((ButtonPressed || Input.GetKeyDown(KeyCode.Return)) && !isTrans)
         {
+            isTrans = true;
             _lastInputTime = Time.time;
             StartCoroutine(StopMusicThenStartGame());
         }
