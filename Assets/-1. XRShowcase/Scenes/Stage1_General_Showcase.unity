@@ -10325,9 +10325,9 @@ MonoBehaviour:
   singingManager: {fileID: 1692521562}
   notePrefab: {fileID: 1553706732}
   timeToXScale: 5
-  midiToYScale: 0.5
+  midiToYScale: 1
   midiYOffset: 60
-  midiXOffset: 1.92
+  midiXOffset: 0
   visualHeight: 0.2
   visualDepth: 0.3
   additionalYOffset: 3
