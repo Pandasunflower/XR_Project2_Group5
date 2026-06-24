@@ -1,3 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3172830947	Play_Silence_people			\Default Work Unit\SongList\Silent\Play_Silence_people	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1163235330	mic_direct			\Default Work Unit\mic_direct	
+	2692235896	mic_distance			\Default Work Unit\mic_distance	
+
