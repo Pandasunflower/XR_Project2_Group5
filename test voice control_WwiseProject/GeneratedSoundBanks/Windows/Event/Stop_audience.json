@@ -18,7 +18,7 @@
      {
       "Id": "1961052290",
       "Name": "Stop_audience",
-      "ObjectPath": "\\Events\\Default Work Unit\\Stop_audience",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Stop_audience",
       "GUID": "{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -28,6 +28,6 @@
     ]
    }
   ],
-  "FileHash": "{86DD8F9E-D3A6-CD30-2488-8D7F64BEB66A}"
+  "FileHash": "{0122868D-37D5-0D73-188B-5FA9AA595ABC}"
  }
 }

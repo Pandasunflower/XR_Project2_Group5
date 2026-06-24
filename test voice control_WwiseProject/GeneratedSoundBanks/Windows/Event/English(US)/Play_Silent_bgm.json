@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3791770966",
+    "Type": "Event",
+    "GUID": "{49DD4D9C-BEA3-46D7-BA21-000FCE09AC58}",
+    "Language": "English(US)",
+    "Hash": "{27577651-592A-3F79-52AE-AD851846E970}",
+    "ObjectPath": "Play_Silent_bgm",
+    "ShortName": "Play_Silent_bgm",
+    "Path": "Event/English(US)/Play_Silent_bgm.bnk",
+    "Media": [
+     {
+      "Id": "434165930",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_silent_(Instrumental).wav",
+      "Path": "Media/English(US)/434165930.wem",
+      "CachePath": "B0/{B0E6BB72-1CDF-F3D7-4751-18AAC946C2DB}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3791770966",
+      "Name": "Play_Silent_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Silent\\Play_Silent_bgm",
+      "GUID": "{49DD4D9C-BEA3-46D7-BA21-000FCE09AC58}",
+      "DurationType": "OneShot",
+      "DurationMin": "331.08176",
+      "DurationMax": "331.08176",
+      "MediaRefs": [
+       {
+        "Id": "434165930"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{79B21400-352C-5175-7A4D-B5B9B1DEBDC8}"
+ }
+}

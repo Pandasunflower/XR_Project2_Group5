@@ -1071,7 +1071,7 @@
      {
       "Id": "1961052290",
       "Name": "Stop_audience",
-      "ObjectPath": "\\Events\\Default Work Unit\\Stop_audience",
+      "ObjectPath": "\\Events\\Default Work Unit\\forDemo\\Stop_audience",
       "GUID": "{28A258E8-4AA5-44FB-87FF-4CF7CB6EF322}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -1532,6 +1532,43 @@
     ]
    },
    {
+    "Id": "3014677865",
+    "Type": "Event",
+    "GUID": "{046C1EF9-F8DF-435F-8EEB-B84D05FD2B45}",
+    "Language": "English(US)",
+    "Hash": "{1D2F5930-54BD-985F-DB10-5FF1F502BDFE}",
+    "ObjectPath": "Play_Silent_people",
+    "ShortName": "Play_Silent_people",
+    "Path": "Event/English(US)/Play_Silent_people.bnk",
+    "Media": [
+     {
+      "Id": "783660752",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_silent_(Vocals).wav",
+      "Path": "Media/English(US)/783660752.wem",
+      "CachePath": "15/{150C1624-7912-E0AB-A07E-228A92BB8BB1}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3014677865",
+      "Name": "Play_Silent_people",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Silent\\Play_Silent_people",
+      "GUID": "{046C1EF9-F8DF-435F-8EEB-B84D05FD2B45}",
+      "DurationType": "OneShot",
+      "DurationMin": "331.08176",
+      "DurationMax": "331.08176",
+      "MediaRefs": [
+       {
+        "Id": "783660752"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "3043573794",
     "Type": "Event",
     "GUID": "{D89D5AC0-D84E-43D7-B05A-12B2EE9AFC38}",
@@ -1639,6 +1676,16 @@
       ]
      }
     ]
+   },
+   {
+    "Id": "3160623154",
+    "Type": "User",
+    "GUID": "{C94C7AE9-8AFF-40CD-BAA4-C2D7F664A793}",
+    "Language": "SFX",
+    "Hash": "{370E39D9-7971-6E91-4C07-47C52D34FFCD}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SongList\\Silent",
+    "ShortName": "Silent",
+    "Path": "Silent.bnk"
    },
    {
     "Id": "3205629941",
@@ -2066,6 +2113,43 @@
     ]
    },
    {
+    "Id": "3791770966",
+    "Type": "Event",
+    "GUID": "{49DD4D9C-BEA3-46D7-BA21-000FCE09AC58}",
+    "Language": "English(US)",
+    "Hash": "{27577651-592A-3F79-52AE-AD851846E970}",
+    "ObjectPath": "Play_Silent_bgm",
+    "ShortName": "Play_Silent_bgm",
+    "Path": "Event/English(US)/Play_Silent_bgm.bnk",
+    "Media": [
+     {
+      "Id": "434165930",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "1_silent_(Instrumental).wav",
+      "Path": "Media/English(US)/434165930.wem",
+      "CachePath": "B0/{B0E6BB72-1CDF-F3D7-4751-18AAC946C2DB}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3791770966",
+      "Name": "Play_Silent_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Silent\\Play_Silent_bgm",
+      "GUID": "{49DD4D9C-BEA3-46D7-BA21-000FCE09AC58}",
+      "DurationType": "OneShot",
+      "DurationMin": "331.08176",
+      "DurationMax": "331.08176",
+      "MediaRefs": [
+       {
+        "Id": "434165930"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "3876215541",
     "Type": "Event",
     "GUID": "{90D3EB6F-F34D-4E3E-9794-0E8141DC90A2}",
@@ -2296,8 +2380,45 @@
       "GUID": "{094260AC-CB5C-43D8-A2CB-055CC6615208}"
      }
     ]
+   },
+   {
+    "Id": "4209596861",
+    "Type": "Event",
+    "GUID": "{B0C99251-7674-46B1-A2DC-105E30A12D5A}",
+    "Language": "English(US)",
+    "Hash": "{70C06B8F-3185-E543-1A09-0539F2BB94BD}",
+    "ObjectPath": "Play_Silent",
+    "ShortName": "Play_Silent",
+    "Path": "Event/English(US)/Play_Silent.bnk",
+    "Media": [
+     {
+      "Id": "268440148",
+      "Language": "English(US)",
+      "Streaming": "true",
+      "Location": "Loose",
+      "ShortName": "silent.wav",
+      "Path": "Media/English(US)/268440148.wem",
+      "CachePath": "4D/{4DDC6B9A-2D11-7FD6-190E-C4C19DC73E51}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4209596861",
+      "Name": "Play_Silent",
+      "ObjectPath": "\\Events\\Default Work Unit\\SongList\\Silent\\Play_Silent",
+      "GUID": "{B0C99251-7674-46B1-A2DC-105E30A12D5A}",
+      "DurationType": "OneShot",
+      "DurationMin": "331.08173",
+      "DurationMax": "331.08173",
+      "MediaRefs": [
+       {
+        "Id": "268440148"
+       }
+      ]
+     }
+    ]
    }
   ],
-  "FileHash": "{CB0B0D7C-143B-D202-9D30-D1AF8DC9D192}"
+  "FileHash": "{C45315BB-04D4-83F3-7159-44A2F749AF5A}"
  }
 }

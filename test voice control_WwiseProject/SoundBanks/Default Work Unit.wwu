@@ -37,6 +37,7 @@
 						<ObjectRef Name="" ID="{748F6D33-8459-4577-BCB0-7CBA8E441B17}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{8E203795-674D-47C4-9E35-4D6C57C9D750}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{8E3EB0E8-20D0-4C0F-A57C-99067A7B350C}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="" ID="{1C6B846C-36F1-4C6A-AB30-1553CFF80B91}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="" ID="{9C9044FE-35DA-4D67-AF0C-CD5F556DC8F1}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -103,6 +104,14 @@
 							<ObjectInclusionList>
 								<ObjectRef Name="" ID="{A993080D-3333-4530-9786-F3BA9CB1BF61}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="" ID="{306082DE-957D-46A7-8297-B5FD10D89498}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Silent" ID="{C94C7AE9-8AFF-40CD-BAA4-C2D7F664A793}">
+							<ObjectInclusionList>
+								<ObjectRef Name="" ID="{F5461CEB-B670-4908-A9A7-1D27403E5CC7}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="" ID="{363439B8-987D-4A77-B947-29B3225B67EE}" WorkUnitID="{DBED2FF2-BB70-4173-8EAA-07E960A9CBD2}" Origin="Manual" Filter="7"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>

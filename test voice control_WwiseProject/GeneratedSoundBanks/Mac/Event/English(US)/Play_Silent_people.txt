@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3014677865	Play_Silent_people			\Default Work Unit\SongList\Silent\Play_Silent_people	
+

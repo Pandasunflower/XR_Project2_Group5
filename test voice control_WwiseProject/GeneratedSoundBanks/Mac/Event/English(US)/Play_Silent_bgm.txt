@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3791770966	Play_Silent_bgm			\Default Work Unit\SongList\Silent\Play_Silent_bgm	
+
